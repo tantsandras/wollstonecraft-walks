@@ -51,9 +51,6 @@ const numberColor = num => {
 
 const Numbers = styled.h3`
   font-family: "Bungee Shade";
-  font-style: "normal";
-  font-weight: "normal";
-  font-size: "2rem";
   color: ${props => numberColor(props.num)};
 `
 

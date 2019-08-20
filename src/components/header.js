@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Image from "../components/image"
-import Menu from "../components/menu"
 
 
 const element = {
@@ -38,7 +37,6 @@ const Header = ({ siteTitle }) => (
 “I do not wish women to have power over men but over <b>themselves</b>” <br />
 <i>A Vindication of the Rights of Woman (1792)</i>
     </article>
-    <Menu />
     </section>
 
   </header>
