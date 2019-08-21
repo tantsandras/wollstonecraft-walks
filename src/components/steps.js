@@ -2,15 +2,17 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import Circles from "../components/circles"
 
 const box = {
-  padding: `2rem`,
+  padding: `1.4rem`,
   background: `#FFFFFF`,
   border: `2px solid rgba(0, 0, 0, 0.1)`,
   boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
   listStyle: `none`,
   minHeight: `120px`,
   position: `relative`,
+
 }
 
 const boxList = {
@@ -51,6 +53,9 @@ const numberColor = num => {
 
 const Numbers = styled.h3`
   font-family: "Bungee Shade";
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  padding-top: 0rem;
   color: ${props => numberColor(props.num)};
 `
 
@@ -64,7 +69,10 @@ const Steps = () => (
       }}
     >
       <li style={box}>
-        <h3 style={{ fontSize: `1rem` }}>
+        <h3 style={{ 
+          fontSize: `1.2rem`, 
+          fontFamily: `Helvetica`,
+          letterSpacing: `2%`,}}>
           <Numbers>Intro</Numbers> Who is Mary Wollstonecraft?
         </h3>
         <i style={arrow}></i>
@@ -78,7 +86,9 @@ const Steps = () => (
       }}
     >
       <li style={box}>
-        <h3 style={{ fontSize: `1rem` }}>
+        <h3 style={{ fontSize: `1.2rem`, 
+          fontFamily: `Helvetica`,
+          letterSpacing: `2%` }}>
           <Numbers num={1}>1</Numbers>Mildmay Club
         </h3>
         <i style={arrow}></i>
@@ -93,7 +103,9 @@ const Steps = () => (
       }}
     >
       <li style={box}>
-        <h3 style={{ fontSize: `1rem` }}>
+        <h3 style={{  fontSize: `1.2rem`, 
+          fontFamily: `Helvetica`,
+          letterSpacing: `2%` }}>
           <Numbers num={2}>2</Numbers>Lizzy's Cafe
         </h3>
         <i style={arrow}></i>
@@ -108,7 +120,9 @@ const Steps = () => (
       }}
     >
       <li style={box}>
-        <h3 style={{ fontSize: `1rem` }}>
+        <h3 style={{  fontSize: `1.2rem`, 
+          fontFamily: `Helvetica`,
+          letterSpacing: `2%` }}>
           <Numbers num={3}>3</Numbers>Mary on the Green Memorial site
         </h3>
         <i style={arrow}></i>
@@ -123,7 +137,9 @@ const Steps = () => (
       }}
     >
       <li style={box}>
-        <h3 style={{ fontSize: `1rem` }}>
+        <h3 style={{  fontSize: `1.2rem`, 
+          fontFamily: `Helvetica`,
+          letterSpacing: `2%` }}>
           <Numbers num={4}>4</Numbers>Newington Green Primary School
         </h3>
         <i style={arrow}></i>
@@ -138,7 +154,9 @@ const Steps = () => (
       }}
     >
       <li style={box}>
-        <h3 style={{ fontSize: `1rem` }}>
+        <h3 style={{  fontSize: `1.2rem`, 
+          fontFamily: `Helvetica`,
+          letterSpacing: `2%` }}>
           <Numbers num={5}>5</Numbers>The Lady Mildmay Inn
         </h3>
         <i style={arrow}></i>

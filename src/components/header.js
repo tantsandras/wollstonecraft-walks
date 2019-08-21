@@ -6,7 +6,8 @@ import Image from "../components/image"
 
 const element = {
   gridTemplateColumns: `repeat(4, 1fr)`,
-  gridTemplateRows: `repeat(2, 300px)`
+  gridTemplateRows: `repeat(2, 300px)`,
+  fontFamily: `Helvetica`,
 }
 
 const Header = ({ siteTitle }) => (
@@ -20,14 +21,19 @@ const Header = ({ siteTitle }) => (
       gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`,
   }}>
   <div style={element}>
+      <div style={{ maxWidth: `500px`, maxHeight: `500px`}}>
       <Image />
+      </div>
     </div>
     <h1 style={element}>
         <Link
           to="/"
           style={{
-            color: `grey`,
+            fontSize: `2rem`,
+            color: `#4B4E53`,
             textDecoration: `none`,
+            textAlign: `center`,
+            fontFamily: `Helvetica`,
           }}
         >
           {siteTitle}
