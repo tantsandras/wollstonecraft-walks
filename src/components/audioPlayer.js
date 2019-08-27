@@ -3,27 +3,36 @@ import caroPhenomenalWomanMayaAngelou from "../audio/Caro Phenomenal Woman Maya 
 import styled, { keyframes } from "styled-components"
 
 const Player = styled.section`
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   display: table;
-  width: 100vw; 
+  margin-left: auto;
+  margin-rigth: auto;
   table-layout: fixed;
-  border-spacing: 1rem;
+  cellspacing: 0;
+  cellpadding: 0;
   overflow-x:auto;
   overflow-y:auto;
 `
 
 const element = {
+  textAlign: `center`,
+  width: `120px`,
   display: `table-cell`,
-  width: `5%`,
+  overflow: `hidden`,
+  verticalAlign: `middle`,
+  alignItems: `center`,
+  margin: `0 auto`,
 }
 
 const ButtonWrap = styled.div`
     width: 90px;
+    margin: 0 auto;
     height: 90px;
     position: relative;
     border-radius: 50%;
     background: #fadadd;
-    box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +65,7 @@ const Pause = styled(Play)`
 
 `
 const Stop = styled.button`
+    margin: 0 auto;
     width: 25px;
     height: 25px;
     background: #202020;
@@ -64,15 +74,16 @@ const Stop = styled.button`
 `
 
 const FastForward = styled.button`
+background: none;
 width: 0;
 height: 0;
-border: 6.6px solid transparent;
+border: 10px solid transparent;
 border-left: 10px solid;
 margin: 6.6px;
 &:before{
     position: absolute;
     left: 0;
-    top: -10px; 
+    top: -10px;
     width: 0;
     height: 0;
     border: 10px solid transparent;
@@ -80,23 +91,40 @@ margin: 6.6px;
 }
 `
 
-
-const Rewind = styled.button`
-width: 20px;
-height: 0;
-border: 6.6px solid transparent;
-border-right: 10px solid;
-margin: 6.6px;
-&:before{
-    position: absolute;
-    left: 0;
-    top: -10px; 
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-right: 10px solid;
-}
+const DoubleFastForward = styled(FastForward)`
+box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-style: normal;
+    color: black;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+    &:before, &:after{
+        content:'';
+        pointer-events: none;
 `
+const Rewind = styled(FastForward)`
+    transform: rotate(180deg);
+
+`
+
+const DoubleRewind = styled(Rewind)`
+box-sizing: border-box;
+display: inline-block;
+vertical-align: middle;
+position: relative;
+font-style: normal;
+color: black;
+text-align: left;
+text-indent: -9999px;
+direction: ltr;
+&:before, &:after{
+    content:'';
+    pointer-events: none;
+`
+
 
 const getTime = (time) => {
     if (!isNaN(time)) {
@@ -186,7 +214,7 @@ class AudioPlayer extends React.Component {
             <Player>
 
             <div style={element}>
-               <Rewind />
+               <DoubleRewind  onClick={() => this.player.currentTime--}/>
                </div>
             <div style={element}>
 
@@ -205,8 +233,10 @@ class AudioPlayer extends React.Component {
               )}
                </div>
                 <div style={element}>
-               <FastForward />
+               <DoubleFastForward onClick={() => this.player.currentTime++}/>
                </div>
+               </Player>
+               <Player>
                <div style={element}>
               {this.state.player === "playing" || this.state.player === "paused" ? (
                 <Stop onClick={() => this.setState({ player: "stopped" })} />

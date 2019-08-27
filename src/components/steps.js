@@ -106,7 +106,7 @@ const Steps = () => (
         <h3 style={{  fontSize: `1.2rem`, 
           fontFamily: `Helvetica`,
           letterSpacing: `2%` }}>
-          <Numbers num={2}>2</Numbers>Lizzy's Cafe
+          <Numbers num={2}>2</Numbers>Lizzy's on the Green
         </h3>
         <i style={arrow}></i>
       </li>

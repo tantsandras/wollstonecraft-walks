@@ -30,11 +30,13 @@ class WalkGuide extends React.Component {
 
   render() {
     return (
-        <>
-            <section style={hero}>
-                <AudioPlayer style={element} />
-                <article style={element}></article>
-            </section>
+        <> 
+        <div style={{
+            display: `grid`,
+            justifyContent: `center`}}>
+                <AudioPlayer />
+
+        </div>
             </>
         )
     }
