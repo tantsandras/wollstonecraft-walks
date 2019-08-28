@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
+import Intro from "../components/intro"
 
 const element = {
     gridTemplateColumns: `repeat(4, 1fr)`,
@@ -37,6 +38,8 @@ class WalkGuide extends React.Component {
                 <AudioPlayer />
 
         </div>
+
+        <div><Intro /></div>
             </>
         )
     }

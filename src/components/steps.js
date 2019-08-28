@@ -1,19 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import styled from "styled-components"
-import Circles from "../components/circles"
-
-const box = {
-  padding: `1.4rem`,
-  background: `#FFFFFF`,
-  border: `2px solid rgba(0, 0, 0, 0.1)`,
-  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-  listStyle: `none`,
-  minHeight: `120px`,
-  position: `relative`,
-
-}
+import WalkGuide from "../pages/walkguide"
+import StepBox from "../components/stepBox"
 
 const boxList = {
   display: `grid`,
@@ -23,144 +12,18 @@ const boxList = {
   margin: `0`,
 }
 
-const arrow = {
-  border: `solid #403C3C`,
-  borderWidth: `0px 2px 2px 0px`,
-  display: `table-cell`,
-  position: `absolute`,
-  top: `40%`,
-  right: `4%`,
-  msTransform: `translateY(-50%)`,
-  transform: `translateY(-50%)`,
-  padding: `10px`,
-  transform: `rotate(-45deg)`,
-  webkitTransform: `rotate(-45deg)`,
-}
 
-const numberColor = num => {
-  return num === 1
-    ? "#383790"
-    : num === 2
-    ? "#FF008A"
-    : num === 3
-    ? "#5D00FF"
-    : num === 4 
-    ? "#FF0000"
-    : num === 5 
-    ? "#0031AD"
-    : "#FF0000"
-}
-
-const Numbers = styled.h3`
-  font-family: "Bungee Shade";
-  padding-bottom: 1rem;
-  font-size: 1.8rem;
-  padding-top: 0rem;
-  color: ${props => numberColor(props.num)};
-`
-
-const Steps = () => (
+const Steps = props => (
   <ul style={boxList}>
     <Link
-      to="/intro"
+      to={`/walkguide/${props.num}`}
+      component={props => <WalkGuide {...props} />}
       style={{
         color: `#4B4E53`,
         textDecoration: `none`,
       }}
     >
-      <li style={box}>
-        <h3 style={{ 
-          fontSize: `1.2rem`, 
-          fontFamily: `Helvetica`,
-          letterSpacing: `2%`,}}>
-          <Numbers>Intro</Numbers> Who is Mary Wollstonecraft?
-        </h3>
-        <i style={arrow}></i>
-      </li>
-    </Link>
-    <Link
-      to="/mildmay-club"
-      style={{
-        color: `#4B4E53`,
-        textDecoration: `none`,
-      }}
-    >
-      <li style={box}>
-        <h3 style={{ fontSize: `1.2rem`, 
-          fontFamily: `Helvetica`,
-          letterSpacing: `2%` }}>
-          <Numbers num={1}>1</Numbers>Mildmay Club
-        </h3>
-        <i style={arrow}></i>
-      </li>
-    </Link>
-
-    <Link
-      to="/lizzy's-cafe"
-      style={{
-        color: `#4B4E53`,
-        textDecoration: `none`,
-      }}
-    >
-      <li style={box}>
-        <h3 style={{  fontSize: `1.2rem`, 
-          fontFamily: `Helvetica`,
-          letterSpacing: `2%` }}>
-          <Numbers num={2}>2</Numbers>Lizzy's on the Green
-        </h3>
-        <i style={arrow}></i>
-      </li>
-    </Link>
-
-    <Link
-      to="/mary-on-the-green-memorial-site"
-      style={{
-        color: `#4B4E53`,
-        textDecoration: `none`,
-      }}
-    >
-      <li style={box}>
-        <h3 style={{  fontSize: `1.2rem`, 
-          fontFamily: `Helvetica`,
-          letterSpacing: `2%` }}>
-          <Numbers num={3}>3</Numbers>Mary on the Green Memorial site
-        </h3>
-        <i style={arrow}></i>
-      </li>
-    </Link>
-
-    <Link
-      to="/newington-green-primary-school"
-      style={{
-        color: `#4B4E53`,
-        textDecoration: `none`,
-      }}
-    >
-      <li style={box}>
-        <h3 style={{  fontSize: `1.2rem`, 
-          fontFamily: `Helvetica`,
-          letterSpacing: `2%` }}>
-          <Numbers num={4}>4</Numbers>Newington Green Primary School
-        </h3>
-        <i style={arrow}></i>
-      </li>
-    </Link>
-
-    <Link
-      to="/the-lady-mildmay-inn"
-      style={{
-        color: `#4B4E53`,
-        textDecoration: `none`,
-      }}
-    >
-      <li style={box}>
-        <h3 style={{  fontSize: `1.2rem`, 
-          fontFamily: `Helvetica`,
-          letterSpacing: `2%` }}>
-          <Numbers num={5}>5</Numbers>The Lady Mildmay Inn
-        </h3>
-        <i style={arrow}></i>
-      </li>
+        <StepBox />
     </Link>
   </ul>
 )
