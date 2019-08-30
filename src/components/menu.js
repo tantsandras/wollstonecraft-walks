@@ -65,8 +65,7 @@ const NavActive = styled.div`
   top: 0%;
   right: 0%;
   background: #fadadd;
-  box-shadow: 4px 0px 0px rgba(0, 0, 0, 0.25);
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: Helvetica;
   animation: ${turnVisible} 0.8s ease-in-out;
   & ${NavActive}:nth-child(odd) {

@@ -19,6 +19,7 @@ const Header = ({ siteTitle }) => (
       display: `grid`,
       alignItems: `center`,
       gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`,
+      gap: `3%`,
   }}>
   <div style={element}>
       <div style={{ maxWidth: `500px`, maxHeight: `500px`}}>
@@ -29,11 +30,12 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            fontSize: `2rem`,
+            fontSize: `3rem`,
             color: `#4B4E53`,
             textDecoration: `none`,
             textAlign: `center`,
-            fontFamily: `Helvetica`,
+            fontFamily: `Yeseva One`,
+            zIndex: `2`
           }}
         >
           {siteTitle}

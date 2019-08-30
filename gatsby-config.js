@@ -31,7 +31,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Bungee Shade', 'cursive']
+          families: ['Bungee Shade', 'Yeseva One', ]
         }
       }
     },

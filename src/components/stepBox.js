@@ -50,7 +50,7 @@ const arrow = {
   `
 
 const stepList = [
-    { num: "Intro", title: "Who is Mary Wollstonecraft" },
+    { num: "Intro", title: "Who is Mary Wollstonecraft?" },
     { num: "1",  title: "Mildmay Club" },
     { num: "2", title: "Lizzy's on the Green" },
     { num: "3", title: "Mary on the Green Memorial site"},
@@ -68,8 +68,8 @@ class StepBox extends React.Component {
         <li key={key} style={box}>
             <h3 style={{ 
             fontSize: `1.2rem`, 
-            fontFamily: `Helvetica`,
-            letterSpacing: `2%`,}}>
+            fontFamily: `Yeseva One`,
+             fontWeight: `bold`}}>
             <Numbers num={item.num}>{item.num}</Numbers>{item.title}
             </h3>
             <i style={arrow}></i>
