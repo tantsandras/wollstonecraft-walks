@@ -22,9 +22,9 @@ const leftArray = ["3vw", "18vw", "8vw", "10vw", "14vw", "22vw", "1vw", "26vw"]
 
 const Circles = () => (
   <div style={{ position: `absolute`, zIndex: `-1`, top: `0`}}>
-    {Array.from({ length: 6 }).map(() => {
+    {Array.from({ length: 6 }).map((circle, key) => {
         let size = sizeArray[Math.floor(Math.random() * sizeArray.length)]
-      return <div
+      return <div key={key}
         style={{
           position: `absolute`,
           height: `${size}`,

@@ -1,6 +1,7 @@
 
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 
 const box = {
@@ -24,7 +25,7 @@ const arrow = {
     transform: `translateY(-50%)`,
     padding: `10px`,
     transform: `rotate(-45deg)`,
-    webkitTransform: `rotate(-45deg)`,
+    WebkitTransform: `rotate(-45deg)`,
   }
 
   const numberColor = num => {
@@ -60,11 +61,21 @@ const stepList = [
 
 class StepBox extends React.Component {
 
+
     render() {
         return (
+
             <>
     {stepList.map((item, key) => {
         return (
+            <Link
+            to={`/walkguide/${item.num}`}
+            style={{
+              color: `#4B4E53`,
+              textDecoration: `none`,
+            }}
+          >
+
         <li key={key} style={box}>
             <h3 style={{ 
             fontSize: `1.2rem`, 
@@ -74,6 +85,7 @@ class StepBox extends React.Component {
             </h3>
             <i style={arrow}></i>
         </li>
+        </Link>
         )
     })}
     </>

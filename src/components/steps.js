@@ -1,7 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+
 import React from "react"
-import WalkGuide from "../pages/walkguide"
+
 import StepBox from "../components/stepBox"
 
 const boxList = {
@@ -13,18 +12,11 @@ const boxList = {
 }
 
 
-const Steps = props => (
+const Steps = () => (
   <ul style={boxList}>
-    <Link
-      to={`/walkguide/${props.num}`}
-      component={props => <WalkGuide {...props} />}
-      style={{
-        color: `#4B4E53`,
-        textDecoration: `none`,
-      }}
-    >
+
         <StepBox />
-    </Link>
+
   </ul>
 )
 
