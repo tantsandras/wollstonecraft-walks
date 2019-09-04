@@ -25,6 +25,7 @@ const element = {
   const pinkBubble = {
     width: `200px`,
     heigth: `200px`,
+    lineHeight: `200px`,
     borderRadius: `50%`,
     padding: `30px`,
     background: `#e6007e`,
