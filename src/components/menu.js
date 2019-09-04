@@ -11,7 +11,7 @@ const MenuIcon = styled.div`
   right: 20px;
   top: 30px;
   cursor: pointer;
-  & ${MenuIcon} > * {
+  & ${MenuIcon}> * {
     height: 2px;
     width: 30px;
     display: block;
