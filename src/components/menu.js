@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import styled, { keyframes } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import logo from "../images/logo2.png"
 
 const MenuIcon = styled.div`
@@ -11,7 +11,7 @@ const MenuIcon = styled.div`
   right: 20px;
   top: 30px;
   cursor: pointer;
-  & ${MenuIcon}> * {
+  &> * {
     height: 2px;
     width: 30px;
     display: block;
@@ -30,6 +30,11 @@ const fadeInRight = keyframes`
     }
   `
 
+const animation2 = () => 
+    css`
+      ${fadeInRight} ease 0.6s forwards;
+    `
+
 const Nav = styled.div`
   width: 10%;
   height: 100vh;
@@ -46,6 +51,11 @@ const turnVisible = keyframes`
 	}
 `
 
+const animation1 = () => 
+  css`
+    ${turnVisible} 0.8s ease-in-out;
+  `
+
 const growLeft = keyframes`
   from {
 	transform: scaleX(0);
@@ -55,105 +65,110 @@ const growLeft = keyframes`
   }
   `
 
-const NavActive = styled.div`
-  z-index: 2;
-  text-transform: uppercase;
-  height: 100vh;
-  position: fixed;
-  margin: 0;
-  padding: 3rem;
-  top: 0%;
-  right: 0%;
-  background: #fadadd;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Helvetica;
-  animation: ${turnVisible} 0.8s ease-in-out;
-  & ${NavActive}:nth-child(odd) {
-    text-decoration: none;
-    color: #656565;
-    opacity: 0;
-    animation: ${fadeInRight} ease 0.6s forwards;
-    animation-delay: 0.2s;
-  }
+const animation3 = () => 
+  css`
+    ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
+  `
 
-  & ${NavActive}:nth-child(odd):hover {
-    text-decoration: none;
-    color: MediumBlue;
-    cursor: pointer;
-  }
-  & ${NavActive}:nth-child(2n) {
-    align-self: left;
-    width: 100%;
-    margin: 0em 1rem 2.4rem 0em;
-    height: 0.06em;
-    background-color: black;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
-  }
-  & ${NavActive}:nth-child(3) {
-    animation-delay: 0.4s;
-  }
+const NavActive = {
+  zIndex: `2`,
+  textTransform: `uppercase`,
+  height: `100vh`,
+  position: `fixed`,
+  margin: `0`,
+  padding: `3rem`,
+  top: `0%`,
+  right: `0%`,
+  background: `#fadadd`,
+  boxshadow: `0px 0px 4px 0px rgba(0, 0, 0, 0.25)`,
+  fontFamily: `Helvetica`,
+  animation: `${animation1}`,  
+  
+  '&:nth-child(odd)': {
+    textdecoration: `none`,
+    color: `#656565`,
+    opacity: `0`,
+    animation: `${animation2}`,
+    animationDelay: `0.2s`,
 
-  & ${NavActive}:nth-child(4) {
-    animation-delay: 0.8s;
+  '&:nth-child(odd):hover': {
+    textDecoration: `none`,
+    color: `MediumBlue`,
+    cursor: `pointer`,
+
+  '&:nth-child(2n)': {
+    alignSelf: `left`,
+    width: `100%`,
+    margin: `0em 1rem 2.4rem 0em`,
+    height: `0.06em`,
+    backgroundColor: `black`,
+    transform: `scaleX(0)`,
+    transformOrigin: `left`,
+    animation: `${animation3}`,
+
+  '&:nth-child(3)': {
+    animationDelay: `0.4s`,
+
+  '&:nth-child(4)': {
+    animationDelay: `0.8s`,
+
+  '&:nth-child(5)': {
+    animationDelay: `0.6s`,
+
+  '&:nth-child(6)': {
+    animationDelay: `1s`,
+
+  '&:nth-child(7)': {
+    animationDelay: `0.8s`,
+
+  '&:nth-child(8)': {
+    animationDelay: `1.2s`,
+
+  '&:nth-child(9)': {
+    animationDelay: `1s`,
+
+  '&:nth-child(10)': {
+    animationDelay: `1.4s`,
+
+  '&:nth-child(11)': {
+    animationDelay: `1.2s`,
+
+  '&:nth-child(12)': {
+    animationDelay: `1.6s`,
+
+  '&:nth-child(13)': {
+    animationDelay: `1.4s`,
+
+  '&:nth-child(14)': {
+    animationDelay: `1.8s`,
+
+  '&:nth-child(15)': {
+    animationDelay: `1.6s`,
+
+  '&:nth-child(16)': {
+    animationDelay: `2s`,
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-
-  & ${NavActive}:nth-child(5) {
-    animation-delay: 0.6s;
-  }
-
-  & ${NavActive}:nth-child(6) {
-    animation-delay: 1s;
-  }
-
-  & ${NavActive}:nth-child(7) {
-    animation-delay: 0.8s;
-  }
-
-  & ${NavActive}:nth-child(8) {
-    animation-delay: 1.2s;
-  }
-
-  & ${NavActive}:nth-child(9) {
-    animation-delay: 1s;
-  }
-
-  & ${NavActive}:nth-child(10) {
-    animation-delay: 1.4s;
-  }
-
-  & ${NavActive}:nth-child(11) {
-    animation-delay: 1.2s;
-  }
-
-  & ${NavActive}:nth-child(12) {
-    animation-delay: 1.6s;
-  }
-
-  & ${NavActive}:nth-child(13) {
-    animation-delay: 1.4s;
-  }
-
-  & ${NavActive}:nth-child(14) {
-    animation-delay: 1.8s;
-  }
-
-  & ${NavActive}:nth-child(15) {
-    animation-delay: 1.6s;
-  }
-
-  & ${NavActive}:nth-child(16) {
-    animation-delay: 2s;
-  }
-
-
-
-`
+}
+}
+}
 
 const NavList = styled.ul`
   margin: 0;
-  padding: 10px;
+  padding: 4rem 10px 10px 10px;
   top: 5%;
   width: 100%;
   text-align: left;
@@ -202,11 +217,7 @@ class Menu extends React.Component {
         <div>
           {!this.state.isActive && <Nav />}
           {this.state.isActive && (
-            <NavActive>
-              <div
-                class="nav__content"
-                style={{ paddingTop: `2rem`, margin: `0`, zIndex: `2` }}
-              >
+            <div style={NavActive}>
                 <NavList>
                   <Link to="/" activeStyle={activeStyle}>
                     {"Home"}
@@ -242,7 +253,6 @@ class Menu extends React.Component {
                   <div></div>
                 </NavList>
               </div>
-            </NavActive>
           )}
         </div>
       </div>
