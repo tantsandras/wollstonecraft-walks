@@ -16,13 +16,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-netlify-cms`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/images/uploads`,
-        name: "images",
-      },
-    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
