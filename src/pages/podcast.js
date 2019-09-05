@@ -3,12 +3,13 @@ import SEO from "../components/seo"
 import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
 
-
-const PodcastPage = () => (
+const PodcastPage = () => {
+    
+    return (
     <section style={{fontFamily: `Helvetica`}}>
       <SEO title="Podcast" />
       <Menu />
       </section>
   )
-  
+}
   export default PodcastPage

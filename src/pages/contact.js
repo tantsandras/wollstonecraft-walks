@@ -145,7 +145,8 @@ const OrgList = styled.ul`
 `
 
 
-const ContactPage = () => (
+const ContactPage = () => {
+return (
     <section style={{fontFamily: `Helvetica`}}>
       <SEO title="Contact" />
       <Menu />
@@ -196,6 +197,8 @@ Instagram Anna Birch annabirch1</p></article>
       </article>
     </section>
   )
+}
   
   export default ContactPage
+
   

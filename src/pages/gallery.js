@@ -3,12 +3,13 @@ import SEO from "../components/seo"
 import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
 
-
-const GalleryPage = () => (
+const GalleryPage = () => {
+    
+    return (
     <section style={{fontFamily: `Helvetica`}}>
       <SEO title="Gallery" />
       <Menu />
       </section>
   )
-  
+}
   export default GalleryPage

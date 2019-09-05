@@ -28,7 +28,6 @@ class WalkGuide extends React.Component {
         }
       }
 
-
   render() {
     return (
         <> 
@@ -45,4 +44,4 @@ class WalkGuide extends React.Component {
     }
 }
 
-export default WalkGuide
+export default WalkGuide 

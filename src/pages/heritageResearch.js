@@ -3,12 +3,13 @@ import SEO from "../components/seo"
 import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
 
+const HeritageResearchPage = () => {
 
-const HeritageResearchPage = () => (
+    return (
     <section style={{fontFamily: `Helvetica`}}>
       <SEO title="Heritage Research" />
       <Menu />
       </section>
   )
-  
+}
   export default HeritageResearchPage
