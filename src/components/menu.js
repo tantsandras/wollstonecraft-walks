@@ -11,7 +11,7 @@ const MenuIcon = styled.div`
   right: 20px;
   top: 30px;
   cursor: pointer;
-  &> * {
+  & > * {
     height: 2px;
     width: 30px;
     display: block;
@@ -30,10 +30,10 @@ const fadeInRight = keyframes`
     }
   `
 
-const animation2 = () => 
-    css`
-      ${fadeInRight} ease 0.6s forwards;
-    `
+const animation2 = () =>
+  css`
+    ${fadeInRight} ease 0.6s forwards;
+  `
 
 const Nav = styled.div`
   width: 10%;
@@ -51,7 +51,7 @@ const turnVisible = keyframes`
 	}
 `
 
-const animation1 = () => 
+const animation1 = () =>
   css`
     ${turnVisible} 0.8s ease-in-out;
   `
@@ -65,7 +65,7 @@ const growLeft = keyframes`
   }
   `
 
-const animation3 = () => 
+const animation3 = () =>
   css`
     ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
   `
@@ -82,88 +82,88 @@ const NavActive = {
   background: `#fadadd`,
   boxshadow: `0px 0px 4px 0px rgba(0, 0, 0, 0.25)`,
   fontFamily: `Helvetica`,
-  animation: `${animation1}`,  
-  
-  '&:nth-child(odd)': {
+  animation: `${animation1}`,
+
+  "&:nth-child(odd)": {
     textdecoration: `none`,
     color: `#656565`,
     opacity: `0`,
     animation: `${animation2}`,
     animationDelay: `0.2s`,
 
-  '&:nth-child(odd):hover': {
-    textDecoration: `none`,
-    color: `MediumBlue`,
-    cursor: `pointer`,
+    "&:nth-child(odd):hover": {
+      textDecoration: `none`,
+      color: `MediumBlue`,
+      cursor: `pointer`,
 
-  '&:nth-child(2n)': {
-    alignSelf: `left`,
-    width: `100%`,
-    margin: `0em 1rem 2.4rem 0em`,
-    height: `0.06em`,
-    backgroundColor: `black`,
-    transform: `scaleX(0)`,
-    transformOrigin: `left`,
-    animation: `${animation3}`,
+      "&:nth-child(2n)": {
+        alignSelf: `left`,
+        width: `100%`,
+        margin: `0em 1rem 2.4rem 0em`,
+        height: `0.06em`,
+        backgroundColor: `black`,
+        transform: `scaleX(0)`,
+        transformOrigin: `left`,
+        animation: `${animation3}`,
 
-  '&:nth-child(3)': {
-    animationDelay: `0.4s`,
+        "&:nth-child(3)": {
+          animationDelay: `0.4s`,
 
-  '&:nth-child(4)': {
-    animationDelay: `0.8s`,
+          "&:nth-child(4)": {
+            animationDelay: `0.8s`,
 
-  '&:nth-child(5)': {
-    animationDelay: `0.6s`,
+            "&:nth-child(5)": {
+              animationDelay: `0.6s`,
 
-  '&:nth-child(6)': {
-    animationDelay: `1s`,
+              "&:nth-child(6)": {
+                animationDelay: `1s`,
 
-  '&:nth-child(7)': {
-    animationDelay: `0.8s`,
+                "&:nth-child(7)": {
+                  animationDelay: `0.8s`,
 
-  '&:nth-child(8)': {
-    animationDelay: `1.2s`,
+                  "&:nth-child(8)": {
+                    animationDelay: `1.2s`,
 
-  '&:nth-child(9)': {
-    animationDelay: `1s`,
+                    "&:nth-child(9)": {
+                      animationDelay: `1s`,
 
-  '&:nth-child(10)': {
-    animationDelay: `1.4s`,
+                      "&:nth-child(10)": {
+                        animationDelay: `1.4s`,
 
-  '&:nth-child(11)': {
-    animationDelay: `1.2s`,
+                        "&:nth-child(11)": {
+                          animationDelay: `1.2s`,
 
-  '&:nth-child(12)': {
-    animationDelay: `1.6s`,
+                          "&:nth-child(12)": {
+                            animationDelay: `1.6s`,
 
-  '&:nth-child(13)': {
-    animationDelay: `1.4s`,
+                            "&:nth-child(13)": {
+                              animationDelay: `1.4s`,
 
-  '&:nth-child(14)': {
-    animationDelay: `1.8s`,
+                              "&:nth-child(14)": {
+                                animationDelay: `1.8s`,
 
-  '&:nth-child(15)': {
-    animationDelay: `1.6s`,
+                                "&:nth-child(15)": {
+                                  animationDelay: `1.6s`,
 
-  '&:nth-child(16)': {
-    animationDelay: `2s`,
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-}
+                                  "&:nth-child(16)": {
+                                    animationDelay: `2s`,
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
 }
 
 const NavList = styled.ul`
@@ -208,51 +208,59 @@ class Menu extends React.Component {
   render() {
     return (
       <div>
-          {!this.state.isActive && (<MenuIcon onClick={this.handleClick}>
-		  <span></span>
-          <span></span>
-          <span></span>
-      </MenuIcon>)}
-      {this.state.isActive && <StyledLogo src={logo} alt={"Logo"} onClick={this.handleClick} />}
+        {!this.state.isActive && (
+          <MenuIcon onClick={this.handleClick}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </MenuIcon>
+        )}
+        {this.state.isActive && (
+          <StyledLogo src={logo} alt={"Logo"} onClick={this.handleClick} />
+        )}
         <div>
           {!this.state.isActive && <Nav />}
           {this.state.isActive && (
             <div style={NavActive}>
-                <NavList>
-                  <Link to="/" activeStyle={activeStyle}>
-                    {"Home"}
-                  </Link>
-                  <div></div>
-                  <Link to="/podcast" activeStyle={activeStyle}>
-                    {"Podcast"}
-                  </Link>
-                  <div></div>
-                  <Link to="/media" activeStyle={activeStyle}>
-                    {"Media"}
-                  </Link>
-                  <div></div>
-                  <Link to="/gallery" activeStyle={activeStyle}>
-                    {"Gallery"}
-                  </Link>
-                  <div></div>
-                  <Link to="/heritage-research" activeStyle={activeStyle}>
-                    {"Heritage Research"}
-                  </Link>
-                  <div></div>
-                  <Link to="/artists" activeStyle={activeStyle}>
-                    {"Artists"}
-                  </Link>
-                  <div></div>
-                  <Link to="/contact" activeStyle={activeStyle}>
-                    {"Contact"}
-                  </Link>
-                  <div></div>
-                  <Link to="/fm-preformance-and-film-archive" activeStyle={activeStyle}>
-                    {"Fragments & Monuments"} <br></br> {"preformance & film archive"}
-                  </Link>
-                  <div></div>
-                </NavList>
-              </div>
+              <NavList>
+                <Link to="/" activeStyle={activeStyle}>
+                  {"Home"}
+                </Link>
+                <div></div>
+                <Link to="/podcast" activeStyle={activeStyle}>
+                  {"Podcast"}
+                </Link>
+                <div></div>
+                <Link to="/media" activeStyle={activeStyle}>
+                  {"Media"}
+                </Link>
+                <div></div>
+                <Link to="/gallery" activeStyle={activeStyle}>
+                  {"Gallery"}
+                </Link>
+                <div></div>
+                <Link to="/heritage-research" activeStyle={activeStyle}>
+                  {"Heritage Research"}
+                </Link>
+                <div></div>
+                <Link to="/artists" activeStyle={activeStyle}>
+                  {"Artists"}
+                </Link>
+                <div></div>
+                <Link to="/contact" activeStyle={activeStyle}>
+                  {"Contact"}
+                </Link>
+                <div></div>
+                <Link
+                  to="/fm-preformance-and-film-archive"
+                  activeStyle={activeStyle}
+                >
+                  {"Fragments & Monuments"} <br></br>{" "}
+                  {"preformance & film archive"}
+                </Link>
+                <div></div>
+              </NavList>
+            </div>
           )}
         </div>
       </div>
