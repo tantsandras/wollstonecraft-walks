@@ -40,7 +40,7 @@ const OrgList = styled.ul`
   text-transform: uppercase;
   font-family: Helvetica;
   animation: ${turnVisible} 0.8s ease-in-out;
-  &:nth-child(odd) {
+  & ${OrgList}:nth-child(odd) {
     text-decoration: none;
     color: #656565;
     opacity: 0;
@@ -48,12 +48,12 @@ const OrgList = styled.ul`
     animation-delay: 0.2s;
   }
 
-  &:nth-child(odd):hover {
+  & ${OrgList}:nth-child(odd):hover {
     text-decoration: none;
     color: MediumBlue;
     cursor: pointer;
   }
-  &:nth-child(2n) {
+  & ${OrgList}:nth-child(2n) {
     align-self: left;
     width: 40%;
     margin: 0em 1rem 2.4rem 0em;
@@ -63,82 +63,82 @@ const OrgList = styled.ul`
     transform-origin: left;
     animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
   }
-  &:nth-child(3) {
+  & ${OrgList}:nth-child(3) {
     animation-delay: 0.4s;
   }
 
-  &:nth-child(4) {
+  & ${OrgList}:nth-child(4) {
     animation-delay: 0.8s;
   }
 
-  &:nth-child(5) {
+  & ${OrgList}:nth-child(5) {
     animation-delay: 0.6s;
   }
 
-  &:nth-child(6) {
+  & ${OrgList}:nth-child(6) {
     animation-delay: 1s;
   }
 
-  &:nth-child(7) {
+  & ${OrgList}:nth-child(7) {
     animation-delay: 0.8s;
   }
 
-  &:nth-child(8) {
+  & ${OrgList}:nth-child(8) {
     animation-delay: 1.2s;
   }
 
-  &:nth-child(9) {
+  & ${OrgList}:nth-child(9) {
     animation-delay: 1s;
   }
 
-  &:nth-child(10) {
+  & ${OrgList}:nth-child(10) {
     animation-delay: 1.4s;
   }
 
-  &:nth-child(11) {
+  & ${OrgList}:nth-child(11) {
     animation-delay: 1.2s;
   }
 
-  &:nth-child(12) {
+  & ${OrgList}:nth-child(12) {
     animation-delay: 1.6s;
   }
 
-  &:nth-child(13) {
+  & ${OrgList}:nth-child(13) {
     animation-delay: 1.4s;
   }
 
-  &:nth-child(14) {
+  & ${OrgList}:nth-child(14) {
     animation-delay: 1.8s;
   }
 
-  &:nth-child(15) {
+  & ${OrgList}:nth-child(15) {
     animation-delay: 1.6s;
   }
 
-  &:nth-child(16) {
+  & ${OrgList}:nth-child(16) {
     animation-delay: 2s;
   }
 
-  &:nth-child(17) {
+  & ${OrgList}:nth-child(17) {
     animation-delay: 1.8s;
   }
 
-  &:nth-child(18) {
+  & ${OrgList}:nth-child(18) {
     animation-delay: 2.2s;
   }
 
-  &:nth-child(19) {
+  & ${OrgList}:nth-child(19) {
     animation-delay: 2s;
   }
 
-  &:nth-child(20) {
+  & ${OrgList}:nth-child(20) {
     animation-delay: 2.4s;
   }
-  &:nth-child(21) {
+  & ${OrgList}:nth-child(21) {
     animation-delay: 2.2s;
   }
 
-  &:nth-child(20) {
+  & ${OrgList}:nth-child(20) {
     animation-delay: 2.6s;
   }
 

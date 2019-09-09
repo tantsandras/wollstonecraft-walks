@@ -30,10 +30,9 @@ const fadeInRight = keyframes`
     }
   `
 
-const animation2 = () =>
-  css`
-    ${fadeInRight} ease 0.6s forwards;
-  `
+const animation1 = css`
+  animation: ${fadeInRight} ease 0.6s forwards;
+`
 
 const Nav = styled.div`
   width: 10%;
@@ -50,12 +49,6 @@ const turnVisible = keyframes`
 		opacity: 1;
 	}
 `
-
-const animation1 = () =>
-  css`
-    ${turnVisible} 0.8s ease-in-out;
-  `
-
 const growLeft = keyframes`
   from {
 	transform: scaleX(0);
@@ -64,107 +57,47 @@ const growLeft = keyframes`
 	transform: scaleX(1);
   }
   `
+const animation2 = css`
+  animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
+`
 
-const animation3 = () =>
-  css`
-    ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
-  `
+const NavActive = styled.div`
+  z-index: 2;
+  text-transform: uppercase;
+  height: 100vh;
+  position: fixed;
+  margin: 0;
+  padding: 3rem;
+  top: 0%;
+  right: 0%;
+  background: #fadadd;
+  boxshadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Helvetica;
+  animation: ${turnVisible} 0.8s ease-in-out;
 
-const NavActive = {
-  zIndex: `2`,
-  textTransform: `uppercase`,
-  height: `100vh`,
-  position: `fixed`,
-  margin: `0`,
-  padding: `3rem`,
-  top: `0%`,
-  right: `0%`,
-  background: `#fadadd`,
-  boxshadow: `0px 0px 4px 0px rgba(0, 0, 0, 0.25)`,
-  fontFamily: `Helvetica`,
-  animation: `${animation1}`,
-
-  "&:nth-child(odd)": {
-    textdecoration: `none`,
-    color: `#656565`,
-    opacity: `0`,
-    animation: `${animation2}`,
-    animationDelay: `0.2s`,
-
-    "&:nth-child(odd):hover": {
-      textDecoration: `none`,
-      color: `MediumBlue`,
-      cursor: `pointer`,
-
-      "&:nth-child(2n)": {
-        alignSelf: `left`,
-        width: `100%`,
-        margin: `0em 1rem 2.4rem 0em`,
-        height: `0.06em`,
-        backgroundColor: `black`,
-        transform: `scaleX(0)`,
-        transformOrigin: `left`,
-        animation: `${animation3}`,
-
-        "&:nth-child(3)": {
-          animationDelay: `0.4s`,
-
-          "&:nth-child(4)": {
-            animationDelay: `0.8s`,
-
-            "&:nth-child(5)": {
-              animationDelay: `0.6s`,
-
-              "&:nth-child(6)": {
-                animationDelay: `1s`,
-
-                "&:nth-child(7)": {
-                  animationDelay: `0.8s`,
-
-                  "&:nth-child(8)": {
-                    animationDelay: `1.2s`,
-
-                    "&:nth-child(9)": {
-                      animationDelay: `1s`,
-
-                      "&:nth-child(10)": {
-                        animationDelay: `1.4s`,
-
-                        "&:nth-child(11)": {
-                          animationDelay: `1.2s`,
-
-                          "&:nth-child(12)": {
-                            animationDelay: `1.6s`,
-
-                            "&:nth-child(13)": {
-                              animationDelay: `1.4s`,
-
-                              "&:nth-child(14)": {
-                                animationDelay: `1.8s`,
-
-                                "&:nth-child(15)": {
-                                  animationDelay: `1.6s`,
-
-                                  "&:nth-child(16)": {
-                                    animationDelay: `2s`,
-                                  },
-                                },
-                              },
-                            },
-                          },
-                        },
-                      },
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-  },
-}
+  // & ${NavActive}:nth-child(odd) {
+  //   text-decoration: none;
+  //   color: #656565;
+  //   opacity: 0;
+  //   animation: ${fadeInRight} ease 0.6s forwards;
+  //   animation-delay: 0.2s;
+  // }
+    &:hover {
+      text-decoration: none;
+      color: MediumBlue;
+      cursor: pointer;
+    }
+      // & ${NavActive}:nth-child(2n) {
+      //   align-self: left;
+      //   width: 100%;
+      //   margin: 0em 1rem 2.4rem 0em;
+      //   height: 0.06em;
+      //   background-color: black;
+      //   transform: scaleX(0);
+      //   transform-origin: left;
+      //   animation: ${animation2}
+      // }
+`
 
 const NavList = styled.ul`
   margin: 0;
@@ -191,6 +124,24 @@ const StyledLogo = styled.img`
 const activeStyle = {
   color: `black`,
 }
+
+// const LinkAnimation = styled(animation1)`
+// text-decoration: none;
+// color: #656565;
+// opacity: 0;
+// animation-delay: ${props => (props.delay)};
+// `
+
+// const LineSpread = styled(animation2)`
+// animation-delay: 0.8s;
+// align-self: left;
+// width: 100%;
+// margin: 0em 1rem 2.4rem 0em;
+// height: 0.06em;
+// background-color: black;
+// transform: scaleX(0);
+// transform-origin: left;
+// `
 
 class Menu extends React.Component {
   constructor() {
@@ -221,46 +172,98 @@ class Menu extends React.Component {
         <div>
           {!this.state.isActive && <Nav />}
           {this.state.isActive && (
-            <div style={NavActive}>
+            <NavActive>
               <NavList>
-                <Link to="/" activeStyle={activeStyle}>
+                <Link
+                  to="/"
+                  activeStyle={activeStyle}
+                  // style={LinkAnimation}
+                >
                   {"Home"}
                 </Link>
-                <div></div>
-                <Link to="/podcast" activeStyle={activeStyle}>
+                <div
+                  // style={LineSpread}
+                ></div>
+                <Link
+                  to="/podcast"
+                  activeStyle={activeStyle}
+                  // delay={"0.4s"}
+                  // style={LinkAnimation}
+                >
                   {"Podcast"}
                 </Link>
-                <div></div>
-                <Link to="/media" activeStyle={activeStyle}>
+                <div
+                  // style={LineSpread}
+                ></div>
+                <Link
+                  to="/media"
+                  activeStyle={activeStyle}
+                  // delay={"0.6s"}
+                  // style={LinkAnimation}
+                >
                   {"Media"}
                 </Link>
-                <div></div>
-                <Link to="/gallery" activeStyle={activeStyle}>
+                <div
+                  // style={LineSpread}
+                ></div>
+                <Link
+                  to="/gallery"
+                  activeStyle={activeStyle}
+                  // delay={"0.8s"}
+                  // style={LinkAnimation}
+                >
                   {"Gallery"}
                 </Link>
-                <div></div>
-                <Link to="/heritage-research" activeStyle={activeStyle}>
+                <div
+                  // style={LineSpread}
+                ></div>
+                <Link
+                  to="/heritage-research"
+                  activeStyle={activeStyle}
+                  // delay={"1s"}
+                  // style={LinkAnimation}
+                >
                   {"Heritage Research"}
                 </Link>
-                <div></div>
-                <Link to="/artists" activeStyle={activeStyle}>
+                <div
+                  // style={LineSpread}
+                ></div>
+                <Link
+                  to="/artists"
+                  activeStyle={activeStyle}
+                  // delay={"1.2s"}
+                  // style={LinkAnimation}
+                >
                   {"Artists"}
                 </Link>
-                <div></div>
-                <Link to="/contact" activeStyle={activeStyle}>
+                <div
+                  // style={LineSpread}
+                ></div>
+                <Link
+                  to="/contact"
+                  activeStyle={activeStyle}
+                  // delay={"1.4s"}
+                  // style={LinkAnimation}
+                >
                   {"Contact"}
                 </Link>
-                <div></div>
+                <div
+                  // style={LineSpread} 
+                ></div>
                 <Link
                   to="/fm-preformance-and-film-archive"
                   activeStyle={activeStyle}
+                  // delay={"1.6s"}
+                  // style={LinkAnimation}
                 >
                   {"Fragments & Monuments"} <br></br>{" "}
                   {"preformance & film archive"}
                 </Link>
-                <div></div>
+                <div
+                  // style={LineSpread}
+                ></div>
               </NavList>
-            </div>
+            </NavActive>
           )}
         </div>
       </div>
