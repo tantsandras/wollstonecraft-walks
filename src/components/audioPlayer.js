@@ -3,7 +3,7 @@ import caroPhenomenalWomanMayaAngelou from "../audio/Caro Phenomenal Woman Maya 
 import styled, { keyframes } from "styled-components"
 
 const Player = styled.section`
-  margin-top: 3rem;
+  margin-top: 8rem;
   margin-bottom: 1rem;
   display: table;
   margin-left: auto;
@@ -210,7 +210,7 @@ class AudioPlayer extends React.Component {
     
         return (
           <>
-            <ul style={{width: `100vw`, marginBottom: `1rem`, display: `inline-block`, position: `absolute`, top: `10px`}}>{list}</ul>
+            <ul style={{width: `100vw`, marginBottom: `1rem`, display: `inline-block`, position: `absolute`, top: `10px`,}}>{list}</ul>
             <Player>
 
             <div style={element}>

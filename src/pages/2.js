@@ -3,6 +3,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
+import ContinueButton from "../components/continueWalk"
+import Step2 from "../components/stepTwo"
+import Menu from "../components/menu"
 
 const element = {
     gridTemplateColumns: `repeat(4, 1fr)`,
@@ -36,6 +39,10 @@ class StepTwoPage extends React.Component {
                 <AudioPlayer />
 
         </div>
+        <Menu />
+        <Step2 />
+        <Link to={"/3"}><ContinueButton /></Link>
+
             </>
         )
     }

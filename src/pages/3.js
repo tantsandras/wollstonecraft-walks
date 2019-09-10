@@ -3,20 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
+import ContinueButton from "../components/continueWalk"
+import Step3 from "../components/stepThree"
+import Menu from "../components/menu"
 
-const element = {
-    gridTemplateColumns: `repeat(4, 1fr)`,
-    gridTemplateRows: `repeat(2, 300px)`,
-    fontFamily: `Helvetica`,
-  }
-
-const hero = {
-    backgroundSize: `cover`,
-    padding: `4rem 2rem`,
-    display: `grid`,
-    alignItems: `center`,
-    gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`,
-}
 
 class StepThreePage extends React.Component {
     constructor() {
@@ -36,6 +26,9 @@ class StepThreePage extends React.Component {
                 <AudioPlayer />
 
         </div>
+        <Menu />
+        <Step3 />
+        <Link to={"/4"}><ContinueButton /></Link>
             </>
         )
     }

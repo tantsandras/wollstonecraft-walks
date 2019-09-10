@@ -3,7 +3,6 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 
 const Quote = styled.div`
-    z-index: -1;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -19,7 +18,6 @@ const Quote = styled.div`
     margin: 0px -20px 50px 0px;
     -webkit-shape-outside: circle();
     shape-outside: circle();
-
 `
 
 const RainbowText = styled.p`
@@ -41,7 +39,7 @@ background-image: linear-gradient(
 `
 
 const Intro = () => (
-  <section style={{fontFamily: `Helvetica`}}>
+  <main style={{fontFamily: `Helvetica`, paddingBottom: `8rem`}}>
     <h3
       style={{
         textAlign: `center`,
@@ -87,7 +85,8 @@ const Intro = () => (
       </p>
       <Quote><RainbowText><i>Mary Wollstonecraft said of herself:</i><br /><p style={{fontSize: `1.6em`, lineHeight: `1em`}}>"I am then going to be the first of a new genus …"</p></RainbowText></Quote>
     </article>
-  </section>
+
+  </main>
 )
 
 export default Intro

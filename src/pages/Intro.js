@@ -4,20 +4,8 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
 import Intro from "../components/intro"
-
-const element = {
-    gridTemplateColumns: `repeat(4, 1fr)`,
-    gridTemplateRows: `repeat(2, 300px)`,
-    fontFamily: `Helvetica`,
-  }
-
-const hero = {
-    backgroundSize: `cover`,
-    padding: `4rem 2rem`,
-    display: `grid`,
-    alignItems: `center`,
-    gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`,
-}
+import ContinueButton from "../components/continueWalk"
+import Menu from "../components/menu"
 
 class IntroPage extends React.Component {
     constructor() {
@@ -37,8 +25,11 @@ class IntroPage extends React.Component {
                 <AudioPlayer />
 
         </div>
-
-        <div><Intro /></div>
+            <Menu />
+        <Intro />
+        <Link to={"/1"} 
+            activeStyle={{color: `white`}}
+            ><ContinueButton /></Link>
             </>
         )
     }
