@@ -7,6 +7,7 @@ import ContinueButton from "../components/continueWalk"
 import Step1 from "../components/stepOne"
 import Menu from "../components/menu"
 import Song from "../components/song"
+import AudioStepOne from "../audio/AudioStepOne.mp3"
 
 class StepOnePage extends React.Component {
   constructor() {
@@ -26,7 +27,7 @@ class StepOnePage extends React.Component {
             justifyContent: `center`,
           }}
         >
-          <AudioPlayer />
+          <AudioPlayer track={AudioStepOne}/>
         </div>
         <Menu />
         <Step1 />

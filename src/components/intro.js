@@ -15,9 +15,7 @@ const Quote = styled.div`
     position: relative;
     float: right;
     clip-path: circle(50%);
-    margin: 0px -20px 50px 0px;
-    -webkit-shape-outside: circle();
-    shape-outside: circle();
+    margin: 0 auto;
 `
 
 const RainbowText = styled.p`
@@ -39,11 +37,20 @@ background-image: linear-gradient(
 `
 
 const Intro = () => (
+  <>
+          <div style={{
+            display: `grid`,
+            justifyContent: `center`,
+          }}
+        >
+  <Quote><RainbowText><i>Mary Wollstonecraft said of herself:</i><br /><p style={{fontSize: `1.6em`, lineHeight: `1em`}}>"I am then going to be the first of a new genus …"</p></RainbowText></Quote>
+  </div>
   <main style={{fontFamily: `Helvetica`, paddingBottom: `8rem`}}>
+
     <h3
       style={{
         textAlign: `center`,
-        paddingTop: `5%`,
+        paddingTop: `-5%`,
         fontFamily: `Yeseva One`,
         fontSize: `1.6rem`,
       }}
@@ -83,10 +90,11 @@ const Intro = () => (
         Godwin and died a few days after giving birth to Mary (Shelley).'
        
       </p>
-      <Quote><RainbowText><i>Mary Wollstonecraft said of herself:</i><br /><p style={{fontSize: `1.6em`, lineHeight: `1em`}}>"I am then going to be the first of a new genus …"</p></RainbowText></Quote>
+     
     </article>
 
   </main>
+  </>
 )
 
 export default Intro

@@ -1,10 +1,9 @@
 import React from "react";
-import caroPhenomenalWomanMayaAngelou from "../audio/Caro Phenomenal Woman Maya Angelou.mp3";
 import styled, { keyframes } from "styled-components"
 
 const Player = styled.section`
-  margin-top: 8rem;
-  margin-bottom: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   display: table;
   margin-left: auto;
   margin-rigth: auto;
@@ -18,6 +17,7 @@ const Player = styled.section`
 const element = {
   textAlign: `center`,
   width: `120px`,
+  height: `100px`,
   display: `table-cell`,
   overflow: `hidden`,
   verticalAlign: `middle`,
@@ -149,6 +149,13 @@ class AudioPlayer extends React.Component {
             duration: e.target.duration
           });
         });
+
+        let track = this.props.track;
+          
+          if (track) {
+            this.player.src = track;
+            this.setState({ player: "stopped", duration: this.player.duration });
+          }
       }
     
       componentWillUnmount() {
@@ -157,17 +164,8 @@ class AudioPlayer extends React.Component {
     
       componentDidUpdate(prevProps, prevState) {
         if (this.state.selectedTrack !== prevState.selectedTrack) {
-          let track;
-          switch (this.state.selectedTrack) {
-            case "Caro Phenomenal Woman Maya Angelou":
-              track = caroPhenomenalWomanMayaAngelou;
-              break;
-            // case "Booting Up":
-            //   track = bootingUp;
-            //   break;
-            default:
-              break;
-          }
+          let track = this.props.track;
+          
           if (track) {
             this.player.src = track;
             this.player.play();
@@ -191,39 +189,30 @@ class AudioPlayer extends React.Component {
       }
     
       render() {
-        const list = [
-          { id: 1, title: "Caro Phenomenal Woman Maya Angelou" },
-          { id: 2, title: "Booting Up" }
-        ].map(item => {
-          return (
-            <li
-              key={item.id}
-              onClick={() => this.setState({ selectedTrack: item.title })}
-            >
-              {item.title}
-            </li>
-          );
-        });
-    
         const currentTime = getTime(this.state.currentTime);
         const duration = getTime(this.state.duration);
     
         return (
           <>
-            <ul style={{width: `100vw`, marginBottom: `1rem`, display: `inline-block`, position: `absolute`, top: `10px`,}}>{list}</ul>
+                                     
+            {this.state.player === "playing" || this.state.player === "paused" ? (
+              <div style={{margin: `0 auto`, transform: `translateY(60px)`}}>
+                {currentTime} / {duration}
+              </div>
+            ) : (
+              ""
+            )}
             <Player>
-
+              
             <div style={element}>
                <DoubleRewind  onClick={() => this.player.currentTime--}/>
                </div>
             <div style={element}>
-
-              {this.state.player === "paused" && (
-                
+            {this.state.player !== "playing" && (
                 <ButtonWrap>
                   <Play label="Play" onClick={() => this.setState({ player: "playing" })} />
                   </ButtonWrap>
-              )}
+            )}
            
               {this.state.player === "playing" && (
 
@@ -235,27 +224,11 @@ class AudioPlayer extends React.Component {
                 <div style={element}>
                <DoubleFastForward onClick={() => this.player.currentTime++}/>
                </div>
-               </Player>
-               <Player>
-               <div style={element}>
-              {this.state.player === "playing" || this.state.player === "paused" ? (
-                <Stop onClick={() => this.setState({ player: "stopped" })} />
-
-              ) : (
-                ""
-              )}
-              </div>
-           
-            {this.state.player === "playing" || this.state.player === "paused" ? (
-              <div style={element}>
-                {currentTime} / {duration}
-              </div>
-            ) : (
-              ""
-            )}
+                     
             <audio ref={ref => (this.player = ref)} />
-            </Player>
-          </>
+               </Player>
+
+            </>
         );
       }
     }

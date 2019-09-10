@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
+import Step5 from "../components/stepFive"
+import Menu from "../components/menu"
 
 const element = {
     gridTemplateColumns: `repeat(4, 1fr)`,
@@ -36,6 +38,8 @@ class StepFivePage extends React.Component {
                 <AudioPlayer />
 
         </div>
+        <Menu />
+        <Step5 />
             </>
         )
     }

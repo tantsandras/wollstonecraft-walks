@@ -2,7 +2,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-const Collaps = styled.button`
+const Collapse = styled.button`
   padding: 0.4rem 2rem 0.4rem 0.2rem;
   margin-bottom: 2rem;
   font-size: 18px;
@@ -37,12 +37,26 @@ const arrow = {
   display: `table-cell`,
   position: `absolute`,
   top: `38%`,
-  right: `10%`,
+  right: `8%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
   padding: `8px`,
   transform: `rotate(-135deg)`,
   WebkitTransform: `rotate(-135deg)`,
+}
+
+const downArrow = {
+  border: `solid black`,
+  borderWidth: `0px 3px 3px 0px`,
+  display: `table-cell`,
+  position: `absolute`,
+  top: `-40px`,
+  right: `50%`,
+  msTransform: `translateY(-50%)`,
+  transform: `translateY(-50%)`,
+  padding: `12px`,
+  transform: `rotate(44deg)`,
+  WebkitTransform: `rotate(44deg)`,
 }
 
 const Lyrics = styled.section`
@@ -93,13 +107,14 @@ class Song extends React.Component {
                  <i>by William Brough and J. Gaspard Maeder</i>
                </p>
                <p style={{fontFamily: `Helvetica`, marginBottom: `2rem`, textAlign: `center`}}>Click to see lyrics and chords</p>
+               <div style={{margin: `0 auto`, position: `relative`}}><i style={downArrow}></i></div>
             </Lyrics>
         )}
 
     {this.state.isActive && (
 
       <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
-              <Collaps onClick={this.handleClick}>Collaps<i style={arrow}></i></Collaps>
+              <Collapse onClick={this.handleClick}>Collapse<i style={arrow}></i></Collapse>
         <aside style={{ fontSize: `0.8rem`, lineHeight: `2` }}>
           <h4 style={{ fontFamily: `Yeseva One` }}>
             Let Us All Speak Our Minds! (1863)

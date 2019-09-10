@@ -6,6 +6,7 @@ import AudioPlayer from "../components/audioPlayer"
 import Intro from "../components/intro"
 import ContinueButton from "../components/continueWalk"
 import Menu from "../components/menu"
+import WhoIsMary from "../audio/WhoIsMary.mp3"
 
 class IntroPage extends React.Component {
     constructor() {
@@ -22,7 +23,7 @@ class IntroPage extends React.Component {
         <div style={{
             display: `grid`,
             justifyContent: `center`}}>
-                <AudioPlayer />
+                <AudioPlayer track={WhoIsMary}/>
 
         </div>
             <Menu />
