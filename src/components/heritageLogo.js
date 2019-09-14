@@ -7,15 +7,15 @@ const HeritageLogo = () => {
     query {
       placeholderImage: file(relativePath: { eq: "image001.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 220) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 230) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
 export default HeritageLogo

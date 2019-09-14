@@ -6,7 +6,7 @@ import AudioPlayer from "../components/audioPlayer"
 import ContinueButton from "../components/continueWalk"
 import Step1 from "../components/stepOne"
 import Menu from "../components/menu"
-import Song from "../components/song"
+
 import AudioStepOne from "../audio/AudioStepOne.mp3"
 
 class StepOnePage extends React.Component {
@@ -31,7 +31,6 @@ class StepOnePage extends React.Component {
         </div>
         <Menu />
         <Step1 />
-        <Song />
         <Link to={"/2"}><ContinueButton /></Link>
       </>
     )

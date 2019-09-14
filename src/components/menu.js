@@ -73,30 +73,31 @@ const NavActive = styled.div`
   background: #fadadd;
   boxshadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: Helvetica;
+  letter-spacing: 1px;
   animation: ${turnVisible} 0.8s ease-in-out;
 
-  // & ${NavActive}:nth-child(odd) {
-  //   text-decoration: none;
-  //   color: #656565;
-  //   opacity: 0;
-  //   animation: ${fadeInRight} ease 0.6s forwards;
-  //   animation-delay: 0.2s;
-  // }
-    &:hover {
-      text-decoration: none;
-      color: MediumBlue;
-      cursor: pointer;
-    }
-      // & ${NavActive}:nth-child(2n) {
-      //   align-self: left;
-      //   width: 100%;
-      //   margin: 0em 1rem 2.4rem 0em;
-      //   height: 0.06em;
-      //   background-color: black;
-      //   transform: scaleX(0);
-      //   transform-origin: left;
-      //   animation: ${animation2}
-      // }
+  & ${NavActive}:nth-child(odd) {
+    text-decoration: none;
+    color: #656565;
+    opacity: 0;
+    animation: ${fadeInRight} ease 0.6s forwards;
+    animation-delay: 0.2s;
+  }
+  & ${NavActive}:hover {
+    text-decoration: none;
+    color: MediumBlue;
+    cursor: pointer;
+  }
+  & ${NavActive}:nth-child(2n) {
+    align-self: left;
+    width: 100%;
+    margin: 0em 1rem 2.4rem 0em;
+    height: 0.06em;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: ${animation2};
+  }
 `
 
 const NavList = styled.ul`
@@ -111,7 +112,6 @@ const NavList = styled.ul`
 `
 
 const StyledLogo = styled.img`
-  animation: ${turnVisible} 0.8s ease-in-out;
   height: 70px;
   width: 120px;
   position: fixed;
@@ -119,6 +119,7 @@ const StyledLogo = styled.img`
   right: 0px;
   top: 15px;
   cursor: pointer;
+  outline: none;
 `
 
 const activeStyle = {
@@ -182,7 +183,7 @@ class Menu extends React.Component {
                   {"Home"}
                 </Link>
                 <div
-                  // style={LineSpread}
+                // style={LineSpread}
                 ></div>
                 <Link
                   to="/podcast"
@@ -193,7 +194,7 @@ class Menu extends React.Component {
                   {"Podcast"}
                 </Link>
                 <div
-                  // style={LineSpread}
+                // style={LineSpread}
                 ></div>
                 <Link
                   to="/media"
@@ -204,7 +205,7 @@ class Menu extends React.Component {
                   {"Media"}
                 </Link>
                 <div
-                  // style={LineSpread}
+                // style={LineSpread}
                 ></div>
                 <Link
                   to="/gallery"
@@ -215,7 +216,7 @@ class Menu extends React.Component {
                   {"Gallery"}
                 </Link>
                 <div
-                  // style={LineSpread}
+                // style={LineSpread}
                 ></div>
                 <Link
                   to="/heritage-research"
@@ -226,7 +227,7 @@ class Menu extends React.Component {
                   {"Heritage Research"}
                 </Link>
                 <div
-                  // style={LineSpread}
+                // style={LineSpread}
                 ></div>
                 <Link
                   to="/artists"
@@ -237,7 +238,7 @@ class Menu extends React.Component {
                   {"Artists"}
                 </Link>
                 <div
-                  // style={LineSpread}
+                // style={LineSpread}
                 ></div>
                 <Link
                   to="/contact"
@@ -248,7 +249,7 @@ class Menu extends React.Component {
                   {"Contact"}
                 </Link>
                 <div
-                  // style={LineSpread} 
+                // style={LineSpread}
                 ></div>
                 <Link
                   to="/fm-preformance-and-film-archive"
@@ -260,7 +261,7 @@ class Menu extends React.Component {
                   {"preformance & film archive"}
                 </Link>
                 <div
-                  // style={LineSpread}
+                // style={LineSpread}
                 ></div>
               </NavList>
             </NavActive>

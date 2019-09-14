@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components"
 
 const Collapse = styled.button`
   padding: 0.4rem 2rem 0.4rem 0.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-size: 18px;
   background: #1451ad;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
@@ -93,7 +93,7 @@ class Song extends React.Component {
         <>
         {!this.state.isActive && (
         <Lyrics onClick={this.handleClick} style={{}}>
-            <h4 style={{ fontFamily: `Yeseva One`, padding: `40px 0px 0px 20px` }}>
+            <h4 style={{ fontFamily: `Yeseva One`, padding: `40px 0px 0px 20px`, letterSpacing: `1px`, }}>
                  Let Us All Speak Our Minds! (1863)
                </h4>
                <p
@@ -102,11 +102,12 @@ class Song extends React.Component {
                    marginBottom: `2rem`,
                    marginLeft: `1.5rem`,
                    fontSize: `0.8rem`,
+                   
                  }}
                >
-                 <i>by William Brough and J. Gaspard Maeder</i>
+                 <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>by William Brough and J. Gaspard Maeder</i>
                </p>
-               <p style={{fontFamily: `Helvetica`, marginBottom: `2rem`, textAlign: `center`}}>Click to see lyrics and chords</p>
+               <p style={{fontFamily: `Helvetica`, marginBottom: `2rem`, textAlign: `center`, }}>Click to see lyrics and chords</p>
                <div style={{margin: `0 auto`, position: `relative`}}><i style={downArrow}></i></div>
             </Lyrics>
         )}
@@ -116,7 +117,7 @@ class Song extends React.Component {
       <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
               <Collapse onClick={this.handleClick}>Collapse<i style={arrow}></i></Collapse>
         <aside style={{ fontSize: `0.8rem`, lineHeight: `2` }}>
-          <h4 style={{ fontFamily: `Yeseva One` }}>
+          <h4 style={{ fontFamily: `Yeseva One`, letterSpacing: `1px`, }}>
             Let Us All Speak Our Minds! (1863)
           </h4>
           <p
@@ -126,7 +127,7 @@ class Song extends React.Component {
               marginLeft: `1rem`,
             }}
           >
-            <i>by William Brough and J. Gaspard Maeder</i>
+            <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>by William Brough and J. Gaspard Maeder</i>
           </p>
           <span>
             A &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; D &emsp;&emsp; &ensp; A

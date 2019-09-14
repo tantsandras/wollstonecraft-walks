@@ -66,16 +66,17 @@ class StepBox extends React.Component {
             <Link
               to={`/${item.num}`}
               style={{
-                color: `#4B4E53`,
+                color: `#28292b`,
                 textDecoration: `none`,
               }}
             >
               <li key={key} style={box}>
                 <h3
                   style={{
-                    fontSize: `1.2rem`,
+                    fontSize: `1rem`,
                     fontFamily: `Yeseva One`,
                     fontWeight: `bold`,
+                    letterSpacing: `1px`,
                   }}
                 >
                   <Numbers num={item.num}>{item.num}</Numbers>

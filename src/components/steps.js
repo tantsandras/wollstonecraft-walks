@@ -9,6 +9,7 @@ const boxList = {
   gridGap: `1rem`,
   columnGap: `4%`,
   margin: `0`,
+  paddingBottom: `10em`
 }
 
 

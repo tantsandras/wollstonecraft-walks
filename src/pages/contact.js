@@ -1,4 +1,3 @@
-
 import React from "react"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
@@ -38,6 +37,7 @@ const OrgList = styled.ul`
   cursor: pointer;
   list-style: none;
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-family: Helvetica;
   animation: ${turnVisible} 0.8s ease-in-out;
   & ${OrgList}:nth-child(odd) {
@@ -141,64 +141,114 @@ const OrgList = styled.ul`
   & ${OrgList}:nth-child(20) {
     animation-delay: 2.6s;
   }
-
 `
 
-
 const ContactPage = () => {
-return (
-    <section style={{fontFamily: `Helvetica`}}>
+  return (
+    <section style={{ fontFamily: `Helvetica` }}>
       <SEO title="Contact" />
       <Menu />
 
-      <h3 style={{textAlign: `center`, paddingTop: `10%`, fontFamily: `Yeseva One`, fontSize: `1.6rem`,}}>Keep in touch!</h3>
-      <article style={{padding: `3% 10% 3% 10%`}}>
-        
-<p>Production hub and arts charity Scary Little Girls hope you have enjoyed this Living
-Literature Event. If you have any comments, rave reviews or suggestions for the future,
-we'd love to hear from you. Please email us at info@scarylittlegirls.co.uk and visit us at
-www.scarylittlegirls.co.uk or message us on Facebook and Twitter Scary @ScaryLittleGs
-FB Scary </p>
+      <h3
+        style={{
+          textAlign: `center`,
+          paddingTop: `10%`,
+          fontFamily: `Yeseva One`,
+          fontSize: `1.6rem`,
+        }}
+      >
+        Keep in touch!
+      </h3>
+      <article style={{ padding: `3% 10% 3% 10%` }}>
+        <p>
+          Production hub and arts charity Scary Little Girls hope you have
+          enjoyed this Living Literature Event. If you have any comments, rave
+          reviews or suggestions for the future, we'd love to hear from you.
+          Please email us at info@scarylittlegirls.co.uk and visit us at
+          www.scarylittlegirls.co.uk or message us on Facebook and Twitter Scary
+          @ScaryLittleGs FB Scary{" "}
+        </p>
 
+        <p>
+          Keep in touch and follow our updates for more volunteer opportunities
+          and exciting Wollstonecraft Walks events! Anna Birch, Fragments &
+          Monuments performance and film director@fragmentsandmonuments.com
+          Twitter Anna Birch @anna_birch1 Instagram Anna Birch annabirch1
+        </p>
+      </article>
 
-<p>Keep in touch and follow our updates for more volunteer opportunities and exciting
-Wollstonecraft Walks events!
-Anna Birch, Fragments and Monuments performance and film
-director@fragmentsandmonuments.com
-Twitter Anna Birch @anna_birch1
-Instagram Anna Birch annabirch1</p></article>
-
-  <article style={{padding: `3% 10% 3% 10%`}}>
-      <h4 style={{fontFamily: `Yeseva One`, fontSize: `1.6rem`, paddingBottom: `1rem`, letterSpacing: `2%`}}>Community Links</h4>
-      <OrgList>
-      <li><a href="https://www.wollstonecraftpresents.com/">Wollstonecraft Presents</a></li>
-      <div></div>
-      <li><a href="https://www.maryonthegreen.org/">Mary on the Green</a></li>
-      <div></div>
-      <li><a href="https://www.wollstonecraftsociety.org/">The Wollstonecraft Society</a></li>
-      <div></div>
-      <li><a href="https://twitter.com/mw_fellowship">Wollstonecraft Fellowship</a></li>
-      <div></div>
-      <li><a href="http://www.marywollstonecraftphilosophicalsociety.org/">Wollstonecraft philosophical Society</a></li>
-      <div></div>
-      <li><a href="http://gal-dem.com/">Gal-dem</a></li>
-      <div></div>
-      <li><a href="http://www.sistersuncut.org/">Sisters Uncut</a></li>
-      <div></div>
-      <li><a href="https://www.unfinishedhistories.com/">Unfinished Histories</a></li>
-      <div></div>
-      <li><a href="https://www.rampsonthemoon.co.uk/">Ramps on the Moon</a></li>
-      <div></div>
-      <li><a href="http://wollstonecraftlive.com/fm/">Fragments and Monuments</a></li>
-      <div></div>
-      <li><a href="https://scarylittlegirls.co.uk/">Scary Little Girls</a></li>
-      <div></div>
-      </OrgList>
+      <article style={{ padding: `3% 10% 3% 10%` }}>
+        <h4
+          style={{
+            fontFamily: `Yeseva One`,
+            fontSize: `1.6rem`,
+            paddingBottom: `1rem`,
+            letterSpacing: `2%`,
+          }}
+        >
+          Community Links
+        </h4>
+        <OrgList>
+          <li>
+            <a href="https://www.wollstonecraftpresents.com/">
+              Wollstonecraft Presents
+            </a>
+          </li>
+          <div></div>
+          <li>
+            <a href="https://www.maryonthegreen.org/">Mary on the Green</a>
+          </li>
+          <div></div>
+          <li>
+            <a href="https://www.wollstonecraftsociety.org/">
+              The Wollstonecraft Society
+            </a>
+          </li>
+          <div></div>
+          <li>
+            <a href="https://twitter.com/mw_fellowship">
+              Wollstonecraft Fellowship
+            </a>
+          </li>
+          <div></div>
+          <li>
+            <a href="http://www.marywollstonecraftphilosophicalsociety.org/">
+              Wollstonecraft philosophical Society
+            </a>
+          </li>
+          <div></div>
+          <li>
+            <a href="http://gal-dem.com/">Gal-dem</a>
+          </li>
+          <div></div>
+          <li>
+            <a href="http://www.sistersuncut.org/">Sisters Uncut</a>
+          </li>
+          <div></div>
+          <li>
+            <a href="https://www.unfinishedhistories.com/">
+              Unfinished Histories
+            </a>
+          </li>
+          <div></div>
+          <li>
+            <a href="https://www.rampsonthemoon.co.uk/">Ramps on the Moon</a>
+          </li>
+          <div></div>
+          <li>
+            <a href="http://wollstonecraftlive.com/fm/">
+              Fragments & Monuments
+            </a>
+          </li>
+          <div></div>
+          <li>
+            <a href="https://scarylittlegirls.co.uk/">Scary Little Girls</a>
+          </li>
+          <div></div>
+        </OrgList>
       </article>
     </section>
   )
 }
-  
-  export default ContactPage
 
-  
+export default ContactPage

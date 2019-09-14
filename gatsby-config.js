@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Welcome to the Wollstonecraft Walk`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Wollstonecraft Walks`,
+    description: `A walkguide.`,
+    author: `Sandra Grahl`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

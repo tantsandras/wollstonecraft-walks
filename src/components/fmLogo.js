@@ -7,15 +7,15 @@ const FmLogo = () => {
     query {
       placeholderImage: file(relativePath: { eq: "fm_logo.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 220) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 180) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
 export default FmLogo
