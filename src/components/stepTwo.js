@@ -6,9 +6,9 @@ const StepCircle = styled.div`
   position: relative;
   border-radius: 50%;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
   background: rgba(246, 22, 210, 0.23);
   mix-blend-mode: multiply;
   text-align: center;
@@ -22,7 +22,7 @@ const StepNum = styled.p`
   z-index: 2;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 3rem;
   color: #ff008a;
   text-align: center;
 `
@@ -52,10 +52,10 @@ class Step2 extends React.Component {
       <main>
         <div
           style={{
-            maxWidth: `200px`,
-            maxHeight: `200px`,
+            maxWidth: `185px`,
+            maxHeight: `185px`,
             margin: `0 auto`,
-            transform: `translate(120px, -40px)`,
+            transform: `translate(105px, -40px)`,
             zIndex: `-1`,
           }}
         >
@@ -67,10 +67,11 @@ class Step2 extends React.Component {
         <h3
           style={{
             fontFamily: `Yeseva One`,
-            fontSize: `1.6rem`,
+            fontSize: `2.2rem`,
             textAlign: `center`,
-            paddingTop: `1rem`,
+            marginTop: `-2.8rem`,
             letterSpacing: `1px`,
+            marginBottom: `4rem`
           }}
         >
           Lizzy&#39;s on the Green
@@ -128,7 +129,8 @@ class Step2 extends React.Component {
               moments to enjoy our next readings!
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `Yeseva One`, paddingTop: `1rem`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `Yeseva One`, letterSpacing: `1px`,  paddingTop: `1rem`, }}>Rebecca Boey reading</h4>
+          <h3 style={{ fontFamily: `Yeseva One`, letterSpacing: `1px` }}>
             On Mary Wollstonecraft (1925)
           </h3>
           <h4 style={{ fontFamily: `Yeseva One`, letterSpacing: `1px` }}>

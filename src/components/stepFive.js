@@ -6,9 +6,9 @@ const StepCircle = styled.div`
   position: relative;
   border-radius: 50%;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
   background: rgba(0, 49, 173, 0.24);
   mix-blend-mode: multiply;
   text-align: center;
@@ -22,7 +22,7 @@ const StepNum = styled.p`
   z-index: 2;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 3rem;
   color: #0031ad;
   text-align: center;
 `
@@ -58,7 +58,9 @@ class Step5 extends React.Component {
             fontFamily: `Yeseva One`,
             fontSize: `1.6rem`,
             textAlign: `center`,
-            paddingTop: `1rem`,
+            marginTop: `-2.8rem`,
+            letterSpacing: `1px`,
+            marginBottom: `4rem`
           }}
         >
           The Lady Mildmay Inn
@@ -155,7 +157,7 @@ class Step5 extends React.Component {
             and edit all Percy&#39;s remaining output, helping his legacy to
             endure and the Romantic movement&#39;s ideals and principles to be
             able to continue influencing us to this day. As Joanna Russ points
-            out in ‘How to Suppress Women&#39;s Writing’;
+            out in ‘How to Suppress Women&#39;s Writing’;</p>
             <blockquote
               style={{
                 margin: `1rem`,
@@ -172,7 +174,9 @@ class Step5 extends React.Component {
                 if no woman was ever that socially sacred creature, &quot;a
                 great writer,&quot; why do we think we can succeed now?&#39;
               </i>
+
             </blockquote>{" "}
+            <p>
             Thanks to the work of second wave radical feminists in the 70&#39;s
             and 80&#39;s, Mary&#39;s influence in history, politics and
             literature has been rediscovered and we can once again celebrate her
@@ -217,4 +221,4 @@ class Step5 extends React.Component {
   }
 }
 
-export default Step5
+export default { Step5, StepCircle, StepNum }

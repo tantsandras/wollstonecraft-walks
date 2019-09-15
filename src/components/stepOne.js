@@ -7,9 +7,9 @@ const StepCircle = styled.div`
   position: relative;
   border-radius: 50%;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
   background: rgba(20, 81, 173, 0.33);
   mix-blend-mode: multiply;
   text-align: center;
@@ -23,7 +23,7 @@ const StepNum = styled.p`
   z-index: 2;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 3rem;
   color: #383790;
   text-align: center;
 `
@@ -58,10 +58,11 @@ class Step1 extends React.Component {
         <h3
           style={{
             fontFamily: `Yeseva One`,
-            fontSize: `1.6rem`,
+            fontSize: `2.2rem`,
             textAlign: `center`,
-            paddingTop: `1rem`,
+            marginTop: `-2.8rem`,
             letterSpacing: `1px`,
+            marginBottom: `4rem`
           }}
         >
           The Mildmay Club

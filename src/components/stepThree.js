@@ -7,9 +7,9 @@ const StepCircle = styled.div`
   position: relative;
   border-radius: 50%;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
   background: rgba(93, 0, 255, 0.3);
   mix-blend-mode: multiply;
   text-align: center;
@@ -23,7 +23,7 @@ const StepNum = styled.p`
   z-index: 2;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 3rem;
   color: #5d00ff;
   text-align: center;
 `
@@ -59,7 +59,9 @@ class Step3 extends React.Component {
             fontFamily: `Yeseva One`,
             fontSize: `1.6rem`,
             textAlign: `center`,
-            paddingTop: `1rem`,
+            marginTop: `-2.8rem`,
+            letterSpacing: `1px`,
+            marginBottom: `4rem`
           }}
         >
           Mary on the Green memorial site
