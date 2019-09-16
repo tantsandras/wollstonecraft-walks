@@ -2,22 +2,22 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 
 
-const Continue = styled.button`
-  padding: 0.6rem 2rem 0.6rem 1rem;
-  font-size: 18px;
-  background: #1451ad;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+const Back = styled.button`
+  padding: 0.6rem 1rem 0.6rem 2rem;
+  font-size: 22px;
+  background: white;
   font-family: Helvetica;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffd0d0;
+  color: grey;
   text-transform: uppercase;
-  float: right;
-  position: relative;
-  min-width: 218px;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  min-width: 80px;
     overflow: hidden;
     cursor: pointer;
-    border: none;
+    border: 2px solid white;
     border-radius: 2px;
     transition: background-color 0.2s ease;
     -webkit-transition: background-color 2s ease-out;
@@ -25,35 +25,34 @@ const Continue = styled.button`
     -o-transition: background-color 2s ease-out;    
 
     &:hover {
-        background-color: #ff0000;
         box-shadow: 0 0 0 2px rgb(255, 0, 0, 0.60);
-        border: 2px solid white;
+        border: 2px solid #ffd0d0;
     }
 `
 
 const arrow = {
-  border: `solid #FFD0D0`,
+  border: `solid grey`,
   borderWidth: `0px 1.8px 1.8px 0px`,
   display: `table-cell`,
   position: `absolute`,
   top: `30%`,
-  right: `6%`,
+  left: `6%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
-  padding: `8px`,
-  transform: `rotate(-45deg)`,
-  WebkitTransform: `rotate(-45deg)`,
+  padding: `9px`,
+  transform: `rotate(135deg)`,
+  WebkitTransform: `rotate(135deg)`,
 }
 
-const ContinueButton = () => (
+const BackButton = () => (
   <span
     style={{ height: `50px`, padding: `100px 50px 100px 50px`, float: `right` }}
   >
-    <Continue>
-      Continue walk<i style={arrow}></i>
+    <Back>
+      <i style={arrow}></i>Back
 
-    </Continue>
+    </Back>
   </span>
 )
 
-export default ContinueButton
+export default BackButton

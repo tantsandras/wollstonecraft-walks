@@ -221,4 +221,4 @@ class Step5 extends React.Component {
   }
 }
 
-export default { Step5, StepCircle, StepNum }
+export default Step5

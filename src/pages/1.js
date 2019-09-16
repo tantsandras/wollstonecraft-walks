@@ -6,6 +6,7 @@ import AudioPlayer from "../components/audioPlayer"
 import ContinueButton from "../components/continueWalk"
 import Step1 from "../components/stepOne"
 import Menu from "../components/menu"
+import BackButton from "../components/backButton"
 
 import AudioStepOne from "../audio/AudioStepOne.mp3"
 
@@ -21,6 +22,7 @@ class StepOnePage extends React.Component {
   render() {
     return (
       <>
+
         <div
           style={{
             display: `grid`,
@@ -29,6 +31,7 @@ class StepOnePage extends React.Component {
         >
           <AudioPlayer track={AudioStepOne}/>
         </div>
+        <Link to={"/Intro"}><BackButton /></Link>
         <Menu />
         <Step1 />
         <Link to={"/2"}><ContinueButton /></Link>

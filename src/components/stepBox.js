@@ -40,7 +40,7 @@ const numberColor = num => {
     : "#FF0000"
 }
 
-const Numbers = styled.h3`
+const Numbers = styled.h4`
   font-family: "Bungee Shade";
   padding-bottom: 1rem;
   font-size: 1.8rem;
@@ -64,6 +64,7 @@ class StepBox extends React.Component {
         {stepList.map((item, key) => {
           return (
             <Link
+              key={key}
               to={`/${item.num}`}
               style={{
                 color: `#28292b`,
