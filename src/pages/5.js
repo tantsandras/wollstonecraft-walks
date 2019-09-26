@@ -6,6 +6,8 @@ import AudioPlayer from "../components/audioPlayer"
 import Step5 from "../components/stepFive"
 import Menu from "../components/menu"
 import CanvasQuotes from "../components/canvasQuotes"
+import BackButton from "../components/backButton"
+import AudioStepFive from "../audio/WALK GUIDE CHAPTER 5.mp3"
 
 const element = {
   gridTemplateColumns: `repeat(4, 1fr)`,
@@ -39,9 +41,9 @@ class StepFivePage extends React.Component {
             justifyContent: `center`,
           }}
         >
-          <AudioPlayer />
+          <AudioPlayer track={AudioStepFive} />
         </div>
-
+        <Link to={"/4"}><BackButton /></Link>
         <Menu />
 
         <Step5 />

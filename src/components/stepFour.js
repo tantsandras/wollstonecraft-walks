@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import CarolineImage from "../components/caroline"
 
 const StepCircle = styled.div`
   z-index: -1;
@@ -46,10 +47,25 @@ const Arrow = styled.i`
   webkit-transform: rotate(-45deg);
 `
 
+const ImgageWrap = styled.div`
+  max-width: 800px;
+  height: auto;
+  margin: 8rem 0px 0px 0px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+`
+
+const element = {
+  gridTemplateColumns: `repeat(2, 1fr)`,
+  gridTemplateRows: `repeat(2, 300px)`,
+}
+
 class Step4 extends React.Component {
   render() {
     return (
-      <main>
+      <main style={{ position: `relative` }}>
         <StepCircle style={{ marginTop: `-2rem` }}>
           <StepNum>4</StepNum>
         </StepCircle>
@@ -60,7 +76,7 @@ class Step4 extends React.Component {
             textAlign: `center`,
             marginTop: `-2.8rem`,
             letterSpacing: `1px`,
-            marginBottom: `4rem`
+            marginBottom: `4rem`,
           }}
         >
           Newington Green Primary School
@@ -135,113 +151,132 @@ class Step4 extends React.Component {
             the language; but I am inclined to conclude that they will seldom
             rouse the passions, or amend the heart.
           </p>
-          <h4 style={{ fontFamily: `Yeseva One`, marginTop: `2rem` }}>
-            Phenomenal Woman (1995) by Maya Angelou
-          </h4>
-          <p style={{ fontSize: `0.8rem` }}>
-            <p>
-              Pretty women wonder where my secret lies.
-              <br /> I’m not cute or built to suit a fashion model’s size
-              <br /> But when I start to tell them,
-              <br /> They think I’m telling lies.
-              <br /> I say,
-              <br />
-              It’s in the reach of my arms,
-              <br /> The span of my hips,
-              <br /> The stride of my step,
-              <br /> The curl of my lips. I’m a woman
-              <br />
-              <p
-                style={{
-                  fontSize: `1.2rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Phenomenally.
-              </p>
-            </p>
 
-            <p>
-              Phenomenal woman, That’s me.
-              <br /> I walk into a room <br />
-              Just as cool as you please,
-              <br /> And to a man, <br />
-              The fellows stand or
-              <br /> Fall down on their knees. <br />
-              Then they swarm around me,
-              <br />{" "}
-              <i
-                style={{
-                  fontSize: `1.2rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                A hive of honey bees.
-              </i>
-              <br /> I say,
-              <br />
-              It’s the fire in my eyes,
-              <br /> And the flash of my teeth,
-              <br /> The swing in my waist, <br />
-              And the joy in my feet.
-              <br /> I’m a woman <br />
-              Phenomenally.
-            </p>
-            <p>
-              Phenomenal woman, <br />
-              That’s me. <br />
-              Men themselves have wondered
-              <br /> What they see in me.
-              <br />
-              They try so much
-              <br /> But they can’t touch
-              <br /> My inner mystery. <br />
-              When I try to show them, <br />
-              They say they still can’t see. <br />I say, <br />
-              It’s in the arch of my back, <br />
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  color: `#383790`,
-                  letterSpacing: `2px`,
-                }}
-              >
-                The sun of my smile,
-              </i>{" "}
-              <br />
-              The ride of my breasts, <br />
-              The grace of my style. <br />
-              I’m a woman
-              <br /> Phenomenally.
-            </p>
-            <p>
-              Phenomenal woman, <br />
-              That’s me. <br />
-              Now you understand <br />
-              Just why my head’s not bowed. <br />I don’t shout or jump about
-              <br /> Or have to talk real loud. <br />
-              When you see me passing, <br />
-              It ought to make you proud. <br />I say, <br />
-              It’s in the click of my heels,
-              <br /> The bend of my hair, the palm of my hand, <br />
-              The need for my care. <br />
-              ’Cause I’m a woman
-              <br />
-              Phenomenally. <br />
-              <p
-                style={{
-                  fontSize: `1.4rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Phenomenal woman, <br />
-                That’s me.
+          <section
+            style={{
+              backgroundSize: `cover`,
+              display: `grid`,
+              alignItems: `center`,
+              gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
+              marginBottom: `4rem`,
+            }}
+          >
+            <div style={element}>
+              <h4 style={{ fontFamily: `Yeseva One`, marginTop: `2rem` }}>
+                Phenomenal Woman (1995) by Maya Angelou
+              </h4>
+              <p style={{ fontSize: `0.8rem` }}>
+                <p>
+                  Pretty women wonder where my secret lies.
+                  <br /> I’m not cute or built to suit a fashion model’s size
+                  <br /> But when I start to tell them,
+                  <br /> They think I’m telling lies.
+                  <br /> I say,
+                  <br />
+                  It’s in the reach of my arms,
+                  <br /> The span of my hips,
+                  <br /> The stride of my step,
+                  <br /> The curl of my lips. I’m a woman
+                  <br />
+                  <p
+                    style={{
+                      fontSize: `1.2rem`,
+                      letterSpacing: `2px`,
+                      lineHeight: `2`,
+                    }}
+                  >
+                    Phenomenally.
+                  </p>
+                </p>
+
+                <p>
+                  Phenomenal woman, That’s me.
+                  <br /> I walk into a room <br />
+                  Just as cool as you please,
+                  <br /> And to a man, <br />
+                  The fellows stand or
+                  <br /> Fall down on their knees. <br />
+                  Then they swarm around me,
+                  <br />{" "}
+                  <i
+                    style={{
+                      fontSize: `1.2rem`,
+                      letterSpacing: `2px`,
+                      lineHeight: `2`,
+                    }}
+                  >
+                    A hive of honey bees.
+                  </i>
+                  <br /> I say,
+                  <br />
+                  It’s the fire in my eyes,
+                  <br /> And the flash of my teeth,
+                  <br /> The swing in my waist, <br />
+                  And the joy in my feet.
+                  <br /> I’m a woman <br />
+                  Phenomenally.
+                </p>
+                <p>
+                  Phenomenal woman, <br />
+                  That’s me. <br />
+                  Men themselves have wondered
+                  <br /> What they see in me.
+                  <br />
+                  They try so much
+                  <br /> But they can’t touch
+                  <br /> My inner mystery. <br />
+                  When I try to show them, <br />
+                  They say they still can’t see. <br />I say, <br />
+                  It’s in the arch of my back, <br />
+                  <i
+                    style={{
+                      fontSize: `1rem`,
+                      color: `#383790`,
+                      letterSpacing: `2px`,
+                    }}
+                  >
+                    The sun of my smile,
+                  </i>{" "}
+                  <br />
+                  The ride of my breasts, <br />
+                  The grace of my style. <br />
+                  I’m a woman
+                  <br /> Phenomenally.
+                </p>
+                <p>
+                  Phenomenal woman, <br />
+                  That’s me. <br />
+                  Now you understand <br />
+                  Just why my head’s not bowed. <br />I don’t shout or jump
+                  about
+                  <br /> Or have to talk real loud. <br />
+                  When you see me passing, <br />
+                  It ought to make you proud. <br />I say, <br />
+                  It’s in the click of my heels,
+                  <br /> The bend of my hair, the palm of my hand, <br />
+                  The need for my care. <br />
+                  ’Cause I’m a woman
+                  <br />
+                  Phenomenally. <br />
+                  <p
+                    style={{
+                      fontSize: `1.4rem`,
+                      letterSpacing: `2px`,
+                      lineHeight: `2`,
+                    }}
+                  >
+                    Phenomenal woman, <br />
+                    That’s me.
+                  </p>
+                </p>
               </p>
-            </p>
-          </p>
+            </div>
+            <div style={element}>
+              <ImgageWrap>
+                <CarolineImage alt="Caroline Parker" />
+              </ImgageWrap>
+            </div>
+          </section>
         </article>
       </main>
     )

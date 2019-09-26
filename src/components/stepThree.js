@@ -106,8 +106,7 @@ class Step3 extends React.Component {
             supported by Stoke Newington Literary Festival. At this point in the
             walk the audience listened to Wollstonecraft’s words as interpreted
             by playwright by Kaethe Fine in the specially composed soundscape by
-            composer Alastair Gavin (you can find this special recording under{" "}
-            <Link to={"/media"}>Media</Link> on this app) and were given
+            composer Alastair Gavin and were given
             postcards encouraging them to give generously to the Mary On the
             Green memorial fund.
           </p>

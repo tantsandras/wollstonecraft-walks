@@ -62,7 +62,7 @@ class Step1 extends React.Component {
             textAlign: `center`,
             marginTop: `-2.8rem`,
             letterSpacing: `1px`,
-            marginBottom: `4rem`
+            marginBottom: `4rem`,
           }}
         >
           The Mildmay Club

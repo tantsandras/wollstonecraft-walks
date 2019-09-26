@@ -20,9 +20,9 @@ const Continue = styled.button`
     border: none;
     border-radius: 2px;
     transition: background-color 0.2s ease;
-    -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;    
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;    
 
     &:hover {
         background-color: #ff0000;

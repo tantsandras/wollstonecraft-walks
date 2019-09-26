@@ -12,7 +12,7 @@ const element = {
 
 const Header = ({ siteTitle }) => (
   <header>
-  <section className="hero"
+  <section
     style={{
       backgroundSize: `cover`,
       padding: `4rem 2rem`,
@@ -20,18 +20,12 @@ const Header = ({ siteTitle }) => (
       alignItems: `center`,
       gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`,
       gap: `3%`,
-      marginBottom: `4rem`
+      marginBottom: `6rem`
   }}>
-  <div style={element}>
-      <div style={{ maxWidth: `500px`, maxHeight: `500px`}}>
-      <Image />
-      </div>
-    </div>
-    <h1 style={element}>
-        <Link
-          to="/"
+    <div style={element}>
+    <h2 style={{fontFamily: `Yeseva One`, color: `#333333`, letterSpacing: `2px`, textShadow: `0.6px 0.6px #000000`, transform: `translateY(-90px)`}}>Welcome to</h2>
+        <h1
           style={{
-            fontSize: `98%`,
             color: `#333333`,
             textDecoration: `none`,
             textAlign: `center`,
@@ -39,16 +33,26 @@ const Header = ({ siteTitle }) => (
             zIndex: `2`,
             textShadow: `1px 1px #000000`,
             letterSpacing: `2px`,
+            transform: `translateY(-90px)`,
+            lineHeight: `1.5`,
+            fontSize: `2.2rem`,
+            marginTop: `3.8rem`,
+            marginBottom: `-2.4rem`
           }}
-        >
-        <h2 style={{fontFamily: `Yeseva One`, letterSpacing: `2px`, textShadow: `1px 1px #000000`,}}>Welcome to</h2>
+        > 
           {siteTitle}
-        </Link>
-      </h1>
+        </h1>
+      </div>
+      <div style={element}>
+      <div style={{ maxWidth: `500px`, maxHeight: `500px`}}>
+      <Image />
+      </div>
+    </div>
     <article style={element}>
-<p style={{letterSpacing: `2px`, lineHeight: `2`}}>“I do not wish women to have power over men but over <b>themselves</b>” <br />
+<p style={{letterSpacing: `2px`, lineHeight: `2`, transform: `translateY(70px)`,}}>“I do not wish women to have power over men but over <b>themselves</b>” <br />
 <i>A Vindication of the Rights of Woman (1792)</i></p>
     </article>
+
     </section>
 
   </header>

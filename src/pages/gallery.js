@@ -1,15 +1,17 @@
 import React from "react"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
-import styled, { keyframes } from "styled-components"
+import Gallery from "../components/gallery"
+import Circles from "../components/circles"
 
 const GalleryPage = () => {
-    
-    return (
-    <section style={{fontFamily: `Helvetica`}}>
-      <SEO title="Gallery" />
-      <Menu />
-      </section>
+  return (
+      <main style={{ fontFamily: `Helvetica` }}>
+        <SEO title="Gallery" />
+        <Menu />
+        <Circles />
+        <Gallery />
+      </main>
   )
 }
-  export default GalleryPage
+export default GalleryPage

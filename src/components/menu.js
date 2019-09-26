@@ -34,13 +34,6 @@ const animation1 = css`
   animation: ${fadeInRight} ease 0.6s forwards;
 `
 
-const Nav = styled.div`
-  width: 10%;
-  height: 100vh;
-  position: fixed;
-  right: 0%;
-`
-
 const turnVisible = keyframes`
 	from {
 		opacity: 0;
@@ -85,7 +78,7 @@ const NavActive = styled.div`
   }
   & ${NavActive}:hover {
     text-decoration: none;
-    color: MediumBlue;
+    color: Crimson;
     cursor: pointer;
   }
   & ${NavActive}:nth-child(2n) {
@@ -171,7 +164,6 @@ class Menu extends React.Component {
           <StyledLogo src={logo} alt={"Logo"} onClick={this.handleClick} />
         )}
         <div>
-          {!this.state.isActive && <Nav />}
           {this.state.isActive && (
             <NavActive>
               <NavList>
@@ -258,7 +250,7 @@ class Menu extends React.Component {
                   // style={LinkAnimation}
                 >
                   {"Fragments & Monuments"} <br></br>{" "}
-                  {"preformance & film archive"}
+                  {"preformance and film archive"}
                 </Link>
                 <div
                 // style={LineSpread}

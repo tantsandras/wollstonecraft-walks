@@ -2,6 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
+import AandR from "../components/annaRebecca"
 
 const fadeInRight = keyframes`
     from {
@@ -147,35 +148,8 @@ const ContactPage = () => {
   return (
     <section style={{ fontFamily: `Helvetica` }}>
       <SEO title="Contact" />
-      <Menu />
-
-      <h3
-        style={{
-          textAlign: `center`,
-          paddingTop: `10%`,
-          fontFamily: `Yeseva One`,
-          fontSize: `1.6rem`,
-        }}
-      >
-        Keep in touch!
-      </h3>
-      <article style={{ padding: `3% 10% 3% 10%` }}>
-        <p>
-          Production hub and arts charity Scary Little Girls hope you have
-          enjoyed this Living Literature Event. If you have any comments, rave
-          reviews or suggestions for the future, we'd love to hear from you.
-          Please email us at info@scarylittlegirls.co.uk and visit us at
-          www.scarylittlegirls.co.uk or message us on Facebook and Twitter Scary
-          @ScaryLittleGs FB Scary{" "}
-        </p>
-
-        <p>
-          Keep in touch and follow our updates for more volunteer opportunities
-          and exciting Wollstonecraft Walks events! Anna Birch, Fragments &
-          Monuments performance and film director@fragmentsandmonuments.com
-          Twitter Anna Birch @anna_birch1 Instagram Anna Birch annabirch1
-        </p>
-      </article>
+      <Menu style={{backgroundColor: `white`}} />
+      <AandR />
 
       <article style={{ padding: `3% 10% 3% 10%` }}>
         <h4
@@ -190,59 +164,59 @@ const ContactPage = () => {
         </h4>
         <OrgList>
           <li>
-            <a href="https://www.wollstonecraftpresents.com/">
+            <a href="https://www.wollstonecraftpresents.com/" target="_blank" rel="noopener noreferrer">
               Wollstonecraft Presents
             </a>
           </li>
           <div></div>
           <li>
-            <a href="https://www.maryonthegreen.org/">Mary on the Green</a>
+            <a href="https://www.maryonthegreen.org/" target="_blank" rel="noopener noreferrer">Mary on the Green</a>
           </li>
           <div></div>
           <li>
-            <a href="https://www.wollstonecraftsociety.org/">
+            <a href="https://www.wollstonecraftsociety.org/" target="_blank" rel="noopener noreferrer">
               The Wollstonecraft Society
             </a>
           </li>
           <div></div>
           <li>
-            <a href="https://twitter.com/mw_fellowship">
+            <a href="https://twitter.com/mw_fellowship" target="_blank" rel="noopener noreferrer">
               Wollstonecraft Fellowship
             </a>
           </li>
           <div></div>
           <li>
-            <a href="http://www.marywollstonecraftphilosophicalsociety.org/">
+            <a href="http://www.marywollstonecraftphilosophicalsociety.org/" target="_blank" rel="noopener noreferrer">
               Wollstonecraft philosophical Society
             </a>
           </li>
           <div></div>
           <li>
-            <a href="http://gal-dem.com/">Gal-dem</a>
+            <a href="http://gal-dem.com/" target="_blank" rel="noopener noreferrer">Gal-dem</a>
           </li>
           <div></div>
           <li>
-            <a href="http://www.sistersuncut.org/">Sisters Uncut</a>
+            <a href="http://www.sistersuncut.org/" target="_blank" rel="noopener noreferrer">Sisters Uncut</a>
           </li>
           <div></div>
           <li>
-            <a href="https://www.unfinishedhistories.com/">
+            <a href="https://www.unfinishedhistories.com/" target="_blank" rel="noopener noreferrer">
               Unfinished Histories
             </a>
           </li>
           <div></div>
           <li>
-            <a href="https://www.rampsonthemoon.co.uk/">Ramps on the Moon</a>
+            <a href="https://www.rampsonthemoon.co.uk/" target="_blank" rel="noopener noreferrer">Ramps on the Moon</a>
           </li>
           <div></div>
           <li>
-            <a href="http://wollstonecraftlive.com/fm/">
+            <a href="http://wollstonecraftlive.com/fm/" target="_blank" rel="noopener noreferrer">
               Fragments & Monuments
             </a>
           </li>
           <div></div>
           <li>
-            <a href="https://scarylittlegirls.co.uk/">Scary Little Girls</a>
+            <a href="https://scarylittlegirls.co.uk/" target="_blank" rel="noopener noreferrer">Scary Little Girls</a>
           </li>
           <div></div>
         </OrgList>

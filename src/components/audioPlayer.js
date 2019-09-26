@@ -1,5 +1,51 @@
 import React from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
+
+const Spinner = () => (
+  <StyledSpinner viewBox="0 0 50 50">
+    <circle
+      className="path"
+      cx="25"
+      cy="25"
+      r="20"
+      fill="none"
+      strokeWidth="0.8"
+    />
+  </StyledSpinner>
+)
+
+const StyledSpinner = styled.svg`
+  animation: rotate 12s linear infinite;
+  margin: 0 0 0 0;
+  width: 100px;
+  height: 100px;
+
+  & .path {
+    stroke: white;
+    stroke-linecap: round;
+    animation: dash 4s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
+`
 
 const Player = styled.section`
   margin-top: 6rem;
@@ -17,7 +63,7 @@ const Player = styled.section`
 const element = {
   textAlign: `center`,
   width: `120px`,
-  height: `100px`,
+  height: `110px`,
   display: `table-cell`,
   overflow: `hidden`,
   verticalAlign: `middle`,
@@ -36,6 +82,14 @@ const ButtonWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.2s ease;
+  -webkit-transition: transform 2s ease-out;
+  -moz-transition: transform 2s ease-out;
+  -o-transition: transform 2s ease-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `
 
 const Play = styled.button`
@@ -61,7 +115,7 @@ const Play = styled.button`
 
 const Pause = styled(Play)`
   border-style: double;
-  border-width: 0px 0px 0px 30px;
+  border-width: 0px 0px 0px 25px;
 `
 const Stop = styled.button`
   margin: 0 auto;
@@ -135,6 +189,7 @@ class AudioPlayer extends React.Component {
     player: "stopped",
     currentTime: null,
     duration: null,
+    isHovering: false,
   }
 
   componentDidMount() {
@@ -149,7 +204,8 @@ class AudioPlayer extends React.Component {
 
     if (track) {
       this.player.src = track
-      this.setState({ player: "stopped", duration: this.player.duration })
+      this.player.src = track
+      this.setState({ player: "stopped", duration: this.player.duration})
     }
   }
 
@@ -164,7 +220,7 @@ class AudioPlayer extends React.Component {
       if (track) {
         this.player.src = track
         this.player.play()
-        this.setState({ player: "playing", duration: this.player.duration })
+        this.setState({ player: "playing", duration: this.player.duration, selectedTrack: track })
       }
     }
     if (this.state.player !== prevState.player) {
@@ -174,14 +230,16 @@ class AudioPlayer extends React.Component {
         this.player.pause()
         this.player.currentTime = 0
         this.setState({ selectedTrack: null })
+      } else if (this.state.currentTime > 1 && this.state.currentTime === this.state.duration) {
+        this.setState({ selectedTrack: null, player: "stopped" })
       } else if (
         this.state.player === "playing" &&
         prevState.player === "paused"
       ) {
         this.player.play()
       }
+      }
     }
-  }
 
   render() {
     const currentTime = getTime(this.state.currentTime)
@@ -198,29 +256,32 @@ class AudioPlayer extends React.Component {
         )}
         <Player>
           <div style={element}>
-            <DoubleRewind onClick={() => this.player.currentTime--} />
+            <DoubleRewind onClick={() => this.player.currentTime--} 
+            />
           </div>
           <div style={element}>
-            {this.state.player !== "playing" && (
-              <ButtonWrap>
+           {this.state.player !== "playing" || this.player.currentTime > 1 && this.player.currentTime === this.player.duration ? (
+
+              <ButtonWrap >
                 <Play
                   label="Play"
-                  onClick={() => this.setState({ player: "playing" })}
+                  onClick={() => this.setState({ player: "playing", selectedTrack: this.props.track })}
                 />
               </ButtonWrap>
-            )}
-
-            {this.state.player === "playing" && (
-              <ButtonWrap>
-                <Pause
-                  label="Pause"
-                  onClick={() => this.setState({ player: "paused" })}
-                />
-              </ButtonWrap>
+                ) : ( 
+                              <ButtonWrap >
+                              <Spinner />
+                              <Pause
+                                label="Pause"
+                                onClick={() => this.setState({ player: "paused" })}
+                              />
+                            </ButtonWrap>
+                      
             )}
           </div>
           <div style={element}>
-            <DoubleFastForward onClick={() => this.player.currentTime++} />
+            <DoubleFastForward onClick={() => this.player.currentTime++} 
+            />
           </div>
 
           <audio ref={ref => (this.player = ref)} />

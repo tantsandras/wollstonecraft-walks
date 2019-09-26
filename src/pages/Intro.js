@@ -6,7 +6,8 @@ import AudioPlayer from "../components/audioPlayer"
 import Intro from "../components/intro"
 import ContinueButton from "../components/continueWalk"
 import Menu from "../components/menu"
-import WhoIsMary from "../audio/WhoIsMary.mp3"
+import WhoIsMary from "../audio/WHO IS MW.mp3"
+import BackButton from "../components/backButton"
 
 class IntroPage extends React.Component {
     constructor() {
@@ -26,6 +27,7 @@ class IntroPage extends React.Component {
                 <AudioPlayer track={WhoIsMary}/>
 
         </div>
+        <Link to={"/"}><BackButton /></Link>
             <Menu />
         <Intro />
         <Link to={"/1"} 

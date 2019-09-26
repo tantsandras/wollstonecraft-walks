@@ -46,6 +46,33 @@ const Arrow = styled.i`
   webkit-transform: rotate(-45deg);
 `
 
+const Quote = styled.i`
+letter-spacing: 2px;
+line-height: 2;
+position: relative;
+padding: 1em 4em;
+min-height: 5em;
+&:before {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '“';
+  top: -1.6rem;
+  left: 1.4rem;
+}
+
+&:after {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '”';
+  bottom: 0rem;
+  right: 2.4rem;
+}
+`
+
 class Step2 extends React.Component {
   render() {
     return (
@@ -55,7 +82,7 @@ class Step2 extends React.Component {
             maxWidth: `185px`,
             maxHeight: `185px`,
             margin: `0 auto`,
-            transform: `translate(105px, -40px)`,
+            transform: `translate(90px, -80px)`,
             zIndex: `-1`,
           }}
         >
@@ -173,11 +200,11 @@ class Step2 extends React.Component {
             going to reform education. She was going to come down to dinner the
             day after her child was born - that experiment was her last. She
             died in child-birth. She whose sense of her own existence was so
-            intense, who had cried out even in her misery,{" "}
-            <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>
-              “I cannot bear to think of being no more — of losing myself — nay,
-              it appears to me impossible that I should cease to exist”,
-            </i>{" "}
+            intense, who had cried out even in her misery,{" "}<br /><br />
+            <Quote>
+              I cannot bear to think of being no more — of losing myself — nay,
+              it appears to me impossible that I should cease to exist,
+            </Quote>{" "}<br /><br />
             died at the age of thirty-six. But she has her revenge. Many
             millions have died and been forgotten in the hundred and thirty
             years that have passed since she was buried; and yet as we read her

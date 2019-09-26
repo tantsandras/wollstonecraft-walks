@@ -7,8 +7,7 @@ import ContinueButton from "../components/continueWalk"
 import Step1 from "../components/stepOne"
 import Menu from "../components/menu"
 import BackButton from "../components/backButton"
-
-import AudioStepOne from "../audio/AudioStepOne.mp3"
+import AudioStepOne from "../audio/WW WALKS CHAPTER 1.mp3"
 
 class StepOnePage extends React.Component {
   constructor() {

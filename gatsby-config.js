@@ -5,7 +5,23 @@ module.exports = {
     author: `Sandra Grahl`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`,   
+      {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          plugins: [
+          `gatsby-remark-embed-youtube`,
+          `gatsby-remark-embed-video`,
+          `gatsby-remark-responsive-iframe`,  
+          ]
+        }
+      },
+      {
+        resolve: 'gatsby-background-image-es5',
+        options: {
+          specialChars: '/:',
+        },
+      },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

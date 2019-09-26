@@ -46,6 +46,34 @@ const Arrow = styled.i`
   webkit-transform: rotate(-45deg);
 `
 
+
+const Quote = styled.i`
+letter-spacing: 2px;
+line-height: 2;
+position: relative;
+padding: 1em 4em;
+min-height: 5em;
+&:before {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '“';
+  top: -1.6rem;
+  left: 1.4rem;
+}
+
+&:after {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '”';
+  bottom: 0rem;
+  right: 2.4rem;
+}
+`
+
 class Step5 extends React.Component {
   render() {
     return (
@@ -166,14 +194,14 @@ class Step5 extends React.Component {
                 lineHeight: `1.6`,
               }}
             >
-              <i>
-                &#39;When the memory of one&#39;s predecessors is buried, the
+              <Quote>
+                When the memory of one&#39;s predecessors is buried, the
                 assumption persists that there were none and each generation of
                 women believes itself to be faced with the burden of doing
                 everything for the first time. And if no one ever did it before,
                 if no woman was ever that socially sacred creature, &quot;a
-                great writer,&quot; why do we think we can succeed now?&#39;
-              </i>
+                great writer,&quot; why do we think we can succeed now?
+              </Quote>
 
             </blockquote>{" "}
             <p>

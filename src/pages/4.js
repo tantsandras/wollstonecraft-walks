@@ -6,6 +6,8 @@ import AudioPlayer from "../components/audioPlayer"
 import ContinueButton from "../components/continueWalk"
 import Step4 from "../components/stepFour"
 import Menu from "../components/menu"
+import BackButton from "../components/backButton"
+import AudioStepFour from "../audio/WW WALKS CHAPTER 4.mp3"
 
 const element = {
     gridTemplateColumns: `repeat(4, 1fr)`,
@@ -36,9 +38,10 @@ class StepFourPage extends React.Component {
         <div style={{
             display: `grid`,
             justifyContent: `center`}}>
-                <AudioPlayer />
+                <AudioPlayer track={AudioStepFour} />
 
         </div>
+        <Link to={"/3"}><BackButton /></Link>
         <Menu />
         <Step4 />
         <Link to={"/5"}><ContinueButton /></Link>

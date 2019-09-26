@@ -6,7 +6,7 @@ const Collapse = styled.button`
   margin-bottom: 4rem;
   font-size: 18px;
   background: #1451ad;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
   font-family: Helvetica;
   text-align: center;
   letter-spacing: 0.04em;
@@ -25,7 +25,7 @@ const Collapse = styled.button`
 
   &:hover {
     background-color: #ff0000;
-    box-shadow: 0 0 0 4px rgb(255, 0, 0, 0.6);
+    box-shadow: 0 0 0 2px rgb(255, 0, 0, 0.6);
     border: 2px solid white;
   }
 `
@@ -50,7 +50,7 @@ const downArrow = {
   display: `table-cell`,
   position: `absolute`,
   top: `-40px`,
-  right: `50%`,
+  right: `47%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
   padding: `12px`,
@@ -107,7 +107,7 @@ class Song extends React.Component {
             <p
               style={{
                 fontFamily: `Helvetica`,
-                marginBottom: `2rem`,
+                marginBottom: `4rem`,
                 marginLeft: `1.5rem`,
                 fontSize: `0.8rem`,
               }}

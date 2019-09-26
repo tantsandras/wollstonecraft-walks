@@ -69,6 +69,10 @@ const Intro = () => (
       </h3>
 
       <article style={{ padding: `5% 10% 3% 10%` }}>
+      <p style={{ letterSpacing: `2px`, lineHeight: `2` }}>
+          By Di Sherlock for her role as Mary Wollstonecraft in Di’s Midsummer
+          Night Party, 2000, Stoke Newington Midsummer Festival
+        </p>
 
         <p style={{ lineHeight: `1.6` }}>
           '18th century Feminist writer and mother of Mary Shelley, author of
@@ -98,11 +102,6 @@ const Intro = () => (
           philosopher William Godwin and died a few days after giving birth to
           Mary (Shelley).'
         </p>
-        <p style={{ letterSpacing: `2px`, lineHeight: `2` }}>
-          By Di Sherlock for her role as Mary Wollstonecraft in Di’s Midsummer
-          Night Party, 2000, Stoke Newington Midsummer Festival
-        </p>
-
       </article>
     </main>
   </>
