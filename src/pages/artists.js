@@ -2,6 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
+import Artists from "../components/artists"
 
 
 const ArtistsPage = () => {
@@ -9,6 +10,17 @@ const ArtistsPage = () => {
     <section style={{fontFamily: `Helvetica`}}>
       <SEO title="Artists" />
       <Menu />
+      <h1
+          style={{
+            fontFamily: `Yeseva One`,
+            fontSize: `2.2rem`,
+            textAlign: `center`,
+            marginTop: `8rem`,
+            letterSpacing: `1px`,
+            marginBottom: `2rem`,
+          }}
+        >Our wonderful collaborators</h1>
+      <Artists />
       </section>
   )
 }

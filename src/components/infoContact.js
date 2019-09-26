@@ -73,7 +73,9 @@ class ContactBox extends React.Component {
                   Rebecca Mordan 
                   </h3>
                   <h4 style={{fontFamily: `Helvetica`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `0.8rem`}}>www.scarylittlegirls.co.uk</h4>
-                  
+                  <p>After graduating from Bristol Old Vic and working in film, theatre and television, Rebecca created her own company, Scary Little Girls, to try and ‘level the playing field’, populating stories with fascinating, diverse female characters.
+
+Rebecca has been intimately involved with every aspect of SLG, writing, directing, producing and performing. She is a grassroots campaigner against male violence and frequent guest expert on BBC Radio and Sky News.</p>
                     <p>Production hub and arts charity Scary Little Girls hope you have
           enjoyed this Living Literature Event. If you have any comments, rave
           reviews or suggestions for the future, we'd love to hear from you.
