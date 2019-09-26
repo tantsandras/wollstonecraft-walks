@@ -7,13 +7,13 @@ import Contact from "../components/infoContact"
 const Title = styled.div`
   background-color: rgba(255,255,255, 0.8);
   color: black;
-  font-size: 11vw;
+  font-size: 10vw;
   font-family: Helvetica;
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0 auto;
   padding: 0rem;
-  width: 56%;
+  width: 54%;
   text-align: center;
   position: absolute;
   top: 2%;
@@ -30,7 +30,7 @@ const contactList = {
   padding: `4rem 2rem 1rem 2rem`,
   columnGap: `4%`,
   margin: `0 auto`,
-  gridTemplateRows: `repeat(1, 600px)`,
+  gridTemplateRows: `repeat(1, auto)`,
 }
 
 const BackgroundSection = ({ className }) => (

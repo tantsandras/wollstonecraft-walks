@@ -4,6 +4,7 @@ import Instagram from "../images/icons/Instagram.png"
 import Twitter from "../images/icons/Twitter.png"
 import Email from "../images/icons/Email.png"
 import Facebook from "../images/icons/Facebook.png"
+import Anna from "../components/anna.js"
 
 const Box = styled.li`
   padding: 2rem;
@@ -35,26 +36,29 @@ class ContactBox extends React.Component {
       return (
         <>
                 <Box>
-                  <h3
+
+        <div style={{maxWidth: `400px`, marginRight: `0`, marginLeft: `50%`, marginTop: `-8%`}}><Anna /></div>
+        <h3
                     style={{
                       fontSize: `2rem`,
                       fontFamily: `Yeseva One`,
                       fontWeight: `bold`,
                       letterSpacing: `1px`,
+                      marginTop: `1rem`
                     }}
                   >
         Anna Birch 
         </h3>
-        <h4 style={{fontFamily: `Helvetica`, letterSpacing: `2px`, lineHeight: `2`,}}>Fragments & Monuments performance and film
+        <h4 style={{fontFamily: `Helvetica`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `0.8rem`}}>Fragments & Monuments performance and film
             <br />
              director @ fragmentsandmonuments.com</h4>
+             <p>Anna  combines her professional expertise as a theatre and film director with her scholarly research and activism. Moving beyond the theatre building, she has created a ‘living monuments’ dramaturgical method to both search out and reveal hidden and often neglected feminist biographies and histories. She researched her method through site-specific performance and films about the life of early feminist Mary Wollstonecraft (1759-1797) to show how this use of multimedia provides an essential link to the performativity of particular feminist achievements through history.</p>
         <p>
           Keep in touch and follow our updates for more volunteer opportunities
           and exciting Wollstonecraft Walks events! 
         </p>
           <Social><a href="https://twitter.com/anna_birch1" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /></a><p style={{marginLeft: `80px`}}>@anna_birch1</p></Social>
           <Social><a href="https://www.instagram.com/annabirch1/" target="_blank" rel="noopener noreferrer"><Icon src={Instagram} /></a><p style={{marginLeft: `80px`}}>@annabirch1</p></Social>
-
                   
                 </Box>
                 <Box>
@@ -68,7 +72,7 @@ class ContactBox extends React.Component {
                   > 
                   Rebecca Mordan 
                   </h3>
-                  <h4 style={{fontFamily: `Helvetica`, letterSpacing: `2px`, lineHeight: `2`,}}>www.scarylittlegirls.co.uk</h4>
+                  <h4 style={{fontFamily: `Helvetica`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `0.8rem`}}>www.scarylittlegirls.co.uk</h4>
                   
                     <p>Production hub and arts charity Scary Little Girls hope you have
           enjoyed this Living Literature Event. If you have any comments, rave

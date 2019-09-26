@@ -143,12 +143,33 @@ const OrgList = styled.ul`
     animation-delay: 2.6s;
   }
 `
+const MenuContrast = styled.div`
+height: 30px;
+width: 30px;
+position: absolute;
+z-index: 1;
+right: 20px;
+top: 32px;
+cursor: pointer;
+& > * {
+  height: 2px;
+  width: 30px;
+  display: block;
+  margin-bottom: 4px;
+  background-color: white;
 
+}
+`
 const ContactPage = () => {
   return (
     <section style={{ fontFamily: `Helvetica` }}>
       <SEO title="Contact" />
-      <Menu style={{backgroundColor: `white`}} />
+      <MenuContrast>
+      <span></span>
+      <span></span>
+      <span></span>
+      </MenuContrast>
+      <Menu />
       <AandR />
 
       <article style={{ padding: `3% 10% 3% 10%` }}>
