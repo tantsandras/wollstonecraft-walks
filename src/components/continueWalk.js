@@ -33,11 +33,11 @@ const Continue = styled.button`
 
 const arrow = {
   border: `solid #FFD0D0`,
-  borderWidth: `0px 1.8px 1.8px 0px`,
+  borderWidth: `0px 1.6px 1.6px 0px`,
   display: `table-cell`,
   position: `absolute`,
-  top: `30%`,
-  right: `6%`,
+  top: `30.5%`,
+  right: `8%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
   padding: `8px`,

@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components"
 
 
 const Back = styled.button`
-  padding: 0.6rem 1rem 0.6rem 2rem;
+  padding: 0.5rem 1rem 0.4rem 2rem;
   font-size: 18px;
   background: white;
   font-family: Helvetica;
@@ -13,7 +13,7 @@ const Back = styled.button`
   text-transform: uppercase;
   position: absolute;
   left: 20px;
-  top: 17px;
+  top: 21px;
   min-width: 80px;
     overflow: hidden;
     cursor: pointer;
@@ -35,11 +35,11 @@ const arrow = {
   borderWidth: `0px 1.6px 1.6px 0px`,
   display: `table-cell`,
   position: `absolute`,
-  top: `28%`,
-  left: `10%`,
+  top: `30%`,
+  left: `12%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
-  padding: `9px`,
+  padding: `7.5px`,
   transform: `rotate(135deg)`,
   WebkitTransform: `rotate(135deg)`,
 }

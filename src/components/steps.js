@@ -7,7 +7,7 @@ const boxList = {
   display: `grid`,
   gridTemplateColumns: `repeat(auto-fit, minmax(340px, 1fr))`,
   gridGap: `1rem`,
-  columnGap: `4%`,
+  columnGap: `10%`,
   margin: `0`,
   paddingBottom: `10em`
 }

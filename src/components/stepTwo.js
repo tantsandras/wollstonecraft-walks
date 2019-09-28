@@ -28,7 +28,7 @@ const StepNum = styled.p`
 `
 const Direction = styled.li`
   position: relative;
-  padding-left: 2.4rem;
+  padding-left: 2rem;
   padding-bottom: 1.4rem;
 `
 const Arrow = styled.i`
@@ -37,11 +37,11 @@ const Arrow = styled.i`
   border-width: 0px 2px 2px 0px;
   display: table-cell;
   position: absolute;
-  top: 0rem;
+  top: 0.32rem;
   left: 0%;
   ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding: 0.6rem;
+  padding: 0.25rem;
   transform: rotate(-45deg);
   webkit-transform: rotate(-45deg);
 `

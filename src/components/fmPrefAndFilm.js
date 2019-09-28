@@ -8,8 +8,8 @@ const element = {
 }
 
 const ProjectHeading = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 340px;
+  height: 340px;
   border-radius: 50%;
   border-left: 6px double MediumBlue;
   -moz-border-radius: 50%;
@@ -18,9 +18,12 @@ const ProjectHeading = styled.div`
   vertical-align: middle;
   font-size: 1rem;
   position: relative;
-  float: left;
   clip-path: circle(50%);
-  margin: 0 auto;
+  -webkit-clip-path: circle(50%);
+  float: left;
+  -webkit-shape-outside: circle(20em);
+  shape-outside: circle(20em);
+  margin: 5% 28% 10% 1%;
 `
 
 const VideoList = styled.li`
@@ -28,6 +31,7 @@ const VideoList = styled.li`
   color: grey;
   text-decoration: none;
   max-width: 427px;
+  list-style: none;
 `
 
 const Overlay = styled.div`
@@ -54,8 +58,8 @@ const Hover = styled.div`
 `
 
 const Video = styled.iframe`
-  width: 427px;
-  height: 240px;
+  min-width: 213.5px;
+  min-height: 120px;
   padding: 0;
   margin: 0 auto;
   transition: 0.5s ease;
@@ -71,159 +75,194 @@ const MainHeading = styled.h1`
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: 4rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
 `
-
 
 class FmPrefAndFilm extends React.Component {
   render() {
     return (
       <main>
-        <div style={{display: `grid`, justifyContent: `center`}}><MainHeading>Fragments & Monuments Preformance and Film Archive</MainHeading></div>
-        <article
-          style={{
-            backgroundSize: `cover`,
-            padding: `4rem 2rem`,
-            fontFamily: `Helvetica`,
-            backgroundSize: `cover`,
-            display: `grid`,
-            alignItems: `center`,
-            gridTemplateColumns: `repeat(auto-fit, minmax(427px, 1fr))`,
-            gap: `3%`,
-            marginBottom: `6rem`,
-          }}
-        >
-          <div style={element}>
-          <ProjectHeading>
-            <h2
+        <MainHeading>
+          Fragments & Monuments Preformance and Film Archive
+        </MainHeading>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+          <span
+            style={{ width: `100%`, margin: `0 auto`, display: `inline-block` }}
+          >
+            <ProjectHeading>
+              <h2
+                style={{
+                  fontFamily: `Yeseva One`,
+                  fontSize: `1.2rem`,
+                  textAlign: `center`,
+                  letterSpacing: `1px`,
+                  paddingTop: `150px`,
+                  marginBottom: `200px`,
+                }}
+              >
+                Wollstonecraft Live! <br />
+                <h3
+                  style={{
+                    fontFamily: `Yeseva One`,
+                    fontSize: `1rem`,
+                    textAlign: `center`,
+                    letterSpacing: `1px`,
+                    marginTop: `1rem`,
+                  }}
+                >
+                  by Kaethe Fine 2005
+                </h3>
+              </h2>
+            </ProjectHeading>
+            <p
               style={{
-                fontFamily: `Yeseva One`,
-                fontSize: `1.4rem`,
-                textAlign: `center`,
-                letterSpacing: `1px`,
-                marginTop: `120px`,
+                fontSize: `0.8rem`,
+                marginTop: `10rem`,
+                paddingTop: `2rem`,
+                width: `66%`,
+                marginLeft: `1.4rem`,
               }}
             >
-              Wollstonecraft Live! <br />
-              <h3
-                style={{
-                fontFamily: `Yeseva One`,
-                fontSize: `1rem`,
-                textAlign: `center`,
-                letterSpacing: `1px`,
-                marginTop: `1rem`,
-                            }}
-              >by Kaethe Fine 2005</h3>
-            </h2>
-            </ProjectHeading>
-          </div>
-          
-          <p style={element}>
-          <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >Script Written </i>by Kaethe Fine<br />
-          <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}>Directed</i> by Anna Birch and<br /> 
-               <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}>Produced</i> by Fragments &amp; Monuments<br /> 
               <i
                 style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,}}>
-              Composer</i> Alastair Gavin <br />
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                Script{" "}
+              </i>
+              - Kaethe Fine
+              <br />
               <i
                 style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,}}>Movement</i> Sarah Rubidge <br />
-            <i
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                Director{" "}
+              </i>
+              - Anna Birch
+              <br />
+              <i
                 style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,}}>Voice</i> Sheila Landahl<br />             
-           </p>
-          <p style={element}>
-          A documentary of the site specific performance of this multimedia play on Newington Green and in the Unitarian Chapel, London N1.
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                Composer{" "}
+              </i>
+              - Alastair Gavin <br />
+              <i
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                Movement{" "}
+              </i>
+              - Sarah Rubidge <br />
+              <i
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                Voice{" "}
+              </i>
+              - Sheila Landahl
+              <br />
+            </p>
+          </span>
+          <p style={{ marginTop: `5.4rem` }}>
+            A documentary of the site specific performance of this multimedia
+            play on Newington Green and in the Unitarian Chapel, London N1.
           </p>
-              <VideoList style={element}>
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    paddingTop: `2rem`,
-                    letterSpacing: `1px`,
-                  }}
+
+          <section
+            style={{
+              backgroundSize: `cover`,
+              padding: `4rem 2rem`,
+              fontFamily: `Helvetica`,
+              backgroundSize: `cover`,
+              display: `grid`,
+              alignItems: `center`,
+              gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`,
+              gap: `3%`,
+              marginBottom: `6rem`,
+            }}
+          >
+            <VideoList style={element}>
+              <h2
+                style={{
+                  fontFamily: `Yeseva One`,
+                  paddingTop: `2rem`,
+                  letterSpacing: `1px`,
+                }}
+              >
+                Part 1
+              </h2>
+              <Overlay>
+                <Video
+                  title="Wollstonecraft Live video, Part 1"
+                  src="https://www.youtube.com/embed/vSFDuNrA_lA"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
                 >
-                  Part 1
-                </h2>
-                <Overlay>
-                  <Video
-                    title="Wollstonecraft Live video, Part 1"
-                    src="https://www.youtube.com/embed/vSFDuNrA_lA"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  >
-                    <Hover></Hover>
-                  </Video>
-                </Overlay>
-              </VideoList>
-              <VideoList style={element}>
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    paddingTop: `2rem`,
-                    letterSpacing: `1px`,
-                  }}
+                  <Hover></Hover>
+                </Video>
+              </Overlay>
+            </VideoList>
+            <VideoList style={element}>
+              <h2
+                style={{
+                  fontFamily: `Yeseva One`,
+                  paddingTop: `2rem`,
+                  letterSpacing: `1px`,
+                }}
+              >
+                Part 2
+              </h2>
+              <Overlay>
+                <Video
+                  title="Wollstonecraft Live video, Part 2"
+                  src="https://www.youtube.com/embed/i5Uxlj9eDNI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
                 >
-                  Part 2
-                </h2>
-                <Overlay>
-                  <Video
-                    title="Wollstonecraft Live video, Part 2"
-                    src="https://www.youtube.com/embed/i5Uxlj9eDNI"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  >
-                    <Hover></Hover>
-                  </Video>
-                </Overlay>
-              </VideoList>
-              <VideoList style={element}>
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    paddingTop: `2rem`,
-                    letterSpacing: `1px`,
-                  }}
+                  <Hover></Hover>
+                </Video>
+              </Overlay>
+            </VideoList>
+            <VideoList style={element}>
+              <h2
+                style={{
+                  fontFamily: `Yeseva One`,
+                  paddingTop: `2rem`,
+                  letterSpacing: `1px`,
+                }}
+              >
+                Part 3
+              </h2>
+              <Overlay>
+                <Video
+                  title="Wollstonecraft Live video, Part 3"
+                  src="https://www.youtube.com/embed/PLOLhxc5wqE"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
                 >
-                  Part 3
-                </h2>
-                <Overlay>
-                  <Video
-                    title="Wollstonecraft Live video, Part 3"
-                    src="https://www.youtube.com/embed/PLOLhxc5wqE"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  >
-                    <Hover></Hover>
-                  </Video>
-                </Overlay>
-              </VideoList>
+                  <Hover></Hover>
+                </Video>
+              </Overlay>
+            </VideoList>
+          </section>
         </article>
         *VINDICATION (10 mins) by Kaethe Fine (2005) new B&amp;W version AB
         (2018) to send plus copy to describe film *The Wollstonecraft Live
