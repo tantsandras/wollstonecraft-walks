@@ -12,7 +12,7 @@ module.exports = {
           plugins: [
           `gatsby-remark-embed-youtube`,
           `gatsby-remark-embed-video`,
-          `gatsby-remark-responsive-iframe`,  
+          `gatsby-remark-responsive-iframe`,
           ]
         }
       },

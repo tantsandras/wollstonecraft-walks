@@ -1,11 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-const element = {
-  gridTemplateColumns: `repeat(3, 1fr)`,
-  gridTemplateRows: `repeat(3, 400px)`,
-  fontFamily: `Helvetica`,
-}
 
 const ProjectHeading = styled.div`
   width: 340px;
@@ -27,22 +22,32 @@ const ProjectHeading = styled.div`
 `
 
 const VideoList = styled.li`
-  border: none;
-  color: grey;
-  text-decoration: none;
-  max-width: 427px;
-  list-style: none;
+padding: 2rem;
+background: rgba(255, 255, 255, 0.98);
+border: 2px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+list-style: none;
 `
 
 const Overlay = styled.div`
   position: relative;
-  max-width: 427px;
-  max-height: 240px;
-  padding: 0;
-  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 56.25%;
   &:hover {
     opacity: 0.6;
   }
+`
+
+const Videos = styled.ul`
+display: grid;
+grid-template-columns: repeat(1, minmax(300px, 2fr));
+grid-gap: 1rem;
+padding: 6rem 2rem 4rem 2rem;
+column-gap: 4%;
+margin: 0 auto;
+grid-template-rows: repeat(3, auto);
+justify-content: center;
+font-family: Helvetica;
 `
 
 const Hover = styled.div`
@@ -58,15 +63,13 @@ const Hover = styled.div`
 `
 
 const Video = styled.iframe`
-  min-width: 213.5px;
-  min-height: 120px;
-  padding: 0;
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
   transition: 0.5s ease;
-
-  &:hover {
-    transform: scale(1.2);
-  }
 `
 
 const MainHeading = styled.h1`
@@ -183,20 +186,8 @@ class FmPrefAndFilm extends React.Component {
             play on Newington Green and in the Unitarian Chapel, London N1.
           </p>
 
-          <section
-            style={{
-              backgroundSize: `cover`,
-              padding: `4rem 2rem`,
-              fontFamily: `Helvetica`,
-              backgroundSize: `cover`,
-              display: `grid`,
-              alignItems: `center`,
-              gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`,
-              gap: `3%`,
-              marginBottom: `6rem`,
-            }}
-          >
-            <VideoList style={element}>
+          <Videos>
+            <VideoList>
               <h2
                 style={{
                   fontFamily: `Yeseva One`,
@@ -212,13 +203,14 @@ class FmPrefAndFilm extends React.Component {
                   src="https://www.youtube.com/embed/vSFDuNrA_lA"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{maxWidth: `640px`, maxHeight: `385px`}}
                   allowfullscreen
                 >
                   <Hover></Hover>
                 </Video>
               </Overlay>
             </VideoList>
-            <VideoList style={element}>
+            <VideoList className="gatsby-iframe-wrap">
               <h2
                 style={{
                   fontFamily: `Yeseva One`,
@@ -234,13 +226,14 @@ class FmPrefAndFilm extends React.Component {
                   src="https://www.youtube.com/embed/i5Uxlj9eDNI"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{maxWidth: `640px`, maxHeight: `385px`}}
                   allowfullscreen
                 >
                   <Hover></Hover>
                 </Video>
               </Overlay>
             </VideoList>
-            <VideoList style={element}>
+            <VideoList className="gatsby-iframe-wrap">
               <h2
                 style={{
                   fontFamily: `Yeseva One`,
@@ -256,13 +249,14 @@ class FmPrefAndFilm extends React.Component {
                   src="https://www.youtube.com/embed/PLOLhxc5wqE"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{maxWidth: `640px`, maxHeight: `385px`}}
                   allowfullscreen
                 >
                   <Hover></Hover>
                 </Video>
               </Overlay>
             </VideoList>
-          </section>
+          </Videos>
         </article>
         *VINDICATION (10 mins) by Kaethe Fine (2005) new B&amp;W version AB
         (2018) to send plus copy to describe film *The Wollstonecraft Live
