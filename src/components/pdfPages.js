@@ -6,7 +6,6 @@ import styled, { keyframes } from "styled-components"
 const pageGrid = {
   display: `grid`,
   gridTemplateColumns: `repeat(auto-fit, minmax(240px, 2fr))`,
-  gridGap: `1rem`,
   padding: `4rem 2rem 4rem 2rem`,
   columnGap: `0%`,
   margin: `0 auto`,
@@ -30,11 +29,10 @@ class Pages extends React.Component {
       <StaticQuery
         query={graphql`
           {
-            images: allFile(
-              filter: { relativeDirectory: { eq: "pdf" } }
-            ) {
+            images: allFile(filter: { relativeDirectory: { eq: "pdf" } }) {
               edges {
                 node {
+                  name
                   childImageSharp {
                     fluid(maxWidth: 800) {
                       ...GatsbyImageSharpFluid
@@ -45,29 +43,50 @@ class Pages extends React.Component {
             }
           }
         `}
-        render={(data) => {
-          console.log(data, this.props);
-          const image = data.images.edges[this.props.currentPage].node.childImageSharp.fluid;
-          const image2 = data.images.edges[this.props.currentPage + 1].node.childImageSharp.fluid;
+        render={data => {
+          const image =
+            data.images.edges[this.props.currentPage].node.childImageSharp.fluid
+          const image2 =
+            data.images.edges[this.props.currentPage + 1].node.childImageSharp
+              .fluid
           return (
-          <>
-                <div style={pageGrid}>
+            <>
+              <h2
+                style={{
+                  fontFamily: `Yeseva One`,
+                  fontSize: `1.2rem`,
+                  textAlign: `center`,
+                  letterSpacing: `1px`,
+                  paddingTop: `150px`,
+                  lineHeight: `2`,
+                }}
+              >
+                The Wollstonecraft Live Experience!
+                <br />
+                <i
+                  style={{
+                    fontFamily: `Yeseva One`,
+                    fontSize: `1rem`,
+                    textAlign: `center`,
+                    letterSpacing: `1px`,
+                    marginTop: `1rem`,
+                  }}
+                >
+                  Limited edition art book PDF
+                </i>
+              </h2>
+
+              <div style={pageGrid}>
                 <Slide>
-                <Img
-                    key={image.src}
-                    fluid={image}
-                  />
-                  </Slide>
-                  <Slide>
-                <Img
-                    key={image2.src}
-                    fluid={image2}
-                  />
-                  </Slide>
-                  </div>
-            
-          </>
-        )}}
+                  <Img key={image.src} fluid={image} />
+                </Slide>
+                <Slide>
+                  <Img key={image2.src} fluid={image2} />
+                </Slide>
+              </div>
+            </>
+          )
+        }}
       />
     )
   }

@@ -101,10 +101,11 @@ class FmPrefAndFilm extends React.Component {
                   letterSpacing: `1px`,
                   paddingTop: `150px`,
                   marginBottom: `200px`,
+                  lineHeight: `2`,
                 }}
               >
-                Wollstonecraft Live! <br />
-                <h3
+                Wollstonecraft Live!<br />
+                <i
                   style={{
                     fontFamily: `Yeseva One`,
                     fontSize: `1rem`,
@@ -114,8 +115,9 @@ class FmPrefAndFilm extends React.Component {
                   }}
                 >
                   by Kaethe Fine 2005
-                </h3>
-              </h2>
+                </i>
+                </h2>
+
             </ProjectHeading>
             <p
               style={{
@@ -201,10 +203,10 @@ class FmPrefAndFilm extends React.Component {
                 <Video
                   title="Wollstonecraft Live video, Part 1"
                   src="https://www.youtube.com/embed/vSFDuNrA_lA"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{maxWidth: `640px`, maxHeight: `385px`}}
-                  allowfullscreen
+                  allowFullScreen
                 >
                   <Hover></Hover>
                 </Video>
@@ -224,10 +226,10 @@ class FmPrefAndFilm extends React.Component {
                 <Video
                   title="Wollstonecraft Live video, Part 2"
                   src="https://www.youtube.com/embed/i5Uxlj9eDNI"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{maxWidth: `640px`, maxHeight: `385px`}}
-                  allowfullscreen
+                  allowFullScreen
                 >
                   <Hover></Hover>
                 </Video>
@@ -247,10 +249,10 @@ class FmPrefAndFilm extends React.Component {
                 <Video
                   title="Wollstonecraft Live video, Part 3"
                   src="https://www.youtube.com/embed/PLOLhxc5wqE"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{maxWidth: `640px`, maxHeight: `385px`}}
-                  allowfullscreen
+                  allowFullScreen
                 >
                   <Hover></Hover>
                 </Video>
@@ -265,11 +267,11 @@ class FmPrefAndFilm extends React.Component {
           width="510"
           height="382.5"
           src="https://www.youtube.com/embed/nDSlEmgryyA"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
-        *The Wollstonecraft Live Experience! Limited edition art book PDF * The
+        ** The
         Wollstonecraft Live Experience! flyers and posters etc including New
         York and Di’s Midsummer Night Party PDF’s *MARCH film by collaboration
         with Glasgow Women’s Library and Royal Conservatoire of Scotland

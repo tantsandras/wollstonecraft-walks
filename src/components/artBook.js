@@ -2,8 +2,6 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import Pages from "../components/pdfPages"
 
-
-
 const leftArrow = {
   border: `solid black`,
   borderWidth: `0px 1.6px 1.6px 0px`,
@@ -17,9 +15,8 @@ const leftArrow = {
 }
 
 const LeftArrow = styled.div`
-
+  transform: translateY(44rem);
 `
-
 
 const arrow = {
   border: `solid black`,
@@ -33,9 +30,8 @@ const arrow = {
   WebkitTransform: `rotate(-45deg)`,
 }
 
-
 const RightArrow = styled.div`
-
+  transform: translateY(44rem);
 `
 
 class ArtBook extends React.Component {
@@ -49,46 +45,54 @@ class ArtBook extends React.Component {
   }
 
   goToPrevSlide = () => {
-    if(this.state.currentIndex === 0)
-      return;
-    
+    if (this.state.currentIndex === 0) return
+
     this.setState(prevState => ({
-      currentIndex: prevState.currentIndex - 1
+      currentIndex: prevState.currentIndex - 1,
     }))
   }
 
   goToNextSlide = () => {
-    if(this.state.currentIndex === 97 - 1) {
+    if (this.state.currentIndex === 97 - 1) {
       return this.setState({
-        currentIndex: 0
+        currentIndex: 0,
       })
     }
 
     this.setState(prevState => ({
-      currentIndex: prevState.currentIndex + 1
-    }));
+      currentIndex: prevState.currentIndex + 1,
+    }))
   }
 
   render() {
     return (
-      <div>
-      <div className="slider-wrapper"
-      style={{
-        transform: `translateX(${this.state.translateValue}px)`,
-        transition: 'transform ease-out 0.45s'
-      }}>
-      <Pages currentPage={this.state.currentIndex} />
-          
-    </div>
+      <div
+        style={{
+          display: `grid`,
+          gridTemplateColumns: `repeat(auto-fit, minmax(240px, 4fr))`,
+          gridGap: `1rem`,
+          padding: `4rem 2rem 4rem 2rem`,
+          columnGap: `0%`,
+          margin: `0 auto`,
+          gridTemplateRows: `repeat(1, auto)`,
+        }}
+      >
+        <div
+          className="slider-wrapper"
+          style={{
+            transition: "transform ease-out 0.45s",
+          }}
+        >
+          <LeftArrow onClick={this.goToPrevSlide}>
+            <i style={leftArrow} aria-hidden="true"></i>
+          </LeftArrow>
+          <RightArrow onClick={this.goToNextSlide}>
+            <i style={arrow} aria-hidden="true"></i>
+          </RightArrow>
 
-    <LeftArrow
-     onClick={this.goToPrevSlide}
-    ><i style={leftArrow} aria-hidden="true"></i></LeftArrow>
-
-    <RightArrow
-     onClick={this.goToNextSlide}
-    ><i style={arrow} aria-hidden="true"></i></RightArrow>
-  </div>
+          <Pages currentPage={this.state.currentIndex} />
+        </div>
+      </div>
     )
   }
 }
