@@ -78,27 +78,40 @@ class Gallery extends React.Component {
             fontSize: `3.4rem`,
             textAlign: `center`,
             marginTop: `4rem`,
+            marginBottom: `18rem`,
           }}
         >
           Gallery
         </h1>
         <Wrapper className="grid">
-        <div className="content">
-          <h2
-            style={{
-              fontFamily: `Yeseva One`,
-              paddingTop: `1rem`,
-              letterSpacing: `1px`,
-              fontSize: `2rem`,
-              textAlign: `left`,
-              marginTop: `4rem`,
-              paddingBottom: `8rem`,
-              lineHeight: `1.5`
-            }}
-          >
-            Wollstonecraft Walks<br />
-            <i style={{ letterSpacing: `2px`, fontSize: `1.6rem`, fontFamily: `Helvetica`, fontWeight: `lighter` }}>9th of June 2019</i>
-          </h2>
+          <div className="content">
+            <h2
+              style={{
+                fontFamily: `Yeseva One`,
+                paddingTop: `1rem`,
+                letterSpacing: `1px`,
+                fontSize: `2rem`,
+                textAlign: `left`,
+                marginTop: `4rem`,
+                paddingBottom: `8rem`,
+                marginBottom: `8rem`,
+                lineHeight: `1.5`,
+              }}
+            >
+              Wollstonecraft Walks
+              <br />
+              <i
+                style={{
+                  letterSpacing: `2px`,
+                  fontSize: `1.6rem`,
+                  fontFamily: `Helvetica`,
+                  fontWeight: `lighter`,
+                  marginTop: `4rem`,
+                }}
+              >
+                9th of June 2019
+              </i>
+            </h2>
           </div>
           <Photos />
         </Wrapper>

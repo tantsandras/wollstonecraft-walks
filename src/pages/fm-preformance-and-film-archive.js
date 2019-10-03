@@ -4,6 +4,7 @@ import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
 import FmPrefAndFilm from "../components/fmPrefAndFilm"
 import ArtBook from "../components/artBook"
+import Circles from "../components/circles"
 
 const FmPage = () => {
     
@@ -11,6 +12,7 @@ const FmPage = () => {
     <main style={{fontFamily: `Helvetica`}}>
       <SEO title="Fragments & Monuments Preformance and Film Archive" />
       <Menu />
+      <Circles />
       <FmPrefAndFilm />
       <ArtBook />
       </main>

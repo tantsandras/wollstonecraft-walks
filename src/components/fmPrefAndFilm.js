@@ -1,6 +1,8 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-
+import Trailer from "../images/videos/WollstonecraftWalkstrailer2019 (1).mp4"
+import WLLive from "../images/videos/WLLive3m38sFINAL.mp4"
+import Vindication from "../images/videos/VindicationBRIGHTER_BW.mp4"
 
 const ProjectHeading = styled.div`
   width: 340px;
@@ -22,11 +24,11 @@ const ProjectHeading = styled.div`
 `
 
 const VideoList = styled.li`
-padding: 2rem;
-background: rgba(255, 255, 255, 0.98);
-border: 2px solid rgba(0, 0, 0, 0.1);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-list-style: none;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.98);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  list-style: none;
 `
 
 const Overlay = styled.div`
@@ -39,15 +41,15 @@ const Overlay = styled.div`
 `
 
 const Videos = styled.ul`
-display: grid;
-grid-template-columns: repeat(1, minmax(300px, 2fr));
-grid-gap: 1rem;
-padding: 6rem 2rem 4rem 2rem;
-column-gap: 4%;
-margin: 0 auto;
-grid-template-rows: repeat(3, auto);
-justify-content: center;
-font-family: Helvetica;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 2fr));
+  grid-gap: 1rem;
+  padding: 6rem 2rem 4rem 2rem;
+  column-gap: 4%;
+  margin: 0 auto;
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  font-family: Helvetica;
 `
 
 const Hover = styled.div`
@@ -81,6 +83,18 @@ const MainHeading = styled.h1`
   margin-top: 10rem;
 `
 
+const LocalVideo = styled.video`
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  max-width: 640px;
+  max-height: 385px;
+`
+
 class FmPrefAndFilm extends React.Component {
   render() {
     return (
@@ -89,6 +103,31 @@ class FmPrefAndFilm extends React.Component {
           Fragments & Monuments Preformance and Film Archive
         </MainHeading>
         <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+        <Videos>
+          <VideoList>
+          <h2
+              style={{
+                fontFamily: `Yeseva One`,
+                paddingTop: `2rem`,
+                letterSpacing: `1px`,
+                textTransform: `uppercase`,
+              }}
+            >Vindication</h2>
+              <i
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >by Kaethe Fine (2005) new B&amp;W version AB (2018)</i>
+            <Overlay>
+              <LocalVideo controls>
+                <source src={Vindication} type="video/mp4" />
+                <Hover></Hover>
+              </LocalVideo>
+            </Overlay>
+            </VideoList>
+            </Videos>
           <span
             style={{ width: `100%`, margin: `0 auto`, display: `inline-block` }}
           >
@@ -99,12 +138,13 @@ class FmPrefAndFilm extends React.Component {
                   fontSize: `1.2rem`,
                   textAlign: `center`,
                   letterSpacing: `1px`,
-                  paddingTop: `150px`,
+                  paddingTop: `130px`,
                   marginBottom: `200px`,
                   lineHeight: `2`,
                 }}
               >
-                Wollstonecraft Live!<br />
+                Wollstonecraft Live!
+                <br />
                 <i
                   style={{
                     fontFamily: `Yeseva One`,
@@ -116,8 +156,7 @@ class FmPrefAndFilm extends React.Component {
                 >
                   by Kaethe Fine 2005
                 </i>
-                </h2>
-
+              </h2>
             </ProjectHeading>
             <p
               style={{
@@ -183,11 +222,6 @@ class FmPrefAndFilm extends React.Component {
               <br />
             </p>
           </span>
-          <p style={{ marginTop: `5.4rem` }}>
-            A documentary of the site specific performance of this multimedia
-            play on Newington Green and in the Unitarian Chapel, London N1.
-          </p>
-
           <Videos>
             <VideoList>
               <h2
@@ -205,14 +239,14 @@ class FmPrefAndFilm extends React.Component {
                   src="https://www.youtube.com/embed/vSFDuNrA_lA"
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{maxWidth: `640px`, maxHeight: `385px`}}
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 >
                   <Hover></Hover>
                 </Video>
               </Overlay>
             </VideoList>
-            <VideoList className="gatsby-iframe-wrap">
+            <VideoList>
               <h2
                 style={{
                   fontFamily: `Yeseva One`,
@@ -228,14 +262,14 @@ class FmPrefAndFilm extends React.Component {
                   src="https://www.youtube.com/embed/i5Uxlj9eDNI"
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{maxWidth: `640px`, maxHeight: `385px`}}
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 >
                   <Hover></Hover>
                 </Video>
               </Overlay>
             </VideoList>
-            <VideoList className="gatsby-iframe-wrap">
+            <VideoList>
               <h2
                 style={{
                   fontFamily: `Yeseva One`,
@@ -251,7 +285,7 @@ class FmPrefAndFilm extends React.Component {
                   src="https://www.youtube.com/embed/PLOLhxc5wqE"
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{maxWidth: `640px`, maxHeight: `385px`}}
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 >
                   <Hover></Hover>
@@ -260,25 +294,35 @@ class FmPrefAndFilm extends React.Component {
             </VideoList>
           </Videos>
         </article>
-        *VINDICATION (10 mins) by Kaethe Fine (2005) new B&amp;W version AB
-        (2018) to send plus copy to describe film *The Wollstonecraft Live
-        Experience! outdoor screening
-        <iframe
-          width="510"
-          height="382.5"
-          src="https://www.youtube.com/embed/nDSlEmgryyA"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-        ** The
-        Wollstonecraft Live Experience! flyers and posters etc including New
-        York and Di’s Midsummer Night Party PDF’s *MARCH film by collaboration
-        with Glasgow Women’s Library and Royal Conservatoire of Scotland
-        featuring Mary Wollstonecraft and bridging Mary Wollstonecraft as the
-        founder of British feminism vimeo link Fawcett quote on MW and the vote
-        plus flyer and poster PDF’s *Maggi Hambling social media video Anna
-        talking about artists Maggi Hambling for NG _ MOTG ( plus image of
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+          <VideoList>
+            <h2
+              style={{
+                fontFamily: `Yeseva One`,
+                paddingTop: `2rem`,
+                letterSpacing: `1px`,
+              }}
+            ></h2>
+            <Overlay>
+              <Video
+                src="https://www.youtube.com/embed/nDSlEmgryyA"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                allowFullScreen
+              >
+                <Hover></Hover>
+              </Video>
+            </Overlay>
+          </VideoList>
+        </article>
+        ** The Wollstonecraft Live Experience! flyers and posters etc including
+        New York and Di’s Midsummer Night Party PDF’s *MARCH film by
+        collaboration with Glasgow Women’s Library and Royal Conservatoire of
+        Scotland featuring Mary Wollstonecraft and bridging Mary Wollstonecraft
+        as the founder of British feminism vimeo link Fawcett quote on MW and
+        the vote plus flyer and poster PDF’s *Maggi Hambling social media video
+        Anna talking about artists Maggi Hambling for NG _ MOTG ( plus image of
         maquette and Stewy Stencil artwork) *Wollstonecraft Live! by Kaethe Fine
         revival/ Take 2 in 2018 rehearsed reading rehearsal (2018) in the
         Unitarian Meeting, Newington Green Alastair Gavin 3-minute film of

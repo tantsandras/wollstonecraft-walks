@@ -48,6 +48,9 @@ class Photos extends React.Component {
                   fontSize: `1rem`,
                   fontFamily: `Helvetica`,
                   fontWeight: `lighter`,
+                  marginTop: `8rem`,
+                  marginBottom: `8rem`,
+                  lineHeight: `2`
                 }}
               >
                 <i style={{ textTransform: `uppercase` }}>Photos by</i>
