@@ -1,4 +1,32 @@
 import React from "react"
+import styled, { keyframes } from "styled-components"
+
+const Back = styled.button`
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  font-size: 22px;
+  background: #1451ad;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+  font-family: Helvetica;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffd0d0;
+  text-transform: uppercase;
+  min-width: 240px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+
+  &:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 0 2px rgb(255, 0, 0, 0.6);
+    border: 2px solid white;
+  }
+`
 
 class Circle {
   constructor(x, y, radius, color, speed, text) {
@@ -16,15 +44,15 @@ class Circle {
       ctx.arc(this.x, this.y, this.radius, Math.PI * 2, false)
       ctx.fillStyle = this.color
       ctx.fill()
-      ctx.font = "bold 1rem Helvetica"
+      ctx.font = "normal 1rem Helvetica"
       ctx.textAlign = "center"
-      ctx.fillStyle = "#008080"
+      ctx.fillStyle = "#333333"
       lines.map((v, i) => {
         ctx.fillText(
           lines[i],
           this.x,
           this.y + i * lineHeight,
-          this.radius + 60
+          this.radius + 70
         )
       })
     }
@@ -55,10 +83,6 @@ const quoteArray = [
   -Malala Yousafzai`,
   `Art is my life and my life is art.
   -Yoko Ono`,
-  `Life-transforming ideas 
-  have always 
-  come to me through books. 
-  -bell hooks`,
 ]
 
 class CanvasQuotes extends React.Component {
@@ -74,11 +98,11 @@ class CanvasQuotes extends React.Component {
 
   componentDidMount() {
     this.setState({
-      circleArray: Array.from({ length: 6 }).reduce((acc, v, i) => {
+      circleArray: Array.from({ length: 5 }).reduce((acc, v, i) => {
         let x
         let y
         let radius
-        const minRadius = 90
+        const minRadius = 100
 
         let isColliding = true
         while (isColliding) {
@@ -157,13 +181,17 @@ class CanvasQuotes extends React.Component {
 
   render() {
     return (
-      <div style={{ display: `grid`, justifyContent: `center` }}>
-        <canvas
-          width={this.state.width}
-          height={this.state.height}
-          ref="canvas"
-        />
-      </div>
+      <>
+        <div style={{ display: `grid`, justifyContent: `center` }}>
+
+        <Back style={{margin: `0 auto`, transform: `translateY(300px)`,}}>Back to Home</Back>
+          <canvas
+            width={this.state.width}
+            height={this.state.height}
+            ref="canvas"
+          />
+        </div>
+      </>
     )
   }
 }
