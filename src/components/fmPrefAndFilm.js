@@ -1,8 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import Trailer from "../images/videos/WollstonecraftWalkstrailer2019 (1).mp4"
-import WLLive from "../images/videos/WLLive3m38sFINAL.mp4"
 import Vindication from "../images/videos/VindicationBRIGHTER_BW.mp4"
+import Logo from "../images/Wollstonecraft_portrait_logo-02 copy.png"
 
 const ProjectHeading = styled.div`
   width: 340px;
@@ -20,24 +19,39 @@ const ProjectHeading = styled.div`
   float: left;
   -webkit-shape-outside: circle(20em);
   shape-outside: circle(20em);
-  margin: 5% 28% 10% 1%;
+  margin: 18% 28% 5% 1%;
+`
+const ProjectCircle = styled.div`
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 340px;
+  height: 340px;
+  line-height: 200px;
+  background: rgba(20, 81, 173, 0.1);
+  mix-blend-mode: multiply;
+  text-align: center;
+  vertical-align: middle;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 `
 
 const VideoList = styled.li`
-  padding: 2rem;
   background: rgba(255, 255, 255, 0.98);
-  border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
+  height: auto;
 `
 
 const Overlay = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  &:hover {
-    opacity: 0.6;
-  }
+  background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('${Logo}');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 `
 
 const Videos = styled.ul`
@@ -52,18 +66,6 @@ const Videos = styled.ul`
   font-family: Helvetica;
 `
 
-const Hover = styled.div`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background: rgb(245, 245, 245);
-  &:hover {
-    opacity: 0.6;
-  }
-`
-
 const Video = styled.iframe`
   position: absolute;
   top: 0;
@@ -72,6 +74,7 @@ const Video = styled.iframe`
   width: 100%;
   height: 100%;
   transition: 0.5s ease;
+  padding: 2rem;
 `
 
 const MainHeading = styled.h1`
@@ -81,6 +84,7 @@ const MainHeading = styled.h1`
   letter-spacing: 1px;
   margin-bottom: 4rem;
   margin-top: 10rem;
+  line-height: 1.5;
 `
 
 const LocalVideo = styled.video`
@@ -93,6 +97,7 @@ const LocalVideo = styled.video`
   transition: 0.5s ease;
   max-width: 640px;
   max-height: 385px;
+  padding: 2rem;
 `
 
 class FmPrefAndFilm extends React.Component {
@@ -100,68 +105,101 @@ class FmPrefAndFilm extends React.Component {
     return (
       <main>
         <MainHeading>
-          Fragments & Monuments Preformance and Film Archive
+          Fragments & Monuments<br /> Preformance and Film Archive
         </MainHeading>
         <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
-        <Videos>
-          <VideoList>
-          <h2
-              style={{
-                fontFamily: `Yeseva One`,
-                paddingTop: `2rem`,
-                letterSpacing: `1px`,
-                textTransform: `uppercase`,
-              }}
-            >Vindication</h2>
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
+          <Videos>
+          <div
+                 style={{
+                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                  background: `rgba(255, 255, 255, 0.98)`,
+                  padding: `2rem`,
                 }}
-              >by Kaethe Fine (2005) new B&amp;W version AB (2018)</i>
-            <Overlay>
-              <LocalVideo controls>
-                <source src={Vindication} type="video/mp4" />
-                <Hover></Hover>
-              </LocalVideo>
-            </Overlay>
+              >
+                <h2
+                  style={{
+                    fontFamily: `Yeseva One`,
+                    letterSpacing: `1px`,
+                    textTransform: `uppercase`,
+                    marginTop: `3rem`,
+                  }}
+                >
+                  Vindication
+                </h2>
+                <i
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                  }}
+                >
+                  by Kaethe Fine (2005) new B&amp;W version AB (2018)
+                </i>
+                <p style={{ marginTop: `2rem` }}>
+                  The French Revolution is simmering and issues of racial,
+                  economic and religious equality is at stake. In this imagined
+                  moment in the life of Mary Wollstonecraft (1759-1797), she
+                  meets with her friends, a group of 18th Century Rational
+                  Dissenters, to discuss her own difficulties making ends meet.
+                  During this meeting Mary declares pleasure to Thomas Paine
+                  that he was inspired by her work to write his famous The
+                  Rights of Man. She is snubbed by her future husband, William
+                  Godwin, for making the assertion but Paine confirms it. She
+                  carries on expressing her frustration with the demands of
+                  being a woman in a society that does not recognize a woman's
+                  right to own anything, be educated or even pursue a career, at
+                  which point Paine encourages her to focus in on those issues
+                  and write what she is now most known for, A Vindication of the
+                  Rights of Women. She became the first person to speak out and
+                  be heard on the silent subject of gender equality.
+                </p>
+              </div>
+            <VideoList>
+              
+              <Overlay>
+
+                <LocalVideo controls>
+                  <source src={Vindication} type="video/mp4" />
+                </LocalVideo>
+              </Overlay>
             </VideoList>
-            </Videos>
+          </Videos>
           <span
             style={{ width: `100%`, margin: `0 auto`, display: `inline-block` }}
           >
             <ProjectHeading>
-              <h2
-                style={{
-                  fontFamily: `Yeseva One`,
-                  fontSize: `1.2rem`,
-                  textAlign: `center`,
-                  letterSpacing: `1px`,
-                  paddingTop: `130px`,
-                  marginBottom: `200px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Wollstonecraft Live!
-                <br />
-                <i
+              <ProjectCircle>
+                <h2
                   style={{
                     fontFamily: `Yeseva One`,
-                    fontSize: `1rem`,
+                    fontSize: `1.2rem`,
                     textAlign: `center`,
                     letterSpacing: `1px`,
-                    marginTop: `1rem`,
+                    paddingTop: `130px`,
+                    marginBottom: `200px`,
+                    lineHeight: `2`,
                   }}
                 >
-                  by Kaethe Fine 2005
-                </i>
-              </h2>
+                  Wollstonecraft Live!
+                  <br />
+                  <i
+                    style={{
+                      fontFamily: `Yeseva One`,
+                      fontSize: `1rem`,
+                      textAlign: `center`,
+                      letterSpacing: `1px`,
+                      marginTop: `1rem`,
+                    }}
+                  >
+                    by Kaethe Fine 2005
+                  </i>
+                </h2>
+              </ProjectCircle>
             </ProjectHeading>
             <p
               style={{
                 fontSize: `0.8rem`,
-                marginTop: `10rem`,
+                marginTop: `24rem`,
                 paddingTop: `2rem`,
                 width: `66%`,
                 marginLeft: `1.4rem`,
@@ -224,16 +262,17 @@ class FmPrefAndFilm extends React.Component {
           </span>
           <Videos>
             <VideoList>
-              <h2
-                style={{
-                  fontFamily: `Yeseva One`,
-                  paddingTop: `2rem`,
-                  letterSpacing: `1px`,
-                }}
-              >
-                Part 1
-              </h2>
               <Overlay>
+                <h2
+                  style={{
+                    fontFamily: `Yeseva One`,
+                    paddingBottom: `2rem`,
+                    letterSpacing: `1px`,
+                    paddingLeft: `2rem`,
+                  }}
+                >
+                  Part 1
+                </h2>
                 <Video
                   title="Wollstonecraft Live video, Part 1"
                   src="https://www.youtube.com/embed/vSFDuNrA_lA"
@@ -241,22 +280,21 @@ class FmPrefAndFilm extends React.Component {
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
-                >
-                  <Hover></Hover>
-                </Video>
+                ></Video>
               </Overlay>
             </VideoList>
             <VideoList>
-              <h2
-                style={{
-                  fontFamily: `Yeseva One`,
-                  paddingTop: `2rem`,
-                  letterSpacing: `1px`,
-                }}
-              >
-                Part 2
-              </h2>
               <Overlay>
+                <h2
+                  style={{
+                    fontFamily: `Yeseva One`,
+                    paddingBottom: `2rem`,
+                    letterSpacing: `1px`,
+                    paddingLeft: `2rem`,
+                  }}
+                >
+                  Part 2
+                </h2>
                 <Video
                   title="Wollstonecraft Live video, Part 2"
                   src="https://www.youtube.com/embed/i5Uxlj9eDNI"
@@ -264,22 +302,21 @@ class FmPrefAndFilm extends React.Component {
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
-                >
-                  <Hover></Hover>
-                </Video>
+                ></Video>
               </Overlay>
             </VideoList>
             <VideoList>
-              <h2
-                style={{
-                  fontFamily: `Yeseva One`,
-                  paddingTop: `2rem`,
-                  letterSpacing: `1px`,
-                }}
-              >
-                Part 3
-              </h2>
               <Overlay>
+                <h2
+                  style={{
+                    fontFamily: `Yeseva One`,
+                    paddingBottom: `2rem`,
+                    letterSpacing: `1px`,
+                    paddingLeft: `2rem`,
+                  }}
+                >
+                  Part 3
+                </h2>
                 <Video
                   title="Wollstonecraft Live video, Part 3"
                   src="https://www.youtube.com/embed/PLOLhxc5wqE"
@@ -287,47 +324,32 @@ class FmPrefAndFilm extends React.Component {
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
-                >
-                  <Hover></Hover>
-                </Video>
+                ></Video>
               </Overlay>
             </VideoList>
           </Videos>
         </article>
         <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
           <VideoList>
-            <h2
-              style={{
-                fontFamily: `Yeseva One`,
-                paddingTop: `2rem`,
-                letterSpacing: `1px`,
-              }}
-            ></h2>
             <Overlay>
+              <h2
+                style={{
+                  fontFamily: `Yeseva One`,
+                  paddingBottom: `2rem`,
+                  letterSpacing: `1px`,
+                  paddingLeft: `2rem`,
+                }}
+              ></h2>
               <Video
                 src="https://www.youtube.com/embed/nDSlEmgryyA"
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 style={{ maxWidth: `640px`, maxHeight: `385px` }}
                 allowFullScreen
-              >
-                <Hover></Hover>
-              </Video>
+              ></Video>
             </Overlay>
           </VideoList>
         </article>
-        ** The Wollstonecraft Live Experience! flyers and posters etc including
-        New York and Di’s Midsummer Night Party PDF’s *MARCH film by
-        collaboration with Glasgow Women’s Library and Royal Conservatoire of
-        Scotland featuring Mary Wollstonecraft and bridging Mary Wollstonecraft
-        as the founder of British feminism vimeo link Fawcett quote on MW and
-        the vote plus flyer and poster PDF’s *Maggi Hambling social media video
-        Anna talking about artists Maggi Hambling for NG _ MOTG ( plus image of
-        maquette and Stewy Stencil artwork) *Wollstonecraft Live! by Kaethe Fine
-        revival/ Take 2 in 2018 rehearsed reading rehearsal (2018) in the
-        Unitarian Meeting, Newington Green Alastair Gavin 3-minute film of
-        September 2018 reading projected at St Pancras Old Church, 30 second
-        teaser for Instagram, audio recording of reading
       </main>
     )
   }

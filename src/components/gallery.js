@@ -13,7 +13,36 @@ const Wrapper = styled.div`
   margin-bottom: 6rem;
   grid-auto-rows: 40px;
 `
-
+const PageCircle = styled.div`
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  background: rgba(93, 0, 255, 0.3);
+  mix-blend-mode: multiply;
+  text-align: center;
+  vertical-align: middle;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-top: 4rem;
+`
+const PageHeading = styled.div`
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-left: 6px double #5d00ff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  clip-path: circle(50%);
+  -webkit-clip-path: circle(50%);
+  -webkit-shape-outside: circle(20em);
+  shape-outside: circle(20em);
+`
 class Gallery extends React.Component {
   constructor() {
     super()
@@ -70,18 +99,23 @@ class Gallery extends React.Component {
   render() {
     return (
       <>
-        <h1
+        <PageCircle>
+          <PageHeading>
+
+        </PageHeading>
+          </PageCircle>
+          <h1
           style={{
             fontFamily: `Yeseva One`,
-            paddingTop: `1rem`,
             letterSpacing: `1px`,
-            fontSize: `3.4rem`,
             textAlign: `center`,
-            marginTop: `4rem`,
-            marginBottom: `18rem`,
+            fontSize: `2.2rem`,
+            marginTop: `-6.8rem`,
+            paddingLeft: `6.4rem`,
+            marginBottom: `11rem`
           }}
         >
-          Gallery
+          Gallery.
         </h1>
         <Wrapper className="grid">
           <div className="content">
@@ -112,7 +146,9 @@ class Gallery extends React.Component {
                 9th of June 2019
               </i>
             </h2>
+
           </div>
+                                
           <Photos />
         </Wrapper>
       </>

@@ -54,9 +54,10 @@ class Pods extends React.Component {
                 textAlign: `center`,
                 letterSpacing: `1px`,
                 marginBottom: `2rem`,
+                lineHeight: `1.5`
               }}
             >
-              Wollstonecraft Walks <br /> Episode 1
+              Wollstonecraft Walks <br /> <h4 style={{textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 1</i></h4>
             </h3>
             <p>
               Readings with walk context making walk experience
@@ -80,9 +81,10 @@ class Pods extends React.Component {
                 textAlign: `center`,
                 letterSpacing: `1px`,
                 marginBottom: `2rem`,
+                lineHeight: `1.5`
               }}
             >
-              Wollstonecraft Walks <br /> Episode 2
+              Wollstonecraft Walks <br /> <h4 style={{textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 2</i></h4>
             </h3>
             <p>
               Feedback from June 2019 audience at Stoke Newington Literary
@@ -106,9 +108,10 @@ class Pods extends React.Component {
                 textAlign: `center`,
                 letterSpacing: `1px`,
                 marginBottom: `2rem`,
+                lineHeight: `1.5`
               }}
             >
-              Wollstonecraft Walks <br /> Episode 2
+              Wollstonecraft Walks <br /><h4 style={{textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 3</i></h4>
             </h3>
 
             <p>

@@ -14,7 +14,7 @@ const Image = styled.div`
     transform: scale(2);
     z-index: 2;
     box-shadow: 10px 10px 100px 50px rgba(0, 0, 0, 0.4);
-    border: 0.6px solid white;
+    border: 0.6px solid grey;
   }
 `
 

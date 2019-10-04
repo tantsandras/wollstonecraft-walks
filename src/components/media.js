@@ -4,6 +4,7 @@ import Trailer from "../images/videos/WollstonecraftWalkstrailer2019 (1).mp4"
 import WLLive from "../images/videos/WLLive3m38sFINAL.mp4"
 import AudioPlayer from "../components/audioPlayer"
 import Soundscape from "../audio/WL Walk music only.mp3"
+import MWBirthday from "../images/videos/MWbirthday.mp4"
 
 
 const VideoList = styled.li`
@@ -13,6 +14,8 @@ const VideoList = styled.li`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
   height: auto;
+  background: #191919; 
+  color: white;
 `
 
 const Overlay = styled.div`
@@ -40,9 +43,8 @@ const MainHeading = styled.h1`
   font-size: 2rem;
   text-align: center;
   letter-spacing: 1px;
-  margin-bottom: 4rem;
-  margin-top: 10rem;
-  text-transform: uppercase;
+  margin-top: -10rem;
+  padding-left: 8rem;
 `
 
 const LocalVideo = styled.video`
@@ -89,12 +91,44 @@ const SoundBox = styled.li`
   max-width: 600px;
   margin: 0 auto;
 `
+const PageCircle = styled.div`
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  background: rgba(255, 0, 0, 0.1);
+  mix-blend-mode: multiply;
+  text-align: center;
+  vertical-align: middle;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+`
+const PageHeading = styled.div`
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-left: 6px double #ff0000;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  clip-path: circle(50%);
+  -webkit-clip-path: circle(50%);
+  -webkit-shape-outside: circle(20em);
+  shape-outside: circle(20em);
+`
 
 class Media extends React.Component {
   render() {
     return (
       <main>
-        <MainHeading>Media</MainHeading>
+        <PageCircle style={{marginBottom: `4rem`, marginTop: `4rem`}}>
+        <PageHeading></PageHeading>
+        </PageCircle>
+        <MainHeading>Media.</MainHeading>
         <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
           <Videos>
             <VideoList>
@@ -104,6 +138,8 @@ class Media extends React.Component {
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                   lineHeight: `2`,
+                  zIndex: `2`,
+                  textAlign: `center`,
                 }}
               >
                 Wollstonecraft Live! 2019
@@ -250,6 +286,46 @@ class Media extends React.Component {
                 >
                   <Hover></Hover>
                 </Video>
+              </Overlay>
+              </VideoList>
+            <VideoList>
+              <h2
+                style={{
+                  fontFamily: `Yeseva One`,
+                  paddingTop: `2rem`,
+                  letterSpacing: `1px`,
+                  lineHeight: `2`,
+                }}
+              >
+                Mary Wollstonecraft<br />
+                <i
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                    textTransform: `uppercase`,
+                  }}
+                >The Birthday Film
+                </i>
+              </h2>
+  
+              <p
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                  marginBottom: `3rem`,
+                }}
+              >
+                <i>
+                Anna Birch talks about the Mary on the Green Campaign and the Stewy stencil on the Unitarian Meeting House.
+                </i>
+              </p>
+              <Overlay>
+                <LocalVideo controls>
+                  <source src={MWBirthday} type="video/mp4" />
+                  <Hover></Hover>
+                </LocalVideo>
               </Overlay>
             </VideoList>
           </Videos>

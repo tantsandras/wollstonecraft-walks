@@ -61,7 +61,7 @@ class Step3 extends React.Component {
             textAlign: `center`,
             marginTop: `-2.8rem`,
             letterSpacing: `1px`,
-            marginBottom: `4rem`
+            marginBottom: `4rem`,
           }}
         >
           Mary on the Green memorial site
@@ -80,7 +80,13 @@ class Step3 extends React.Component {
           <h4 style={{ fontFamily: `Yeseva One` }}>Did you know?</h4>
           <p>
             You are now walking through the site of{" "}
-            <b style={{ letterSpacing: `2px`, lineHeight: `2` }}>
+            <b
+              style={{
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+                fontFamily: `Yeseva One`,
+              }}
+            >
               Wollstonecraft Live!
             </b>{" "}
             by Kaethe Fine, conceived by Anna Birch and Kaethe Fine, and
@@ -93,7 +99,13 @@ class Step3 extends React.Component {
           <p>
             In the late summer of 2007 Fragments &amp; Monuments hosted a picnic
             and outdoor screening where you are walking of the{" "}
-            <b style={{ letterSpacing: `2px`, lineHeight: `2` }}>
+            <b
+              style={{
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+                fontFamily: `Yeseva One`,
+              }}
+            >
               The Wollstonecraft Live Experience!
             </b>{" "}
             films on the Green with live music performed by the famous Deidre
@@ -106,10 +118,136 @@ class Step3 extends React.Component {
             supported by Stoke Newington Literary Festival. At this point in the
             walk the audience listened to Wollstonecraft’s words as interpreted
             by playwright by Kaethe Fine in the specially composed soundscape by
-            composer Alastair Gavin and were given
-            postcards encouraging them to give generously to the Mary On the
-            Green memorial fund.
+            composer Alastair Gavin and were given postcards encouraging them to
+            give generously to the Mary On the Green memorial fund.
           </p>
+          </article>
+          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica`, lineHeight: `1.5`, }}>
+          <h2 style={{ fontFamily: `Yeseva One`, marginTop: `4rem` }}>
+            Listen - a walking memorial <br />{" "}
+          </h2>
+
+          <h3
+            style={{
+              fontFamily: `Helvetica`,
+              letterSpacing: `2px`,
+              lineHeight: `2`,
+              fontWeight: `lighter`,
+              fontSize: `1rem`,
+              marginBottom: `4rem`,
+            }}
+          >
+            (excerpted from
+            <b
+              style={{
+                fontFamily: `Yeseva One`,
+                lineHeight: `1.5`,
+                fontSize: `1.2rem`,
+              }}
+            >
+              {" "}
+              Wollstonecraft Live!{" "}
+            </b>
+            by Kaethe Fine)
+            <br />
+            Music by Alastair Gavin{" "}
+          </h3>
+
+          <p>
+            Wollstonecraft
+            <i style={{ letterSpacing: `2px` }}>
+              {" "}
+              Live live live
+            </i><br />
+          
+          <b style={{ letterSpacing: `2px` }}>(Music)</b>
+          </p>
+          <p>
+            ...why should not one woman acknowledge that she can take more
+            exercise than another ? or in other words that she has a sound
+            constitution? And why, to damp innanent vivacity, is she darkly to
+            be told that men will draw conclusions which she thinks little of?
+          </p>
+
+          <p>
+            Let the Libertine draw what inference he pleases but I hope
+            <i style={{ letterSpacing: `2px` }}>
+              {" "}
+              (whispers) Wollstonecraft Live...
+            </i>{" "}
+            that no sensible mother with restrain the natural frankness of youth
+            by instilling such indanent cautions.
+          </p>
+          <p>
+            ...Women ought to endeavor to purify their heart, but can they do so
+            when their uncultivated understandings make them entirely dependent
+            on their senses for employment and amusement? When no noble pursuits
+            set them above the petty vanities of the day, or enables them to
+            curb the wild emotions that agitate a reed over which ever passing
+            breeze has power.
+          </p>
+
+          <p>
+            To gain affections of a virtuous man is affectation necessary?{" "}
+            <b style={{ letterSpacing: `2px` }}>(rewind)</b>{" "}
+            ...To gain affections of a virtuous man...
+            <b style={{ letterSpacing: `2px` }}>(rewind)</b> of
+            a virtuous man...
+            <b style={{ letterSpacing: `2px` }}>
+              (rewind)
+            </b>{" "}
+            affections of a virtuous man{" "}
+            <b style={{ letterSpacing: `2px` }}>
+              (rewind. cut)
+            </b>
+          </p>
+          <p>
+            To gain affections is affectation necessary?{" "}
+            <i style={{ letterSpacing: `2px` }}>
+              (whispers) Wollstonecraft Live...{" "}
+            </i>
+          </p>
+
+          <p>
+            Weakness may excite tenderness and gratify the arrogant pride of man{" "}
+            <b style={{ letterSpacing: `2px` }}>(rewind)</b>{" "}
+            arrogant pride of man{" "}
+            <b style={{ letterSpacing: `2px` }}>(rewind)</b> of
+            man. <b style={{ letterSpacing: `2px` }}>(cut)</b><br />
+            Weakness may excite tenderness and gratify arrogant pride but the
+            lordly caresses of a protector will not gratify a noble mind that
+            pants for and deserves to be respected.{" "}
+          </p>
+
+          <p>
+            Fondness is a poor substitute for friendship!{" "}
+            <b style={{ letterSpacing: `2px` }}>(rewind)</b>{" "}
+          </p>
+
+          <p>
+            A noble mind that pants for and deserves to be respected. Fondness
+            is.
+            <b style={{ letterSpacing: `2px`}}>
+              {" "}
+              (Static. Rewind)
+            </b>
+            <br />
+            But the lordly caresses of a. <br />
+            Of a protector will not gratify a noble mind.
+          <br />...that pants for a deserves to respected.<br />
+          Fondness is a poor substitute for friendship.</p>
+
+          <p>Hear! Hear!</p>
+          <p>
+            It appears to me impossible that I should cease to exist or that
+            this active, restless spirit, equally alive to joy and sorrow should
+            be only organized dust, ready to fly abroad the moment the spring
+            snaps or spark goes out.
+            <i style={{ letterSpacing: `2px` }}>
+              {" "}
+              (whispers) Wollstonecraft Live...
+            </i> Surely something resides in this heart that is not perishable.
+          <br /> And life is more than a dream...</p>
         </article>
       </main>
     )
