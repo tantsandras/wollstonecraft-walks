@@ -168,7 +168,7 @@ const ArtistList = () => {
         <div></div>
         <li>
           <a href="bla" target="_blank" rel="noopener noreferrer">
-            Film Maker - Ali Sargent
+            Film Maker - Ali Meave Sargent
           </a>
         </li>
 
