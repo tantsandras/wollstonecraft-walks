@@ -39,100 +39,105 @@ const ArtList = styled.ul`
   font-family: Helvetica;
   margin-bottom: 4rem;
   animation: ${turnVisible} 0.8s ease-in-out;
-  > .Odd {
-    text-decoration: none;
-    color: #656565;
-    opacity: 0;
-    animation: ${fadeInRight} ease 0.6s forwards;
-    animation-delay: 0.2s;
-  };
+`
+  const StyledLink = styled.a`
+  z-index: 3;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  opacity: 0;
+  color: #656565;
+  animation: ${fadeInRight} ease 0.6s forwards;
+  animation-delay: 0.2s;
   &:hover {
     text-decoration: none;
-    color: Crimson;
+    color: MediumBlue;
     cursor: pointer;
   }
-  > .Second {
-    align-self: left;
-    width: 100%;
-    margin: 0em 1rem 2.4rem 0em;
-    height: 0.06em;
-    background-color: black;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: ${growLeft};
-  };
+`
+
+const Second = styled.div`
+align-self: left;
+width: 40%;
+margin: 0em 1rem 2.4rem 0em;
+height: 0.06em;
+background-color: pink;
+transform: scaleX(0);
+transform-origin: left;
+animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
 `
 
 const ArtistList = () => {
   return (
     <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
       <ArtList>
-        <li className="Odd">
-          <a
+        <li>
+          <StyledLink
             href="http://wollstonecraftlive.com/fm/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Artistic Director & Producer - Anna Birch
-          </a>
+          </StyledLink>
         </li>
-        <div className="Second"></div>
-        <li className="Odd"> 
-          <a
+        <Second></Second>
+        <li> 
+          <StyledLink
             href="https://scarylittlegirls.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Artistic Director & Producer, Rebecca Mordan
-          </a>
+          </StyledLink>
         </li>
-        <div className="Second"></div>
-        <li className="Odd"> 
-          <a href="bla" target="_blank" rel="noopener noreferrer">
+        <Second></Second>
+        <li> 
+          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
             Film Maker - Ali Meave Sargent
-          </a>
+          </StyledLink>
         </li>
 
-        <div className="Second"></div>
-        <li className="Odd"> 
-          <a href="bla" target="_blank" rel="noopener noreferrer">
+        <Second></Second>
+        <li> 
+          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
             Podcast Producers - Marina Garvey Birch and Erica McCoy
-          </a>
+          </StyledLink>
         </li>
-        <div className="Second"></div>
-        <li className="Odd"> 
-          <a href="bla" target="_blank" rel="noopener noreferrer">
+        <Second></Second>
+        <li> 
+          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
             Specially composed musical score - Alastair Gavin
-          </a>
+          </StyledLink>
         </li>
-        <div className="Second"></div>
-        <li className="Odd"> 
-          <a
+        <Second></Second>
+        <li> 
+          <StyledLink
             href="https://www.christinebradshawphotography.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Images of first walk at Stoke Newington Literary Festival -
             Christine Bradshaw
-          </a>
+          </StyledLink>
         </li>
-        <div className="Second"></div>
-        <li className="Odd"> 
-          <a
+        <Second></Second>
+        <li> 
+          <StyledLink
             href="http://jessebsworth.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Image and Publicity Design - Jess Ebsworth
-          </a>
+          </StyledLink>
         </li>
-        <div className="Second"></div>
-        <li className="Odd"> 
-          <a href="bla" target="_blank" rel="noopener noreferrer">
+        <Second></Second>
+        <li> 
+          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
             Social Media - Marina Garvey Birch
-          </a>
+          </StyledLink>
         </li>
-        <div className="Second"></div>
+        <Second></Second>
       </ArtList>
       <section style={{ marginBottom: `6rem` }}>
         <p>

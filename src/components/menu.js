@@ -57,6 +57,7 @@ const animation2 = css`
 const NavActive = styled.div`
   z-index: 2;
   text-transform: uppercase;
+  text-decoration: none;
   height: 100vh;
   position: fixed;
   margin: 0;
@@ -68,22 +69,28 @@ const NavActive = styled.div`
   font-family: Helvetica;
   letter-spacing: 1px;
   animation: ${turnVisible} 0.8s ease-in-out;
-  &:hover {
-    text-decoration: none;
-    color: Crimson;
-    cursor: pointer;
-  }
 `
 
-const odd = {
-    textDecoration: `none`,
-    color: `#656565`,
-    opacity: `0`,
-    animation: `${fadeInRight} ease 0.6s forwards`,
-    animationDelay: `0.2s`,
-}
+const StyledLink = styled(Link)`
+    z-index: 3;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    opacity: 0;
+    color: #656565;
+    animation: ${fadeInRight} ease 0.6s forwards;
+    animation-delay: 0.2s;
+    &:hover {
+      text-decoration: none;
+      color: Crimson;
+      cursor: pointer;
+    }
+`
 
 const Second = styled.div`
+z-index: 3;
+animation-delay: 0.8s;
 align-self: left;
 width: 100%;
 margin: 0em 1rem 2.4rem 0em;
@@ -91,7 +98,7 @@ height: 0.06em;
 background-color: black;
 transform: scaleX(0);
 transform-origin: left;
-animation: ${animation2};
+animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
 `
 
 const NavList = styled.ul`
@@ -103,6 +110,8 @@ const NavList = styled.ul`
   font-weight: 200;
   cursor: pointer;
   list-style: none;
+  animation: ${turnVisible} 0.8s ease-in-out;
+  text-decoration: none;
 `
 
 const StyledLogo = styled.img`
@@ -118,6 +127,7 @@ const StyledLogo = styled.img`
 
 const activeStyle = {
   color: `black`,
+  textDecoration: `none`
 }
 
 // const LinkAnimation = styled(animation1)`
@@ -168,101 +178,93 @@ class Menu extends React.Component {
           {this.state.isActive && (
             <NavActive >
               <NavList>
-                <Link
+                <StyledLink
                   to="/"
                   activeStyle={activeStyle}
-            style={odd}
-                  // style={LinkAnimation}
-                >
+            
+                  // style={StyledLinkAnimation}
+                > 
                   {"Home"}
-                </Link>
+                </StyledLink>
                 <Second
-                // style={LineSpread}
                 ></Second>
-                <Link
+                <StyledLink
                   to="/podcast"
                   activeStyle={activeStyle}
-                    style={odd}
+                    
                   // delay={"0.4s"}
-                  // style={LinkAnimation}
-                >
+                  // style={StyledLinkAnimation}
+                > 
                   {"Podcast"}
-                </Link>
+                </StyledLink>
                 <Second
-                // style={LineSpread}
                 ></Second>
-                <Link
+                <StyledLink
                   to="/media"
                   activeStyle={activeStyle}
-                    style={odd}
+                    
                   // delay={"0.6s"}
-                  // style={LinkAnimation}
-                >
+                  // style={StyledLinkAnimation}
+                > 
                   {"Media"}
-                </Link>
+                </StyledLink>
                 <Second
-                // style={LineSpread}
                 ></Second>
-                <Link
+                <StyledLink
                   to="/gallery"
                   activeStyle={activeStyle}
-                    style={odd}
+                    
                   // delay={"0.8s"}
-                  // style={LinkAnimation}
-                >
+                  // style={StyledLinkAnimation}
+                > 
                   {"Gallery"}
-                </Link>
+                </StyledLink>
                 <Second
-                // style={LineSpread}
                 ></Second>
-                <Link
+                <StyledLink
                   to="/heritage-research"
                   activeStyle={activeStyle}
-                    style={odd}
+                    
                   // delay={"1s"}
-                  // style={LinkAnimation}
-                >
+                  // style={StyledLinkAnimation}
+                > 
                   {"Heritage Research"}
-                </Link>
+                </StyledLink>
                 <Second
-                // style={LineSpread}
                 ></Second>
-                <Link
+                <StyledLink
                   to="/artists"
                   activeStyle={activeStyle}
-                    style={odd}
+                    
                   // delay={"1.2s"}
-                  // style={LinkAnimation}
-                >
+                  // style={StyledLinkAnimation}
+                > 
                   {"Artists"}
-                </Link>
+                </StyledLink>
                 <Second
-                // style={LineSpread}
                 ></Second>
-                <Link
+                <StyledLink
                   to="/contact"
                   activeStyle={activeStyle}
-                    style={odd}
+                    
                   // delay={"1.4s"}
-                  // style={LinkAnimation}
-                >
+                  // style={StyledLinkAnimation}
+                > 
                   {"Contact"}
-                </Link>
+                </StyledLink>
                 <Second
-                // style={LineSpread}
                 ></Second>
-                <Link
+                <StyledLink
                   to="/fm-preformance-and-film-archive"
-                    style={odd}
+                    
                   activeStyle={activeStyle}
                   // delay={"1.6s"}
-                  // style={LinkAnimation}
-                >
+                  // style={StyledLinkAnimation}
+                > 
                   {"Fragments & Monuments"} <br></br>{" "}
                   {"preformance and film archive"}
-                </Link>
+                </StyledLink>
                 <Second
-                // style={LineSpread}
                 ></Second>
               </NavList>
             </NavActive>

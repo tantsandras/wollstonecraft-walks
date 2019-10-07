@@ -41,28 +41,34 @@ const OrgList = styled.ul`
   letter-spacing: 1px;
   font-family: Helvetica;
   animation: ${turnVisible} 0.8s ease-in-out;
-  > .Odd {
+`
+
+const StyledLink = styled.a`
+    z-index: 3;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     text-decoration: none;
-    color: #656565;
     opacity: 0;
+    color: #656565;
     animation: ${fadeInRight} ease 0.6s forwards;
     animation-delay: 0.2s;
-  };
-  &:hover {
-    text-decoration: none;
-    color: Crimson;
-    cursor: pointer;
-  }
-  > .Second {
-    align-self: left;
-    width: 100%;
-    margin: 0em 1rem 2.4rem 0em;
-    height: 0.06em;
-    background-color: black;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: ${growLeft};
-  };
+    &:hover {
+      text-decoration: none;
+      color: MediumBlue;
+      cursor: pointer;
+    }
+`
+
+const Second = styled.div`
+align-self: left;
+width: 40%;
+margin: 0em 1rem 2.4rem 0em;
+height: 0.06em;
+background-color: pink;
+transform: scaleX(0);
+transform-origin: left;
+animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
 `
 const MenuContrast = styled.div`
 height: 30px;
@@ -105,62 +111,62 @@ const ContactPage = () => {
           Community Links
         </h4>
         <OrgList>
-          <li className="Odd">
-            <a href="https://www.wollstonecraftpresents.com/" target="_blank" rel="noopener noreferrer">
+          <li>
+            <StyledLink href="https://www.wollstonecraftpresents.com/" target="_blank" rel="noopener noreferrer">
               Wollstonecraft Presents
-            </a>
+            </StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="https://www.maryonthegreen.org/" target="_blank" rel="noopener noreferrer">Mary on the Green</a>
+          <Second></Second>
+          <li>
+            <StyledLink href="https://www.maryonthegreen.org/" target="_blank" rel="noopener noreferrer">Mary on the Green</StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="https://www.wollstonecraftsociety.org/" target="_blank" rel="noopener noreferrer">
+          <Second></Second>
+          <li>
+            <StyledLink href="https://www.wollstonecraftsociety.org/" target="_blank" rel="noopener noreferrer">
               The Wollstonecraft Society
-            </a>
+            </StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="https://twitter.com/mw_fellowship" target="_blank" rel="noopener noreferrer">
+          <Second></Second>
+          <li>
+            <StyledLink href="https://twitter.com/mw_fellowship" target="_blank" rel="noopener noreferrer">
               Wollstonecraft Fellowship
-            </a>
+            </StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="http://www.marywollstonecraftphilosophicalsociety.org/" target="_blank" rel="noopener noreferrer">
+          <Second></Second>
+          <li>
+            <StyledLink href="http://www.marywollstonecraftphilosophicalsociety.org/" target="_blank" rel="noopener noreferrer">
               Wollstonecraft philosophical Society
-            </a>
+            </StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="http://gal-dem.com/" target="_blank" rel="noopener noreferrer">Gal-dem</a>
+          <Second></Second>
+          <li>
+            <StyledLink href="http://gal-dem.com/" target="_blank" rel="noopener noreferrer">Gal-dem</StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="http://www.sistersuncut.org/" target="_blank" rel="noopener noreferrer">Sisters Uncut</a>
+          <Second></Second>
+          <li>
+            <StyledLink href="http://www.sistersuncut.org/" target="_blank" rel="noopener noreferrer">Sisters Uncut</StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="https://www.unfinishedhistories.com/" target="_blank" rel="noopener noreferrer">
+          <Second></Second>
+          <li>
+            <StyledLink href="https://www.unfinishedhistories.com/" target="_blank" rel="noopener noreferrer">
               Unfinished Histories
-            </a>
+            </StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="https://www.rampsonthemoon.co.uk/" target="_blank" rel="noopener noreferrer">Ramps on the Moon</a>
+          <Second></Second>
+          <li>
+            <StyledLink href="https://www.rampsonthemoon.co.uk/" target="_blank" rel="noopener noreferrer">Ramps on the Moon</StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="http://wollstonecraftlive.com/fm/" target="_blank" rel="noopener noreferrer">
+          <Second></Second>
+          <li>
+            <StyledLink href="http://wollstonecraftlive.com/fm/" target="_blank" rel="noopener noreferrer">
               Fragments & Monuments
-            </a>
+            </StyledLink>
           </li>
-          <div className="Second"></div>
-          <li className="Odd">
-            <a href="https://scarylittlegirls.co.uk/" target="_blank" rel="noopener noreferrer">Scary Little Girls</a>
+          <Second></Second>
+          <li>
+            <StyledLink href="https://scarylittlegirls.co.uk/" target="_blank" rel="noopener noreferrer">Scary Little Girls</StyledLink>
           </li>
-          <div className="Second"></div>
+          <Second></Second>
         </OrgList>
       </article>
     </section>
