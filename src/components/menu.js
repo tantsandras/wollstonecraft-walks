@@ -68,29 +68,30 @@ const NavActive = styled.div`
   font-family: Helvetica;
   letter-spacing: 1px;
   animation: ${turnVisible} 0.8s ease-in-out;
-
-  & ${NavActive}:nth-child(odd) {
-    text-decoration: none;
-    color: #656565;
-    opacity: 0;
-    animation: ${fadeInRight} ease 0.6s forwards;
-    animation-delay: 0.2s;
-  }
-  & ${NavActive}:hover {
+  &:hover {
     text-decoration: none;
     color: Crimson;
     cursor: pointer;
   }
-  & ${NavActive}:nth-child(2n) {
-    align-self: left;
-    width: 100%;
-    margin: 0em 1rem 2.4rem 0em;
-    height: 0.06em;
-    background-color: black;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: ${animation2};
-  }
+`
+
+const odd = {
+    textDecoration: `none`,
+    color: `#656565`,
+    opacity: `0`,
+    animation: `${fadeInRight} ease 0.6s forwards`,
+    animationDelay: `0.2s`,
+}
+
+const Second = styled.div`
+align-self: left;
+width: 100%;
+margin: 0em 1rem 2.4rem 0em;
+height: 0.06em;
+background-color: black;
+transform: scaleX(0);
+transform-origin: left;
+animation: ${animation2};
 `
 
 const NavList = styled.ul`
@@ -165,86 +166,94 @@ class Menu extends React.Component {
         )}
         <div>
           {this.state.isActive && (
-            <NavActive>
+            <NavActive >
               <NavList>
                 <Link
                   to="/"
                   activeStyle={activeStyle}
+            style={odd}
                   // style={LinkAnimation}
                 >
                   {"Home"}
                 </Link>
-                <div
+                <Second
                 // style={LineSpread}
-                ></div>
+                ></Second>
                 <Link
                   to="/podcast"
                   activeStyle={activeStyle}
+                    style={odd}
                   // delay={"0.4s"}
                   // style={LinkAnimation}
                 >
                   {"Podcast"}
                 </Link>
-                <div
+                <Second
                 // style={LineSpread}
-                ></div>
+                ></Second>
                 <Link
                   to="/media"
                   activeStyle={activeStyle}
+                    style={odd}
                   // delay={"0.6s"}
                   // style={LinkAnimation}
                 >
                   {"Media"}
                 </Link>
-                <div
+                <Second
                 // style={LineSpread}
-                ></div>
+                ></Second>
                 <Link
                   to="/gallery"
                   activeStyle={activeStyle}
+                    style={odd}
                   // delay={"0.8s"}
                   // style={LinkAnimation}
                 >
                   {"Gallery"}
                 </Link>
-                <div
+                <Second
                 // style={LineSpread}
-                ></div>
+                ></Second>
                 <Link
                   to="/heritage-research"
                   activeStyle={activeStyle}
+                    style={odd}
                   // delay={"1s"}
                   // style={LinkAnimation}
                 >
                   {"Heritage Research"}
                 </Link>
-                <div
+                <Second
                 // style={LineSpread}
-                ></div>
+                ></Second>
                 <Link
                   to="/artists"
                   activeStyle={activeStyle}
+                    style={odd}
                   // delay={"1.2s"}
                   // style={LinkAnimation}
                 >
                   {"Artists"}
                 </Link>
-                <div
+                <Second
                 // style={LineSpread}
-                ></div>
+                ></Second>
                 <Link
                   to="/contact"
                   activeStyle={activeStyle}
+                    style={odd}
                   // delay={"1.4s"}
                   // style={LinkAnimation}
                 >
                   {"Contact"}
                 </Link>
-                <div
+                <Second
                 // style={LineSpread}
-                ></div>
+                ></Second>
                 <Link
                   to="/fm-preformance-and-film-archive"
+                    style={odd}
                   activeStyle={activeStyle}
                   // delay={"1.6s"}
                   // style={LinkAnimation}
@@ -252,9 +261,9 @@ class Menu extends React.Component {
                   {"Fragments & Monuments"} <br></br>{" "}
                   {"preformance and film archive"}
                 </Link>
-                <div
+                <Second
                 // style={LineSpread}
-                ></div>
+                ></Second>
               </NavList>
             </NavActive>
           )}
