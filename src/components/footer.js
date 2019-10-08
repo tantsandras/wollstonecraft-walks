@@ -60,7 +60,7 @@ const FooterGrid = styled.section`
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 6%;
+  gap: 4%;
   margin-top: 4rem;
   justify-content: center;
   margin-bottom: 4rem;
