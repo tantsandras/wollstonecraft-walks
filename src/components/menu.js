@@ -130,24 +130,6 @@ const activeStyle = {
   textDecoration: `none`
 }
 
-// const LinkAnimation = styled(animation1)`
-// text-decoration: none;
-// color: #656565;
-// opacity: 0;
-// animation-delay: ${props => (props.delay)};
-// `
-
-// const LineSpread = styled(animation2)`
-// animation-delay: 0.8s;
-// align-self: left;
-// width: 100%;
-// margin: 0em 1rem 2.4rem 0em;
-// height: 0.06em;
-// background-color: black;
-// transform: scaleX(0);
-// transform-origin: left;
-// `
-
 class Menu extends React.Component {
   constructor() {
     super()

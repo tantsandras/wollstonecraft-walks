@@ -2,6 +2,7 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import Vindication from "../images/videos/VindicationBRIGHTER_BW.mp4"
 import Logo from "../images/Wollstonecraft_portrait_logo-02 copy.png"
+import Flyer from "../components/flyers"
 
 const ProjectHeading = styled.div`
   width: 340px;
@@ -261,18 +262,27 @@ class FmPrefAndFilm extends React.Component {
             </p>
           </span>
           <Videos>
-            <VideoList>
-              <Overlay>
+          <div
+                 style={{
+                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                  background: `rgba(255, 255, 255, 0.98)`,
+                  padding: `2rem`,
+                  marginTop: `8rem`
+                }}
+              >
                 <h2
                   style={{
                     fontFamily: `Yeseva One`,
-                    paddingBottom: `2rem`,
                     letterSpacing: `1px`,
-                    paddingLeft: `2rem`,
+                    textTransform: `uppercase`,
+                    marginTop: `3rem`,
                   }}
                 >
                   Part 1
                 </h2>
+              </div>
+            <VideoList>
+              <Overlay>
                 <Video
                   title="Wollstonecraft Live video, Part 1"
                   src="https://www.youtube.com/embed/vSFDuNrA_lA"
@@ -283,18 +293,27 @@ class FmPrefAndFilm extends React.Component {
                 ></Video>
               </Overlay>
             </VideoList>
-            <VideoList>
-              <Overlay>
+            <div
+                 style={{
+                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                  background: `rgba(255, 255, 255, 0.98)`,
+                  padding: `2rem`,
+                  marginTop: `8rem`
+                }}
+              >
                 <h2
                   style={{
                     fontFamily: `Yeseva One`,
-                    paddingBottom: `2rem`,
                     letterSpacing: `1px`,
-                    paddingLeft: `2rem`,
+                    textTransform: `uppercase`,
+                    marginTop: `3rem`,
                   }}
                 >
                   Part 2
                 </h2>
+              </div>
+            <VideoList>
+              <Overlay>
                 <Video
                   title="Wollstonecraft Live video, Part 2"
                   src="https://www.youtube.com/embed/i5Uxlj9eDNI"
@@ -305,18 +324,27 @@ class FmPrefAndFilm extends React.Component {
                 ></Video>
               </Overlay>
             </VideoList>
-            <VideoList>
-              <Overlay>
+            <div
+                 style={{
+                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                  background: `rgba(255, 255, 255, 0.98)`,
+                  padding: `2rem`,
+                  marginTop: `8rem`
+                }}
+              >
                 <h2
                   style={{
                     fontFamily: `Yeseva One`,
-                    paddingBottom: `2rem`,
                     letterSpacing: `1px`,
-                    paddingLeft: `2rem`,
+                    textTransform: `uppercase`,
+                    marginTop: `3rem`,
                   }}
                 >
                   Part 3
                 </h2>
+              </div>
+            <VideoList>
+              <Overlay>
                 <Video
                   title="Wollstonecraft Live video, Part 3"
                   src="https://www.youtube.com/embed/PLOLhxc5wqE"
@@ -328,19 +356,15 @@ class FmPrefAndFilm extends React.Component {
               </Overlay>
             </VideoList>
           </Videos>
+                  
         </article>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+        <Flyer />
+
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica`, marginTop: `4rem` }}>
         <Videos>
           <VideoList>
             <Overlay>
-              <h2
-                style={{
-                  fontFamily: `Yeseva One`,
-                  paddingBottom: `2rem`,
-                  letterSpacing: `1px`,
-                  paddingLeft: `2rem`,
-                }}
-              ></h2>
+
               <Video
                 src="https://www.youtube.com/embed/nDSlEmgryyA"
                 frameBorder="0"
@@ -457,6 +481,15 @@ Taking Cicely Hamilton's popular suffragette play 'A Pageant of Great Women', as
 
 Through a series of interviews with a wide variety of women taking part in the performance and march, the film considers the gap in documenting women's history, and points to the resounding importance of having a female generation to both honour and draw inspiration from. It follows the process of the plays development within a community of Scottish women from boat builders, to students, librarians and politicians, as they work together towards the final event on March 7 2015. The film gives a lingering insight into some of political and social experiences of women in Scotland today, and invites testament to the tremendous power of a collective voice, and the surprising resonance of a play written over a century ago with our contemporary society.
                 </p>
+                <p>                <i
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                    textTransform: `uppercase`
+                  }}
+                  >Password
+                </i> March</p>
               </div>
           <VideoList>
             
