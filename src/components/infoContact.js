@@ -16,9 +16,9 @@ const Box = styled.li`
 `
 
 const Icon = styled.img`
-max-width: 50px;
+max-width: 40px;
 float: left;
-margin-top: -0.6rem;
+margin-top: -0.4rem;
 cursor: pointer;
 `
 
@@ -80,9 +80,9 @@ Rebecca has been intimately involved with every aspect of SLG, writing, directin
           enjoyed this Living Literature Event. If you have any comments, rave
           reviews or suggestions for the future, we'd love to hear from you.
           </p>
-          <Social><a href="www.scarylittlegirls.co.uk" target="_blank" rel="noopener noreferrer"><Icon src={Email} /></a><p style={{marginLeft: `80px`}}>Email us at info@scarylittlegirls.co.uk</p></ Social>
-          <Social><a href="https://www.facebook.com/ScaryLittleGirls/" target="_blank" rel="noopener noreferrer"><Icon src={Facebook} /></a><p style={{marginLeft: `80px`}}>Message us @ScaryLittleGirls</p></ Social>
-          <Social><a href="https://twitter.com/scarylittlegs" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /></a><p style={{marginLeft: `80px`}}>Message us @ScaryLittleGs</p></ Social>
+          <Social><a href="www.scarylittlegirls.co.uk" target="_blank" rel="noopener noreferrer"><Icon src={Email} /></a><p style={{marginLeft: `80px`}}>info@scarylittlegirls.co.uk</p></ Social>
+          <Social><a href="https://www.facebook.com/ScaryLittleGirls/" target="_blank" rel="noopener noreferrer"><Icon src={Facebook} /></a><p style={{marginLeft: `80px`}}>@ScaryLittleGirls</p></ Social>
+          <Social><a href="https://twitter.com/scarylittlegs" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /></a><p style={{marginLeft: `80px`}}>@ScaryLittleGs</p></ Social>
                 </Box>
         </>
       )

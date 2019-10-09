@@ -1,5 +1,9 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import Instagram from "../images/icons/Instagram.png"
+import Twitter from "../images/icons/Twitter.png"
+import Email from "../images/icons/Email.png"
+import Facebook from "../images/icons/Facebook.png"
 
 const fadeInRight = keyframes`
     from {
@@ -60,12 +64,40 @@ const ArtList = styled.ul`
 const Second = styled.div`
 align-self: left;
 width: 40%;
-margin: 0em 1rem 2.4rem 0em;
+margin: 0em 1rem 4rem 0em;
 height: 0.06em;
 background-color: pink;
 transform: scaleX(0);
 transform-origin: left;
 animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
+`
+
+const Icon = styled.img`
+max-width: 40px;
+float: left;
+margin-top: -0.3rem;
+cursor: pointer;
+`
+
+const Social = styled.span`
+padding-top: 1rem;
+display: inline-block;
+text-align: left;
+vertical-align: middle;
+width: 100%;
+text-decoration: none;
+`
+
+const Handle = styled.a`
+margin-left: 40px;
+text-decoration: none;
+color: #656565;
+letter-spacing: 1px;
+&:hover {
+  text-decoration: none;
+  color: MediumBlue;
+  cursor: pointer;
+}
 `
 
 const ArtistList = () => {
@@ -88,21 +120,34 @@ const ArtistList = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Artistic Director & Producer, Rebecca Mordan
+            Artistic Director & Producer - Rebecca Mordan
+            
           </StyledLink>
+          <Social style={{marginTop: `1.4rem`}}><a href="https://twitter.com/scarylittlegs" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /><Handle>@ScaryLittleGs</Handle></a></Social>
+          <Social><a href="https://twitter.com/_rebeccamordan" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /><Handle>@_RebeccaMordan</Handle></a></Social>
         </li>
         <Second></Second>
         <li> 
-          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
+          <StyledLink href="https://www.alimaeve.com" target="_blank" rel="noopener noreferrer">
             Film Maker - Ali Meave Sargent
+
           </StyledLink>
         </li>
 
         <Second></Second>
         <li> 
           <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
-            Podcast Producers - Marina Garvey Birch and Erica McCoy
+            Podcast Producer - Marina Garvey Birch
           </StyledLink>
+        </li>
+        <Second></Second>
+        <li> 
+          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
+            Podcast Producer - Erica McCoy
+          </StyledLink>
+          <Social style={{marginTop: `1.4rem`}}><a href="https://twitter.com/Erica_Mckoy" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /><Handle>@Erica_Mckoy</Handle></a></Social>
+          <Social><a href="https://www.instagram.com/ericamckoy_/?hl=en" target="_blank" rel="noopener noreferrer"><Icon src={Instagram} /><Handle>@ericamckoy_</Handle></a></Social>
+          <Social><a href="https://www.facebook.com/TheElektrikCave/" target="_blank" rel="noopener noreferrer"><Icon src={Facebook} /><Handle>@TheElektrikCave</Handle></a></Social>
         </li>
         <Second></Second>
         <li> 
@@ -123,6 +168,15 @@ const ArtistList = () => {
         </li>
         <Second></Second>
         <li> 
+          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
+            Drag King - Don One
+          </StyledLink>
+          <Social style={{marginTop: `1.4rem`}}><a href="https://twitter.com/Don1birmingham" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /><Handle>@don1birmingham</Handle></a></Social>
+          <Social><a href="https://www.instagram.com/don1birmingham/" target="_blank" rel="noopener noreferrer"><Icon src={Instagram} /><Handle>@don1birmingham</Handle></a></Social>
+          <Social><a href="https://www.facebook.com/pg/don1birmingham" target="_blank" rel="noopener noreferrer"><Icon src={Facebook} /><Handle>@don1birmingham</Handle></a></Social>
+        </li>
+        <Second></Second>
+        <li> 
           <StyledLink
             href="http://jessebsworth.com/"
             target="_blank"
@@ -136,6 +190,13 @@ const ArtistList = () => {
           <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
             Social Media - Marina Garvey Birch
           </StyledLink>
+        </li>
+        <Second></Second>
+        <li> 
+          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
+            Readings - Rebecca Boey
+          </StyledLink>
+          <Social style={{marginTop: `1.4rem`}}><a href="https://twitter.com/becboey" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /><Handle>@becboey</Handle></a></Social>
         </li>
         <Second></Second>
       </ArtList>
