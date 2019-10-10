@@ -71,7 +71,7 @@ class Step4 extends React.Component {
         </StepCircle>
         <h3
           style={{
-            fontFamily: `Yeseva One`,
+            fontFamily: `Archivo Black`,
             fontSize: `1.6rem`,
             textAlign: `center`,
             marginTop: `-2.8rem`,
@@ -103,10 +103,10 @@ class Step4 extends React.Component {
               Bottle. Take a few moments here to listen to the next readings...
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `Yeseva One` }}>
+          <h3 style={{ fontFamily: `Archivo Black` }}>
             “On Poetry, and Our Relish for the Beauties of Nature”
           </h3>
-          <h4 style={{ fontFamily: `Yeseva One` }}>
+          <h4 style={{ fontFamily: `Archivo Black` }}>
             by Mary Wollstonecraft which originally appeared in the Monthly
             Magazine, April 1797
           </h4>
@@ -162,7 +162,7 @@ class Step4 extends React.Component {
             }}
           >
             <div style={element}>
-              <h4 style={{ fontFamily: `Yeseva One`, marginTop: `2rem` }}>
+              <h4 style={{ fontFamily: `Archivo Black`, marginTop: `2rem` }}>
                 Phenomenal Woman (1995) by Maya Angelou
               </h4>
               <p style={{ fontSize: `0.8rem` }}>

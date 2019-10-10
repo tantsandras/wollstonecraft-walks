@@ -8,7 +8,7 @@ const Box = styled.li`
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
-  min-height: 120px;
+  min-height: 200px;
   position: relative;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease-out;
@@ -53,7 +53,7 @@ const numberColor = num => {
 const Numbers = styled.h4`
   font-family: "Bungee Shade";
   padding-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding-top: 0rem;
   color: ${props => numberColor(props.num)};
 `
@@ -84,10 +84,11 @@ class StepBox extends React.Component {
               <Box key={key}>
                 <h3
                   style={{
-                    fontSize: `1rem`,
-                    fontFamily: `Yeseva One`,
-                    fontWeight: `bold`,
+                    fontSize: `1.2rem`,
+                    fontFamily: `Archivo Black`,
                     letterSpacing: `1px`,
+                    lineHeight: `1.5`,
+                    textAlign: `center`
                   }}
                 >
                   <Numbers num={item.num}>{item.num}</Numbers>

@@ -12,14 +12,14 @@ const ArtistsPage = () => {
       <Menu />
       <h1
           style={{
-            fontFamily: `Yeseva One`,
+            fontFamily: `Archivo Black`,
             fontSize: `2.2rem`,
             textAlign: `center`,
             marginTop: `8rem`,
             letterSpacing: `1px`,
             marginBottom: `2rem`,
           }}
-        >Our wonderful collaborators</h1>
+        >Our wonderful creative team</h1>
       <Artists />
       </section>
   )

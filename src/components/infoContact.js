@@ -41,7 +41,7 @@ class ContactBox extends React.Component {
         <h3
                     style={{
                       fontSize: `2rem`,
-                      fontFamily: `Yeseva One`,
+                      fontFamily: `Archivo Black`,
                       fontWeight: `bold`,
                       letterSpacing: `1px`,
                       marginTop: `1rem`
@@ -65,7 +65,7 @@ class ContactBox extends React.Component {
                   <h3
                     style={{
                       fontSize: `2rem`,
-                      fontFamily: `Yeseva One`,
+                      fontFamily: `Archivo Black`,
                       fontWeight: `bold`,
                       letterSpacing: `1px`,
                     }}

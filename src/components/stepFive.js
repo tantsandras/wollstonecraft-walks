@@ -83,7 +83,7 @@ class Step5 extends React.Component {
         </StepCircle>
         <h3
           style={{
-            fontFamily: `Yeseva One`,
+            fontFamily: `Archivo Black`,
             fontSize: `1.6rem`,
             textAlign: `center`,
             marginTop: `-2.8rem`,
@@ -101,7 +101,7 @@ class Step5 extends React.Component {
               way you came to Newington Green.
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `Yeseva One`, marginTop: `4rem` }}>
+          <h3 style={{ fontFamily: `Archivo Black`, marginTop: `4rem` }}>
             Did you know?
           </h3>
           <blockquote>
@@ -128,7 +128,7 @@ class Step5 extends React.Component {
             another debt we owe to Wollstonecraft&#39;s remarkable vision,
             prowess and resilience.
           </blockquote>
-          <h3 style={{ fontFamily: `Yeseva One`, marginTop: `4rem` }}>
+          <h3 style={{ fontFamily: `Archivo Black`, marginTop: `4rem` }}>
             Back to the directions!
           </h3>
           <ul style={{ listStyle: `none` }}>
@@ -141,7 +141,7 @@ class Step5 extends React.Component {
               school building on your left.
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `Yeseva One`, marginTop: `4rem` }}>
+          <h3 style={{ fontFamily: `Archivo Black`, marginTop: `4rem` }}>
             Did you know?
           </h3>
           <blockquote>
@@ -164,7 +164,7 @@ class Step5 extends React.Component {
             of Newington Green school where we have just been.
           </blockquote>
 
-          <h3 style={{ fontFamily: `Yeseva One`, marginTop: `4rem` }}>
+          <h3 style={{ fontFamily: `Archivo Black`, marginTop: `4rem` }}>
             Back to the directions!
           </h3>
           <ul style={{ listStyle: `none` }}>
@@ -175,7 +175,7 @@ class Step5 extends React.Component {
               with the Lady Mildmay Inn.{" "}
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `Yeseva One`, marginTop: `4rem` }}>
+          <h3 style={{ fontFamily: `Archivo Black`, marginTop: `4rem` }}>
             Did you know?
           </h3>
           <p>
@@ -211,7 +211,7 @@ class Step5 extends React.Component {
             part in the major movements of her time, nationally and
             internationally. We think that calls for a toast!
           </p>
-          <h3 style={{ fontFamily: `Yeseva One`, marginTop: `4rem` }}>
+          <h3 style={{ fontFamily: `Archivo Black`, marginTop: `4rem` }}>
             Back to the directions!
           </h3>
           <ul style={{ listStyle: `none` }}>

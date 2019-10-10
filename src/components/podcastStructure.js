@@ -34,7 +34,7 @@ class Pods extends React.Component {
       <main>
         <h1
           style={{
-            fontFamily: `Yeseva One`,
+            fontFamily: `Archivo Black`,
             fontSize: `2.2rem`,
             textAlign: `center`,
             marginTop: `8rem`,
@@ -49,7 +49,7 @@ class Pods extends React.Component {
           <PodBox>
             <h3
               style={{
-                fontFamily: `Yeseva One`,
+                fontFamily: `Archivo Black`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
@@ -76,7 +76,7 @@ class Pods extends React.Component {
           <PodBox>
             <h3
               style={{
-                fontFamily: `Yeseva One`,
+                fontFamily: `Archivo Black`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
@@ -103,7 +103,7 @@ class Pods extends React.Component {
           <PodBox>
             <h3
               style={{
-                fontFamily: `Yeseva One`,
+                fontFamily: `Archivo Black`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,

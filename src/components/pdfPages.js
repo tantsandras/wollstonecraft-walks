@@ -53,7 +53,7 @@ class Pages extends React.Component {
             <>
               <h2
                 style={{
-                  fontFamily: `Yeseva One`,
+                  fontFamily: `Archivo Black`,
                   fontSize: `1.2rem`,
                   textAlign: `center`,
                   letterSpacing: `1px`,
@@ -65,7 +65,7 @@ class Pages extends React.Component {
                 <br />
                 <i
                   style={{
-                    fontFamily: `Yeseva One`,
+                    fontFamily: `Helvetica`,
                     fontSize: `1rem`,
                     textAlign: `center`,
                     letterSpacing: `1px`,

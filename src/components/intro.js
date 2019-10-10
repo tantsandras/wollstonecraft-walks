@@ -60,12 +60,12 @@ const Intro = () => (
         style={{
           textAlign: `center`,
           paddingTop: `-5%`,
-          fontFamily: `Yeseva One`,
+          fontFamily: `Archivo Black`,
           fontSize: `1.6rem`,
           letterSpacing: `1px`
         }}
       >
-        Who is <h1 style={{fontFamily: `Yeseva One`, letterSpacing: `1px` }}>Mary Wollstonecraft?</h1>
+        Who is <h1 style={{fontFamily: `Archivo Black`, letterSpacing: `1px` }}>Mary Wollstonecraft?</h1>
       </h3>
 
       <article style={{ padding: `5% 10% 3% 10%` }}>

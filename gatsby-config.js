@@ -49,7 +49,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Bungee Shade', 'Yeseva One', ]
+          families: ['Bungee Shade', 'Archivo Black', 'Yeseva One']
         }
       }
     },

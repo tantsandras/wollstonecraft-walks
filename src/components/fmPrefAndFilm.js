@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components"
 import Vindication from "../images/videos/VindicationBRIGHTER_BW.mp4"
 import Logo from "../images/Wollstonecraft_portrait_logo-02 copy.png"
 import Flyer from "../components/flyers"
+import MOW from "../images/posters/MoW Poster-1.jpg"
 
 const ProjectHeading = styled.div`
   width: 340px;
@@ -79,7 +80,7 @@ const Video = styled.iframe`
 `
 
 const MainHeading = styled.h1`
-  font-family: Yeseva One;
+  font-family: Archivo Black;
   font-size: 2rem;
   text-align: center;
   letter-spacing: 1px;
@@ -106,59 +107,58 @@ class FmPrefAndFilm extends React.Component {
     return (
       <main>
         <MainHeading>
-          Fragments & Monuments<br /> Preformance and Film Archive
+          Fragments & Monuments
+          <br /> Preformance and Film Archive
         </MainHeading>
         <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
           <Videos>
-          <div
-                 style={{
-                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                  background: `rgba(255, 255, 255, 0.98)`,
-                  padding: `2rem`,
+            <div
+              style={{
+                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                background: `rgba(255, 255, 255, 0.98)`,
+                padding: `2rem`,
+              }}
+            >
+              <h2
+                style={{
+                  fontFamily: `Archivo Black`,
+                  letterSpacing: `1px`,
+                  textTransform: `uppercase`,
+                  marginTop: `3rem`,
                 }}
               >
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    letterSpacing: `1px`,
-                    textTransform: `uppercase`,
-                    marginTop: `3rem`,
-                  }}
-                >
-                  Vindication
-                </h2>
-                <i
-                  style={{
-                    fontSize: `1rem`,
-                    letterSpacing: `2px`,
-                    lineHeight: `2`,
-                  }}
-                >
-                  by Kaethe Fine (2005) new B&amp;W version AB (2018)
-                </i>
-                <p style={{ marginTop: `2rem` }}>
-                  The French Revolution is simmering and issues of racial,
-                  economic and religious equality is at stake. In this imagined
-                  moment in the life of Mary Wollstonecraft (1759-1797), she
-                  meets with her friends, a group of 18th Century Rational
-                  Dissenters, to discuss her own difficulties making ends meet.
-                  During this meeting Mary declares pleasure to Thomas Paine
-                  that he was inspired by her work to write his famous The
-                  Rights of Man. She is snubbed by her future husband, William
-                  Godwin, for making the assertion but Paine confirms it. She
-                  carries on expressing her frustration with the demands of
-                  being a woman in a society that does not recognize a woman's
-                  right to own anything, be educated or even pursue a career, at
-                  which point Paine encourages her to focus in on those issues
-                  and write what she is now most known for, A Vindication of the
-                  Rights of Women. She became the first person to speak out and
-                  be heard on the silent subject of gender equality.
-                </p>
-              </div>
+                Vindication
+              </h2>
+              <i
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                by Kaethe Fine (2005) new B&amp;W version AB (2018)
+              </i>
+              <p style={{ marginTop: `2rem` }}>
+                The French Revolution is simmering and issues of racial,
+                economic and religious equality is at stake. In this imagined
+                moment in the life of Mary Wollstonecraft (1759-1797), she meets
+                with her friends, a group of 18th Century Rational Dissenters,
+                to discuss her own difficulties making ends meet. During this
+                meeting Mary declares pleasure to Thomas Paine that he was
+                inspired by her work to write his famous The Rights of Man. She
+                is snubbed by her future husband, William Godwin, for making the
+                assertion but Paine confirms it. She carries on expressing her
+                frustration with the demands of being a woman in a society that
+                does not recognize a woman's right to own anything, be educated
+                or even pursue a career, at which point Paine encourages her to
+                focus in on those issues and write what she is now most known
+                for, A Vindication of the Rights of Women. She became the first
+                person to speak out and be heard on the silent subject of gender
+                equality.
+              </p>
+            </div>
             <VideoList>
-              
               <Overlay>
-
                 <LocalVideo controls>
                   <source src={Vindication} type="video/mp4" />
                 </LocalVideo>
@@ -172,7 +172,7 @@ class FmPrefAndFilm extends React.Component {
               <ProjectCircle>
                 <h2
                   style={{
-                    fontFamily: `Yeseva One`,
+                    fontFamily: `Archivo Black`,
                     fontSize: `1.2rem`,
                     textAlign: `center`,
                     letterSpacing: `1px`,
@@ -185,7 +185,7 @@ class FmPrefAndFilm extends React.Component {
                   <br />
                   <i
                     style={{
-                      fontFamily: `Yeseva One`,
+                      fontFamily: `Archivo Black`,
                       fontSize: `1rem`,
                       textAlign: `center`,
                       letterSpacing: `1px`,
@@ -262,25 +262,25 @@ class FmPrefAndFilm extends React.Component {
             </p>
           </span>
           <Videos>
-          <div
-                 style={{
-                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                  background: `rgba(255, 255, 255, 0.98)`,
-                  padding: `2rem`,
-                  marginTop: `8rem`
+            <div
+              style={{
+                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                background: `rgba(255, 255, 255, 0.98)`,
+                padding: `2rem`,
+                marginTop: `8rem`,
+              }}
+            >
+              <h2
+                style={{
+                  fontFamily: `Archivo Black`,
+                  letterSpacing: `1px`,
+                  textTransform: `uppercase`,
+                  marginTop: `3rem`,
                 }}
               >
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    letterSpacing: `1px`,
-                    textTransform: `uppercase`,
-                    marginTop: `3rem`,
-                  }}
-                >
-                  Part 1
-                </h2>
-              </div>
+                Part 1
+              </h2>
+            </div>
             <VideoList>
               <Overlay>
                 <Video
@@ -294,24 +294,24 @@ class FmPrefAndFilm extends React.Component {
               </Overlay>
             </VideoList>
             <div
-                 style={{
-                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                  background: `rgba(255, 255, 255, 0.98)`,
-                  padding: `2rem`,
-                  marginTop: `8rem`
+              style={{
+                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                background: `rgba(255, 255, 255, 0.98)`,
+                padding: `2rem`,
+                marginTop: `8rem`,
+              }}
+            >
+              <h2
+                style={{
+                  fontFamily: `Archivo Black`,
+                  letterSpacing: `1px`,
+                  textTransform: `uppercase`,
+                  marginTop: `3rem`,
                 }}
               >
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    letterSpacing: `1px`,
-                    textTransform: `uppercase`,
-                    marginTop: `3rem`,
-                  }}
-                >
-                  Part 2
-                </h2>
-              </div>
+                Part 2
+              </h2>
+            </div>
             <VideoList>
               <Overlay>
                 <Video
@@ -325,24 +325,24 @@ class FmPrefAndFilm extends React.Component {
               </Overlay>
             </VideoList>
             <div
-                 style={{
-                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                  background: `rgba(255, 255, 255, 0.98)`,
-                  padding: `2rem`,
-                  marginTop: `8rem`
+              style={{
+                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                background: `rgba(255, 255, 255, 0.98)`,
+                padding: `2rem`,
+                marginTop: `8rem`,
+              }}
+            >
+              <h2
+                style={{
+                  fontFamily: `Archivo Black`,
+                  letterSpacing: `1px`,
+                  textTransform: `uppercase`,
+                  marginTop: `3rem`,
                 }}
               >
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    letterSpacing: `1px`,
-                    textTransform: `uppercase`,
-                    marginTop: `3rem`,
-                  }}
-                >
-                  Part 3
-                </h2>
-              </div>
+                Part 3
+              </h2>
+            </div>
             <VideoList>
               <Overlay>
                 <Video
@@ -356,153 +356,196 @@ class FmPrefAndFilm extends React.Component {
               </Overlay>
             </VideoList>
           </Videos>
-                  
         </article>
         <Flyer />
 
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica`, marginTop: `4rem` }}>
-        <Videos>
-          <VideoList>
-            <Overlay>
+        <article
+          style={{
+            padding: `5% 10% 3% 10%`,
+            fontFamily: `Helvetica`,
+            marginTop: `4rem`,
+          }}
+        >
+          <Videos>
+            <VideoList>
+              <Overlay>
+                <Video
+                  src="https://www.youtube.com/embed/nDSlEmgryyA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </Overlay>
+            </VideoList>
+          </Videos>
+        </article>
 
-              <Video
-                src="https://www.youtube.com/embed/nDSlEmgryyA"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                allowFullScreen
-              ></Video>
-            </Overlay>
-          </VideoList>
-          <div
-                 style={{
-                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                  background: `rgba(255, 255, 255, 0.98)`,
-                  padding: `2rem`,
-                  marginTop: `8rem`
+        <article
+          style={{
+            padding: `5% 10% 3% 10%`,
+            fontFamily: `Helvetica`,
+            marginTop: `4rem`,
+            background: `no-repeat center/46% url("${MOW}")`,
+          }}
+        >
+          <Videos>
+
+          <li style={{height: `auto`, listStyle: `none`}}>
+          <h2
+                style={{
+                  fontFamily: `Archivo Black`,
+                  letterSpacing: `1px`,
+                  textTransform: `uppercase`,
+                  marginTop: `3rem`,
+                  textAlign: `right`,
                 }}
               >
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    letterSpacing: `1px`,
-                    textTransform: `uppercase`,
-                    marginTop: `3rem`,
-                  }}
-                >
-                  March
-                </h2>
+                March
+              </h2>
+              <i
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                  textAlign: `right`,
+                  marginBottom: `3rem`
+                }}
+              >
+                The trailer
+              </i>
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                }}
+              >
+                <Video
+                  src="https://www.youtube.com/embed/lwH_fA5e64I"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </div>
+            </li>
+            <div
+              style={{
+                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                background: `rgba(255, 255, 255, 0.98)`,
+                padding: `2rem`,
+                marginTop: `8rem`,
+              }}
+            >
+              <h2
+                style={{
+                  fontFamily: `Archivo Black`,
+                  letterSpacing: `1px`,
+                  textTransform: `uppercase`,
+                  marginTop: `3rem`,
+                }}
+              >
+                March
+              </h2>
+              <i
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                A Glasgow Women's Library and Royal Conservatoire of Scotland
+                Film
+              </i>
+              <p style={{ marginTop: `2rem` }}>
                 <i
                   style={{
                     fontSize: `1rem`,
                     letterSpacing: `2px`,
                     lineHeight: `2`,
                   }}
-                  >The Trailer
-                </i>
-                <p style={{ marginTop: `2rem` }}>
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Film-maker{" "}
-              </i>
-              - Marissa Keating
-              <br />
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Artistic Director{" "}
-              </i>
-              - Anna Birch
-              <br />
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Subtitles {" "}
-              </i>
-              - Stagetext www.stagetext.org<br />
-              
-                </p>
-              </div>
-          <VideoList>
-            
-            <Overlay>
-              <Video
-                src="https://www.youtube.com/embed/lwH_fA5e64I" 
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                allowFullScreen
-              ></Video>
-            </Overlay>
-          </VideoList>
-          <div
-                 style={{
-                  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                  background: `rgba(255, 255, 255, 0.98)`,
-                  padding: `2rem`,
-                  marginTop: `8rem`
-                }}
-              >
-                <h2
-                  style={{
-                    fontFamily: `Yeseva One`,
-                    letterSpacing: `1px`,
-                    textTransform: `uppercase`,
-                    marginTop: `3rem`,
-                  }}
                 >
-                  March
-                </h2>
+                  Film-maker{" "}
+                </i>
+                - Marissa Keating
+                <br />
                 <i
                   style={{
                     fontSize: `1rem`,
                     letterSpacing: `2px`,
                     lineHeight: `2`,
                   }}
-                  >A Glasgow Women's Library and Royal Conservatoire of Scotland Film
+                >
+                  Artistic Director{" "}
                 </i>
-                <p style={{ marginTop: `2rem` }}>
-                'March' documents a large scale, public art event March of Women taking to the streets of Bridgeton on the eve of International Women's Day 2015.
-
-Taking Cicely Hamilton's popular suffragette play 'A Pageant of Great Women', as a starting point the diverse community of women in Glasgow in 2015 is bought to the screen.
-
-Through a series of interviews with a wide variety of women taking part in the performance and march, the film considers the gap in documenting women's history, and points to the resounding importance of having a female generation to both honour and draw inspiration from. It follows the process of the plays development within a community of Scottish women from boat builders, to students, librarians and politicians, as they work together towards the final event on March 7 2015. The film gives a lingering insight into some of political and social experiences of women in Scotland today, and invites testament to the tremendous power of a collective voice, and the surprising resonance of a play written over a century ago with our contemporary society.
-                </p>
-                <p>                <i
+                - Anna Birch
+                <br />
+                <i
                   style={{
                     fontSize: `1rem`,
                     letterSpacing: `2px`,
                     lineHeight: `2`,
-                    textTransform: `uppercase`
                   }}
-                  >Password
-                </i> March</p>
+                >
+                  Subtitles{" "}
+                </i>
+                - Stagetext www.stagetext.org
+                <br />
+
+              <p style={{ marginTop: `2rem` }}>
+                'March' documents a large scale, public art event March of Women
+                taking to the streets of Bridgeton on the eve of International
+                Women's Day 2015. Taking Cicely Hamilton's popular suffragette
+                play 'A Pageant of Great Women', as a starting point the diverse
+                community of women in Glasgow in 2015 is bought to the screen.
+                Through a series of interviews with a wide variety of women
+                taking part in the performance and march, the film considers the
+                gap in documenting women's history, and points to the resounding
+                importance of having a female generation to both honour and draw
+                inspiration from. It follows the process of the plays
+                development within a community of Scottish women from boat
+                builders, to students, librarians and politicians, as they work
+                together towards the final event on March 7 2015. The film gives
+                a lingering insight into some of political and social
+                experiences of women in Scotland today, and invites testament to
+                the tremendous power of a collective voice, and the surprising
+                resonance of a play written over a century ago with our
+                contemporary society.
+              </p>
+              <p>
+                {" "}
+                <i
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                    textTransform: `uppercase`,
+                  }}
+                >
+                  Password
+                </i>{" "}
+                March
+              </p>
+              </p>
+            </div>
+            <li style={{height: `auto`, listStyle: `none`}}>
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                }}
+              >
+                <Video
+                  src="http://player.vimeo.com/video/149630321"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
               </div>
-          <VideoList>
-            
-            <Overlay>
-              <Video
-                src="http://player.vimeo.com/video/149630321"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                allowFullScreen
-              ></Video>
-            </Overlay>
-          </VideoList>
+            </li>
           </Videos>
         </article>
       </main>

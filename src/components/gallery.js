@@ -106,7 +106,7 @@ class Gallery extends React.Component {
           </PageCircle>
           <h1
           style={{
-            fontFamily: `Yeseva One`,
+            fontFamily: `Archivo Black`,
             letterSpacing: `1px`,
             textAlign: `center`,
             fontSize: `2.2rem`,
@@ -121,7 +121,7 @@ class Gallery extends React.Component {
           <div className="content">
             <h2
               style={{
-                fontFamily: `Yeseva One`,
+                fontFamily: `Archivo Black`,
                 paddingTop: `1rem`,
                 letterSpacing: `1px`,
                 fontSize: `2rem`,

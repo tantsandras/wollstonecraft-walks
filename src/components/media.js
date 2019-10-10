@@ -39,8 +39,8 @@ const Hover = styled.div`
 `
 
 const MainHeading = styled.h1`
-  font-family: Yeseva One;
-  font-size: 2rem;
+  font-family: Archivo Black;
+  font-size: 2.4rem;
   text-align: center;
   letter-spacing: 1px;
   margin-top: -10rem;
@@ -134,7 +134,7 @@ class Media extends React.Component {
             <VideoList>
               <h2
                 style={{
-                  fontFamily: `Yeseva One`,
+                  fontFamily: `Archivo Black`,
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                   lineHeight: `2`,
@@ -142,7 +142,7 @@ class Media extends React.Component {
                   textAlign: `center`,
                 }}
               >
-                Wollstonecraft Live! 2019
+                Wollstonecraft Walks
                 <br />
                 <i
                   style={{
@@ -179,7 +179,7 @@ class Media extends React.Component {
             <VideoList>
               <h2
                 style={{
-                  fontFamily: `Yeseva One`,
+                  fontFamily: `Archivo Black`,
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                 }}
@@ -224,7 +224,7 @@ class Media extends React.Component {
         <SoundBox>
           <h3
             style={{
-              fontFamily: `Yeseva One`,
+              fontFamily: `Archivo Black`,
               fontSize: `1.4rem`,
               textAlign: `center`,
               letterSpacing: `1px`,
@@ -241,7 +241,8 @@ class Media extends React.Component {
               textAlign: `center`,
             }}
           >
-            Composer - Alastair Gavin
+            Composer - Alastair Gavin <br />
+            Words - Kaethe Fine
           </p>
           <div
             style={{
@@ -257,7 +258,7 @@ class Media extends React.Component {
             <VideoList>
               <h2
                 style={{
-                  fontFamily: `Yeseva One`,
+                  fontFamily: `Archivo Black`,
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                 }}
@@ -291,7 +292,7 @@ class Media extends React.Component {
             <VideoList>
               <h2
                 style={{
-                  fontFamily: `Yeseva One`,
+                  fontFamily: `Archivo Black`,
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                   lineHeight: `2`,

@@ -56,7 +56,7 @@ class Step3 extends React.Component {
         </StepCircle>
         <h3
           style={{
-            fontFamily: `Yeseva One`,
+            fontFamily: `Archivo Black`,
             fontSize: `1.6rem`,
             textAlign: `center`,
             marginTop: `-2.8rem`,
@@ -77,14 +77,14 @@ class Step3 extends React.Component {
               by contemporary artist Maggi Hambling.
             </Direction>{" "}
           </ul>
-          <h4 style={{ fontFamily: `Yeseva One` }}>Did you know?</h4>
+          <h4 style={{ fontFamily: `Archivo Black` }}>Did you know?</h4>
           <p>
             You are now walking through the site of{" "}
             <b
               style={{
                 letterSpacing: `2px`,
                 lineHeight: `2`,
-                fontFamily: `Yeseva One`,
+                fontFamily: `Helvetica`,
               }}
             >
               Wollstonecraft Live!
@@ -103,7 +103,7 @@ class Step3 extends React.Component {
               style={{
                 letterSpacing: `2px`,
                 lineHeight: `2`,
-                fontFamily: `Yeseva One`,
+                fontFamily: `Helvetica`,
               }}
             >
               The Wollstonecraft Live Experience!
@@ -123,13 +123,13 @@ class Step3 extends React.Component {
           </p>
           </article>
           <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica`, lineHeight: `1.5`, }}>
-          <h2 style={{ fontFamily: `Yeseva One`, marginTop: `4rem` }}>
+          <h2 style={{ fontFamily: `Archivo Black`, marginTop: `4rem` }}>
             Listen - a walking memorial <br />{" "}
           </h2>
 
           <h3
             style={{
-              fontFamily: `Helvetica`,
+              fontFamily: `Archivo Black`,
               letterSpacing: `2px`,
               lineHeight: `2`,
               fontWeight: `lighter`,
@@ -140,7 +140,7 @@ class Step3 extends React.Component {
             (excerpted from
             <b
               style={{
-                fontFamily: `Yeseva One`,
+                fontFamily: `Archivo Black`,
                 lineHeight: `1.5`,
                 fontSize: `1.2rem`,
               }}

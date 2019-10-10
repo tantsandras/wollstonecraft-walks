@@ -38,7 +38,6 @@ const ArtList = styled.ul`
   font-weight: 200;
   cursor: pointer;
   list-style: none;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-family: Helvetica;
   margin-bottom: 4rem;
@@ -84,6 +83,7 @@ padding-top: 1rem;
 display: inline-block;
 text-align: left;
 vertical-align: middle;
+list-style: none;
 width: 100%;
 text-decoration: none;
 `
@@ -112,6 +112,8 @@ const ArtistList = () => {
           >
             Artistic Director & Producer - Anna Birch
           </StyledLink>
+          <Social style={{marginTop: `1.4rem`}}><a href="https://twitter.com/anna_birch1" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /></a><Handle>@anna_birch1</Handle></Social>
+          <Social><a href="https://www.instagram.com/annabirch1/" target="_blank" rel="noopener noreferrer"><Icon src={Instagram} /></a><Handle>@annabirch1</Handle></Social>
         </li>
         <Second></Second>
         <li> 
@@ -136,13 +138,13 @@ const ArtistList = () => {
 
         <Second></Second>
         <li> 
-          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
+          <StyledLink>
             Podcast Producer - Marina Garvey Birch
           </StyledLink>
         </li>
         <Second></Second>
         <li> 
-          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
+          <StyledLink>
             Podcast Producer - Erica McCoy
           </StyledLink>
           <Social style={{marginTop: `1.4rem`}}><a href="https://twitter.com/Erica_Mckoy" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /><Handle>@Erica_Mckoy</Handle></a></Social>
@@ -152,7 +154,7 @@ const ArtistList = () => {
         <Second></Second>
         <li> 
           <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
-            Specially composed musical score - Alastair Gavin
+            Composer - Alastair Gavin
           </StyledLink>
         </li>
         <Second></Second>
@@ -162,14 +164,14 @@ const ArtistList = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Images of first walk at Stoke Newington Literary Festival -
+            Photographer -
             Christine Bradshaw
           </StyledLink>
         </li>
         <Second></Second>
         <li> 
-          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
-            Drag King - Don One
+          <StyledLink>
+            Actor - Don One
           </StyledLink>
           <Social style={{marginTop: `1.4rem`}}><a href="https://twitter.com/Don1birmingham" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /><Handle>@don1birmingham</Handle></a></Social>
           <Social><a href="https://www.instagram.com/don1birmingham/" target="_blank" rel="noopener noreferrer"><Icon src={Instagram} /><Handle>@don1birmingham</Handle></a></Social>
@@ -187,16 +189,25 @@ const ArtistList = () => {
         </li>
         <Second></Second>
         <li> 
-          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
-            Social Media - Marina Garvey Birch
+          <StyledLink
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Actor - Caroline Parker
           </StyledLink>
         </li>
         <Second></Second>
         <li> 
-          <StyledLink href="bla" target="_blank" rel="noopener noreferrer">
-            Readings - Rebecca Boey
+          <StyledLink>
+            Actor - Rebecca Boey
           </StyledLink>
           <Social style={{marginTop: `1.4rem`}}><a href="https://twitter.com/becboey" target="_blank" rel="noopener noreferrer"><Icon src={Twitter} /><Handle>@becboey</Handle></a></Social>
+        </li>
+        <Second></Second>
+        <li> 
+          <StyledLink href="https://sandragrahl.netlify.com" target="_blank" rel="noopener noreferrer">
+            Software Developer - Sandra Grahl
+          </StyledLink>
         </li>
         <Second></Second>
       </ArtList>

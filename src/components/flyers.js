@@ -65,7 +65,7 @@ class Flyers extends React.Component {
             <div style={{gridTemplateColumns: `repeat(2, 1fr)`,
   gridTemplateRows: `repeat(1, auto)`}}><h2
               style={{
-                fontFamily: `Yeseva One`,
+                fontFamily: `Archivo Black`,
                 fontSize: `1.2rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
@@ -76,7 +76,7 @@ class Flyers extends React.Component {
               <br />
               <i
                 style={{
-                  fontFamily: `Yeseva One`,
+                  fontFamily: `Helvetica`,
                   fontSize: `1rem`,
                   textAlign: `center`,
                   letterSpacing: `1px`,

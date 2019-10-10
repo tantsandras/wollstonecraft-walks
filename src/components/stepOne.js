@@ -57,7 +57,7 @@ class Step1 extends React.Component {
         </StepCircle>
         <h3
           style={{
-            fontFamily: `Yeseva One`,
+            fontFamily: `Archivo Black`,
             fontSize: `2.2rem`,
             textAlign: `center`,
             marginTop: `-2.8rem`,
@@ -102,7 +102,7 @@ class Step1 extends React.Component {
           <br />
           <h4
             style={{
-              fontFamily: `Yeseva One`,
+              fontFamily: `Archivo Black`,
               paddingTop: `2rem`,
               letterSpacing: `1px`,
             }}
@@ -110,7 +110,7 @@ class Step1 extends React.Component {
             Excerpt from
             <h3
               style={{
-                fontFamily: `Yeseva One`,
+                fontFamily: `Archivo Black`,
                 paddingTop: `1rem`,
                 letterSpacing: `1px`,
               }}
@@ -167,7 +167,7 @@ class Step1 extends React.Component {
               Unitarian Meeting House now a building site.
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `Yeseva One`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
             Did you know?
           </h4>
           <blockquote>
@@ -185,7 +185,7 @@ class Step1 extends React.Component {
             finished by the time you do this walk!
           </blockquote>
           <br />
-          <h4 style={{ fontFamily: `Yeseva One`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
             Back to the directions -
           </h4>
           <ul style={{ listStyle: `none` }}>
@@ -227,7 +227,7 @@ class Step1 extends React.Component {
               your right.
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `Yeseva One`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
             Did you know?
           </h4>
           <blockquote>

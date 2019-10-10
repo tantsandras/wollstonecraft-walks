@@ -23,21 +23,20 @@ const Header = ({ siteTitle }) => (
       marginBottom: `6rem`
   }}>
     <div style={element}>
-    <h2 style={{fontFamily: `Yeseva One`, color: `#333333`, letterSpacing: `2px`, textShadow: `0.6px 0.6px #000000`, transform: `translateY(-90px)`}}>Welcome to</h2>
+    <h2 style={{fontFamily: `Archivo Black`, color: `#333333`, transform: `translateY(-90px)`, letterSpacing: `1px`,}}>Welcome to</h2>
         <h1
           style={{
             color: `#333333`,
             textDecoration: `none`,
             textAlign: `center`,
-            fontFamily: `Yeseva One`,
+            fontFamily: `Archivo Black`,
             zIndex: `2`,
-            textShadow: `1px 1px #000000`,
-            letterSpacing: `2px`,
             transform: `translateY(-90px)`,
             lineHeight: `1.5`,
             fontSize: `2.2rem`,
             marginTop: `3.8rem`,
-            marginBottom: `-2.4rem`
+            marginBottom: `-2.4rem`,
+            letterSpacing: `1px`,
           }}
         > 
           {siteTitle}
