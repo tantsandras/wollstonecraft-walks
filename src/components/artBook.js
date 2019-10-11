@@ -66,12 +66,13 @@ class ArtBook extends React.Component {
 
   render() {
     return (
+      <article style={{transform: `translateY(-800px)`}}>
       <div
         style={{
           display: `grid`,
           gridTemplateColumns: `repeat(auto-fit, minmax(240px, 4fr))`,
           gridGap: `1rem`,
-          padding: `4rem 2rem 4rem 2rem`,
+          padding: `0rem 2rem 4rem 2rem`,
           columnGap: `0%`,
           margin: `0 auto`,
           gridTemplateRows: `repeat(1, auto)`,
@@ -93,6 +94,7 @@ class ArtBook extends React.Component {
           <Pages currentPage={this.state.currentIndex} />
         </div>
       </div>
+      </article>
     )
   }
 }

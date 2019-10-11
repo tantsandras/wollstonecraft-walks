@@ -6,7 +6,7 @@ import Circles from "../components/circles"
 
 const GalleryPage = () => {
   return (
-      <main style={{ fontFamily: `Helvetica` }}>
+      <main style={{ fontFamily: `Open Sans` }}>
         <SEO title="Gallery" />
         <Menu />
         <Circles />

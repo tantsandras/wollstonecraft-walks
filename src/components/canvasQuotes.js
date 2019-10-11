@@ -1,16 +1,18 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import { Link } from "gatsby"
 
-const Back = styled.button`
+const Back = styled(Link)`
   padding: 0.6rem 1rem 0.6rem 1rem;
   font-size: 22px;
   background: #1451ad;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-  font-family: Helvetica;
+  font-family: Open Sans;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffd0d0;
   text-transform: uppercase;
+  text-decoration: none;
   min-width: 240px;
   overflow: hidden;
   cursor: pointer;
@@ -44,7 +46,7 @@ class Circle {
       ctx.arc(this.x, this.y, this.radius, Math.PI * 2, false)
       ctx.fillStyle = this.color
       ctx.fill()
-      ctx.font = "normal 1rem Helvetica"
+      ctx.font = "normal 1rem Open Sans"
       ctx.textAlign = "center"
       ctx.fillStyle = "#333333"
       lines.map((v, i) => {
@@ -184,7 +186,7 @@ class CanvasQuotes extends React.Component {
       <>
         <div style={{ display: `grid`, justifyContent: `center` }}>
 
-        <Back style={{margin: `0 auto`, transform: `translateY(300px)`,}}>Back to Home</Back>
+        <Back style={{margin: `0 auto`, transform: `translateY(300px)`,}} to={"/"}>Back to Home</Back>
           <canvas
             width={this.state.width}
             height={this.state.height}

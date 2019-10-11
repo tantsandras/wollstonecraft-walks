@@ -7,7 +7,7 @@ import Image from "../components/image"
 const element = {
   gridTemplateColumns: `repeat(4, 1fr)`,
   gridTemplateRows: `repeat(2, 300px)`,
-  fontFamily: `Helvetica`,
+  fontFamily: `Open Sans`,
 }
 
 const Header = ({ siteTitle }) => (
@@ -23,17 +23,17 @@ const Header = ({ siteTitle }) => (
       marginBottom: `6rem`
   }}>
     <div style={element}>
-    <h2 style={{fontFamily: `Archivo Black`, color: `#333333`, transform: `translateY(-90px)`, letterSpacing: `1px`,}}>Welcome to</h2>
+    <h2 style={{fontFamily: `'Archivo Black', Impact`, color: `#333333`, transform: `translateY(-90px)`, letterSpacing: `1px`,}}>Welcome to</h2>
         <h1
           style={{
             color: `#333333`,
             textDecoration: `none`,
             textAlign: `center`,
-            fontFamily: `Archivo Black`,
-            zIndex: `2`,
-            transform: `translateY(-90px)`,
+            fontFamily: `'Archivo Black', Impact`,
+            zIndex: `99`,
+            transform: `translate(20px, -90px)`,
             lineHeight: `1.5`,
-            fontSize: `2.2rem`,
+            fontSize: `280%`,
             marginTop: `3.8rem`,
             marginBottom: `-2.4rem`,
             letterSpacing: `1px`,
@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => (
         </h1>
       </div>
       <div style={element}>
-      <div style={{ maxWidth: `500px`, maxHeight: `500px`}}>
+      <div style={{ maxWidth: `500px`, maxHeight: `500px`, zIndex: `1`}}>
       <Image />
       </div>
     </div>

@@ -4,38 +4,15 @@ import Vindication from "../images/videos/VindicationBRIGHTER_BW.mp4"
 import Logo from "../images/Wollstonecraft_portrait_logo-02 copy.png"
 import Flyer from "../components/flyers"
 import MOW from "../images/posters/MoW Poster-1.jpg"
+import Quote7 from "../images/posters/Quotes - vertical[1]-7.jpg"
+import Quote5 from "../images/posters/Quotes - vertical[1]-5.jpg"
 
 const ProjectHeading = styled.div`
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  border-left: 6px double MediumBlue;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   text-align: center;
-  vertical-align: middle;
   font-size: 1rem;
   position: relative;
-  clip-path: circle(50%);
-  -webkit-clip-path: circle(50%);
+  margin: 2% 6% 3% 1%;
   float: left;
-  -webkit-shape-outside: circle(20em);
-  shape-outside: circle(20em);
-  margin: 18% 28% 5% 1%;
-`
-const ProjectCircle = styled.div`
-  position: relative;
-  border-radius: 50%;
-  margin: 0 auto;
-  width: 340px;
-  height: 340px;
-  line-height: 200px;
-  background: rgba(20, 81, 173, 0.1);
-  mix-blend-mode: multiply;
-  text-align: center;
-  vertical-align: middle;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
 `
 
 const VideoList = styled.li`
@@ -43,6 +20,9 @@ const VideoList = styled.li`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
   height: auto;
+  position: relative;
+  overflow: auto;
+  max-width: 900px;
 `
 
 const Overlay = styled.div`
@@ -53,19 +33,20 @@ const Overlay = styled.div`
   background-size: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
 `
 
 const Videos = styled.ul`
   display: grid;
   grid-template-columns: repeat(1, minmax(300px, 2fr));
   grid-gap: 1rem;
-  padding: 6rem 2rem 4rem 2rem;
+  padding: 4rem 2rem 4rem 2rem;
   column-gap: 4%;
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Helvetica;
+  font-family: Open Sans;
+  position: relative;
 `
 
 const Video = styled.iframe`
@@ -80,7 +61,7 @@ const Video = styled.iframe`
 `
 
 const MainHeading = styled.h1`
-  font-family: Archivo Black;
+  font-family: 'Archivo Black', Impact;
   font-size: 2rem;
   text-align: center;
   letter-spacing: 1px;
@@ -110,18 +91,24 @@ class FmPrefAndFilm extends React.Component {
           Fragments & Monuments
           <br /> Preformance and Film Archive
         </MainHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+        <article style={{ padding: `5% 10% 6% 10%`, fontFamily: `Open Sans`, background: `no-repeat top/48% url("${Quote7}")`, }}>
           <Videos>
+        
             <div
               style={{
-                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                borderLeft: `2px solid crimson`,
+                borderTop: `2px solid crimson`,
+                borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
+                borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
+                boxShadow: `-14px -14px 1px #fff, -16px -16px 0px 0px crimson`,
                 background: `rgba(255, 255, 255, 0.98)`,
                 padding: `2rem`,
+                maxWidth: `600px`,
               }}
             >
               <h2
                 style={{
-                  fontFamily: `Archivo Black`,
+                  fontFamily: `'Archivo Black', Impact`,
                   letterSpacing: `1px`,
                   textTransform: `uppercase`,
                   marginTop: `3rem`,
@@ -157,53 +144,62 @@ class FmPrefAndFilm extends React.Component {
                 equality.
               </p>
             </div>
-            <VideoList>
-              <Overlay>
-                <LocalVideo controls>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+                marginBottom: `2rem`
+              }}
+            >
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                }}
+              >
+                <LocalVideo controls style={{float: `right`}}>
                   <source src={Vindication} type="video/mp4" />
                 </LocalVideo>
-              </Overlay>
-            </VideoList>
+              </div>
+            </li>
           </Videos>
+          </article>
+          <article style={{ padding: `4% 10% 0% 10%`, fontFamily: `Open Sans`, }}>
           <span
-            style={{ width: `100%`, margin: `0 auto`, display: `inline-block` }}
+            style={{ width: `100%`, margin: `0 auto`, display: `inline-block`, height: `360px`, paddingTop: `3rem` }}
           >
             <ProjectHeading>
-              <ProjectCircle>
-                <h2
+              <h2
+                style={{
+                  fontFamily: `'Archivo Black', Impact`,
+                  fontSize: `180%`,
+                  textAlign: `center`,
+                  letterSpacing: `1px`,
+                  lineHeight: `1.5`,
+                }}
+              >
+                Wollstonecraft Live!
+                <br />
+                <i
                   style={{
-                    fontFamily: `Archivo Black`,
-                    fontSize: `1.2rem`,
-                    textAlign: `center`,
+                    fontFamily: `'Archivo Black', Impact`,
+                    fontSize: `1rem`,
+                    textAlign: `left`,
                     letterSpacing: `1px`,
-                    paddingTop: `130px`,
-                    marginBottom: `200px`,
-                    lineHeight: `2`,
                   }}
                 >
-                  Wollstonecraft Live!
-                  <br />
-                  <i
-                    style={{
-                      fontFamily: `Archivo Black`,
-                      fontSize: `1rem`,
-                      textAlign: `center`,
-                      letterSpacing: `1px`,
-                      marginTop: `1rem`,
-                    }}
-                  >
-                    by Kaethe Fine 2005
-                  </i>
-                </h2>
-              </ProjectCircle>
+                  by Kaethe Fine 2005
+                </i>
+              </h2>
             </ProjectHeading>
             <p
               style={{
                 fontSize: `0.8rem`,
-                marginTop: `24rem`,
-                paddingTop: `2rem`,
-                width: `66%`,
-                marginLeft: `1.4rem`,
+                width: `68%`,
+                marginLeft: `0.2rem`,
+                float: `right`,
               }}
             >
               <i
@@ -262,27 +258,34 @@ class FmPrefAndFilm extends React.Component {
             </p>
           </span>
           <Videos>
-            <div
+            <h2
               style={{
-                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                background: `rgba(255, 255, 255, 0.98)`,
-                padding: `2rem`,
-                marginTop: `8rem`,
+                fontFamily: `'Archivo Black', Impact`,
+                letterSpacing: `1px`,
+                textTransform: `uppercase`,
+                marginTop: `1rem`,
+                textAlign: `left`,
+                borderTop: `2px solid black`,
+                paddingTop: `1rem`
               }}
             >
-              <h2
+              Part 1
+            </h2>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
                 style={{
-                  fontFamily: `Archivo Black`,
-                  letterSpacing: `1px`,
-                  textTransform: `uppercase`,
-                  marginTop: `3rem`,
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`
                 }}
               >
-                Part 1
-              </h2>
-            </div>
-            <VideoList>
-              <Overlay>
                 <Video
                   title="Wollstonecraft Live video, Part 1"
                   src="https://www.youtube.com/embed/vSFDuNrA_lA"
@@ -291,29 +294,36 @@ class FmPrefAndFilm extends React.Component {
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
-              </Overlay>
-            </VideoList>
-            <div
+              </div>
+            </li>
+            <h2
               style={{
-                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                background: `rgba(255, 255, 255, 0.98)`,
-                padding: `2rem`,
-                marginTop: `8rem`,
+                fontFamily: `'Archivo Black', Impact`,
+                letterSpacing: `1px`,
+                textTransform: `uppercase`,
+                marginTop: `2rem`,
+                textAlign: `left`,
+                borderTop: `2px solid black`,
+                paddingTop: `1rem`
               }}
             >
-              <h2
+              Part 2
+            </h2>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
                 style={{
-                  fontFamily: `Archivo Black`,
-                  letterSpacing: `1px`,
-                  textTransform: `uppercase`,
-                  marginTop: `3rem`,
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`
                 }}
               >
-                Part 2
-              </h2>
-            </div>
-            <VideoList>
-              <Overlay>
                 <Video
                   title="Wollstonecraft Live video, Part 2"
                   src="https://www.youtube.com/embed/i5Uxlj9eDNI"
@@ -322,29 +332,36 @@ class FmPrefAndFilm extends React.Component {
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
-              </Overlay>
-            </VideoList>
-            <div
+              </div>
+            </li>
+            <h2
               style={{
-                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                background: `rgba(255, 255, 255, 0.98)`,
-                padding: `2rem`,
-                marginTop: `8rem`,
+                fontFamily: `'Archivo Black', Impact`,
+                letterSpacing: `1px`,
+                textTransform: `uppercase`,
+                marginTop: `2rem`,
+                textAlign: `left`,
+                borderTop: `2px solid black`,
+                paddingTop: `1rem`,
               }}
             >
-              <h2
+              Part 3
+            </h2>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
                 style={{
-                  fontFamily: `Archivo Black`,
-                  letterSpacing: `1px`,
-                  textTransform: `uppercase`,
-                  marginTop: `3rem`,
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`
                 }}
               >
-                Part 3
-              </h2>
-            </div>
-            <VideoList>
-              <Overlay>
                 <Video
                   title="Wollstonecraft Live video, Part 3"
                   src="https://www.youtube.com/embed/PLOLhxc5wqE"
@@ -353,22 +370,83 @@ class FmPrefAndFilm extends React.Component {
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
-              </Overlay>
-            </VideoList>
+              </div>
+            </li>
           </Videos>
         </article>
+        <article
+          style={{
+            padding: `0% 10% 6% 10%`,
+            fontFamily: `Open Sans`,
+          }}
+        >
         <Flyer />
+        </article>
 
         <article
           style={{
-            padding: `5% 10% 3% 10%`,
-            fontFamily: `Helvetica`,
-            marginTop: `4rem`,
+            padding: `1% 10% 1% 10%`,
+            fontFamily: `Open Sans`,
+            marginTop: `-4rem`,
+            background: `no-repeat top/42% url("${Quote5}")`,
           }}
         >
           <Videos>
-            <VideoList>
-              <Overlay>
+            <div
+              style={{
+                borderLeft: `2px solid #FF008A`,
+                borderTop: `2px solid #FF008A`,
+                borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
+                borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
+                boxShadow: `-14px -14px 1px #fff, -16px -16px 0px 0px #FF008A`,
+                background: `rgba(255, 255, 255, 0.98)`,
+                padding: `2rem`,
+                maxWidth: `500px`,
+
+              }}
+            >
+              <h2
+                style={{
+                  fontFamily: `'Archivo Black', Impact`,
+                  letterSpacing: `1px`,
+                  textTransform: `uppercase`,
+                  marginTop: `3rem`,
+                }}
+              >
+                Wollstonecraft Live!
+              </h2>
+              <i
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                Written by Kaethe Fine <br />
+                Concieved by Kaethe Fine and Anna Birch <br />
+                Produced and directed by Anna Birch <br />
+              </i>
+              <p style={{ marginTop: `2rem` }}>
+                Meet Mary Wollstonecraft (1759-1797), Britain's first feminist.
+                She articulated the case for women's suffrage, wrote A
+                Vindication of the Rights of Women and gave birth to Mary
+                Shelley who wrote Frankenstein.
+              </p>
+            </div>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                }}
+              >
                 <Video
                   src="https://www.youtube.com/embed/nDSlEmgryyA"
                   frameBorder="0"
@@ -376,44 +454,51 @@ class FmPrefAndFilm extends React.Component {
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
-              </Overlay>
-            </VideoList>
+              </div>
+            </li>
           </Videos>
         </article>
 
         <article
           style={{
-            padding: `5% 10% 3% 10%`,
-            fontFamily: `Helvetica`,
-            marginTop: `4rem`,
+            padding: `1% 10% 1% 10%`,
+            fontFamily: `Open Sans`,
+            transform: `translateY(-400px)`,
             background: `no-repeat center/46% url("${MOW}")`,
+            position: `relative`,
           }}
         >
           <Videos>
-
-          <li style={{height: `auto`, listStyle: `none`}}>
-          <h2
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                transform: `translateY(300px)`,
+              }}
+            >
+              <h2
                 style={{
-                  fontFamily: `Archivo Black`,
+                  fontFamily: `'Archivo Black', Impact`,
                   letterSpacing: `1px`,
                   textTransform: `uppercase`,
                   marginTop: `3rem`,
                   textAlign: `right`,
                 }}
               >
-                March
+                March <br />
+                <i
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                    textAlign: `right`,
+                    marginBottom: `3rem`,
+                  }}
+                >
+                  The trailer
+                </i>
               </h2>
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                  textAlign: `right`,
-                  marginBottom: `3rem`
-                }}
-              >
-                The trailer
-              </i>
+
               <div
                 style={{
                   position: `relative`,
@@ -432,18 +517,23 @@ class FmPrefAndFilm extends React.Component {
             </li>
             <div
               style={{
-                boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
+                borderLeft: `2px solid #0031AD`,
+                borderTop: `2px solid #0031AD`,
+                borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
+                borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
+                boxShadow: `-14px -14px 1px #fff, -16px -16px 0px 0px #0031AD`,
                 background: `rgba(255, 255, 255, 0.98)`,
                 padding: `2rem`,
-                marginTop: `8rem`,
+                marginTop: `18rem`,
+                float: `left`,
+                maxWidth: `600px`,
               }}
             >
               <h2
                 style={{
-                  fontFamily: `Archivo Black`,
+                  fontFamily: `'Archivo Black', Impact`,
                   letterSpacing: `1px`,
                   textTransform: `uppercase`,
-                  marginTop: `3rem`,
                 }}
               >
                 March
@@ -492,44 +582,43 @@ class FmPrefAndFilm extends React.Component {
                 </i>
                 - Stagetext www.stagetext.org
                 <br />
-
-              <p style={{ marginTop: `2rem` }}>
-                'March' documents a large scale, public art event March of Women
-                taking to the streets of Bridgeton on the eve of International
-                Women's Day 2015. Taking Cicely Hamilton's popular suffragette
-                play 'A Pageant of Great Women', as a starting point the diverse
-                community of women in Glasgow in 2015 is bought to the screen.
-                Through a series of interviews with a wide variety of women
-                taking part in the performance and march, the film considers the
-                gap in documenting women's history, and points to the resounding
-                importance of having a female generation to both honour and draw
-                inspiration from. It follows the process of the plays
-                development within a community of Scottish women from boat
-                builders, to students, librarians and politicians, as they work
-                together towards the final event on March 7 2015. The film gives
-                a lingering insight into some of political and social
-                experiences of women in Scotland today, and invites testament to
-                the tremendous power of a collective voice, and the surprising
-                resonance of a play written over a century ago with our
-                contemporary society.
-              </p>
-              <p>
-                {" "}
-                <i
-                  style={{
-                    fontSize: `1rem`,
-                    letterSpacing: `2px`,
-                    lineHeight: `2`,
-                    textTransform: `uppercase`,
-                  }}
-                >
-                  Password
-                </i>{" "}
-                March
-              </p>
+                <p style={{ marginTop: `2rem` }}>
+                  'March' documents a large scale, public art event March of
+                  Women taking to the streets of Bridgeton on the eve of
+                  International Women's Day 2015. Taking Cicely Hamilton's
+                  popular suffragette play 'A Pageant of Great Women', as a
+                  starting point the diverse community of women in Glasgow in
+                  2015 is bought to the screen. Through a series of interviews
+                  with a wide variety of women taking part in the performance
+                  and march, the film considers the gap in documenting women's
+                  history, and points to the resounding importance of having a
+                  female generation to both honour and draw inspiration from. It
+                  follows the process of the plays development within a
+                  community of Scottish women from boat builders, to students,
+                  librarians and politicians, as they work together towards the
+                  final event on March 7 2015. The film gives a lingering
+                  insight into some of political and social experiences of women
+                  in Scotland today, and invites testament to the tremendous
+                  power of a collective voice, and the surprising resonance of a
+                  play written over a century ago with our contemporary society.
+                </p>
+                <p>
+                  {" "}
+                  <i
+                    style={{
+                      fontSize: `1rem`,
+                      letterSpacing: `2px`,
+                      lineHeight: `2`,
+                      textTransform: `uppercase`,
+                    }}
+                  >
+                    Password
+                  </i>{" "}
+                  March
+                </p>
               </p>
             </div>
-            <li style={{height: `auto`, listStyle: `none`}}>
+            <li style={{ height: `auto`, listStyle: `none` }}>
               <div
                 style={{
                   position: `relative`,

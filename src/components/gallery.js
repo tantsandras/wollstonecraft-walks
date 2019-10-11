@@ -106,13 +106,13 @@ class Gallery extends React.Component {
           </PageCircle>
           <h1
           style={{
-            fontFamily: `Archivo Black`,
+            fontFamily: `'Archivo Black', Impact`,
             letterSpacing: `1px`,
             textAlign: `center`,
             fontSize: `2.2rem`,
-            marginTop: `-6.8rem`,
+            marginTop: `-5.6rem`,
             paddingLeft: `6.4rem`,
-            marginBottom: `11rem`
+            marginBottom: `14rem`
           }}
         >
           Gallery.
@@ -121,7 +121,7 @@ class Gallery extends React.Component {
           <div className="content">
             <h2
               style={{
-                fontFamily: `Archivo Black`,
+                fontFamily: `'Archivo Black', Impact`,
                 paddingTop: `1rem`,
                 letterSpacing: `1px`,
                 fontSize: `2rem`,
@@ -138,7 +138,7 @@ class Gallery extends React.Component {
                 style={{
                   letterSpacing: `2px`,
                   fontSize: `1.6rem`,
-                  fontFamily: `Helvetica`,
+                  fontFamily: `Open Sans`,
                   fontWeight: `lighter`,
                   marginTop: `4rem`,
                 }}

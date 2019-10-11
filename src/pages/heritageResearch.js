@@ -6,7 +6,7 @@ import styled, { keyframes } from "styled-components"
 const HeritageResearchPage = () => {
 
     return (
-    <section style={{fontFamily: `Helvetica`}}>
+    <section style={{fontFamily: `Open Sans`}}>
       <SEO title="Heritage Research" />
       <Menu />
       </section>

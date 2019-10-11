@@ -53,7 +53,7 @@ class Pages extends React.Component {
             <>
               <h2
                 style={{
-                  fontFamily: `Archivo Black`,
+                  fontFamily: `'Archivo Black', Impact`,
                   fontSize: `1.2rem`,
                   textAlign: `center`,
                   letterSpacing: `1px`,
@@ -65,7 +65,7 @@ class Pages extends React.Component {
                 <br />
                 <i
                   style={{
-                    fontFamily: `Helvetica`,
+                    fontFamily: `Open Sans`,
                     fontSize: `1rem`,
                     textAlign: `center`,
                     letterSpacing: `1px`,

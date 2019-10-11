@@ -71,7 +71,7 @@ class Step4 extends React.Component {
         </StepCircle>
         <h3
           style={{
-            fontFamily: `Archivo Black`,
+            fontFamily: `'Archivo Black', Impact`,
             fontSize: `1.6rem`,
             textAlign: `center`,
             marginTop: `-2.8rem`,
@@ -81,7 +81,7 @@ class Step4 extends React.Component {
         >
           Newington Green Primary School
         </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#383790"}></Arrow>Turn left and walk to the end of
@@ -103,10 +103,10 @@ class Step4 extends React.Component {
               Bottle. Take a few moments here to listen to the next readings...
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `Archivo Black` }}>
+          <h3 style={{ fontFamily: `'Archivo Black', Impact` }}>
             “On Poetry, and Our Relish for the Beauties of Nature”
           </h3>
-          <h4 style={{ fontFamily: `Archivo Black` }}>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact` }}>
             by Mary Wollstonecraft which originally appeared in the Monthly
             Magazine, April 1797
           </h4>
@@ -162,7 +162,7 @@ class Step4 extends React.Component {
             }}
           >
             <div style={element}>
-              <h4 style={{ fontFamily: `Archivo Black`, marginTop: `2rem` }}>
+              <h4 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `2rem` }}>
                 Phenomenal Woman (1995) by Maya Angelou
               </h4>
               <p style={{ fontSize: `0.8rem` }}>

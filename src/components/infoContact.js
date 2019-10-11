@@ -41,7 +41,7 @@ class ContactBox extends React.Component {
         <h3
                     style={{
                       fontSize: `2rem`,
-                      fontFamily: `Archivo Black`,
+                      fontFamily: `'Archivo Black', Impact`,
                       fontWeight: `bold`,
                       letterSpacing: `1px`,
                       marginTop: `1rem`
@@ -49,7 +49,7 @@ class ContactBox extends React.Component {
                   >
         Anna Birch 
         </h3>
-        <h4 style={{fontFamily: `Helvetica`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `0.8rem`}}>Fragments & Monuments performance and film
+        <h4 style={{fontFamily: `Open Sans`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `0.8rem`}}>Fragments & Monuments performance and film
             <br />
              director @ fragmentsandmonuments.com</h4>
              <p>Anna  combines her professional expertise as a theatre and film director with her scholarly research and activism. Moving beyond the theatre building, she has created a ‘living monuments’ dramaturgical method to both search out and reveal hidden and often neglected feminist biographies and histories. She researched her method through site-specific performance and films about the life of early feminist Mary Wollstonecraft (1759-1797) to show how this use of multimedia provides an essential link to the performativity of particular feminist achievements through history.</p>
@@ -65,14 +65,14 @@ class ContactBox extends React.Component {
                   <h3
                     style={{
                       fontSize: `2rem`,
-                      fontFamily: `Archivo Black`,
+                      fontFamily: `'Archivo Black', Impact`,
                       fontWeight: `bold`,
                       letterSpacing: `1px`,
                     }}
                   > 
                   Rebecca Mordan 
                   </h3>
-                  <h4 style={{fontFamily: `Helvetica`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `0.8rem`}}>www.scarylittlegirls.co.uk</h4>
+                  <h4 style={{fontFamily: `Open Sans`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `0.8rem`}}>www.scarylittlegirls.co.uk</h4>
                   <p>After graduating from Bristol Old Vic and working in film, theatre and television, Rebecca created her own company, Scary Little Girls, to try and ‘level the playing field’, populating stories with fascinating, diverse female characters.
 
 Rebecca has been intimately involved with every aspect of SLG, writing, directing, producing and performing. She is a grassroots campaigner against male violence and frequent guest expert on BBC Radio and Sky News.</p>

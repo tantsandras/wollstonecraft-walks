@@ -25,7 +25,7 @@ const PodList = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Helvetica;
+  font-family: Open Sans;
 `
 
 class Pods extends React.Component {
@@ -34,7 +34,7 @@ class Pods extends React.Component {
       <main>
         <h1
           style={{
-            fontFamily: `Archivo Black`,
+            fontFamily: `'Archivo Black', Impact`,
             fontSize: `2.2rem`,
             textAlign: `center`,
             marginTop: `8rem`,
@@ -44,12 +44,12 @@ class Pods extends React.Component {
         >
           Wollstonecraft Walks Podcast
         </h1>
-        <h2 style={{fontFamily: `Helvetica`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
+        <h2 style={{fontFamily: `Open Sans`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
         <PodList>
           <PodBox>
             <h3
               style={{
-                fontFamily: `Archivo Black`,
+                fontFamily: `'Archivo Black', Impact`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
@@ -76,7 +76,7 @@ class Pods extends React.Component {
           <PodBox>
             <h3
               style={{
-                fontFamily: `Archivo Black`,
+                fontFamily: `'Archivo Black', Impact`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
@@ -103,7 +103,7 @@ class Pods extends React.Component {
           <PodBox>
             <h3
               style={{
-                fontFamily: `Archivo Black`,
+                fontFamily: `'Archivo Black', Impact`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,

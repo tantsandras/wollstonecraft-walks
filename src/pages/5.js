@@ -12,7 +12,7 @@ import AudioStepFive from "../audio/WALK GUIDE CHAPTER 5.mp3"
 const element = {
   gridTemplateColumns: `repeat(4, 1fr)`,
   gridTemplateRows: `repeat(2, 300px)`,
-  fontFamily: `Helvetica`,
+  fontFamily: `Open Sans`,
 }
 
 const hero = {

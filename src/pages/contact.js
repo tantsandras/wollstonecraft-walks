@@ -39,13 +39,13 @@ const OrgList = styled.ul`
   list-style: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: Helvetica;
+  font-family: Open Sans;
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const StyledLink = styled.a`
     z-index: 3;
-    font-family: Helvetica;
+    font-family: Open Sans;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
@@ -89,7 +89,7 @@ cursor: pointer;
 `
 const ContactPage = () => {
   return (
-    <section style={{ fontFamily: `Helvetica` }}>
+    <section style={{ fontFamily: `Open Sans` }}>
       <SEO title="Contact" />
       <MenuContrast>
       <span></span>
@@ -102,7 +102,7 @@ const ContactPage = () => {
       <article style={{ padding: `3% 10% 3% 10%` }}>
         <h4
           style={{
-            fontFamily: `Archivo Black`,
+            fontFamily: `'Archivo Black', Impact`,
             fontSize: `1.6rem`,
             paddingBottom: `1rem`,
             letterSpacing: `2%`,

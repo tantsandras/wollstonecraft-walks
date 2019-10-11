@@ -39,13 +39,13 @@ const ArtList = styled.ul`
   cursor: pointer;
   list-style: none;
   letter-spacing: 1px;
-  font-family: Helvetica;
+  font-family: Open Sans;
   margin-bottom: 4rem;
   animation: ${turnVisible} 0.8s ease-in-out;
 `
   const StyledLink = styled.a`
   z-index: 3;
-  font-family: Helvetica;
+  font-family: Open Sans;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -102,7 +102,7 @@ letter-spacing: 1px;
 
 const ArtistList = () => {
   return (
-    <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+    <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
       <ArtList>
         <li>
           <StyledLink

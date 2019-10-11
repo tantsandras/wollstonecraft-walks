@@ -7,12 +7,12 @@ import Artists from "../components/artists"
 
 const ArtistsPage = () => {
     return (
-    <section style={{fontFamily: `Helvetica`}}>
+    <section style={{fontFamily: `Open Sans`}}>
       <SEO title="Artists" />
       <Menu />
       <h1
           style={{
-            fontFamily: `Archivo Black`,
+            fontFamily: `'Archivo Black', Impact`,
             fontSize: `2.2rem`,
             textAlign: `center`,
             marginTop: `8rem`,

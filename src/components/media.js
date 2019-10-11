@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components"
 import Trailer from "../images/videos/WollstonecraftWalkstrailer2019 (1).mp4"
 import WLLive from "../images/videos/WLLive3m38sFINAL.mp4"
 import AudioPlayer from "../components/audioPlayer"
-import Soundscape from "../audio/WL Walk music only.mp3"
+import Soundscape from "../audio/WL Walk soundscape.mp3"
 import MWBirthday from "../images/videos/MWbirthday.mp4"
 
 
@@ -39,7 +39,7 @@ const Hover = styled.div`
 `
 
 const MainHeading = styled.h1`
-  font-family: Archivo Black;
+  font-family: 'Archivo Black', Impact;
   font-size: 2.4rem;
   text-align: center;
   letter-spacing: 1px;
@@ -79,7 +79,7 @@ const Videos = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Helvetica;
+  font-family: Open Sans;
 `
 const SoundBox = styled.li`
   padding: 2rem;
@@ -129,12 +129,12 @@ class Media extends React.Component {
         <PageHeading></PageHeading>
         </PageCircle>
         <MainHeading>Media.</MainHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
           <Videos>
             <VideoList>
               <h2
                 style={{
-                  fontFamily: `Archivo Black`,
+                  fontFamily: `'Archivo Black', Impact`,
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                   lineHeight: `2`,
@@ -179,12 +179,12 @@ class Media extends React.Component {
             <VideoList>
               <h2
                 style={{
-                  fontFamily: `Archivo Black`,
+                  fontFamily: `'Archivo Black', Impact`,
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                 }}
               >
-                Wollstonecraft Live! 2019
+                Wollstonecraft Live! 2018
               </h2>
               <p
                 style={{
@@ -224,7 +224,7 @@ class Media extends React.Component {
         <SoundBox>
           <h3
             style={{
-              fontFamily: `Archivo Black`,
+              fontFamily: `'Archivo Black', Impact`,
               fontSize: `1.4rem`,
               textAlign: `center`,
               letterSpacing: `1px`,
@@ -253,12 +253,12 @@ class Media extends React.Component {
             <AudioPlayer track={Soundscape} />
           </div>
         </SoundBox>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
           <Videos>
             <VideoList>
               <h2
                 style={{
-                  fontFamily: `Archivo Black`,
+                  fontFamily: `'Archivo Black', Impact`,
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                 }}
@@ -274,6 +274,9 @@ class Media extends React.Component {
                 }}
               >
                 <i>Produced by Scary Little Girls</i>
+              </p>
+              <p style={{ marginTop: `2rem` }}>
+              This short film shows clips from Living Literature Walks that Scary Little Girls have created in some of the towns and villages of Cornwall, giving a flavour of these events and the way they place performances and stories in a variety of locations in a community.  
               </p>
               <Overlay>
                 <Video
@@ -292,7 +295,7 @@ class Media extends React.Component {
             <VideoList>
               <h2
                 style={{
-                  fontFamily: `Archivo Black`,
+                  fontFamily: `'Archivo Black', Impact`,
                   paddingTop: `2rem`,
                   letterSpacing: `1px`,
                   lineHeight: `2`,

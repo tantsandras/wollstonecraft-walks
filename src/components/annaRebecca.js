@@ -8,12 +8,12 @@ const Title = styled.div`
   background-color: rgba(255,255,255, 0.8);
   color: black;
   font-size: 10vw;
-  font-family: Archivo Black;
+  font-family: 'Archivo Black', Impact;
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0 auto;
   padding: 0rem;
-  width: 58%;
+  width: 60%;
   text-align: center;
   position: absolute;
   top: 2%;

@@ -57,7 +57,7 @@ class Step1 extends React.Component {
         </StepCircle>
         <h3
           style={{
-            fontFamily: `Archivo Black`,
+            fontFamily: `'Archivo Black', Impact`,
             fontSize: `2.2rem`,
             textAlign: `center`,
             marginTop: `-2.8rem`,
@@ -67,7 +67,7 @@ class Step1 extends React.Component {
         >
           The Mildmay Club
         </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
           <section style={{ paddingBottom: `3rem` }}>
             
                 <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Wollstonecraft Walks Guide researched and written by Anna Birch and Rebecca Mordan. </p>
@@ -102,7 +102,7 @@ class Step1 extends React.Component {
           <br />
           <h4
             style={{
-              fontFamily: `Archivo Black`,
+              fontFamily: `'Archivo Black', Impact`,
               paddingTop: `2rem`,
               letterSpacing: `1px`,
             }}
@@ -110,7 +110,7 @@ class Step1 extends React.Component {
             Excerpt from
             <h3
               style={{
-                fontFamily: `Archivo Black`,
+                fontFamily: `'Archivo Black', Impact`,
                 paddingTop: `1rem`,
                 letterSpacing: `1px`,
               }}
@@ -167,7 +167,7 @@ class Step1 extends React.Component {
               Unitarian Meeting House now a building site.
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
             Did you know?
           </h4>
           <blockquote>
@@ -185,7 +185,7 @@ class Step1 extends React.Component {
             finished by the time you do this walk!
           </blockquote>
           <br />
-          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
             Back to the directions -
           </h4>
           <ul style={{ listStyle: `none` }}>
@@ -227,7 +227,7 @@ class Step1 extends React.Component {
               your right.
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
             Did you know?
           </h4>
           <blockquote>

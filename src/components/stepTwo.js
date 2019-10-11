@@ -93,7 +93,7 @@ class Step2 extends React.Component {
         </StepCircle>
         <h3
           style={{
-            fontFamily: `Archivo Black`,
+            fontFamily: `'Archivo Black', Impact`,
             fontSize: `2.2rem`,
             textAlign: `center`,
             marginTop: `-2.8rem`,
@@ -103,8 +103,8 @@ class Step2 extends React.Component {
         >
           Lizzy&#39;s on the Green
         </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
-          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>Back to the directions -</h4>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>Back to the directions -</h4>
           <br />
           <ul style={{ listStyle: `none` }}>
             <Direction>
@@ -116,7 +116,7 @@ class Step2 extends React.Component {
               were the back of the houses.
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>Did you know?</h4>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>Did you know?</h4>
           <blockquote>
             Built in 1658, the four buildings at 52-55 Newington Green have
             survived the Great Fire of London as well as two World Wars.
@@ -137,7 +137,7 @@ class Step2 extends React.Component {
             publisher, Tom Paine, William Godwin and Mary Wollstonecraft dine
             and converse at the invitation of Richard Price.
           </blockquote>
-          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>Back to the directions -</h4>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>Back to the directions -</h4>
           <br />
           <ul style={{ listStyle: `none` }}>
             <Direction>
@@ -156,11 +156,11 @@ class Step2 extends React.Component {
               moments to enjoy our next readings!
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px`,  paddingTop: `1rem`, }}>Rebecca Boey reading</h4>
-          <h3 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px`,  paddingTop: `1rem`, }}>Rebecca Boey reading</h4>
+          <h3 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
             On Mary Wollstonecraft (1925)
           </h3>
-          <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
             in <i>The Common Reader</i> by Virginia Woolf
           </h4>
           <p>
@@ -226,10 +226,10 @@ class Step2 extends React.Component {
               marginBottom: `2rem`
             }}
           >
-            <h3 style={{ fontFamily: `Archivo Black`, paddingTop: `4rem`, letterSpacing: `1px` }}>
+            <h3 style={{ fontFamily: `'Archivo Black', Impact`, paddingTop: `4rem`, letterSpacing: `1px` }}>
               If People Disapprove of You (2012)
             </h3>
-            <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>by Sophie Hannah</h4>
+            <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>by Sophie Hannah</h4>
             <p style={{ fontSize: `0.8rem` }}>
               Make being disapproved of your hobby.
               <br />
@@ -306,10 +306,10 @@ class Step2 extends React.Component {
           </section>
           <br />
           <section style={{ marginTop: `8rem`, }}>
-            <h3 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
+            <h3 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
               The Tea of Consent (2015)
             </h3>
-            <h4 style={{ fontFamily: `Archivo Black`, letterSpacing: `1px` }}>
+            <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
               by Rockstar Dinosaur Pirate Princess
             </h4>
             <p>

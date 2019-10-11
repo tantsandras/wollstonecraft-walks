@@ -8,7 +8,7 @@ import Intro from "../components/intro"
 const element = {
     gridTemplateColumns: `repeat(4, 1fr)`,
     gridTemplateRows: `repeat(2, 300px)`,
-    fontFamily: `Helvetica`,
+    fontFamily: `Open Sans`,
   }
 
 const hero = {

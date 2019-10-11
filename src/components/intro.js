@@ -55,17 +55,17 @@ const Intro = () => (
         </RainbowText>
       </Quote>
     </div>
-    <main style={{ fontFamily: `Helvetica`, paddingBottom: `8rem` }}>
+    <main style={{ fontFamily: `Open Sans`, paddingBottom: `8rem` }}>
       <h3
         style={{
           textAlign: `center`,
           paddingTop: `-5%`,
-          fontFamily: `Archivo Black`,
+          fontFamily: `'Archivo Black', Impact`,
           fontSize: `1.6rem`,
           letterSpacing: `1px`
         }}
       >
-        Who is <h1 style={{fontFamily: `Archivo Black`, letterSpacing: `1px` }}>Mary Wollstonecraft?</h1>
+        Who is <h1 style={{fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>Mary Wollstonecraft?</h1>
       </h3>
 
       <article style={{ padding: `5% 10% 3% 10%` }}>
@@ -83,7 +83,7 @@ const Intro = () => (
           she was soon welcomed by Dr Price into the local circle of dissenters.
           The school folded when Fanny got married. After a spell as a Governess
           in Ireland, Wollstonecraft was befriended by publisher Joseph Johnson
-          who set her up with a job and lodgings. She wrote{" "}
+          who set her up with a job and lodgings. She wrote {" "}
           <i style={{ fontSize: `1.4rem`, letterSpacing: `2px` }}>
             A Vindication of the Rights of Woman (1792)
           </i>

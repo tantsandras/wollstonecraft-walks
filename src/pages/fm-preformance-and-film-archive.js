@@ -9,10 +9,9 @@ import Circles from "../components/circles"
 const FmPage = () => {
     
     return (
-    <main style={{fontFamily: `Helvetica`}}>
+    <main style={{fontFamily: `Open Sans`}}>
       <SEO title="Fragments & Monuments Preformance and Film Archive" />
       <Menu />
-      <Circles />
       <FmPrefAndFilm />
       <ArtBook />
       </main>

@@ -56,7 +56,7 @@ class Step3 extends React.Component {
         </StepCircle>
         <h3
           style={{
-            fontFamily: `Archivo Black`,
+            fontFamily: `'Archivo Black', Impact`,
             fontSize: `1.6rem`,
             textAlign: `center`,
             marginTop: `-2.8rem`,
@@ -66,7 +66,7 @@ class Step3 extends React.Component {
         >
           Mary on the Green memorial site
         </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica` }}>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF0000"}></Arrow>
@@ -77,14 +77,14 @@ class Step3 extends React.Component {
               by contemporary artist Maggi Hambling.
             </Direction>{" "}
           </ul>
-          <h4 style={{ fontFamily: `Archivo Black` }}>Did you know?</h4>
+          <h4 style={{ fontFamily: `'Archivo Black', Impact` }}>Did you know?</h4>
           <p>
             You are now walking through the site of{" "}
             <b
               style={{
                 letterSpacing: `2px`,
                 lineHeight: `2`,
-                fontFamily: `Helvetica`,
+                fontFamily: `Open Sans`,
               }}
             >
               Wollstonecraft Live!
@@ -103,7 +103,7 @@ class Step3 extends React.Component {
               style={{
                 letterSpacing: `2px`,
                 lineHeight: `2`,
-                fontFamily: `Helvetica`,
+                fontFamily: `Open Sans`,
               }}
             >
               The Wollstonecraft Live Experience!
@@ -122,14 +122,14 @@ class Step3 extends React.Component {
             give generously to the Mary On the Green memorial fund.
           </p>
           </article>
-          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica`, lineHeight: `1.5`, }}>
-          <h2 style={{ fontFamily: `Archivo Black`, marginTop: `4rem` }}>
+          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans`, lineHeight: `1.5`, }}>
+          <h2 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `4rem` }}>
             Listen - a walking memorial <br />{" "}
           </h2>
 
           <h3
             style={{
-              fontFamily: `Archivo Black`,
+              fontFamily: `'Archivo Black', Impact`,
               letterSpacing: `2px`,
               lineHeight: `2`,
               fontWeight: `lighter`,
@@ -140,7 +140,7 @@ class Step3 extends React.Component {
             (excerpted from
             <b
               style={{
-                fontFamily: `Archivo Black`,
+                fontFamily: `'Archivo Black', Impact`,
                 lineHeight: `1.5`,
                 fontSize: `1.2rem`,
               }}

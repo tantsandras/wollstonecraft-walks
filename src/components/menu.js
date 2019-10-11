@@ -66,14 +66,14 @@ const NavActive = styled.div`
   right: 0%;
   background: #fadadd;
   boxshadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Helvetica;
+  font-family: Open Sans;
   letter-spacing: 1px;
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const StyledLink = styled(Link)`
     z-index: 3;
-    font-family: Helvetica;
+    font-family: Open Sans;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
