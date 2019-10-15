@@ -5,6 +5,8 @@ import WLLive from "../images/videos/WLLive3m38sFINAL.mp4"
 import AudioPlayer from "../components/audioPlayer"
 import Soundscape from "../audio/WL Walk soundscape.mp3"
 import MWBirthday from "../images/videos/MWbirthday.mp4"
+import Quote7 from "../images/posters/Quotes - vertical[1]-7.jpg"
+import Quote5 from "../images/posters/Quotes - vertical[1]-5.jpg"
 
 
 const VideoList = styled.li`
@@ -14,17 +16,15 @@ const VideoList = styled.li`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
   height: auto;
-  background: #191919; 
+  background: #191919;
   color: white;
+  max-width: 900px;
 `
 
 const Overlay = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  &:hover {
-    opacity: 0.6;
-  }
 `
 const Hover = styled.div`
   position: absolute;
@@ -39,7 +39,7 @@ const Hover = styled.div`
 `
 
 const MainHeading = styled.h1`
-  font-family: 'Archivo Black', Impact;
+  font-family: "Archivo Black", Impact;
   font-size: 2.4rem;
   text-align: center;
   letter-spacing: 1px;
@@ -125,11 +125,11 @@ class Media extends React.Component {
   render() {
     return (
       <main>
-        <PageCircle style={{marginBottom: `4rem`, marginTop: `4rem`}}>
-        <PageHeading></PageHeading>
+        <PageCircle style={{ marginBottom: `4rem`, marginTop: `4rem` }}>
+          <PageHeading></PageHeading>
         </PageCircle>
         <MainHeading>Media.</MainHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
+        <article style={{ padding: `5% 10% 3% 4%`, fontFamily: `Open Sans`, background: `url("${Quote7}") right 6% top 40%/38% no-repeat` }}>
           <Videos>
             <VideoList>
               <h2
@@ -253,7 +253,7 @@ class Media extends React.Component {
             <AudioPlayer track={Soundscape} />
           </div>
         </SoundBox>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
+        <article style={{ padding: `5% 10% 3% 4%`, fontFamily: `Open Sans`, background: `url("${Quote5}") right 6% top 40%/38% no-repeat` }}>
           <Videos>
             <VideoList>
               <h2
@@ -276,7 +276,11 @@ class Media extends React.Component {
                 <i>Produced by Scary Little Girls</i>
               </p>
               <p style={{ marginTop: `2rem` }}>
-              This short film shows clips from Living Literature Walks that Scary Little Girls have created in some of the towns and villages of Cornwall, giving a flavour of these events and the way they place performances and stories in a variety of locations in a community.  
+                This short film shows clips from Living Literature Walks that
+                Scary Little Girls have created in some of the towns and
+                villages of Cornwall, giving a flavour of these events and the
+                way they place performances and stories in a variety of
+                locations in a community.
               </p>
               <Overlay>
                 <Video
@@ -291,7 +295,7 @@ class Media extends React.Component {
                   <Hover></Hover>
                 </Video>
               </Overlay>
-              </VideoList>
+            </VideoList>
             <VideoList>
               <h2
                 style={{
@@ -301,7 +305,8 @@ class Media extends React.Component {
                   lineHeight: `2`,
                 }}
               >
-                Mary Wollstonecraft<br />
+                Mary Wollstonecraft
+                <br />
                 <i
                   style={{
                     fontSize: `1rem`,
@@ -309,10 +314,11 @@ class Media extends React.Component {
                     lineHeight: `2`,
                     textTransform: `uppercase`,
                   }}
-                >The Birthday Film
+                >
+                  The Birthday Film
                 </i>
               </h2>
-  
+
               <p
                 style={{
                   fontSize: `1rem`,
@@ -322,7 +328,8 @@ class Media extends React.Component {
                 }}
               >
                 <i>
-                Anna Birch talks about the Mary on the Green Campaign and the Stewy stencil on the Unitarian Meeting House.
+                  Anna Birch talks about the Mary on the Green Campaign and the
+                  Stewy stencil on the Unitarian Meeting House.
                 </i>
               </p>
               <Overlay>
