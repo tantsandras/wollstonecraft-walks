@@ -6,7 +6,7 @@ import styled, { keyframes } from "styled-components"
 const pageGrid = {
   display: `grid`,
   gridTemplateColumns: `repeat(auto-fit, minmax(240px, 2fr))`,
-  padding: `4rem 2rem 4rem 2rem`,
+  padding: `4rem 2rem 2rem 2rem`,
   columnGap: `0%`,
   margin: `0 auto`,
   gridTemplateRows: `repeat(1, auto)`,
@@ -57,7 +57,6 @@ class Pages extends React.Component {
                   fontSize: `1.2rem`,
                   textAlign: `center`,
                   letterSpacing: `1px`,
-                  paddingTop: `150px`,
                   lineHeight: `2`,
                 }}
               >

@@ -66,8 +66,12 @@ const MainHeading = styled.h1`
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: 4rem;
-  margin-top: 10rem;
+  margin-top: 4rem;
   line-height: 1.5;
+  background-size: cover;
+  padding: 2rem 2rem;
+  display: grid;
+  align-items: center
 `
 
 const LocalVideo = styled.video`
@@ -86,12 +90,21 @@ const LocalVideo = styled.video`
 class FmPrefAndFilm extends React.Component {
   render() {
     return (
-      <main>
+      <main style={{fontFamily: `Open Sans`, backgroundColor: `#241E20`, padding: `3% 10% 0% 10%`, color: `#FFFEFF`}}>
         <MainHeading>
           Fragments & Monuments
-          <br /> Preformance and Film Archive
+          <br /> 
+          <i
+                  style={{
+                    fontFamily: `'Archivo Black', Impact`,
+                    fontSize: `1.4rem`,
+                    letterSpacing: `1px`,
+                    lineHeight: `2`,
+                    paddingTop: `1rem`
+                  }}
+                >Preformance and Film Archive</i>
         </MainHeading>
-        <article style={{ padding: `5% 10% 6% 10%`, fontFamily: `Open Sans`, background: `no-repeat top/48% url("${Quote7}")`, }}>
+        <article style={{ padding: `0% 5% 0% 5%`, fontFamily: `Open Sans`, background: `url("${Quote7}") right 0% top 0%/48% no-repeat`, }}>
           <Videos>
         
             <div
@@ -100,10 +113,11 @@ class FmPrefAndFilm extends React.Component {
                 borderTop: `2px solid crimson`,
                 borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
                 borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
-                boxShadow: `-14px -14px 1px #fff, -16px -16px 0px 0px crimson`,
-                background: `rgba(255, 255, 255, 0.98)`,
+                boxShadow: `-14px -14px 1px #241E20, -16px -16px 0px 0px crimson`,
+                background: `#241E20`,
                 padding: `2rem`,
-                maxWidth: `600px`,
+                maxWidth: `500px`,
+                marginTop: `8rem`
               }}
             >
               <h2
@@ -149,7 +163,6 @@ class FmPrefAndFilm extends React.Component {
                 height: `auto`,
                 listStyle: `none`,
                 maxWidth: `900px`,
-                marginBottom: `2rem`
               }}
             >
               <div
@@ -166,15 +179,24 @@ class FmPrefAndFilm extends React.Component {
             </li>
           </Videos>
           </article>
-          <article style={{ padding: `4% 10% 0% 10%`, fontFamily: `Open Sans`, }}>
+          <article
+          style={{
+            padding: `0% 10% 16% 10%`,
+            fontFamily: `Open Sans`,
+          }}
+        >
+        <Flyer />
+        </article>
+          <article style={{ padding: `10% 5% 0% 5%`, fontFamily: `Open Sans` }}>
           <span
-            style={{ width: `100%`, margin: `0 auto`, display: `inline-block`, height: `360px`, paddingTop: `3rem` }}
+            style={{ width: `100%`, margin: `0 auto`, display: `inline-block`, height: `360px`, paddingTop: `2rem`, marginTop: `12rem`}}
           >
             <ProjectHeading>
               <h2
                 style={{
                   fontFamily: `'Archivo Black', Impact`,
                   fontSize: `180%`,
+                  verticalAlign: `bottom`,
                   textAlign: `center`,
                   letterSpacing: `1px`,
                   lineHeight: `1.5`,
@@ -197,7 +219,7 @@ class FmPrefAndFilm extends React.Component {
             <p
               style={{
                 fontSize: `0.8rem`,
-                width: `68%`,
+                width: `78%`,
                 marginLeft: `0.2rem`,
                 float: `right`,
               }}
@@ -265,7 +287,7 @@ class FmPrefAndFilm extends React.Component {
                 textTransform: `uppercase`,
                 marginTop: `1rem`,
                 textAlign: `left`,
-                borderTop: `2px solid black`,
+                borderTop: `2px solid #FFFEFF`,
                 paddingTop: `1rem`
               }}
             >
@@ -303,7 +325,7 @@ class FmPrefAndFilm extends React.Component {
                 textTransform: `uppercase`,
                 marginTop: `2rem`,
                 textAlign: `left`,
-                borderTop: `2px solid black`,
+                borderTop: `2px solid #FFFEFF`,
                 paddingTop: `1rem`
               }}
             >
@@ -341,7 +363,7 @@ class FmPrefAndFilm extends React.Component {
                 textTransform: `uppercase`,
                 marginTop: `2rem`,
                 textAlign: `left`,
-                borderTop: `2px solid black`,
+                borderTop: `2px solid #FFFEFF`,
                 paddingTop: `1rem`,
               }}
             >
@@ -374,21 +396,12 @@ class FmPrefAndFilm extends React.Component {
             </li>
           </Videos>
         </article>
-        <article
-          style={{
-            padding: `0% 10% 6% 10%`,
-            fontFamily: `Open Sans`,
-          }}
-        >
-        <Flyer />
-        </article>
 
         <article
           style={{
-            padding: `1% 10% 1% 10%`,
+            padding: `6% 5% 1% 5%`,
             fontFamily: `Open Sans`,
-            marginTop: `-4rem`,
-            background: `no-repeat top/42% url("${Quote5}")`,
+            background: `url("${Quote5}") right 0% top 0%/48% no-repeat`,
           }}
         >
           <Videos>
@@ -398,14 +411,15 @@ class FmPrefAndFilm extends React.Component {
                 borderTop: `2px solid #FF008A`,
                 borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
                 borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
-                boxShadow: `-14px -14px 1px #fff, -16px -16px 0px 0px #FF008A`,
-                background: `rgba(255, 255, 255, 0.98)`,
+                boxShadow: `-14px -14px 1px #241E20, -16px -16px 0px 0px #FF008A`,
+                background: `#241E20`,
                 padding: `2rem`,
-                maxWidth: `500px`,
+                maxWidth: `440px`,
+                marginTop: `8rem`,
 
               }}
             >
-              <h2
+              <h3
                 style={{
                   fontFamily: `'Archivo Black', Impact`,
                   letterSpacing: `1px`,
@@ -414,7 +428,7 @@ class FmPrefAndFilm extends React.Component {
                 }}
               >
                 Wollstonecraft Live!
-              </h2>
+              </h3>
               <i
                 style={{
                   fontSize: `1rem`,
@@ -464,7 +478,7 @@ class FmPrefAndFilm extends React.Component {
             padding: `1% 10% 1% 10%`,
             fontFamily: `Open Sans`,
             transform: `translateY(-400px)`,
-            background: `no-repeat center/46% url("${MOW}")`,
+            background: `no-repeat right/47% url("${MOW}")`,
             position: `relative`,
           }}
         >
@@ -521,12 +535,12 @@ class FmPrefAndFilm extends React.Component {
                 borderTop: `2px solid #0031AD`,
                 borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
                 borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
-                boxShadow: `-14px -14px 1px #fff, -16px -16px 0px 0px #0031AD`,
-                background: `rgba(255, 255, 255, 0.98)`,
+                boxShadow: `-14px -14px 1px #241E20, -16px -16px 0px 0px #0031AD`,
+                background: `#241E20`,
                 padding: `2rem`,
                 marginTop: `18rem`,
                 float: `left`,
-                maxWidth: `600px`,
+                maxWidth: `500px`,
               }}
             >
               <h2
@@ -630,7 +644,7 @@ class FmPrefAndFilm extends React.Component {
                   src="http://player.vimeo.com/video/149630321"
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  style={{ maxWidth: `640px`, minWidth: `240`, maxHeight: `385px`, minHeight: `185px` }}
                   allowFullScreen
                 ></Video>
               </div>

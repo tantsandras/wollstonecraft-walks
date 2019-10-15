@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components"
 import Pages from "../components/pdfPages"
 
 const leftArrow = {
-  border: `solid black`,
+  border: `solid #FFFEFF`,
   borderWidth: `0px 1.6px 1.6px 0px`,
   display: `table-cell`,
   float: `left`,
@@ -19,7 +19,7 @@ const LeftArrow = styled.div`
 `
 
 const arrow = {
-  border: `solid black`,
+  border: `solid #FFFEFF`,
   borderWidth: `0px 1.6px 1.6px 0px`,
   display: `table-cell`,
   float: `right`,
@@ -66,7 +66,7 @@ class ArtBook extends React.Component {
 
   render() {
     return (
-      <article style={{transform: `translateY(-800px)`}}>
+      <article style={{transform: `translateY(-350px)`, backgroundColor: `#241E20`, color: `#FFFEFF`, paddingBottom: `350px`}}>
       <div
         style={{
           display: `grid`,

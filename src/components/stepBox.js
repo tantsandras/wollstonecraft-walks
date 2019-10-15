@@ -90,6 +90,7 @@ class StepBox extends React.Component {
                     lineHeight: `1.5`,
                     textAlign: `center`,
                     paddingRight: `1.8rem`,
+                    color: `#241E20`,
                   }}
                 >
                   <Numbers num={item.num}>{item.num}</Numbers>
