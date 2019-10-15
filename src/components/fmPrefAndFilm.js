@@ -1,11 +1,10 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import Vindication from "../images/videos/VindicationBRIGHTER_BW.mp4"
-import Logo from "../images/Wollstonecraft_portrait_logo-02 copy.png"
 import Flyer from "../components/flyers"
 import MOW from "../images/posters/MoW Poster-1.jpg"
-import Quote7 from "../images/posters/Quotes - vertical[1]-7.jpg"
-import Quote5 from "../images/posters/Quotes - vertical[1]-5.jpg"
+import QuoteAnne from "../images/posters/Insprational Quotes_compressed-05.jpg"
+import QuoteAudre from "../images/posters/Insprational Quotes_compressed-12.jpg"
 
 const ProjectHeading = styled.div`
   text-align: center;
@@ -16,12 +15,13 @@ const ProjectHeading = styled.div`
 `
 
 const VideoList = styled.li`
-  background: rgba(255, 255, 255, 0.98);
+  padding: 2rem;
+  background: #241E20;
+  border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
   height: auto;
-  position: relative;
-  overflow: auto;
+  color: white;
   max-width: 900px;
 `
 
@@ -29,24 +29,18 @@ const Overlay = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('${Logo}');
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left;
 `
-
-const Videos = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(1, minmax(300px, 2fr));
-  grid-gap: 1rem;
-  padding: 4rem 2rem 4rem 2rem;
-  column-gap: 4%;
-  margin: 0 auto;
-  grid-template-rows: repeat(3, auto);
-  justify-content: center;
-  font-family: Open Sans;
-  position: relative;
+const LocalVideo = styled.video`
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  max-width: 640px;
+  max-height: 385px;
+  float: right;
 `
 
 const Video = styled.iframe`
@@ -57,7 +51,18 @@ const Video = styled.iframe`
   width: 100%;
   height: 100%;
   transition: 0.5s ease;
-  padding: 2rem;
+`
+
+const Videos = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 2fr));
+  grid-gap: 1rem;
+  padding: 6rem 2rem 4rem 2rem;
+  column-gap: 4%;
+  margin: 0 auto;
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  font-family: Open Sans;
 `
 
 const MainHeading = styled.h1`
@@ -74,23 +79,10 @@ const MainHeading = styled.h1`
   align-items: center
 `
 
-const LocalVideo = styled.video`
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-  max-width: 640px;
-  max-height: 385px;
-  padding: 2rem;
-`
-
 class FmPrefAndFilm extends React.Component {
   render() {
     return (
-      <main style={{fontFamily: `Open Sans`, backgroundColor: `#241E20`, padding: `3% 10% 0% 10%`, color: `#FFFEFF`}}>
+      <main style={{fontFamily: `Open Sans`, color: `#241E20`, background: `#FFFEFF`}}>
         <MainHeading>
           Fragments & Monuments
           <br /> 
@@ -104,22 +96,15 @@ class FmPrefAndFilm extends React.Component {
                   }}
                 >Preformance and Film Archive</i>
         </MainHeading>
-        <article style={{ padding: `0% 5% 0% 5%`, fontFamily: `Open Sans`, background: `url("${Quote7}") right 0% top 0%/48% no-repeat`, }}>
+        <article style={{ padding: `0% 5% 0% 5%`, fontFamily: `Open Sans`, background: `url("${QuoteAnne}") right 0% top 30%/48% no-repeat`, }}>
           <Videos>
-        
-            <div
-              style={{
+            <VideoList               style={{
                 borderLeft: `2px solid crimson`,
                 borderTop: `2px solid crimson`,
                 borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
                 borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
-                boxShadow: `-14px -14px 1px #241E20, -16px -16px 0px 0px crimson`,
-                background: `#241E20`,
-                padding: `2rem`,
-                maxWidth: `500px`,
-                marginTop: `8rem`
-              }}
-            >
+                boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px crimson`,
+              }}>
               <h2
                 style={{
                   fontFamily: `'Archivo Black', Impact`,
@@ -157,26 +142,12 @@ class FmPrefAndFilm extends React.Component {
                 person to speak out and be heard on the silent subject of gender
                 equality.
               </p>
-            </div>
-            <li
-              style={{
-                height: `auto`,
-                listStyle: `none`,
-                maxWidth: `900px`,
-              }}
-            >
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                }}
-              >
+            <Overlay>
                 <LocalVideo controls style={{float: `right`}}>
                   <source src={Vindication} type="video/mp4" />
                 </LocalVideo>
-              </div>
-            </li>
+              </Overlay>
+            </VideoList>
           </Videos>
           </article>
           <article
@@ -187,7 +158,7 @@ class FmPrefAndFilm extends React.Component {
         >
         <Flyer />
         </article>
-          <article style={{ padding: `10% 5% 0% 5%`, fontFamily: `Open Sans` }}>
+          <article style={{ padding: `10% 10% 0% 10%`, fontFamily: `Open Sans`, color: `#241E20`}}>
           <span
             style={{ width: `100%`, margin: `0 auto`, display: `inline-block`, height: `360px`, paddingTop: `2rem`, marginTop: `12rem`}}
           >
@@ -279,7 +250,7 @@ class FmPrefAndFilm extends React.Component {
               <br />
             </p>
           </span>
-          <Videos>
+          <Videos style={{padding: `3% 10% 0% 10%`}}>
             <h2
               style={{
                 fontFamily: `'Archivo Black', Impact`,
@@ -287,7 +258,7 @@ class FmPrefAndFilm extends React.Component {
                 textTransform: `uppercase`,
                 marginTop: `1rem`,
                 textAlign: `left`,
-                borderTop: `2px solid #FFFEFF`,
+                borderTop: `2px solid #241E20`,
                 paddingTop: `1rem`
               }}
             >
@@ -325,7 +296,7 @@ class FmPrefAndFilm extends React.Component {
                 textTransform: `uppercase`,
                 marginTop: `2rem`,
                 textAlign: `left`,
-                borderTop: `2px solid #FFFEFF`,
+                borderTop: `2px solid #241E20`,
                 paddingTop: `1rem`
               }}
             >
@@ -363,7 +334,7 @@ class FmPrefAndFilm extends React.Component {
                 textTransform: `uppercase`,
                 marginTop: `2rem`,
                 textAlign: `left`,
-                borderTop: `2px solid #FFFEFF`,
+                borderTop: `2px solid #241E20`,
                 paddingTop: `1rem`,
               }}
             >
@@ -401,22 +372,17 @@ class FmPrefAndFilm extends React.Component {
           style={{
             padding: `6% 5% 1% 5%`,
             fontFamily: `Open Sans`,
-            background: `url("${Quote5}") right 0% top 0%/48% no-repeat`,
+            background: `url("${QuoteAudre}") right 0% top 40%/48% no-repeat`,
           }}
         >
           <Videos>
-            <div
+            <VideoList
               style={{
                 borderLeft: `2px solid #FF008A`,
                 borderTop: `2px solid #FF008A`,
                 borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
                 borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
-                boxShadow: `-14px -14px 1px #241E20, -16px -16px 0px 0px #FF008A`,
-                background: `#241E20`,
-                padding: `2rem`,
-                maxWidth: `440px`,
-                marginTop: `8rem`,
-
+                boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #FF008A`,
               }}
             >
               <h3
@@ -446,21 +412,8 @@ class FmPrefAndFilm extends React.Component {
                 Vindication of the Rights of Women and gave birth to Mary
                 Shelley who wrote Frankenstein.
               </p>
-            </div>
-            <li
-              style={{
-                height: `auto`,
-                listStyle: `none`,
-                maxWidth: `900px`,
-              }}
-            >
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                }}
-              >
+
+              <Overlay>
                 <Video
                   src="https://www.youtube.com/embed/nDSlEmgryyA"
                   frameBorder="0"
@@ -468,26 +421,19 @@ class FmPrefAndFilm extends React.Component {
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
-              </div>
-            </li>
+              </Overlay>
+              </VideoList>
           </Videos>
         </article>
 
         <article
-          style={{
-            padding: `1% 10% 1% 10%`,
-            fontFamily: `Open Sans`,
-            transform: `translateY(-400px)`,
-            background: `no-repeat right/47% url("${MOW}")`,
-            position: `relative`,
-          }}
-        >
+      style={{ padding: `2% 10% 3% 6%`, fontFamily: `Open Sans`, background: `url("${MOW}") right 6% top 50%/38% no-repeat`, color: `#241E20` }}>
           <Videos>
             <li
               style={{
                 height: `auto`,
                 listStyle: `none`,
-                transform: `translateY(300px)`,
+                maxWidth: `900px`
               }}
             >
               <h2
@@ -529,18 +475,13 @@ class FmPrefAndFilm extends React.Component {
                 ></Video>
               </div>
             </li>
-            <div
+            <VideoList
               style={{
                 borderLeft: `2px solid #0031AD`,
                 borderTop: `2px solid #0031AD`,
                 borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
                 borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
-                boxShadow: `-14px -14px 1px #241E20, -16px -16px 0px 0px #0031AD`,
-                background: `#241E20`,
-                padding: `2rem`,
-                marginTop: `18rem`,
-                float: `left`,
-                maxWidth: `500px`,
+                boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #0031AD`,
               }}
             >
               <h2
@@ -631,15 +572,8 @@ class FmPrefAndFilm extends React.Component {
                   March
                 </p>
               </p>
-            </div>
-            <li style={{ height: `auto`, listStyle: `none` }}>
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                }}
-              >
+
+            <Overlay>
                 <Video
                   src="http://player.vimeo.com/video/149630321"
                   frameBorder="0"
@@ -647,8 +581,8 @@ class FmPrefAndFilm extends React.Component {
                   style={{ maxWidth: `640px`, minWidth: `240`, maxHeight: `385px`, minHeight: `185px` }}
                   allowFullScreen
                 ></Video>
-              </div>
-            </li>
+              </Overlay>
+              </VideoList>
           </Videos>
         </article>
       </main>

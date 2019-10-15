@@ -25,8 +25,10 @@ const Card = styled.article`
 
 const CardSide = css`
   position: absolute;
+  position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  border: 0;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -50,58 +52,59 @@ class Flyers extends React.Component {
   render() {
     return (
       <>
-                  <section style={{maxWidth: `800px`, maxHeight: `auto`, float: `right`, marginBottom: `12rem`}}>
-
-      <h2
+        <section
+          style={{ float: `right`, color: `#241E20`, marginBottom: `10rem` }}
+        >
+          <h2
+            style={{
+              fontFamily: `'Archivo Black', Impact`,
+              fontSize: `1.2rem`,
+              textAlign: `center`,
+              letterSpacing: `1px`,
+              lineHeight: `2`,
+            }}
+          >
+            <i
               style={{
-                fontFamily: `'Archivo Black', Impact`,
-                fontSize: `1.2rem`,
+                fontFamily: `Open Sans`,
+                fontSize: `1rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
-                lineHeight: `2`,
+                marginTop: `1rem`,
               }}
             >
-              <i
-                style={{
-                  fontFamily: `Open Sans`,
-                  fontSize: `1rem`,
-                  textAlign: `center`,
-                  letterSpacing: `1px`,
-                  marginTop: `1rem`,
-                }}
-              >
-                Flyer for
-              </i>{" "}
-              <br />
-              Wollstonecraft Walks
-              <br />
-              <i
-                style={{
-                  fontFamily: `Open Sans`,
-                  fontSize: `1rem`,
-                  textAlign: `center`,
-                  letterSpacing: `1px`,
-                  marginTop: `1rem`,
-                }}
-              >
-                Click to see back
-              </i>
-            </h2>
-            <Card onClick={this.flipCard}>
-              <CardFront style={{maxWidth: `600px`}}>
-                <img
-                  src={FrontImage}
-                  alt="front of flyer for Wollstonecraft Walks"
+              Flyer for
+            </i>{" "}
+            <br />
+            Wollstonecraft Walks
+            <br />
+            <i
+              style={{
+                fontFamily: `Open Sans`,
+                fontSize: `1rem`,
+                textAlign: `center`,
+                letterSpacing: `1px`,
+                marginTop: `1rem`,
+              }}
+            >
+              Click to see back
+            </i>
+          </h2>
 
-                />
-              </CardFront>
-              <CardBack style={{maxWidth: `600px`}}>
-                <img
-                  src={BackImage}
-                  alt="back of flyer for Wollstonecraft Walks"
-                />
-              </CardBack>
-            </Card>
+          <Card onClick={this.flipCard}>
+            <CardFront style={{ maxWidth: `640px` }}>
+              <img
+                src={FrontImage}
+                alt="front of flyer for Wollstonecraft Walks"
+              />
+            </CardFront>
+            <CardBack style={{ maxWidth: `640px` }}>
+              <img
+                src={BackImage}
+                alt="back of flyer for Wollstonecraft Walks"
+              />
+            </CardBack>
+          </Card>
         </section>
       </>
     )

@@ -25,11 +25,6 @@ const MenuContrast = styled.div`
 const FmPage = () => {
   return (
     <>
-      <MenuContrast>
-        <span></span>
-        <span></span>
-        <span></span>
-      </MenuContrast>
       <Menu />
       <FmPrefAndFilm />
 

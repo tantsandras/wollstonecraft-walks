@@ -11,12 +11,11 @@ import Quote5 from "../images/posters/Quotes - vertical[1]-5.jpg"
 
 const VideoList = styled.li`
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.98);
+  background: #241E20;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
   height: auto;
-  background: #191919;
   color: white;
   max-width: 900px;
 `
@@ -26,18 +25,6 @@ const Overlay = styled.div`
   overflow: hidden;
   padding-top: 56.25%;
 `
-const Hover = styled.div`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background: rgb(245, 245, 245);
-  &:hover {
-    opacity: 0.6;
-  }
-`
-
 const MainHeading = styled.h1`
   font-family: "Archivo Black", Impact;
   font-size: 2.4rem;
@@ -172,7 +159,6 @@ class Media extends React.Component {
               <Overlay>
                 <LocalVideo controls>
                   <source src={Trailer} type="video/mp4" />
-                  <Hover></Hover>
                 </LocalVideo>
               </Overlay>
             </VideoList>
@@ -215,7 +201,6 @@ class Media extends React.Component {
               <Overlay>
                 <LocalVideo controls>
                   <source src={WLLive} type="video/mp4" />
-                  <Hover></Hover>
                 </LocalVideo>
               </Overlay>
             </VideoList>
@@ -292,7 +277,6 @@ class Media extends React.Component {
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 >
-                  <Hover></Hover>
                 </Video>
               </Overlay>
             </VideoList>
@@ -335,7 +319,6 @@ class Media extends React.Component {
               <Overlay>
                 <LocalVideo controls>
                   <source src={MWBirthday} type="video/mp4" />
-                  <Hover></Hover>
                 </LocalVideo>
               </Overlay>
             </VideoList>
