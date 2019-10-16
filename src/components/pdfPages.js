@@ -23,6 +23,18 @@ list-style: none;
 position: relative;
 `
 
+const PdfLink = styled.a`
+color: #241E20;
+font-family: Open Sans;
+text-decoration: none;
+font-size: 1rem;
+&:hover {
+  text-decoration: none;
+  color: MediumBlue;
+  cursor: pointer;
+}
+`
+
 class Pages extends React.Component {
   render() {
     return (
@@ -73,8 +85,9 @@ class Pages extends React.Component {
                 >
                   Limited edition art book PDF
                 </i>
+                <br />
+                <PdfLink href="https://drive.google.com/uc?export=download&id=191dUfzDGadedUpdtvG3od2gGUwrRv0x7" download>Click here to download</PdfLink>
               </h2>
-
               <div style={pageGrid}>
                 <Slide>
                   <Img key={image.src} fluid={image} />

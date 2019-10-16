@@ -47,7 +47,7 @@ class StepFivePage extends React.Component {
         <Menu />
 
         <Step5 />
-        <CanvasQuotes />
+        {/* <CanvasQuotes /> */}
       </>
     )
   }

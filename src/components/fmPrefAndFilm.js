@@ -1,7 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import Vindication from "../images/videos/VindicationBRIGHTER_BW.mp4"
-import Flyer from "../components/flyers"
 import MOW from "../images/posters/MoW Poster-1.jpg"
 import QuoteAnne from "../images/posters/Insprational Quotes_compressed-05.jpg"
 import QuoteAudre from "../images/posters/Insprational Quotes_compressed-12.jpg"
@@ -16,19 +15,20 @@ const ProjectHeading = styled.div`
 
 const VideoList = styled.li`
   padding: 2rem;
-  background: #241E20;
+  background: #fffeff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
   height: auto;
-  color: white;
-  max-width: 900px;
+  color: #241e20;
+  max-width: 800px;
 `
 
 const Overlay = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
+  margin-top: 2rem;
 `
 const LocalVideo = styled.video`
   position: absolute;
@@ -66,7 +66,7 @@ const Videos = styled.ul`
 `
 
 const MainHeading = styled.h1`
-  font-family: 'Archivo Black', Impact;
+  font-family: "Archivo Black", Impact;
   font-size: 2rem;
   text-align: center;
   letter-spacing: 1px;
@@ -76,45 +76,78 @@ const MainHeading = styled.h1`
   background-size: cover;
   padding: 2rem 2rem;
   display: grid;
-  align-items: center
+  align-items: center;
+`
+const Box = styled.li`
+  padding: 2rem;
+  background: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  list-style: none;
+  min-height: 220px;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+`
+
+const PdfLink = styled.a`
+  color: #241e20;
+  font-family: Open Sans;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: MediumBlue;
+    cursor: pointer;
+  }
+`
+const Heading = styled.h2`
+  font-family: "Archivo Black", Impact;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  z-index: 2;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.4rem;
 `
 
 class FmPrefAndFilm extends React.Component {
   render() {
     return (
-      <main style={{fontFamily: `Open Sans`, color: `#241E20`, background: `#FFFEFF`}}>
+      <main style={{ fontFamily: `Open Sans`, color: `#241E20` }}>
         <MainHeading>
           Fragments & Monuments
-          <br /> 
+          <br />
           <i
-                  style={{
-                    fontFamily: `'Archivo Black', Impact`,
-                    fontSize: `1.4rem`,
-                    letterSpacing: `1px`,
-                    lineHeight: `2`,
-                    paddingTop: `1rem`
-                  }}
-                >Preformance and Film Archive</i>
+            style={{
+              fontFamily: `'Archivo Black', Impact`,
+              fontSize: `1.4rem`,
+              letterSpacing: `1px`,
+              lineHeight: `2`,
+              paddingTop: `1rem`,
+            }}
+          >
+            Preformance and Film Archive
+          </i>
         </MainHeading>
-        <article style={{ padding: `0% 5% 0% 5%`, fontFamily: `Open Sans`, background: `url("${QuoteAnne}") right 0% top 30%/48% no-repeat`, }}>
+        <article
+          style={{
+            padding: `0% 5% 0% 5%`,
+            fontFamily: `Open Sans`,
+            background: `url("${QuoteAnne}") right 0% top 30%/48% no-repeat`,
+          }}
+        >
           <Videos>
-            <VideoList               style={{
+            <VideoList
+              style={{
                 borderLeft: `2px solid crimson`,
                 borderTop: `2px solid crimson`,
                 borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
                 borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
                 boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px crimson`,
-              }}>
-              <h2
-                style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  letterSpacing: `1px`,
-                  textTransform: `uppercase`,
-                  marginTop: `3rem`,
-                }}
-              >
-                Vindication
-              </h2>
+              }}
+            >
+              <Heading>Vindication</Heading>
               <i
                 style={{
                   fontSize: `1rem`,
@@ -142,306 +175,32 @@ class FmPrefAndFilm extends React.Component {
                 person to speak out and be heard on the silent subject of gender
                 equality.
               </p>
-            <Overlay>
-                <LocalVideo controls style={{float: `right`}}>
+              <Overlay>
+                <LocalVideo controls style={{ float: `right` }}>
                   <source src={Vindication} type="video/mp4" />
                 </LocalVideo>
               </Overlay>
             </VideoList>
           </Videos>
-          </article>
-          <article
-          style={{
-            padding: `0% 10% 16% 10%`,
-            fontFamily: `Open Sans`,
-          }}
-        >
-        <Flyer />
         </article>
-          <article style={{ padding: `10% 10% 0% 10%`, fontFamily: `Open Sans`, color: `#241E20`}}>
-          <span
-            style={{ width: `100%`, margin: `0 auto`, display: `inline-block`, height: `360px`, paddingTop: `2rem`, marginTop: `12rem`}}
-          >
-            <ProjectHeading>
-              <h2
-                style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  fontSize: `180%`,
-                  verticalAlign: `bottom`,
-                  textAlign: `center`,
-                  letterSpacing: `1px`,
-                  lineHeight: `1.5`,
-                }}
-              >
-                Wollstonecraft Live!
-                <br />
-                <i
-                  style={{
-                    fontFamily: `'Archivo Black', Impact`,
-                    fontSize: `1rem`,
-                    textAlign: `left`,
-                    letterSpacing: `1px`,
-                  }}
-                >
-                  by Kaethe Fine 2005
-                </i>
-              </h2>
-            </ProjectHeading>
-            <p
-              style={{
-                fontSize: `0.8rem`,
-                width: `78%`,
-                marginLeft: `0.2rem`,
-                float: `right`,
-              }}
-            >
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Script{" "}
-              </i>
-              - Kaethe Fine
-              <br />
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Director{" "}
-              </i>
-              - Anna Birch
-              <br />
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Composer{" "}
-              </i>
-              - Alastair Gavin <br />
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Movement{" "}
-              </i>
-              - Sarah Rubidge <br />
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Voice{" "}
-              </i>
-              - Sheila Landahl
-              <br />
-            </p>
-          </span>
-          <Videos style={{padding: `3% 10% 0% 10%`}}>
-            <h2
-              style={{
-                fontFamily: `'Archivo Black', Impact`,
-                letterSpacing: `1px`,
-                textTransform: `uppercase`,
-                marginTop: `1rem`,
-                textAlign: `left`,
-                borderTop: `2px solid #241E20`,
-                paddingTop: `1rem`
-              }}
-            >
-              Part 1
-            </h2>
-            <li
-              style={{
-                height: `auto`,
-                listStyle: `none`,
-                maxWidth: `900px`,
-              }}
-            >
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                  marginBottom: `1rem`
-                }}
-              >
-                <Video
-                  title="Wollstonecraft Live video, Part 1"
-                  src="https://www.youtube.com/embed/vSFDuNrA_lA"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  allowFullScreen
-                ></Video>
-              </div>
-            </li>
-            <h2
-              style={{
-                fontFamily: `'Archivo Black', Impact`,
-                letterSpacing: `1px`,
-                textTransform: `uppercase`,
-                marginTop: `2rem`,
-                textAlign: `left`,
-                borderTop: `2px solid #241E20`,
-                paddingTop: `1rem`
-              }}
-            >
-              Part 2
-            </h2>
-            <li
-              style={{
-                height: `auto`,
-                listStyle: `none`,
-                maxWidth: `900px`,
-              }}
-            >
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                  marginBottom: `1rem`
-                }}
-              >
-                <Video
-                  title="Wollstonecraft Live video, Part 2"
-                  src="https://www.youtube.com/embed/i5Uxlj9eDNI"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  allowFullScreen
-                ></Video>
-              </div>
-            </li>
-            <h2
-              style={{
-                fontFamily: `'Archivo Black', Impact`,
-                letterSpacing: `1px`,
-                textTransform: `uppercase`,
-                marginTop: `2rem`,
-                textAlign: `left`,
-                borderTop: `2px solid #241E20`,
-                paddingTop: `1rem`,
-              }}
-            >
-              Part 3
-            </h2>
-            <li
-              style={{
-                height: `auto`,
-                listStyle: `none`,
-                maxWidth: `900px`,
-              }}
-            >
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                  marginBottom: `1rem`
-                }}
-              >
-                <Video
-                  title="Wollstonecraft Live video, Part 3"
-                  src="https://www.youtube.com/embed/PLOLhxc5wqE"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  allowFullScreen
-                ></Video>
-              </div>
-            </li>
-          </Videos>
-        </article>
-
         <article
           style={{
-            padding: `6% 5% 1% 5%`,
+            padding: `2% 10% 3% 6%`,
             fontFamily: `Open Sans`,
-            background: `url("${QuoteAudre}") right 0% top 40%/48% no-repeat`,
+            background: `url("${MOW}") right 6% top 50%/38% no-repeat`,
+            color: `#241E20`,
           }}
         >
           <Videos>
-            <VideoList
-              style={{
-                borderLeft: `2px solid #FF008A`,
-                borderTop: `2px solid #FF008A`,
-                borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
-                borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
-                boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #FF008A`,
-              }}
-            >
-              <h3
-                style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  letterSpacing: `1px`,
-                  textTransform: `uppercase`,
-                  marginTop: `3rem`,
-                }}
-              >
-                Wollstonecraft Live!
-              </h3>
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
-                Written by Kaethe Fine <br />
-                Concieved by Kaethe Fine and Anna Birch <br />
-                Produced and directed by Anna Birch <br />
-              </i>
-              <p style={{ marginTop: `2rem` }}>
-                Meet Mary Wollstonecraft (1759-1797), Britain's first feminist.
-                She articulated the case for women's suffrage, wrote A
-                Vindication of the Rights of Women and gave birth to Mary
-                Shelley who wrote Frankenstein.
-              </p>
-
-              <Overlay>
-                <Video
-                  src="https://www.youtube.com/embed/nDSlEmgryyA"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  allowFullScreen
-                ></Video>
-              </Overlay>
-              </VideoList>
-          </Videos>
-        </article>
-
-        <article
-      style={{ padding: `2% 10% 3% 6%`, fontFamily: `Open Sans`, background: `url("${MOW}") right 6% top 50%/38% no-repeat`, color: `#241E20` }}>
-          <Videos>
             <li
               style={{
                 height: `auto`,
                 listStyle: `none`,
-                maxWidth: `900px`
+                maxWidth: `900px`,
               }}
             >
-              <h2
+              <Heading
                 style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  letterSpacing: `1px`,
-                  textTransform: `uppercase`,
-                  marginTop: `3rem`,
                   textAlign: `right`,
                 }}
               >
@@ -457,7 +216,7 @@ class FmPrefAndFilm extends React.Component {
                 >
                   The trailer
                 </i>
-              </h2>
+              </Heading>
 
               <div
                 style={{
@@ -484,15 +243,7 @@ class FmPrefAndFilm extends React.Component {
                 boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #0031AD`,
               }}
             >
-              <h2
-                style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  letterSpacing: `1px`,
-                  textTransform: `uppercase`,
-                }}
-              >
-                March
-              </h2>
+              <Heading>March</Heading>
               <i
                 style={{
                   fontSize: `1rem`,
@@ -573,17 +324,330 @@ class FmPrefAndFilm extends React.Component {
                 </p>
               </p>
 
-            <Overlay>
+              <Overlay>
                 <Video
                   src="http://player.vimeo.com/video/149630321"
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  style={{ maxWidth: `640px`, minWidth: `240`, maxHeight: `385px`, minHeight: `185px` }}
+                  style={{
+                    maxWidth: `640px`,
+                    minWidth: `240`,
+                    maxHeight: `385px`,
+                    minHeight: `185px`,
+                  }}
                   allowFullScreen
                 ></Video>
               </Overlay>
-              </VideoList>
+            </VideoList>
           </Videos>
+        </article>
+        <article style={{ padding: `2% 10% 1% 10%` }}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+            <Overlay style={{ marginTop: `0rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw"
+              download
+            >
+              Click here to download Wollstonecraft Live Experience Poster 1
+            </PdfLink>
+
+            <Overlay style={{ marginTop: `2rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/1PqeTfCrcP--0F73gPkOeEt2wah6x8y3f/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=1PqeTfCrcP--0F73gPkOeEt2wah6x8y3f"
+              download
+            >
+              Click here to download Wollstonecraft Live Experience Poster 2
+            </PdfLink>
+          </VideoList>
+        </article>
+        <span
+          style={{
+            width: `100%`,
+            margin: `0 auto`,
+            display: `inline-block`,
+            padding: `10% 10% 0% 10%`,
+          }}
+        >
+          <ProjectHeading>
+            <Heading
+              style={{
+                verticalAlign: `bottom`,
+                lineHeight: `1.5`,
+              }}
+            >
+              Wollstonecraft Live!
+              <br />
+              <i
+                style={{
+                  fontFamily: `'Archivo Black', Impact`,
+                  fontSize: `1rem`,
+                  textAlign: `left`,
+                  letterSpacing: `1px`,
+                }}
+              >
+                by Kaethe Fine 2005
+              </i>
+            </Heading>
+          </ProjectHeading>
+          <p
+            style={{
+              fontSize: `0.8rem`,
+              float: `right`,
+              marginTop: `1rem`,
+              marginLeft: `0.2rem`,
+            }}
+          >
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
+              Script{" "}
+            </i>
+            - Kaethe Fine
+            <br />
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
+              Director{" "}
+            </i>
+            - Anna Birch
+            <br />
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
+              Composer{" "}
+            </i>
+            - Alastair Gavin <br />
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
+              Movement{" "}
+            </i>
+            - Sarah Rubidge <br />
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
+              Voice{" "}
+            </i>
+            - Sheila Landahl
+            <br />
+          </p>
+        </span>
+        <ul
+          style={{
+            padding: `0% 10% 0% 10%`,
+            fontFamily: `Open Sans`,
+            color: `#241E20`,
+            display: `grid`,
+            gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
+            gridGap: `1rem`,
+            columnGap: `6%`,
+            margin: `0 auto`,
+          }}
+        >
+          <Box>
+            <Heading
+              style={{
+                borderTop: `2px solid #241E20`,
+                paddingTop: `1rem`,
+              }}
+            >
+              Part 1
+            </Heading>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`,
+                }}
+              >
+                <Video
+                  title="Wollstonecraft Live video, Part 1"
+                  src="https://www.youtube.com/embed/vSFDuNrA_lA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </div>
+            </li>
+          </Box>
+          <Box>
+            <Heading
+              style={{
+                borderTop: `2px solid #241E20`,
+                paddingTop: `1rem`,
+              }}
+            >
+              Part 2
+            </Heading>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`,
+                }}
+              >
+                <Video
+                  title="Wollstonecraft Live video, Part 2"
+                  src="https://www.youtube.com/embed/i5Uxlj9eDNI"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </div>
+            </li>
+          </Box>
+          <Box>
+            <Heading
+              style={{
+                borderTop: `2px solid #241E20`,
+                paddingTop: `1rem`,
+              }}
+            >
+              Part 3
+            </Heading>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`,
+                }}
+              >
+                <Video
+                  title="Wollstonecraft Live video, Part 3"
+                  src="https://www.youtube.com/embed/PLOLhxc5wqE"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </div>
+            </li>
+          </Box>
+        </ul>
+
+        <article
+          style={{
+            padding: `6% 5% 1% 5%`,
+            fontFamily: `Open Sans`,
+            background: `url("${QuoteAudre}") right 0% top 40%/48% no-repeat`,
+          }}
+        >
+          <Videos>
+            <VideoList
+              style={{
+                borderLeft: `2px solid #FF008A`,
+                borderTop: `2px solid #FF008A`,
+                borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
+                borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
+                boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #FF008A`,
+              }}
+            >
+              <Heading>Wollstonecraft Live!</Heading>
+              <i
+                style={{
+                  fontSize: `1rem`,
+                  letterSpacing: `2px`,
+                  lineHeight: `2`,
+                }}
+              >
+                Written by Kaethe Fine <br />
+                Concieved by Kaethe Fine and Anna Birch <br />
+                Produced and directed by Anna Birch <br />
+              </i>
+              <p style={{ marginTop: `2rem` }}>
+                Meet Mary Wollstonecraft (1759-1797), Britain's first feminist.
+                She articulated the case for women's suffrage, wrote A
+                Vindication of the Rights of Women and gave birth to Mary
+                Shelley who wrote Frankenstein.
+              </p>
+
+              <Overlay>
+                <Video
+                  src="https://www.youtube.com/embed/nDSlEmgryyA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </Overlay>
+            </VideoList>
+          </Videos>
+        </article>
+
+        <article style={{ padding: `0% 10% 10% 10%` }}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/1O7ChTQmz1xgOhd0zr7KB4eCf77VPzEsi/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=1O7ChTQmz1xgOhd0zr7KB4eCf77VPzEsi"
+              download
+            >
+              Click here to download Wollstonecraft Live! Poster
+            </PdfLink>
+          </VideoList>
         </article>
       </main>
     )

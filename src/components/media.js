@@ -7,23 +7,24 @@ import Soundscape from "../audio/WL Walk soundscape.mp3"
 import MWBirthday from "../images/videos/MWbirthday.mp4"
 import Quote7 from "../images/posters/Quotes - vertical[1]-7.jpg"
 import Quote5 from "../images/posters/Quotes - vertical[1]-5.jpg"
-
+import Flyer from "../components/flyers"
 
 const VideoList = styled.li`
   padding: 2rem;
-  background: #241E20;
+  background: #241e20;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
   height: auto;
   color: white;
-  max-width: 900px;
+  max-width: 800px;
 `
 
 const Overlay = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
+  margin-top: 2rem;
 `
 const MainHeading = styled.h1`
   font-family: "Archivo Black", Impact;
@@ -108,6 +109,26 @@ const PageHeading = styled.div`
   shape-outside: circle(20em);
 `
 
+const PdfLink = styled.a`
+  color: #fffeff;
+  font-family: Open Sans;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: LightBlue;
+    cursor: pointer;
+  }
+`
+
+const Heading = styled.h2`
+  font-family: "Archivo Black", Impact;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  z-index: 2;
+  text-align: center;
+`
+
 class Media extends React.Component {
   render() {
     return (
@@ -116,19 +137,16 @@ class Media extends React.Component {
           <PageHeading></PageHeading>
         </PageCircle>
         <MainHeading>Media.</MainHeading>
-        <article style={{ padding: `5% 10% 3% 4%`, fontFamily: `Open Sans`, background: `url("${Quote7}") right 6% top 40%/38% no-repeat` }}>
+        <article
+          style={{
+            padding: `5% 10% 3% 4%`,
+            fontFamily: `Open Sans`,
+            background: `url("${Quote7}") right 6% top 40%/38% no-repeat`,
+          }}
+        >
           <Videos>
             <VideoList>
-              <h2
-                style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  paddingTop: `2rem`,
-                  letterSpacing: `1px`,
-                  lineHeight: `2`,
-                  zIndex: `2`,
-                  textAlign: `center`,
-                }}
-              >
+              <Heading>
                 Wollstonecraft Walks
                 <br />
                 <i
@@ -141,7 +159,7 @@ class Media extends React.Component {
                 >
                   The Trailer
                 </i>
-              </h2>
+              </Heading>
               <p
                 style={{
                   fontSize: `1rem`,
@@ -162,16 +180,29 @@ class Media extends React.Component {
                 </LocalVideo>
               </Overlay>
             </VideoList>
+          </Videos>
+        </article>
+        <article style={{ padding: `2% 10% 2% 10%` }}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/1fD7C4xO-ZyFRFEAukWJirMvTdBrxMv6k/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=1fD7C4xO-ZyFRFEAukWJirMvTdBrxMv6k"
+              download
+            >
+              Click here to download Mary Wollstonecraft Quotes
+            </PdfLink>
+          </VideoList>
+        </article>
+        <article style={{ padding: `5% 10% 0% 4%`, fontFamily: `Open Sans` }}>
+          <Videos>
             <VideoList>
-              <h2
-                style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  paddingTop: `2rem`,
-                  letterSpacing: `1px`,
-                }}
-              >
-                Wollstonecraft Live! 2018
-              </h2>
+              <Heading>Wollstonecraft Live! 2018</Heading>
               <p
                 style={{
                   fontSize: `1rem`,
@@ -206,50 +237,41 @@ class Media extends React.Component {
             </VideoList>
           </Videos>
         </article>
-        <SoundBox>
-          <h3
-            style={{
-              fontFamily: `'Archivo Black', Impact`,
-              fontSize: `1.4rem`,
-              textAlign: `center`,
-              letterSpacing: `1px`,
-              marginBottom: `2rem`,
-            }}
-          >
-            Wollstonecraft Walks Soundscape
-          </h3>
-          <p
-            style={{
-              fontSize: `1rem`,
-              letterSpacing: `2px`,
-              lineHeight: `2`,
-              textAlign: `center`,
-            }}
-          >
-            Composer - Alastair Gavin <br />
-            Words - Kaethe Fine
-          </p>
-          <div
-            style={{
-              display: `grid`,
-              justifyContent: `center`,
-            }}
-          >
-            <AudioPlayer track={Soundscape} />
-          </div>
-        </SoundBox>
-        <article style={{ padding: `5% 10% 3% 4%`, fontFamily: `Open Sans`, background: `url("${Quote5}") right 6% top 40%/38% no-repeat` }}>
+        <article style={{ padding: `0% 10% 0% 10%` }}>
+          <SoundBox>
+            <Heading>Wollstonecraft Walks Soundscape</Heading>
+            <p
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+                textAlign: `center`,
+              }}
+            >
+              Composer - Alastair Gavin <br />
+              Words - Kaethe Fine
+            </p>
+            <div
+              style={{
+                display: `grid`,
+                justifyContent: `center`,
+              }}
+            >
+              <AudioPlayer track={Soundscape} />
+            </div>
+          </SoundBox>
+        </article>
+
+        <article
+          style={{
+            padding: `5% 10% 3% 4%`,
+            fontFamily: `Open Sans`,
+            background: `url("${Quote5}") right 6% top 40%/38% no-repeat`,
+          }}
+        >
           <Videos>
             <VideoList>
-              <h2
-                style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  paddingTop: `2rem`,
-                  letterSpacing: `1px`,
-                }}
-              >
-                Living Literature Walks
-              </h2>
+              <Heading>Living Literature Walks</Heading>
               <p
                 style={{
                   fontSize: `1rem`,
@@ -276,19 +298,11 @@ class Media extends React.Component {
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                >
-                </Video>
+                ></Video>
               </Overlay>
             </VideoList>
             <VideoList>
-              <h2
-                style={{
-                  fontFamily: `'Archivo Black', Impact`,
-                  paddingTop: `2rem`,
-                  letterSpacing: `1px`,
-                  lineHeight: `2`,
-                }}
-              >
+              <Heading>
                 Mary Wollstonecraft
                 <br />
                 <i
@@ -301,7 +315,7 @@ class Media extends React.Component {
                 >
                   The Birthday Film
                 </i>
-              </h2>
+              </Heading>
 
               <p
                 style={{
@@ -323,6 +337,40 @@ class Media extends React.Component {
               </Overlay>
             </VideoList>
           </Videos>
+        </article>
+        <article style={{ padding: `2% 10% 2% 10%` }}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/13n0q7ojHbiMe0gIFyaasTn58unzvUPGl/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=13n0q7ojHbiMe0gIFyaasTn58unzvUPGl"
+              download
+            >
+              Click here to download
+            </PdfLink>
+          </VideoList>
+        </article>
+        <article style={{ padding: `2% 10% 2% 10%` }}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/1ZyQY91Vzcy1-pJtqIvkeEPAwROeDpnBm/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=1ZyQY91Vzcy1-pJtqIvkeEPAwROeDpnBm"
+              download
+            >
+              Click here to download Inspirational Quotes
+            </PdfLink>
+          </VideoList>
         </article>
       </main>
     )

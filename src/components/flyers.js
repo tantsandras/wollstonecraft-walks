@@ -53,7 +53,7 @@ class Flyers extends React.Component {
     return (
       <>
         <section
-          style={{ float: `right`, color: `#241E20`, marginBottom: `10rem` }}
+          style={{ float: `right`, color: `#241E20`, marginBottom: `10rem`, height: `auto`}}
         >
           <h2
             style={{
