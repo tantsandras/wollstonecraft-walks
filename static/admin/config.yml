@@ -11,7 +11,7 @@ collections:
     files:
       - label: "Heritage Reasearch Page"
         name: "heritageResearch"
-        file: "src/pages/heritageResearch"
+        file: "content/heritageResearch.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Google file id, name: file, widget: text}
