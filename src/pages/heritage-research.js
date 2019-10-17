@@ -54,7 +54,7 @@ const PdfLink = styled.a`
 `
 
 const HeritageResearchPage = props => {
-  const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  // const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
 
   return (
     <section style={{ fontFamily: `Open Sans` }}>
@@ -83,22 +83,19 @@ const HeritageResearchPage = props => {
 }
 export default HeritageResearchPage
 
-export const researchQuery = graphql`
+
+
+export const query = graphql`
   query {
-    allFile(
-      filter: { sourceInstanceName: { eq: "content" }, name: { eq: "heritageResearch" } }
-    ) {
+    allFile (filter: {sourceInstanceName: {eq: "content"} name: {eq: "heritage-research"}}) {
       edges {
         node {
           childMarkdownRemark {
             frontmatter {
               title
-              description
-              linkText
-            }
           }
         }
       }
     }
   }
-`
+}`
