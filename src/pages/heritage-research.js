@@ -34,7 +34,7 @@ const Preview = styled.iframe`
 
 const Heading = styled.h2`
   font-family: "Archivo Black", Impact;
-  padding-top: 2rem;
+  padding-top: 1rem;
   letter-spacing: 1px;
   line-height: 2;
   z-index: 2;
@@ -55,24 +55,37 @@ const PdfLink = styled.a`
 
 const HeritageResearchPage = props => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-  {console.log(data)}
+  {
+    console.log(data)
+  }
   return (
-
     <section style={{ fontFamily: `Open Sans` }}>
       <SEO title="Heritage Research" />
       <Menu />
       <article style={{ padding: `0% 10% 10% 10%` }}>
+        <h1
+          style={{
+            fontFamily: `'Archivo Black', Impact`,
+            fontSize: `2.2rem`,
+            textAlign: `center`,
+            marginTop: `8rem`,
+            letterSpacing: `1px`,
+            marginBottom: `6rem`,
+          }}
+        >
+          Heritage Research
+        </h1>
         <PdfList maxWidth="640px" style={{ margin: `0 auto` }}>
           <Heading>{data.title}</Heading>
           <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
             <Preview
-              src={`"https://drive.google.com/file/d/${data.file}"`}
+              src={`https://drive.google.com/file/d/${data.file}/preview`}
               width="640"
               height="480"
             ></Preview>
           </Overlay>
           <PdfLink
-            href={`"https://drive.google.com/uc?export=download&id=${data.file}"`}
+            href={`https://drive.google.com/uc?export=download&id=${data.file}`}
             download
           >
             {data.linkText}
@@ -84,19 +97,25 @@ const HeritageResearchPage = props => {
 }
 export default HeritageResearchPage
 
-
-
 export const query = graphql`
   query {
-    allFile (filter: {sourceInstanceName: {eq: "content"} name: {eq: "heritage-research"}}) {
+    allFile(
+      filter: {
+        sourceInstanceName: { eq: "content" }
+        name: { eq: "heritage-research" }
+      }
+    ) {
       edges {
         node {
           childMarkdownRemark {
             frontmatter {
               title
+              file
+              linkText
+            }
           }
         }
       }
     }
   }
-}`
+`
