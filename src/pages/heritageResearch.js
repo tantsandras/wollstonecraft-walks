@@ -42,6 +42,16 @@ const Heading = styled.h2`
   text-transform: uppercase;
   font-size: 1.4rem;
 `
+const PdfLink = styled.a`
+  color: #241e20;
+  font-family: Open Sans;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: MediumBlue;
+    cursor: pointer;
+  }
+`
 
 const HeritageResearchPage = props => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -55,13 +65,13 @@ const HeritageResearchPage = props => {
           <Heading>{data.title}</Heading>
           <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
             <Preview
-              src={`"https://drive.google.com/file/d/${data.id}"`}
+              src={`"https://drive.google.com/file/d/${data.file}"`}
               width="640"
               height="480"
             ></Preview>
           </Overlay>
           <PdfLink
-            href={`"https://drive.google.com/uc?export=download&id=${data.id}"`}
+            href={`"https://drive.google.com/uc?export=download&id=${data.file}"`}
             download
           >
             {data.linkText}
@@ -83,7 +93,7 @@ export const researchQuery = graphql`
           childMarkdownRemark {
             frontmatter {
               title
-              id
+              file
               linkText
             }
           }

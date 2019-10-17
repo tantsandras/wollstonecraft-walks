@@ -10,9 +10,9 @@ collections:
     name: "pages"
     files:
       - label: "Heritage Reasearch Page"
-        name: "heritage-research"
+        name: "heritageResearch"
         file: "src/pages/heritageResearch"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Google file id, name: file, widget: text}
           - {label: Link text, name: linkText, widget: text}
-          - {label: Google file id, name: id, widget: string}
