@@ -17,7 +17,7 @@ const VideoList = styled.li`
   list-style: none;
   height: auto;
   color: white;
-  max-width: 800px;
+  max-width: 700px;
 `
 
 const Overlay = styled.div`

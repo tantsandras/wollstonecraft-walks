@@ -43,7 +43,9 @@ class StepFivePage extends React.Component {
         >
           <AudioPlayer track={AudioStepFive} />
         </div>
-        <Link to={"/4"}><BackButton /></Link>
+        <Link to={"/4"}>
+          <BackButton />
+        </Link>
         <Menu />
 
         <Step5 />

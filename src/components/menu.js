@@ -72,38 +72,43 @@ const NavActive = styled.div`
 `
 
 const StyledLink = styled(Link)`
-    z-index: 3;
-    font-family: Open Sans;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  z-index: 3;
+  font-family: Open Sans;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  opacity: 0;
+  color: #656565;
+  animation: ${fadeInRight} ease 0.6s forwards;
+  animation-delay: 0.2s;
+  &:hover {
     text-decoration: none;
-    opacity: 0;
-    color: #656565;
-    animation: ${fadeInRight} ease 0.6s forwards;
-    animation-delay: 0.2s;
-    &:hover {
-      text-decoration: none;
-      color: Crimson;
-      cursor: pointer;
-    }
+    color: Crimson;
+    cursor: pointer;
+  }
 `
 
 const Second = styled.div`
-z-index: 3;
-animation-delay: 0.8s;
-align-self: left;
-width: 100%;
-margin: 0em 1rem 2.4rem 0em;
-height: 0.06em;
-background-color: black;
-transform: scaleX(0);
-transform-origin: left;
-animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
+  z-index: 3;
+  animation-delay: 0.8s;
+  align-self: left;
+  width: 100%;
+  margin: 0em 1rem 2.4rem 0em;
+  height: 0.06em;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
+  &:hover {
+    text-decoration: none;
+    background-color: Crimson;
+    cursor: pointer;
+  }
 `
 
 const NavList = styled.ul`
   margin: 0;
-  padding: 4rem 10px 10px 10px;
+  padding: 4rem 10px 18px 10px;
   top: 5%;
   width: 100%;
   text-align: left;
@@ -127,7 +132,7 @@ const StyledLogo = styled.img`
 
 const activeStyle = {
   color: `black`,
-  textDecoration: `none`
+  textDecoration: `none`,
 }
 
 class Menu extends React.Component {
@@ -158,96 +163,76 @@ class Menu extends React.Component {
         )}
         <div>
           {this.state.isActive && (
-            <NavActive >
+            <NavActive>
               <NavList>
-                <StyledLink
-                  to="/"
-                  activeStyle={activeStyle}
-            
-                  // style={StyledLinkAnimation}
-                > 
+                <StyledLink to="/" activeStyle={activeStyle}>
                   {"Home"}
+
+                  <Second></Second>
                 </StyledLink>
-                <Second
-                ></Second>
                 <StyledLink
                   to="/podcast"
                   activeStyle={activeStyle}
-                    
-                  // delay={"0.4s"}
-                  // style={StyledLinkAnimation}
-                > 
+                  style={{ animationDelay: `0.4s` }}
+                >
                   {"Podcast"}
+
+                  <Second style={{ animationDelay: `0.6s` }}></Second>
                 </StyledLink>
-                <Second
-                ></Second>
                 <StyledLink
                   to="/media"
                   activeStyle={activeStyle}
-                    
-                  // delay={"0.6s"}
-                  // style={StyledLinkAnimation}
-                > 
+                  style={{ animationDelay: `0.6s` }}
+                >
                   {"Media"}
+
+                  <Second style={{ animationDelay: `0.8s` }}></Second>
                 </StyledLink>
-                <Second
-                ></Second>
                 <StyledLink
                   to="/gallery"
                   activeStyle={activeStyle}
-                    
-                  // delay={"0.8s"}
-                  // style={StyledLinkAnimation}
-                > 
+                  style={{ animationDelay: `0.8s` }}
+                >
                   {"Gallery"}
+
+                  <Second style={{ animationDelay: `1s` }}></Second>
                 </StyledLink>
-                <Second
-                ></Second>
                 <StyledLink
                   to="/heritage-research"
                   activeStyle={activeStyle}
-                    
-                  // delay={"1s"}
-                  // style={StyledLinkAnimation}
-                > 
+                  style={{ animationDelay: `1s` }}
+                >
                   {"Heritage Research"}
+
+                  <Second style={{ animationDelay: `1.2s` }}></Second>
                 </StyledLink>
-                <Second
-                ></Second>
                 <StyledLink
                   to="/artists"
                   activeStyle={activeStyle}
-                    
-                  // delay={"1.2s"}
-                  // style={StyledLinkAnimation}
-                > 
+                  style={{ animationDelay: `1.2s` }}
+                >
                   {"Artists"}
+
+                  <Second style={{ animationDelay: `1.4s` }}></Second>
                 </StyledLink>
-                <Second
-                ></Second>
                 <StyledLink
                   to="/contact"
                   activeStyle={activeStyle}
-                    
-                  // delay={"1.4s"}
-                  // style={StyledLinkAnimation}
-                > 
+                  style={{ animationDelay: `1.4s` }}
+                >
                   {"Contact"}
+
+                  <Second style={{ animationDelay: `1.6s` }}></Second>
                 </StyledLink>
-                <Second
-                ></Second>
                 <StyledLink
                   to="/fm-preformance-and-film-archive"
-                    
                   activeStyle={activeStyle}
-                  // delay={"1.6s"}
-                  // style={StyledLinkAnimation}
-                > 
+                  style={{ animationDelay: `1.6s` }}
+                >
                   {"Fragments & Monuments"} <br></br>{" "}
                   {"preformance and film archive"}
+                  <Second style={{ animationDelay: `1.8s` }}></Second>
                 </StyledLink>
-                <Second
-                ></Second>
               </NavList>
             </NavActive>
           )}

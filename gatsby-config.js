@@ -5,7 +5,21 @@ module.exports = {
     author: `Sandra Grahl`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,   
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/imgUploads`,
+        name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
+    },   
       {
         resolve: `gatsby-transformer-remark`,
         options: {

@@ -9,10 +9,10 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "src/pages/index"
+      - label: "Heritage Reasearch Page"
+        name: "heritage-research"
+        file: "src/pages/heritageResearch"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro text, name: intro, widget: text}
-          - {label: Image, name: image, widget: image}
+          - {label: Link text, name: linkText, widget: text}
+          - {label: Google file id, name: id, widget: string}

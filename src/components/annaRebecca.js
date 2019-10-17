@@ -12,7 +12,7 @@ const Title = styled.div`
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0 auto;
-  padding: 0rem;
+  padding-top: 0.3rem;
   width: 60%;
   text-align: center;
   position: absolute;
