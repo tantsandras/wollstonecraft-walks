@@ -14,5 +14,5 @@ collections:
         file: "content/heritage-research.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Google file id, name: pdf, widget: string}
-          - {label: Link text, name: link, widget: text}
+          - {label: Google file id, name: file, widget: string}
+          - {label: Link text, name: linkText, widget: text}

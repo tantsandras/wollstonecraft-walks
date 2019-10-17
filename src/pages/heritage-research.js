@@ -54,13 +54,14 @@ const PdfLink = styled.a`
 `
 
 const HeritageResearchPage = props => {
-  // const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-
+  const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  {console.log(data)}
   return (
+
     <section style={{ fontFamily: `Open Sans` }}>
       <SEO title="Heritage Research" />
       <Menu />
-      {/* <article style={{ padding: `0% 10% 10% 10%` }}>
+      <article style={{ padding: `0% 10% 10% 10%` }}>
         <PdfList maxWidth="640px" style={{ margin: `0 auto` }}>
           <Heading>{data.title}</Heading>
           <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
@@ -77,7 +78,7 @@ const HeritageResearchPage = props => {
             {data.linkText}
           </PdfLink>
         </PdfList>
-      </article> */}
+      </article>
     </section>
   )
 }
