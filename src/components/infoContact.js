@@ -36,10 +36,11 @@ const Heading = styled.h3`
   letter-spacing: 1px;
   margin-top: 1rem;
   line-height: 2;
+  color: #333333;
 `
 
 const SubHeading = styled.h4`
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   letter-spacing: 2px;
   line-height: 2;
   font-weight: lighter;
@@ -57,6 +58,10 @@ const Handle = styled.a`
   }
 `
 
+const Normal = styled.p`
+line-height: 1.8;
+`
+
 class ContactBox extends React.Component {
   render() {
     return (
@@ -68,7 +73,7 @@ class ContactBox extends React.Component {
             <br />
             director @ fragmentsandmonuments.com
           </SubHeading>
-          <p>
+          <Normal>
             Anna combines her professional expertise as a theatre and film
             director with her scholarly research and activism. Moving beyond the
             theatre building, she has created a ‘living monuments’ dramaturgical
@@ -78,11 +83,11 @@ class ContactBox extends React.Component {
             feminist Mary Wollstonecraft (1759-1797) to show how this use of
             multimedia provides an essential link to the performativity of
             particular feminist achievements through history.
-          </p>
-          <p style={{ paddingBottom: `2rem` }}>
+          </Normal>
+          <Normal style={{ paddingBottom: `2rem` }}>
             Keep in touch and follow our updates for more volunteer
             opportunities and exciting Wollstonecraft Walks events!
-          </p>
+          </Normal>
           <Social>
             <Handle
               href="https://twitter.com/anna_birch1"
@@ -91,7 +96,7 @@ class ContactBox extends React.Component {
             >
               <Icon src={Twitter} />
 
-              <p style={{ marginLeft: `80px` }}>@anna_birch1</p>
+              <Normal style={{ marginLeft: `80px` }}>@anna_birch1</Normal>
             </Handle>{" "}
           </Social>
           <Social>
@@ -102,7 +107,7 @@ class ContactBox extends React.Component {
             >
               <Icon src={Instagram} />
 
-              <p style={{ marginLeft: `80px` }}>@annabirch1</p>
+              <Normal style={{ marginLeft: `80px` }}>@annabirch1</Normal>
             </Handle>{" "}
           </Social>
           <div
@@ -118,7 +123,7 @@ class ContactBox extends React.Component {
         <Box>
           <Heading>Rebecca Mordan</Heading>
           <SubHeading>www.scarylittlegirls.co.uk</SubHeading>
-          <p>
+          <Normal>
             After graduating from Bristol Old Vic and working in film, theatre
             and television, Rebecca created her own company, Scary Little Girls,
             to try and ‘level the playing field’, populating stories with
@@ -126,12 +131,12 @@ class ContactBox extends React.Component {
             involved with every aspect of SLG, writing, directing, producing and
             performing. She is a grassroots campaigner against male violence and
             frequent guest expert on BBC Radio and Sky News.
-          </p>
-          <p style={{ paddingBottom: `2rem` }}>
+          </Normal>
+          <Normal style={{ paddingBottom: `2rem` }}>
             Production hub and arts charity Scary Little Girls hope you have
             enjoyed this Living Literature Event. If you have any comments, rave
             reviews or suggestions for the future, we'd love to hear from you.
-          </p>
+          </Normal>
           <Social>
             <Handle
               href="www.scarylittlegirls.co.uk"
@@ -139,9 +144,9 @@ class ContactBox extends React.Component {
               rel="noopener noreferrer"
             >
               <Icon src={Email} />
-              <p style={{ marginLeft: `80px` }}>
+              <Normal style={{ marginLeft: `80px` }}>
                 info@scarylittlegirls.co.uk
-              </p>{" "}
+              </Normal>{" "}
             </Handle>
           </Social>
           <Social>
@@ -151,7 +156,7 @@ class ContactBox extends React.Component {
               rel="noopener noreferrer"
             >
               <Icon src={Facebook} />
-              <p style={{ marginLeft: `80px` }}>@ScaryLittleGirls</p>{" "}
+              <Normal style={{ marginLeft: `80px` }}>@ScaryLittleGirls</Normal>{" "}
             </Handle>
           </Social>
           <Social>
@@ -162,7 +167,7 @@ class ContactBox extends React.Component {
             >
               <Icon src={Twitter} />
 
-              <p style={{ marginLeft: `80px` }}>@ScaryLittleGs</p>
+              <Normal style={{ marginLeft: `80px` }}>@ScaryLittleGs</Normal>
             </Handle>{" "}
           </Social>
         </Box>

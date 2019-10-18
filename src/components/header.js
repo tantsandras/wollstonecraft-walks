@@ -7,20 +7,20 @@ import Image from "../components/image"
 const element = {
   gridTemplateColumns: `repeat(4, 1fr)`,
   gridTemplateRows: `repeat(2, 300px)`,
-  fontFamily: `Open Sans`,
+  fontFamily: `Roboto, 'Open Sans'`,
 }
 
 const Header = ({ siteTitle }) => (
   <header>
   <section
     style={{
-      backgroundSize: `cover`,
+      // backgroundSize: `cover`,
       padding: `4rem 2rem`,
       display: `grid`,
       alignItems: `center`,
       gridTemplateColumns: `repeat(auto-fit, minmax(240px, 1fr))`,
       gap: `3%`,
-      marginBottom: `6rem`
+      marginBottom: `6rem`,
   }}>
     <div style={element}>
     <h2 style={{fontFamily: `'Archivo Black', Impact`, color: `#333333`, transform: `translateY(-90px)`, letterSpacing: `1px`,}}>Welcome to</h2>

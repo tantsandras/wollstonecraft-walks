@@ -7,7 +7,7 @@ const Back = styled(Link)`
   font-size: 22px;
   background: #1451ad;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffd0d0;
@@ -46,7 +46,7 @@ class Circle {
       ctx.arc(this.x, this.y, this.radius, Math.PI * 2, false)
       ctx.fillStyle = this.color
       ctx.fill()
-      ctx.font = "normal 1rem Open Sans"
+      ctx.font = "normal 1rem Roboto, 'Open Sans'"
       ctx.textAlign = "center"
       ctx.fillStyle = "#333333"
       lines.map((v, i) => {

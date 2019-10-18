@@ -7,7 +7,7 @@ import Artists from "../components/artists"
 
 const ArtistsPage = () => {
     return (
-    <section style={{fontFamily: `Open Sans`}}>
+    <section style={{fontFamily: `Roboto, 'Open Sans'`}}>
       <SEO title="Artists" />
       <Menu />
       <h1
@@ -18,6 +18,7 @@ const ArtistsPage = () => {
             marginTop: `8rem`,
             letterSpacing: `1px`,
             marginBottom: `2rem`,
+            color: `#333333`,
           }}
         >Our wonderful creative team</h1>
       <Artists />

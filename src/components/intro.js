@@ -13,9 +13,8 @@ const Quote = styled.div`
   vertical-align: middle;
   font-size: 1rem;
   position: relative;
-  float: right;
   clip-path: circle(50%);
-  margin: 0 auto;
+  margin-left: 3rem;
 `
 
 const RainbowText = styled.p`
@@ -37,6 +36,32 @@ const RainbowText = styled.p`
   );
 `
 
+const QuotationMarks = styled.p`
+line-height: 1.8;
+position: relative;
+padding: 1em 1em;
+min-height: 5em;
+&:before {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '“';
+  top: -1rem;
+  left: -1rem;
+}
+
+&:after {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '”';
+  bottom: 0rem;
+  right: 2.4rem;
+}
+`
+
 const Intro = () => (
   <>
     <div
@@ -55,27 +80,30 @@ const Intro = () => (
         </RainbowText>
       </Quote>
     </div>
-    <main style={{ fontFamily: `Open Sans`, paddingBottom: `8rem` }}>
-      <h3
+    <main style={{ fontFamily: `Roboto, 'Open Sans'`, paddingBottom: `8rem` }}>
+      <h1
         style={{
           textAlign: `center`,
           paddingTop: `-5%`,
           fontFamily: `'Archivo Black', Impact`,
           fontSize: `1.6rem`,
-          letterSpacing: `1px`
+          letterSpacing: `1px`,
+          lineHeight: `1.3`,
+          marginBottom: `6rem`
         }}
       >
-        Who is <h1 style={{fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>Mary Wollstonecraft?</h1>
-      </h3>
+        Who is <br /><b style={{fontSize: `2rem`,}}>Mary Wollstonecraft?</b>
+      </h1>
 
       <article style={{ padding: `5% 10% 3% 10%` }}>
-      <p style={{ letterSpacing: `2px`, lineHeight: `2` }}>
-          By Di Sherlock for her role as Mary Wollstonecraft in Di’s Midsummer
-          Night Party, 2000, Stoke Newington Midsummer Festival
-        </p>
+      <p style={{ lineHeight: `1.8`}}>
+        By Di Sherlock<br />
+          <i style={{letterSpacing: `0px`}}>
+          for her role as Mary Wollstonecraft <br />in Di’s Midsummer
+          Night Party, 2000,<br /> Stoke Newington Midsummer Festival
+        </i></p>
 
-        <p style={{ lineHeight: `1.6` }}>
-          '18th century Feminist writer and mother of Mary Shelley, author of
+        <QuotationMarks> 18th century Feminist writer and mother of Mary Shelley, author of
           Frankenstein, Wollstoncraft was born Spitalfields, London, but her
           father turned to drink after losing the family fortunes, scraping a
           living as a farmer in Essex, Yorkshire and Wales. Together with Fanny
@@ -84,7 +112,7 @@ const Intro = () => (
           The school folded when Fanny got married. After a spell as a Governess
           in Ireland, Wollstonecraft was befriended by publisher Joseph Johnson
           who set her up with a job and lodgings. She wrote {" "}
-          <i style={{ fontSize: `1.4rem`, letterSpacing: `2px` }}>
+          <i style={{ fontSize: `1.2rem`, letterSpacing: `2px` }}>
             A Vindication of the Rights of Woman (1792)
           </i>
           , was a fiery feminist polemic railing against the ‘bitter bread of
@@ -100,8 +128,8 @@ const Intro = () => (
           account forming the basis of Carlyle’s French Revolution 40 years
           later) and a suicide attempt off Putney Bridge. She later married
           philosopher William Godwin and died a few days after giving birth to
-          Mary (Shelley).'
-        </p>
+          Mary (Shelley).
+        </QuotationMarks>
       </article>
     </main>
   </>

@@ -66,7 +66,7 @@ class ArtBook extends React.Component {
 
   render() {
     return (
-      <article style={{ backgroundColor: `#FFFEFF`, color: `#241E20`, paddingBottom: `350px`}}>
+      <article style={{ backgroundColor: `#FFFEFF`, color: `#333333`, paddingBottom: `350px`}}>
       <div
         style={{
           display: `grid`,

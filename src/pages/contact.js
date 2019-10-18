@@ -39,13 +39,13 @@ const OrgList = styled.ul`
   list-style: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const StyledLink = styled.a`
   z-index: 3;
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -88,7 +88,7 @@ const MenuContrast = styled.div`
 `
 const ContactPage = () => {
   return (
-    <section style={{ fontFamily: `Open Sans` }}>
+    <section style={{ fontFamily: `Roboto, 'Open Sans'` }}>
       <SEO title="Contact" />
       <MenuContrast>
         <span></span>
@@ -105,6 +105,7 @@ const ContactPage = () => {
             fontSize: `1.6rem`,
             paddingBottom: `1rem`,
             letterSpacing: `2%`,
+            color: `#333333`
           }}
         >
           Community Links

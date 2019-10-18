@@ -25,7 +25,10 @@ const PodList = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
+`
+const Normal = styled.p`
+line-height: 1.8;
 `
 
 class Pods extends React.Component {
@@ -35,16 +38,17 @@ class Pods extends React.Component {
         <h1
           style={{
             fontFamily: `'Archivo Black', Impact`,
-            fontSize: `2.2rem`,
+            fontSize: `1.8rem`,
             textAlign: `center`,
             marginTop: `8rem`,
             letterSpacing: `1px`,
             marginBottom: `2rem`,
+            color: `#333333`,
           }}
         >
           Wollstonecraft Walks Podcast
         </h1>
-        <h2 style={{fontFamily: `Open Sans`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
+        <h2 style={{fontFamily: `Roboto, 'Open Sans'`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
         <PodList>
           <PodBox>
             <h3
@@ -54,16 +58,17 @@ class Pods extends React.Component {
                 textAlign: `center`,
                 letterSpacing: `1px`,
                 marginBottom: `2rem`,
-                lineHeight: `1.5`
+                lineHeight: `1.5`,
+                color: `#333333`,
               }}
             >
-              Wollstonecraft Walks <br /> <h4 style={{textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 1</i></h4>
+              Wollstonecraft Walks <br /> <h4 style={{color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 1</i></h4>
             </h3>
-            <p>
+            <Normal>
               Readings with walk context making walk experience
               accessible to a remote audience including people with access
               requirements
-            </p>
+            </Normal>
             <div
               style={{
                 display: `grid`,
@@ -81,15 +86,16 @@ class Pods extends React.Component {
                 textAlign: `center`,
                 letterSpacing: `1px`,
                 marginBottom: `2rem`,
-                lineHeight: `1.5`
+                lineHeight: `1.5`,
+                color: `#333333`,
               }}
             >
-              Wollstonecraft Walks <br /> <h4 style={{textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 2</i></h4>
+              Wollstonecraft Walks <br /> <h4 style={{color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 2</i></h4>
             </h3>
-            <p>
+            <Normal>
               Feedback from June 2019 audience at Stoke Newington Literary
               Festival
-            </p>
+            </Normal>
 
             <div
               style={{
@@ -108,19 +114,20 @@ class Pods extends React.Component {
                 textAlign: `center`,
                 letterSpacing: `1px`,
                 marginBottom: `2rem`,
-                lineHeight: `1.5`
+                lineHeight: `1.5`,
+                color: `#333333`,
               }}
             >
-              Wollstonecraft Walks <br /><h4 style={{textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 3</i></h4>
+              Wollstonecraft Walks <br /><h4 style={{color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 3</i></h4>
             </h3>
 
-            <p>
+            <Normal>
               Marina chats to Anna and Rebecca back stage about their project
               Wollstonecraft Walks: Anna Birch, Artistic Director Fragments
               &amp; Monuments performance and film company and Artistic
               Director, Rebecca Mordan Scary Little Girls, feminist production
               company
-            </p>
+            </Normal>
             <div
               style={{
                 display: `grid`,

@@ -6,7 +6,7 @@ const Back = styled.button`
   padding: 0.5rem 1rem 0.4rem 2rem;
   font-size: 18px;
   background: white;
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   text-align: center;
   letter-spacing: 0.04em;
   color: black;
@@ -49,7 +49,7 @@ const BackButton = () => (
     style={{ height: `50px`, padding: `100px 50px 100px 50px`, float: `right` }}
   >
     <Back>
-      <i style={arrow}></i>Back
+      <i style={arrow}></i>Previous
 
     </Back>
   </span>

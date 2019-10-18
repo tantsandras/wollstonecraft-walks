@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 
 const Box = styled.li`
   padding: 1.4rem;
-  background: #FFFFFF;
+  background: #fffeff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
-  min-height: 220px;
+  min-height: 210px;
   position: relative;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease-out;
@@ -16,8 +16,7 @@ const Box = styled.li`
   -o-transition: all 0.4s ease-out;
 
   &:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 0 3px rgb(255, 0, 0, 0.60);
+    box-shadow: 0 0 0 3px rgb(255, 0, 0, 0.6);
     border: 3px solid #ffd0d0;
   }
 `
@@ -90,7 +89,7 @@ class StepBox extends React.Component {
                     lineHeight: `1.5`,
                     textAlign: `center`,
                     paddingRight: `1.8rem`,
-                    color: `#241E20`,
+                    color: `#333333`,
                   }}
                 >
                   <Numbers num={item.num}>{item.num}</Numbers>

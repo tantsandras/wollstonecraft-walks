@@ -1,5 +1,34 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import { Link } from "gatsby"
+
+const Back = styled(Link)`
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  font-size: 22px;
+  background: #1451ad;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+  font-family: Roboto, 'Open Sans';
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffd0d0;
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: 240px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+
+  &:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 0 2px rgb(255, 0, 0, 0.6);
+    border: 2px solid white;
+  }
+`
 
 const StepCircle = styled.div`
   z-index: -1;
@@ -30,6 +59,7 @@ const Direction = styled.li`
   position: relative;
   padding-left: 2rem;
   padding-bottom: 1.4rem;
+  line-height: 1.8;
 `
 const Arrow = styled.i`
   border-style: solid;
@@ -74,6 +104,33 @@ min-height: 5em;
 }
 `
 
+const StepHeading = styled.h1`
+font-family: 'Archivo Black', Impact;
+font-size: 1.8rem;
+font-weight: bolder;
+text-align: center;
+margin-top: -2.8rem;
+letter-spacing: 1px;
+margin-bottom: 4rem
+line-height: 1.3;
+padding-left: 2rem;
+`
+
+const SubHeading = styled.h4`
+font-family: 'Archivo Black', Impact;
+letter-spacing: 1px;
+line-height: 2; 
+color: #333333;
+font-size: 1.2rem;
+margin-top: 2rem;
+`
+const Normal = styled.p`
+line-height: 1.8;
+`
+const Block = styled.blockquote`
+line-height: 1.8;
+`
+
 class Step5 extends React.Component {
   render() {
     return (
@@ -81,19 +138,10 @@ class Step5 extends React.Component {
         <StepCircle style={{ marginTop: `-2rem` }}>
           <StepNum>5</StepNum>
         </StepCircle>
-        <h3
-          style={{
-            fontFamily: `'Archivo Black', Impact`,
-            fontSize: `1.6rem`,
-            textAlign: `center`,
-            marginTop: `-2.8rem`,
-            letterSpacing: `1px`,
-            marginBottom: `4rem`
-          }}
-        >
+        <StepHeading>
           The Lady Mildmay Inn
-        </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
+        </StepHeading>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF008A"}></Arrow>
@@ -101,10 +149,10 @@ class Step5 extends React.Component {
               way you came to Newington Green.
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `4rem` }}>
+          <SubHeading>
             Did you know?
-          </h3>
-          <blockquote>
+            </SubHeading>
+          <Block>
             The extract by Mary Wollstonecraft you have just heard was from an
             essay called{" "}
             <i
@@ -127,10 +175,10 @@ class Step5 extends React.Component {
             became the backbone of the ideology of the Romantic movement,
             another debt we owe to Wollstonecraft&#39;s remarkable vision,
             prowess and resilience.
-          </blockquote>
-          <h3 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `4rem` }}>
+          </Block>
+          <SubHeading>
             Back to the directions!
-          </h3>
+          </SubHeading>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#0031ad"}></Arrow>
@@ -141,10 +189,10 @@ class Step5 extends React.Component {
               school building on your left.
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `4rem` }}>
+          <SubHeading>
             Did you know?
-          </h3>
-          <blockquote>
+          </SubHeading>
+          <Block>
             Mary Wollstonecraft opened a school for girls near the site in 1784.
             This plaque celebrates that Wollstonecraft lived and worked on the
             Green at a formative time in her life and her experience of running
@@ -162,11 +210,11 @@ class Step5 extends React.Component {
             Wollstonecraft notes in a letter that the church and Dr Price’s
             house could be seen from a school window. The plaque is on the back
             of Newington Green school where we have just been.
-          </blockquote>
+          </Block>
 
-          <h3 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `4rem` }}>
+          <SubHeading>
             Back to the directions!
-          </h3>
+          </SubHeading>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF0000"}></Arrow>
@@ -175,18 +223,18 @@ class Step5 extends React.Component {
               with the Lady Mildmay Inn.{" "}
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `4rem` }}>
+          <SubHeading>
             Did you know?
-          </h3>
-          <p>
+          </SubHeading>
+          <Normal>
             In stark opposition to her father Godwin and his attack on her
             mother&#39;s literary contributions, when Percy Shelley died Mary
             Shelley made time within her own writing career to compile, complete
             and edit all Percy&#39;s remaining output, helping his legacy to
             endure and the Romantic movement&#39;s ideals and principles to be
             able to continue influencing us to this day. As Joanna Russ points
-            out in ‘How to Suppress Women&#39;s Writing’;</p>
-            <blockquote
+            out in ‘How to Suppress Women&#39;s Writing’;</Normal>
+            <Block
               style={{
                 margin: `1rem`,
                 fontSize: `1.2rem`,
@@ -203,17 +251,17 @@ class Step5 extends React.Component {
                 great writer,&quot; why do we think we can succeed now?
               </Quote>
 
-            </blockquote>{" "}
-            <p>
+            </Block>{" "}
+            <Normal>
             Thanks to the work of second wave radical feminists in the 70&#39;s
             and 80&#39;s, Mary&#39;s influence in history, politics and
             literature has been rediscovered and we can once again celebrate her
             part in the major movements of her time, nationally and
             internationally. We think that calls for a toast!
-          </p>
-          <h3 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `4rem` }}>
+          </Normal>
+          <SubHeading>
             Back to the directions!
-          </h3>
+          </SubHeading>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#5D00FF"}></Arrow>
@@ -222,16 +270,16 @@ class Step5 extends React.Component {
             </Direction>
           </ul>
 
-          <p>
+          <Normal>
             Here our live audiences were greeted by drag king Don One who hosted
             a birthday celebration for Mary, at which everyone raised a glass,
             had a slice of birthday cake and were invited to read quotes from
             illustrious women like Maya Angelou, bell hooks, Radcliffe Hall and
             Michele Obama! You can recreate this by heading inside for a drink
-            or bite to eat and reading the PDF of these quotes that can be found
-            on this app and treating yourself to a bit of inspirational me time!
-          </p>
-          <p
+            or bite to eat and reading these quotes (that can be found
+            on this app) and treating yourself to a bit of inspirational me time!
+          </Normal>
+          <Normal
             style={{
               margin: `3rem`,
               fontSize: `1.2rem`,
@@ -242,8 +290,15 @@ class Step5 extends React.Component {
             Thank you so much for completing this Wollstonecraft Walk and
             celebrating Mary, our remarkable Green and the advances of feminism
             – onwards and upwards!
-          </p>
+          </Normal>
         </article>
+        <div
+          style={{
+            display: `grid`,
+            justifyContent: `center`,
+            padding: `6em 2em`
+          }}
+        ><Back style={{margin: `0 auto`}} to={"/"}>Back to Home</Back></div>
       </main>
     )
   }

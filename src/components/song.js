@@ -2,12 +2,12 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 
 const Collapse = styled.button`
-  padding: 0.4rem 2rem 0.4rem 0.2rem;
+  padding: 0.4rem 1.4rem 0.4rem 0.2rem;
   margin-bottom: 4rem;
   font-size: 18px;
   background: #1451ad;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffd0d0;
@@ -35,25 +35,25 @@ const arrow = {
   borderWidth: `0px 1px 1px 0px`,
   display: `table-cell`,
   position: `absolute`,
-  top: `38%`,
+  top: `40%`,
   right: `8%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
-  padding: `8px`,
+  padding: `0.25rem`,
   transform: `rotate(-135deg)`,
   WebkitTransform: `rotate(-135deg)`,
 }
 
 const downArrow = {
   border: `solid black`,
-  borderWidth: `0px 3px 3px 0px`,
+  borderWidth: `0px 2px 2px 0px`,
   display: `table-cell`,
   position: `absolute`,
   top: `-40px`,
   right: `47%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
-  padding: `12px`,
+  padding: `0.25rem`,
   transform: `rotate(44deg)`,
   WebkitTransform: `rotate(44deg)`,
 }
@@ -100,13 +100,14 @@ class Song extends React.Component {
                 fontFamily: `'Archivo Black', Impact`,
                 padding: `40px 0px 0px 20px`,
                 letterSpacing: `1px`,
+                color: `#333333`
               }}
             >
               Let Us All Speak Our Minds! (1863)
             </h4>
             <p
               style={{
-                fontFamily: `Open Sans`,
+                fontFamily: `Roboto, 'Open Sans'`,
                 marginBottom: `4rem`,
                 marginLeft: `1.5rem`,
                 fontSize: `0.8rem`,
@@ -118,7 +119,7 @@ class Song extends React.Component {
             </p>
             <p
               style={{
-                fontFamily: `Open Sans`,
+                fontFamily: `Roboto, 'Open Sans'`,
                 marginBottom: `2rem`,
                 textAlign: `center`,
                 transform: `translateY(-20px)`,
@@ -135,18 +136,18 @@ class Song extends React.Component {
 
         {this.state.isActive && (
           <article
-            style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}
+            style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}
           >
             <Collapse onClick={this.handleClick}>
               Collapse<i style={arrow}></i>
             </Collapse>
             <aside style={{ fontSize: `0.8rem`, lineHeight: `2` }}>
-              <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
+              <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px`, color: `#333333`}}>
                 Let Us All Speak Our Minds! (1863)
               </h4>
               <p
                 style={{
-                  fontFamily: `Open Sans`,
+                  fontFamily: `Roboto, 'Open Sans'`,
                   marginBottom: `2rem`,
                   marginLeft: `1rem`,
                 }}

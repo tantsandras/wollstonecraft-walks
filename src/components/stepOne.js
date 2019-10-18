@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import Song from "../components/song"
+import MildmayImage from "../components/mildmayImg"
 
 const StepCircle = styled.div`
   position: relative;
@@ -29,6 +30,7 @@ const StepNum = styled.p`
 `
 
 const Direction = styled.li`
+  line-height: 1.8;
   position: relative;
   padding-left: 2rem;
   padding-bottom: 1.4rem;
@@ -48,40 +50,112 @@ const Arrow = styled.i`
   webkit-transform: rotate(-45deg);
 `
 
+const StepHeading = styled.h1`
+font-family: 'Archivo Black', Impact;
+font-size: 1.8rem;
+font-weight: bolder;
+text-align: center;
+margin-top: -2.8rem;
+letter-spacing: 1px;
+margin-bottom: 4rem
+line-height: 1.3;
+padding-left: 2rem;
+`
+
+
+const ImgageWrap = styled.div`
+  max-width: 400px;
+  height: auto;
+  margin: 8rem 0px 0px 0px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+`
+
+
+const SubHeading = styled.h4`
+font-family: 'Archivo Black', Impact;
+letter-spacing: 1px;
+line-height: 2; 
+color: #333333;
+font-size: 1.2rem;
+margin-top: 2rem;
+`
+
+const Normal = styled.p`
+line-height: 1.8;
+`
+
+const Block = styled.blockquote`
+line-height: 1.8;
+`
+
+const QuotationMarks = styled.p`
+line-height: 1.8;
+position: relative;
+padding: 1em 0em;
+min-height: 5em;
+&:before {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '“';
+  top: -0.4rem;
+  left: -1rem;
+}
+
+&:after {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '”';
+  bottom: 0rem;
+  right: 3.2rem;
+}
+`
+
 class Step1 extends React.Component {
   render() {
     return (
       <main>
-        <StepCircle>
-          <StepNum>1</StepNum>
-        </StepCircle>
-        <h3
+        <ImgageWrap style={{            
+            maxWidth: `285px`,
+            maxHeight: `285px`,
+            margin: `0 auto`,
+            transform: `translate(0px, -70px)`, zIndex: `-1`,}}>
+        <div
           style={{
-            fontFamily: `'Archivo Black', Impact`,
-            fontSize: `2.2rem`,
-            textAlign: `center`,
-            marginTop: `-2.8rem`,
-            letterSpacing: `1px`,
-            marginBottom: `4rem`,
+            transform: `translate(0px, 2px)`,
+
           }}
         >
+          <MildmayImage />
+        </div>
+        </ImgageWrap>
+        <StepCircle style={{marginTop: `-130px`}}>
+          <StepNum>1</StepNum>
+        </StepCircle>
+        <StepHeading>
           The Mildmay Club
-        </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
+        </StepHeading>
+        <article style={{ padding: `10% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
           <section style={{ paddingBottom: `3rem` }}>
             
-                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Wollstonecraft Walks Guide researched and written by Anna Birch and Rebecca Mordan. </p>
-                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Read by: Rebecca Mordan with readings read by Rebecca Boey and Caroline Parker </p>
-                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Sound Composition: Alastair Gavin </p>
+                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Wollstonecraft Walks Guide </p> <Normal>Researched and written by Anna Birch and Rebecca Mordan.</Normal>
+                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Read by: </p><Normal>Rebecca Mordan with readings read by Rebecca Boey and Caroline Parker </Normal>
+                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Sound Composition:  </p><Normal>Alastair Gavin</Normal>
           </section>
-          <p>
+          <Normal>
             Hello, I&#39;m Rebecca and I&#39;m here to Welcome you to this Mary
             Wollstonecraft Living Literature Walk exploring the heritage of Mary
             Wollstonecraft and Newington Green where she lived. I&#39;m going to
             give you both directions and some local info, please feel free to
             pause and rewind these instructions as you need to.
-          </p>
-          <p>
+            </Normal> 
+          <Normal>
             When I&#39;m about to give you some local information I&#39;ll say,{" "}
             <b style={{ letterSpacing: `2px`, lineHeight: `2` }}>
               &#39;Did you know&#39;
@@ -91,35 +165,21 @@ class Step1 extends React.Component {
               &#39;Back to the directions&#39;
             </b>
             .
-          </p>
-          <p> 
+            </Normal> 
+          <Normal>
           We&#39;ll also come to sites along the way where there would have been
           a live performance on our show days in June 2019, and at these points
           you&#39;ll either hear these readings or I&#39;ll tell you about what
           happened on the site you have reached. Let&#39;s get started with a
           couple of pieces to get you in the mood!
-          </p>
+          </Normal> 
           <br />
-          <h4
-            style={{
-              fontFamily: `'Archivo Black', Impact`,
-              paddingTop: `2rem`,
-              letterSpacing: `1px`,
-            }}
-          >
-            Excerpt from
-            <h3
-              style={{
-                fontFamily: `'Archivo Black', Impact`,
-                paddingTop: `1rem`,
-                letterSpacing: `1px`,
-              }}
-            >
-              A Vindication of the Rights of Woman (1792)
-            </h3>
+          <Normal style={{letterSpacing: `2px`, lineHeight: `2`}}>
+            Excerpt from <br />
+              <SubHeading>Vindication of the Rights of Woman (1792)</SubHeading> 
             by Mary Wollstonecraft
-          </h4>
-          <blockquote>
+          </Normal>
+          <QuotationMarks><Block>
             My own sex, I hope, will excuse me, if I treat them like rational
             creatures, instead of flattering their{" "}
             <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>FASCINATING</i>{" "}
@@ -142,7 +202,7 @@ class Step1 extends React.Component {
             character as a human being, regardless of the distinction of sex;
             and that secondary views should be brought to this simple
             touchstone.
-          </blockquote>
+          </Block></QuotationMarks>
           <Song />
           <br />
           <ul style={{ listStyle: `none` }}>
@@ -167,10 +227,10 @@ class Step1 extends React.Component {
               Unitarian Meeting House now a building site.
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
+          <SubHeading>
             Did you know?
-          </h4>
-          <blockquote>
+          </SubHeading>
+          <Block>
             When Mary Wollstonecraft was 25, she arrived at Newington Green and
             attended the sermons by Rational Dissenter Dr Richard Price here in
             her pew, number 19, which can still be seen inside. As part of her
@@ -183,11 +243,11 @@ class Step1 extends React.Component {
             undergoing a full conservation and restoration funded by National
             Lottery Heritage Fund which will be completed in 2020 – it may be
             finished by the time you do this walk!
-          </blockquote>
+          </Block>
           <br />
-          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
+          <SubHeading>
             Back to the directions -
-          </h4>
+          </SubHeading>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF0000"}></Arrow>
@@ -227,10 +287,10 @@ class Step1 extends React.Component {
               your right.
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
+          <SubHeading>
             Did you know?
-          </h4>
-          <blockquote>
+          </SubHeading>
+          <Block>
             The Chinese mission, now student accommodation, was built in 1895 to
             house China Inland Missions, a nonconformist missionary group
             founded by James Hudson Taylor in 1865. As you might imagine, China
@@ -241,7 +301,7 @@ class Step1 extends React.Component {
             medicine, technology and trained doctors to China – Taylor himself
             was a doctor. Newington Green is steeped in history, for example you
             are now walking towards the oldest terrace in London.
-          </blockquote>
+          </Block>
          
         </article>
       </main>

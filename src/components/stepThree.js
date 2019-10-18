@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import MemorialImg from "../components/memorialImg"
 
 const StepCircle = styled.div`
   z-index: -1;
@@ -24,10 +25,11 @@ const StepNum = styled.p`
   font-style: normal;
   font-weight: normal;
   font-size: 3rem;
-  color: #5d00ff;
+  color: #3e3247;
   text-align: center;
 `
 const Direction = styled.li`
+line-height: 1.8;
   position: relative;
   padding-left: 2rem;
   padding-bottom: 1.4rem;
@@ -47,26 +49,67 @@ const Arrow = styled.i`
   webkit-transform: rotate(-45deg);
 `
 
+const StepHeading = styled.h1`
+font-family: 'Archivo Black', Impact;
+font-size: 1.8rem;
+font-weight: bolder;
+text-align: center;
+margin-top: -2.8rem;
+letter-spacing: 1px;
+margin-bottom: 4rem
+line-height: 1.3;
+padding-left: 2rem;
+`
+
+const ImgageWrap = styled.div`
+  margin: 8rem 0px 0px 0px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+`
+
+
+const SubHeading = styled.h4`
+font-family: 'Archivo Black', Impact;
+letter-spacing: 1px;
+line-height: 2; 
+color: #333333;
+font-size: 1.2rem;
+margin-top: 2rem;
+`
+
+const Normal = styled.p`
+line-height: 1.8;
+`
+
+
 class Step3 extends React.Component {
   render() {
     return (
       <main>
-        <StepCircle style={{ marginTop: `-2rem` }}>
-          <StepNum>3</StepNum>
-        </StepCircle>
-        <h3
+                <ImgageWrap style={{            
+            width: `250px`,
+            height: `250px`,
+            margin: `0 auto`,
+            transform: `translate(0px, -70px)`, zIndex: `-1`,}}>
+        <div
           style={{
-            fontFamily: `'Archivo Black', Impact`,
-            fontSize: `1.6rem`,
-            textAlign: `center`,
-            marginTop: `-2.8rem`,
-            letterSpacing: `1px`,
-            marginBottom: `4rem`,
+            transform: `translate(-20px, -20px)`,
+            width: `400px`,
+            height: `200px`
           }}
         >
+          <MemorialImg />
+        </div>
+        </ImgageWrap>
+        <StepCircle style={{ marginTop: `-130px` }}>
+          <StepNum>3</StepNum>
+        </StepCircle>
+        <StepHeading>
           Mary on the Green memorial site
-        </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
+        </StepHeading>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF0000"}></Arrow>
@@ -77,14 +120,14 @@ class Step3 extends React.Component {
               by contemporary artist Maggi Hambling.
             </Direction>{" "}
           </ul>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact` }}>Did you know?</h4>
-          <p>
+          <SubHeading>Did you know?</SubHeading>
+          <Normal>
             You are now walking through the site of{" "}
             <b
               style={{
                 letterSpacing: `2px`,
                 lineHeight: `2`,
-                fontFamily: `Open Sans`,
+                fontFamily: `Roboto, 'Open Sans'`,
               }}
             >
               Wollstonecraft Live!
@@ -95,23 +138,23 @@ class Step3 extends React.Component {
             continued on the Green and were reprised as some of the last
             performances in the Unitarian Meeting House in 2018 before it closed
             for renovation.
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             In the late summer of 2007 Fragments &amp; Monuments hosted a picnic
             and outdoor screening where you are walking of the{" "}
             <b
               style={{
                 letterSpacing: `2px`,
                 lineHeight: `2`,
-                fontFamily: `Open Sans`,
+                fontFamily: `Roboto, 'Open Sans'`,
               }}
             >
               The Wollstonecraft Live Experience!
             </b>{" "}
             films on the Green with live music performed by the famous Deidre
             Cartwright Trio.
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             In 2019 local company Scary Little Girls joined forces with
             Fragments &amp; Monuments to celebrate Mary and the Living
             Literature Walks were held here funded, by the Heritage Lottery and
@@ -120,40 +163,25 @@ class Step3 extends React.Component {
             by playwright by Kaethe Fine in the specially composed soundscape by
             composer Alastair Gavin and were given postcards encouraging them to
             give generously to the Mary On the Green memorial fund.
-          </p>
+          </Normal>
           </article>
-          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans`, lineHeight: `1.5`, }}>
-          <h2 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `4rem` }}>
-            Listen - a walking memorial <br />{" "}
-          </h2>
+          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'`, lineHeight: `1.5`, }}>
+          <SubHeading style={{ marginTop: `2rem`, marginBottom: `-0.1rem`}}>
+            Listen - a walking memorial
+          </SubHeading>
 
-          <h3
-            style={{
-              fontFamily: `'Archivo Black', Impact`,
-              letterSpacing: `2px`,
-              lineHeight: `2`,
-              fontWeight: `lighter`,
-              fontSize: `1rem`,
-              marginBottom: `4rem`,
-            }}
-          >
+          <Normal style={{marginBottom: `4rem`}}>
             (excerpted from
-            <b
-              style={{
-                fontFamily: `'Archivo Black', Impact`,
-                lineHeight: `1.5`,
-                fontSize: `1.2rem`,
-              }}
-            >
+            <b style={{letterSpacing: `2px`,}}>
               {" "}
               Wollstonecraft Live!{" "}
             </b>
             by Kaethe Fine)
             <br />
             Music by Alastair Gavin{" "}
-          </h3>
+          </Normal>
 
-          <p>
+          <Normal>
             Wollstonecraft
             <i style={{ letterSpacing: `2px` }}>
               {" "}
@@ -161,15 +189,15 @@ class Step3 extends React.Component {
             </i><br />
           
           <b style={{ letterSpacing: `2px` }}>(Music)</b>
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             ...why should not one woman acknowledge that she can take more
             exercise than another ? or in other words that she has a sound
             constitution? And why, to damp innanent vivacity, is she darkly to
             be told that men will draw conclusions which she thinks little of?
-          </p>
+          </Normal>
 
-          <p>
+          <Normal>
             Let the Libertine draw what inference he pleases but I hope
             <i style={{ letterSpacing: `2px` }}>
               {" "}
@@ -177,17 +205,17 @@ class Step3 extends React.Component {
             </i>{" "}
             that no sensible mother with restrain the natural frankness of youth
             by instilling such indanent cautions.
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             ...Women ought to endeavor to purify their heart, but can they do so
             when their uncultivated understandings make them entirely dependent
             on their senses for employment and amusement? When no noble pursuits
             set them above the petty vanities of the day, or enables them to
             curb the wild emotions that agitate a reed over which ever passing
             breeze has power.
-          </p>
+          </Normal>
 
-          <p>
+          <Normal>
             To gain affections of a virtuous man is affectation necessary?{" "}
             <b style={{ letterSpacing: `2px` }}>(rewind)</b>{" "}
             ...To gain affections of a virtuous man...
@@ -200,15 +228,15 @@ class Step3 extends React.Component {
             <b style={{ letterSpacing: `2px` }}>
               (rewind. cut)
             </b>
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             To gain affections is affectation necessary?{" "}
             <i style={{ letterSpacing: `2px` }}>
               (whispers) Wollstonecraft Live...{" "}
             </i>
-          </p>
+          </Normal>
 
-          <p>
+          <Normal>
             Weakness may excite tenderness and gratify the arrogant pride of man{" "}
             <b style={{ letterSpacing: `2px` }}>(rewind)</b>{" "}
             arrogant pride of man{" "}
@@ -217,14 +245,14 @@ class Step3 extends React.Component {
             Weakness may excite tenderness and gratify arrogant pride but the
             lordly caresses of a protector will not gratify a noble mind that
             pants for and deserves to be respected.{" "}
-          </p>
+          </Normal>
 
-          <p>
+          <Normal>
             Fondness is a poor substitute for friendship!{" "}
             <b style={{ letterSpacing: `2px` }}>(rewind)</b>{" "}
-          </p>
+          </Normal>
 
-          <p>
+          <Normal>
             A noble mind that pants for and deserves to be respected. Fondness
             is.
             <b style={{ letterSpacing: `2px`}}>
@@ -235,10 +263,10 @@ class Step3 extends React.Component {
             But the lordly caresses of a. <br />
             Of a protector will not gratify a noble mind.
           <br />...that pants for a deserves to respected.<br />
-          Fondness is a poor substitute for friendship.</p>
+          Fondness is a poor substitute for friendship.</Normal>
 
-          <p>Hear! Hear!</p>
-          <p>
+          <Normal>Hear! Hear!</Normal>
+          <Normal>
             It appears to me impossible that I should cease to exist or that
             this active, restless spirit, equally alive to joy and sorrow should
             be only organized dust, ready to fly abroad the moment the spring
@@ -247,7 +275,7 @@ class Step3 extends React.Component {
               {" "}
               (whispers) Wollstonecraft Live...
             </i> Surely something resides in this heart that is not perishable.
-          <br /> And life is more than a dream...</p>
+          <br /> And life is more than a dream...</Normal>
         </article>
       </main>
     )

@@ -9,7 +9,7 @@ import Circles from "../components/circles"
 const MediaPage = () => {
 
     return (
-    <section style={{fontFamily: `Open Sans`}}>
+    <section style={{fontFamily: `Roboto, 'Open Sans'`}}>
       <SEO title="Media" />
       <Menu />
       <Circles />

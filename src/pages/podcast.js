@@ -8,7 +8,7 @@ import Circles from "../components/circles"
 const PodcastPage = () => {
     
     return (
-    <section style={{fontFamily: `Open Sans`}}>
+    <section style={{fontFamily: `Roboto, 'Open Sans'`}}>
       <SEO title="Podcast" />
       <Menu />
       <Circles />

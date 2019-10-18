@@ -28,6 +28,7 @@ const StepNum = styled.p`
   text-align: center;
 `
 const Direction = styled.li`
+line-height: 1.8;
   position: relative;
   padding-left: 2rem;
   padding-bottom: 1.4rem;
@@ -48,19 +49,71 @@ const Arrow = styled.i`
 `
 
 const ImgageWrap = styled.div`
-  max-width: 800px;
+  max-width: 600px;
   height: auto;
   margin: 8rem 0px 0px 0px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  overflow: hidden;
+  // border-radius: 50%;
+  // -moz-border-radius: 50%;
+  // -webkit-border-radius: 50%;
+  // overflow: hidden;
 `
 
 const element = {
   gridTemplateColumns: `repeat(2, 1fr)`,
   gridTemplateRows: `repeat(2, 300px)`,
 }
+
+const QuotationMarks = styled.p`
+line-height: 1.8;
+position: relative;
+padding: 1em 0em;
+min-height: 5em;
+&:before {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '“';
+  top: -0.4rem;
+  left: -2rem;
+}
+
+&:after {
+  font-family: Yeseva One; 
+  font-size: 3rem;
+  position: absolute;
+  height: 3rem;
+  content: '”';
+  bottom: 1rem;
+  right: 3rem;
+}
+`
+
+const StepHeading = styled.h1`
+font-family: 'Archivo Black', Impact;
+font-size: 1.8rem;
+font-weight: bolder;
+text-align: center;
+margin-top: -2.8rem;
+letter-spacing: 1px;
+margin-bottom: 4rem
+line-height: 1.3;
+padding-left: 2rem;
+`
+
+const SubHeading = styled.h4`
+font-family: 'Archivo Black', Impact;
+letter-spacing: 1px;
+line-height: 2; 
+color: #333333;
+font-size: 1.2rem;
+margin-top: 2rem;
+`
+
+const Normal = styled.p`
+line-height: 1.8;
+`
+
 
 class Step4 extends React.Component {
   render() {
@@ -69,19 +122,10 @@ class Step4 extends React.Component {
         <StepCircle style={{ marginTop: `-2rem` }}>
           <StepNum>4</StepNum>
         </StepCircle>
-        <h3
-          style={{
-            fontFamily: `'Archivo Black', Impact`,
-            fontSize: `1.6rem`,
-            textAlign: `center`,
-            marginTop: `-2.8rem`,
-            letterSpacing: `1px`,
-            marginBottom: `4rem`,
-          }}
-        >
+        <StepHeading>
           Newington Green Primary School
-        </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
+        </StepHeading>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#383790"}></Arrow>Turn left and walk to the end of
@@ -103,14 +147,14 @@ class Step4 extends React.Component {
               Bottle. Take a few moments here to listen to the next readings...
             </Direction>
           </ul>
-          <h3 style={{ fontFamily: `'Archivo Black', Impact` }}>
-            “On Poetry, and Our Relish for the Beauties of Nature”
-          </h3>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact` }}>
-            by Mary Wollstonecraft which originally appeared in the Monthly
-            Magazine, April 1797
-          </h4>
-          <p>
+          <SubHeading style={{marginBottom: `-0.1rem`}}>
+            On Poetry, and Our Relish for the Beauties of Nature
+          </SubHeading>
+          <Normal>
+          <i style={{ letterSpacing: `2px`}}>by Mary Wollstonecraft</i><br />
+            which originally appeared in the Monthly
+            Magazine, April 1797</Normal>
+          <QuotationMarks><Normal>
             A taste for rural scenes, in the present state of society, appears
             to be very often an artificial sentiment, rather inspired by poetry
             and romances, than a real perception of the beauties of nature. But,
@@ -119,8 +163,8 @@ class Step4 extends React.Component {
             exhausted. Yet it may be made a question, whether this romantic kind
             of declamation, has much effect on the conduct of those, who leave,
             for a season, the crowded cities in which they were bred.{" "}
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             In this more advanced state of civilisation a poet is rather the
             creature of art, than of nature. The books that he reads in his
             youth become a hotbed in which artificial flowers are produced,
@@ -129,8 +173,8 @@ class Step4 extends React.Component {
             The silken wings of fancy are shrivelled by rules; and a desire of
             attaining elegance of diction occasions an attention to words,
             incompatible with sublime, impassioned thoughts.
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             But God is seen in every floating cloud, and comes from the misty
             mountains to receive the noblest homage of an intelligent creature –
             praise. How solemn is the moment when all affections and
@@ -141,8 +185,8 @@ class Step4 extends React.Component {
             responses of ceremonial devotion; nor, to express them, would the
             true poet need another poets aid; his heart burns within him, and he
             speaks the language of truth and nature with resistless energy.
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             Boys who have received a classical education load their memory with
             words and the correspondent ideas are perhaps never distinctly
             comprehended. But though it should be allowed that books may produce
@@ -150,7 +194,7 @@ class Step4 extends React.Component {
             to sleep, or exhort admiration. They may diffuse taste, and polish
             the language; but I am inclined to conclude that they will seldom
             rouse the passions, or amend the heart.
-          </p>
+          </Normal></QuotationMarks>
 
           <section
             style={{
@@ -162,11 +206,12 @@ class Step4 extends React.Component {
             }}
           >
             <div style={element}>
-              <h4 style={{ fontFamily: `'Archivo Black', Impact`, marginTop: `2rem` }}>
-                Phenomenal Woman (1995) by Maya Angelou
-              </h4>
-              <p style={{ fontSize: `0.8rem` }}>
-                <p>
+              <SubHeading style={{ marginTop: `2rem`, marginBottom: `-0.1rem`}}>
+                Phenomenal Woman (1995)               </SubHeading>
+                <Normal>
+          <i style={{ letterSpacing: `2px`}}>by Maya Angelou</i></Normal>
+
+              <Normal style={{ fontSize: `0.8rem` }}>
                   Pretty women wonder where my secret lies.
                   <br /> I’m not cute or built to suit a fashion model’s size
                   <br /> But when I start to tell them,
@@ -178,18 +223,16 @@ class Step4 extends React.Component {
                   <br /> The stride of my step,
                   <br /> The curl of my lips. I’m a woman
                   <br />
-                  <p
+                  <Normal
                     style={{
-                      fontSize: `1.2rem`,
+                      fontSize: `1rem`,
                       letterSpacing: `2px`,
-                      lineHeight: `2`,
                     }}
                   >
                     Phenomenally.
-                  </p>
-                </p>
+                  </Normal>
 
-                <p>
+                <Normal>
                   Phenomenal woman, That’s me.
                   <br /> I walk into a room <br />
                   Just as cool as you please,
@@ -200,9 +243,8 @@ class Step4 extends React.Component {
                   <br />{" "}
                   <i
                     style={{
-                      fontSize: `1.2rem`,
+                      fontSize: `1rem`,
                       letterSpacing: `2px`,
-                      lineHeight: `2`,
                     }}
                   >
                     A hive of honey bees.
@@ -215,8 +257,8 @@ class Step4 extends React.Component {
                   And the joy in my feet.
                   <br /> I’m a woman <br />
                   Phenomenally.
-                </p>
-                <p>
+                </Normal>
+                <Normal>
                   Phenomenal woman, <br />
                   That’s me. <br />
                   Men themselves have wondered
@@ -231,7 +273,6 @@ class Step4 extends React.Component {
                   <i
                     style={{
                       fontSize: `1rem`,
-                      color: `#383790`,
                       letterSpacing: `2px`,
                     }}
                   >
@@ -242,8 +283,8 @@ class Step4 extends React.Component {
                   The grace of my style. <br />
                   I’m a woman
                   <br /> Phenomenally.
-                </p>
-                <p>
+                </Normal>
+                <Normal>
                   Phenomenal woman, <br />
                   That’s me. <br />
                   Now you understand <br />
@@ -258,22 +299,21 @@ class Step4 extends React.Component {
                   ’Cause I’m a woman
                   <br />
                   Phenomenally. <br />
-                  <p
+                  <Normal
                     style={{
-                      fontSize: `1.4rem`,
+                      fontSize: `1rem`,
                       letterSpacing: `2px`,
-                      lineHeight: `2`,
                     }}
                   >
                     Phenomenal woman, <br />
                     That’s me.
-                  </p>
-                </p>
-              </p>
+                  </Normal>
+                </Normal>
+              </Normal>
             </div>
             <div style={element}>
               <ImgageWrap>
-                <CarolineImage alt="Caroline Parker" />
+                <CarolineImage alt="Photo of Caroline Parker" />
               </ImgageWrap>
             </div>
           </section>

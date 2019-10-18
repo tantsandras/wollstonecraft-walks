@@ -39,13 +39,13 @@ const ArtList = styled.ul`
   cursor: pointer;
   list-style: none;
   letter-spacing: 1px;
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   margin-bottom: 4rem;
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 const StyledLink = styled.a`
   z-index: 3;
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -102,10 +102,13 @@ const Handle = styled.a`
     cursor: pointer;
   }
 `
+const Normal = styled.p`
+line-height: 1.8;
+`
 
 const ArtistList = () => {
   return (
-    <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
+    <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
       <ArtList>
         <li>
           <StyledLink
@@ -330,7 +333,7 @@ const ArtistList = () => {
         <Second style={{ animationDelay: `2.6s` }}></Second>
       </ArtList>
       <section style={{ marginBottom: `6rem` }}>
-        <p>
+        <Normal>
           <i
             style={{
               fontSize: `1.2rem`,
@@ -344,8 +347,8 @@ const ArtistList = () => {
           <br />
           Jessie Krish, Jude Cox, Sophie Persson, Unity Arts, Georgia Patience,
           Israel Meriomame Wekpe, Jenny Kay, Marina Garvey Birch
-        </p>
-        <p style={{ marginTop: `4rem` }}>
+        </Normal>
+        <Normal style={{ marginTop: `4rem` }}>
           <i
             style={{
               fontSize: `1.2rem`,
@@ -365,7 +368,7 @@ const ArtistList = () => {
           Steve Garvey; Wollstonecraft Presents; Lil at Unity Arts; Stoke
           Newington Literary Festival; Olivia at Lady Mildmay Inn, Mildmay
           Community Partnership, High Class Shoes, N1.
-        </p>
+        </Normal>
       </section>
     </article>
   )

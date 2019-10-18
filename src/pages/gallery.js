@@ -36,7 +36,7 @@ const GalleryPage = props => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   console.log(data.image)
   return (
-    <main style={{ fontFamily: `Open Sans` }}>
+    <main style={{ fontFamily: `Roboto, 'Open Sans'` }}>
       <SEO title="Gallery" />
       <Menu />
       <Circles />
@@ -62,7 +62,7 @@ const GalleryPage = props => {
                 style={{
                   letterSpacing: `2px`,
                   fontSize: `1rem`,
-                  fontFamily: `Open Sans`,
+                  fontFamily: `Roboto, 'Open Sans'`,
                   fontWeight: `lighter`,
                   marginTop: `4rem`,
                 }}

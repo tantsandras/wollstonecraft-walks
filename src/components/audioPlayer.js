@@ -101,7 +101,7 @@ const Play = styled.button`
   width: 0;
   height: 37px;
 
-  border-color: transparent transparent transparent #202020;
+  border-color: transparent transparent transparent #333333;
   transition: 100ms all ease;
   cursor: pointer;
 
@@ -150,7 +150,7 @@ box-sizing: border-box;
     vertical-align: middle;
     position: relative;
     font-style: normal;
-    color: black;
+    color: #333333;
     text-align: left;
     text-indent: -9999px;
     direction: ltr;
@@ -168,7 +168,7 @@ display: inline-block;
 vertical-align: middle;
 position: relative;
 font-style: normal;
-color: black;
+color: #333333;
 text-align: left;
 text-indent: -9999px;
 direction: ltr;

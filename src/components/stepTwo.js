@@ -27,6 +27,7 @@ const StepNum = styled.p`
   text-align: center;
 `
 const Direction = styled.li`
+  line-height: 1.8;
   position: relative;
   padding-left: 2rem;
   padding-bottom: 1.4rem;
@@ -72,6 +73,37 @@ min-height: 5em;
   right: 2.4rem;
 }
 `
+const StepHeading = styled.h1`
+font-family: 'Archivo Black', Impact;
+font-size: 1.8rem;
+font-weight: bolder;
+text-align: center;
+margin-top: -2.8rem;
+letter-spacing: 1px;
+margin-bottom: 4rem
+line-height: 1.3;
+padding-left: 2rem;
+`
+
+
+const SubHeading = styled.h4`
+font-family: 'Archivo Black', Impact;
+letter-spacing: 1px;
+line-height: 2; 
+color: #333333;
+font-size: 1.2rem;
+margin-top: 2rem;
+`
+
+
+const Normal = styled.p`
+line-height: 1.8;
+`
+
+const Block = styled.blockquote`
+line-height: 1.8;
+`
+
 
 class Step2 extends React.Component {
   render() {
@@ -91,20 +123,11 @@ class Step2 extends React.Component {
         <StepCircle style={{ marginTop: `-8rem` }}>
           <StepNum>2</StepNum>
         </StepCircle>
-        <h3
-          style={{
-            fontFamily: `'Archivo Black', Impact`,
-            fontSize: `2.2rem`,
-            textAlign: `center`,
-            marginTop: `-2.8rem`,
-            letterSpacing: `1px`,
-            marginBottom: `4rem`
-          }}
-        >
+        <StepHeading>
           Lizzy&#39;s on the Green
-        </h3>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Open Sans` }}>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>Back to the directions -</h4>
+        </StepHeading>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
+          <SubHeading>Back to the directions -</SubHeading>
           <br />
           <ul style={{ listStyle: `none` }}>
             <Direction>
@@ -116,8 +139,8 @@ class Step2 extends React.Component {
               were the back of the houses.
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>Did you know?</h4>
-          <blockquote>
+          <SubHeading>Did you know?</SubHeading>
+          <Block>
             Built in 1658, the four buildings at 52-55 Newington Green have
             survived the Great Fire of London as well as two World Wars.
             <br />
@@ -136,8 +159,8 @@ class Step2 extends React.Component {
             these famous soirées; in it Joseph Johnson, Wollstonecraft’s
             publisher, Tom Paine, William Godwin and Mary Wollstonecraft dine
             and converse at the invitation of Richard Price.
-          </blockquote>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>Back to the directions -</h4>
+          </Block>
+          <SubHeading>Back to the directions -</SubHeading>
           <br />
           <ul style={{ listStyle: `none` }}>
             <Direction>
@@ -156,14 +179,12 @@ class Step2 extends React.Component {
               moments to enjoy our next readings!
             </Direction>
           </ul>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px`,  paddingTop: `1rem`, }}>Rebecca Boey reading</h4>
-          <h3 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
-            On Mary Wollstonecraft (1925)
-          </h3>
-          <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
-            in <i>The Common Reader</i> by Virginia Woolf
-          </h4>
-          <p>
+          <Normal style={{marginTop: `2rem`}}>Rebecca Boey reading
+          <SubHeading style={{marginTop: `-0.1rem`, marginBottom: `-0.1rem`}}>
+            On Mary Wollstonecraft (1925)</SubHeading>
+            in <i>The Common Reader</i> by Virginia Woolf</Normal>
+          
+          <Normal style={{marginTop: `2rem`}}> 
             Certainly Mary could say this with truth. When she was a little more
             than thirty she could look back upon a series of actions which she
             had carried out in the teeth of opposition. She had taken a house by
@@ -178,8 +199,8 @@ class Step2 extends React.Component {
             wife, she had put her principle of decisive action instantly into
             effect, and had gone to Paris determined to make her living by her
             pen.
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             The conflict of all these contradictions shows itself in her face,
             at once so resolute and so dreamy, so sensual and so intelligent,
             and beautiful into the bargain with its great coils of hair and the
@@ -190,8 +211,8 @@ class Step2 extends React.Component {
             Every day too — for she was no pedant, no cold-blooded theorist —
             something was born in her that thrust aside her theories and forced
             her to model them afresh.{" "}
-          </p>
-          <p>
+          </Normal>
+          <Normal>
             Mary’s life had been an experiment from the start, an attempt to
             make human conventions conform more closely to human needs. And her
             eventual marriage to Godwin was only a beginning; all sorts of
@@ -213,7 +234,7 @@ class Step2 extends React.Component {
             her way to the quick of life, one form of immortality is hers
             undoubtedly: she is alive and active, she argues and experiments, we
             hear her voice and trace her influence even now among the living.
-          </p>
+          </Normal>
 
           <section
             style={{
@@ -226,10 +247,10 @@ class Step2 extends React.Component {
               marginBottom: `2rem`
             }}
           >
-            <h3 style={{ fontFamily: `'Archivo Black', Impact`, paddingTop: `4rem`, letterSpacing: `1px` }}>
+            <SubHeading style={{marginBottom: `-0.1rem`}}>
               If People Disapprove of You (2012)
-            </h3>
-            <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>by Sophie Hannah</h4>
+              </SubHeading>
+            <Normal style={{letterSpacing: `2px`, marginBottom: `2rem`}}>by Sophie Hannahs</Normal>
             <p style={{ fontSize: `0.8rem` }}>
               Make being disapproved of your hobby.
               <br />
@@ -305,14 +326,13 @@ class Step2 extends React.Component {
             </p>
           </section>
           <br />
-          <section style={{ marginTop: `8rem`, }}>
-            <h3 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
-              The Tea of Consent (2015)
-            </h3>
-            <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px` }}>
-              by Rockstar Dinosaur Pirate Princess
-            </h4>
-            <p>
+          <section style={{ marginTop: `8rem`, }}>   
+            <SubHeading style={{marginBottom: `-0.1rem`}}>
+            The Tea of Consent (2015)
+            </SubHeading>
+
+              <Normal style={{letterSpacing: `2px`, marginBottom: `2rem`}}>by Rockstar Dinosaur Pirate Princess</Normal>
+            <Normal>
               It seems a lot of people really,{" "}
               <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>REALLY</i>{" "}
               don’t get what ‘consent’  means. It seems people really have a
@@ -323,18 +343,18 @@ class Step2 extends React.Component {
               men, women, everyone. Whoever you are initiating sexytimes with,
               just make sure they are actually genuinely up for it. That’s it.
               It’s not hard. Really.{" "}
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               If you’re still struggling, just imagine instead of initiating
               sex, you’re making them a cup of tea.
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               You say “hey, would you like a cup of tea?” and they go “omg yes,
               I would{" "}
               <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>LOVE</i> a
               cup of tea! Thank you!” then you know they want a cup of tea.
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               If you say “hey, would you like a cup of tea?” and they um and ahh
               and say, “I’m not really sure…” then you can make them a cup of
               tea or not, but be aware that they might not drink it, and if they
@@ -344,13 +364,13 @@ class Step2 extends React.Component {
               wanted it; you just have to deal with them not drinking it. Just
               because you made it doesn’t mean you are entitled to watch them
               drink it.
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               If they say “No thank you” then don’t make them tea. At all. Don’t
               make them tea, don’t make them drink tea, don’t get annoyed at
               them for not wanting tea. They just don’t want tea, ok?
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               They might say “Yes please, that’s kind of you” and then when the
               tea arrives they actually don’t want the tea at all. Sure, that’s
               kind of annoying as you’ve gone to the effort of making the tea,
@@ -360,13 +380,13 @@ class Step2 extends React.Component {
               milk. And it’s ok for people to change their mind, and you are
               still not entitled to watch them drink it even though you went to
               the trouble of making it.
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               If they are unconscious, don’t make them tea. Unconscious people
               don’t want tea and can’t answer the question “do you want tea”
               because they are <i>unconscious.</i>
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               Ok, maybe they were conscious when you asked them if they wanted
               tea, and they said yes, but in the time it took you to boil that
               kettle, brew the tea and add the milk they are now unconscious.
@@ -374,14 +394,14 @@ class Step2 extends React.Component {
               is safe, and  – this is the important bit – don’t make them drink
               the tea. They said yes then, sure, but unconscious people don’t
               want tea.
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               If someone said yes to tea, started drinking it, and then passed
               out before they’d finished it, don’t keep on pouring it down their
               throat. Take the tea away and make sure they are safe.  Because{" "}
               <i>unconscious people don’t want tea.</i> Trust me on this.
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               If someone said “yes” to tea around your  house last saturday,
               that doesn’t mean that they want you to make them tea all the
               time. They don’t want you to come around unexpectedly to their
@@ -393,8 +413,8 @@ class Step2 extends React.Component {
               <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>
                 “BUT YOU WANTED TEA LAST NIGHT”
               </i>
-            </p>
-            <p>
+            </Normal>
+            <Normal>
               Is a stupid analogy? Of course we wouldn’t force feed someone tea
               because they said yes to a cup last week. {" "}
               <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>OF COURSE</i> we
@@ -404,12 +424,12 @@ class Step2 extends React.Component {
               people to have tea when they don’t want tea, and we are able to
               understand when people don’t want tea, then how hard is it to
               understand when it comes to sex?
-            </p>
+            </Normal>
             Whether it’s tea or sex, Consent Is Everything.
-            <p>
+            <Normal>
               And on that note, I am going to make myself a cup of tea because
               tea is brilliant.
-            </p>
+            </Normal>
           </section>
         </article>
       </main>

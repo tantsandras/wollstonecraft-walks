@@ -33,6 +33,7 @@ const MainHeading = styled.h1`
   letter-spacing: 1px;
   margin-top: -10rem;
   padding-left: 8rem;
+  color: #333333;
 `
 
 const LocalVideo = styled.video`
@@ -67,7 +68,7 @@ const Videos = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
 `
 const SoundBox = styled.li`
   padding: 2rem;
@@ -111,7 +112,7 @@ const PageHeading = styled.div`
 
 const PdfLink = styled.a`
   color: #fffeff;
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -129,6 +130,10 @@ const Heading = styled.h2`
   text-align: center;
 `
 
+const Normal = styled.p`
+line-height: 1.8;
+`
+
 class Media extends React.Component {
   render() {
     return (
@@ -140,7 +145,7 @@ class Media extends React.Component {
         <article
           style={{
             padding: `5% 10% 3% 10%`,
-            fontFamily: `Open Sans`,
+            fontFamily: `Roboto, 'Open Sans'`,
             background: `url("${Quote7}") right 10% top 40%/30% no-repeat`,
           }}
         >
@@ -182,7 +187,7 @@ class Media extends React.Component {
             </VideoList>
             <VideoList>
               <Heading>Wollstonecraft Walks</Heading>
-              <p style={{ marginTop: `2rem` }}>
+              <Normal style={{ marginTop: `2rem` }}>
               Fragments & Monuments and Scary
 Little Girls bring Mary’s Green alive with
 performance, poetry and song. In small
@@ -192,7 +197,7 @@ you with famous words inspired by Mary,
 and of course with her own work. As you
 progress, you’ll discover secrets about
 Mary, her life and her Green!
-              </p>
+              </Normal>
               <Overlay>
                 <Video
                   width="560"
@@ -224,7 +229,7 @@ Mary, her life and her Green!
             </PdfLink>
           </VideoList>
         </article>
-        <article style={{ padding: `5% 10% 0% 4%`, fontFamily: `Open Sans` }}>
+        <article style={{ padding: `5% 10% 0% 4%`, fontFamily: `Roboto, 'Open Sans'` }}>
           <Videos>
             <VideoList>
               <Heading>Wollstonecraft Live! 2018</Heading>
@@ -242,7 +247,7 @@ Mary, her life and her Green!
                   Editor - Alastair Gavin
                 </i>
               </p>
-              <p style={{ marginTop: `2rem` }}>
+              <Normal style={{ marginTop: `2rem` }}>
                 This short film was projected on the wall of St Pancras Old
                 Church to celebrate the 260th birthday of Mary Wollstonecraft
                 and to make a link with the church where Mary Wollstonecraft
@@ -253,7 +258,7 @@ Mary, her life and her Green!
                 Wollstonecraft (1759-1797) 27 April 2019, St Pancras Old Church,
                 London NW1 1UL, organised by the Institute of English Studies,
                 University of London.
-              </p>
+              </Normal>
               <Overlay>
                 <LocalVideo controls>
                   <source src={WLLive} type="video/mp4" />
@@ -290,7 +295,7 @@ Mary, her life and her Green!
         <article
           style={{
             padding: `5% 10% 3% 10%`,
-            fontFamily: `Open Sans`,
+            fontFamily: `Roboto, 'Open Sans'`,
             background: `url("${Quote5}") right 10% top 40%/30% no-repeat`,
           }}
         >
@@ -307,13 +312,13 @@ Mary, her life and her Green!
               >
                 <i>Produced by Scary Little Girls</i>
               </p>
-              <p style={{ marginTop: `2rem` }}>
+              <Normal style={{ marginTop: `2rem` }}>
                 This short film shows clips from Living Literature Walks that
                 Scary Little Girls have created in some of the towns and
                 villages of Cornwall, giving a flavour of these events and the
                 way they place performances and stories in a variety of
                 locations in a community.
-              </p>
+              </Normal>
               <Overlay>
                 <Video
                   width="560"

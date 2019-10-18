@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 20px;
   margin-bottom: 6rem;
   grid-auto-rows: 40px;
 `
@@ -112,7 +112,8 @@ class Gallery extends React.Component {
             fontSize: `2.2rem`,
             marginTop: `-5.6rem`,
             paddingLeft: `6.4rem`,
-            marginBottom: `14rem`
+            marginBottom: `14rem`,
+            color: `#333333`,
           }}
         >
           Gallery.
@@ -138,7 +139,7 @@ class Gallery extends React.Component {
                 style={{
                   letterSpacing: `2px`,
                   fontSize: `1.6rem`,
-                  fontFamily: `Open Sans`,
+                  fontFamily: `Roboto, 'Open Sans'`,
                   fontWeight: `lighter`,
                   marginTop: `4rem`,
                 }}

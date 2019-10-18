@@ -7,7 +7,7 @@ const Continue = styled.button`
   font-size: 18px;
   background: #1451ad;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-  font-family: Open Sans;
+  font-family: Roboto, 'Open Sans';
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffd0d0;

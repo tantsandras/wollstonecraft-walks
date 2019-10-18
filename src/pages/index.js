@@ -5,10 +5,13 @@ import SEO from "../components/seo"
 import Circles from "../components/circles"
 import Steps from "../components/steps"
 
+
+
 const IndexPage = () => {
 
 
 return (
+
   <Layout>
     <SEO title="Home" />
     <Circles />
