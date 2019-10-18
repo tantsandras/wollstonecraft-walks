@@ -49,7 +49,7 @@ class Photos extends React.Component {
                   fontFamily: `Open Sans`,
                   fontWeight: `lighter`,
                   marginTop: `8rem`,
-                  marginBottom: `8rem`,
+                  marginBottom: `10rem`,
                   lineHeight: `2`
                 }}
               >

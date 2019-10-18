@@ -132,9 +132,9 @@ class FmPrefAndFilm extends React.Component {
         </MainHeading>
         <article
           style={{
-            padding: `0% 5% 0% 5%`,
+            padding: `0% 10% 0% 10%`,
             fontFamily: `Open Sans`,
-            background: `url("${QuoteAnne}") right 0% top 30%/48% no-repeat`,
+            background: `url("${QuoteAnne}") right 10% top 30%/30% no-repeat`,
           }}
         >
           <Videos>
@@ -185,9 +185,9 @@ class FmPrefAndFilm extends React.Component {
         </article>
         <article
           style={{
-            padding: `2% 10% 3% 6%`,
+            padding: `2% 10% 3% 10%`,
             fontFamily: `Open Sans`,
-            background: `url("${MOW}") right 6% top 50%/38% no-repeat`,
+            background: `url("${MOW}") right 10% top 50%/30% no-repeat`,
             color: `#241E20`,
           }}
         >
@@ -585,9 +585,9 @@ class FmPrefAndFilm extends React.Component {
 
         <article
           style={{
-            padding: `6% 5% 1% 5%`,
+            padding: `6% 10% 1% 10%`,
             fontFamily: `Open Sans`,
-            background: `url("${QuoteAudre}") right 0% top 40%/48% no-repeat`,
+            background: `url("${QuoteAudre}") right 10% top 40%/30% no-repeat`,
           }}
         >
           <Videos>

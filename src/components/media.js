@@ -139,9 +139,9 @@ class Media extends React.Component {
         <MainHeading>Media.</MainHeading>
         <article
           style={{
-            padding: `5% 10% 3% 4%`,
+            padding: `5% 10% 3% 10%`,
             fontFamily: `Open Sans`,
-            background: `url("${Quote7}") right 6% top 40%/38% no-repeat`,
+            background: `url("${Quote7}") right 10% top 40%/30% no-repeat`,
           }}
         >
           <Videos>
@@ -178,6 +178,31 @@ class Media extends React.Component {
                 <LocalVideo controls>
                   <source src={Trailer} type="video/mp4" />
                 </LocalVideo>
+              </Overlay>
+            </VideoList>
+            <VideoList>
+              <Heading>Wollstonecraft Walks</Heading>
+              <p style={{ marginTop: `2rem` }}>
+              Fragments & Monuments and Scary
+Little Girls bring Mary’s Green alive with
+performance, poetry and song. In small
+groups, you set off on a specially prepared
+route, where hidden performers regale
+you with famous words inspired by Mary,
+and of course with her own work. As you
+progress, you’ll discover secrets about
+Mary, her life and her Green!
+              </p>
+              <Overlay>
+                <Video
+                  width="560"
+                  height="315"
+                  src="https://drive.google.com/file/d/1WG7FaiJ0jiRR9pJqfdDfeapiT1wMcJBQ/preview"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></Video>
               </Overlay>
             </VideoList>
           </Videos>
@@ -264,9 +289,9 @@ class Media extends React.Component {
 
         <article
           style={{
-            padding: `5% 10% 3% 4%`,
+            padding: `5% 10% 3% 10%`,
             fontFamily: `Open Sans`,
-            background: `url("${Quote5}") right 6% top 40%/38% no-repeat`,
+            background: `url("${Quote5}") right 10% top 40%/30% no-repeat`,
           }}
         >
           <Videos>
