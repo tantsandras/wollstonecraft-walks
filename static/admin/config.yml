@@ -11,17 +11,16 @@ collections:
     files:
       - label: "Heritage Research Page"
         name: "heritage-research"
+        create: true
         file: "content/heritage-research.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Google file id, name: file, widget: string}
           - {label: Link text, name: linkText, widget: text}
-           - name: "pages"
-    label: "Pages"
-    files: "pages"
       - file: "content/gallery.md"
         label: "Gallery Page"
         name: "gallery"
+        create: true
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}

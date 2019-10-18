@@ -6,13 +6,14 @@ import Circles from "../components/circles"
 import styled, { keyframes } from "styled-components"
 import Img from "gatsby-image"
 
-const Image = styled.div`
+const ImageWrapper = styled.div`
   position: relative;
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
-
+  height: auto;
+  width: 300px;
   &:hover {
     transform: scale(2);
     z-index: 2;
@@ -31,25 +32,51 @@ const Wrapper = styled.div`
   margin-bottom: 6rem;
   grid-auto-rows: 40px;
 `
-const GalleryPage = (props) => {
-  // const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+const GalleryPage = props => {
+  const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  console.log(data.image)
   return (
     <main style={{ fontFamily: `Open Sans` }}>
       <SEO title="Gallery" />
       <Menu />
       <Circles />
       <Gallery />
-      {/* <Wrapper className="grid">
-          <div className="content">
-          <h2>{data.title}</h2></div>
-      <div className="item">
-                <Image className="content">
-                  <Img
-                    fluid={data.image}
-                  />
-                </Image>
-              </div>
-          </Wrapper> */}
+      <Wrapper className="grid">
+        <div className="content">
+          <h2
+            style={{
+              fontFamily: `'Archivo Black', Impact`,
+              paddingTop: `1rem`,
+              letterSpacing: `1px`,
+              fontSize: `1.4rem`,
+              textAlign: `left`,
+              marginTop: `4rem`,
+              paddingBottom: `8rem`,
+              marginBottom: `8rem`,
+              lineHeight: `1.5`,
+            }}
+          >
+            {data.heading}
+            <br />
+              <i
+                style={{
+                  letterSpacing: `2px`,
+                  fontSize: `1rem`,
+                  fontFamily: `Open Sans`,
+                  fontWeight: `lighter`,
+                  marginTop: `4rem`,
+                }}
+              >
+                {data.subheading}
+              </i>
+          </h2>
+        </div>
+        <div className="item">
+          <ImageWrapper className="content">
+            <img src={data.image} alt={data.description} style={{width: `100%`, height: `100%`}} />
+          </ImageWrapper>
+        </div>
+      </Wrapper>
     </main>
   )
 }
@@ -57,12 +84,18 @@ export default GalleryPage
 
 export const query = graphql`
   query {
-    images: allFile(filter: { relativeDirectory: { eq: "imgUploads" } }) {
+    allFile(
+      filter: { sourceInstanceName: { eq: "content" }, name: { eq: "gallery" } }
+    ) {
       edges {
         node {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
+          childMarkdownRemark {
+            frontmatter {
+              title
+              heading
+              subheading
+              description
+              image
             }
           }
         }
