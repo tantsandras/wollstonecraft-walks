@@ -111,7 +111,7 @@ line-height: 1.8;
 const Credits = styled.h5`
 font-family: Roboto, 'Open Sans';
 letter-spacing: 2px;
-font-weight: lighter;
+
 font-size: 1rem;
 line-height: 1.8;
 `

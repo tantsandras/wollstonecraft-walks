@@ -48,7 +48,7 @@ class Pods extends React.Component {
         >
           Wollstonecraft Walks Podcast
         </h1>
-        <h2 style={{fontFamily: `Roboto, 'Open Sans'`, letterSpacing: `2px`, lineHeight: `2`, fontWeight: `lighter`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
+        <h2 style={{fontFamily: `Roboto, 'Open Sans'`, fontWeight: `normal`, letterSpacing: `2px`, lineHeight: `2`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
         <PodList>
           <PodBox>
             <h3

@@ -100,11 +100,9 @@ class Gallery extends React.Component {
     return (
       <>
         <PageCircle>
-          <PageHeading>
-
-        </PageHeading>
-          </PageCircle>
-          <h1
+          <PageHeading></PageHeading>
+        </PageCircle>
+        <h1
           style={{
             fontFamily: `'Archivo Black', Impact`,
             letterSpacing: `1px`,
@@ -140,16 +138,15 @@ class Gallery extends React.Component {
                   letterSpacing: `2px`,
                   fontSize: `1.6rem`,
                   fontFamily: `Roboto, 'Open Sans'`,
-                  fontWeight: `lighter`,
                   marginTop: `4rem`,
+                  fontWeight: `normal`
                 }}
               >
                 9th of June 2019
               </i>
             </h2>
-
           </div>
-                                
+
           <Photos />
         </Wrapper>
       </>

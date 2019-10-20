@@ -119,7 +119,7 @@ min-height: 5em;
 const Credits = styled.h5`
 font-family: Roboto, 'Open Sans';
 letter-spacing: 2px;
-font-weight: lighter;
+font-weight: normal;
 font-size: 1rem;
 line-height: 1.8;
 `

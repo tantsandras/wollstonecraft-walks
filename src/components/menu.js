@@ -75,6 +75,7 @@ const StyledLink = styled(Link)`
   z-index: 3;
   font-family: Roboto, 'Open Sans';
   text-transform: uppercase;
+  font-weight: normal;
   letter-spacing: 1px;
   text-decoration: none;
   opacity: 0;

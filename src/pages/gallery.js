@@ -63,7 +63,7 @@ const GalleryPage = props => {
                   letterSpacing: `2px`,
                   fontSize: `1rem`,
                   fontFamily: `Roboto, 'Open Sans'`,
-                  fontWeight: `lighter`,
+                  fontWeight: `normal`,
                   marginTop: `4rem`,
                 }}
               >

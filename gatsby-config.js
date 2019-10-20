@@ -61,12 +61,7 @@ module.exports = {
         icon: `src/images/Wollstonecraft_portrait_logo-02 copy.png`,
       },
     },
-    {
-      resolve: "gatsby-plugin-offline",
-      options: {
-        precachePages: [`/*`],
-      },
-    },
+
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
@@ -80,6 +75,7 @@ module.exports = {
         },
       },
     },
+    "gatsby-plugin-offline",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

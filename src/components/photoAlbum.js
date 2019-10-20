@@ -47,7 +47,7 @@ class Photos extends React.Component {
                   letterSpacing: `2px`,
                   fontSize: `1rem`,
                   fontFamily: `Roboto, 'Open Sans'`,
-                  fontWeight: `lighter`,
+                  fontWeight: `normal`,
                   marginTop: `8rem`,
                   marginBottom: `10rem`,
                   lineHeight: `2`

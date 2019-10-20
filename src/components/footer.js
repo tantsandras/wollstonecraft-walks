@@ -176,14 +176,14 @@ const Footer = () => (
       <div style={element}>
         <h4
           style={{
-            fontFamily: `Roboto, 'Open Sans', 'Open Sans'`,
+            fontFamily: `Roboto, 'Open Sans'`,
             fontSize: `1rem`,
             color: `white`,
             textTransform: `uppercase`,
-            fontWeight: `lighter`,
             letterSpacing: `2px`,
             lineHeight: `2`,
             marginTop: `3rem`,
+            fontWeight: `normal`
           }}
         >
           A collaboration between
