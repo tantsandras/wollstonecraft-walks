@@ -119,7 +119,7 @@ padding-left: 2rem;
 const SubHeading = styled.h4`
 font-family: 'Archivo Black', Impact;
 letter-spacing: 1px;
-line-height: 2; 
+line-height: 1.5; 
 color: #333333;
 font-size: 1.2rem;
 margin-top: 2rem;
@@ -128,6 +128,13 @@ const Normal = styled.p`
 line-height: 1.8;
 `
 const Block = styled.blockquote`
+line-height: 1.8;
+`
+const Credits = styled.h5`
+font-family: Roboto, 'Open Sans';
+letter-spacing: 2px;
+font-weight: lighter;
+font-size: 1rem;
 line-height: 1.8;
 `
 

@@ -91,6 +91,8 @@ const Social = styled.span`
 `
 
 const Handle = styled.a`
+line-height: 1.8;
+font-size: 0.8rem;
   margin-left: 40px;
   text-decoration: none;
   color: #656565;
@@ -103,6 +105,14 @@ const Handle = styled.a`
   }
 `
 const Normal = styled.p`
+line-height: 1.8;
+`
+
+const Credits = styled.h5`
+font-family: Roboto, 'Open Sans';
+letter-spacing: 2px;
+font-weight: lighter;
+font-size: 1rem;
 line-height: 1.8;
 `
 
@@ -333,33 +343,20 @@ const ArtistList = () => {
         <Second style={{ animationDelay: `2.6s` }}></Second>
       </ArtList>
       <section style={{ marginBottom: `6rem` }}>
+        
+      <Credits style={{ marginTop: `4rem` }}>
+           Volunteers
+          </Credits>
         <Normal>
-          <i
-            style={{
-              fontSize: `1.2rem`,
-              letterSpacing: `2px`,
-              lineHeight: `2`,
-            }}
-          >
-            Volunteers
-          </i>
-          <br />
-          <br />
           Jessie Krish, Jude Cox, Sophie Persson, Unity Arts, Georgia Patience,
           Israel Meriomame Wekpe, Jenny Kay, Marina Garvey Birch
         </Normal>
-        <Normal style={{ marginTop: `4rem` }}>
-          <i
-            style={{
-              fontSize: `1.2rem`,
-              letterSpacing: `2px`,
-              lineHeight: `2`,
-            }}
-          >
+
+          <Credits style={{ marginTop: `4rem` }}>
             Huge thanks to
-          </i>
-          <br />
-          <br />
+          </Credits>
+        <Normal>
+
           Adrian Walker; Dickon Knowles; John Knowles, Cat, Liz and all at JKC
           Marketing; Lawrence and all the members of The Mildmay Club; Roberta
           Wedge; Abi and all the staff and Newington Green Primary School; Lizzy

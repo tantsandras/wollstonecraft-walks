@@ -96,7 +96,7 @@ class ContactBox extends React.Component {
             >
               <Icon src={Twitter} />
 
-              <Normal style={{ marginLeft: `80px` }}>@anna_birch1</Normal>
+              <SubHeading style={{ marginLeft: `80px`,  }}>@anna_birch1</SubHeading>
             </Handle>{" "}
           </Social>
           <Social>
@@ -107,7 +107,7 @@ class ContactBox extends React.Component {
             >
               <Icon src={Instagram} />
 
-              <Normal style={{ marginLeft: `80px` }}>@annabirch1</Normal>
+              <SubHeading style={{ marginLeft: `80px` }}>@annabirch1</SubHeading>
             </Handle>{" "}
           </Social>
           <div
@@ -144,9 +144,9 @@ class ContactBox extends React.Component {
               rel="noopener noreferrer"
             >
               <Icon src={Email} />
-              <Normal style={{ marginLeft: `80px` }}>
+              <SubHeading style={{ marginLeft: `80px` }}>
                 info@scarylittlegirls.co.uk
-              </Normal>{" "}
+              </SubHeading>{" "}
             </Handle>
           </Social>
           <Social>
@@ -156,7 +156,7 @@ class ContactBox extends React.Component {
               rel="noopener noreferrer"
             >
               <Icon src={Facebook} />
-              <Normal style={{ marginLeft: `80px` }}>@ScaryLittleGirls</Normal>{" "}
+              <SubHeading style={{ marginLeft: `80px` }}>@ScaryLittleGirls</SubHeading>{" "}
             </Handle>
           </Social>
           <Social>
@@ -167,7 +167,7 @@ class ContactBox extends React.Component {
             >
               <Icon src={Twitter} />
 
-              <Normal style={{ marginLeft: `80px` }}>@ScaryLittleGs</Normal>
+              <SubHeading style={{ marginLeft: `80px` }}>@ScaryLittleGs</SubHeading>
             </Handle>{" "}
           </Social>
         </Box>

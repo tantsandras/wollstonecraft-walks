@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/imgUploads`,
-        name: 'images',
+        name: "images",
       },
     },
     {
@@ -19,23 +19,23 @@ module.exports = {
         name: `content`,
         path: `${__dirname}/content`,
       },
-    },   
-      {
-        resolve: `gatsby-transformer-remark`,
-        options: {
-          plugins: [
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
           `gatsby-remark-embed-youtube`,
           `gatsby-remark-embed-video`,
           `gatsby-remark-responsive-iframe`,
-          ]
-        }
+        ],
       },
-      {
-        resolve: 'gatsby-background-image-es5',
-        options: {
-          specialChars: '/:',
-        },
+    },
+    {
+      resolve: "gatsby-background-image-es5",
+      options: {
+        specialChars: "/:",
       },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,8 +50,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Wollstonecraft Walks`,
+        short_name: `Wollstonecraft`,
+        description: `A walk guide about Mary Wollstonecraft.`,
+        lang: `en`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -60,12 +62,23 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-offline",
+      options: {
+        precachePages: [`/*`],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Bungee Shade', 'Archivo Black', 'Yeseva One', 'Open Sans']
-        }
-      }
+          families: [
+            "Bungee Shade",
+            "Archivo Black",
+            "Yeseva One",
+            "Open Sans",
+          ],
+        },
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

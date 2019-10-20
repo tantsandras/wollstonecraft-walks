@@ -62,6 +62,14 @@ min-height: 5em;
 }
 `
 
+const Credits = styled.h5`
+font-family: Roboto, 'Open Sans';
+letter-spacing: 2px;
+font-weight: lighter;
+font-size: 1rem;
+line-height: 1.8;
+`
+
 const Intro = () => (
   <>
     <div
@@ -96,12 +104,12 @@ const Intro = () => (
       </h1>
 
       <article style={{ padding: `5% 10% 3% 10%` }}>
-      <p style={{ lineHeight: `1.8`}}>
-        By Di Sherlock<br />
-          <i style={{letterSpacing: `0px`}}>
+      <Credits>
+        By Di Sherlock</Credits>
+        <p style={{ lineHeight: `1.8`,}}>
           for her role as Mary Wollstonecraft <br />in Di’s Midsummer
           Night Party, 2000,<br /> Stoke Newington Midsummer Festival
-        </i></p>
+</p>
 
         <QuotationMarks> 18th century Feminist writer and mother of Mary Shelley, author of
           Frankenstein, Wollstoncraft was born Spitalfields, London, but her

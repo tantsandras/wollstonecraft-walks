@@ -77,7 +77,7 @@ const ImgageWrap = styled.div`
 const SubHeading = styled.h4`
 font-family: 'Archivo Black', Impact;
 letter-spacing: 1px;
-line-height: 2; 
+line-height: 1.5; 
 color: #333333;
 font-size: 1.2rem;
 margin-top: 2rem;
@@ -116,7 +116,13 @@ min-height: 5em;
   right: 3.2rem;
 }
 `
-
+const Credits = styled.h5`
+font-family: Roboto, 'Open Sans';
+letter-spacing: 2px;
+font-weight: lighter;
+font-size: 1rem;
+line-height: 1.8;
+`
 class Step1 extends React.Component {
   render() {
     return (
@@ -144,9 +150,9 @@ class Step1 extends React.Component {
         <article style={{ padding: `10% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
           <section style={{ paddingBottom: `3rem` }}>
             
-                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Wollstonecraft Walks Guide </p> <Normal>Researched and written by Anna Birch and Rebecca Mordan.</Normal>
-                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Read by: </p><Normal>Rebecca Mordan with readings read by Rebecca Boey and Caroline Parker </Normal>
-                <p style={{letterSpacing: `2px`, borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Sound Composition:  </p><Normal>Alastair Gavin</Normal>
+                <Credits style={{borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Wollstonecraft Walks Guide </Credits> <Normal>Researched and written by Anna Birch and Rebecca Mordan.</Normal>
+                <Credits style={{borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Read by: </Credits><Normal>Rebecca Mordan with readings read by Rebecca Boey and Caroline Parker </Normal>
+                <Credits style={{borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Sound Composition:  </Credits><Normal>Alastair Gavin</Normal>
           </section>
           <Normal>
             Hello, I&#39;m Rebecca and I&#39;m here to Welcome you to this Mary
@@ -157,13 +163,13 @@ class Step1 extends React.Component {
             </Normal> 
           <Normal>
             When I&#39;m about to give you some local information I&#39;ll say,{" "}
-            <b style={{ letterSpacing: `2px`, lineHeight: `2` }}>
+            <i style={{ letterSpacing: `2px`, fontSize: `1.2rem` }}>
               &#39;Did you know&#39;
-            </b>{" "}
+            </i>{" "}
             and then when that&#39;s done, I&#39;ll say{" "}
-            <b style={{ letterSpacing: `2px`, lineHeight: `2` }}>
+            <i style={{ letterSpacing: `2px`, fontSize: `1.2rem` }}>
               &#39;Back to the directions&#39;
-            </b>
+            </i>
             .
             </Normal> 
           <Normal>
@@ -174,11 +180,11 @@ class Step1 extends React.Component {
           couple of pieces to get you in the mood!
           </Normal> 
           <br />
-          <Normal style={{letterSpacing: `2px`, lineHeight: `2`}}>
-            Excerpt from <br />
+          <Credits>
+            Excerpt from </Credits>
               <SubHeading>Vindication of the Rights of Woman (1792)</SubHeading> 
-            by Mary Wollstonecraft
-          </Normal>
+            <Credits>by Mary Wollstonecraft
+          </Credits>
           <QuotationMarks><Block>
             My own sex, I hope, will excuse me, if I treat them like rational
             creatures, instead of flattering their{" "}

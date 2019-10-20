@@ -104,13 +104,21 @@ padding-left: 2rem;
 const SubHeading = styled.h4`
 font-family: 'Archivo Black', Impact;
 letter-spacing: 1px;
-line-height: 2; 
+line-height: 1.5; 
 color: #333333;
 font-size: 1.2rem;
 margin-top: 2rem;
 `
 
 const Normal = styled.p`
+line-height: 1.8;
+`
+
+const Credits = styled.h5`
+font-family: Roboto, 'Open Sans';
+letter-spacing: 2px;
+font-weight: lighter;
+font-size: 1rem;
 line-height: 1.8;
 `
 
@@ -147,13 +155,13 @@ class Step4 extends React.Component {
               Bottle. Take a few moments here to listen to the next readings...
             </Direction>
           </ul>
-          <SubHeading style={{marginBottom: `-0.1rem`}}>
+          <SubHeading>
             On Poetry, and Our Relish for the Beauties of Nature
           </SubHeading>
-          <Normal>
-          <i style={{ letterSpacing: `2px`}}>by Mary Wollstonecraft</i><br />
-            which originally appeared in the Monthly
-            Magazine, April 1797</Normal>
+          <Credits>
+          by Mary Wollstonecraft</Credits><Credits>
+            (which originally appeared in the Monthly
+            Magazine, April 1797)</Credits>
           <QuotationMarks><Normal>
             A taste for rural scenes, in the present state of society, appears
             to be very often an artificial sentiment, rather inspired by poetry
@@ -206,10 +214,10 @@ class Step4 extends React.Component {
             }}
           >
             <div style={element}>
-              <SubHeading style={{ marginTop: `2rem`, marginBottom: `-0.1rem`}}>
+              <SubHeading style={{ marginTop: `2rem`}}>
                 Phenomenal Woman (1995)               </SubHeading>
-                <Normal>
-          <i style={{ letterSpacing: `2px`}}>by Maya Angelou</i></Normal>
+                <Credits>
+          by Maya Angelou</Credits>
 
               <Normal style={{ fontSize: `0.8rem` }}>
                   Pretty women wonder where my secret lies.

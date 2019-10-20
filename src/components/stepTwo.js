@@ -89,7 +89,7 @@ padding-left: 2rem;
 const SubHeading = styled.h4`
 font-family: 'Archivo Black', Impact;
 letter-spacing: 1px;
-line-height: 2; 
+line-height: 1.5; 
 color: #333333;
 font-size: 1.2rem;
 margin-top: 2rem;
@@ -103,7 +103,13 @@ line-height: 1.8;
 const Block = styled.blockquote`
 line-height: 1.8;
 `
-
+const Credits = styled.h5`
+font-family: Roboto, 'Open Sans';
+letter-spacing: 2px;
+font-weight: lighter;
+font-size: 1rem;
+line-height: 1.8;
+`
 
 class Step2 extends React.Component {
   render() {
@@ -179,10 +185,10 @@ class Step2 extends React.Component {
               moments to enjoy our next readings!
             </Direction>
           </ul>
-          <Normal style={{marginTop: `2rem`}}>Rebecca Boey reading
-          <SubHeading style={{marginTop: `-0.1rem`, marginBottom: `-0.1rem`}}>
+          <Credits style={{marginTop: `2rem`}}>Rebecca Boey reading</Credits>
+          <SubHeading style={{lineHeight: `0`}}>
             On Mary Wollstonecraft (1925)</SubHeading>
-            in <i>The Common Reader</i> by Virginia Woolf</Normal>
+            <Credits>in <i>The Common Reader</i> by Virginia Woolf</Credits>
           
           <Normal style={{marginTop: `2rem`}}> 
             Certainly Mary could say this with truth. When she was a little more
@@ -247,11 +253,11 @@ class Step2 extends React.Component {
               marginBottom: `2rem`
             }}
           >
-            <SubHeading style={{marginBottom: `-0.1rem`}}>
+            <SubHeading>
               If People Disapprove of You (2012)
               </SubHeading>
-            <Normal style={{letterSpacing: `2px`, marginBottom: `2rem`}}>by Sophie Hannahs</Normal>
-            <p style={{ fontSize: `0.8rem` }}>
+            <Credits style={{marginBottom: `2rem`}}>by Sophie Hannahs</Credits>
+            <Normal style={{ fontSize: `0.8rem` }}>
               Make being disapproved of your hobby.
               <br />
               Make being disapproved of your aim.
@@ -323,15 +329,15 @@ class Step2 extends React.Component {
               So tell yourself you’ve won.
               <br />
               <br />
-            </p>
+            </Normal>
           </section>
           <br />
           <section style={{ marginTop: `8rem`, }}>   
-            <SubHeading style={{marginBottom: `-0.1rem`}}>
+            <SubHeading>
             The Tea of Consent (2015)
             </SubHeading>
 
-              <Normal style={{letterSpacing: `2px`, marginBottom: `2rem`}}>by Rockstar Dinosaur Pirate Princess</Normal>
+              <Credits style={{marginBottom: `2rem`}}>by Rockstar Dinosaur Pirate Princess</Credits>
             <Normal>
               It seems a lot of people really,{" "}
               <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>REALLY</i>{" "}

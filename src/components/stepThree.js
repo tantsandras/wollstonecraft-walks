@@ -73,13 +73,20 @@ const ImgageWrap = styled.div`
 const SubHeading = styled.h4`
 font-family: 'Archivo Black', Impact;
 letter-spacing: 1px;
-line-height: 2; 
+line-height: 1.5; 
 color: #333333;
 font-size: 1.2rem;
 margin-top: 2rem;
 `
 
 const Normal = styled.p`
+line-height: 1.8;
+`
+const Credits = styled.h5`
+font-family: Roboto, 'Open Sans';
+letter-spacing: 2px;
+font-weight: lighter;
+font-size: 1rem;
 line-height: 1.8;
 `
 
@@ -123,15 +130,14 @@ class Step3 extends React.Component {
           <SubHeading>Did you know?</SubHeading>
           <Normal>
             You are now walking through the site of{" "}
-            <b
+            <i
               style={{
                 letterSpacing: `2px`,
-                lineHeight: `2`,
-                fontFamily: `Roboto, 'Open Sans'`,
+                fontSize: `1.2rem`,
               }}
             >
               Wollstonecraft Live!
-            </b>{" "}
+            </i>{" "}
             by Kaethe Fine, conceived by Anna Birch and Kaethe Fine, and
             directed by Anna Birch performances in September 2005. These unique
             multimedia performances began in Unitarian Meeting House and
@@ -142,15 +148,14 @@ class Step3 extends React.Component {
           <Normal>
             In the late summer of 2007 Fragments &amp; Monuments hosted a picnic
             and outdoor screening where you are walking of the{" "}
-            <b
+            <i
               style={{
                 letterSpacing: `2px`,
-                lineHeight: `2`,
-                fontFamily: `Roboto, 'Open Sans'`,
+                fontSize: `1.2rem`,
               }}
             >
               The Wollstonecraft Live Experience!
-            </b>{" "}
+            </i>{" "}
             films on the Green with live music performed by the famous Deidre
             Cartwright Trio.
           </Normal>
@@ -165,21 +170,21 @@ class Step3 extends React.Component {
             give generously to the Mary On the Green memorial fund.
           </Normal>
           </article>
-          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'`, lineHeight: `1.5`, }}>
-          <SubHeading style={{ marginTop: `2rem`, marginBottom: `-0.1rem`}}>
+          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'`}}>
+          <SubHeading style={{ marginTop: `2rem`}}>
             Listen - a walking memorial
           </SubHeading>
 
-          <Normal style={{marginBottom: `4rem`}}>
+          <Credits style={{marginBottom: `4rem`,}}>
             (excerpted from
-            <b style={{letterSpacing: `2px`,}}>
+            <i>
               {" "}
               Wollstonecraft Live!{" "}
-            </b>
+            </i>
             by Kaethe Fine)
             <br />
             Music by Alastair Gavin{" "}
-          </Normal>
+          </Credits>
 
           <Normal>
             Wollstonecraft
