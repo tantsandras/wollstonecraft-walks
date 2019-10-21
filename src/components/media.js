@@ -118,6 +118,16 @@ const Normal = styled.p`
   line-height: 1.8;
 `
 
+const Inspirational = ({ id }) => (
+  <PdfLink
+  id={id}
+  href="https://drive.google.com/uc?export=download&id=1ZyQY91Vzcy1-pJtqIvkeEPAwROeDpnBm"
+  download
+>
+  Click here to download Inspirational Quotes
+</PdfLink>
+);
+
 class Media extends React.Component {
   render() {
     return (
@@ -383,13 +393,7 @@ class Media extends React.Component {
                 height="480"
               ></Video>
             </Overlay>
-            <PdfLink
-              id="Inspirational"
-              href="https://drive.google.com/uc?export=download&id=1ZyQY91Vzcy1-pJtqIvkeEPAwROeDpnBm"
-              download
-            >
-              Click here to download Inspirational Quotes
-            </PdfLink>
+            <Inspirational id="inspirational" />
           </VideoList>
         </article>
       </main>

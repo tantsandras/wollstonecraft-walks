@@ -20,3 +20,4 @@ export const onClientEntry = () => {
       window.location.reload()
     }
   }
+
