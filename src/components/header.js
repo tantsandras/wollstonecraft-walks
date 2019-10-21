@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
             textAlign: `center`,
             fontFamily: `'Archivo Black', Impact`,
             fontWeight: `bolder`,
-            zIndex: `99`,
+            zIndex: `1`,
             transform: `translate(2px, -90px)`,
             lineHeight: `1.5`,
             fontSize: `200%`,

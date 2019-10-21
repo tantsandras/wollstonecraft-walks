@@ -1,6 +1,5 @@
 
 import React from "react"
-
 import StepBox from "../components/stepBox"
 
 const boxList = {
@@ -15,9 +14,7 @@ const boxList = {
 
 const Steps = () => (
   <ul style={boxList}>
-
         <StepBox />
-
   </ul>
 )
 

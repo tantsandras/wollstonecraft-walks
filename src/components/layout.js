@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
           {
             name: "keywords",
             content:
-              "marywollstonecraft, wollstonecraft, walkguide, historical, london, newingtongreen, feminism, britishfeminists, britishhistory, fragments&monuments",
+              "marywollstonecraft, wollstonecraft, walkguide, historiclondon, newingtongreen, feminism, britishfeminists, herstory, londonwalks, britishhistory, fragments&monuments",
           },
         ]}
       >
