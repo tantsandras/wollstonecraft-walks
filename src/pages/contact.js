@@ -44,6 +44,7 @@ const OrgList = styled.ul`
 `
 
 const StyledLink = styled.a`
+font-weight: normal;
   z-index: 3;
   font-family: Roboto, 'Open Sans';
   text-transform: uppercase;

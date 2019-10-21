@@ -132,12 +132,7 @@ class Step1 extends React.Component {
             maxHeight: `285px`,
             margin: `0 auto`,
             transform: `translate(0px, -70px)`, zIndex: `-1`,}}>
-        <div
-          style={{
-            transform: `translate(0px, 2px)`,
-
-          }}
-        >
+        <div>
           <MildmayImage />
         </div>
         </ImgageWrap>

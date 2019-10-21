@@ -2,7 +2,6 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import Instagram from "../images/icons/Instagram.png"
 import Twitter from "../images/icons/Twitter.png"
-import Email from "../images/icons/Email.png"
 import Facebook from "../images/icons/Facebook.png"
 
 const fadeInRight = keyframes`
@@ -44,6 +43,7 @@ const ArtList = styled.ul`
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 const StyledLink = styled.a`
+font-weight: normal;
   z-index: 3;
   font-family: Roboto, 'Open Sans';
   text-transform: uppercase;
@@ -91,6 +91,7 @@ const Social = styled.span`
 `
 
 const Handle = styled.a`
+font-weight: normal;
 line-height: 1.8;
 font-size: 0.8rem;
   margin-left: 40px;
@@ -111,7 +112,7 @@ line-height: 1.8;
 const Credits = styled.h5`
 font-family: Roboto, 'Open Sans';
 letter-spacing: 2px;
-
+font-weight: normal;
 font-size: 1rem;
 line-height: 1.8;
 `

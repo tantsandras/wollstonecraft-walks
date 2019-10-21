@@ -65,7 +65,13 @@ module.exports = {
         icon: `src/images/Wollstonecraft_portrait_logo-02 copy.png`,
       },
     },
-
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/images/wollstonecraft`,
+      },
+    },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
@@ -74,6 +80,7 @@ module.exports = {
             "Bungee Shade",
             "Archivo Black",
             "Yeseva One",
+            "Roboto",
             "Open Sans",
           ],
         },

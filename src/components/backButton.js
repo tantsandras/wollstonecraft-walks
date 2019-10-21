@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components"
 
 const Back = styled.button`
   padding: 0.5rem 1rem 0.4rem 2rem;
-  font-size: 18px;
+  font-size: 16px;
   background: white;
   font-family: Roboto, 'Open Sans';
   text-align: center;

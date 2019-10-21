@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import CarolineImage from "../components/caroline"
+import PsImage from "../components/primarySchool"
 
 const StepCircle = styled.div`
   z-index: -1;
@@ -28,7 +28,7 @@ const StepNum = styled.p`
   text-align: center;
 `
 const Direction = styled.li`
-line-height: 1.8;
+  line-height: 1.8;
   position: relative;
   padding-left: 2rem;
   padding-bottom: 1.4rem;
@@ -48,45 +48,35 @@ const Arrow = styled.i`
   webkit-transform: rotate(-45deg);
 `
 
-const ImgageWrap = styled.div`
-  max-width: 600px;
-  height: auto;
-  margin: 8rem 0px 0px 0px;
-  // border-radius: 50%;
-  // -moz-border-radius: 50%;
-  // -webkit-border-radius: 50%;
-  // overflow: hidden;
-`
-
 const element = {
   gridTemplateColumns: `repeat(2, 1fr)`,
   gridTemplateRows: `repeat(2, 300px)`,
 }
 
 const QuotationMarks = styled.p`
-line-height: 1.8;
-position: relative;
-padding: 1em 0em;
-min-height: 5em;
-&:before {
-  font-family: Yeseva One; 
-  font-size: 3rem;
-  position: absolute;
-  height: 3rem;
-  content: '“';
-  top: -0.4rem;
-  left: -2rem;
-}
+  line-height: 1.8;
+  position: relative;
+  padding: 1em 0em;
+  min-height: 5em;
+  &:before {
+    font-family: Yeseva One;
+    font-size: 3rem;
+    position: absolute;
+    height: 3rem;
+    content: "“";
+    top: -0.4rem;
+    left: -2rem;
+  }
 
-&:after {
-  font-family: Yeseva One; 
-  font-size: 3rem;
-  position: absolute;
-  height: 3rem;
-  content: '”';
-  bottom: 1rem;
-  right: 3rem;
-}
+  &:after {
+    font-family: Yeseva One;
+    font-size: 3rem;
+    position: absolute;
+    height: 3rem;
+    content: "”";
+    bottom: 1rem;
+    right: 3rem;
+  }
 `
 
 const StepHeading = styled.h1`
@@ -102,38 +92,68 @@ padding-left: 2rem;
 `
 
 const SubHeading = styled.h4`
-font-family: 'Archivo Black', Impact;
-letter-spacing: 1px;
-line-height: 1.5; 
-color: #333333;
-font-size: 1.2rem;
-margin-top: 2rem;
+  font-family: "Archivo Black", Impact;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #333333;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 `
 
 const Normal = styled.p`
-line-height: 1.8;
+  line-height: 1.8;
 `
 
 const Credits = styled.h5`
-font-family: Roboto, 'Open Sans';
-letter-spacing: 2px;
-font-weight: normal;
-font-size: 1rem;
-line-height: 1.8;
+  font-family: Roboto, "Open Sans";
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.8;
 `
 
+const ImgWrap = styled.div`
+  margin: 8rem 0px 0px 0px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+  mix-blend-mode: lighten;
+`
 
 class Step4 extends React.Component {
   render() {
     return (
       <main style={{ position: `relative` }}>
-        <StepCircle style={{ marginTop: `-2rem` }}>
+        <ImgWrap
+          style={{
+            width: `250px`,
+            height: `250px`,
+            margin: `0 auto`,
+            transform: `translate(90px, -70px)`,
+            zIndex: `-3`,
+          }}
+        >
+          <div
+            style={{
+              transform: `translate(-120px, -17px)`,
+              width: `400px`,
+              height: `200px`,
+            }}
+          >
+            <PsImage />
+          </div>
+        </ImgWrap>
+        <StepCircle style={{ marginTop: `-140px` }}>
           <StepNum>4</StepNum>
         </StepCircle>
-        <StepHeading>
-          Newington Green Primary School
-        </StepHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
+        <StepHeading>Newington Green Primary School</StepHeading>
+        <article
+          style={{
+            padding: `5% 10% 3% 10%`,
+            fontFamily: `Roboto, 'Open Sans'`,
+          }}
+        >
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#383790"}></Arrow>Turn left and walk to the end of
@@ -158,51 +178,55 @@ class Step4 extends React.Component {
           <SubHeading>
             On Poetry, and Our Relish for the Beauties of Nature
           </SubHeading>
+          <Credits>by Mary Wollstonecraft</Credits>
           <Credits>
-          by Mary Wollstonecraft</Credits><Credits>
-            (which originally appeared in the Monthly
-            Magazine, April 1797)</Credits>
-          <QuotationMarks><Normal>
-            A taste for rural scenes, in the present state of society, appears
-            to be very often an artificial sentiment, rather inspired by poetry
-            and romances, than a real perception of the beauties of nature. But,
-            as it is reckoned a proof of refined taste to praise the calm
-            pleasures which the countryside affords, the theme is never
-            exhausted. Yet it may be made a question, whether this romantic kind
-            of declamation, has much effect on the conduct of those, who leave,
-            for a season, the crowded cities in which they were bred.{" "}
-          </Normal>
-          <Normal>
-            In this more advanced state of civilisation a poet is rather the
-            creature of art, than of nature. The books that he reads in his
-            youth become a hotbed in which artificial flowers are produced,
-            beautiful to the common eye, though they want the true hue and
-            favour. His images do not arise from sensations, they are copies.
-            The silken wings of fancy are shrivelled by rules; and a desire of
-            attaining elegance of diction occasions an attention to words,
-            incompatible with sublime, impassioned thoughts.
-          </Normal>
-          <Normal>
-            But God is seen in every floating cloud, and comes from the misty
-            mountains to receive the noblest homage of an intelligent creature –
-            praise. How solemn is the moment when all affections and
-            remembrances fade before the admiration which the goodness and
-            wisdom of God inspires when he is worshiped in a temple not made
-            with the hands, and the world seems only to contain the mind that
-            formed and the mind that contemplates it! These are not the weak
-            responses of ceremonial devotion; nor, to express them, would the
-            true poet need another poets aid; his heart burns within him, and he
-            speaks the language of truth and nature with resistless energy.
-          </Normal>
-          <Normal>
-            Boys who have received a classical education load their memory with
-            words and the correspondent ideas are perhaps never distinctly
-            comprehended. But though it should be allowed that books may produce
-            some poets, I fear they will never be the poets that charm our cares
-            to sleep, or exhort admiration. They may diffuse taste, and polish
-            the language; but I am inclined to conclude that they will seldom
-            rouse the passions, or amend the heart.
-          </Normal></QuotationMarks>
+            (which originally appeared in the Monthly Magazine, April 1797)
+          </Credits>
+          <QuotationMarks>
+            <Normal>
+              A taste for rural scenes, in the present state of society, appears
+              to be very often an artificial sentiment, rather inspired by
+              poetry and romances, than a real perception of the beauties of
+              nature. But, as it is reckoned a proof of refined taste to praise
+              the calm pleasures which the countryside affords, the theme is
+              never exhausted. Yet it may be made a question, whether this
+              romantic kind of declamation, has much effect on the conduct of
+              those, who leave, for a season, the crowded cities in which they
+              were bred.{" "}
+            </Normal>
+            <Normal>
+              In this more advanced state of civilisation a poet is rather the
+              creature of art, than of nature. The books that he reads in his
+              youth become a hotbed in which artificial flowers are produced,
+              beautiful to the common eye, though they want the true hue and
+              favour. His images do not arise from sensations, they are copies.
+              The silken wings of fancy are shrivelled by rules; and a desire of
+              attaining elegance of diction occasions an attention to words,
+              incompatible with sublime, impassioned thoughts.
+            </Normal>
+            <Normal>
+              But God is seen in every floating cloud, and comes from the misty
+              mountains to receive the noblest homage of an intelligent creature
+              – praise. How solemn is the moment when all affections and
+              remembrances fade before the admiration which the goodness and
+              wisdom of God inspires when he is worshiped in a temple not made
+              with the hands, and the world seems only to contain the mind that
+              formed and the mind that contemplates it! These are not the weak
+              responses of ceremonial devotion; nor, to express them, would the
+              true poet need another poets aid; his heart burns within him, and
+              he speaks the language of truth and nature with resistless energy.
+            </Normal>
+            <Normal>
+              Boys who have received a classical education load their memory
+              with words and the correspondent ideas are perhaps never
+              distinctly comprehended. But though it should be allowed that
+              books may produce some poets, I fear they will never be the poets
+              that charm our cares to sleep, or exhort admiration. They may
+              diffuse taste, and polish the language; but I am inclined to
+              conclude that they will seldom rouse the passions, or amend the
+              heart.
+            </Normal>
+          </QuotationMarks>
 
           <section
             style={{
@@ -214,32 +238,31 @@ class Step4 extends React.Component {
             }}
           >
             <div style={element}>
-              <SubHeading style={{ marginTop: `2rem`}}>
-                Phenomenal Woman (1995)               </SubHeading>
-                <Credits>
-          by Maya Angelou</Credits>
+              <SubHeading style={{ marginTop: `2rem` }}>
+                Phenomenal Woman (1995){" "}
+              </SubHeading>
+              <Credits>by Maya Angelou</Credits>
 
               <Normal style={{ fontSize: `0.8rem` }}>
-                  Pretty women wonder where my secret lies.
-                  <br /> I’m not cute or built to suit a fashion model’s size
-                  <br /> But when I start to tell them,
-                  <br /> They think I’m telling lies.
-                  <br /> I say,
-                  <br />
-                  It’s in the reach of my arms,
-                  <br /> The span of my hips,
-                  <br /> The stride of my step,
-                  <br /> The curl of my lips. I’m a woman
-                  <br />
-                  <Normal
-                    style={{
-                      fontSize: `1rem`,
-                      letterSpacing: `2px`,
-                    }}
-                  >
-                    Phenomenally.
-                  </Normal>
-
+                Pretty women wonder where my secret lies.
+                <br /> I’m not cute or built to suit a fashion model’s size
+                <br /> But when I start to tell them,
+                <br /> They think I’m telling lies.
+                <br /> I say,
+                <br />
+                It’s in the reach of my arms,
+                <br /> The span of my hips,
+                <br /> The stride of my step,
+                <br /> The curl of my lips. I’m a woman
+                <br />
+                <Normal
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                  }}
+                >
+                  Phenomenally.
+                </Normal>
                 <Normal>
                   Phenomenal woman, That’s me.
                   <br /> I walk into a room <br />
@@ -318,11 +341,6 @@ class Step4 extends React.Component {
                   </Normal>
                 </Normal>
               </Normal>
-            </div>
-            <div style={element}>
-              <ImgageWrap>
-                <CarolineImage alt="Photo of Caroline Parker" />
-              </ImgageWrap>
             </div>
           </section>
         </article>

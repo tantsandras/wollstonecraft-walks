@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import { Link } from "gatsby"
+import InnImg from "../components/mildmayInn"
 
 const Back = styled(Link)`
   padding: 0.6rem 1rem 0.6rem 1rem;
@@ -137,12 +138,35 @@ letter-spacing: 2px;
 font-size: 1rem;
 line-height: 1.8;
 `
+const ImgageWrap = styled.div`
+  margin: 8rem 0px 0px 0px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+  mix-blend-mode: screen;
+`
 
 class Step5 extends React.Component {
   render() {
     return (
       <main>
-        <StepCircle style={{ marginTop: `-2rem` }}>
+                        <ImgageWrap style={{            
+            width: `250px`,
+            height: `250px`,
+            margin: `0 auto`,
+            transform: `translate(70px, -70px)`, zIndex: `-3`,}}>
+        <div
+          style={{
+            transform: `translate(-130px, -8px)`,
+            width: `390px`,
+            height: `auto`
+          }}
+        >
+          <InnImg />
+        </div>
+        </ImgageWrap>
+        <StepCircle style={{ marginTop: `-120px` }}>
           <StepNum>5</StepNum>
         </StepCircle>
         <StepHeading>

@@ -102,7 +102,7 @@ class Step3 extends React.Component {
             transform: `translate(0px, -70px)`, zIndex: `-1`,}}>
         <div
           style={{
-            transform: `translate(-20px, -20px)`,
+            transform: `translate(-20px, -17.5px)`,
             width: `400px`,
             height: `200px`
           }}
