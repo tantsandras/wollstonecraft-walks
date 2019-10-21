@@ -8,7 +8,7 @@ const Back = styled(Link)`
   font-size: 22px;
   background: #1451ad;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-  font-family: Roboto, 'Open Sans';
+  font-family: Roboto, "Open Sans";
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffd0d0;
@@ -77,32 +77,31 @@ const Arrow = styled.i`
   webkit-transform: rotate(-45deg);
 `
 
-
 const Quote = styled.i`
-letter-spacing: 2px;
-line-height: 2;
-position: relative;
-padding: 1em 4em;
-min-height: 5em;
-&:before {
-  font-family: Yeseva One; 
-  font-size: 3rem;
-  position: absolute;
-  height: 3rem;
-  content: '“';
-  top: -1.6rem;
-  left: 1.4rem;
-}
+  letter-spacing: 2px;
+  line-height: 2;
+  position: relative;
+  padding: 1em 4em;
+  min-height: 5em;
+  &:before {
+    font-family: Yeseva One;
+    font-size: 3rem;
+    position: absolute;
+    height: 3rem;
+    content: "“";
+    top: -1.6rem;
+    left: 1.4rem;
+  }
 
-&:after {
-  font-family: Yeseva One; 
-  font-size: 3rem;
-  position: absolute;
-  height: 3rem;
-  content: '”';
-  bottom: 0rem;
-  right: 2.4rem;
-}
+  &:after {
+    font-family: Yeseva One;
+    font-size: 3rem;
+    position: absolute;
+    height: 3rem;
+    content: "”";
+    bottom: 0rem;
+    right: 2.4rem;
+  }
 `
 
 const StepHeading = styled.h1`
@@ -118,25 +117,25 @@ padding-left: 2rem;
 `
 
 const SubHeading = styled.h4`
-font-family: 'Archivo Black', Impact;
-letter-spacing: 1px;
-line-height: 1.5; 
-color: #333333;
-font-size: 1.2rem;
-margin-top: 2rem;
+  font-family: "Archivo Black", Impact;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #333333;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 `
 const Normal = styled.p`
-line-height: 1.8;
+  line-height: 1.8;
 `
 const Block = styled.blockquote`
-line-height: 1.8;
+  line-height: 1.8;
 `
 const Credits = styled.h5`
-font-family: Roboto, 'Open Sans';
-letter-spacing: 2px;
+  font-family: Roboto, "Open Sans";
+  letter-spacing: 2px;
 
-font-size: 1rem;
-line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.8;
 `
 const ImgageWrap = styled.div`
   margin: 8rem 0px 0px 0px;
@@ -151,28 +150,35 @@ class Step5 extends React.Component {
   render() {
     return (
       <main>
-                        <ImgageWrap style={{            
+        <ImgageWrap
+          style={{
             width: `250px`,
             height: `250px`,
             margin: `0 auto`,
-            transform: `translate(70px, -70px)`, zIndex: `-3`,}}>
-        <div
-          style={{
-            transform: `translate(-130px, -8px)`,
-            width: `390px`,
-            height: `auto`
+            transform: `translate(70px, -70px)`,
+            zIndex: `-3`,
           }}
         >
-          <InnImg />
-        </div>
+          <div
+            style={{
+              transform: `translate(-130px, -8px)`,
+              width: `390px`,
+              height: `auto`,
+            }}
+          >
+            <InnImg />
+          </div>
         </ImgageWrap>
         <StepCircle style={{ marginTop: `-120px` }}>
           <StepNum>5</StepNum>
         </StepCircle>
-        <StepHeading>
-          The Lady Mildmay Inn
-        </StepHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
+        <StepHeading>The Lady Mildmay Inn</StepHeading>
+        <article
+          style={{
+            padding: `5% 10% 3% 10%`,
+            fontFamily: `Roboto, 'Open Sans'`,
+          }}
+        >
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF008A"}></Arrow>
@@ -180,9 +186,7 @@ class Step5 extends React.Component {
               way you came to Newington Green.
             </Direction>
           </ul>
-          <SubHeading>
-            Did you know?
-            </SubHeading>
+          <SubHeading>Did you know?</SubHeading>
           <Block>
             The extract by Mary Wollstonecraft you have just heard was from an
             essay called{" "}
@@ -207,9 +211,7 @@ class Step5 extends React.Component {
             another debt we owe to Wollstonecraft&#39;s remarkable vision,
             prowess and resilience.
           </Block>
-          <SubHeading>
-            Back to the directions!
-          </SubHeading>
+          <SubHeading>Back to the directions!</SubHeading>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#0031ad"}></Arrow>
@@ -220,9 +222,7 @@ class Step5 extends React.Component {
               school building on your left.
             </Direction>
           </ul>
-          <SubHeading>
-            Did you know?
-          </SubHeading>
+          <SubHeading>Did you know?</SubHeading>
           <Block>
             Mary Wollstonecraft opened a school for girls near the site in 1784.
             This plaque celebrates that Wollstonecraft lived and worked on the
@@ -242,10 +242,7 @@ class Step5 extends React.Component {
             house could be seen from a school window. The plaque is on the back
             of Newington Green school where we have just been.
           </Block>
-
-          <SubHeading>
-            Back to the directions!
-          </SubHeading>
+          <SubHeading>Back to the directions!</SubHeading>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF0000"}></Arrow>
@@ -254,9 +251,7 @@ class Step5 extends React.Component {
               with the Lady Mildmay Inn.{" "}
             </Direction>
           </ul>
-          <SubHeading>
-            Did you know?
-          </SubHeading>
+          <SubHeading>Did you know?</SubHeading>
           <Normal>
             In stark opposition to her father Godwin and his attack on her
             mother&#39;s literary contributions, when Percy Shelley died Mary
@@ -264,35 +259,33 @@ class Step5 extends React.Component {
             and edit all Percy&#39;s remaining output, helping his legacy to
             endure and the Romantic movement&#39;s ideals and principles to be
             able to continue influencing us to this day. As Joanna Russ points
-            out in ‘How to Suppress Women&#39;s Writing’;</Normal>
-            <Block
-              style={{
-                margin: `1rem`,
-                fontSize: `1.2rem`,
-                letterSpacing: `2px`,
-                lineHeight: `1.6`,
-              }}
-            >
-              <Quote>
-                When the memory of one&#39;s predecessors is buried, the
-                assumption persists that there were none and each generation of
-                women believes itself to be faced with the burden of doing
-                everything for the first time. And if no one ever did it before,
-                if no woman was ever that socially sacred creature, &quot;a
-                great writer,&quot; why do we think we can succeed now?
-              </Quote>
-
-            </Block>{" "}
-            <Normal>
+            out in ‘How to Suppress Women&#39;s Writing’;
+          </Normal>
+          <Block
+            style={{
+              margin: `1rem`,
+              fontSize: `1.2rem`,
+              letterSpacing: `2px`,
+              lineHeight: `1.6`,
+            }}
+          >
+            <Quote>
+              When the memory of one&#39;s predecessors is buried, the
+              assumption persists that there were none and each generation of
+              women believes itself to be faced with the burden of doing
+              everything for the first time. And if no one ever did it before,
+              if no woman was ever that socially sacred creature, &quot;a great
+              writer,&quot; why do we think we can succeed now?
+            </Quote>
+          </Block>{" "}
+          <Normal>
             Thanks to the work of second wave radical feminists in the 70&#39;s
             and 80&#39;s, Mary&#39;s influence in history, politics and
             literature has been rediscovered and we can once again celebrate her
             part in the major movements of her time, nationally and
             internationally. We think that calls for a toast!
           </Normal>
-          <SubHeading>
-            Back to the directions!
-          </SubHeading>
+          <SubHeading>Back to the directions!</SubHeading>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#5D00FF"}></Arrow>
@@ -300,19 +293,18 @@ class Step5 extends React.Component {
               Mildmay Inn...
             </Direction>
           </ul>
-
           <Normal>
             Here our live audiences were greeted by drag king Don One who hosted
             a birthday celebration for Mary, at which everyone raised a glass,
             had a slice of birthday cake and were invited to read quotes from
             illustrious women like Maya Angelou, bell hooks, Radcliffe Hall and
             Michele Obama! You can recreate this by heading inside for a drink
-            or bite to eat and reading these quotes (that can be found
-            on this app) and treating yourself to a bit of inspirational me time!
+            or bite to eat and reading these quotes (that can be found on this
+            app) and treating yourself to a bit of inspirational me time!
           </Normal>
           <Normal
             style={{
-              margin: `3rem`,
+              margin: `1rem`,
               fontSize: `1.2rem`,
               letterSpacing: `2px`,
               lineHeight: `1.6`,
@@ -327,9 +319,13 @@ class Step5 extends React.Component {
           style={{
             display: `grid`,
             justifyContent: `center`,
-            padding: `6em 2em`
+            padding: `6em 2em`,
           }}
-        ><Back style={{margin: `0 auto`}} to={"/"}>Back to Home</Back></div>
+        >
+          <Back style={{ margin: `0 auto` }} to={"/"}>
+            Back to Home
+          </Back>
+        </div>
       </main>
     )
   }
