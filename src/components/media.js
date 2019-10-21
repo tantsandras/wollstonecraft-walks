@@ -1,10 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import Trailer from "../images/videos/WollstonecraftWalkstrailer2019 (1).mp4"
-import WLLive from "../images/videos/WLLive3m38sFINAL.mp4"
 import AudioPlayer from "../components/audioPlayer"
 import Soundscape from "../audio/WL Walk soundscape.mp3"
-import MWBirthday from "../images/videos/MWbirthday.mp4"
 import Quote7 from "../images/posters/Quotes - vertical[1]-7.jpg"
 import Quote5 from "../images/posters/Quotes - vertical[1]-5.jpg"
 import Flyer from "../components/flyers"
@@ -36,19 +33,6 @@ const MainHeading = styled.h1`
   color: #333333;
 `
 
-const LocalVideo = styled.video`
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-  max-width: 640px;
-  max-height: 385px;
-  float: right;
-`
-
 const Video = styled.iframe`
   position: absolute;
   top: 0;
@@ -68,7 +52,7 @@ const Videos = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Roboto, 'Open Sans';
+  font-family: Roboto, "Open Sans";
 `
 const SoundBox = styled.li`
   padding: 2rem;
@@ -112,7 +96,7 @@ const PageHeading = styled.div`
 
 const PdfLink = styled.a`
   color: #fffeff;
-  font-family: Roboto, 'Open Sans';
+  font-family: Roboto, "Open Sans";
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -131,7 +115,7 @@ const Heading = styled.h2`
 `
 
 const Normal = styled.p`
-line-height: 1.8;
+  line-height: 1.8;
 `
 
 class Media extends React.Component {
@@ -180,23 +164,23 @@ class Media extends React.Component {
                 </i>
               </p>
               <Overlay>
-                <LocalVideo controls>
-                  <source src={Trailer} type="video/mp4" />
-                </LocalVideo>
+                <Video
+                  width="560"
+                  height="315"
+                  src="https://drive.google.com/file/d/1hMKAcq6bBLULjuxUXVElgPpO6js4epYe/preview"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                ></Video>
               </Overlay>
             </VideoList>
             <VideoList>
               <Heading>Wollstonecraft Walks</Heading>
               <Normal style={{ marginTop: `2rem` }}>
-              Fragments & Monuments and Scary
-Little Girls bring Mary’s Green alive with
-performance, poetry and song. In small
-groups, you set off on a specially prepared
-route, where hidden performers regale
-you with famous words inspired by Mary,
-and of course with her own work. As you
-progress, you’ll discover secrets about
-Mary, her life and her Green!
+                Fragments & Monuments and Scary Little Girls bring Mary’s Green
+                alive with performance, poetry and song. In small groups, you
+                set off on a specially prepared route, where hidden performers
+                regale you with famous words inspired by Mary, and of course
+                with her own work. As you progress, you’ll discover secrets
+                about Mary, her life and her Green!
               </Normal>
               <Overlay>
                 <Video
@@ -204,9 +188,6 @@ Mary, her life and her Green!
                   height="315"
                   src="https://drive.google.com/file/d/1WG7FaiJ0jiRR9pJqfdDfeapiT1wMcJBQ/preview"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
                 ></Video>
               </Overlay>
             </VideoList>
@@ -229,7 +210,9 @@ Mary, her life and her Green!
             </PdfLink>
           </VideoList>
         </article>
-        <article style={{ padding: `5% 10% 0% 4%`, fontFamily: `Roboto, 'Open Sans'` }}>
+        <article
+          style={{ padding: `5% 10% 0% 4%`, fontFamily: `Roboto, 'Open Sans'` }}
+        >
           <Videos>
             <VideoList>
               <Heading>Wollstonecraft Live! 2018</Heading>
@@ -260,9 +243,12 @@ Mary, her life and her Green!
                 University of London.
               </Normal>
               <Overlay>
-                <LocalVideo controls>
-                  <source src={WLLive} type="video/mp4" />
-                </LocalVideo>
+                <Video
+                  width="560"
+                  height="315"
+                  src="https://drive.google.com/file/d/1hw4kYeLsv1K9KbyM0RIXmKn-5cBijo7E/preview"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                ></Video>
               </Overlay>
             </VideoList>
           </Videos>
@@ -361,9 +347,12 @@ Mary, her life and her Green!
                 </i>
               </p>
               <Overlay>
-                <LocalVideo controls>
-                  <source src={MWBirthday} type="video/mp4" />
-                </LocalVideo>
+                <Video
+                  width="560"
+                  height="315"
+                  src="https://drive.google.com/file/d/1HhENKYHBfqZLb8cGk12HcmG3oaSmeLFI/preview"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                ></Video>
               </Overlay>
             </VideoList>
           </Videos>

@@ -1,6 +1,5 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import Vindication from "../images/videos/VindicationBRIGHTER_BW.mp4"
 import MOW from "../images/posters/MoW Poster-1.jpg"
 import QuoteAnne from "../images/posters/Insprational Quotes_compressed-05.jpg"
 import QuoteAudre from "../images/posters/Insprational Quotes_compressed-12.jpg"
@@ -29,18 +28,6 @@ const Overlay = styled.div`
   overflow: hidden;
   padding-top: 56.25%;
   margin-top: 2rem;
-`
-const LocalVideo = styled.video`
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-  max-width: 640px;
-  max-height: 385px;
-  float: right;
 `
 
 const Video = styled.iframe`
@@ -177,9 +164,12 @@ class FmPrefAndFilm extends React.Component {
                 equality.
               </p>
               <Overlay>
-                <LocalVideo controls style={{ float: `right` }}>
-                  <source src={Vindication} type="video/mp4" />
-                </LocalVideo>
+                <Video
+                style={{ float: `right` }}
+                src="https://drive.google.com/file/d/14mtznjDlVBtCwxE7JRhgAT82om3QPU9d/preview" 
+                width="640"
+                height="480" >
+                </Video>
               </Overlay>
             </VideoList>
           </Videos>

@@ -1,8 +1,12 @@
+const siteUrl = `https://wollstonecraftwalks.netlify.com`
+
 module.exports = {
   siteMetadata: {
     title: `Wollstonecraft Walks`,
+    keyword: `Mary Wollstonecraft, Wollstonecraft Walks, historical London,`,
     description: `A walkguide.`,
     author: `Sandra Grahl`,
+    siteUrl,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -76,6 +80,15 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: siteUrl,
+        sitemap: `${siteUrl}/sitemap.xml`,
+        policy: [{ userAgent: "*", disallow: "" }],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
