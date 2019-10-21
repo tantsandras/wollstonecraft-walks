@@ -4,7 +4,6 @@ import Menu from "../components/menu"
 import Gallery from "../components/gallery"
 import Circles from "../components/circles"
 import styled, { keyframes } from "styled-components"
-import Img from "gatsby-image"
 
 const ImageWrapper = styled.div`
   position: relative;
