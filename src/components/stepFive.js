@@ -299,8 +299,7 @@ class Step5 extends React.Component {
             had a slice of birthday cake and were invited to read quotes from
             illustrious women like Maya Angelou, bell hooks, Radcliffe Hall and
             Michele Obama! You can recreate this by heading inside for a drink
-            or bite to eat and reading these quotes (that can be found on this
-            app) and treating yourself to a bit of inspirational me time!
+            or bite to eat and reading these quotes (that can be found <a href="http://wollstonecraftwalks.netlify.com/media.html#inspirational" target="_blank">here</a>) and treating yourself to a bit of inspirational me time!
           </Normal>
           <Normal
             style={{
