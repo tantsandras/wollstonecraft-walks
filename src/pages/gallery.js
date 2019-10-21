@@ -73,7 +73,7 @@ const GalleryPage = props => {
         </div>
         <div className="item">
           <ImageWrapper className="content">
-            <Img src={data.image} alt={data.description} style={{width: `100%`, height: `100%`}} />
+            <img src={data.image} alt={data.description} style={{width: `100%`, height: `100%`}} />
           </ImageWrapper>
         </div>
       </Wrapper>
