@@ -24,15 +24,15 @@ position: relative;
 `
 
 const PdfLink = styled.a`
-color: #333333;
-font-family: Helvetica, Roboto, 'Open Sans';
-text-decoration: none;
-font-size: 1rem;
-&:hover {
+  color: #333333;
+  font-family: Helvetica, Roboto, "Open Sans";
   text-decoration: none;
-  color: MediumBlue;
-  cursor: pointer;
-}
+  font-size: 1rem;
+  &:hover {
+    text-decoration: none;
+    color: MediumBlue;
+    cursor: pointer;
+  }
 `
 
 class Pages extends React.Component {
@@ -41,7 +41,7 @@ class Pages extends React.Component {
       <StaticQuery
         query={graphql`
           {
-            images: allFile(filter: { relativeDirectory: { eq: "pdf" } }) {
+            images: allFile(filter: { relativeDirectory: { eq: "pdf" } }, sort: {fields:name}) {
               edges {
                 node {
                   name
@@ -86,7 +86,12 @@ class Pages extends React.Component {
                   Limited edition art book PDF
                 </i>
                 <br />
-                <PdfLink href="https://drive.google.com/uc?export=download&id=191dUfzDGadedUpdtvG3od2gGUwrRv0x7" download>Click here to download</PdfLink>
+                <PdfLink
+                  href="https://drive.google.com/uc?export=download&id=191dUfzDGadedUpdtvG3od2gGUwrRv0x7"
+                  download
+                >
+                  Click here to download
+                </PdfLink>
               </h2>
               <div style={pageGrid}>
                 <Slide>

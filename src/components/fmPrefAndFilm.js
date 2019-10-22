@@ -201,7 +201,7 @@ class FmPrefAndFilm extends React.Component {
           style={{
             padding: `2% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${MOW}") right 10% top 50%/30% no-repeat`,
+            background: `url("${MOW}") right 10% top 50%/36% no-repeat`,
             color: `#241E20`,
           }}
         >
