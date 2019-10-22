@@ -141,7 +141,7 @@ class Media extends React.Component {
           style={{
             padding: `5% 10% 3% 10%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote7}") right 12% top 20%/30% no-repeat`,
+            background: `url("${Quote7}") right 16% top 20%/30% no-repeat`,
           }}
         >
           <Videos>
@@ -207,7 +207,7 @@ class Media extends React.Component {
             </div>
           </Videos>
         </article>
-        <article style={{ padding: `2% 10% 2% 10%` }}>
+        <article style={{ padding: `2% 10% 8% 10%` }}>
           <VideoList maxWidth="640px" style={{ float: `left`, marginTop: `5rem` }}>
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
               <Video
@@ -225,7 +225,7 @@ class Media extends React.Component {
           </VideoList>
         </article>
         <article
-          style={{ padding: `5% 10% 0% 4%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
+          style={{ padding: `15% 10% 0% 4%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
         >
           <Videos>
             <VideoList>
@@ -296,7 +296,7 @@ class Media extends React.Component {
           style={{
             padding: `5% 10% 3% 10%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote5}") right 12% top 20%/30% no-repeat`,
+            background: `url("${Quote5}") right 16% top 20%/30% no-repeat`,
           }}
         >
           <Videos>

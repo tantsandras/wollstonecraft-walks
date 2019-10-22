@@ -75,7 +75,7 @@ const HeritageResearchPage = props => {
             color: `#333333`,
           }}
         >
-          Heritage Research
+          Heritage Research.
         </h1>
         <PdfList maxWidth="640px" style={{ margin: `0 auto` }}>
           <Heading>{data.title}</Heading>

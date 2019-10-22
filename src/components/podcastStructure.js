@@ -5,6 +5,46 @@ import Ep1 from "../audio/podcast/EP1.mp3"
 import Ep2 from "../audio/podcast/EP2.mp3"
 import Ep3 from "../audio/podcast/EP3.mp3"
 
+const PageCircle = styled.div`
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  background: rgb( 178, 125, 178, 0.5);
+  mix-blend-mode: multiply;
+  text-align: center;
+  vertical-align: middle;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+`
+const PageHeading = styled.div`
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-left: 6px double #5D00FF;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  clip-path: circle(50%);
+  -webkit-clip-path: circle(50%);
+  -webkit-shape-outside: circle(20em);
+  shape-outside: circle(20em);
+`
+const MainHeading = styled.h1`
+  font-family: "Archivo Black", Impact;
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: -9rem;
+  padding-left: 8rem;
+  margin-bottom: 3rem;
+  color: #333333;
+`
+
 const PodBox = styled.li`
   padding: 2rem;
   background: rgba(255, 255, 255, 0.98);
@@ -35,20 +75,11 @@ class Pods extends React.Component {
   render() {
     return (
       <main>
-        <h1
-          style={{
-            fontFamily: `'Archivo Black', Impact`,
-            fontSize: `1.7rem`,
-            textAlign: `center`,
-            marginTop: `8rem`,
-            letterSpacing: `1px`,
-            marginBottom: `2rem`,
-            color: `#333333`,
-          }}
-        >
-          Wollstonecraft Walks Podcast
-        </h1>
-        <h2 style={{fontFamily: `Helvetica, Roboto, 'Open Sans'`, fontWeight: `normal`, letterSpacing: `2px`, lineHeight: `2`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
+      <PageCircle style={{ marginBottom: `4rem`, marginTop: `4rem` }}>
+          <PageHeading></PageHeading>
+        </PageCircle>
+        <MainHeading>Podcast.</MainHeading>
+        <h2 style={{fontFamily: `Helvetica, Roboto, 'Open Sans'`, fontWeight: `normal`, letterSpacing: `2px`, lineHeight: `1.8`, fontSize: `0.9rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
         <PodList>
           <PodBox>
             <h3
