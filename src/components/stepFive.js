@@ -94,7 +94,7 @@ const Quote = styled.i`
   letter-spacing: 2px;
   line-height: 2;
   position: relative;
-  padding: 1em 4em;
+  padding: 1em 2em;
   min-height: 5em;
   &:before {
     font-family: Yeseva One;
@@ -102,8 +102,8 @@ const Quote = styled.i`
     position: absolute;
     height: 3rem;
     content: "“";
-    top: -1.6rem;
-    left: 1.6rem;
+    top: -0.8rem;
+    left: 0rem;
   }
 
   &:after {
@@ -112,8 +112,8 @@ const Quote = styled.i`
     position: absolute;
     height: 3rem;
     content: "”";
-    bottom: 0.4rem;
-    right: 2.4rem;
+    bottom: 0.8rem;
+    right: 0.8rem;
   }
 `
 
@@ -142,13 +142,6 @@ const Normal = styled.p`
   line-height: 1.8;
 `
 const Block = styled.blockquote`
-  line-height: 1.8;
-`
-const Credits = styled.h5`
-  font-family: Helvetica, Roboto, "Open Sans";
-  letter-spacing: 2px;
-
-  font-size: 1rem;
   line-height: 1.8;
 `
 const ImgageWrap = styled.div`
