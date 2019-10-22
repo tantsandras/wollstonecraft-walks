@@ -66,7 +66,7 @@ const MainHeading = styled.h1`
   align-items: center;
 `
 const Box = styled.li`
-  padding: 2rem;
+  padding: 1.6rem;
   background: #fffeff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -99,6 +99,18 @@ const Heading = styled.h2`
   color: #333333;
 `
 
+const Normal = styled.p`
+line-height: 1.8;
+`
+
+const Credits = styled.h5`
+font-family: Helvetica, Roboto, 'Open Sans';
+letter-spacing: 2px;
+font-weight: normal;
+font-size: 1rem;
+line-height: 1.8;
+`
+
 class FmPrefAndFilm extends React.Component {
   render() {
     return (
@@ -122,7 +134,7 @@ class FmPrefAndFilm extends React.Component {
           style={{
             padding: `0% 8% 0% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${QuoteAnne}") right 10% top 30%/30% no-repeat`,
+            background: `url("${QuoteAnne}") right 10% top 30%/40% no-repeat`,
           }}
         >
           <Videos>
@@ -136,16 +148,10 @@ class FmPrefAndFilm extends React.Component {
               }}
             >
               <Heading>Vindication</Heading>
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
+              <Credits>
                 by Kaethe Fine (2005) new B&amp;W version AB (2018)
-              </i>
-              <p style={{ marginTop: `2rem` }}>
+              </Credits>
+              <Normal style={{ marginTop: `2rem` }}>
                 The French Revolution is simmering and issues of racial,
                 economic and religious equality is at stake. In this imagined
                 moment in the life of Mary Wollstonecraft (1759-1797), she meets
@@ -162,7 +168,7 @@ class FmPrefAndFilm extends React.Component {
                 for, A Vindication of the Rights of Women. She became the first
                 person to speak out and be heard on the silent subject of gender
                 equality.
-              </p>
+              </Normal>
               <Overlay>
                 <Video
                 style={{ float: `right` }}
@@ -219,7 +225,6 @@ class FmPrefAndFilm extends React.Component {
                 <Video
                   src="https://www.youtube.com/embed/lwH_fA5e64I"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
@@ -235,51 +240,21 @@ class FmPrefAndFilm extends React.Component {
               }}
             >
               <Heading>March</Heading>
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
+              <Credits>
                 A Glasgow Women's Library and Royal Conservatoire of Scotland
                 Film
-              </i>
-              <p style={{ marginTop: `2rem` }}>
-                <i
-                  style={{
-                    fontSize: `1rem`,
-                    letterSpacing: `2px`,
-                    lineHeight: `2`,
-                  }}
-                >
-                  Film-maker{" "}
-                </i>
+              </Credits>
+                <Credits style={{ marginTop: `2rem` }}>
+                  Film-maker{" "}<br />
                 - Marissa Keating
-                <br />
-                <i
-                  style={{
-                    fontSize: `1rem`,
-                    letterSpacing: `2px`,
-                    lineHeight: `2`,
-                  }}
-                >
-                  Artistic Director{" "}
-                </i>
+
+                  Artistic Director{" "}<br />
                 - Anna Birch
-                <br />
-                <i
-                  style={{
-                    fontSize: `1rem`,
-                    letterSpacing: `2px`,
-                    lineHeight: `2`,
-                  }}
-                >
-                  Subtitles{" "}
-                </i>
-                - Stagetext www.stagetext.org
-                <br />
-                <p style={{ marginTop: `2rem` }}>
+
+                  Subtitles{" "}<br />
+ 
+                - Stagetext www.stagetext.org               </Credits>
+                <Normal style={{ marginTop: `2rem` }}>
                   'March' documents a large scale, public art event March of
                   Women taking to the streets of Bridgeton on the eve of
                   International Women's Day 2015. Taking Cicely Hamilton's
@@ -298,28 +273,19 @@ class FmPrefAndFilm extends React.Component {
                   in Scotland today, and invites testament to the tremendous
                   power of a collective voice, and the surprising resonance of a
                   play written over a century ago with our contemporary society.
-                </p>
-                <p>
+                </Normal>
+                <Normal>
                   {" "}
-                  <i
-                    style={{
-                      fontSize: `1rem`,
-                      letterSpacing: `2px`,
-                      lineHeight: `2`,
-                      textTransform: `uppercase`,
-                    }}
-                  >
+                  <Credits>
                     Password
-                  </i>{" "}
+                  </Credits>{" "}
                   March
-                </p>
-              </p>
+              </Normal>
 
               <Overlay>
                 <Video
                   src="http://player.vimeo.com/video/149630321"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{
                     maxWidth: `640px`,
                     minWidth: `240`,
@@ -368,7 +334,7 @@ class FmPrefAndFilm extends React.Component {
             width: `100%`,
             margin: `0 auto`,
             display: `inline-block`,
-            padding: `10% 10% 0% 10%`,
+            padding: `10% 8% 0% 8%`,
           }}
         >
           <ProjectHeading>
@@ -392,7 +358,7 @@ class FmPrefAndFilm extends React.Component {
               </i>
             </Heading>
           </ProjectHeading>
-          <p
+          <Normal
             style={{
               fontSize: `0.8rem`,
               float: `right`,
@@ -400,64 +366,34 @@ class FmPrefAndFilm extends React.Component {
               marginLeft: `0.2rem`,
             }}
           >
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
+            <Credits>
               Script{" "}
-            </i>
+            </Credits>
             - Kaethe Fine
             <br />
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
+            <Credits>
               Director{" "}
-            </i>
+            </Credits>
             - Anna Birch
             <br />
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
+            <Credits>
               Composer{" "}
-            </i>
+            </Credits>
             - Alastair Gavin <br />
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
+            <Credits>
               Movement{" "}
-            </i>
+            </Credits>
             - Sarah Rubidge <br />
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
+            <Credits>
               Voice{" "}
-            </i>
+            </Credits>
             - Sheila Landahl
             <br />
-          </p>
+          </Normal>
         </span>
         <ul
           style={{
-            padding: `0% 10% 0% 10%`,
+            padding: `0% 8% 0% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             color: `#241E20`,
             display: `grid`,
@@ -494,8 +430,6 @@ class FmPrefAndFilm extends React.Component {
                 <Video
                   title="Wollstonecraft Live video, Part 1"
                   src="https://www.youtube.com/embed/vSFDuNrA_lA"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
@@ -529,8 +463,6 @@ class FmPrefAndFilm extends React.Component {
                 <Video
                   title="Wollstonecraft Live video, Part 2"
                   src="https://www.youtube.com/embed/i5Uxlj9eDNI"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
@@ -564,8 +496,6 @@ class FmPrefAndFilm extends React.Component {
                 <Video
                   title="Wollstonecraft Live video, Part 3"
                   src="https://www.youtube.com/embed/PLOLhxc5wqE"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
@@ -576,9 +506,9 @@ class FmPrefAndFilm extends React.Component {
 
         <article
           style={{
-            padding: `6% 10% 1% 10%`,
+            padding: `6% 8% 1% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${QuoteAudre}") right 10% top 40%/30% no-repeat`,
+            background: `url("${QuoteAudre}") right 10% top 40%/40% no-repeat`,
           }}
         >
           <Videos>
@@ -592,29 +522,21 @@ class FmPrefAndFilm extends React.Component {
               }}
             >
               <Heading>Wollstonecraft Live!</Heading>
-              <i
-                style={{
-                  fontSize: `1rem`,
-                  letterSpacing: `2px`,
-                  lineHeight: `2`,
-                }}
-              >
+              <Credits>
                 Written by Kaethe Fine <br />
                 Concieved by Kaethe Fine and Anna Birch <br />
                 Produced and directed by Anna Birch <br />
-              </i>
-              <p style={{ marginTop: `2rem` }}>
+              </Credits>
+              <Normal style={{ marginTop: `2rem` }}>
                 Meet Mary Wollstonecraft (1759-1797), Britain's first feminist.
                 She articulated the case for women's suffrage, wrote A
                 Vindication of the Rights of Women and gave birth to Mary
                 Shelley who wrote Frankenstein.
-              </p>
+              </Normal>
 
               <Overlay>
                 <Video
                   src="https://www.youtube.com/embed/nDSlEmgryyA"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                   allowFullScreen
                 ></Video>
@@ -623,7 +545,7 @@ class FmPrefAndFilm extends React.Component {
           </Videos>
         </article>
 
-        <article style={{ padding: `0% 10% 10% 10%` }}>
+        <article style={{ padding: `0% 8% 10% 8%` }}>
           <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
               <Video

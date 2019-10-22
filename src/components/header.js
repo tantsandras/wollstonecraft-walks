@@ -4,16 +4,14 @@ import React from "react"
 import Image from "../components/image"
 import styled, { keyframes } from "styled-components"
 
-const fadeInRight = keyframes`
-    from {
-      opacity: 0;
-      transform: translateX(-15px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  `
+const turnVisible = keyframes`
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+`
 
 const element = {
   gridTemplateColumns: `repeat(4, 1fr)`,
@@ -25,7 +23,7 @@ const Welcome = styled.h2`
 letter-spacing: 1px;
 font-family: 'Archivo Black', Impact; 
 color: #333333;
-animation: ${fadeInRight} ease 1.2s forwards;
+animation: ${turnVisible} ease 1.2s forwards;
 `
 
 const MainHeading = styled.h1`
@@ -40,20 +38,20 @@ font-size: 2.2rem;
 margin-top: 4rem;
 margin-bottom: -1rem;
 letter-spacing: 1px;
-animation: ${fadeInRight} ease 1.4s forwards;
+animation: ${turnVisible} ease 1.4s forwards;
 `
 
 const ImageWrapper = styled.div`
 max-width: 500px;
 max-height: 500px;
 z-index: 1;
-animation: ${fadeInRight} ease 1.6s forwards;
+animation: ${turnVisible} ease 1.6s forwards;
 `
 
 const Quote = styled.p`
 letter-spacing: 2px;
 line-height: 1.8;
-animation: ${fadeInRight} ease 1.4s forwards;
+animation: ${turnVisible} ease 1.4s forwards;
 `
 
 const Header = ({ siteTitle }) => (
