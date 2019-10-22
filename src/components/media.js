@@ -6,6 +6,17 @@ import Quote7 from "../images/posters/Quotes - vertical[1]-7.jpg"
 import Quote5 from "../images/posters/Quotes - vertical[1]-5.jpg"
 import Flyer from "../components/flyers"
 
+const fadeInRight = keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const VideoList = styled.li`
   padding: 2rem;
   background: #241e20;
@@ -31,6 +42,7 @@ const MainHeading = styled.h1`
   margin-top: -10rem;
   padding-left: 8rem;
   color: #333333;
+  animation: ${fadeInRight} ease 1.4s forwards;
 `
 
 const Video = styled.iframe`
@@ -77,6 +89,7 @@ const PageCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 const PageHeading = styled.div`
   width: 200px;
@@ -92,6 +105,7 @@ const PageHeading = styled.div`
   -webkit-clip-path: circle(50%);
   -webkit-shape-outside: circle(20em);
   shape-outside: circle(20em);
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 const PdfLink = styled.a`

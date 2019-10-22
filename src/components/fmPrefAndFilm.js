@@ -4,6 +4,17 @@ import MOW from "../images/posters/MoW Poster-1.jpg"
 import QuoteAnne from "../images/posters/Insprational Quotes_compressed-05.jpg"
 import QuoteAudre from "../images/posters/Insprational Quotes_compressed-12.jpg"
 
+const fadeInRight = keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const ProjectHeading = styled.div`
   text-align: center;
   font-size: 1rem;
@@ -49,7 +60,7 @@ const Videos = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
 `
 
 const MainHeading = styled.h1`
@@ -64,6 +75,7 @@ const MainHeading = styled.h1`
   padding: 2rem 2rem;
   display: grid;
   align-items: center;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 const Box = styled.li`
   padding: 1.6rem;
@@ -79,7 +91,7 @@ const Box = styled.li`
 
 const PdfLink = styled.a`
   color: #241e20;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -100,21 +112,26 @@ const Heading = styled.h2`
 `
 
 const Normal = styled.p`
-line-height: 1.8;
+  line-height: 1.8;
 `
 
 const Credits = styled.h5`
-font-family: Helvetica, Roboto, 'Open Sans';
-letter-spacing: 2px;
-font-weight: normal;
-font-size: 1rem;
-line-height: 1.8;
+  font-family: Helvetica, Roboto, "Open Sans";
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.8;
 `
 
 class FmPrefAndFilm extends React.Component {
   render() {
     return (
-      <main style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'`, color: `#333333` }}>
+      <main
+        style={{
+          fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+          color: `#333333`,
+        }}
+      >
         <MainHeading>
           Fragments & Monuments
           <br />
@@ -171,11 +188,11 @@ class FmPrefAndFilm extends React.Component {
               </Normal>
               <Overlay>
                 <Video
-                style={{ float: `right` }}
-                src="https://drive.google.com/file/d/14mtznjDlVBtCwxE7JRhgAT82om3QPU9d/preview" 
-                width="640"
-                height="480" >
-                </Video>
+                  style={{ float: `right` }}
+                  src="https://drive.google.com/file/d/14mtznjDlVBtCwxE7JRhgAT82om3QPU9d/preview"
+                  width="640"
+                  height="480"
+                ></Video>
               </Overlay>
             </VideoList>
           </Videos>
@@ -244,42 +261,72 @@ class FmPrefAndFilm extends React.Component {
                 A Glasgow Women's Library and Royal Conservatoire of Scotland
                 Film
               </Credits>
-                <Credits style={{ marginTop: `2rem` }}>
-                  Film-maker{" "}<br />
+              <p
+                style={{
+                  fontSize: `0.8rem`,
+                  marginTop: `1rem`,
+                  marginLeft: `0.2rem`,
+                }}
+              >
+                <i
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                  }}
+                >
+                  Film-maker{" "}
+                </i>
                 - Marissa Keating
-
-                  Artistic Director{" "}<br />
+                <br />
+                <i
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                  }}
+                >
+                  Artistic Director{" "}
+                </i>
                 - Anna Birch
-
-                  Subtitles{" "}<br />
- 
-                - Stagetext www.stagetext.org               </Credits>
-                <Normal style={{ marginTop: `2rem` }}>
-                  'March' documents a large scale, public art event March of
-                  Women taking to the streets of Bridgeton on the eve of
-                  International Women's Day 2015. Taking Cicely Hamilton's
-                  popular suffragette play 'A Pageant of Great Women', as a
-                  starting point the diverse community of women in Glasgow in
-                  2015 is bought to the screen. Through a series of interviews
-                  with a wide variety of women taking part in the performance
-                  and march, the film considers the gap in documenting women's
-                  history, and points to the resounding importance of having a
-                  female generation to both honour and draw inspiration from. It
-                  follows the process of the plays development within a
-                  community of Scottish women from boat builders, to students,
-                  librarians and politicians, as they work together towards the
-                  final event on March 7 2015. The film gives a lingering
-                  insight into some of political and social experiences of women
-                  in Scotland today, and invites testament to the tremendous
-                  power of a collective voice, and the surprising resonance of a
-                  play written over a century ago with our contemporary society.
-                </Normal>
-                <Normal>
-                  {" "}
-                  <Credits>
-                    Password
-                  </Credits>{" "}
-                  March
+                <br />
+                <i
+                  style={{
+                    fontSize: `1rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                  }}
+                >
+                  Subtitles{" "}
+                </i>
+                - Stagetext www.stagetext.org
+              </p>
+              <Normal style={{ marginTop: `2rem` }}>
+                'March' documents a large scale, public art event March of Women
+                taking to the streets of Bridgeton on the eve of International
+                Women's Day 2015. Taking Cicely Hamilton's popular suffragette
+                play 'A Pageant of Great Women', as a starting point the diverse
+                community of women in Glasgow in 2015 is bought to the screen.
+                Through a series of interviews with a wide variety of women
+                taking part in the performance and march, the film considers the
+                gap in documenting women's history, and points to the resounding
+                importance of having a female generation to both honour and draw
+                inspiration from. It follows the process of the plays
+                development within a community of Scottish women from boat
+                builders, to students, librarians and politicians, as they work
+                together towards the final event on March 7 2015. The film gives
+                a lingering insight into some of political and social
+                experiences of women in Scotland today, and invites testament to
+                the tremendous power of a collective voice, and the surprising
+                resonance of a play written over a century ago with our
+                contemporary society.
+              </Normal>
+              <Normal>
+                {" "}
+                <Credits style={{ textTransform: `uppercase` }}>
+                  Password
+                </Credits>{" "}
+                March
               </Normal>
 
               <Overlay>
@@ -358,7 +405,7 @@ class FmPrefAndFilm extends React.Component {
               </i>
             </Heading>
           </ProjectHeading>
-          <Normal
+          <p
             style={{
               fontSize: `0.8rem`,
               float: `right`,
@@ -366,30 +413,60 @@ class FmPrefAndFilm extends React.Component {
               marginLeft: `0.2rem`,
             }}
           >
-            <Credits>
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
               Script{" "}
-            </Credits>
+            </i>
             - Kaethe Fine
             <br />
-            <Credits>
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
               Director{" "}
-            </Credits>
+            </i>
             - Anna Birch
             <br />
-            <Credits>
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
               Composer{" "}
-            </Credits>
+            </i>
             - Alastair Gavin <br />
-            <Credits>
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
               Movement{" "}
-            </Credits>
+            </i>
             - Sarah Rubidge <br />
-            <Credits>
+            <i
+              style={{
+                fontSize: `1rem`,
+                letterSpacing: `2px`,
+                lineHeight: `2`,
+              }}
+            >
               Voice{" "}
-            </Credits>
+            </i>
             - Sheila Landahl
             <br />
-          </Normal>
+          </p>
         </span>
         <ul
           style={{
