@@ -186,7 +186,7 @@ class Step2 extends React.Component {
             </Direction>
           </ul>
           <Credits style={{marginTop: `2rem`}}>Rebecca Boey reading</Credits>
-          <SubHeading style={{lineHeight: `0`}}>
+          <SubHeading>
             On Mary Wollstonecraft (1925)</SubHeading>
             <Credits>in <i>The Common Reader</i> by Virginia Woolf</Credits>
           
@@ -245,10 +245,10 @@ class Step2 extends React.Component {
           <section
             style={{
               float: `right`,
-              paddingLeft: `2.8rem`,
+              paddingLeft: `2.4rem`,
               borderLeft: `4px double #ff008a`,
               paddingBottom: `2.6rem`,
-              marginLeft: `4rem`,
+              marginLeft: `3rem`,
               marginTop: `1rem`,
               marginBottom: `2rem`
             }}

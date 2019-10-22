@@ -105,11 +105,9 @@ const Intro = () => (
 
       <article style={{ padding: `5% 10% 3% 10%` }}>
       <Credits>
-        By Di Sherlock</Credits>
-        <p style={{ lineHeight: `1.8`,}}>
-          for her role as Mary Wollstonecraft <br />in Di’s Midsummer
+        By Di Sherlock for her role as Mary Wollstonecraft <br />in Di’s Midsummer
           Night Party, 2000,<br /> Stoke Newington Midsummer Festival
-</p>
+          </Credits>  
 
         <QuotationMarks> 18th century Feminist writer and mother of Mary Shelley, author of
           Frankenstein, Wollstoncraft was born Spitalfields, London, but her
