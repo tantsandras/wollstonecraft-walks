@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
 import { graphql } from "gatsby"
+import "typeface-archivo-black"
 
 const PdfList = styled.li`
   padding: 2rem;

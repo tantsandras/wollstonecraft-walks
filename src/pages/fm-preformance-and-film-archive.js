@@ -1,10 +1,10 @@
 import React from "react"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
-import styled, { keyframes } from "styled-components"
 import FmPrefAndFilm from "../components/fmPrefAndFilm"
 import ArtBook from "../components/artBook"
 import Circles from "../components/circles"
+import "typeface-archivo-black"
 
 const FmPage = () => {
   return (

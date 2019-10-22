@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
 import AandR from "../components/annaRebecca"
+import "typeface-archivo-black"
 
 const fadeInRight = keyframes`
     from {
@@ -39,14 +40,14 @@ const OrgList = styled.ul`
   list-style: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const StyledLink = styled.a`
-font-weight: normal;
+  font-weight: normal;
   z-index: 3;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -106,7 +107,7 @@ const ContactPage = () => {
             fontSize: `1.6rem`,
             paddingBottom: `1rem`,
             letterSpacing: `2%`,
-            color: `#333333`
+            color: `#333333`,
           }}
         >
           Community Links

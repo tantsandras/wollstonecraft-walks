@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
@@ -8,6 +7,8 @@ import ContinueButton from "../components/continueWalk"
 import Menu from "../components/menu"
 import WhoIsMary from "../audio/WHO IS MW.mp3"
 import BackButton from "../components/backButton"
+import "typeface-archivo-black"
+import 'typeface-yeseva-one'
 
 class IntroPage extends React.Component {
     constructor() {

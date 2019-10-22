@@ -4,6 +4,7 @@ import React from "react"
 import Image from "../components/image"
 import styled, { keyframes } from "styled-components"
 
+
 const turnVisible = keyframes`
 	from {
 		opacity: 0;

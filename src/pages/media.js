@@ -1,9 +1,9 @@
 import React from "react"
 import SEO from "../components/seo"
 import Menu from "../components/menu"
-import styled, { keyframes } from "styled-components"
 import Media from "../components/media"
 import Circles from "../components/circles"
+import "typeface-archivo-black"
 
 
 const MediaPage = () => {
