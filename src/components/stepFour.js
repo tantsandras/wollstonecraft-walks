@@ -2,8 +2,19 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import PsImage from "../components/primarySchool"
 
+const fadeInRight = keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const StepCircle = styled.div`
-  z-index: -1;
+  z-index: 1;
   position: relative;
   border-radius: 50%;
   margin: 0 auto;
@@ -16,6 +27,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 const StepNum = styled.p`
@@ -26,6 +38,7 @@ const StepNum = styled.p`
   font-size: 3rem;
   color: #ff0000;
   text-align: center;
+  animation: ${fadeInRight} ease 1.6s forwards;
 `
 const Direction = styled.li`
   line-height: 1.8;
@@ -89,6 +102,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
+animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 const SubHeading = styled.h4`
@@ -119,6 +133,7 @@ const ImgWrap = styled.div`
   -webkit-border-radius: 50%;
   overflow: hidden;
   mix-blend-mode: lighten;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 class Step4 extends React.Component {
@@ -130,8 +145,7 @@ class Step4 extends React.Component {
             width: `250px`,
             height: `250px`,
             margin: `0 auto`,
-            transform: `translate(90px, -70px)`,
-            zIndex: `-3`,
+            zIndex: `-1`,
           }}
         >
           <div
@@ -144,7 +158,7 @@ class Step4 extends React.Component {
             <PsImage />
           </div>
         </ImgWrap>
-        <StepCircle style={{ marginTop: `-140px` }}>
+        <StepCircle style={{ marginTop: `-70px` }}>
           <StepNum>4</StepNum>
         </StepCircle>
         <StepHeading>Newington Green Primary School</StepHeading>

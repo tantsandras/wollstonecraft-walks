@@ -4,6 +4,17 @@ import styled, { keyframes } from "styled-components"
 import Song from "../components/song"
 import MildmayImage from "../components/mildmayImg"
 
+const fadeInRight = keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const StepCircle = styled.div`
   position: relative;
   border-radius: 50%;
@@ -17,6 +28,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 const StepNum = styled.p`
@@ -27,6 +39,7 @@ const StepNum = styled.p`
   font-size: 3rem;
   color: #383790;
   text-align: center;
+  animation: ${fadeInRight} ease 1.6s forwards;
 `
 
 const Direction = styled.li`
@@ -60,6 +73,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
+animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 
@@ -71,6 +85,7 @@ const ImgageWrap = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 
@@ -131,18 +146,18 @@ class Step1 extends React.Component {
             maxWidth: `285px`,
             maxHeight: `285px`,
             margin: `0 auto`,
-            transform: `translate(0px, -70px)`, zIndex: `-1`,}}>
+            transform: `translate(0px, 0px)`, zIndex: `-1`,}}>
         <div>
           <MildmayImage />
         </div>
         </ImgageWrap>
-        <StepCircle style={{marginTop: `-130px`}}>
+        <StepCircle style={{marginTop: `-70px`}}>
           <StepNum>1</StepNum>
         </StepCircle>
         <StepHeading>
           The Mildmay Club
         </StepHeading>
-        <article style={{ padding: `20% 8% 3% 8%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
+        <article style={{ padding: `18% 8% 3% 8%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <section style={{ paddingBottom: `3rem` }}>
             
                 <Credits style={{borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Wollstonecraft Walks Guide </Credits> <Normal>Researched and written by Anna Birch and Rebecca Mordan.</Normal>

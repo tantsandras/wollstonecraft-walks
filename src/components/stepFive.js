@@ -3,6 +3,17 @@ import styled, { keyframes } from "styled-components"
 import { Link } from "gatsby"
 import InnImg from "../components/mildmayInn"
 
+const fadeInRight = keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const Back = styled(Link)`
   padding: 0.6rem 1rem 0.6rem 1rem;
   font-size: 22px;
@@ -32,7 +43,7 @@ const Back = styled(Link)`
 `
 
 const StepCircle = styled.div`
-  z-index: -1;
+  z-index: 1;
   position: relative;
   border-radius: 50%;
   margin: 0 auto;
@@ -45,6 +56,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 const StepNum = styled.p`
@@ -55,6 +67,7 @@ const StepNum = styled.p`
   font-size: 3rem;
   color: #0031ad;
   text-align: center;
+  animation: ${fadeInRight} ease 1.6s forwards;
 `
 const Direction = styled.li`
   position: relative;
@@ -114,6 +127,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
+animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 const SubHeading = styled.h4`
@@ -144,6 +158,7 @@ const ImgageWrap = styled.div`
   -webkit-border-radius: 50%;
   overflow: hidden;
   mix-blend-mode: screen;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 class Step5 extends React.Component {
@@ -155,8 +170,7 @@ class Step5 extends React.Component {
             width: `250px`,
             height: `250px`,
             margin: `0 auto`,
-            transform: `translate(70px, -70px)`,
-            zIndex: `-3`,
+            zIndex: `-1`,
           }}
         >
           <div
@@ -169,7 +183,7 @@ class Step5 extends React.Component {
             <InnImg />
           </div>
         </ImgageWrap>
-        <StepCircle style={{ marginTop: `-120px` }}>
+        <StepCircle style={{ marginTop: `-60px` }}>
           <StepNum>5</StepNum>
         </StepCircle>
         <StepHeading>The Lady Mildmay Inn</StepHeading>

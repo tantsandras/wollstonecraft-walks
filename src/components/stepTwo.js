@@ -2,6 +2,17 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import Image from "../components/image"
 
+const fadeInRight = keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const StepCircle = styled.div`
   position: relative;
   border-radius: 50%;
@@ -15,6 +26,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 const StepNum = styled.p`
@@ -25,6 +37,7 @@ const StepNum = styled.p`
   font-size: 3rem;
   color: #ff008a;
   text-align: center;
+  animation: ${fadeInRight} ease 1.6s forwards;
 `
 const Direction = styled.li`
   line-height: 1.8;
@@ -83,6 +96,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
+animation: ${fadeInRight} ease 1s forwards;
 `
 
 
@@ -111,22 +125,22 @@ font-size: 1rem;
 line-height: 1.8;
 `
 
+const ImageWrapper = styled.div`
+max-width: 185px;
+max-height: 185px;
+margin: 0 auto;
+z-index: -1;
+animation: ${fadeInRight} ease 1.2s forwards;
+`
+
 class Step2 extends React.Component {
   render() {
     return (
       <main>
-        <div
-          style={{
-            maxWidth: `185px`,
-            maxHeight: `185px`,
-            margin: `0 auto`,
-            transform: `translate(90px, -80px)`,
-            zIndex: `-1`,
-          }}
-        >
+        <ImageWrapper>
           <Image />
-        </div>
-        <StepCircle style={{ marginTop: `-8rem` }}>
+        </ImageWrapper>
+        <StepCircle style={{ marginTop: `-3.4rem` }}>
           <StepNum>2</StepNum>
         </StepCircle>
         <StepHeading>
