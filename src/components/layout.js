@@ -7,6 +7,7 @@ import Menu from "../components/menu"
 import "./layout.css"
 import Footer from "./footer"
 import { Helmet } from "react-helmet"
+import "typeface-archivo-black"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

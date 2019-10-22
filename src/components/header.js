@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Image from "../components/image"
 import styled, { keyframes } from "styled-components"
-
+import "typeface-archivo-black"
 
 const turnVisible = keyframes`
 	from {
@@ -59,7 +59,6 @@ const Header = ({ siteTitle }) => (
   <header>
   <section
     style={{
-      // backgroundSize: `cover`;
       padding: `4rem 2rem`,
       display: `grid`,
       alignItems: `center`,
