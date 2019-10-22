@@ -4,6 +4,14 @@ import BackgroundImage from 'gatsby-background-image-es5'
 import styled, { keyframes } from "styled-components"
 import Contact from "../components/infoContact"
 
+const turnVisible = keyframes`
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+`
 const Title = styled.div`
   background-color: rgba(255,255,255, 0.8);
   color: black;
@@ -72,6 +80,7 @@ const BackgroundSection = ({ className }) => (
     background-size: cover;
     position: relative;
     height: 60vw;
+    animation: ${turnVisible} ease 1.4s forwards;
   `
   
   export default StyledBackgroundSection

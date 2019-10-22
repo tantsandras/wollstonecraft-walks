@@ -41,7 +41,10 @@ class Pages extends React.Component {
       <StaticQuery
         query={graphql`
           {
-            images: allFile(filter: { relativeDirectory: { eq: "pdf" } }, sort: {fields:name}) {
+            images: allFile(
+              filter: { relativeDirectory: { eq: "pdf" } }
+              sort: { fields: name }
+            ) {
               edges {
                 node {
                   name
