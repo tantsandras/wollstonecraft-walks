@@ -4,16 +4,14 @@ import MOW from "../images/posters/MoW Poster-1.jpg"
 import QuoteAnne from "../images/posters/Insprational Quotes_compressed-05.jpg"
 import QuoteAudre from "../images/posters/Insprational Quotes_compressed-12.jpg"
 
-const fadeInRight = keyframes`
-    from {
-      opacity: 0;
-      transform: translateX(-15px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  `
+const turnVisible = keyframes`
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+`
 
 const ProjectHeading = styled.div`
   text-align: center;
@@ -75,7 +73,7 @@ const MainHeading = styled.h1`
   padding: 2rem 2rem;
   display: grid;
   align-items: center;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${turnVisible} 1.2s ease-in-out;
 `
 const Box = styled.li`
   padding: 1.6rem;
@@ -598,7 +596,7 @@ class FmPrefAndFilm extends React.Component {
                 boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #FF008A`,
               }}
             >
-              <Heading>Wollstonecraft Live!</Heading>
+              <Heading style={{fontSize: `1.2rem`}}>Wollstonecraft Live!</Heading>
               <Credits>
                 Written by Kaethe Fine <br />
                 Concieved by Kaethe Fine and Anna Birch <br />

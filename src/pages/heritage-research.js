@@ -5,6 +5,14 @@ import styled, { keyframes } from "styled-components"
 import { graphql } from "gatsby"
 import "typeface-archivo-black"
 
+const turnVisible = keyframes`
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+`
 const PdfList = styled.li`
   padding: 2rem;
   background: #fffeff;
@@ -54,6 +62,16 @@ const PdfLink = styled.a`
     cursor: pointer;
   }
 `
+const MainHeading = styled.h1`
+font-family: 'Archivo Black', Impact;
+font-size: 2.2rem;
+text-align: center;
+margin-top: 8rem;
+letter-spacing: 1px;
+margin-bottom: 6rem;
+color: #333333;
+animation: ${turnVisible} 1.2s ease-in-out;
+`
 
 const HeritageResearchPage = props => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -65,19 +83,9 @@ const HeritageResearchPage = props => {
       <SEO title="Heritage Research" />
       <Menu />
       <article style={{ padding: `0% 10% 10% 10%` }}>
-        <h1
-          style={{
-            fontFamily: `'Archivo Black', Impact`,
-            fontSize: `2.2rem`,
-            textAlign: `center`,
-            marginTop: `8rem`,
-            letterSpacing: `1px`,
-            marginBottom: `6rem`,
-            color: `#333333`,
-          }}
-        >
+        <MainHeading>
           Heritage Research.
-        </h1>
+        </MainHeading>
         <PdfList maxWidth="640px" style={{ margin: `0 auto` }}>
           <Heading>{data.title}</Heading>
           <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>

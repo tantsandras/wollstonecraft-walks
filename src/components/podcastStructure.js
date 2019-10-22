@@ -5,6 +5,18 @@ import Ep1 from "../audio/podcast/EP1.mp3"
 import Ep2 from "../audio/podcast/EP2.mp3"
 import Ep3 from "../audio/podcast/EP3.mp3"
 
+
+const fadeInRight = keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const PageCircle = styled.div`
   position: relative;
   border-radius: 50%;
@@ -18,6 +30,7 @@ const PageCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 const PageHeading = styled.div`
   width: 200px;
@@ -33,6 +46,7 @@ const PageHeading = styled.div`
   -webkit-clip-path: circle(50%);
   -webkit-shape-outside: circle(20em);
   shape-outside: circle(20em);
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 const MainHeading = styled.h1`
   font-family: "Archivo Black", Impact;
@@ -43,6 +57,7 @@ const MainHeading = styled.h1`
   padding-left: 8rem;
   margin-bottom: 3rem;
   color: #333333;
+  animation: ${fadeInRight} ease 1.6s forwards;
 `
 
 const PodBox = styled.li`
