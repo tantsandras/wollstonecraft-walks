@@ -65,7 +65,7 @@ const Credits = styled.h5`
   font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   font-weight: normal;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.8;
 `
 
@@ -120,7 +120,7 @@ const Intro = () => (
         <b style={{ fontSize: `1.6rem` }}>Mary Wollstonecraft?</b>
       </StepHeading>
 
-      <article style={{ padding: `12% 8% 3% 8%` }}>
+      <article style={{ padding: `10% 8% 3% 8%` }}>
         <Credits>
           By Di Sherlock for her role as Mary Wollstonecraft <br />
           in Di’s Midsummer Night Party, 2000,
