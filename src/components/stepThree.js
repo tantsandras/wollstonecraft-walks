@@ -11,7 +11,7 @@ const StepCircle = styled.div`
   width: 200px;
   height: 200px;
   line-height: 200px;
-  background: rgba(93, 0, 255, 0.3);
+  background: rgb( 178, 125, 178, 0.5);
   mix-blend-mode: multiply;
   text-align: center;
   vertical-align: middle;
