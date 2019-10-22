@@ -137,7 +137,7 @@ class Step2 extends React.Component {
   render() {
     return (
       <main>
-        <ImageWrapper>
+        <ImageWrapper style={{marginTop: `-2.8rem`}}>
           <Image />
         </ImageWrapper>
         <StepCircle style={{ marginTop: `-3.4rem` }}>

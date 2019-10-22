@@ -146,7 +146,7 @@ class Step1 extends React.Component {
             maxWidth: `285px`,
             maxHeight: `285px`,
             margin: `0 auto`,
-            transform: `translate(0px, 0px)`, zIndex: `-1`,}}>
+            marginTop: `-3rem`, zIndex: `-1`,}}>
         <div>
           <MildmayImage />
         </div>

@@ -114,7 +114,8 @@ class Step3 extends React.Component {
             width: `250px`,
             height: `250px`,
             margin: `0 auto`,
-            zIndex: `-1`,}}>
+            zIndex: `-1`,
+            marginTop: `-2.8rem`}}>
         <div
           style={{
             transform: `translate(-20px, -17.5px)`,

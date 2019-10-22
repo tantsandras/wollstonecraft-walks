@@ -159,6 +159,7 @@ const ImgageWrap = styled.div`
   overflow: hidden;
   mix-blend-mode: screen;
   animation: ${fadeInRight} ease 1.2s forwards;
+  margin: 0 auto;
 `
 
 class Step5 extends React.Component {
@@ -169,8 +170,8 @@ class Step5 extends React.Component {
           style={{
             width: `250px`,
             height: `250px`,
-            margin: `0 auto`,
             zIndex: `-1`,
+            marginTop: `-3rem`,
           }}
         >
           <div

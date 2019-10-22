@@ -144,8 +144,9 @@ class Step4 extends React.Component {
           style={{
             width: `250px`,
             height: `250px`,
-            margin: `0 auto`,
             zIndex: `-1`,
+            marginLeft: `45%`,
+            marginTop: `-3.2rem`
           }}
         >
           <div
