@@ -14,12 +14,12 @@ const fadeInRight = keyframes`
   `
 
 const RainbowText = styled.p`
+  margin-top: -2rem;
   font-family: Helvetica, Roboto, "Open Sans";
   z-index: 2;
   line-height: 1.6;
   padding: 1rem;
   font-size: 0.9em;
-  margin-top: 40px;
   margin-bottom: 40px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,6 +32,7 @@ const RainbowText = styled.p`
     #0031ad 106px,
     #0031ad
   );
+  width: auto;
 `
 
 const QuotationMarks = styled.p`
@@ -64,9 +65,24 @@ const Credits = styled.h5`
   font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.8;
 `
+
+const StepHeading = styled.h1`
+font-family: 'Archivo Black', Impact;
+font-size: 1.4rem;
+font-weight: bolder;
+color: #333333;
+text-align: center;
+margin-top: 1rem;
+letter-spacing: 1px;
+margin-bottom: 4rem
+line-height: 1.3;
+padding-left: 2rem;
+animation: ${fadeInRight} ease 1.2s forwards;
+`
+
 
 const Intro = () => (
   <>
@@ -77,7 +93,7 @@ const Intro = () => (
       }}
     >
       <RainbowText>
-        <i style={{ paddingLeft: `1rem` }}>
+        <i style={{ paddingLeft: `8%` }}>
           Mary Wollstonecraft said of herself:
         </i>
         <br />
@@ -86,7 +102,7 @@ const Intro = () => (
             fontSize: `1.4em`,
             letterSpacing: `2px`,
             fontWeight: `normal`,
-            paddingLeft: `1rem`,
+            paddingLeft: `8%`,
           }}
         >
           "I am then going to be the first of a new genus …"
@@ -99,23 +115,12 @@ const Intro = () => (
         paddingBottom: `8rem`,
       }}
     >
-      <h1
-        style={{
-          textAlign: `center`,
-          paddingTop: `-5%`,
-          fontFamily: `'Archivo Black', Impact`,
-          fontSize: `1.4rem`,
-          letterSpacing: `1px`,
-          lineHeight: `1.3`,
-          marginBottom: `4rem`,
-          color: `#333333`,
-        }}
-      >
+      <StepHeading>
         Who is <br />
-        <b style={{ fontSize: `1.8rem` }}>Mary Wollstonecraft?</b>
-      </h1>
+        <b style={{ fontSize: `1.6rem` }}>Mary Wollstonecraft?</b>
+      </StepHeading>
 
-      <article style={{ padding: `5% 8% 3% 8%` }}>
+      <article style={{ padding: `12% 8% 3% 8%` }}>
         <Credits>
           By Di Sherlock for her role as Mary Wollstonecraft <br />
           in Di’s Midsummer Night Party, 2000,
