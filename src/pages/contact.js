@@ -39,14 +39,14 @@ const OrgList = styled.ul`
   list-style: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const StyledLink = styled.a`
 font-weight: normal;
   z-index: 3;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -89,7 +89,7 @@ const MenuContrast = styled.div`
 `
 const ContactPage = () => {
   return (
-    <section style={{ fontFamily: `Roboto, 'Open Sans'` }}>
+    <section style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
       <SEO title="Contact" />
       <MenuContrast>
         <span></span>

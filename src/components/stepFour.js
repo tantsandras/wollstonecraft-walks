@@ -105,7 +105,7 @@ const Normal = styled.p`
 `
 
 const Credits = styled.h5`
-  font-family: Roboto, "Open Sans";
+  font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   font-weight: normal;
   font-size: 1rem;
@@ -151,7 +151,7 @@ class Step4 extends React.Component {
         <article
           style={{
             padding: `5% 10% 3% 10%`,
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
           }}
         >
           <ul style={{ listStyle: `none` }}>

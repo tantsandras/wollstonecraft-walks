@@ -8,7 +8,7 @@ import HeritageLogo from "../components/heritageLogo"
 const element = {
   gridTemplateColumns: `repeat(5, 1fr)`,
   gridTemplateRows: `repeat(5, 300px)`,
-  fontFamily: `Roboto, 'Open Sans'`,
+  fontFamily: `Helvetica, Roboto, 'Open Sans'`,
   textAlign: `center`,
 }
 
@@ -176,7 +176,7 @@ const Footer = () => (
       <div style={element}>
         <h4
           style={{
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             fontSize: `1rem`,
             color: `white`,
             textTransform: `uppercase`,

@@ -104,7 +104,7 @@ const Block = styled.blockquote`
 line-height: 1.8;
 `
 const Credits = styled.h5`
-font-family: Roboto, 'Open Sans';
+font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
 font-size: 1rem;
@@ -132,7 +132,7 @@ class Step2 extends React.Component {
         <StepHeading>
           Lizzy&#39;s on the Green
         </StepHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <SubHeading>Back to the directions -</SubHeading>
           <br />
           <ul style={{ listStyle: `none` }}>

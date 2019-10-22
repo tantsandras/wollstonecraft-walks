@@ -63,7 +63,7 @@ min-height: 5em;
 `
 
 const Credits = styled.h5`
-font-family: Roboto, 'Open Sans';
+font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
 font-size: 1rem;
@@ -88,7 +88,7 @@ const Intro = () => (
         </RainbowText>
       </Quote>
     </div>
-    <main style={{ fontFamily: `Roboto, 'Open Sans'`, paddingBottom: `8rem` }}>
+    <main style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'`, paddingBottom: `8rem` }}>
       <h1
         style={{
           textAlign: `center`,

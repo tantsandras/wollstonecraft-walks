@@ -66,7 +66,7 @@ class Flyers extends React.Component {
           >
             <i
               style={{
-                fontFamily: `Roboto, 'Open Sans'`,
+                fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                 fontSize: `1rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
@@ -80,7 +80,7 @@ class Flyers extends React.Component {
             <br />
             <i
               style={{
-                fontFamily: `Roboto, 'Open Sans'`,
+                fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                 fontSize: `1rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,

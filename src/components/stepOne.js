@@ -117,7 +117,7 @@ min-height: 5em;
 }
 `
 const Credits = styled.h5`
-font-family: Roboto, 'Open Sans';
+font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
 font-size: 1rem;
@@ -142,7 +142,7 @@ class Step1 extends React.Component {
         <StepHeading>
           The Mildmay Club
         </StepHeading>
-        <article style={{ padding: `10% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
+        <article style={{ padding: `10% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <section style={{ paddingBottom: `3rem` }}>
             
                 <Credits style={{borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Wollstonecraft Walks Guide </Credits> <Normal>Researched and written by Anna Birch and Rebecca Mordan.</Normal>

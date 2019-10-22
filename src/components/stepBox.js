@@ -72,7 +72,9 @@ class StepBox extends React.Component {
       <>
         {stepList.map((item, key) => {
           return (
-            <Link
+
+              <Box key={key}>
+                          <Link
               key={key}
               to={`/${item.num}`}
               style={{
@@ -80,7 +82,6 @@ class StepBox extends React.Component {
                 textDecoration: `none`,
               }}
             >
-              <Box key={key}>
                 <h3
                   style={{
                     fontSize: `1.2rem`,
@@ -96,8 +97,9 @@ class StepBox extends React.Component {
                   {item.title}
                 </h3>
                 <i style={arrow}></i>
+                </Link>
               </Box>
-            </Link>
+
           )
         })}
       </>

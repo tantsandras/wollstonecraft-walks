@@ -52,7 +52,7 @@ const Videos = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Roboto, "Open Sans";
+  font-family: Helvetica, Roboto, "Open Sans";
 `
 const SoundBox = styled.li`
   padding: 2rem;
@@ -96,7 +96,7 @@ const PageHeading = styled.div`
 
 const PdfLink = styled.a`
   color: #fffeff;
-  font-family: Roboto, "Open Sans";
+  font-family: Helvetica, Roboto, "Open Sans";
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -139,7 +139,7 @@ class Media extends React.Component {
         <article
           style={{
             padding: `5% 10% 3% 10%`,
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             background: `url("${Quote7}") right 10% top 20%/30% no-repeat`,
           }}
         >
@@ -224,7 +224,7 @@ class Media extends React.Component {
           </VideoList>
         </article>
         <article
-          style={{ padding: `5% 10% 0% 4%`, fontFamily: `Roboto, 'Open Sans'` }}
+          style={{ padding: `5% 10% 0% 4%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
         >
           <Videos>
             <VideoList>
@@ -294,7 +294,7 @@ class Media extends React.Component {
         <article
           style={{
             padding: `5% 10% 3% 10%`,
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             background: `url("${Quote5}") right 10% top 20%/30% no-repeat`,
           }}
         >

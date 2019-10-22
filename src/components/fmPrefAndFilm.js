@@ -49,7 +49,7 @@ const Videos = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
 `
 
 const MainHeading = styled.h1`
@@ -79,7 +79,7 @@ const Box = styled.li`
 
 const PdfLink = styled.a`
   color: #241e20;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -102,7 +102,7 @@ const Heading = styled.h2`
 class FmPrefAndFilm extends React.Component {
   render() {
     return (
-      <main style={{ fontFamily: `Roboto, 'Open Sans'`, color: `#333333` }}>
+      <main style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'`, color: `#333333` }}>
         <MainHeading>
           Fragments & Monuments
           <br />
@@ -121,7 +121,7 @@ class FmPrefAndFilm extends React.Component {
         <article
           style={{
             padding: `0% 10% 0% 10%`,
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             background: `url("${QuoteAnne}") right 10% top 30%/30% no-repeat`,
           }}
         >
@@ -177,7 +177,7 @@ class FmPrefAndFilm extends React.Component {
         <article
           style={{
             padding: `2% 10% 3% 10%`,
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             background: `url("${MOW}") right 10% top 50%/30% no-repeat`,
             color: `#241E20`,
           }}
@@ -458,7 +458,7 @@ class FmPrefAndFilm extends React.Component {
         <ul
           style={{
             padding: `0% 10% 0% 10%`,
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             color: `#241E20`,
             display: `grid`,
             gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
@@ -577,7 +577,7 @@ class FmPrefAndFilm extends React.Component {
         <article
           style={{
             padding: `6% 10% 1% 10%`,
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             background: `url("${QuoteAudre}") right 10% top 40%/30% no-repeat`,
           }}
         >

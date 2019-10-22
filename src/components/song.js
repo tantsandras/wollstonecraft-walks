@@ -7,7 +7,7 @@ const Collapse = styled.button`
   font-size: 18px;
   background: #1451ad;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffd0d0;
@@ -107,7 +107,7 @@ class Song extends React.Component {
             </h4>
             <p
               style={{
-                fontFamily: `Roboto, 'Open Sans'`,
+                fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                 marginBottom: `4rem`,
                 marginLeft: `1.5rem`,
                 fontSize: `0.8rem`,
@@ -119,7 +119,7 @@ class Song extends React.Component {
             </p>
             <p
               style={{
-                fontFamily: `Roboto, 'Open Sans'`,
+                fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                 marginBottom: `2rem`,
                 textAlign: `center`,
                 transform: `translateY(-20px)`,
@@ -136,7 +136,7 @@ class Song extends React.Component {
 
         {this.state.isActive && (
           <article
-            style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}
+            style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
           >
             <Collapse onClick={this.handleClick}>
               Collapse<i style={arrow}></i>
@@ -147,7 +147,7 @@ class Song extends React.Component {
               </h4>
               <p
                 style={{
-                  fontFamily: `Roboto, 'Open Sans'`,
+                  fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                   marginBottom: `2rem`,
                   marginLeft: `1rem`,
                 }}

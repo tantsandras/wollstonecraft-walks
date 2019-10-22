@@ -25,7 +25,7 @@ position: relative;
 
 const PdfLink = styled.a`
 color: #333333;
-font-family: Roboto, 'Open Sans';
+font-family: Helvetica, Roboto, 'Open Sans';
 text-decoration: none;
 font-size: 1rem;
 &:hover {
@@ -76,7 +76,7 @@ class Pages extends React.Component {
                 <br />
                 <i
                   style={{
-                    fontFamily: `Roboto, 'Open Sans'`,
+                    fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                     fontSize: `1rem`,
                     textAlign: `center`,
                     letterSpacing: `1px`,

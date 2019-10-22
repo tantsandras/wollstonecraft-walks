@@ -6,7 +6,7 @@ const Back = styled.button`
   padding: 0.5rem 0.6rem 0.4rem 2rem;
   font-size: 16px;
   background: white;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   text-align: center;
   letter-spacing: 0.04em;
   color: black;

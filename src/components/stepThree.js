@@ -83,7 +83,7 @@ const Normal = styled.p`
 line-height: 1.8;
 `
 const Credits = styled.h5`
-font-family: Roboto, 'Open Sans';
+font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
 font-size: 1rem;
@@ -116,7 +116,7 @@ class Step3 extends React.Component {
         <StepHeading>
           Mary on the Green memorial site
         </StepHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
+        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF0000"}></Arrow>
@@ -170,7 +170,7 @@ class Step3 extends React.Component {
             give generously to the Mary On the Green memorial fund.
           </Normal>
           </article>
-          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'`}}>
+          <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'`}}>
           <SubHeading style={{ marginTop: `2rem`}}>
             Listen - a walking memorial
           </SubHeading>

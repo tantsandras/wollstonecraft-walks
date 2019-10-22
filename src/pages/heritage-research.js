@@ -45,7 +45,7 @@ const Heading = styled.h2`
 `
 const PdfLink = styled.a`
   color: #241e20;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -60,7 +60,7 @@ const HeritageResearchPage = props => {
     console.log(data)
   }
   return (
-    <section style={{ fontFamily: `Roboto, 'Open Sans'` }}>
+    <section style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
       <SEO title="Heritage Research" />
       <Menu />
       <article style={{ padding: `0% 10% 10% 10%` }}>

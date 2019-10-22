@@ -25,7 +25,7 @@ const PodList = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
 `
 const Normal = styled.p`
 line-height: 1.8;
@@ -48,7 +48,7 @@ class Pods extends React.Component {
         >
           Wollstonecraft Walks Podcast
         </h1>
-        <h2 style={{fontFamily: `Roboto, 'Open Sans'`, fontWeight: `normal`, letterSpacing: `2px`, lineHeight: `2`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
+        <h2 style={{fontFamily: `Helvetica, Roboto, 'Open Sans'`, fontWeight: `normal`, letterSpacing: `2px`, lineHeight: `2`, fontSize: `1rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
         <PodList>
           <PodBox>
             <h3

@@ -8,7 +8,7 @@ const Back = styled(Link)`
   font-size: 22px;
   background: #1451ad;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-  font-family: Roboto, "Open Sans";
+  font-family: Helvetica, Roboto, "Open Sans";
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffd0d0;
@@ -131,7 +131,7 @@ const Block = styled.blockquote`
   line-height: 1.8;
 `
 const Credits = styled.h5`
-  font-family: Roboto, "Open Sans";
+  font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
 
   font-size: 1rem;
@@ -176,7 +176,7 @@ class Step5 extends React.Component {
         <article
           style={{
             padding: `5% 10% 3% 10%`,
-            fontFamily: `Roboto, 'Open Sans'`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
           }}
         >
           <ul style={{ listStyle: `none` }}>

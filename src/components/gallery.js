@@ -137,7 +137,7 @@ class Gallery extends React.Component {
                 style={{
                   letterSpacing: `2px`,
                   fontSize: `1.6rem`,
-                  fontFamily: `Roboto, 'Open Sans'`,
+                  fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                   marginTop: `4rem`,
                   fontWeight: `normal`
                 }}

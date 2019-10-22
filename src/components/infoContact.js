@@ -40,7 +40,7 @@ const Heading = styled.h3`
 `
 
 const SubHeading = styled.h4`
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   letter-spacing: 2px;
   line-height: 2;
   

@@ -38,14 +38,14 @@ const ArtList = styled.ul`
   cursor: pointer;
   list-style: none;
   letter-spacing: 1px;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   margin-bottom: 4rem;
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 const StyledLink = styled.a`
 font-weight: normal;
   z-index: 3;
-  font-family: Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, 'Open Sans';
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -110,7 +110,7 @@ line-height: 1.8;
 `
 
 const Credits = styled.h5`
-font-family: Roboto, 'Open Sans';
+font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
 font-size: 1rem;
@@ -119,7 +119,7 @@ line-height: 1.8;
 
 const ArtistList = () => {
   return (
-    <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Roboto, 'Open Sans'` }}>
+    <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
       <ArtList>
         <li>
           <StyledLink
