@@ -64,6 +64,7 @@ const GalleryPage = props => {
                   fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                   fontWeight: `normal`,
                   marginTop: `4rem`,
+                  marginBottom: `2rem`
                 }}
               >
                 {data.subheading}
