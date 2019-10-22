@@ -38,7 +38,7 @@ class Pods extends React.Component {
         <h1
           style={{
             fontFamily: `'Archivo Black', Impact`,
-            fontSize: `1.8rem`,
+            fontSize: `1.7rem`,
             textAlign: `center`,
             marginTop: `8rem`,
             letterSpacing: `1px`,
