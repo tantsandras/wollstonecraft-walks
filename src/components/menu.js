@@ -55,6 +55,7 @@ const animation2 = css`
 `
 
 const NavActive = styled.div`
+  overflow: scroll;
   z-index: 2;
   text-transform: uppercase;
   text-decoration: none;
@@ -66,20 +67,22 @@ const NavActive = styled.div`
   right: 0%;
   background: #fadadd;
   boxshadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 1px;
   animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const StyledLink = styled(Link)`
+display: block;
   z-index: 3;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 1px;
   text-decoration: none;
   opacity: 0;
   color: #656565;
+  width: 100%;
   animation: ${fadeInRight} ease 0.6s forwards;
   animation-delay: 0.2s;
   &:hover {
@@ -89,6 +92,17 @@ const StyledLink = styled(Link)`
   }
 `
 
+const HoverLi = styled.li`
+padding-top: 1.4rem;
+padding-bottom: 0.4rem;
+width: 100%;
+&:hover {
+  text-decoration: none;
+  color: Crimson;
+  cursor: pointer;
+}
+`
+
 const Second = styled.div`
   z-index: 3;
   animation-delay: 0.8s;
@@ -96,7 +110,7 @@ const Second = styled.div`
   width: 100%;
   margin: 0em 1rem 2.4rem 0em;
   height: 0.06em;
-  background-color: black;
+  background-color: #656565;
   transform: scaleX(0);
   transform-origin: left;
   animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
@@ -129,6 +143,7 @@ const StyledLogo = styled.img`
   top: 15px;
   cursor: pointer;
   outline: none;
+  animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const activeStyle = {
@@ -166,74 +181,90 @@ class Menu extends React.Component {
           {this.state.isActive && (
             <NavActive>
               <NavList>
-                <StyledLink to="/" activeStyle={activeStyle}>
-                  {"Home"}
+                <HoverLi>
+                  <StyledLink to="/" activeStyle={activeStyle}>
+                    {"Home"}
 
-                  <Second></Second>
-                </StyledLink>
-                <StyledLink
-                  to="/podcast"
-                  activeStyle={activeStyle}
-                  style={{ animationDelay: `0.4s` }}
-                >
-                  {"Podcast"}
+                    <Second></Second>
+                  </StyledLink>
+                </HoverLi>
+                <HoverLi>
+                  <StyledLink
+                    to="/podcast"
+                    activeStyle={activeStyle}
+                    style={{ animationDelay: `0.4s` }}
+                  >
+                    {"Podcast"}
 
-                  <Second style={{ animationDelay: `0.6s` }}></Second>
-                </StyledLink>
-                <StyledLink
-                  to="/media"
-                  activeStyle={activeStyle}
-                  style={{ animationDelay: `0.6s` }}
-                >
-                  {"Media"}
+                    <Second style={{ animationDelay: `0.6s` }}></Second>
+                  </StyledLink>
+                </HoverLi>
+                <HoverLi>
+                  <StyledLink
+                    to="/media"
+                    activeStyle={activeStyle}
+                    style={{ animationDelay: `0.6s` }}
+                  >
+                    {"Media"}
 
-                  <Second style={{ animationDelay: `0.8s` }}></Second>
-                </StyledLink>
-                <StyledLink
-                  to="/gallery"
-                  activeStyle={activeStyle}
-                  style={{ animationDelay: `0.8s` }}
-                >
-                  {"Gallery"}
+                    <Second style={{ animationDelay: `0.8s` }}></Second>
+                  </StyledLink>
+                </HoverLi>
+                <HoverLi>
+                  <StyledLink
+                    to="/gallery"
+                    activeStyle={activeStyle}
+                    style={{ animationDelay: `0.8s` }}
+                  >
+                    {"Gallery"}
 
-                  <Second style={{ animationDelay: `1s` }}></Second>
-                </StyledLink>
-                <StyledLink
-                  to="/heritage-research"
-                  activeStyle={activeStyle}
-                  style={{ animationDelay: `1s` }}
-                >
-                  {"Heritage Research"}
+                    <Second style={{ animationDelay: `1s` }}></Second>
+                  </StyledLink>
+                </HoverLi>
+                <HoverLi>
+                  <StyledLink
+                    to="/heritage-research"
+                    activeStyle={activeStyle}
+                    style={{ animationDelay: `1s` }}
+                  >
+                    {"Heritage Research"}
 
-                  <Second style={{ animationDelay: `1.2s` }}></Second>
-                </StyledLink>
-                <StyledLink
-                  to="/artists"
-                  activeStyle={activeStyle}
-                  style={{ animationDelay: `1.2s` }}
-                >
-                  {"Artists"}
+                    <Second style={{ animationDelay: `1.2s` }}></Second>
+                  </StyledLink>
+                </HoverLi>
+                <HoverLi>
+                  <StyledLink
+                    to="/artists"
+                    activeStyle={activeStyle}
+                    style={{ animationDelay: `1.2s` }}
+                  >
+                    {"Artists"}
 
-                  <Second style={{ animationDelay: `1.4s` }}></Second>
-                </StyledLink>
-                <StyledLink
-                  to="/contact"
-                  activeStyle={activeStyle}
-                  style={{ animationDelay: `1.4s` }}
-                >
-                  {"Contact"}
+                    <Second style={{ animationDelay: `1.4s` }}></Second>
+                  </StyledLink>
+                </HoverLi>
+                <HoverLi>
+                  <StyledLink
+                    to="/contact"
+                    activeStyle={activeStyle}
+                    style={{ animationDelay: `1.4s` }}
+                  >
+                    {"Contact"}
 
-                  <Second style={{ animationDelay: `1.6s` }}></Second>
-                </StyledLink>
-                <StyledLink
-                  to="/fm-preformance-and-film-archive"
-                  activeStyle={activeStyle}
-                  style={{ animationDelay: `1.6s` }}
-                >
-                  {"Fragments & Monuments"} <br></br>{" "}
-                  {"performance and film archive"}
-                  <Second style={{ animationDelay: `1.8s` }}></Second>
-                </StyledLink>
+                    <Second style={{ animationDelay: `1.6s` }}></Second>
+                  </StyledLink>
+                </HoverLi>
+                <HoverLi>
+                  <StyledLink
+                    to="/fm-preformance-and-film-archive"
+                    activeStyle={activeStyle}
+                    style={{ animationDelay: `1.6s` }}
+                  >
+                    {"Fragments & Monuments"} <br></br>{" "}
+                    {"performance and film archive"}
+                    <Second style={{ animationDelay: `1.8s` }}></Second>
+                  </StyledLink>
+                </HoverLi>
               </NavList>
             </NavActive>
           )}
