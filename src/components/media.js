@@ -42,7 +42,7 @@ const MainHeading = styled.h1`
   margin-top: -10rem;
   padding-left: 8rem;
   color: #333333;
-  animation: ${fadeInRight} ease 1.4s forwards;
+  animation: ${fadeInRight} ease 1.6s forwards;
 `
 
 const Video = styled.iframe`
@@ -155,7 +155,7 @@ class Media extends React.Component {
           style={{
             padding: `3% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote7}") right 16% top 20%/30% no-repeat`,
+            background: `url("${Quote7}") right 16% bottom 20%/30% no-repeat`,
           }}
         >
           <Videos>

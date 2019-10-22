@@ -2,6 +2,17 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import Photos from "../components/photoAlbum"
 
+const fadeInRight = keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const Wrapper = styled.div`
   margin-top: 4rem;
   background-size: cover;
@@ -27,6 +38,7 @@ const PageCircle = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   margin-top: 4rem;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 const PageHeading = styled.div`
   width: 200px;
@@ -42,6 +54,19 @@ const PageHeading = styled.div`
   -webkit-clip-path: circle(50%);
   -webkit-shape-outside: circle(20em);
   shape-outside: circle(20em);
+  animation: ${fadeInRight} ease 1.2s forwards;
+`
+
+const MainHeading = styled.h1`
+font-family: 'Archivo Black', Impact;
+letter-spacing: 1px;
+text-align: center;
+font-size: 2.2rem;
+margin-top: -5.6rem;
+padding-left: 6.4rem;
+margin-bottom: 14rem;
+color: #333333;
+animation: ${fadeInRight} ease 1.6s forwards;
 `
 class Gallery extends React.Component {
   constructor() {
@@ -102,20 +127,9 @@ class Gallery extends React.Component {
         <PageCircle>
           <PageHeading></PageHeading>
         </PageCircle>
-        <h1
-          style={{
-            fontFamily: `'Archivo Black', Impact`,
-            letterSpacing: `1px`,
-            textAlign: `center`,
-            fontSize: `2.2rem`,
-            marginTop: `-5.6rem`,
-            paddingLeft: `6.4rem`,
-            marginBottom: `14rem`,
-            color: `#333333`,
-          }}
-        >
+        <MainHeading>
           Gallery.
-        </h1>
+        </MainHeading>
         <Wrapper className="grid">
           <div className="content">
             <h2
