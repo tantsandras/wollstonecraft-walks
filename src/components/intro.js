@@ -18,8 +18,9 @@ const Quote = styled.div`
 `
 
 const RainbowText = styled.p`
+font-family: Helvetica, Roboto, 'Open Sans';
   z-index: 2;
-  line-heigth: 1.4em;
+  line-heigth: 1.8em;
   padding: 1rem;
   font-size: 0.9em;
   margin-top: 80px;
@@ -28,10 +29,10 @@ const RainbowText = styled.p`
   background-image: linear-gradient(
     to bottom,
     #5d00ff,
-    #5d00ff 52px,
-    #ff008a 82px,
-    #ff008a 94px,
-    #0031ad 86px,
+    #5d00ff 62px,
+    #ff008a 62px,
+    #ff008a 112px,
+    #0031ad 106px,
     #0031ad
   );
 `
@@ -82,7 +83,7 @@ const Intro = () => (
         <RainbowText>
           <i>Mary Wollstonecraft said of herself:</i>
           <br />
-          <p style={{ fontSize: `1.6em`, lineHeight: `1em` }}>
+          <p style={{ fontSize: `1.4em`, lineHeight: `1.8`, letterSpacing: `2px`, fontWeight: `normal` }}>
             "I am then going to be the first of a new genus …"
           </p>
         </RainbowText>
@@ -97,7 +98,8 @@ const Intro = () => (
           fontSize: `1.6rem`,
           letterSpacing: `1px`,
           lineHeight: `1.3`,
-          marginBottom: `6rem`
+          marginBottom: `6rem`,
+          color: `#333333`,
         }}
       >
         Who is <br /><b style={{fontSize: `2rem`,}}>Mary Wollstonecraft?</b>
