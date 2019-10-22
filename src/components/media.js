@@ -120,13 +120,13 @@ const Normal = styled.p`
 
 const Inspirational = ({ id }) => (
   <PdfLink
-  id={id}
-  href="https://drive.google.com/uc?export=download&id=1ZyQY91Vzcy1-pJtqIvkeEPAwROeDpnBm"
-  download
->
-  Click here to download Inspirational Quotes
-</PdfLink>
-);
+    id={id}
+    href="https://drive.google.com/uc?export=download&id=1ZyQY91Vzcy1-pJtqIvkeEPAwROeDpnBm"
+    download
+  >
+    Click here to download Inspirational Quotes
+  </PdfLink>
+)
 
 class Media extends React.Component {
   render() {
@@ -140,7 +140,7 @@ class Media extends React.Component {
           style={{
             padding: `5% 10% 3% 10%`,
             fontFamily: `Roboto, 'Open Sans'`,
-            background: `url("${Quote7}") right 10% top 30%/30% no-repeat`,
+            background: `url("${Quote7}") right 10% top 20%/30% no-repeat`,
           }}
         >
           <Videos>
@@ -201,10 +201,13 @@ class Media extends React.Component {
                 ></Video>
               </Overlay>
             </VideoList>
+            <div style={{marginRight: `10%`, marginBottom: `5rem`}}>
+              <Flyer />
+            </div>
           </Videos>
         </article>
         <article style={{ padding: `2% 10% 2% 10%` }}>
-          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+          <VideoList maxWidth="640px" style={{ float: `left`, marginTop: `5rem` }}>
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
               <Video
                 src="https://drive.google.com/file/d/1fD7C4xO-ZyFRFEAukWJirMvTdBrxMv6k/preview"
@@ -292,7 +295,7 @@ class Media extends React.Component {
           style={{
             padding: `5% 10% 3% 10%`,
             fontFamily: `Roboto, 'Open Sans'`,
-            background: `url("${Quote5}") right 10% top 30%/30% no-repeat`,
+            background: `url("${Quote5}") right 10% top 20%/30% no-repeat`,
           }}
         >
           <Videos>

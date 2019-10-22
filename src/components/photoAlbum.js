@@ -30,6 +30,7 @@ class Photos extends React.Component {
               edges {
                 node {
                   childImageSharp {
+                    id
                     fluid(maxWidth: 800) {
                       ...GatsbyImageSharpFluid
                     }
@@ -62,7 +63,7 @@ class Photos extends React.Component {
               <div className="item">
                 <Image className="content">
                   <Img
-                    key={photo.node.childImageSharp.fluid.src}
+                    key={photo.node.childImageSharp.fluid.id}
                     fluid={photo.node.childImageSharp.fluid}
                   />
                 </Image>
