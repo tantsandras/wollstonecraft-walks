@@ -44,7 +44,7 @@ const Videos = styled.ul`
   display: grid;
   grid-template-columns: repeat(1, minmax(300px, 2fr));
   grid-gap: 1rem;
-  padding: 6rem 2rem 4rem 2rem;
+  padding: 6rem 0rem 4rem 0rem;
   column-gap: 4%;
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
@@ -120,7 +120,7 @@ class FmPrefAndFilm extends React.Component {
         </MainHeading>
         <article
           style={{
-            padding: `0% 10% 0% 10%`,
+            padding: `0% 8% 0% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             background: `url("${QuoteAnne}") right 10% top 30%/30% no-repeat`,
           }}
@@ -176,7 +176,7 @@ class FmPrefAndFilm extends React.Component {
         </article>
         <article
           style={{
-            padding: `2% 10% 3% 10%`,
+            padding: `2% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             background: `url("${MOW}") right 10% top 50%/30% no-repeat`,
             color: `#241E20`,

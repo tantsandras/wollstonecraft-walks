@@ -47,7 +47,7 @@ const Videos = styled.ul`
   display: grid;
   grid-template-columns: repeat(1, minmax(300px, 2fr));
   grid-gap: 1rem;
-  padding: 6rem 2rem 4rem 2rem;
+  padding: 6rem 0rem 4rem 0rem;
   column-gap: 4%;
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
@@ -139,12 +139,13 @@ class Media extends React.Component {
         <MainHeading>Media.</MainHeading>
         <article
           style={{
-            padding: `5% 10% 3% 10%`,
+            padding: `3% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote7}") right 16% top 20%/30% no-repeat`,
+            background: `url("${Quote7}") right 16% bottom 20%/30% no-repeat`,
           }}
         >
           <Videos>
+            <VideoList style={{maxWidth: `100vw`, marginTop: `-5rem`, marginBottom: `6rem`, background: `none`, border: `none`, boxShadow: `none`}}><Flyer /></VideoList>
             <VideoList>
               <Heading>
                 Wollstonecraft Walks
@@ -202,13 +203,10 @@ class Media extends React.Component {
                 ></Video>
               </Overlay>
             </VideoList>
-            <div style={{marginRight: `10%`, marginBottom: `5rem`}}>
-              <Flyer />
-            </div>
           </Videos>
         </article>
         <article style={{ padding: `2% 10% 8% 10%` }}>
-          <VideoList maxWidth="640px" style={{ float: `left`, marginTop: `5rem` }}>
+          <VideoList maxWidth="640px" style={{margin: `0 auto`}}>
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
               <Video
                 src="https://drive.google.com/file/d/1fD7C4xO-ZyFRFEAukWJirMvTdBrxMv6k/preview"
@@ -225,7 +223,7 @@ class Media extends React.Component {
           </VideoList>
         </article>
         <article
-          style={{ padding: `15% 10% 0% 4%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
+          style={{ padding: `1% 10% 0% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
         >
           <Videos>
             <VideoList>
@@ -267,7 +265,7 @@ class Media extends React.Component {
             </VideoList>
           </Videos>
         </article>
-        <article style={{ padding: `0% 10% 0% 10%` }}>
+        <article style={{ padding: `0% 8% 0% 8%` }}>
           <SoundBox>
             <Heading>Wollstonecraft Walks Soundscape</Heading>
             <p

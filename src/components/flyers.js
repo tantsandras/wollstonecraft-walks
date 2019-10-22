@@ -52,8 +52,8 @@ class Flyers extends React.Component {
   render() {
     return (
       <>
-        <section
-          style={{ float: `right`, color: `#241E20`, marginBottom: `10rem`, height: `auto`}}
+        <div
+          style={{float: `right`, color: `#241E20`, marginBottom: `10rem`, height: `auto`}}
         >
           <h2
             style={{
@@ -62,6 +62,7 @@ class Flyers extends React.Component {
               textAlign: `center`,
               letterSpacing: `1px`,
               lineHeight: `2`,
+              color: `#333333`,
             }}
           >
             <i
@@ -85,6 +86,7 @@ class Flyers extends React.Component {
                 textAlign: `center`,
                 letterSpacing: `1px`,
                 marginTop: `1rem`,
+                color: `#333333`,
               }}
             >
               Click to see back
@@ -92,7 +94,7 @@ class Flyers extends React.Component {
           </h2>
 
           <Card onClick={this.flipCard}>
-            <CardFront style={{ maxWidth: `640px` }}>
+            <CardFront style={{ maxWidth: `640px`}}>
               <img
                 src={FrontImage}
                 alt="front of flyer for Wollstonecraft Walks"
@@ -105,7 +107,7 @@ class Flyers extends React.Component {
               />
             </CardBack>
           </Card>
-        </section>
+        </div>
       </>
     )
   }
