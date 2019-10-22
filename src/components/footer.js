@@ -56,7 +56,6 @@ const pinkBubble = {
   overflow: `hidden`,
 }
 
-
 const FooterGrid = styled.section`
   width: 100%;
   padding: 6rem 4rem;
@@ -183,34 +182,58 @@ const Footer = () => (
             letterSpacing: `2px`,
             lineHeight: `2`,
             marginTop: `3rem`,
-            fontWeight: `normal`
+            fontWeight: `normal`,
           }}
         >
           A collaboration between
         </h4>
       </div>
       <div style={element}>
-        <Bubble>
-          {" "}
-          <ScaryLogo />{" "}
-        </Bubble>
+        <a
+          href="https://scarylittlegirls.co.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Bubble>
+            {" "}
+            <ScaryLogo />{" "}
+          </Bubble>
+        </a>
       </div>
 
       <div style={element}>
         <div style={pinkBubble}>
-          {" "}
-          <StokeLogo />{" "}
+          <a
+            href="http://www.stokenewingtonliteraryfestival.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <StokeLogo />{" "}
+          </a>
         </div>
       </div>
       <div style={element}>
-        <Bubble>
-          <HeritageLogo />{" "}
-        </Bubble>
+        <a
+          href="https://www.heritagefund.org.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Bubble>
+            <HeritageLogo />{" "}
+          </Bubble>
+        </a>
       </div>
       <div style={element}>
-        <div style={fmBubble}>
-          <FmLogo />{" "}
-        </div>
+        <a
+          href="http://wollstonecraftlive.com/fm/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div style={fmBubble}>
+            <FmLogo />{" "}
+          </div>
+        </a>
       </div>
     </FooterGrid>
   </FooterPolyglon>

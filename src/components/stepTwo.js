@@ -132,7 +132,7 @@ class Step2 extends React.Component {
         <StepHeading>
           Lizzy&#39;s on the Green
         </StepHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
+        <article style={{ padding: `5% 8% 3% 8%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <SubHeading>Back to the directions -</SubHeading>
           <br />
           <ul style={{ listStyle: `none` }}>

@@ -63,7 +63,7 @@ font-weight: normal;
 
 const Second = styled.div`
   align-self: left;
-  width: 40%;
+  width: 70%;
   margin: 0em 1rem 2.4rem 0em;
   height: 0.06em;
   background-color: pink;

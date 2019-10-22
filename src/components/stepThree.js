@@ -116,7 +116,7 @@ class Step3 extends React.Component {
         <StepHeading>
           Mary on the Green memorial site
         </StepHeading>
-        <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
+        <article style={{ padding: `5% 8% 3% 8%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <ul style={{ listStyle: `none` }}>
             <Direction>
               <Arrow color={"#FF0000"}></Arrow>

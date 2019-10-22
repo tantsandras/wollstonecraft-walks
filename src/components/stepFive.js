@@ -90,7 +90,7 @@ const Quote = styled.i`
     height: 3rem;
     content: "“";
     top: -1.6rem;
-    left: 1.4rem;
+    left: 1.6rem;
   }
 
   &:after {
@@ -99,7 +99,7 @@ const Quote = styled.i`
     position: absolute;
     height: 3rem;
     content: "”";
-    bottom: 0rem;
+    bottom: 0.4rem;
     right: 2.4rem;
   }
 `
@@ -175,7 +175,7 @@ class Step5 extends React.Component {
         <StepHeading>The Lady Mildmay Inn</StepHeading>
         <article
           style={{
-            padding: `5% 10% 3% 10%`,
+            padding: `15% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
           }}
         >
@@ -303,7 +303,7 @@ class Step5 extends React.Component {
           </Normal>
           <Normal
             style={{
-              margin: `1rem`,
+              margin: `0.4rem`,
               fontSize: `1.2rem`,
               letterSpacing: `2px`,
               lineHeight: `1.6`,

@@ -7,13 +7,13 @@ import Contact from "../components/infoContact"
 const Title = styled.div`
   background-color: rgba(255,255,255, 0.8);
   color: black;
-  font-size: 10vw;
+  font-size: 9vw;
   font-family: 'Archivo Black', Impact;
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0 auto;
   padding-top: 0.3rem;
-  width: 60%;
+  width: 57%;
   text-align: center;
   position: absolute;
   top: 2%;

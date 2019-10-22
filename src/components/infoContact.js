@@ -43,7 +43,7 @@ const SubHeading = styled.h4`
   font-family: Helvetica, Roboto, 'Open Sans';
   letter-spacing: 2px;
   line-height: 2;
-  
+  font-weight: normal;
   font-size: 0.8rem;
 `
 

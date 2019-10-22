@@ -49,9 +49,9 @@ const GalleryPage = props => {
               letterSpacing: `1px`,
               fontSize: `1.4rem`,
               textAlign: `left`,
-              marginTop: `4rem`,
+              marginTop: `8rem`,
               paddingBottom: `8rem`,
-              marginBottom: `8rem`,
+              marginBottom: `12rem`,
               lineHeight: `1.5`,
             }}
           >
@@ -64,16 +64,16 @@ const GalleryPage = props => {
                   fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                   fontWeight: `normal`,
                   marginTop: `4rem`,
-                  marginBottom: `2rem`
                 }}
               >
                 {data.subheading}
               </i>
           </h2>
+
         </div>
         <div className="item">
           <ImageWrapper className="content">
-            <img src={data.image} alt={data.description} style={{width: `100%`, height: `100%`}} />
+            <img src={data.image} alt={data.description} style={{width: `100%`, height: `auto`}} />
           </ImageWrapper>
         </div>
       </Wrapper>

@@ -142,7 +142,7 @@ class Step1 extends React.Component {
         <StepHeading>
           The Mildmay Club
         </StepHeading>
-        <article style={{ padding: `10% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
+        <article style={{ padding: `20% 8% 3% 8%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <section style={{ paddingBottom: `3rem` }}>
             
                 <Credits style={{borderLeft: `4px double #383790`, paddingLeft: `1rem`}}> Wollstonecraft Walks Guide </Credits> <Normal>Researched and written by Anna Birch and Rebecca Mordan.</Normal>
@@ -175,7 +175,7 @@ class Step1 extends React.Component {
           couple of pieces to get you in the mood!
           </Normal> 
           <br />
-          <Credits>
+          <Credits style={{marginTop: `2rem`}}>
             Excerpt from </Credits>
               <SubHeading>Vindication of the Rights of Woman (1792)</SubHeading> 
             <Credits>by Mary Wollstonecraft

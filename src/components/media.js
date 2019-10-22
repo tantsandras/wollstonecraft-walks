@@ -109,9 +109,10 @@ const Heading = styled.h2`
   font-family: "Archivo Black", Impact;
   padding-top: 2rem;
   letter-spacing: 1px;
-  line-height: 2;
+  line-height: 1.3;
   z-index: 2;
   text-align: center;
+  font-size: 1.4rem;
 `
 
 const Normal = styled.p`
@@ -150,7 +151,7 @@ class Media extends React.Component {
                 <br />
                 <i
                   style={{
-                    fontSize: `1rem`,
+                    fontSize: `0.9rem`,
                     letterSpacing: `2px`,
                     lineHeight: `2`,
                     textTransform: `uppercase`,
@@ -161,7 +162,7 @@ class Media extends React.Component {
               </Heading>
               <p
                 style={{
-                  fontSize: `1rem`,
+                  fontSize: `0.8rem`,
                   letterSpacing: `2px`,
                   lineHeight: `2`,
                   marginBottom: `3rem`,
@@ -231,7 +232,7 @@ class Media extends React.Component {
               <Heading>Wollstonecraft Live! 2018</Heading>
               <p
                 style={{
-                  fontSize: `1rem`,
+                  fontSize: `0.8rem`,
                   letterSpacing: `2px`,
                   lineHeight: `2`,
                   marginBottom: `3rem`,
@@ -271,7 +272,7 @@ class Media extends React.Component {
             <Heading>Wollstonecraft Walks Soundscape</Heading>
             <p
               style={{
-                fontSize: `1rem`,
+                fontSize: `0.8rem`,
                 letterSpacing: `2px`,
                 lineHeight: `2`,
                 textAlign: `center`,
@@ -303,7 +304,7 @@ class Media extends React.Component {
               <Heading>Living Literature Walks</Heading>
               <p
                 style={{
-                  fontSize: `1rem`,
+                  fontSize: `0.8rem`,
                   letterSpacing: `2px`,
                   lineHeight: `2`,
                   marginBottom: `3rem`,
@@ -324,9 +325,6 @@ class Media extends React.Component {
                   height="315"
                   src="https://www.youtube.com/embed/encRQA3e-Js"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
                 ></Video>
               </Overlay>
             </VideoList>
@@ -336,7 +334,7 @@ class Media extends React.Component {
                 <br />
                 <i
                   style={{
-                    fontSize: `1rem`,
+                    fontSize: `0.9rem`,
                     letterSpacing: `2px`,
                     lineHeight: `2`,
                     textTransform: `uppercase`,

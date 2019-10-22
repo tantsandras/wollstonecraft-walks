@@ -75,7 +75,7 @@ const QuotationMarks = styled.p`
     height: 3rem;
     content: "”";
     bottom: 1rem;
-    right: 3rem;
+    right: 0;
   }
 `
 
@@ -150,7 +150,7 @@ class Step4 extends React.Component {
         <StepHeading>Newington Green Primary School</StepHeading>
         <article
           style={{
-            padding: `5% 10% 3% 10%`,
+            padding: `5% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
           }}
         >

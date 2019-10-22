@@ -95,7 +95,7 @@ const Heading = styled.h2`
   z-index: 2;
   text-align: left;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #333333;
 `
 
@@ -115,7 +115,7 @@ class FmPrefAndFilm extends React.Component {
               paddingTop: `1rem`,
             }}
           >
-            Preformance and Film Archive
+            Performance and Film Archive
           </i>
         </MainHeading>
         <article

@@ -231,7 +231,7 @@ class Menu extends React.Component {
                   style={{ animationDelay: `1.6s` }}
                 >
                   {"Fragments & Monuments"} <br></br>{" "}
-                  {"preformance and film archive"}
+                  {"performance and film archive"}
                   <Second style={{ animationDelay: `1.8s` }}></Second>
                 </StyledLink>
               </NavList>

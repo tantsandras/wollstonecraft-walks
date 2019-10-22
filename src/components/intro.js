@@ -58,7 +58,7 @@ min-height: 5em;
   height: 3rem;
   content: '”';
   bottom: 0rem;
-  right: 2.4rem;
+  right: 0.4rem;
 }
 `
 
@@ -103,7 +103,7 @@ const Intro = () => (
         Who is <br /><b style={{fontSize: `2rem`,}}>Mary Wollstonecraft?</b>
       </h1>
 
-      <article style={{ padding: `5% 10% 3% 10%` }}>
+      <article style={{ padding: `5% 8% 3% 8%` }}>
       <Credits>
         By Di Sherlock for her role as Mary Wollstonecraft <br />in Di’s Midsummer
           Night Party, 2000,<br /> Stoke Newington Midsummer Festival
