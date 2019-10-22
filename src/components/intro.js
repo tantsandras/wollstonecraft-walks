@@ -14,7 +14,6 @@ const fadeInRight = keyframes`
   `
 
 const RainbowText = styled.p`
-  margin-top: -2rem;
   font-family: Helvetica, Roboto, "Open Sans";
   z-index: 2;
   line-height: 1.6;
@@ -90,10 +89,11 @@ const Intro = () => (
       style={{
         display: `grid`,
         justifyContent: `center`,
+        width: `100vw`,
       }}
     >
-      <RainbowText>
-        <i style={{ paddingLeft: `8%` }}>
+      <RainbowText style={{marginTop: `-250px`}}>
+        <i>
           Mary Wollstonecraft said of herself:
         </i>
         <br />
@@ -101,9 +101,7 @@ const Intro = () => (
           style={{
             fontSize: `1.4em`,
             letterSpacing: `2px`,
-            fontWeight: `normal`,
-            paddingLeft: `8%`,
-          }}
+            fontWeight: `normal`,}}
         >
           "I am then going to be the first of a new genus …"
         </p>
@@ -113,11 +111,11 @@ const Intro = () => (
       style={{
         fontFamily: `Helvetica, Roboto, 'Open Sans'`,
         paddingBottom: `8rem`,
+       marginTop: `-90px`
       }}
     >
       <StepHeading>
-        Who is <br />
-        <b style={{ fontSize: `1.6rem` }}>Mary Wollstonecraft?</b>
+        Who is <br />Mary Wollstonecraft?
       </StepHeading>
 
       <article style={{ padding: `10% 8% 3% 8%` }}>

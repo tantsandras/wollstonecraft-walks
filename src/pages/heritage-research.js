@@ -4,6 +4,7 @@ import Menu from "../components/menu"
 import styled, { keyframes } from "styled-components"
 import { graphql } from "gatsby"
 import "typeface-archivo-black"
+import Circles from "../components/circles"
 
 const turnVisible = keyframes`
 	from {
@@ -82,6 +83,7 @@ const HeritageResearchPage = props => {
     <section style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
       <SEO title="Heritage Research" />
       <Menu />
+      <Circles />
       <article style={{ padding: `0% 10% 10% 10%` }}>
         <MainHeading>
           Heritage Research.
