@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Wollstonecraft Walks`,
     keyword: `Mary Wollstonecraft, Wollstonecraft Walks, historiclondon, londonwalks, londonhistory, historicengland, exlorelondon`,
-    description: `A walkguide.`,
+    description: `A walkguide through Newington Green or virtually, about Mary Wollstonecraft.`,
     author: `Sandra Grahl`,
     siteUrl,
   },
