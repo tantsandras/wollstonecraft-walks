@@ -63,8 +63,7 @@ const MainHeading = styled.h1`
 const PodBox = styled.li`
   padding: 2rem;
   background: rgba(255, 255, 255, 0.98);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
   list-style: none;
   position: relative;
   max-width: 600px;
@@ -108,8 +107,8 @@ class Pods extends React.Component {
                 color: `#333333`,
               }}
             >
-              Wollstonecraft Walks <br /> <h4 style={{color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 1</i></h4>
-            </h3>
+              Wollstonecraft Walks</h3><h4 style={{textAlign: `center`, fontWeight: `normal`, color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 1</i></h4>
+            
             <Normal>
               Readings with walk context making walk experience
               accessible to a remote audience including people with access
@@ -136,8 +135,8 @@ class Pods extends React.Component {
                 color: `#333333`,
               }}
             >
-              Wollstonecraft Walks <br /> <h4 style={{color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 2</i></h4>
-            </h3>
+              Wollstonecraft Walks </h3> <h4 style={{textAlign: `center`, fontWeight: `normal`, color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 2</i></h4>
+            
             <Normal>
               Feedback from June 2019 audience at Stoke Newington Literary
               Festival
@@ -164,8 +163,8 @@ class Pods extends React.Component {
                 color: `#333333`,
               }}
             >
-              Wollstonecraft Walks <br /><h4 style={{color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 3</i></h4>
-            </h3>
+              Wollstonecraft Walks  </h3><h4 style={{textAlign: `center`, fontWeight: `normal`, color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 3</i></h4>
+           
 
             <Normal>
               Marina chats to Anna and Rebecca back stage about their project

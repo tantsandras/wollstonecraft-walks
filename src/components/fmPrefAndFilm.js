@@ -23,9 +23,8 @@ const ProjectHeading = styled.div`
 
 const VideoList = styled.li`
   padding: 2rem;
-  background: #fffeff;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #fffeff; 
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
   list-style: none;
   height: auto;
   color: #241e20;
@@ -78,8 +77,7 @@ const MainHeading = styled.h1`
 const Box = styled.li`
   padding: 1.6rem;
   background: #fffeff;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
   list-style: none;
   min-height: 220px;
   position: relative;
@@ -157,8 +155,8 @@ class FmPrefAndFilm extends React.Component {
               style={{
                 borderLeft: `2px solid crimson`,
                 borderTop: `2px solid crimson`,
-                borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
-                borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
+                borderBottom: `1px solid rgba(0, 0, 0, 0.2)`,
+                borderRight: `1px solid rgba(0, 0, 0, 0.2)`,
                 boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px crimson`,
               }}
             >
@@ -199,7 +197,7 @@ class FmPrefAndFilm extends React.Component {
           style={{
             padding: `2% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${MOW}") right 10% top 50%/36% no-repeat`,
+            background: `url("${MOW}") right 11% top 50%/32% no-repeat`,
             color: `#241E20`,
           }}
         >
@@ -249,8 +247,8 @@ class FmPrefAndFilm extends React.Component {
               style={{
                 borderLeft: `2px solid #0031AD`,
                 borderTop: `2px solid #0031AD`,
-                borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
-                borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
+                borderBottom: `1px solid rgba(0, 0, 0, 0.2)`,
+                borderRight: `1px solid rgba(0, 0, 0, 0.2)`,
                 boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #0031AD`,
               }}
             >
@@ -591,8 +589,8 @@ class FmPrefAndFilm extends React.Component {
               style={{
                 borderLeft: `2px solid #FF008A`,
                 borderTop: `2px solid #FF008A`,
-                borderBottom: `2px solid rgba(0, 0, 0, 0.2)`,
-                borderRight: `2px solid rgba(0, 0, 0, 0.2)`,
+                borderBottom: `1px solid rgba(0, 0, 0, 0.2)`,
+                borderRight: `1px solid rgba(0, 0, 0, 0.2)`,
                 boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #FF008A`,
               }}
             >

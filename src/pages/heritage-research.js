@@ -17,8 +17,7 @@ const turnVisible = keyframes`
 const PdfList = styled.li`
   padding: 2rem;
   background: #fffeff;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
   list-style: none;
   height: auto;
   color: #241e20;

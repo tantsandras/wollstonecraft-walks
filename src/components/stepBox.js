@@ -5,8 +5,7 @@ import { Link } from "gatsby"
 const Box = styled.li`
   padding: 1.4rem;
   background: #fffeff;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
   list-style: none;
   min-height: 210px;
   position: relative;
@@ -14,10 +13,8 @@ const Box = styled.li`
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
-
   &:hover {
     box-shadow: 0 0 0 3px rgb(255, 0, 0, 0.6);
-    border: 3px solid #ffd0d0;
   }
 `
 

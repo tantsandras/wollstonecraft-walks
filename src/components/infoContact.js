@@ -8,9 +8,8 @@ import Anna from "../components/anna.js"
 
 const Box = styled.li`
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.98);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #fffeff;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
   list-style: none;
   position: relative;
 `
