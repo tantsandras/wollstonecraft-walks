@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import MOW from "../images/posters/MoW Poster-1.jpg"
+import MOW from "../images/posters/MoW Poster-1 (1).jpg"
 import QuoteAnne from "../images/posters/Insprational Quotes_compressed-05.jpg"
 import QuoteAudre from "../images/posters/Insprational Quotes_compressed-12.jpg"
 

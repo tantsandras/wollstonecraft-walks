@@ -2,8 +2,8 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
 import Soundscape from "../audio/WL Walk soundscape.mp3"
-import Quote7 from "../images/posters/Quotes - vertical[1]-7.jpg"
-import Quote5 from "../images/posters/Quotes - vertical[1]-5.jpg"
+import Quote7 from "../images/posters/Quote1.jpg"
+import Quote5 from "../images/posters/Quote2.jpg"
 import Flyer from "../components/flyers"
 
 const fadeInRight = keyframes`
@@ -154,7 +154,7 @@ class Media extends React.Component {
           style={{
             padding: `3% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote7}") right 16% bottom 20%/30% no-repeat`,
+            background: `url("${Quote7}") right 16% bottom 20%/26% no-repeat`,
           }}
         >
           <Videos>
@@ -307,7 +307,7 @@ class Media extends React.Component {
           style={{
             padding: `5% 10% 3% 10%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote5}") right 16% top 20%/30% no-repeat`,
+            background: `url("${Quote5}") right 16% top 20%/26% no-repeat`,
           }}
         >
           <Videos>
