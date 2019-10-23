@@ -256,7 +256,7 @@ class AudioPlayer extends React.Component {
         )}
         <Player>
           <div style={element}>
-            <DoubleRewind onClick={() => this.player.currentTime--} 
+            <DoubleRewind label="Rewind" onClick={() => this.player.currentTime--} 
             />
           </div>
           <div style={element}>
@@ -280,7 +280,7 @@ class AudioPlayer extends React.Component {
             )}
           </div>
           <div style={element}>
-            <DoubleFastForward onClick={() => this.player.currentTime++} 
+            <DoubleFastForward label="Fast forward" onClick={() => this.player.currentTime++} 
             />
           </div>
 
