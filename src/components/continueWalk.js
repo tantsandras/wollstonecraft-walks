@@ -1,11 +1,11 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-
 const Continue = styled.button`
   padding: 0.6rem 2rem 0.6rem 1rem;
   font-size: 18px;
   background: #1451ad;
+  border: 2px solid white;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
   font-family: Helvetica, Roboto, 'Open Sans';
   text-align: center;
@@ -19,15 +19,14 @@ const Continue = styled.button`
     cursor: pointer;
     border: none;
     border-radius: 2px;
-    transition: background-color 0.2s ease;
-    -webkit-transition: background-color 0.2s ease-out;
-    -moz-transition: background-color 0.2s ease-out;
-    -o-transition: background-color 0.2s ease-out;    
+    transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out;    
 
     &:hover {
         background-color: #ff0000;
-        box-shadow: 0 0 0 2px rgb(255, 0, 0, 0.60);
-        border: 2px solid white;
+        box-shadow: 0 0 0 3px rgb(255, 0, 0, 0.60);
     }
 `
 

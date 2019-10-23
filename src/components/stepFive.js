@@ -21,6 +21,7 @@ const Back = styled(Link)`
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
   font-family: Helvetica, Roboto, "Open Sans";
   text-align: center;
+  border: 2px solid white;
   letter-spacing: 0.04em;
   color: #ffd0d0;
   text-transform: uppercase;
@@ -30,15 +31,15 @@ const Back = styled(Link)`
   cursor: pointer;
   border: none;
   border-radius: 2px;
-  transition: background-color 0.4s ease;
-  -webkit-transition: background-color 0.4s ease-out;
-  -moz-transition: background-color 0.4s ease-out;
-  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.6s ease;
+  -webkit-transition: background-color 0.6s ease-out;
+  -moz-transition: background-color 0.6s ease-out;
+  -o-transition: background-color 0.6s ease-out;
 
   &:hover {
     background-color: #ff0000;
     box-shadow: 0 0 0 2px rgb(255, 0, 0, 0.6);
-    border: 2px solid white;
+
   }
 `
 

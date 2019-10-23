@@ -19,11 +19,10 @@ const Back = styled.button`
     cursor: pointer;
     border: 2px solid white;
     border-radius: 2px;
-    transition: background-color 0.2s ease;
-    -webkit-transition: background-color 0.2s ease-out;
-    -moz-transition: background-color 0.2s ease-out;
-    -o-transition: background-color 0.2s ease-out;    
-
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;    
     &:hover {
         box-shadow: 0 0 0 2px rgb(255, 0, 0, 0.60);
         border: 2px solid #ffd0d0;
