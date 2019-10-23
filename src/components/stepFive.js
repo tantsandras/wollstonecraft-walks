@@ -168,15 +168,7 @@ class Step5 extends React.Component {
             marginTop: `-4.8rem`,
           }}
         >
-          <div
-            style={{
-              transform: `translate(-130px, -8px)`,
-              width: `390px`,
-              height: `auto`,
-            }}
-          >
             <InnImg />
-          </div>
         </ImgageWrap>
         <StepCircle style={{ marginTop: `-60px` }}>
           <StepNum>5</StepNum>

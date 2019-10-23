@@ -116,15 +116,7 @@ class Step3 extends React.Component {
             margin: `0 auto`,
             zIndex: `-1`,
             marginTop: `-4.8rem`}}>
-        <div
-          style={{
-            transform: `translate(-20px, -17.5px)`,
-            width: `400px`,
-            height: `200px`
-          }}
-        >
           <MemorialImg />
-        </div>
         </ImgageWrap>
         <StepCircle style={{ marginTop: `-70px` }}>
           <StepNum>3</StepNum>

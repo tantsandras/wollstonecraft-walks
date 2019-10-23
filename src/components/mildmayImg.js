@@ -7,7 +7,7 @@ const MImage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "wollstonecraft/Wollstonecraft Walks 9th June 2019-instagram res-2.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 250, maxHeight: 250) {
             ...GatsbyImageSharpFluid
           }
         }

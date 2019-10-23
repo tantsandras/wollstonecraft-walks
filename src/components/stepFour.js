@@ -149,15 +149,7 @@ class Step4 extends React.Component {
             marginTop: `-4.8rem`,
           }}
         >
-          <div
-            style={{
-              transform: `translate(-120px, -17px)`,
-              width: `400px`,
-              height: `200px`,
-            }}
-          >
             <PsImage />
-          </div>
         </ImgWrap>
         <StepCircle style={{ marginTop: `-70px` }}>
           <StepNum>4</StepNum>
