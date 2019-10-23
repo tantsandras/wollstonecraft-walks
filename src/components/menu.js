@@ -188,6 +188,9 @@ class Menu extends React.Component {
   }
 
   componentWillMount(){
+    if (typeof window === 'undefined') {
+      global.window = {}
+    }
 
     window.addEventListener('mousedown', this.handleClickOutside)
   }
