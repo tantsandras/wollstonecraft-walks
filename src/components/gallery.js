@@ -38,7 +38,7 @@ const PageCircle = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   margin-top: 4rem;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 const PageHeading = styled.div`
   width: 200px;
@@ -54,7 +54,7 @@ const PageHeading = styled.div`
   -webkit-clip-path: circle(50%);
   -webkit-shape-outside: circle(20em);
   shape-outside: circle(20em);
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 const MainHeading = styled.h1`

@@ -72,7 +72,7 @@ const MainHeading = styled.h1`
   padding: 2rem 2rem;
   display: grid;
   align-items: center;
-  animation: ${turnVisible} 1.2s ease-in-out;
+  animation: ${turnVisible} 0.6s ease-in;
 `
 const Box = styled.li`
   padding: 1.6rem;

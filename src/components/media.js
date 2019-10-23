@@ -88,7 +88,7 @@ const PageCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 const PageHeading = styled.div`
   width: 200px;
@@ -104,7 +104,7 @@ const PageHeading = styled.div`
   -webkit-clip-path: circle(50%);
   -webkit-shape-outside: circle(20em);
   shape-outside: circle(20em);
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 const PdfLink = styled.a`
@@ -158,7 +158,7 @@ class Media extends React.Component {
           }}
         >
           <Videos>
-            <VideoList style={{maxWidth: `100vw`, marginTop: `-5rem`, marginBottom: `6rem`, background: `none`, border: `none`, boxShadow: `none`}}><Flyer /></VideoList>
+            <VideoList style={{maxWidth: `100vw`, marginTop: `-5rem`, marginBottom: `7rem`, background: `none`, border: `none`, boxShadow: `none`}}><Flyer /></VideoList>
             <VideoList>
               <Heading>
                 Wollstonecraft Walks

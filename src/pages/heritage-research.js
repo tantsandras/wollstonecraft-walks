@@ -70,7 +70,7 @@ margin-top: 8rem;
 letter-spacing: 1px;
 margin-bottom: 6rem;
 color: #333333;
-animation: ${turnVisible} 1.2s ease-in-out;
+animation: ${turnVisible} 0.6s ease-in;
 `
 
 const HeritageResearchPage = props => {

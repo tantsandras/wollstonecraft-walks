@@ -80,7 +80,7 @@ const BackgroundSection = ({ className }) => (
     background-size: cover;
     position: relative;
     height: 60vw;
-    animation: ${turnVisible} 1.4s ease-in-out
+    animation: ${turnVisible} 0.6s ease-in;
   `
   
   export default StyledBackgroundSection

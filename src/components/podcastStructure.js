@@ -30,7 +30,7 @@ const PageCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 const PageHeading = styled.div`
   width: 200px;
@@ -46,7 +46,7 @@ const PageHeading = styled.div`
   -webkit-clip-path: circle(50%);
   -webkit-shape-outside: circle(20em);
   shape-outside: circle(20em);
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 const MainHeading = styled.h1`
   font-family: "Archivo Black", Impact;
