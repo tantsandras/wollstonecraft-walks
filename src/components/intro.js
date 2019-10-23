@@ -15,7 +15,6 @@ const fadeInRight = keyframes`
 
 const RainbowText = styled.p`
   font-family: Helvetica, Roboto, "Open Sans";
-  z-index: 2;
   line-height: 1.6;
   padding: 1rem;
   font-size: 0.9em;

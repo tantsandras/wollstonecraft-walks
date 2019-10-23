@@ -20,7 +20,3 @@ export const onClientEntry = () => {
       window.location.reload()
     }
   }
-
-  if (typeof window === 'undefined' && window.addEventListener) {
-    global.window = {}
-  }
