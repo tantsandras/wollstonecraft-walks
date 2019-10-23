@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { useState, useEffect, useRef } from "react"
 import styled, { css, keyframes } from "styled-components"
 import logo from "../images/logo2.png"
 
@@ -151,6 +151,7 @@ const activeStyle = {
   textDecoration: `none`,
 }
 
+
 class Menu extends React.Component {
   constructor() {
     super()
@@ -160,9 +161,25 @@ class Menu extends React.Component {
     }
   }
 
+  componentWillMount(){
+
+    window.addEventListener('mousedown', this.handleClickOutside)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("mousedown", this.handleClickOutside, false);
+  }
+
+  
   handleClick = () => {
     this.setState({ isActive: !this.state.isActive })
   }
+
+  handleClickOutside = e => {
+    if (this.el && !this.el.contains(e.target)) {
+        this.setState({isActive: false})
+    }
+}
 
   render() {
     return (
@@ -179,7 +196,7 @@ class Menu extends React.Component {
         )}
         <div>
           {this.state.isActive && (
-            <NavActive>
+            <NavActive ref={el => { this.el = el }}>
               <NavList>
                 <HoverLi>
                   <StyledLink to="/" activeStyle={activeStyle}>
