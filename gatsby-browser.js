@@ -21,3 +21,6 @@ export const onClientEntry = () => {
     }
   }
 
+  if (typeof window === 'undefined' && window.addEventListener) {
+    global.window = {}
+  }

@@ -188,7 +188,7 @@ class Menu extends React.Component {
   }
 
   componentWillMount(){
-    if (typeof window === 'undefined') {
+    if (typeof window === 'undefined' && window.addEventListener) {
       global.window = {}
     }
 
