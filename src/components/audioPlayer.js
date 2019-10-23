@@ -267,7 +267,7 @@ class AudioPlayer extends React.Component {
     return (
       <>
         {this.state.player === "playing" || this.state.player === "paused" ? (
-          <div style={{ margin: `0 auto`, transform: `translateY(60px)` }}>
+          <div style={{ textAlign: `center`, transform: `translateY(60px)` }}>
             {currentTime} / {duration}
           </div>
         ) : (

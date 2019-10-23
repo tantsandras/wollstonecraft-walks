@@ -77,7 +77,7 @@ animation: ${fadeInRight} ease 1s forwards;
 `
 
 
-const ImgageWrap = styled.div`
+const ImageWrap = styled.div`
   max-width: 400px;
   height: auto;
   margin: 8rem 0px 0px 0px;
@@ -142,15 +142,15 @@ class Step1 extends React.Component {
   render() {
     return (
       <main>
-        <ImgageWrap style={{            
+        <ImageWrap style={{            
             maxWidth: `285px`,
             maxHeight: `285px`,
             margin: `0 auto`,
             marginTop: `-4.8rem`, zIndex: `-1`,}}>
-        <div>
+        {/* <div> */}
           <MildmayImage />
-        </div>
-        </ImgageWrap>
+        {/* </div> */}
+        </ImageWrap>
         <StepCircle style={{marginTop: `-70px`}}>
           <StepNum>1</StepNum>
         </StepCircle>
