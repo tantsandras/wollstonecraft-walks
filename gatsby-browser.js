@@ -1,7 +1,7 @@
 require('typeface-archivo-black');
 require('typeface-yeseva-one');
 require('typeface-roboto');
-
+require('typeface-bungee-shade')
 
 export const onClientEntry = () => {
     if (typeof window.IntersectionObserver === `undefined`) {

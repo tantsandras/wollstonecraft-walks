@@ -34,6 +34,7 @@
     "react-helmet": "^5.2.1",
     "styled-components": "^4.3.2",
     "typeface-archivo-black": "0.0.72",
+    "typeface-bungee-shade": "0.0.71",
     "typeface-roboto": "0.0.75",
     "typeface-yeseva-one": "0.0.72"
   },

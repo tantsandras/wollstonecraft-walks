@@ -11,7 +11,7 @@ const Image = styled.div`
   -o-transition: all 0.2s ease-out;
 
   &:hover {
-    transform: scale(2);
+    transform: scale(1.4);
     z-index: 2;
     box-shadow: 10px 10px 100px 50px rgba(0, 0, 0, 0.4);
     border: 0.6px solid grey;

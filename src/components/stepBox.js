@@ -48,6 +48,7 @@ const numberColor = num => {
 
 const Numbers = styled.h4`
   font-family: "Bungee Shade";
+  font-display: block;
   padding-bottom: 2rem;
   font-size: 1.6rem;
   padding-top: 0rem;
@@ -83,6 +84,7 @@ class StepBox extends React.Component {
                   style={{
                     fontSize: `1.2rem`,
                     fontFamily: `'Archivo Black', Impact`,
+                    fontDisplay: `block`,
                     letterSpacing: `1px`,
                     lineHeight: `1.5`,
                     textAlign: `center`,

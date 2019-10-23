@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Circles from "../components/circles"
 import Steps from "../components/steps"
 import "typeface-archivo-black"
-import 'typeface-yeseva-one'
+import 'typeface-bungee-shade'
 
 
 const IndexPage = () => {
