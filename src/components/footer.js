@@ -26,35 +26,35 @@ const Bubble = styled.div`
   margin: auto;
 `
 
-const fmBubble = {
-  position: `relative`,
-  display: `flex`,
-  alignItems: `center`,
-  margin: `auto`,
-  borderRadius: `50%`,
-  width: `230px`,
-  height: `230px`,
-  background: `white`,
-  textAlign: `center`,
-  verticalAlign: `middle`,
-  padding: `25px`,
-  overflow: `hidden`,
-}
+const FmBubble = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+  background: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25px;
+  overflow: hidden;
+`
 
-const pinkBubble = {
-  position: `relative`,
-  borderRadius: `50%`,
-  display: `flex`,
-  alignItems: `center`,
-  margin: `auto`,
-  width: `230px`,
-  height: `230px`,
-  textAlign: `center`,
-  padding: `5px`,
-  background: `#e6007e`,
-  verticalAlign: `middle`,
-  overflow: `hidden`,
-}
+const PinkBubble = styled.div`
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 230px;
+  height: 230px;
+  text-align: center;
+  padding: 5px;
+  background: #e6007e;
+  vertical-align: middle;
+  overflow: hidden;
+`
 
 const FooterGrid = styled.section`
   width: 100%;
@@ -202,7 +202,7 @@ const Footer = () => (
       </div>
 
       <div style={element}>
-        <div style={pinkBubble}>
+        <PinkBubble>
           <a
             href="http://www.stokenewingtonliteraryfestival.com/"
             target="_blank"
@@ -211,7 +211,7 @@ const Footer = () => (
             {" "}
             <StokeLogo />{" "}
           </a>
-        </div>
+        </PinkBubble>
       </div>
       <div style={element}>
         <a
@@ -230,9 +230,9 @@ const Footer = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div style={fmBubble}>
+          <FmBubble>
             <FmLogo />{" "}
-          </div>
+          </FmBubble>
         </a>
       </div>
     </FooterGrid>
