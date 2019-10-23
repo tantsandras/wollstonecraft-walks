@@ -42,6 +42,15 @@ const turnVisible = keyframes`
 		opacity: 1;
 	}
 `
+const turnInvisible = keyframes`
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+`
+
 const growLeft = keyframes`
   from {
 	transform: scaleX(0);
@@ -83,7 +92,7 @@ display: block;
   opacity: 0;
   color: #656565;
   width: 100%;
-  animation: ${fadeInRight} ease 0.6s forwards;
+  animation: ${fadeInRight} ease 0.2s forwards;
   animation-delay: 0.2s;
   &:hover {
     text-decoration: none;
@@ -113,7 +122,7 @@ const Second = styled.div`
   background-color: #656565;
   transform: scaleX(0);
   transform-origin: left;
-  animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
+  animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s forwards;
   &:hover {
     text-decoration: none;
     background-color: Crimson;
@@ -139,11 +148,28 @@ const StyledLogo = styled.img`
   width: 120px;
   position: fixed;
   z-index: 3;
-  right: 0px;
-  top: 15px;
+  right: -20px;
+  top: 24px;
   cursor: pointer;
   outline: none;
-  animation: ${turnVisible} 0.8s ease-in-out;
+  animation: ${turnVisible} 0.6s ease-in-out;
+`
+
+const LogoWrapper = styled.div`
+position: fixed;
+z-index: 3;
+top: 24px;
+height: 70px;
+right: 27px;
+width: 73px;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+overflow: hidden;
+animation: ${turnVisible} 0.6s ease-in-out;
+&:hover {
+  box-shadow: 0 20px 25px -5px rgba(255,0,0,.1), 0 20px 25px -5px rgba(255,0,0,.1);
+}
 `
 
 const activeStyle = {
@@ -192,10 +218,11 @@ class Menu extends React.Component {
           </MenuIcon>
         )}
         {this.state.isActive && (
-          <StyledLogo src={logo} alt={"Logo"} onClick={this.handleClick} />
+          <LogoWrapper><StyledLogo src={logo} alt={"Logo"} onClick={this.handleClick} /></LogoWrapper>
         )}
         <div>
           {this.state.isActive && (
+                      
             <NavActive ref={el => { this.el = el }}>
               <NavList>
                 <HoverLi>

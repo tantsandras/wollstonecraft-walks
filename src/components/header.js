@@ -35,7 +35,7 @@ font-family: 'Archivo Black'; Impact;
 font-weight: bolder;
 z-index: 1;
 line-height: 1.5;
-font-size: 2.2rem;
+font-size: 2rem;
 margin-top: 4rem;
 margin-bottom: -1rem;
 letter-spacing: 1px;
