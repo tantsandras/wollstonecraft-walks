@@ -58,7 +58,7 @@ const PageHeading = styled.div`
 `
 
 const MainHeading = styled.h1`
-font-family: 'Archivo Black', Impact;
+font-family: 'Archivo Black', 'Impact';
 letter-spacing: 1px;
 text-align: center;
 font-size: 2.2rem;
@@ -134,7 +134,7 @@ class Gallery extends React.Component {
           <div className="content">
             <h2
               style={{
-                fontFamily: `'Archivo Black', Impact`,
+                fontFamily: `'Archivo Black', 'Impact'`,
                 paddingTop: `1rem`,
                 letterSpacing: `1px`,
                 fontSize: `2rem`,

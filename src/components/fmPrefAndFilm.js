@@ -61,7 +61,7 @@ const Videos = styled.ul`
 `
 
 const MainHeading = styled.h1`
-  font-family: "Archivo Black", Impact;
+  font-family: "Archivo Black", 'Impact';
   font-size: 2rem;
   text-align: center;
   letter-spacing: 1px;
@@ -96,7 +96,7 @@ const PdfLink = styled.a`
   }
 `
 const Heading = styled.h2`
-  font-family: "Archivo Black", Impact;
+  font-family: "Archivo Black", 'Impact';
   padding-top: 2rem;
   letter-spacing: 1px;
   line-height: 2;
@@ -133,7 +133,7 @@ class FmPrefAndFilm extends React.Component {
           <br />
           <i
             style={{
-              fontFamily: `'Archivo Black', Impact`,
+              fontFamily: `'Archivo Black', 'Impact'`,
               fontSize: `1.4rem`,
               letterSpacing: `1px`,
               lineHeight: `2`,
@@ -391,7 +391,7 @@ class FmPrefAndFilm extends React.Component {
               <br />
               <i
                 style={{
-                  fontFamily: `'Archivo Black', Impact`,
+                  fontFamily: `'Archivo Black', 'Impact'`,
                   fontSize: `1rem`,
                   textAlign: `left`,
                   letterSpacing: `1px`,

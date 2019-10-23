@@ -49,7 +49,7 @@ const PageHeading = styled.div`
   animation: ${fadeInRight} ease 1s forwards;
 `
 const MainHeading = styled.h1`
-  font-family: "Archivo Black", Impact;
+  font-family: "Archivo Black", 'Impact';
   font-size: 2.4rem;
   text-align: center;
   letter-spacing: 1px;
@@ -98,7 +98,7 @@ class Pods extends React.Component {
           <PodBox>
             <h3
               style={{
-                fontFamily: `'Archivo Black', Impact`,
+                fontFamily: `'Archivo Black', 'Impact'`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
@@ -126,7 +126,7 @@ class Pods extends React.Component {
           <PodBox>
             <h3
               style={{
-                fontFamily: `'Archivo Black', Impact`,
+                fontFamily: `'Archivo Black', 'Impact'`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,
@@ -154,7 +154,7 @@ class Pods extends React.Component {
           <PodBox>
             <h3
               style={{
-                fontFamily: `'Archivo Black', Impact`,
+                fontFamily: `'Archivo Black', 'Impact'`,
                 fontSize: `1.4rem`,
                 textAlign: `center`,
                 letterSpacing: `1px`,

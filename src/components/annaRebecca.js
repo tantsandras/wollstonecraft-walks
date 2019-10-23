@@ -16,7 +16,7 @@ const Title = styled.div`
   background-color: rgba(255,255,255, 0.8);
   color: black;
   font-size: 9vw;
-  font-family: 'Archivo Black', Impact;
+  font-family: 'Archivo Black', 'Impact';
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0 auto;

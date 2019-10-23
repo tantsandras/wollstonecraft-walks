@@ -12,7 +12,7 @@ const ArtistsPage = () => {
       <Menu />
       <h1
           style={{
-            fontFamily: `'Archivo Black', Impact`,
+            fontFamily: `'Archivo Black', 'Impact'`,
             fontSize: `2.2rem`,
             textAlign: `center`,
             marginTop: `8rem`,

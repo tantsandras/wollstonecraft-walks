@@ -63,7 +63,7 @@ const Arrow = styled.i`
 `
 
 const StepHeading = styled.h1`
-font-family: 'Archivo Black', Impact;
+font-family: 'Archivo Black', 'Impact';
 font-size: 1.8rem;
 font-weight: bolder;
 text-align: center;
@@ -86,7 +86,7 @@ const ImgageWrap = styled.div`
 
 
 const SubHeading = styled.h4`
-font-family: 'Archivo Black', Impact;
+font-family: 'Archivo Black', 'Impact';
 letter-spacing: 1px;
 line-height: 1.5; 
 color: #333333;

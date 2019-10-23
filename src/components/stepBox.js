@@ -83,7 +83,7 @@ class StepBox extends React.Component {
                 <h3
                   style={{
                     fontSize: `1.2rem`,
-                    fontFamily: `'Archivo Black', Impact`,
+                    fontFamily: `'Archivo Black', 'Impact'`,
                     fontDisplay: `block`,
                     letterSpacing: `1px`,
                     lineHeight: `1.5`,

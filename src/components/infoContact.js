@@ -30,7 +30,7 @@ const Social = styled.span`
 `
 const Heading = styled.h3`
   font-size: 2rem;
-  font-family: "Archivo Black", Impact;
+  font-family: "Archivo Black", 'Impact';
   font-weight: bold;
   letter-spacing: 1px;
   margin-top: 1rem;

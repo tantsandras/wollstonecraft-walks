@@ -35,7 +35,7 @@ const Overlay = styled.div`
   margin-top: 2rem;
 `
 const MainHeading = styled.h1`
-  font-family: "Archivo Black", Impact;
+  font-family: "Archivo Black", 'Impact';
   font-size: 2.4rem;
   text-align: center;
   letter-spacing: 1px;
@@ -119,7 +119,7 @@ const PdfLink = styled.a`
 `
 
 const Heading = styled.h2`
-  font-family: "Archivo Black", Impact;
+  font-family: "Archivo Black", 'Impact';
   padding-top: 2rem;
   letter-spacing: 1px;
   line-height: 1.3;

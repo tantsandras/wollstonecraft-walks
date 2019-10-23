@@ -97,7 +97,7 @@ class Song extends React.Component {
           >
             <h4
               style={{
-                fontFamily: `'Archivo Black', Impact`,
+                fontFamily: `'Archivo Black', 'Impact'`,
                 padding: `40px 0px 0px 20px`,
                 letterSpacing: `1px`,
                 color: `#333333`
@@ -142,7 +142,7 @@ class Song extends React.Component {
               Collapse<i style={arrow}></i>
             </Collapse>
             <aside style={{ fontSize: `0.8rem`, lineHeight: `2` }}>
-              <h4 style={{ fontFamily: `'Archivo Black', Impact`, letterSpacing: `1px`, color: `#333333`}}>
+              <h4 style={{ fontFamily: `'Archivo Black', 'Impact'`, letterSpacing: `1px`, color: `#333333`}}>
                 Let Us All Speak Our Minds! (1863)
               </h4>
               <p

@@ -12,7 +12,7 @@ const boxList = {
 }
 
 const SubHeading = styled.h4`
-font-family: 'Archivo Black', Impact;
+font-family: 'Archivo Black', 'Impact';
 letter-spacing: 1px;
 line-height: 1.5; 
 color: #333333;

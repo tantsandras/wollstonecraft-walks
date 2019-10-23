@@ -103,7 +103,7 @@ const ContactPage = () => {
       <article style={{ padding: `3% 10% 3% 10%` }}>
         <h4
           style={{
-            fontFamily: `'Archivo Black', Impact`,
+            fontFamily: `'Archivo Black', 'Impact'`,
             fontSize: `1.6rem`,
             paddingBottom: `1rem`,
             letterSpacing: `2%`,

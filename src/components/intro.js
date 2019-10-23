@@ -68,7 +68,7 @@ const Credits = styled.h5`
 `
 
 const StepHeading = styled.h1`
-font-family: 'Archivo Black', Impact;
+font-family: 'Archivo Black', 'Impact';
 font-size: 1.4rem;
 font-weight: bolder;
 color: #333333;

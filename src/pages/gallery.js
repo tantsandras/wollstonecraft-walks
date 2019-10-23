@@ -45,7 +45,7 @@ const GalleryPage = props => {
         <div className="content">
           <h2
             style={{
-              fontFamily: `'Archivo Black', Impact`,
+              fontFamily: `'Archivo Black', 'Impact'`,
               paddingTop: `1rem`,
               letterSpacing: `1px`,
               fontSize: `1.4rem`,

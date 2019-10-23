@@ -42,7 +42,7 @@ const Preview = styled.iframe`
 `
 
 const Heading = styled.h2`
-  font-family: "Archivo Black", Impact;
+  font-family: "Archivo Black", 'Impact';
   padding-top: 1rem;
   letter-spacing: 1px;
   line-height: 2;
@@ -63,7 +63,7 @@ const PdfLink = styled.a`
   }
 `
 const MainHeading = styled.h1`
-font-family: 'Archivo Black', Impact;
+font-family: 'Archivo Black', 'Impact';
 font-size: 2.2rem;
 text-align: center;
 margin-top: 8rem;
