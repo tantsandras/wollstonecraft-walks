@@ -28,7 +28,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 const StepNum = styled.p`
@@ -72,7 +72,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
-animation: ${fadeInRight} ease 1.2s forwards;
+animation: ${fadeInRight} ease 1s forwards;
 `
 
 const ImgageWrap = styled.div`
@@ -81,7 +81,7 @@ const ImgageWrap = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 
@@ -115,7 +115,7 @@ class Step3 extends React.Component {
             height: `250px`,
             margin: `0 auto`,
             zIndex: `-1`,
-            marginTop: `-2.8rem`}}>
+            marginTop: `-4.8rem`}}>
         <div
           style={{
             transform: `translate(-20px, -17.5px)`,
@@ -149,7 +149,7 @@ class Step3 extends React.Component {
             <i
               style={{
                 letterSpacing: `2px`,
-                fontSize: `1.2rem`,
+                fontSize: `1.1rem`,
               }}
             >
               Wollstonecraft Live!
@@ -167,7 +167,7 @@ class Step3 extends React.Component {
             <i
               style={{
                 letterSpacing: `2px`,
-                fontSize: `1.2rem`,
+                fontSize: `1.1rem`,
               }}
             >
               The Wollstonecraft Live Experience!

@@ -27,7 +27,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 const StepNum = styled.p`
@@ -102,7 +102,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
-animation: ${fadeInRight} ease 1.2s forwards;
+animation: ${fadeInRight} ease 1s forwards;
 `
 
 const SubHeading = styled.h4`
@@ -133,7 +133,7 @@ const ImgWrap = styled.div`
   -webkit-border-radius: 50%;
   overflow: hidden;
   mix-blend-mode: lighten;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 class Step4 extends React.Component {
@@ -146,7 +146,7 @@ class Step4 extends React.Component {
             height: `250px`,
             zIndex: `-1`,
             margin: `0 auto`,
-            marginTop: `-4rem`,
+            marginTop: `-4.8rem`,
           }}
         >
           <div

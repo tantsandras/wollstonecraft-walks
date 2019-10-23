@@ -83,9 +83,9 @@ const ButtonWrap = styled.div`
   justify-content: center;
   align-items: center;
   transition: transform 0.2s ease;
-  -webkit-transition: transform 2s ease-out;
-  -moz-transition: transform 2s ease-out;
-  -o-transition: transform 2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
 
   &:hover {
     transform: scale(1.2);
@@ -142,6 +142,7 @@ const FastForward = styled.button`
     border: 10px solid transparent;
     border-left: 10px solid;
   }
+
 `
 
 const DoubleFastForward = styled(FastForward)`
@@ -154,9 +155,18 @@ box-sizing: border-box;
     text-align: left;
     text-indent: -9999px;
     direction: ltr;
+    transition: transform 0.2s ease;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
     &:before, &:after{
         content:'';
         pointer-events: none;
+    }
+    &:hover {
+      border-color: transparent transparent transparent #404040;
+      transform: scale(1.2);
+    }
 `
 const Rewind = styled(FastForward)`
   transform: rotate(180deg);
@@ -172,9 +182,18 @@ color: #333333;
 text-align: left;
 text-indent: -9999px;
 direction: ltr;
+transition: transform 0.2s ease;
+-webkit-transition: transform 0.2s ease-out;
+-moz-transition: transform 0.2s ease-out;
+-o-transition: transform 0.2s ease-out;
 &:before, &:after{
     content:'';
     pointer-events: none;
+}
+&:hover {
+  border-color: transparent transparent transparent #404040;
+  transform: scale(1.2) rotate(180deg);
+}
 `
 
 const getTime = time => {

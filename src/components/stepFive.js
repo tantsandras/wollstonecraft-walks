@@ -56,7 +56,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 const StepNum = styled.p`
@@ -127,7 +127,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
-animation: ${fadeInRight} ease 1.2s forwards;
+animation: ${fadeInRight} ease 1s forwards;
 `
 
 const SubHeading = styled.h4`
@@ -151,7 +151,7 @@ const ImgageWrap = styled.div`
   -webkit-border-radius: 50%;
   overflow: hidden;
   mix-blend-mode: screen;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
   margin: 0 auto;
 `
 
@@ -164,7 +164,7 @@ class Step5 extends React.Component {
             width: `250px`,
             height: `250px`,
             zIndex: `-1`,
-            marginTop: `-3rem`,
+            marginTop: `-4.8rem`,
           }}
         >
           <div
@@ -200,9 +200,8 @@ class Step5 extends React.Component {
             essay called{" "}
             <i
               style={{
-                fontSize: `1.2rem`,
+                fontSize: `1.1rem`,
                 letterSpacing: `2px`,
-                lineHeight: `2`,
               }}
             >
               ‘On Poetry’
@@ -238,9 +237,8 @@ class Step5 extends React.Component {
             a school on the Green inspired her to write{" "}
             <i
               style={{
-                fontSize: `1.2rem`,
+                fontSize: `1.1rem`,
                 letterSpacing: `2px`,
-                lineHeight: `2`,
               }}
             >
               ‘Thoughts on the Education of Daughters’ (1786)
@@ -272,7 +270,7 @@ class Step5 extends React.Component {
           <Block
             style={{
               margin: `1rem`,
-              fontSize: `1.2rem`,
+              fontSize: `1.1rem`,
               letterSpacing: `2px`,
               lineHeight: `1.6`,
             }}
@@ -312,7 +310,7 @@ class Step5 extends React.Component {
           <Normal
             style={{
               margin: `0.4rem`,
-              fontSize: `1.2rem`,
+              fontSize: `1.1rem`,
               letterSpacing: `2px`,
               lineHeight: `1.6`,
             }}

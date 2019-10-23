@@ -26,7 +26,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 const StepNum = styled.p`
@@ -62,7 +62,7 @@ const Arrow = styled.i`
 
 const Quote = styled.i`
 letter-spacing: 2px;
-line-height: 2;
+line-height: 1.8;
 position: relative;
 padding: 1em 4em;
 min-height: 5em;
@@ -130,14 +130,14 @@ max-width: 185px;
 max-height: 185px;
 margin: 0 auto;
 z-index: -1;
-animation: ${fadeInRight} ease 1.2s forwards;
+animation: ${fadeInRight} ease 1s forwards;
 `
 
 class Step2 extends React.Component {
   render() {
     return (
       <main>
-        <ImageWrapper style={{marginTop: `-2.8rem`}}>
+        <ImageWrapper style={{marginTop: `-4.8rem`}}>
           <Image />
         </ImageWrapper>
         <StepCircle style={{ marginTop: `-3.4rem` }}>
@@ -172,7 +172,7 @@ class Step2 extends React.Component {
             ‘founding fathers’ including Thomas Jefferson, Benjamin Franklin and
             John Adams. Mary herself, of course, would also have been a regular
             visitor. On this app is a short film{" "}
-            <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>
+            <i style={{ letterSpacing: `2px`, fontSize: `1.1rem`}}>
               VINDICATION
             </i>{" "}
             by Fragments &amp; Monuments written by Kaethe Fine depicting one of
@@ -354,7 +354,7 @@ class Step2 extends React.Component {
               <Credits style={{marginBottom: `2rem`}}>by Rockstar Dinosaur Pirate Princess</Credits>
             <Normal>
               It seems a lot of people really,{" "}
-              <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>REALLY</i>{" "}
+              <i style={{ letterSpacing: `2px` }}>REALLY</i>{" "}
               don’t get what ‘consent’  means. It seems people really have a
               problem understanding that before you have sex with someone, and
               that’s <i>every</i>
@@ -371,7 +371,7 @@ class Step2 extends React.Component {
             <Normal>
               You say “hey, would you like a cup of tea?” and they go “omg yes,
               I would{" "}
-              <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>LOVE</i> a
+              <i style={{ letterSpacing: `2px` }}>LOVE</i> a
               cup of tea! Thank you!” then you know they want a cup of tea.
             </Normal>
             <Normal>
@@ -426,18 +426,18 @@ class Step2 extends React.Component {
               that doesn’t mean that they want you to make them tea all the
               time. They don’t want you to come around unexpectedly to their
               place and make them tea and force them to drink it going{" "}
-              <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>
+              <i style={{ letterSpacing: `2px`}}>
                 “BUT YOU WANTED TEA LAST WEEK”,
               </i>{" "}
               or to wake up to find you pouring tea down their throat going{" "}
-              <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>
+              <i style={{ letterSpacing: `2px`}}>
                 “BUT YOU WANTED TEA LAST NIGHT”
               </i>
             </Normal>
             <Normal>
               Is a stupid analogy? Of course we wouldn’t force feed someone tea
               because they said yes to a cup last week. {" "}
-              <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>OF COURSE</i> we
+              <i style={{ letterSpacing: `2px`}}>OF COURSE</i> we
               wouldn’t pour tea down the throat of an unconcious person because
               they said yes to tea 5 minutes ago when they were conscious. But
               if we can understand how completely ludicrous it is to force

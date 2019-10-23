@@ -73,7 +73,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
-animation: ${fadeInRight} ease 1.2s forwards;
+animation: ${fadeInRight} ease 1s forwards;
 `
 
 
@@ -85,7 +85,7 @@ const ImgageWrap = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1s forwards;
 `
 
 
@@ -146,7 +146,7 @@ class Step1 extends React.Component {
             maxWidth: `285px`,
             maxHeight: `285px`,
             margin: `0 auto`,
-            marginTop: `-3rem`, zIndex: `-1`,}}>
+            marginTop: `-4.8rem`, zIndex: `-1`,}}>
         <div>
           <MildmayImage />
         </div>
@@ -173,11 +173,11 @@ class Step1 extends React.Component {
             </Normal> 
           <Normal>
             When I&#39;m about to give you some local information I&#39;ll say,{" "}
-            <i style={{ letterSpacing: `2px`, fontSize: `1.2rem` }}>
+            <i style={{ letterSpacing: `2px`, fontSize: `1.1rem` }}>
               &#39;Did you know&#39;
             </i>{" "}
             and then when that&#39;s done, I&#39;ll say{" "}
-            <i style={{ letterSpacing: `2px`, fontSize: `1.2rem` }}>
+            <i style={{ letterSpacing: `2px`, fontSize: `1.1rem` }}>
               &#39;Back to the directions&#39;
             </i>
             .
@@ -198,7 +198,7 @@ class Step1 extends React.Component {
           <QuotationMarks><Block>
             My own sex, I hope, will excuse me, if I treat them like rational
             creatures, instead of flattering their{" "}
-            <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>FASCINATING</i>{" "}
+            <i style={{ letterSpacing: `2px`, fontSize: `1.1rem`}}>FASCINATING</i>{" "}
             graces, and viewing them as if they were in a state of perpetual
             childhood, unable to stand alone. I earnestly wish to point out in
             what true dignity and human happiness consists—I wish to persuade

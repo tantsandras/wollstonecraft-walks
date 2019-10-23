@@ -22,7 +22,7 @@ const RainbowText = styled.p`
   margin-bottom: 40px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: ${fadeInRight} 1.4s ease-in-out;
+  animation: ${fadeInRight} ease 1s forwards;
   background-image: linear-gradient(
     to bottom,
     #5d00ff,
@@ -55,7 +55,7 @@ const QuotationMarks = styled.p`
     position: absolute;
     height: 3rem;
     content: "”";
-    bottom: 0rem;
+    bottom: 0.4rem;
     right: 0.4rem;
   }
 `
@@ -77,9 +77,9 @@ text-align: center;
 margin-top: 1rem;
 letter-spacing: 1px;
 margin-bottom: 4rem
-line-height: 1.3;
+line-height: 2;
 padding-left: 2rem;
-animation: ${fadeInRight} ease 1.2s forwards;
+animation: ${fadeInRight} ease 1s forwards;
 `
 
 
@@ -115,7 +115,7 @@ const Intro = () => (
       }}
     >
       <StepHeading>
-        Who is <br />Mary Wollstonecraft?
+        Who is Mary Wollstonecraft?
       </StepHeading>
 
       <article style={{ padding: `10% 8% 3% 8%` }}>
@@ -136,7 +136,7 @@ const Intro = () => (
           The school folded when Fanny got married. After a spell as a Governess
           in Ireland, Wollstonecraft was befriended by publisher Joseph Johnson
           who set her up with a job and lodgings. She wrote{" "}
-          <i style={{ fontSize: `1.2rem`, letterSpacing: `2px` }}>
+          <i style={{ fontSize: `1.1rem`, letterSpacing: `2px` }}>
             A Vindication of the Rights of Woman (1792)
           </i>
           , was a fiery feminist polemic railing against the ‘bitter bread of

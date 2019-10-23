@@ -24,7 +24,7 @@ const Welcome = styled.h2`
 letter-spacing: 1px;
 font-family: 'Archivo Black', Impact; 
 color: #333333;
-animation: ${turnVisible} ease 1.2s forwards;
+animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const MainHeading = styled.h1`
@@ -39,20 +39,20 @@ font-size: 2rem;
 margin-top: 4rem;
 margin-bottom: -1rem;
 letter-spacing: 1px;
-animation: ${turnVisible} ease 1.4s forwards;
+animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const ImageWrapper = styled.div`
 max-width: 500px;
 max-height: 500px;
 z-index: 1;
-animation: ${turnVisible} ease 1.6s forwards;
+animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const Quote = styled.p`
 letter-spacing: 2px;
 line-height: 1.8;
-animation: ${turnVisible} ease 1.4s forwards;
+animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const Header = ({ siteTitle }) => (
