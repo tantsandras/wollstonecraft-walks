@@ -53,7 +53,7 @@ const Arrow = styled.i`
   border-width: 0px 2px 2px 0px;
   display: table-cell;
   position: absolute;
-  top: 0.32rem;
+  top: 0.55rem;
   left: 0%;
   ms-transform: translateY(-50%);
   transform: translateY(-50%);
