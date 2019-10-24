@@ -160,7 +160,7 @@ class Step1 extends React.Component {
         <article style={{ padding: `18% 8% 3% 8%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <section style={{ paddingBottom: `3rem` }}>
             
-                <Credits style={{fontSize: `0.9rem`}}> Wollstonecraft Walks Guide </Credits> <Normal style={{fontSize: `0.9rem`}}>Researched and written by Anna Birch and Rebecca Mordan.</Normal>
+                <Credits style={{fontSize: `0.9rem`}}> Wollstonecraft Walks Guide </Credits> <Normal style={{fontSize: `0.9rem`}}>Researched and written by Anna Birch and Rebecca Mordan</Normal>
                 <Credits style={{fontSize: `0.9rem`}}> Read by: </Credits><Normal style={{fontSize: `0.9rem`}}>Rebecca Mordan with readings read by Rebecca Boey and Caroline Parker </Normal>
                 <Credits style={{fontSize: `0.9rem`}}> Sound Composition:  </Credits><Normal style={{fontSize: `0.9rem`}}>Alastair Gavin</Normal>
           </section>

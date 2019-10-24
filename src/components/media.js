@@ -149,7 +149,7 @@ class Media extends React.Component {
         <PageCircle style={{ marginBottom: `4rem`, marginTop: `4rem` }}>
           <PageHeading></PageHeading>
         </PageCircle>
-        <MainHeading>Media.</MainHeading>
+        <MainHeading>Media</MainHeading>
         <article
           style={{
             padding: `3% 8% 3% 8%`,

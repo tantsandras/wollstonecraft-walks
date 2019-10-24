@@ -92,7 +92,7 @@ class Pods extends React.Component {
       <PageCircle style={{ marginBottom: `4rem`, marginTop: `4rem` }}>
           <PageHeading></PageHeading>
         </PageCircle>
-        <MainHeading>Podcast.</MainHeading>
+        <MainHeading>Podcast</MainHeading>
         <h2 style={{fontFamily: `Helvetica, Roboto, 'Open Sans'`, fontWeight: `normal`, letterSpacing: `2px`, lineHeight: `1.8`, fontSize: `0.9rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
         <PodList>
           <PodBox>

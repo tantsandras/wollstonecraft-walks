@@ -63,7 +63,7 @@ const BackgroundSection = ({ className }) => (
             className={className}
             fluid={imageData}
           >
-            <Title>Contact.</Title>
+            <Title>Contact</Title>
 
           </BackgroundImage>
                       <ul style={contactList}>

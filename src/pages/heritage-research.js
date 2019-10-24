@@ -85,7 +85,7 @@ const HeritageResearchPage = props => {
       <Circles />
       <article style={{ padding: `0% 10% 10% 10%` }}>
         <MainHeading>
-          Heritage Research.
+          Heritage Research
         </MainHeading>
         <PdfList maxWidth="640px" style={{ margin: `0 auto` }}>
           <Heading>{data.title}</Heading>

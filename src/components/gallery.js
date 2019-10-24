@@ -128,7 +128,7 @@ class Gallery extends React.Component {
           <PageHeading></PageHeading>
         </PageCircle>
         <MainHeading>
-          Gallery.
+          Gallery
         </MainHeading>
         <Wrapper className="grid">
           <div className="content">
