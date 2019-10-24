@@ -149,7 +149,7 @@ class Step1 extends React.Component {
             maxHeight: `285px`,
             margin: `0 auto`,
             marginTop: `-4.8rem`, zIndex: `-1`,}}>
-          <img src={`${MildmayImage}`} alt="Image of the entrence of the Mildmay Club" />
+          <img src={`${MildmayImage}`} alt="Image of the entrence of the Mildmay Club" style={{width: `290px`}} />
         </ImageWrap>
         <StepCircle style={{marginTop: `-70px`}}>
           <StepNum>1</StepNum>

@@ -71,7 +71,7 @@ const element = {
   margin: `0 auto`,
 }
 
-const ButtonWrap = styled.div`
+const ButtonWrap = styled.span`
   width: 90px;
   margin: 0 auto;
   height: 90px;
@@ -142,58 +142,59 @@ const FastForward = styled.button`
     border: 10px solid transparent;
     border-left: 10px solid;
   }
-
 `
 
 const DoubleFastForward = styled(FastForward)`
-box-sizing: border-box;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    font-style: normal;
-    color: #333333;
-    text-align: left;
-    text-indent: -9999px;
-    direction: ltr;
-    transition: transform 0.2s ease;
-    -webkit-transition: transform 0.2s ease-out;
-    -moz-transition: transform 0.2s ease-out;
-    -o-transition: transform 0.2s ease-out;
-    &:before, &:after{
-        content:'';
-        pointer-events: none;
-    }
-    &:hover {
-      border-color: transparent transparent transparent #404040;
-      transform: scale(1.2);
-    }
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-style: normal;
+  color: #333333;
+  text-align: left;
+  text-indent: -9999px;
+  direction: ltr;
+  transition: transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+  &:before,
+  &:after {
+    content: "";
+    pointer-events: none;
+  }
+  &:hover {
+    border-color: transparent transparent transparent #404040;
+    transform: scale(1.2);
+  }
 `
 const Rewind = styled(FastForward)`
   transform: rotate(180deg);
 `
 
 const DoubleRewind = styled(Rewind)`
-box-sizing: border-box;
-display: inline-block;
-vertical-align: middle;
-position: relative;
-font-style: normal;
-color: #333333;
-text-align: left;
-text-indent: -9999px;
-direction: ltr;
-transition: transform 0.2s ease;
--webkit-transition: transform 0.2s ease-out;
--moz-transition: transform 0.2s ease-out;
--o-transition: transform 0.2s ease-out;
-&:before, &:after{
-    content:'';
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-style: normal;
+  color: #333333;
+  text-align: left;
+  text-indent: -9999px;
+  direction: ltr;
+  transition: transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+  &:before,
+  &:after {
+    content: "";
     pointer-events: none;
-}
-&:hover {
-  border-color: transparent transparent transparent #404040;
-  transform: scale(1.2) rotate(180deg);
-}
+  }
+  &:hover {
+    border-color: transparent transparent transparent #404040;
+    transform: scale(1.2) rotate(180deg);
+  }
 `
 
 const getTime = time => {
@@ -224,7 +225,7 @@ class AudioPlayer extends React.Component {
     if (track) {
       this.player.src = track
       this.player.src = track
-      this.setState({ player: "stopped", duration: this.player.duration})
+      this.setState({ player: "stopped", duration: this.player.duration })
     }
   }
 
@@ -239,7 +240,11 @@ class AudioPlayer extends React.Component {
       if (track) {
         this.player.src = track
         this.player.play()
-        this.setState({ player: "playing", duration: this.player.duration, selectedTrack: track })
+        this.setState({
+          player: "playing",
+          duration: this.player.duration,
+          selectedTrack: track,
+        })
       }
     }
     if (this.state.player !== prevState.player) {
@@ -249,7 +254,10 @@ class AudioPlayer extends React.Component {
         this.player.pause()
         this.player.currentTime = 0
         this.setState({ selectedTrack: null })
-      } else if (this.state.currentTime > 1 && this.state.currentTime === this.state.duration) {
+      } else if (
+        this.state.currentTime > 1 &&
+        this.state.currentTime === this.state.duration
+      ) {
         this.setState({ selectedTrack: null, player: "stopped" })
       } else if (
         this.state.player === "playing" &&
@@ -257,8 +265,8 @@ class AudioPlayer extends React.Component {
       ) {
         this.player.play()
       }
-      }
     }
+  }
 
   render() {
     const currentTime = getTime(this.state.currentTime)
@@ -275,35 +283,50 @@ class AudioPlayer extends React.Component {
         )}
         <Player>
           <div style={element}>
-            <DoubleRewind label="Rewind" onClick={() => this.player.currentTime--} 
+            <DoubleRewind
+              autocomplete="off"
+              label="Rewind"
+              onClick={() => this.player.currentTime--}
             />
           </div>
           <div style={element}>
-           {this.state.player !== "playing" || this.player.currentTime > 1 && this.player.currentTime === this.player.duration ? (
-
-              <ButtonWrap >
+            {this.state.player !== "playing" ||
+            (this.player.currentTime > 1 &&
+              this.player.currentTime === this.player.duration) ? (
+              <ButtonWrap>
                 <Play
+                  autocomplete="off"
                   label="Play"
-                  onClick={() => this.setState({ player: "playing", selectedTrack: this.props.track })}
+                  onClick={() => {
+                    return this.setState({
+                      player: "playing",
+                      selectedTrack: this.props.track,
+                    })
+                  }}
                 />
               </ButtonWrap>
-                ) : ( 
-                              <ButtonWrap >
-                              <Spinner />
-                              <Pause
-                                label="Pause"
-                                onClick={() => this.setState({ player: "paused" })}
-                              />
-                            </ButtonWrap>
-                      
+            ) : (
+              <ButtonWrap>
+                <Spinner />
+                <Pause
+                  autocomplete="off"
+                  label="Pause"
+                  onClick={() => {
+                    return this.setState({ player: "paused" })
+                  }}
+                />
+              </ButtonWrap>
             )}
           </div>
           <div style={element}>
-            <DoubleFastForward label="Fast forward" onClick={() => this.player.currentTime++} 
+            <DoubleFastForward
+              autocomplete="off"
+              label="Fast forward"
+              onClick={() => this.player.currentTime++}
             />
           </div>
 
-          <audio ref={ref => (this.player = ref)} />
+          <audio ref={ref => (this.player = ref)} preload="auto" />
         </Player>
       </>
     )
