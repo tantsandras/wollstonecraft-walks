@@ -53,7 +53,7 @@ class ArtBook extends React.Component {
   }
 
   goToNextSlide = () => {
-    if (this.state.currentIndex === 97 - 1) {
+    if (this.state.currentIndex === 96 - 1) {
       return this.setState({
         currentIndex: 0,
       })
