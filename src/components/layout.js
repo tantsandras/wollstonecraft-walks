@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
           },
         ]}
       >
-        <html lang="en" />
+        <html lang="en" style={{fontFamily: `'Archivo Black', Impact, sans-serif`}}/>
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Menu />
