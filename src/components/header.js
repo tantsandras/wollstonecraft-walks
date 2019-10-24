@@ -22,7 +22,7 @@ const element = {
 
 const Welcome = styled.h2`
 letter-spacing: 1px;
-font-family: 'Archivo Black', 'Impact'; 
+font-family: 'Archivo Black', 'Impact', sans-serif; 
 font-display: block;
 color: #333333;
 animation: ${turnVisible} 0.8s ease-in-out;
@@ -32,7 +32,7 @@ const MainHeading = styled.h1`
 color: #333333;
 text-decoration: none;
 text-align: center;
-font-family: 'Archivo Black'; 'Impact';
+font-family: 'Archivo Black', 'Impact', sans-serif;
 font-display: block;
 font-weight: bolder;
 z-index: 1;
