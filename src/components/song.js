@@ -18,15 +18,14 @@ const Collapse = styled.button`
   cursor: pointer;
   border: none;
   border-radius: 2px;
-  transition: background-color 0.2s ease;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
+  transition: background-color 0.6s ease;
+  -webkit-transition: background-color 0.6s ease-out;
+  -moz-transition: background-color 0.6s ease-out;
+  -o-transition: background-color 0.6s ease-out;
 
   &:hover {
     background-color: #ff0000;
     box-shadow: 0 0 0 2px rgb(255, 0, 0, 0.6);
-    border: 2px solid white;
   }
 `
 
