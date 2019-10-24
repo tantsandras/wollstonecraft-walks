@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import MemorialImg from "../components/memorialImg"
+import MemorialImg from "../images/chapter3.jpg"
 
 const fadeInRight = keyframes`
     from {
@@ -76,12 +76,15 @@ animation: ${fadeInRight} ease 1s forwards;
 `
 
 const ImgageWrap = styled.div`
-  margin: 8rem 0px 0px 0px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
   animation: ${fadeInRight} ease 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 `
 
 
@@ -116,7 +119,7 @@ class Step3 extends React.Component {
             margin: `0 auto`,
             zIndex: `-1`,
             marginTop: `-4.8rem`}}>
-          <MemorialImg />
+          <img src={`${MemorialImg}`} alt="Image of Mary Wollstonecraft" />
         </ImgageWrap>
         <StepCircle style={{ marginTop: `-70px` }}>
           <StepNum>3</StepNum>

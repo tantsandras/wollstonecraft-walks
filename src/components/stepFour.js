@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import PsImage from "../components/primarySchool"
+import PsImage from "../images/chapter4.jpg"
 
 const fadeInRight = keyframes`
     from {
@@ -127,13 +127,16 @@ const Credits = styled.h5`
 `
 
 const ImgWrap = styled.div`
-  margin: 8rem 0px 0px 0px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
   mix-blend-mode: lighten;
   animation: ${fadeInRight} ease 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 `
 
 class Step4 extends React.Component {
@@ -149,7 +152,7 @@ class Step4 extends React.Component {
             marginTop: `-4.8rem`,
           }}
         >
-            <PsImage />
+            <img src={`${PsImage}`} alt="Image of Caroline Parker outside of Newington Green Primary School" />
         </ImgWrap>
         <StepCircle style={{ marginTop: `-70px` }}>
           <StepNum>4</StepNum>

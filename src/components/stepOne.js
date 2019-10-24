@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import Song from "../components/song"
-import MildmayImage from "../components/mildmayImg"
+import MildmayImage from "../images/chapter1.jpg"
 
 const fadeInRight = keyframes`
     from {
@@ -78,14 +78,15 @@ animation: ${fadeInRight} ease 1s forwards;
 
 
 const ImageWrap = styled.div`
-  max-width: 400px;
-  height: auto;
-  margin: 8rem 0px 0px 0px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden !important;
   animation: ${fadeInRight} ease 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 `
 
 
@@ -138,6 +139,7 @@ font-weight: normal;
 font-size: 1rem;
 line-height: 1.8;
 `
+
 class Step1 extends React.Component {
   render() {
     return (
@@ -147,7 +149,7 @@ class Step1 extends React.Component {
             maxHeight: `285px`,
             margin: `0 auto`,
             marginTop: `-4.8rem`, zIndex: `-1`,}}>
-          <MildmayImage />
+          <img src={`${MildmayImage}`} alt="Image of the entrence of the Mildmay Club" />
         </ImageWrap>
         <StepCircle style={{marginTop: `-70px`}}>
           <StepNum>1</StepNum>
