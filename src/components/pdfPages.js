@@ -84,6 +84,7 @@ class Pages extends React.Component {
                     textAlign: `center`,
                     letterSpacing: `1px`,
                     marginTop: `1rem`,
+                    fontWeight: `normal`
                   }}
                 >
                   Limited edition art book PDF

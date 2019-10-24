@@ -5,7 +5,6 @@ import Ep1 from "../audio/podcast/EP1.mp3"
 import Ep2 from "../audio/podcast/EP2.mp3"
 import Ep3 from "../audio/podcast/EP3.mp3"
 
-
 const fadeInRight = keyframes`
     from {
       opacity: 0;
@@ -24,7 +23,7 @@ const PageCircle = styled.div`
   width: 200px;
   height: 200px;
   line-height: 200px;
-  background: rgb( 178, 125, 178, 0.5);
+  background: rgb(178, 125, 178, 0.5);
   mix-blend-mode: multiply;
   text-align: center;
   vertical-align: middle;
@@ -36,7 +35,7 @@ const PageHeading = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border-left: 6px double #5D00FF;
+  border-left: 6px double #5d00ff;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   text-align: center;
@@ -49,7 +48,7 @@ const PageHeading = styled.div`
   animation: ${fadeInRight} ease 1s forwards;
 `
 const MainHeading = styled.h1`
-  font-family: "Archivo Black", 'Impact';
+  font-family: "Archivo Black", "Impact";
   font-size: 2.4rem;
   text-align: center;
   letter-spacing: 1px;
@@ -63,7 +62,8 @@ const MainHeading = styled.h1`
 const PodBox = styled.li`
   padding: 2rem;
   background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   list-style: none;
   position: relative;
   max-width: 600px;
@@ -79,21 +79,32 @@ const PodList = styled.ul`
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
 `
 const Normal = styled.p`
-line-height: 1.8;
+  line-height: 1.8;
 `
 
 class Pods extends React.Component {
   render() {
     return (
       <main>
-      <PageCircle style={{ marginBottom: `4rem`, marginTop: `4rem` }}>
+        <PageCircle style={{ marginBottom: `4rem`, marginTop: `4rem` }}>
           <PageHeading></PageHeading>
         </PageCircle>
         <MainHeading>Podcast</MainHeading>
-        <h2 style={{fontFamily: `Helvetica, Roboto, 'Open Sans'`, fontWeight: `normal`, letterSpacing: `2px`, lineHeight: `1.8`, fontSize: `0.9rem`, textAlign: `center`}}>By Marina Garvey Birch and Erica McCoy</h2>
+        <h2
+          style={{
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+            fontWeight: `normal`,
+            letterSpacing: `2px`,
+            lineHeight: `1.8`,
+            fontSize: `0.9rem`,
+            textAlign: `center`,
+          }}
+        >
+          By Marina Garvey Birch and Erica McCoy
+        </h2>
         <PodList>
           <PodBox>
             <h3
@@ -107,20 +118,44 @@ class Pods extends React.Component {
                 color: `#333333`,
               }}
             >
-              Wollstonecraft Walks</h3><h4 style={{textAlign: `center`, fontWeight: `normal`, color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 1</i></h4>
-            
+              Wollstonecraft Walks
+            </h3>
+            <h4
+              style={{
+                textAlign: `center`,
+                fontWeight: `normal`,
+                color: `#333333`,
+                textTransform: `uppercase`,
+                letterSpacing: `2px`,
+                marginTop: `2rem`,
+              }}
+            >
+              <i>Episode 1</i>
+            </h4>
+
             <Normal>
-              Readings with walk context making walk experience
-              accessible to a remote audience including people with access
-              requirements
+              Readings with walk context making walk experience accessible to a
+              remote audience including people with access requirements
             </Normal>
             <div
               style={{
                 display: `grid`,
                 justifyContent: `center`,
+                alignItems: `center`,
+                textAlign: `center`,
               }}
             >
-              <AudioPlayer track={Ep1} />
+              <div
+                style={{
+                  display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
+                  flexDirection: `row`,
+                  justifyContent: `center`,
+                  textAlign: `center`,
+                  alignContent: `center`,
+                }}
+              >
+                <AudioPlayer track={Ep1} />
+              </div>
             </div>
           </PodBox>
           <PodBox>
@@ -135,20 +170,43 @@ class Pods extends React.Component {
                 color: `#333333`,
               }}
             >
-              Wollstonecraft Walks </h3> <h4 style={{textAlign: `center`, fontWeight: `normal`, color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 2</i></h4>
-            
+              Wollstonecraft Walks{" "}
+            </h3>{" "}
+            <h4
+              style={{
+                textAlign: `center`,
+                fontWeight: `normal`,
+                color: `#333333`,
+                textTransform: `uppercase`,
+                letterSpacing: `2px`,
+                marginTop: `2rem`,
+              }}
+            >
+              <i>Episode 2</i>
+            </h4>
             <Normal>
               Feedback from June 2019 audience at Stoke Newington Literary
               Festival
             </Normal>
-
             <div
               style={{
                 display: `grid`,
                 justifyContent: `center`,
+                alignItems: `center`,
+                textAlign: `center`,
               }}
             >
-              <AudioPlayer track={Ep2} />
+              <div
+                style={{
+                  display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
+                  flexDirection: `row`,
+                  justifyContent: `center`,
+                  textAlign: `center`,
+                  alignContent: `center`,
+                }}
+              >
+                <AudioPlayer track={Ep2} />
+              </div>
             </div>
           </PodBox>
           <PodBox>
@@ -163,8 +221,20 @@ class Pods extends React.Component {
                 color: `#333333`,
               }}
             >
-              Wollstonecraft Walks  </h3><h4 style={{textAlign: `center`, fontWeight: `normal`, color: `#333333`, textTransform: `uppercase`, letterSpacing: `2px`, marginTop: `2rem`}}><i>Episode 3</i></h4>
-           
+              Wollstonecraft Walks{" "}
+            </h3>
+            <h4
+              style={{
+                textAlign: `center`,
+                fontWeight: `normal`,
+                color: `#333333`,
+                textTransform: `uppercase`,
+                letterSpacing: `2px`,
+                marginTop: `2rem`,
+              }}
+            >
+              <i>Episode 3</i>
+            </h4>
 
             <Normal>
               Marina chats to Anna and Rebecca back stage about their project
@@ -177,9 +247,21 @@ class Pods extends React.Component {
               style={{
                 display: `grid`,
                 justifyContent: `center`,
+                alignItems: `center`,
+                textAlign: `center`,
               }}
             >
-              <AudioPlayer track={Ep3} />
+              <div
+                style={{
+                  display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
+                  flexDirection: `row`,
+                  justifyContent: `center`,
+                  textAlign: `center`,
+                  alignContent: `center`,
+                }}
+              >
+                <AudioPlayer track={Ep3} />
+              </div>
             </div>
           </PodBox>
         </PodList>

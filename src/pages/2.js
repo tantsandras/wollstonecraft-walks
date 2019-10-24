@@ -21,13 +21,18 @@ class StepTwoPage extends React.Component {
   render() {
     return (
       <>
+      <div style={{display: `grid`, justifyContent: `center`, alignItems: `center`, textAlign: `center`,}}>
         <div
           style={{
-            display: `grid`,
+            display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
+            flexDirection: `row`,
             justifyContent: `center`,
+            textAlign: `center`,
+            alignContent: `center`,
           }}
         >
           <AudioPlayer track={AudioStepTwo} />
+        </div>
         </div>
         <Link to={"/1"}>
           <BackButton />

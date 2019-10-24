@@ -326,12 +326,11 @@ class FmPrefAndFilm extends React.Component {
               </Normal>
 
               <Overlay>
-If the video hasn't showed up, it can be found here: <a
+<Normal style={{transform: `translateY(-40px)`}}>If the video hasn't showed up, it can be found here: <br /> <a
               href="http://player.vimeo.com/video/149630321"
               target="_blank"
               rel="noopener noreferrer"
-              
-            >http://player.vimeo.com/video/149630321</a>
+              >http://player.vimeo.com/video/149630321</a></Normal>
                 <Video
                   src="http://player.vimeo.com/video/149630321"
                   frameBorder="0"
