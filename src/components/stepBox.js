@@ -19,12 +19,12 @@ const Box = styled.li`
 `
 
 const arrow = {
-  border: `solid #403C3C`,
+  border: `solid rgba(0,0,0,.5)`,
   borderWidth: `0px 2px 2px 0px`,
   display: `table-cell`,
   position: `absolute`,
-  top: `40%`,
-  right: `4%`,
+  top: `43%`,
+  right: `5%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
   padding: `10px`,
