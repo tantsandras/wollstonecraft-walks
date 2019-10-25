@@ -130,7 +130,7 @@ max-width: 185px;
 max-height: 185px;
 margin: 0 auto;
 z-index: -1;
-animation: ${fadeInRight} ease 1s forwards;
+animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 class Step2 extends React.Component {

@@ -82,7 +82,7 @@ const ImageWrap = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden !important;
-  animation: ${fadeInRight} ease 1s forwards;
+  animation: ${fadeInRight} ease 1.2s forwards;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -145,11 +145,11 @@ class Step1 extends React.Component {
     return (
       <main>
         <ImageWrap style={{            
-            maxWidth: `285px`,
-            maxHeight: `285px`,
+            maxWidth: `280px`,
+            maxHeight: `280px`,
             margin: `0 auto`,
             marginTop: `-4.8rem`, zIndex: `-1`,}}>
-          <img src={`${MildmayImage}`} alt="Image of the entrence of the Mildmay Club" style={{width: `290px`}} />
+          <img src={`${MildmayImage}`} alt="Image of the entrence of the Mildmay Club" style={{width: `280px`, height: `280px`}} />
         </ImageWrap>
         <StepCircle style={{marginTop: `-70px`}}>
           <StepNum>1</StepNum>

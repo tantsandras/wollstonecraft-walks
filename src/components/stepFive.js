@@ -151,7 +151,7 @@ const ImgageWrap = styled.div`
   -webkit-border-radius: 50%;
   overflow: hidden;
   mix-blend-mode: screen;
-  animation: ${fadeInRight} ease 1s forwards;
+  animation: ${fadeInRight} ease 1.2s forwards;
   margin: 0 auto;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

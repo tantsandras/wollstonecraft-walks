@@ -132,7 +132,7 @@ const ImgWrap = styled.div`
   -webkit-border-radius: 50%;
   overflow: hidden;
   mix-blend-mode: lighten;
-  animation: ${fadeInRight} ease 1s forwards;
+  animation: ${fadeInRight} ease 1.2s forwards;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);

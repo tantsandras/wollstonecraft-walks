@@ -80,7 +80,7 @@ const ImgageWrap = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
-  animation: ${fadeInRight} ease 1s forwards;
+  animation: ${fadeInRight} ease 1.2s forwards;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
