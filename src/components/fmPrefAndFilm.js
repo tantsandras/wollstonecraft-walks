@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components"
 import MOW from "../images/posters/MoW Poster-1 (1).jpg"
 import QuoteAnne from "../images/posters/Insprational Quotes_compressed-05.jpg"
 import QuoteAudre from "../images/posters/Insprational Quotes_compressed-12.jpg"
+import ArtBook from "../components/artBook"
 
 const turnVisible = keyframes`
 	from {
@@ -115,7 +116,7 @@ const Credits = styled.h5`
   font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.8;
 `
 
@@ -143,6 +144,267 @@ class FmPrefAndFilm extends React.Component {
             Performance and Film Archive
           </i>
         </MainHeading>
+        <article style={{ padding: `0% 8% 3% 8%` }}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/1O7ChTQmz1xgOhd0zr7KB4eCf77VPzEsi/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=1O7ChTQmz1xgOhd0zr7KB4eCf77VPzEsi"
+              download
+            >
+              Click here to download Wollstonecraft Live! Poster
+            </PdfLink>
+          </VideoList>
+        </article>
+        <span
+          style={{
+            width: `100%`,
+            margin: `0 auto`,
+            display: `inline-block`,
+            padding: `1% 8% 0% 8%`,
+          }}
+        >
+          <ProjectHeading>
+            <Heading
+              style={{
+                verticalAlign: `bottom`,
+                lineHeight: `1.5`,
+              }}
+            >
+              Wollstonecraft Live!
+              <br />
+            </Heading>
+            
+            <Normal style={{ marginTop: `1rem`, textAlign: `left` }}>
+                Meet Mary Wollstonecraft (1759-1797), Britain's first feminist.
+                She articulated the case for women's suffrage, wrote A
+                Vindication of the Rights of Women and gave birth to Mary
+                Shelley who wrote Frankenstein.
+              </Normal>
+          </ProjectHeading>
+          <p
+            style={{
+              fontSize: `0.9rem`,
+              float: `right`,
+              marginTop: `1.4rem`,
+              marginLeft: `0.2rem`,
+              zIndex: `2`
+            }}
+          >
+            <i
+              style={{
+                
+                letterSpacing: `2px`,
+                
+              }}
+            >
+              Written by{" "}
+            </i>
+            - Kaethe Fine
+            <br />
+            <i
+              style={{
+                
+                letterSpacing: `2px`,
+                
+              }}
+            >
+              Concieved by{" "}
+            </i>
+            - Kaethe Fine and Anna Birch
+            <br />
+            <i
+              style={{
+                
+                letterSpacing: `2px`,
+                
+              }}
+            >
+              Produced and directed by{" "}
+            </i>
+            - Anna Birch <br />
+          </p>
+        </span>
+        <ul
+          style={{
+            padding: `0% 8% 0% 8%`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+            color: `#241E20`,
+            display: `grid`,
+            gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
+            gridGap: `1rem`,
+            columnGap: `6%`,
+            margin: `0 auto`,
+          }}
+        >
+          <Box>
+            <Heading
+              style={{
+                borderTop: `2px solid #241E20`,
+                paddingTop: `1rem`,
+              }}
+            >
+              Part 1
+            </Heading>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`,
+                }}
+              >
+                <Video
+                  title="Wollstonecraft Live video, Part 1"
+                  src="https://www.youtube.com/embed/vSFDuNrA_lA"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </div>
+            </li>
+          </Box>
+          <Box>
+            <Heading
+              style={{
+                borderTop: `2px solid #241E20`,
+                paddingTop: `1rem`,
+              }}
+            >
+              Part 2
+            </Heading>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`,
+                }}
+              >
+                <Video
+                  title="Wollstonecraft Live video, Part 2"
+                  src="https://www.youtube.com/embed/i5Uxlj9eDNI"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </div>
+            </li>
+          </Box>
+          <Box>
+            <Heading
+              style={{
+                borderTop: `2px solid #241E20`,
+                paddingTop: `1rem`,
+              }}
+            >
+              Part 3
+            </Heading>
+            <li
+              style={{
+                height: `auto`,
+                listStyle: `none`,
+                maxWidth: `900px`,
+              }}
+            >
+              <div
+                style={{
+                  position: `relative`,
+                  overflow: `hidden`,
+                  paddingTop: `56.25%`,
+                  marginBottom: `1rem`,
+                }}
+              >
+                <Video
+                  title="Wollstonecraft Live video, Part 3"
+                  src="https://www.youtube.com/embed/PLOLhxc5wqE"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </div>
+            </li>
+          </Box>
+        </ul>
+        <article
+          style={{
+            padding: `1% 8% 1% 8%`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+            background: `url("${QuoteAudre}") right 11% top 40%/28% no-repeat`,
+          }}
+        >
+          <Videos>
+            <VideoList
+              style={{
+                borderLeft: `2px solid #FF008A`,
+                borderTop: `2px solid #FF008A`,
+                borderBottom: `1px solid rgba(0, 0, 0, 0.2)`,
+                borderRight: `1px solid rgba(0, 0, 0, 0.2)`,
+                boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #FF008A`,
+              }}
+            >
+              <Heading style={{fontSize: `1.2rem`}}>The Wollstonecraft Live Experience!</Heading>
+              <Credits>
+                2007 Outdoor film screening and live music on Newington Green
+              </Credits>
+              <Overlay>
+                <Video
+                  src="https://www.youtube.com/embed/nDSlEmgryyA"
+                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
+                ></Video>
+              </Overlay>
+            </VideoList>
+          </Videos>
+        </article>
+
+        <article style={{ padding: `2% 10% 1% 10%` }}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+            <Overlay style={{ marginTop: `0rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw"
+              download
+            >
+              Click here to download Wollstonecraft Live Experience Poster 1
+            </PdfLink>
+
+            <Overlay style={{ marginTop: `2rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/1PqeTfCrcP--0F73gPkOeEt2wah6x8y3f/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=1PqeTfCrcP--0F73gPkOeEt2wah6x8y3f"
+              download
+            >
+              Click here to download Wollstonecraft Live Experience Poster 2
+            </PdfLink>
+          </VideoList>
+        </article>
         <article
           style={{
             padding: `0% 8% 0% 8%`,
@@ -193,6 +455,7 @@ class FmPrefAndFilm extends React.Component {
             </VideoList>
           </Videos>
         </article>
+        <ArtBook />
         <article
           style={{
             padding: `2% 8% 3% 8%`,
@@ -345,300 +608,6 @@ class FmPrefAndFilm extends React.Component {
               </Overlay>
             </VideoList>
           </Videos>
-        </article>
-        <article style={{ padding: `2% 10% 1% 10%` }}>
-          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
-            <Overlay style={{ marginTop: `0rem`, marginBottom: `1rem` }}>
-              <Video
-                src="https://drive.google.com/file/d/12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw/preview"
-                width="640"
-                height="480"
-              ></Video>
-            </Overlay>
-            <PdfLink
-              href="https://drive.google.com/uc?export=download&id=12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw"
-              download
-            >
-              Click here to download Wollstonecraft Live Experience Poster 1
-            </PdfLink>
-
-            <Overlay style={{ marginTop: `2rem`, marginBottom: `1rem` }}>
-              <Video
-                src="https://drive.google.com/file/d/1PqeTfCrcP--0F73gPkOeEt2wah6x8y3f/preview"
-                width="640"
-                height="480"
-              ></Video>
-            </Overlay>
-            <PdfLink
-              href="https://drive.google.com/uc?export=download&id=1PqeTfCrcP--0F73gPkOeEt2wah6x8y3f"
-              download
-            >
-              Click here to download Wollstonecraft Live Experience Poster 2
-            </PdfLink>
-          </VideoList>
-        </article>
-        <span
-          style={{
-            width: `100%`,
-            margin: `0 auto`,
-            display: `inline-block`,
-            padding: `10% 8% 0% 8%`,
-          }}
-        >
-          <ProjectHeading>
-            <Heading
-              style={{
-                verticalAlign: `bottom`,
-                lineHeight: `1.5`,
-              }}
-            >
-              Wollstonecraft Live!
-              <br />
-              <i
-                style={{
-                  fontFamily: `'Archivo Black', 'Impact'`,
-                  fontSize: `1rem`,
-                  textAlign: `left`,
-                  letterSpacing: `1px`,
-                }}
-              >
-                by Kaethe Fine 2005
-              </i>
-            </Heading>
-          </ProjectHeading>
-          <p
-            style={{
-              fontSize: `0.8rem`,
-              float: `right`,
-              marginTop: `1rem`,
-              marginLeft: `0.2rem`,
-            }}
-          >
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
-              Script{" "}
-            </i>
-            - Kaethe Fine
-            <br />
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
-              Director{" "}
-            </i>
-            - Anna Birch
-            <br />
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
-              Composer{" "}
-            </i>
-            - Alastair Gavin <br />
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
-              Movement{" "}
-            </i>
-            - Sarah Rubidge <br />
-            <i
-              style={{
-                fontSize: `1rem`,
-                letterSpacing: `2px`,
-                lineHeight: `2`,
-              }}
-            >
-              Voice{" "}
-            </i>
-            - Sheila Landahl
-            <br />
-          </p>
-        </span>
-        <ul
-          style={{
-            padding: `0% 8% 0% 8%`,
-            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            color: `#241E20`,
-            display: `grid`,
-            gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
-            gridGap: `1rem`,
-            columnGap: `6%`,
-            margin: `0 auto`,
-          }}
-        >
-          <Box>
-            <Heading
-              style={{
-                borderTop: `2px solid #241E20`,
-                paddingTop: `1rem`,
-              }}
-            >
-              Part 1
-            </Heading>
-            <li
-              style={{
-                height: `auto`,
-                listStyle: `none`,
-                maxWidth: `900px`,
-              }}
-            >
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                  marginBottom: `1rem`,
-                }}
-              >
-                <Video
-                  title="Wollstonecraft Live video, Part 1"
-                  src="https://www.youtube.com/embed/vSFDuNrA_lA"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  allowFullScreen
-                ></Video>
-              </div>
-            </li>
-          </Box>
-          <Box>
-            <Heading
-              style={{
-                borderTop: `2px solid #241E20`,
-                paddingTop: `1rem`,
-              }}
-            >
-              Part 2
-            </Heading>
-            <li
-              style={{
-                height: `auto`,
-                listStyle: `none`,
-                maxWidth: `900px`,
-              }}
-            >
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                  marginBottom: `1rem`,
-                }}
-              >
-                <Video
-                  title="Wollstonecraft Live video, Part 2"
-                  src="https://www.youtube.com/embed/i5Uxlj9eDNI"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  allowFullScreen
-                ></Video>
-              </div>
-            </li>
-          </Box>
-          <Box>
-            <Heading
-              style={{
-                borderTop: `2px solid #241E20`,
-                paddingTop: `1rem`,
-              }}
-            >
-              Part 3
-            </Heading>
-            <li
-              style={{
-                height: `auto`,
-                listStyle: `none`,
-                maxWidth: `900px`,
-              }}
-            >
-              <div
-                style={{
-                  position: `relative`,
-                  overflow: `hidden`,
-                  paddingTop: `56.25%`,
-                  marginBottom: `1rem`,
-                }}
-              >
-                <Video
-                  title="Wollstonecraft Live video, Part 3"
-                  src="https://www.youtube.com/embed/PLOLhxc5wqE"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  allowFullScreen
-                ></Video>
-              </div>
-            </li>
-          </Box>
-        </ul>
-
-        <article
-          style={{
-            padding: `6% 8% 1% 8%`,
-            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${QuoteAudre}") right 11% top 40%/28% no-repeat`,
-          }}
-        >
-          <Videos>
-            <VideoList
-              style={{
-                borderLeft: `2px solid #FF008A`,
-                borderTop: `2px solid #FF008A`,
-                borderBottom: `1px solid rgba(0, 0, 0, 0.2)`,
-                borderRight: `1px solid rgba(0, 0, 0, 0.2)`,
-                boxShadow: `-14px -14px 1px #FFFEFF, -16px -16px 0px 0px #FF008A`,
-              }}
-            >
-              <Heading style={{fontSize: `1.2rem`}}>Wollstonecraft Live!</Heading>
-              <Credits>
-                Written by Kaethe Fine <br />
-                Concieved by Kaethe Fine and Anna Birch <br />
-                Produced and directed by Anna Birch <br />
-              </Credits>
-              <Normal style={{ marginTop: `2rem` }}>
-                Meet Mary Wollstonecraft (1759-1797), Britain's first feminist.
-                She articulated the case for women's suffrage, wrote A
-                Vindication of the Rights of Women and gave birth to Mary
-                Shelley who wrote Frankenstein.
-              </Normal>
-
-              <Overlay>
-                <Video
-                  src="https://www.youtube.com/embed/nDSlEmgryyA"
-                  style={{ maxWidth: `640px`, maxHeight: `385px` }}
-                  allowFullScreen
-                ></Video>
-              </Overlay>
-            </VideoList>
-          </Videos>
-        </article>
-
-        <article style={{ padding: `0% 8% 10% 8%` }}>
-          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
-            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
-              <Video
-                src="https://drive.google.com/file/d/1O7ChTQmz1xgOhd0zr7KB4eCf77VPzEsi/preview"
-                width="640"
-                height="480"
-              ></Video>
-            </Overlay>
-            <PdfLink
-              href="https://drive.google.com/uc?export=download&id=1O7ChTQmz1xgOhd0zr7KB4eCf77VPzEsi"
-              download
-            >
-              Click here to download Wollstonecraft Live! Poster
-            </PdfLink>
-          </VideoList>
         </article>
       </main>
     )

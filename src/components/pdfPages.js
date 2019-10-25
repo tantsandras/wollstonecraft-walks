@@ -28,11 +28,21 @@ const PdfLink = styled.a`
   font-family: Helvetica, Roboto, "Open Sans";
   text-decoration: none;
   font-size: 1rem;
+  font-weight: normal;
   &:hover {
     text-decoration: none;
     color: MediumBlue;
     cursor: pointer;
   }
+`
+
+const Credits = styled.h5`
+  font-family: Helvetica, Roboto, "Open Sans";
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  text-align: center;
 `
 
 class Pages extends React.Component {
@@ -72,31 +82,21 @@ class Pages extends React.Component {
                   fontSize: `1.2rem`,
                   textAlign: `center`,
                   letterSpacing: `1px`,
-                  lineHeight: `2`,
+                  lineHeight: `1.3`,
+                    marginBottom: `4rem`,
                 }}
               >
                 The Wollstonecraft Live Experience!
-                <br />
-                <i
-                  style={{
-                    fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-                    fontSize: `1rem`,
-                    textAlign: `center`,
-                    letterSpacing: `1px`,
-                    marginTop: `1rem`,
-                    fontWeight: `normal`
-                  }}
-                >
-                  Limited edition art book PDF
-                </i>
-                <br />
+                </h2>
+                <Credits>
+                  Limited edition art book PDF<br />
                 <PdfLink
                   href="https://drive.google.com/uc?export=download&id=191dUfzDGadedUpdtvG3od2gGUwrRv0x7"
                   download
                 >
                   Click here to download
                 </PdfLink>
-              </h2>
+</Credits>
               <div style={pageGrid}>
                 <Slide>
                   <Img key={image.src} fluid={image} />

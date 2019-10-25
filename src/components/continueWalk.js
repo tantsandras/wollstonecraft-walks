@@ -19,10 +19,10 @@ const Continue = styled.button`
     cursor: pointer;
     border: none;
     border-radius: 2px;
-    transition: background-color 0.6s ease;
-    -webkit-transition: background-color 0.6s ease-out;
-    -moz-transition: background-color 0.6s ease-out;
-    -o-transition: background-color 0.6s ease-out;    
+    transition: background-color 0.4s ease;
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;    
 
     &:hover {
         background-color: #ff0000;
