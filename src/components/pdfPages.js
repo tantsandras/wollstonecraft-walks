@@ -3,6 +3,17 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled, { keyframes } from "styled-components"
 
+const fadeInLeft= keyframes`
+    from {
+      opacity: 0;
+      transform: translateX(45px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  `
+
 const pageGrid = {
   display: `grid`,
   gridTemplateColumns: `repeat(auto-fit, minmax(240px, 2fr))`,
@@ -43,6 +54,9 @@ const Credits = styled.h5`
   font-size: 0.9rem;
   line-height: 1.8;
   text-align: center;
+`
+const Pdf = styled(Img)`
+animation: ${fadeInLeft} 0.4s backwards;
 `
 
 class Pages extends React.Component {
@@ -99,10 +113,10 @@ class Pages extends React.Component {
 </Credits>
               <div style={pageGrid}>
                 <Slide>
-                  <Img key={image.src} fluid={image} />
+                  <Pdf key={image.src} fluid={image} />
                 </Slide>
                 <Slide>
-                  <Img key={image2.src} fluid={image2} />
+                  <Pdf key={image2.src} fluid={image2} />
                 </Slide>
               </div>
             </>

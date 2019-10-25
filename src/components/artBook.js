@@ -2,6 +2,7 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import Pages from "../components/pdfPages"
 
+
 const leftArrow = {
   border: `solid #241E20`,
   borderWidth: `0px 1.6px 1.6px 0px`,
@@ -12,6 +13,7 @@ const leftArrow = {
   padding: `7.5px`,
   transform: `rotate(135deg)`,
   WebkitTransform: `rotate(135deg)`,
+  boxShadow: `0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04)`
 }
 
 const LeftArrow = styled.div`
@@ -28,10 +30,14 @@ const arrow = {
   padding: `8px`,
   transform: `rotate(-45deg)`,
   WebkitTransform: `rotate(-45deg)`,
+  boxShadow: `0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04)`
 }
 
 const RightArrow = styled.div`
   transform: translateY(44rem);
+`
+
+const SliderWrapper = styled.div`
 `
 
 class ArtBook extends React.Component {
@@ -63,7 +69,6 @@ class ArtBook extends React.Component {
       currentIndex: prevState.currentIndex + 1,
     }))
   }
-
   render() {
     return (
       <article style={{ backgroundColor: `#FFFEFF`, color: `#333333`}}>
@@ -78,12 +83,7 @@ class ArtBook extends React.Component {
           gridTemplateRows: `repeat(1, auto)`,
         }}
       >
-        <div
-          className="slider-wrapper"
-          style={{
-            transition: "transform ease-out 0.45s",
-          }}
-        >
+        <SliderWrapper>
           <LeftArrow onClick={this.goToPrevSlide}>
             <i style={leftArrow} aria-hidden="true"></i>
           </LeftArrow>
@@ -92,7 +92,7 @@ class ArtBook extends React.Component {
           </RightArrow>
 
           <Pages currentPage={this.state.currentIndex} />
-        </div>
+        </SliderWrapper>
       </div>
       </article>
     )

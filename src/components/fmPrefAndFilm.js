@@ -145,12 +145,13 @@ class FmPrefAndFilm extends React.Component {
           </i>
         </MainHeading>
         <article style={{ padding: `0% 8% 3% 8%` }}>
-          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
-            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
+          <VideoList style={{ margin: `0 auto`}}>
+            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem`}}>
               <Video
                 src="https://drive.google.com/file/d/1O7ChTQmz1xgOhd0zr7KB4eCf77VPzEsi/preview"
-                width="640"
-                height="480"
+                width="100%"
+                height="100%"
+                frameborder="0"
               ></Video>
             </Overlay>
             <PdfLink
@@ -376,7 +377,7 @@ class FmPrefAndFilm extends React.Component {
 
         <article style={{ padding: `2% 10% 1% 10%` }}>
           <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
-            <Overlay style={{ marginTop: `0rem`, marginBottom: `1rem` }}>
+            <Overlay style={{ marginTop: `0rem`, marginBottom: `1rem`}}>
               <Video
                 src="https://drive.google.com/file/d/12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw/preview"
                 width="640"
