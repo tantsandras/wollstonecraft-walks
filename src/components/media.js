@@ -192,7 +192,7 @@ class Media extends React.Component {
                 <Video
                   width="560"
                   height="315"
-                  src="https://drive.google.com/file/d/1hMKAcq6bBLULjuxUXVElgPpO6js4epYe/preview"
+                  src="https://www.youtube.com/embed/mxOMX4eSF00"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                 ></Video>
               </Overlay>
@@ -211,7 +211,7 @@ class Media extends React.Component {
                 <Video
                   width="560"
                   height="315"
-                  src="https://drive.google.com/file/d/1WG7FaiJ0jiRR9pJqfdDfeapiT1wMcJBQ/preview"
+                  src="https://www.youtube.com/embed/ZUxc_R1Ib6E"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                 ></Video>
               </Overlay>
@@ -271,7 +271,7 @@ class Media extends React.Component {
                 <Video
                   width="560"
                   height="315"
-                  src="https://drive.google.com/file/d/1hw4kYeLsv1K9KbyM0RIXmKn-5cBijo7E/preview"
+                  src="https://www.youtube.com/embed/53ccttjCtZ4"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                 ></Video>
               </Overlay>
@@ -372,7 +372,7 @@ class Media extends React.Component {
                 <Video
                   width="560"
                   height="315"
-                  src="https://drive.google.com/file/d/1HhENKYHBfqZLb8cGk12HcmG3oaSmeLFI/preview"
+                  src="https://www.youtube.com/embed/TO8Z4dVRaaE"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
                 ></Video>
               </Overlay>

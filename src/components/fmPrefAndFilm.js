@@ -387,7 +387,7 @@ class FmPrefAndFilm extends React.Component {
               href="https://drive.google.com/uc?export=download&id=12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw"
               download
             >
-              Click here to download Wollstonecraft Live Experience Poster 1
+              Click here to download front of Wollstonecraft Live Experience flyer
             </PdfLink>
 
             <Overlay style={{ marginTop: `2rem`, marginBottom: `1rem` }}>
@@ -401,7 +401,7 @@ class FmPrefAndFilm extends React.Component {
               href="https://drive.google.com/uc?export=download&id=1PqeTfCrcP--0F73gPkOeEt2wah6x8y3f"
               download
             >
-              Click here to download Wollstonecraft Live Experience Poster 2
+              Click here to download back of Wollstonecraft Live Experience flyer
             </PdfLink>
           </VideoList>
         </article>
@@ -447,7 +447,7 @@ class FmPrefAndFilm extends React.Component {
               <Overlay>
                 <Video
                   style={{ float: `right` }}
-                  src="https://drive.google.com/file/d/14mtznjDlVBtCwxE7JRhgAT82om3QPU9d/preview"
+                  src="https://www.youtube.com/embed/ehCTNvc89UQ"
                   width="640"
                   height="480"
                 ></Video>
@@ -529,9 +529,8 @@ class FmPrefAndFilm extends React.Component {
               >
                 <i
                   style={{
-                    fontSize: `1rem`,
+                    fontSize: `0.8rem`,
                     letterSpacing: `2px`,
-                    lineHeight: `2`,
                   }}
                 >
                   Film-maker{" "}
@@ -540,9 +539,8 @@ class FmPrefAndFilm extends React.Component {
                 <br />
                 <i
                   style={{
-                    fontSize: `1rem`,
+                    fontSize: `0.8rem`,
                     letterSpacing: `2px`,
-                    lineHeight: `2`,
                   }}
                 >
                   Artistic Director{" "}
@@ -551,9 +549,8 @@ class FmPrefAndFilm extends React.Component {
                 <br />
                 <i
                   style={{
-                    fontSize: `1rem`,
+                    fontSize: `0.8rem`,
                     letterSpacing: `2px`,
-                    lineHeight: `2`,
                   }}
                 >
                   Subtitles{" "}
