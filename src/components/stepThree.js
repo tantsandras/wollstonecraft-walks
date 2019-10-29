@@ -15,7 +15,7 @@ const fadeInRight = keyframes`
   `
 
 const StepCircle = styled.div`
-  z-index: -1;
+  z-index: 1;
   position: relative;
   border-radius: 50%;
   margin: 0 auto;
@@ -117,7 +117,7 @@ class Step3 extends React.Component {
             width: `250px`,
             height: `250px`,
             margin: `0 auto`,
-            zIndex: `-1`,
+            zIndex: `-2`,
             marginTop: `-4.8rem`}}>
           <img src={`${MemorialImg}`} alt="Image of Mary Wollstonecraft" />
         </ImgageWrap>

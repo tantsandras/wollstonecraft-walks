@@ -149,7 +149,7 @@ class FmPrefAndFilm extends React.Component {
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem`}}>
               <Video
                 src="https://drive.google.com/file/d/1O7ChTQmz1xgOhd0zr7KB4eCf77VPzEsi/preview"
-                width="100%"
+                width="400px"
                 height="100%"
                 frameborder="0"
               ></Video>

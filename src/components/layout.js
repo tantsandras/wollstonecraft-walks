@@ -8,6 +8,14 @@ import "./layout.css"
 import Footer from "./footer"
 import { Helmet } from "react-helmet"
 import "typeface-archivo-black"
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'Archivo Black', Impact, sans-serif;
+  }
+`
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -38,6 +46,7 @@ const Layout = ({ children }) => {
       >
         <html lang="en" style={{fontFamily: `'Archivo Black', Impact, sans-serif`}}/>
       </Helmet>
+      <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Menu />
       <div

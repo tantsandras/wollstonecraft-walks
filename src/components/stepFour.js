@@ -145,9 +145,9 @@ class Step4 extends React.Component {
       <main style={{ position: `relative` }}>
         <ImgWrap
           style={{
-            width: `250px`,
-            height: `250px`,
-            zIndex: `-1`,
+            width: `254px`,
+            height: `254px`,
+            zIndex: `-2`,
             margin: `0 auto`,
             marginTop: `-4.8rem`,
           }}

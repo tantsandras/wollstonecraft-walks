@@ -6,6 +6,13 @@ import Circles from "../components/circles"
 import Steps from "../components/steps"
 import "typeface-archivo-black"
 import 'typeface-bungee-shade'
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'Archivo Black', Impact, sans-serif;
+  }
+`
 
 
 const IndexPage = () => {
@@ -14,6 +21,7 @@ const IndexPage = () => {
 return (
 
   <Layout>
+    <GlobalStyle />
     <SEO title="Home" />
     <Circles />
     <Steps />

@@ -237,7 +237,7 @@ class Pods extends React.Component {
             </h4>
 
             <Normal>
-              Marina chats to Anna and Rebecca back stage about their project
+              Marina chats to Anna and Rebecca backstage about their project
               Wollstonecraft Walks: Anna Birch, Artistic Director Fragments
               &amp; Monuments performance and film company and Artistic
               Director, Rebecca Mordan Scary Little Girls, feminist production

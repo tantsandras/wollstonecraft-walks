@@ -285,7 +285,7 @@ class Step2 extends React.Component {
               <br />
               Let them disapprove in their hordes.
               <br />
-              You’ll fnd that being disapproved of
+              You’ll find that being disapproved of
               <br />
               Builds character, brings rewards.
               <br />
