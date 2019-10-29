@@ -70,7 +70,7 @@ class ContactBox extends React.Component {
           <SubHeading>
             Fragments & Monuments performance and film
             <br />
-           fragmentsandmonuments.com
+           www.fragmentsandmonuments.com
           </SubHeading>
           <Normal>
           Anna combines her professional expertise as a theatre and film director

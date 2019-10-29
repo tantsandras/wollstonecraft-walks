@@ -5,6 +5,7 @@ import Gallery from "../components/gallery"
 import Circles from "../components/circles"
 import styled, { keyframes } from "styled-components"
 import "typeface-archivo-black"
+import Gallery2 from "../components/gallery2"
 
 const ImageWrapper = styled.div`
   position: relative;
@@ -41,8 +42,9 @@ const GalleryPage = props => {
       <Menu />
       <Circles />
       <Gallery />
+      <Gallery2 />
       <Wrapper className="grid">
-        <div className="content">
+<div className="content" style={{marginTop: `12rem`,}} >
           <h2
             style={{
               fontFamily: `'Archivo Black', 'Impact'`,
@@ -50,9 +52,7 @@ const GalleryPage = props => {
               letterSpacing: `1px`,
               fontSize: `1.4rem`,
               textAlign: `left`,
-              marginTop: `8rem`,
-              paddingBottom: `8rem`,
-              marginBottom: `12rem`,
+              marginBottom: `18em`,
               lineHeight: `1.5`,
             }}
           >
@@ -64,7 +64,8 @@ const GalleryPage = props => {
                   fontSize: `1rem`,
                   fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                   fontWeight: `normal`,
-                  marginTop: `4rem`,
+                  marginTop: `2rem`,
+                  marginBottom: `16em`,
                 }}
               >
                 {data.subheading}

@@ -204,6 +204,8 @@ const getTime = time => {
 }
 
 class AudioPlayer extends React.Component {
+
+
   state = {
     selectedTrack: null,
     player: "stopped",
@@ -231,6 +233,22 @@ class AudioPlayer extends React.Component {
 
   componentWillUnmount() {
     this.player.removeEventListener("timeupdate", () => {})
+  }
+  
+  setIntervalHelperBackward = () => {
+    this.interval = setInterval(() => {
+     this.player.currentTime -= 3
+    }, 300);
+  }
+
+  setIntervalHelperForward = () => {
+    this.interval = setInterval(() => {
+      this.player.currentTime += 3
+    }, 300);
+  }
+
+  clearIntervalHelper = () => {
+    clearInterval(this.interval);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -286,7 +304,9 @@ class AudioPlayer extends React.Component {
             <DoubleRewind
               autocomplete="off"
               label="Rewind"
-              onClick={() => this.player.currentTime--}
+              onMouseDown={ this.setIntervalHelperBackward }
+              onMouseUp={ this.clearIntervalHelper }
+              onClick={() => { return this.player.currentTime -= 3}}
             />
           </div>
           <div style={element}>
@@ -322,7 +342,9 @@ class AudioPlayer extends React.Component {
             <DoubleFastForward
               autocomplete="off"
               label="Fast forward"
-              onClick={() => this.player.currentTime++}
+              onMouseDown={ this.setIntervalHelperForward }
+              onMouseUp={ this.clearIntervalHelper }
+              onClick={() => { this.player.currentTime += 3}}
             />
           </div>
 

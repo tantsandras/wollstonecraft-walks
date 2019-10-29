@@ -48,6 +48,7 @@ const StyledLink = styled.a`
   font-weight: normal;
   z-index: 3;
   font-family: Helvetica, Roboto, "Open Sans";
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -100,12 +101,12 @@ const ContactPage = () => {
       <Menu />
       <AandR />
 
-      <article style={{ padding: `3% 10% 3% 10%` }}>
+      <article style={{ padding: `8% 10% 3% 10%` }}>
         <h4
           style={{
             fontFamily: `'Archivo Black', 'Impact'`,
             fontSize: `1.6rem`,
-            paddingBottom: `1rem`,
+            paddingBottom: `4rem`,
             letterSpacing: `2%`,
             color: `#333333`,
           }}
