@@ -298,7 +298,7 @@ class Step1 extends React.Component {
             <Direction>
               <Arrow color={"#383790"}></Arrow>
               Walk straight on past the Chinese Mission and head up the pavement
-              for about 100 hundred yards. Keep Newington Green on your left
+              for about 100 yards. Keep Newington Green on your left
               over the road and the rows of shops such as Yield and Boots on
               your right.
             </Direction>
