@@ -209,7 +209,7 @@ class Step3 extends React.Component {
           <Normal>
             ...why should not one woman acknowledge that she can take more
             exercise than another ? or in other words that she has a sound
-            constitution? And why, to damp innanent vivacity, is she darkly to
+            constitution? And why, to damp innocent vivacity, is she darkly to
             be told that men will draw conclusions which she thinks little of?
           </Normal>
 
@@ -220,7 +220,7 @@ class Step3 extends React.Component {
               (whispers) Wollstonecraft Live...
             </i>{" "}
             that no sensible mother with restrain the natural frankness of youth
-            by instilling such indanent cautions.
+            by instilling such indecent cautions.
           </Normal>
           <Normal>
             ...Women ought to endeavor to purify their heart, but can they do so
@@ -235,12 +235,12 @@ class Step3 extends React.Component {
             To gain affections of a virtuous man is affectation necessary?{" "}
             <b style={{ letterSpacing: `2px` }}>(rewind)</b>{" "}
             ...To gain affections of a virtuous man...
-            <b style={{ letterSpacing: `2px` }}>(rewind)</b> of
+            <b style={{ letterSpacing: `2px` }}>(rewind)</b> affection of
             a virtuous man...
             <b style={{ letterSpacing: `2px` }}>
               (rewind)
             </b>{" "}
-            affections of a virtuous man{" "}
+            of a virtuous man{" "}
             <b style={{ letterSpacing: `2px` }}>
               (rewind. cut)
             </b>

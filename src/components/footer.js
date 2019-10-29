@@ -190,6 +190,17 @@ const Footer = () => (
       </div>
       <div style={element}>
         <a
+          href="http://wollstonecraftlive.com/fm/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FmBubble>
+            <FmLogo />{" "}
+          </FmBubble>
+        </a>
+      </div>
+      <div style={element}>
+        <a
           href="https://scarylittlegirls.co.uk/"
           target="_blank"
           rel="noopener noreferrer"
@@ -222,17 +233,6 @@ const Footer = () => (
           <Bubble>
             <HeritageLogo />{" "}
           </Bubble>
-        </a>
-      </div>
-      <div style={element}>
-        <a
-          href="http://wollstonecraftlive.com/fm/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FmBubble>
-            <FmLogo />{" "}
-          </FmBubble>
         </a>
       </div>
     </FooterGrid>

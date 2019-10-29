@@ -155,6 +155,10 @@ class Song extends React.Component {
                   by William Brough and J. Gaspard Maeder
                 </i>
               </p>
+              <p>This song was sung by the Actresses Franchise League in their campaigning
+for the vote - Actresses Franchise League, 1908–1958, was formed in 1908
+as &#39;a bond of union between all women in the theatrical profession who are in
+sympathy with the Woman&#39;s Franchise Movement.</p>
               <span>
                 A &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; D &emsp;&emsp;
                 &ensp; A &emsp; &emsp; &emsp; &emsp; &ensp; D

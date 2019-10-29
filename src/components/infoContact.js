@@ -70,23 +70,40 @@ class ContactBox extends React.Component {
           <SubHeading>
             Fragments & Monuments performance and film
             <br />
-            director @ fragmentsandmonuments.com
+           fragmentsandmonuments.com
           </SubHeading>
           <Normal>
-            Anna combines her professional expertise as a theatre and film
-            director with her scholarly research and activism. Moving beyond the
-            theatre building, she has created a ‘living monuments’ dramaturgical
-            method to both search out and reveal hidden and often neglected
-            feminist biographies and histories. She researched her method
-            through site-specific performance and films about the life of early
-            feminist Mary Wollstonecraft (1759-1797) to show how this use of
-            multimedia provides an essential link to the performativity of
-            particular feminist achievements through history.
+          Anna combines her professional expertise as a theatre and film director
+with her scholarly research and activism. Moving beyond the theatre
+building, she has created a ‘living monuments’ performance and film
+methodology to both search out and reveal hidden and often neglected
+feminist biographies and her-stories. She researched her method through
+site-specific performance and films about the life of early feminist Mary
+Wollstonecraft (1759-1797) showing how this use of multimedia provides
+an essential link to the performativity of astonishing feminist achievements.
+Fragments &amp; Monuments performance and film company are delighted to
+bring you the Wollstonecraft Walks APP which includes an archive of our
+performance, film, outdoor screenings, gallery installations and book
+publishing since 2000. The archive is all about our heroine and neighbour,
+the eighteenth-century human rights activist Mary Wollstonecraft!
           </Normal>
           <Normal style={{ paddingBottom: `2rem` }}>
             Keep in touch and follow our updates for more volunteer
             opportunities and exciting Wollstonecraft Walks events!
           </Normal>
+          <Social>
+            <Handle
+              href="http://wollstonecraftlive.com/fm/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon src={Email} />
+              <SubHeading style={{ marginLeft: `80px` }}>
+              director@fragmentsandmonuments.com
+              </SubHeading>{" "}
+            </Handle>
+          </Social>
+          
           <Social>
             <Handle
               href="https://twitter.com/anna_birch1"

@@ -199,6 +199,26 @@ const ArtistList = () => {
           <StyledLink style={{ animationDelay: `0.8s` }}>
             Podcast Producer - Marina Garvey Birch
           </StyledLink>
+          <Social style={{ marginTop: `1.4rem`,}}>
+            <Handle
+              href="https://twitter.com/marina_jgb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon src={Twitter} />
+              @marina_jgb
+            </Handle>
+          </Social>
+          <Social>
+            <Handle
+              href="https://www.instagram.com/marinajgb/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon src={Instagram} />
+              @marinajgb
+            </Handle>
+          </Social>
         </li>
         <Second style={{ animationDelay: `1s` }}></Second>
         <li>
@@ -239,7 +259,7 @@ const ArtistList = () => {
         <Second style={{ animationDelay: `1.2s` }}></Second>
         <li>
           <StyledLink
-            href="https://www.discogs.com/artist/124155-Alastair-Gavin"
+            href="http://www.alastairgavin.com"
             target="_blank"
             rel="noopener noreferrer"
             style={{ animationDelay: `1.2s` }}
