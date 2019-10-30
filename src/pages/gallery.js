@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 `
 const GalleryPage = props => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-  console.log(data.image)
+  console.log(data)
   return (
     <main style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
       <SEO title="Gallery" />
