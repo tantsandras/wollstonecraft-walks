@@ -103,7 +103,9 @@ class GalleryPage extends React.Component {
                         title
                         subheading
                         description
-                        image
+                        images {
+                          image
+                        }
                       }
                     }
                   }

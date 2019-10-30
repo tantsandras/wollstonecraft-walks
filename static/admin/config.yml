@@ -25,9 +25,13 @@ collections:
         media_library:
           config:
             multiple: true
-        widget: "list"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Images, name: images, widget: list, field: {label: image, name: image, widget: image}}
+          - label: Images 
+            name: images 
+            widget: list 
+            fields: 
+              - {label: image, name: image, widget: image}
+              - {label: Image description, name: alt, widget: text}
