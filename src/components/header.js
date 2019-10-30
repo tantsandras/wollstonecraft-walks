@@ -37,7 +37,7 @@ font-display: block;
 font-weight: bolder;
 z-index: 1;
 line-height: 1.5;
-font-size: 2rem;
+font-size: 1.8rem;
 margin-top: 4rem;
 margin-bottom: -1rem;
 letter-spacing: 1px;

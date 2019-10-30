@@ -42,8 +42,6 @@ class Photos extends React.Component {
         `}
         render={data => (
           <>
-            <div className="content">
-            </div>
             {data.images.edges.map(photo => (
               <div className="item">
                 <Image className="content">

@@ -5,6 +5,8 @@ import styled, { keyframes } from "styled-components"
 import { graphql } from "gatsby"
 import "typeface-archivo-black"
 import Circles from "../components/circles"
+import AudioPlayer from "../components/audioPlayer"
+import MaryRound from "../audio/Mary Round.mp3"
 
 const turnVisible = keyframes`
 	from {
@@ -49,7 +51,7 @@ const Heading = styled.h2`
   z-index: 2;
   text-align: left;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #333333;
 `
 const PdfLink = styled.a`
@@ -74,37 +76,75 @@ animation: ${turnVisible} 0.6s ease-in;
 `
 
 const HeritageResearchPage = props => {
-  const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  const data = props.data.allFile.edges;
+  
   {
     console.log(data)
   }
   return (
-    <section style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
+    <main style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
       <SEO title="Heritage Research" />
       <Menu />
       <Circles />
       <article style={{ padding: `0% 10% 10% 10%` }}>
-        <MainHeading>
+      <MainHeading>
           Heritage Research
         </MainHeading>
         <PdfList maxWidth="640px" style={{ margin: `0 auto` }}>
-          <Heading>{data.title}</Heading>
+          <Heading>Wollstonecraft Walks 
+School assembly</Heading>
           <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
             <Preview
-              src={`https://drive.google.com/file/d/${data.file}/preview`}
+              src="https://drive.google.com/file/d/1CCEn1duUCjshdB1l0-oGZPJFpuN8-xlo/preview"
+              width="640"
+              height="480"
+            ></Preview>
+          </Overlay>
+          <div style={{display: `grid`, justifyContent: `center`, alignItems: `center`, textAlign: `center`,}}>
+        <div
+          style={{
+            display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
+            flexDirection: `row`,
+            justifyContent: `center`,
+            textAlign: `center`,
+            alignContent: `center`,
+            marginBottom: `2rem`
+          }}
+        >
+          <AudioPlayer track={MaryRound} />
+        </div>
+        </div>
+          <PdfLink
+            href="https://drive.google.com/uc?export=download&id=1CCEn1duUCjshdB1l0-oGZPJFpuN8-xlo"
+            download
+          >
+            School assembly content researched, created and presented by volunteers
+Hannah Maddison and James Moriarty. Click here to download.
+          </PdfLink>
+        </PdfList>
+      </article>
+      
+      {data.map(research => (
+      <article style={{ padding: `0% 10% 10% 10%` }}>
+        <PdfList maxWidth="640px" style={{ margin: `0 auto` }}>
+          <Heading>{research.node.childMarkdownRemark.frontmatter.title}</Heading>
+          <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
+            <Preview
+              src={`https://drive.google.com/file/d/${research.node.childMarkdownRemark.frontmatter.file}/preview`}
               width="640"
               height="480"
             ></Preview>
           </Overlay>
           <PdfLink
-            href={`https://drive.google.com/uc?export=download&id=${data.file}`}
+            href={`https://drive.google.com/uc?export=download&id=${research.node.childMarkdownRemark.frontmatter.file}`}
             download
           >
-            {data.linkText}
+            {research.node.childMarkdownRemark.frontmatter.linkText}
           </PdfLink>
         </PdfList>
       </article>
-    </section>
+       ))}
+    </main>
   )
 }
 export default HeritageResearchPage

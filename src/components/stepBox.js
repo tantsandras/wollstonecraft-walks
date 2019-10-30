@@ -9,10 +9,10 @@ const Box = styled.li`
   list-style: none;
   min-height: 210px;
   position: relative;
-  transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
   &:hover {
     box-shadow: 0 0 0 3px rgb(255, 0, 0, 0.6);
   }

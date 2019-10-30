@@ -31,3 +31,9 @@ collections:
           - {label: Subheading, name: subheading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: Image, name: image, widget: image}
+          - {label: Image, name: image2, widget: image}
+          - {label: Image, name: image3, widget: image}
+          - {label: Image, name: image4, widget: image}
+          - {label: Image, name: image5, widget: image}
+          - {label: Image, name: image6, widget: image}
+

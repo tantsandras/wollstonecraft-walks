@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import Photos from "../components/photoAlbum"
+import Photos2 from "../components/assembly"
 
 const fadeInRight = keyframes`
     from {
@@ -21,7 +22,7 @@ const Wrapper = styled.div`
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  margin-bottom: 6rem;
+  margin-bottom: 12rem;
   grid-auto-rows: 40px;
 `
 const PageCircle = styled.div`
@@ -58,15 +59,15 @@ const PageHeading = styled.div`
 `
 
 const MainHeading = styled.h1`
-font-family: 'Archivo Black', 'Impact';
-letter-spacing: 1px;
-text-align: center;
-font-size: 2.2rem;
-margin-top: -5.6rem;
-padding-left: 6.4rem;
-margin-bottom: 14rem;
-color: #333333;
-animation: ${fadeInRight} ease 1.6s forwards;
+  font-family: "Archivo Black", "Impact";
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: -5.6rem;
+  padding-left: 6.4rem;
+  margin-bottom: 14rem;
+  color: #333333;
+  animation: ${fadeInRight} ease 1.6s forwards;
 `
 class Gallery extends React.Component {
   constructor() {
@@ -127,9 +128,7 @@ class Gallery extends React.Component {
         <PageCircle>
           <PageHeading></PageHeading>
         </PageCircle>
-        <MainHeading>
-          Gallery
-        </MainHeading>
+        <MainHeading>Gallery</MainHeading>
         <Wrapper className="grid">
           <div className="content">
             <h2
@@ -137,7 +136,7 @@ class Gallery extends React.Component {
                 fontFamily: `'Archivo Black', 'Impact'`,
                 paddingTop: `1rem`,
                 letterSpacing: `1px`,
-                fontSize: `2rem`,
+                fontSize: `1.8rem`,
                 textAlign: `left`,
                 marginTop: `4rem`,
                 paddingBottom: `8rem`,
@@ -150,10 +149,10 @@ class Gallery extends React.Component {
               <i
                 style={{
                   letterSpacing: `2px`,
-                  fontSize: `1.6rem`,
+                  fontSize: `1.4rem`,
                   fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                   marginTop: `4rem`,
-                  fontWeight: `normal`
+                  fontWeight: `normal`,
                 }}
               >
                 9th of June 2019
@@ -162,6 +161,40 @@ class Gallery extends React.Component {
           </div>
 
           <Photos />
+        </Wrapper>
+        <Wrapper className="grid">
+          <div className="content">
+            <h2
+              style={{
+                fontFamily: `'Archivo Black', 'Impact'`,
+                paddingTop: `1rem`,
+                letterSpacing: `1px`,
+                fontSize: `1.4rem`,
+                textAlign: `left`,
+                marginTop: `4rem`,
+                paddingBottom: `8rem`,
+                marginBottom: `8rem`,
+                lineHeight: `1.5`,
+              }}
+            >
+              Wollstonecraft Walks <br />
+              School assembly
+              <br />
+              <i
+                style={{
+                  letterSpacing: `2px`,
+                  fontSize: `1rem`,
+                  fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+                  marginTop: `4rem`,
+                  fontWeight: `normal`,
+                }}
+              >
+                at Newington Green Primary School, October 2019
+              </i>
+            </h2>
+          </div>
+
+          <Photos2 />
         </Wrapper>
       </>
     )
