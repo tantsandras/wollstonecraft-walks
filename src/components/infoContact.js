@@ -101,7 +101,7 @@ class ContactBox extends React.Component {
             opportunities and exciting Wollstonecraft Walks events!
           </Normal>
           <Social>
-              <Icon src={Email} />
+              <Icon src={Email} style={{cursor: `default`}} />
               <SubHeading style={{ marginLeft: `80px` }}>
                 director@fragmentsandmonuments.com
               </SubHeading>{" "}
@@ -169,7 +169,7 @@ class ContactBox extends React.Component {
             reviews or suggestions for the future, we'd love to hear from you.
           </Normal>
           <Social>
-              <Icon src={Email} />
+              <Icon src={Email} style={{cursor: `default`}}/>
               <SubHeading style={{ marginLeft: `80px` }}>
                 info@scarylittlegirls.co.uk
               </SubHeading>{" "}
