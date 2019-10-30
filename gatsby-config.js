@@ -18,6 +18,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-151168803-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,

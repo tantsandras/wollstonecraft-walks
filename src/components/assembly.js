@@ -42,8 +42,8 @@ class Photos extends React.Component {
         `}
         render={data => (
           <>
-            {data.images.edges.map(photo => (
-              <div className="item">
+            {data.images.edges.map((photo, key) => (
+              <div className="item" key={key}>
                 <Image className="content">
                   <Img
                     key={photo.node.childImageSharp.fluid.id}

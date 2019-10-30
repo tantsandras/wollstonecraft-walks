@@ -105,6 +105,10 @@ class GalleryPage extends React.Component {
                         subheading
                         description
                         image
+                        image2
+                        image3
+                        image4
+                        image5
                       }
                     }
                   }
@@ -114,8 +118,8 @@ class GalleryPage extends React.Component {
           `}
           render={data => (
             <>
-              {data.allFile.edges.map(photo => (
-                <Wrapper className="grid">
+              {data.allFile.edges.map((photo, key) => (
+                <Wrapper className="grid" key={key}>
                   <div className="content">
                     <h2
                       style={{
@@ -145,7 +149,6 @@ class GalleryPage extends React.Component {
                       </i>
                     </h2>
                   </div>
-
                   <div className="item">
                     <ImageWrapper className="content">
                       <img
@@ -153,8 +156,24 @@ class GalleryPage extends React.Component {
                         alt={photo.node.childMarkdownRemark.frontmatter.description}
                       />
                     </ImageWrapper>
-                  </div>
-                </Wrapper>
+                  </div>     
+                  {/* <div className="item">
+                    <ImageWrapper className="content">
+                      <img
+                        src={photo.node.childMarkdownRemark.frontmatter.image2}
+                        alt={photo.node.childMarkdownRemark.frontmatter.description}
+                      />
+                    </ImageWrapper>
+                  </div>   
+                  <div className="item">
+                    <ImageWrapper className="content">
+                      <img
+                        src={photo.node.childMarkdownRemark.frontmatter.image3}
+                        alt={photo.node.childMarkdownRemark.frontmatter.description}
+                      />
+                    </ImageWrapper>
+                  </div>   */}
+                  </Wrapper>
               ))}
             </>
           )}

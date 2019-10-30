@@ -59,8 +59,8 @@ class Photos extends React.Component {
                 Christine Bradshaw
               </h3>
             </div>
-            {data.images.edges.map(photo => (
-              <div className="item">
+            {data.images.edges.map((photo, key) => (
+              <div className="item" key={key}>
                 <Image className="content">
                   <Img
                     key={photo.node.childImageSharp.fluid.id}

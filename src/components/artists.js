@@ -35,12 +35,24 @@ const growLeft = keyframes`
 
 const ArtList = styled.ul`
   font-weight: 200;
-  cursor: pointer;
   list-style: none;
   letter-spacing: 1px;
   font-family: Helvetica, Roboto, 'Open Sans';
   margin-bottom: 4rem;
   animation: ${turnVisible} 0.8s ease-in-out;
+`
+
+const StyledName = styled.p`
+  font-weight: normal;
+  z-index: 3;
+  font-family: Helvetica, Roboto, 'Open Sans';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  opacity: 0;
+  color: #656565;
+  animation: ${fadeInRight} ease 0.6s forwards;
+  animation-delay: 0.2s;
 `
 const StyledLink = styled.a`
 font-weight: normal;
@@ -48,7 +60,7 @@ font-weight: normal;
   font-family: Helvetica, Roboto, 'Open Sans';
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-decoration: none;
+  // text-decoration: none;
   opacity: 0;
   color: #656565;
   animation: ${fadeInRight} ease 0.6s forwards;
@@ -196,9 +208,9 @@ const ArtistList = () => {
 
         <Second style={{ animationDelay: `0.8s` }}></Second>
         <li>
-          <StyledLink style={{ animationDelay: `0.8s` }}>
+          <StyledName style={{ animationDelay: `0.8s` }}>
             Podcast Producer - Marina Garvey Birch
-          </StyledLink>
+          </StyledName>
           <Social style={{ marginTop: `1.4rem`,}}>
             <Handle
               href="https://twitter.com/marina_jgb"
@@ -222,9 +234,9 @@ const ArtistList = () => {
         </li>
         <Second style={{ animationDelay: `1s` }}></Second>
         <li>
-          <StyledLink style={{ animationDelay: `1s` }}>
+          <StyledName style={{ animationDelay: `1s` }}>
             Podcast Producer - Erica McCoy
-          </StyledLink>
+          </StyledName>
           <Social style={{ marginTop: `1.4rem`,}}>
             <Handle
               href="https://twitter.com/Erica_Mckoy"
@@ -280,9 +292,9 @@ const ArtistList = () => {
         </li>
         <Second style={{ animationDelay: `1.6s` }}></Second>
         <li>
-          <StyledLink style={{ animationDelay: `1.6s` }}>
+          <StyledName style={{ animationDelay: `1.6s` }}>
             Actor - Don One
-          </StyledLink>
+          </StyledName>
           <Social style={{ marginTop: `1.4rem`,}}>
             <Handle
               href="https://twitter.com/Don1birmingham"
@@ -327,17 +339,17 @@ const ArtistList = () => {
         </li>
         <Second style={{ animationDelay: `2s` }}></Second>
         <li>
-          <StyledLink
+          <StyledName
             style={{ animationDelay: `2s` }}
           >
             Actor - Caroline Parker
-          </StyledLink>
+          </StyledName>
         </li>
         <Second style={{ animationDelay: `2.2s` }}></Second>
         <li>
-          <StyledLink style={{ animationDelay: `2.2s` }}>
+          <StyledName style={{ animationDelay: `2.2s` }}>
             Actor - Rebecca Boey
-          </StyledLink>
+          </StyledName>
           <Social style={{ marginTop: `1.4rem`,}}>
             <Handle
               href="https://twitter.com/becboey"

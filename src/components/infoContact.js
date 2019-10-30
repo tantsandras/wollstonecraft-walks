@@ -101,16 +101,10 @@ class ContactBox extends React.Component {
             opportunities and exciting Wollstonecraft Walks events!
           </Normal>
           <Social>
-            <Handle
-              href="http://wollstonecraftlive.com/fm/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               <Icon src={Email} />
               <SubHeading style={{ marginLeft: `80px` }}>
                 director@fragmentsandmonuments.com
               </SubHeading>{" "}
-            </Handle>
           </Social>
 
           <Social>
@@ -175,16 +169,10 @@ class ContactBox extends React.Component {
             reviews or suggestions for the future, we'd love to hear from you.
           </Normal>
           <Social>
-            <Handle
-              href="https://scarylittlegirls.co.uk/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               <Icon src={Email} />
               <SubHeading style={{ marginLeft: `80px` }}>
                 info@scarylittlegirls.co.uk
               </SubHeading>{" "}
-            </Handle>
           </Social>
           <Social>
             <Handle
