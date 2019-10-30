@@ -30,24 +30,12 @@ const fadeInRight = keyframes`
     }
   `
 
-const animation1 = css`
-  animation: ${fadeInRight} ease 0.6s forwards;
-`
-
 const turnVisible = keyframes`
 	from {
 		opacity: 0;
 	}
 	to {
 		opacity: 1;
-	}
-`
-const turnInvisible = keyframes`
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
 	}
 `
 
@@ -59,9 +47,6 @@ const growLeft = keyframes`
 	transform: scaleX(1);
   }
   `
-const animation2 = css`
-  animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
-`
 
 const NavActive = styled.div`
   overflow: scroll;
@@ -161,7 +146,7 @@ z-index: 3;
 top: 24px;
 height: 70px;
 right: 27px;
-width: 73px;
+width: 74px;
 border-radius: 50%;
 -moz-border-radius: 50%;
 -webkit-border-radius: 50%;

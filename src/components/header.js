@@ -45,6 +45,9 @@ animation: ${turnVisible} 0.8s ease-in-out;
 `
 
 const ImageWrapper = styled.div`
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
 max-width: 500px;
 max-height: 500px;
 z-index: 1;

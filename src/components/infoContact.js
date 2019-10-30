@@ -9,7 +9,8 @@ import Anna from "../components/anna.js"
 const Box = styled.li`
   padding: 2rem;
   background: #fffeff;
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   list-style: none;
   position: relative;
 `
@@ -30,7 +31,7 @@ const Social = styled.span`
 `
 const Heading = styled.h3`
   font-size: 2rem;
-  font-family: "Archivo Black", 'Impact';
+  font-family: "Archivo Black", "Impact";
   font-weight: bold;
   letter-spacing: 1px;
   margin-top: 1rem;
@@ -39,7 +40,7 @@ const Heading = styled.h3`
 `
 
 const SubHeading = styled.h4`
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   line-height: 2;
   font-weight: normal;
@@ -58,7 +59,7 @@ const Handle = styled.a`
 `
 
 const Normal = styled.p`
-line-height: 1.8;
+  line-height: 1.8;
 `
 
 class ContactBox extends React.Component {
@@ -70,22 +71,30 @@ class ContactBox extends React.Component {
           <SubHeading>
             Fragments & Monuments performance and film
             <br />
-           www.fragmentsandmonuments.com
+            <Handle
+              href="http://wollstonecraftlive.com/fm/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.fragmentsandmonuments.com
+            </Handle>
           </SubHeading>
           <Normal>
-          Anna combines her professional expertise as a theatre and film director
-with her scholarly research and activism. Moving beyond the theatre
-building, she has created a ‘living monuments’ performance and film
-methodology to both search out and reveal hidden and often neglected
-feminist biographies and her-stories. She researched her method through
-site-specific performance and films about the life of early feminist Mary
-Wollstonecraft (1759-1797) showing how this use of multimedia provides
-an essential link to the performativity of astonishing feminist achievements.
-Fragments &amp; Monuments performance and film company are delighted to
-bring you the Wollstonecraft Walks APP which includes an archive of our
-performance, film, outdoor screenings, gallery installations and book
-publishing since 2000. The archive is all about our heroine and neighbour,
-the eighteenth-century human rights activist Mary Wollstonecraft!
+            Anna combines her professional expertise as a theatre and film
+            director with her scholarly research and activism. Moving beyond the
+            theatre building, she has created a ‘living monuments’ performance
+            and film methodology to both search out and reveal hidden and often
+            neglected feminist biographies and her-stories. She researched her
+            method through site-specific performance and films about the life of
+            early feminist Mary Wollstonecraft (1759-1797) showing how this use
+            of multimedia provides an essential link to the performativity of
+            astonishing feminist achievements. Fragments &amp; Monuments
+            performance and film company are delighted to bring you the
+            Wollstonecraft Walks APP which includes an archive of our
+            performance, film, outdoor screenings, gallery installations and
+            book publishing since 2000. The archive is all about our heroine and
+            neighbour, the eighteenth-century human rights activist Mary
+            Wollstonecraft!
           </Normal>
           <Normal style={{ paddingBottom: `2rem` }}>
             Keep in touch and follow our updates for more volunteer
@@ -99,11 +108,11 @@ the eighteenth-century human rights activist Mary Wollstonecraft!
             >
               <Icon src={Email} />
               <SubHeading style={{ marginLeft: `80px` }}>
-              director@fragmentsandmonuments.com
+                director@fragmentsandmonuments.com
               </SubHeading>{" "}
             </Handle>
           </Social>
-          
+
           <Social>
             <Handle
               href="https://twitter.com/anna_birch1"
@@ -112,7 +121,9 @@ the eighteenth-century human rights activist Mary Wollstonecraft!
             >
               <Icon src={Twitter} />
 
-              <SubHeading style={{ marginLeft: `80px`,  }}>@anna_birch1</SubHeading>
+              <SubHeading style={{ marginLeft: `80px` }}>
+                @anna_birch1
+              </SubHeading>
             </Handle>{" "}
           </Social>
           <Social>
@@ -123,7 +134,9 @@ the eighteenth-century human rights activist Mary Wollstonecraft!
             >
               <Icon src={Instagram} />
 
-              <SubHeading style={{ marginLeft: `80px` }}>@annabirch1</SubHeading>
+              <SubHeading style={{ marginLeft: `80px` }}>
+                @annabirch1
+              </SubHeading>
             </Handle>{" "}
           </Social>
           <div
@@ -138,7 +151,15 @@ the eighteenth-century human rights activist Mary Wollstonecraft!
         </Box>
         <Box>
           <Heading>Rebecca Mordan</Heading>
-          <SubHeading>www.scarylittlegirls.co.uk</SubHeading>
+          <SubHeading>
+            <Handle
+              href="https://scarylittlegirls.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.scarylittlegirls.co.uk
+            </Handle>
+          </SubHeading>
           <Normal>
             After graduating from Bristol Old Vic and working in film, theatre
             and television, Rebecca created her own company, Scary Little Girls,
@@ -155,7 +176,7 @@ the eighteenth-century human rights activist Mary Wollstonecraft!
           </Normal>
           <Social>
             <Handle
-              href="www.scarylittlegirls.co.uk"
+              href="https://scarylittlegirls.co.uk/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -172,7 +193,9 @@ the eighteenth-century human rights activist Mary Wollstonecraft!
               rel="noopener noreferrer"
             >
               <Icon src={Facebook} />
-              <SubHeading style={{ marginLeft: `80px` }}>@ScaryLittleGirls</SubHeading>{" "}
+              <SubHeading style={{ marginLeft: `80px` }}>
+                @ScaryLittleGirls
+              </SubHeading>{" "}
             </Handle>
           </Social>
           <Social>
@@ -183,7 +206,9 @@ the eighteenth-century human rights activist Mary Wollstonecraft!
             >
               <Icon src={Twitter} />
 
-              <SubHeading style={{ marginLeft: `80px` }}>@ScaryLittleGs</SubHeading>
+              <SubHeading style={{ marginLeft: `80px` }}>
+                @ScaryLittleGs
+              </SubHeading>
             </Handle>{" "}
           </Social>
         </Box>
