@@ -306,6 +306,8 @@ class AudioPlayer extends React.Component {
               label="Rewind"
               onMouseDown={ this.setIntervalHelperBackward }
               onMouseUp={ this.clearIntervalHelper }
+              onTouchStart={ this.setIntervalHelperBackward }
+              onTouchEnd={ this.clearIntervalHelper }
               onClick={() => { return this.player.currentTime -= 3}}
             />
           </div>
@@ -344,6 +346,8 @@ class AudioPlayer extends React.Component {
               label="Fast forward"
               onMouseDown={ this.setIntervalHelperForward }
               onMouseUp={ this.clearIntervalHelper }
+              onTouchStart={ this.setIntervalHelperForward }
+              onTouchEnd={ this.clearIntervalHelper }
               onClick={() => { this.player.currentTime += 3}}
             />
           </div>
