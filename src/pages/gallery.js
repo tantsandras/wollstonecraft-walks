@@ -103,6 +103,10 @@ class GalleryPage extends React.Component {
                         title
                         subheading
                         description
+                        images {
+                          alt
+                          image
+                        }
                       }
                     }
                   }
@@ -128,7 +132,7 @@ class GalleryPage extends React.Component {
                         lineHeight: `1.5`,
                       }}
                     >
-                      {photo.node.childMarkdownRemark.frontmatter.heading}
+                      {photo.node.childMarkdownRemark.frontmatter.title}
                       <br />
                       <i
                         style={{
@@ -143,30 +147,17 @@ class GalleryPage extends React.Component {
                       </i>
                     </h2>
                   </div>
-                  <div className="item">
-                    <ImageWrapper className="content">
-                      <img
-                        src={photo.node.childMarkdownRemark.frontmatter.image}
-                        alt={photo.node.childMarkdownRemark.frontmatter.description}
-                      />
-                    </ImageWrapper>
-                  </div>     
-                  {/* <div className="item">
-                    <ImageWrapper className="content">
-                      <img
-                        src={photo.node.childMarkdownRemark.frontmatter.image2}
-                        alt={photo.node.childMarkdownRemark.frontmatter.description}
-                      />
-                    </ImageWrapper>
-                  </div>   
-                  <div className="item">
-                    <ImageWrapper className="content">
-                      <img
-                        src={photo.node.childMarkdownRemark.frontmatter.image3}
-                        alt={photo.node.childMarkdownRemark.frontmatter.description}
-                      />
-                    </ImageWrapper>
-                  </div>   */}
+                  {photo.node.childMarkdownRemark.frontmatter.images.map((img) => (
+                      <div className="item">
+                      <ImageWrapper className="content">
+                        <img
+                          src={img.image}
+                          alt={img.alt}
+                        />
+                      </ImageWrapper>
+                    </div>
+                    ))
+                  }
                   </Wrapper>
               ))}
             </>
