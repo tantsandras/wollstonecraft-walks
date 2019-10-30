@@ -1,6 +1,8 @@
 ---
-title: 'Research paper '
-file: 191dUfzDGadedUpdtvG3od2gGUwrRv0x7
-linkText: Download this paper why don't ya
+title: Inspirational Quotes
+file: 1ZyQY91Vzcy1-pJtqIvkeEPAwROeDpnBm
+linkText: >-
+  Researched and created by Wollstonecraft Walks volunteers. Click here to
+  download.
 ---
 
