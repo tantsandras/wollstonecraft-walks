@@ -101,7 +101,6 @@ class GalleryPage extends React.Component {
                     childMarkdownRemark {
                       frontmatter {
                         title
-                        heading
                         subheading
                         description
                         image

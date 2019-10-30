@@ -204,8 +204,6 @@ const getTime = time => {
 }
 
 class AudioPlayer extends React.Component {
-
-
   state = {
     selectedTrack: null,
     player: "stopped",
@@ -234,21 +232,21 @@ class AudioPlayer extends React.Component {
   componentWillUnmount() {
     this.player.removeEventListener("timeupdate", () => {})
   }
-  
+
   setIntervalHelperBackward = () => {
     this.interval = setInterval(() => {
-     this.player.currentTime -= 5
-    }, 300);
+      this.player.currentTime -= 5
+    }, 300)
   }
 
   setIntervalHelperForward = () => {
     this.interval = setInterval(() => {
       this.player.currentTime += 5
-    }, 300);
+    }, 300)
   }
 
   clearIntervalHelper = () => {
-    clearInterval(this.interval);
+    clearInterval(this.interval)
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -304,13 +302,14 @@ class AudioPlayer extends React.Component {
             <DoubleRewind
               autocomplete="off"
               label="Rewind"
-              onMouseDown={ this.setIntervalHelperBackward }
-              onMouseUp={ this.clearIntervalHelper }
-              onTouchStart={ this.setIntervalHelperBackward }
-              onTouchEnd={ this.clearIntervalHelper }
-              onClick={() => { 
-                return this.player.currentTime -= 3}}
-              style={{cursor: `pointer`}}
+              onMouseDown={this.setIntervalHelperBackward}
+              onMouseUp={this.clearIntervalHelper}
+              onTouchStart={this.setIntervalHelperBackward}
+              onTouchEnd={this.clearIntervalHelper}
+              onClick={() => {
+                return (this.player.currentTime -= 3)
+              }}
+              style={{ cursor: `pointer` }}
             />
           </div>
           <div style={element}>
@@ -346,13 +345,14 @@ class AudioPlayer extends React.Component {
             <DoubleFastForward
               autocomplete="off"
               label="Fast forward"
-              onMouseDown={ this.setIntervalHelperForward }
-              onMouseUp={ this.clearIntervalHelper }
-              onTouchStart={ this.setIntervalHelperForward }
-              onTouchEnd={ this.clearIntervalHelper }
-              onClick={() => { 
-                this.player.currentTime += 3}}
-                style={{cursor: `pointer`}}
+              onMouseDown={this.setIntervalHelperForward}
+              onMouseUp={this.clearIntervalHelper}
+              onTouchStart={this.setIntervalHelperForward}
+              onTouchEnd={this.clearIntervalHelper}
+              onClick={() => {
+                this.player.currentTime += 3
+              }}
+              style={{ cursor: `pointer` }}
             />
           </div>
 
