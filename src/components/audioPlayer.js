@@ -235,17 +235,13 @@ class AudioPlayer extends React.Component {
     this.player.removeEventListener("timeupdate", () => {})
   }
   
-  setIntervalHelperBackward = (event) => {
-    event.stopPropagation(); 
-    event.preventDefault();
+  setIntervalHelperBackward = () => {
     this.interval = setInterval(() => {
      this.player.currentTime -= 5
     }, 300);
   }
 
-  setIntervalHelperForward = (event) => {
-    event.stopPropagation(); 
-    event.preventDefault();
+  setIntervalHelperForward = () => {
     this.interval = setInterval(() => {
       this.player.currentTime += 5
     }, 300);
@@ -312,9 +308,7 @@ class AudioPlayer extends React.Component {
               onMouseUp={ this.clearIntervalHelper }
               onTouchStart={ this.setIntervalHelperBackward }
               onTouchEnd={ this.clearIntervalHelper }
-              onClick={(event) => { 
-                event.stopPropagation(); 
-                event.preventDefault();
+              onClick={() => { 
                 return this.player.currentTime -= 3}}
               style={{cursor: `pointer`}}
             />
@@ -356,9 +350,7 @@ class AudioPlayer extends React.Component {
               onMouseUp={ this.clearIntervalHelper }
               onTouchStart={ this.setIntervalHelperForward }
               onTouchEnd={ this.clearIntervalHelper }
-              onClick={(event) => { 
-                event.stopPropagation(); 
-                event.preventDefault();
+              onClick={() => { 
                 this.player.currentTime += 3}}
                 style={{cursor: `pointer`}}
             />
