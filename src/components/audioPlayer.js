@@ -239,7 +239,7 @@ class AudioPlayer extends React.Component {
     event.stopPropagation(); 
     event.preventDefault();
     this.interval = setInterval(() => {
-     this.player.currentTime -= 3
+     this.player.currentTime -= 5
     }, 300);
   }
 
@@ -247,7 +247,7 @@ class AudioPlayer extends React.Component {
     event.stopPropagation(); 
     event.preventDefault();
     this.interval = setInterval(() => {
-      this.player.currentTime += 3
+      this.player.currentTime += 5
     }, 300);
   }
 
