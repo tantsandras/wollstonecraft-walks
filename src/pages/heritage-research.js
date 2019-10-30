@@ -112,10 +112,7 @@ export default HeritageResearchPage
 export const query = graphql`
   query {
     allFile(
-      filter: {
-        sourceInstanceName: { eq: "content" }
-        name: { eq: "heritage-research" }
-      }
+      filter: { relativeDirectory: { eq: "heritageResearchFolder" } }
     ) {
       edges {
         node {

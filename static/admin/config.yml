@@ -6,24 +6,28 @@ media_folder: static/imgUploads
 public_folder: /imgUploads
 
 collections:
-  - label: "Pages"
-    name: "pages"
-    files:
-      - label: "Heritage Research Page"
+      - label: "Heritage Research post"
         name: "heritage-research"
+        identifier_field: name
         create: true
-        file: "content/heritage-research.md"
+        folder: "content/heritageResearchFolder"
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Google file id, name: file, widget: string}
           - {label: Link text, name: linkText, widget: text}
-      - file: "content/gallery.md"
-        label: "Gallery Page"
+      - folder: "content/galleryImages"
+        label: "Gallery post"
         name: "gallery"
+        identifier_field: name
         create: true
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+        media_library:
+          config:
+            multiple: true
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: Description, name: description, widget: string}
+          - {label: Image, name: image, widget: image}

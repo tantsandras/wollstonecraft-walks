@@ -87,7 +87,7 @@ export default GalleryPage
 export const query = graphql`
   query {
     allFile(
-      filter: { sourceInstanceName: { eq: "content" }, name: { eq: "gallery" } }
+      filter: { relativeDirectory: { eq: "galleryImages" } }
     ) {
       edges {
         node {
