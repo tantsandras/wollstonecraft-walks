@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
-import React, { useState, useEffect, useRef } from "react"
-import styled, { css, keyframes } from "styled-components"
+import React from "react"
+import styled, { keyframes } from "styled-components"
 import logo from "../images/logo2.png"
 
 const MenuIcon = styled.div`

@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import React from "react"
 import StepBox from "../components/stepBox"
 

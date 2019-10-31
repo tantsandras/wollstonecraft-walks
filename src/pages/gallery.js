@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Menu from "../components/menu"
 import Gallery from "../components/gallery"
 import Circles from "../components/circles"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import "typeface-archivo-black"
 
 const ImageWrapper = styled.div`

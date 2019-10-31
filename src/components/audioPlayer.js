@@ -118,14 +118,6 @@ const Pause = styled(Play)`
   border-style: double;
   border-width: 0px 0px 0px 25px;
 `
-const Stop = styled.button`
-  margin: 0 auto;
-  width: 25px;
-  height: 25px;
-  background: #202020;
-  position: relative;
-  border: none;
-`
 
 const FastForward = styled.button`
   background: none;

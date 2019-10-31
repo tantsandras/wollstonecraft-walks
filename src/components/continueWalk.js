@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 
 const Continue = styled.button`
   padding: 0.6rem 2rem 0.6rem 1rem;

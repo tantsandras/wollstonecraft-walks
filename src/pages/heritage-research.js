@@ -77,10 +77,6 @@ animation: ${turnVisible} 0.6s ease-in;
 
 const HeritageResearchPage = props => {
   const data = props.data.allFile.edges;
-  
-  {
-    console.log(data)
-  }
   return (
     <main style={{ fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
       <SEO title="Heritage Research" />

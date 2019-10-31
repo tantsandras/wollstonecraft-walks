@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import Pages from "../components/pdfPages"
 
 
@@ -30,7 +30,7 @@ const arrow = {
   transform: `translateY(-50%)`,
   padding: `8px`,
   transform: `rotate(-45deg)`,
-  WebkitTransform: `rotate(-45deg)`,
+  webkitTransform: `rotate(-45deg)`,
   boxShadow: `0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04)`,
   cursor: `pointer`
 }

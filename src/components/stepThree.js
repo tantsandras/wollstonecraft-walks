@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import MemorialImg from "../images/chapter3.jpg"

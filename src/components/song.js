@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 
 const Collapse = styled.button`
   padding: 0.4rem 1.4rem 0.4rem 0.2rem;

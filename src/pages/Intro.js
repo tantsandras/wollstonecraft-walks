@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
 import Intro from "../components/intro"
 import ContinueButton from "../components/continueWalk"
