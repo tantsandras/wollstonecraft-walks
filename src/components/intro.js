@@ -91,7 +91,7 @@ const Intro = () => (
         width: `100vw`,
       }}
     >
-      <RainbowText style={{marginTop: `-180px`}}>
+      <RainbowText style={{marginTop: `-80px`}}>
         <i>
           Mary Wollstonecraft said of herself:
         </i>
@@ -110,7 +110,7 @@ const Intro = () => (
       style={{
         fontFamily: `Helvetica, Roboto, 'Open Sans'`,
         paddingBottom: `8rem`,
-       marginTop: `-30px`
+       marginTop: `-10px`
       }}
     >
       <StepHeading>

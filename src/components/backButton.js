@@ -7,7 +7,7 @@ const Back = styled.button`
   background: white;
   color: black;
   position: absolute;
-  left: 23px;
+  left: 13px;
   top: 23px;
     overflow: hidden;
     cursor: pointer;
@@ -21,7 +21,7 @@ const Arrow = styled.i`
   display: table-cell;
   position: absolute;
   top: 29%;
-  left: 4px;
+  left: 14px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 6px;
@@ -40,7 +40,7 @@ const Arrow = styled.i`
 
 const BackButton = () => (
   <span
-    style={{ height: `60px`, padding: `50px 50px 50px 50px`, float: `right` }}
+    style={{float: `right` }}
   >
     <Back>
       <Arrow />

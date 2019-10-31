@@ -13,7 +13,8 @@ const leftArrow = {
   padding: `7.5px`,
   transform: `rotate(135deg)`,
   WebkitTransform: `rotate(135deg)`,
-  boxShadow: `0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04)`
+  boxShadow: `0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04)`,
+  cursor: `pointer`
 }
 
 const LeftArrow = styled.div`
@@ -30,7 +31,8 @@ const arrow = {
   padding: `8px`,
   transform: `rotate(-45deg)`,
   WebkitTransform: `rotate(-45deg)`,
-  boxShadow: `0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04)`
+  boxShadow: `0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04)`,
+  cursor: `pointer`
 }
 
 const RightArrow = styled.div`
