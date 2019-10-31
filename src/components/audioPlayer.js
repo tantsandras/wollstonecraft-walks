@@ -69,6 +69,7 @@ const element = {
   verticalAlign: `middle`,
   alignItems: `center`,
   margin: `0 auto`,
+  cursor: `pointer`
 }
 
 const ButtonWrap = styled.span`
