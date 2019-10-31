@@ -21,7 +21,7 @@ const Arrow = styled.i`
   display: table-cell;
   position: absolute;
   top: 29%;
-  left: 10px;
+  left: 4px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 6px;
