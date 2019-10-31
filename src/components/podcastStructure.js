@@ -60,7 +60,7 @@ const MainHeading = styled.h1`
 `
 
 const PodBox = styled.li`
-  padding: 2rem 1.4rem 2rem 1.4rem;
+  padding: 2rem 1.6rem 2rem 1.6rem;
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -128,6 +128,7 @@ class Pods extends React.Component {
                 textTransform: `uppercase`,
                 letterSpacing: `2px`,
                 marginTop: `2rem`,
+                marginBottom: `4rem`,
               }}
             >
               <i>Episode 1</i>
@@ -180,6 +181,7 @@ class Pods extends React.Component {
                 textTransform: `uppercase`,
                 letterSpacing: `2px`,
                 marginTop: `2rem`,
+                marginBottom: `4rem`,
               }}
             >
               <i>Episode 2</i>
@@ -231,6 +233,7 @@ class Pods extends React.Component {
                 textTransform: `uppercase`,
                 letterSpacing: `2px`,
                 marginTop: `2rem`,
+                marginBottom: `4rem`,
               }}
             >
               <i>Episode 3</i>
