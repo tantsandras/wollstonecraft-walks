@@ -7,9 +7,9 @@ const MenuIcon = styled.div`
   height: 30px;
   width: 30px;
   position: absolute;
-  z-index: 3;
   right: 23px;
   top: 30px;
+  z-index: 3;
   cursor: pointer;
   & > * {
     height: 2px;

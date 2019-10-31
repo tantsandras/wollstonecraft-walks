@@ -28,7 +28,8 @@ class StepFivePage extends React.Component {
             justifyContent: `center`,
             textAlign: `center`,
             alignContent: `center`,
-            fontFamily: `Helvetica, Roboto, "Open Sans"`
+            fontFamily: `Helvetica, Roboto, "Open Sans"`,
+            width: `100%`,
           }}
         >
           <AudioPlayer track={AudioStepFive} />
