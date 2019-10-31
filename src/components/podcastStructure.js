@@ -60,7 +60,7 @@ const MainHeading = styled.h1`
 `
 
 const PodBox = styled.li`
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem 1.4rem 2rem 1.4rem;
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
