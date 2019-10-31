@@ -48,7 +48,7 @@ const StyledSpinner = styled.svg`
 `
 
 const Player = styled.section`
-  margin-top: 6rem;
+margin-top: 110px;
   margin-bottom: 6rem;
   display: table;
   margin-left: auto;
@@ -101,14 +101,11 @@ const Play = styled.button`
   box-sizing: border-box;
   width: 0;
   height: 37px;
-
   border-color: transparent transparent transparent #333333;
   transition: 100ms all ease;
   cursor: pointer;
-
   border-style: solid;
   border-width: 18.5px 0 18.5px 30px;
-
   &:hover {
     border-color: transparent transparent transparent #404040;
   }
@@ -126,6 +123,7 @@ const FastForward = styled.button`
   border: 10px solid transparent;
   border-left: 10px solid;
   margin: 6.6px;
+  cursor: pointer;
   &:before {
     position: absolute;
     left: 0;
@@ -155,10 +153,10 @@ const DoubleFastForward = styled(FastForward)`
   &:after {
     content: "";
   }
-  // &:hover {
-  //   border-color: transparent transparent transparent #404040;
-  //   transform: scale(1.2);
-  // }
+  &:hover {
+    border-color: transparent transparent transparent #404040;
+    transform: scale(1.2);
+  }
 `
 const Rewind = styled(FastForward)`
   transform: rotate(180deg);
@@ -182,10 +180,10 @@ const DoubleRewind = styled(Rewind)`
   &:after {
     content: "";
   }
-  // &:hover {
-  //   border-color: transparent transparent transparent #404040;
-  //   transform: scale(1.2) rotate(180deg);
-  // }
+  &:hover {
+    border-color: transparent transparent transparent #404040;
+    transform: scale(1.2) rotate(180deg);
+  }
 `
 
 const getTime = time => {
@@ -282,7 +280,7 @@ class AudioPlayer extends React.Component {
     return (
       <>
         {this.state.player === "playing" || this.state.player === "paused" ? (
-          <div style={{ textAlign: `center`, transform: `translateY(60px)` }}>
+          <div style={{ textAlign: `center`, height: `110px`, paddingTop: `70px`, marginBottom: `-110px`}}>
             {currentTime} / {duration}
           </div>
         ) : (
