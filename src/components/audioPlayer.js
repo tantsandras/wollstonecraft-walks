@@ -154,7 +154,6 @@ const DoubleFastForward = styled(FastForward)`
   &:before,
   &:after {
     content: "";
-    // pointer-events: none;
   }
   // &:hover {
   //   border-color: transparent transparent transparent #404040;
@@ -182,7 +181,6 @@ const DoubleRewind = styled(Rewind)`
   &:before,
   &:after {
     content: "";
-    // pointer-events: none;
   }
   // &:hover {
   //   border-color: transparent transparent transparent #404040;
