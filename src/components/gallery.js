@@ -1,7 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import Photos from "../components/photoAlbum"
-import Photos2 from "../components/assembly"
 
 const fadeInRight = keyframes`
     from {
@@ -159,42 +158,7 @@ class Gallery extends React.Component {
               </i>
             </h2>
           </div>
-
           <Photos />
-        </Wrapper>
-        <Wrapper className="grid">
-          <div className="content">
-            <h2
-              style={{
-                fontFamily: `'Archivo Black', 'Impact'`,
-                paddingTop: `1rem`,
-                letterSpacing: `1px`,
-                fontSize: `1.4rem`,
-                textAlign: `left`,
-                marginTop: `4rem`,
-                paddingBottom: `8rem`,
-                marginBottom: `8rem`,
-                lineHeight: `1.5`,
-              }}
-            >
-              Wollstonecraft Walks <br />
-              School assembly
-              <br />
-              <i
-                style={{
-                  letterSpacing: `2px`,
-                  fontSize: `1rem`,
-                  fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-                  marginTop: `4rem`,
-                  fontWeight: `normal`,
-                }}
-              >
-                at Newington Green Primary School, October 2019
-              </i>
-            </h2>
-          </div>
-
-          <Photos2 />
         </Wrapper>
       </>
     )

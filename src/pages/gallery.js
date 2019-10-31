@@ -13,12 +13,9 @@ const ImageWrapper = styled.div`
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
-
   &:hover {
     transform: scale(1.4);
     z-index: 2;
-    box-shadow: 10px 10px 100px 50px rgba(0, 0, 0, 0.4);
-    border: 0.6px solid grey;
   }
 `
 const Wrapper = styled.div`
@@ -32,6 +29,12 @@ const Wrapper = styled.div`
   margin-bottom: 12rem;
   grid-auto-rows: 40px;
 `
+const Normal = styled.p`
+line-height: 1.8;
+vertical-align: top;
+margin-bottom: 10rem;
+`
+
 class GalleryPage extends React.Component {
   constructor() {
     super()
@@ -126,9 +129,6 @@ class GalleryPage extends React.Component {
                         letterSpacing: `1px`,
                         fontSize: `1.4rem`,
                         textAlign: `left`,
-                        marginTop: `4rem`,
-                        paddingBottom: `8rem`,
-                        marginBottom: `8rem`,
                         lineHeight: `1.5`,
                       }}
                     >
@@ -146,6 +146,7 @@ class GalleryPage extends React.Component {
                         {photo.node.childMarkdownRemark.frontmatter.subheading}
                       </i>
                     </h2>
+                      <Normal>{photo.node.childMarkdownRemark.frontmatter.description}</Normal>
                   </div>
                   {photo.node.childMarkdownRemark.frontmatter.images.map((img) => (
                       <div className="item">
