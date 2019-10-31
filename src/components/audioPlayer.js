@@ -154,7 +154,7 @@ const DoubleFastForward = styled(FastForward)`
   &:before,
   &:after {
     content: "";
-    pointer-events: none;
+    // pointer-events: none;
   }
   // &:hover {
   //   border-color: transparent transparent transparent #404040;
@@ -182,7 +182,7 @@ const DoubleRewind = styled(Rewind)`
   &:before,
   &:after {
     content: "";
-    pointer-events: none;
+    // pointer-events: none;
   }
   // &:hover {
   //   border-color: transparent transparent transparent #404040;
@@ -302,7 +302,7 @@ class AudioPlayer extends React.Component {
               onClick={() => {
                 return (this.player.currentTime -= 3)
               }}
-              style={{ cursor: `pointer` }}
+              style={{ cursor: `pointer`}}
             />
           </div>
           <div style={element}>
@@ -345,7 +345,7 @@ class AudioPlayer extends React.Component {
               onClick={() => {
                 this.player.currentTime += 3
               }}
-              style={{ cursor: `pointer` }}
+              style={{ cursor: `pointer`}}
             />
           </div>
 
