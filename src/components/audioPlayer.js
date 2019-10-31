@@ -163,10 +163,10 @@ const DoubleFastForward = styled(FastForward)`
     content: "";
     pointer-events: none;
   }
-  &:hover {
-    border-color: transparent transparent transparent #404040;
-    transform: scale(1.2);
-  }
+  // &:hover {
+  //   border-color: transparent transparent transparent #404040;
+  //   transform: scale(1.2);
+  // }
 `
 const Rewind = styled(FastForward)`
   transform: rotate(180deg);
@@ -191,10 +191,10 @@ const DoubleRewind = styled(Rewind)`
     content: "";
     pointer-events: none;
   }
-  &:hover {
-    border-color: transparent transparent transparent #404040;
-    transform: scale(1.2) rotate(180deg);
-  }
+  // &:hover {
+  //   border-color: transparent transparent transparent #404040;
+  //   transform: scale(1.2) rotate(180deg);
+  // }
 `
 
 const getTime = time => {
