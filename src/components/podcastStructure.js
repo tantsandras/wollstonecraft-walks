@@ -60,7 +60,7 @@ const MainHeading = styled.h1`
 `
 
 const PodBox = styled.li`
-  padding: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -74,7 +74,7 @@ const PodList = styled.ul`
   display: grid;
   grid-template-columns: repeat(1, minmax(300px, 2fr));
   grid-gap: 1rem;
-  padding: 6rem 2rem 4rem 2rem;
+  padding: 6rem 1rem 4rem 1rem;
   column-gap: 4%;
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);
@@ -134,8 +134,8 @@ class Pods extends React.Component {
             </h4>
 
             <Normal>
-              Readings with walk context making walk experience accessible to a
-              remote audience including people with access requirements
+              Readings with walk context, making the walk experience accessible to a
+              remote audience, including people with access requirements.
             </Normal>
             <div
               style={{
@@ -186,7 +186,7 @@ class Pods extends React.Component {
             </h4>
             <Normal>
               Feedback from June 2019 audience at Stoke Newington Literary
-              Festival
+              Festival.
             </Normal>
             <div
               style={{
@@ -241,7 +241,7 @@ class Pods extends React.Component {
               Wollstonecraft Walks: Anna Birch, Artistic Director Fragments
               &amp; Monuments performance and film company and Artistic
               Director, Rebecca Mordan Scary Little Girls, feminist production
-              company
+              company.
             </Normal>
             <div
               style={{
