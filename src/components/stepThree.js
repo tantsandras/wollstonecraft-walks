@@ -119,7 +119,7 @@ class Step3 extends React.Component {
             margin: `0 auto`,
             zIndex: `-2`,
             marginTop: `-4.8rem`}}>
-          <img src={`${MemorialImg}`} alt="Image of Mary Wollstonecraft" />
+          <img src={`${MemorialImg}`} alt="Mary Wollstonecraft printing on fabric" />
         </ImgageWrap>
         <StepCircle style={{ marginTop: `-70px` }}>
           <StepNum>3</StepNum>

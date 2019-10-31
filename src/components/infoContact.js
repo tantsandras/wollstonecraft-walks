@@ -90,7 +90,7 @@ class ContactBox extends React.Component {
             of multimedia provides an essential link to the performativity of
             astonishing feminist achievements. Fragments &amp; Monuments
             performance and film company are delighted to bring you the
-            Wollstonecraft Walks APP which includes an archive of our
+            Wollstonecraft Walks app which includes an archive of our
             performance, film, outdoor screenings, gallery installations and
             book publishing since 2000. The archive is all about our heroine and
             neighbour, the eighteenth-century human rights activist Mary

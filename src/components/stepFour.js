@@ -152,7 +152,7 @@ class Step4 extends React.Component {
             marginTop: `-4.8rem`,
           }}
         >
-            <img src={`${PsImage}`} alt="Image of Caroline Parker outside of Newington Green Primary School" />
+            <img src={`${PsImage}`} alt="Caroline Parker outside of Newington Green Primary School" />
         </ImgWrap>
         <StepCircle style={{ marginTop: `-70px` }}>
           <StepNum>4</StepNum>

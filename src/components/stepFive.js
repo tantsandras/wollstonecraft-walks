@@ -171,7 +171,7 @@ class Step5 extends React.Component {
             marginTop: `-4.8rem`,
           }}
         >
-            <img src={`${InnImg}`} alt="Photo of a basket with the Wollstonecraft walk guide inside" style={{height: `250px`}} />
+            <img src={`${InnImg}`} alt="A basket with the Wollstonecraft walk guide inside" style={{height: `250px`}} />
         </ImgageWrap>
         <StepCircle style={{ marginTop: `-60px` }}>
           <StepNum>5</StepNum>
