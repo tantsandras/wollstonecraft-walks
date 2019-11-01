@@ -145,6 +145,7 @@ const DoubleFastForward = styled(FastForward)`
   text-align: left;
   text-indent: -9999px;
   direction: ltr;
+  cursor: pointer;
   transition: transform 0.2s ease;
   -webkit-transition: transform 0.2s ease-out;
   -moz-transition: transform 0.2s ease-out;
@@ -172,6 +173,7 @@ const DoubleRewind = styled(Rewind)`
   text-align: left;
   text-indent: -9999px;
   direction: ltr;
+  cursor: pointer;
   transition: transform 0.2s ease;
   -webkit-transition: transform 0.2s ease-out;
   -moz-transition: transform 0.2s ease-out;
