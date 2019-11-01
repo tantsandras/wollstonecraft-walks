@@ -104,7 +104,7 @@ const Credits = styled.h5`
 font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
-font-size: 1rem;
+font-size: 0.9rem;
 line-height: 1.8;
 `
 
@@ -144,7 +144,6 @@ class Step3 extends React.Component {
             <i
               style={{
                 letterSpacing: `2px`,
-                fontSize: `1.1rem`,
               }}
             >
               Wollstonecraft Live!
@@ -162,7 +161,6 @@ class Step3 extends React.Component {
             <i
               style={{
                 letterSpacing: `2px`,
-                fontSize: `1.1rem`,
               }}
             >
               The Wollstonecraft Live Experience!

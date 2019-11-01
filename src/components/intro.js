@@ -54,7 +54,7 @@ const QuotationMarks = styled.p`
     position: absolute;
     height: 3rem;
     content: "”";
-    bottom: 0.4rem;
+    bottom: 0.8rem;
     right: 0.4rem;
   }
 `
@@ -135,7 +135,7 @@ const Intro = () => (
           The school folded when Fanny got married. After a spell as a Governess
           in Ireland, Wollstonecraft was befriended by publisher Joseph Johnson
           who set her up with a job and lodgings. She wrote{" "}
-          <i style={{ fontSize: `1.1rem`, letterSpacing: `2px` }}>
+          <i style={{ fontSize: `1rem`, letterSpacing: `2px` }}>
             A Vindication of the Rights of Woman (1792)
           </i>
           , was a fiery feminist polemic railing against the ‘bitter bread of

@@ -122,7 +122,7 @@ const Credits = styled.h5`
   font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.8;
 `
 
@@ -188,8 +188,7 @@ class Step4 extends React.Component {
           <SubHeading>
             On Poetry, and Our Relish for the Beauties of Nature
           </SubHeading>
-          <Credits>by Mary Wollstonecraft</Credits>
-          <Credits>
+          <Credits>by Mary Wollstonecraft<br />
             (which originally appeared in the Monthly Magazine, April 1797)
           </Credits>
           <QuotationMarks>

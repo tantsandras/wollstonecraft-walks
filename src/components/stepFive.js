@@ -196,7 +196,7 @@ class Step5 extends React.Component {
             essay called{" "}
             <i
               style={{
-                fontSize: `1.1rem`,
+                fontSize: `1rem`,
                 letterSpacing: `2px`,
               }}
             >
@@ -233,7 +233,7 @@ class Step5 extends React.Component {
             a school on the Green inspired her to write{" "}
             <i
               style={{
-                fontSize: `1.1rem`,
+                fontSize: `1rem`,
                 letterSpacing: `2px`,
               }}
             >
@@ -306,7 +306,7 @@ class Step5 extends React.Component {
           <Normal
             style={{
               margin: `0.4rem`,
-              fontSize: `1.1rem`,
+              fontSize: `1rem`,
               letterSpacing: `2px`,
               lineHeight: `1.6`,
             }}
