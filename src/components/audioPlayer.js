@@ -69,7 +69,10 @@ const element = {
   verticalAlign: `middle`,
   alignItems: `center`,
   margin: `0 auto`,
-  cursor: `pointer`
+  cursor: `pointer`,
+  background: `transparent`,
+  border: `none`,
+  outlineWidth: `0`
 }
 
 const ButtonWrap = styled.span`
@@ -289,7 +292,7 @@ class AudioPlayer extends React.Component {
           ""
         )}
         <Player>
-          <div style={element}>
+          <button style={element}>
             <DoubleRewind
               label="Rewind"
               onMouseDown={this.setIntervalHelperBackward}
@@ -301,7 +304,7 @@ class AudioPlayer extends React.Component {
               }}
               style={{ cursor: `pointer`}}
             />
-          </div>
+          </button>
           <div style={element}>
             {this.state.player !== "playing" ||
             (this.player.currentTime > 1 &&
@@ -331,7 +334,7 @@ class AudioPlayer extends React.Component {
               </ButtonWrap>
             )}
           </div>
-          <div style={element}>
+          <button style={element}>
             <DoubleFastForward
               label="Fast forward"
               onMouseDown={this.setIntervalHelperForward}
@@ -343,7 +346,7 @@ class AudioPlayer extends React.Component {
               }}
               style={{ cursor: `pointer`}}
             />
-          </div>
+          </button>
 
           <audio ref={ref => (this.player = ref)} preload="auto" />
         </Player>
