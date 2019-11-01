@@ -291,7 +291,6 @@ class AudioPlayer extends React.Component {
         <Player>
           <div style={element}>
             <DoubleRewind
-              autocomplete="off"
               label="Rewind"
               onMouseDown={this.setIntervalHelperBackward}
               onMouseUp={this.clearIntervalHelper}
@@ -334,7 +333,6 @@ class AudioPlayer extends React.Component {
           </div>
           <div style={element}>
             <DoubleFastForward
-              autocomplete="off"
               label="Fast forward"
               onMouseDown={this.setIntervalHelperForward}
               onMouseUp={this.clearIntervalHelper}
