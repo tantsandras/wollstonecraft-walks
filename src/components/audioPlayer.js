@@ -292,9 +292,7 @@ class AudioPlayer extends React.Component {
           ""
         )}
         <Player>
-          <button style={element} 
-          // onClick={void(0)}
-          >
+          <div style={element}>
             <DoubleRewind
               label="Rewind"
               onMouseDown={this.setIntervalHelperBackward}
@@ -306,7 +304,7 @@ class AudioPlayer extends React.Component {
               }}
               style={{ cursor: `pointer`}}
             />
-          </button>
+          </div>
           <div style={element}>
             {this.state.player !== "playing" ||
             (this.player.currentTime > 1 &&
@@ -336,9 +334,7 @@ class AudioPlayer extends React.Component {
               </ButtonWrap>
             )}
           </div>
-          <button style={element} 
-          // onClick={void(0)}
-          >
+          <div style={element}>
             <DoubleFastForward
               label="Fast forward"
               onMouseDown={this.setIntervalHelperForward}
@@ -350,7 +346,7 @@ class AudioPlayer extends React.Component {
               }}
               style={{ cursor: `pointer`}}
             />
-          </button>
+          </div>
 
           <audio ref={ref => (this.player = ref)} preload="auto" />
         </Player>

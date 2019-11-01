@@ -49,7 +49,7 @@ const downArrow = {
   display: `table-cell`,
   position: `absolute`,
   top: `-40px`,
-  right: `47%`,
+  right: `49%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
   padding: `0.25rem`,
@@ -64,7 +64,7 @@ const Lyrics = styled.section`
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   cursor: pointer;
-  margin: 2% 10% 3% 10%;
+  margin: 2% 2% 3% 2%;
   border: 6px double #383790;
 
   &:hover {
@@ -99,7 +99,8 @@ class Song extends React.Component {
                 fontFamily: `'Archivo Black', 'Impact'`,
                 padding: `40px 0px 0px 20px`,
                 letterSpacing: `1px`,
-                color: `#333333`
+                color: `#333333`,
+                lineHeight: `1.3`
               }}
             >
               Let Us All Speak Our Minds! (1863)
@@ -123,6 +124,7 @@ class Song extends React.Component {
                 textAlign: `center`,
                 transform: `translateY(-20px)`,
                 letterSpacing: `2px`,
+                fontSize: `0.8rem`,
               }}
             >
               Click to see lyrics and chords
@@ -135,12 +137,12 @@ class Song extends React.Component {
 
         {this.state.isActive && (
           <article
-            style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
+            style={{ padding: `5% 0% 5% 0%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
           >
             <Collapse onClick={this.handleClick}>
               Collapse<i style={arrow}></i>
             </Collapse>
-            <aside style={{ fontSize: `0.8rem`, lineHeight: `2` }}>
+            <aside style={{ fontSize: `0.75rem`, lineHeight: `2` }}>
               <h4 style={{ fontFamily: `'Archivo Black', 'Impact'`, letterSpacing: `1px`, color: `#333333`}}>
                 Let Us All Speak Our Minds! (1863)
               </h4>
@@ -148,14 +150,13 @@ class Song extends React.Component {
                 style={{
                   fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                   marginBottom: `2rem`,
-                  marginLeft: `1rem`,
                 }}
               >
                 <i style={{ letterSpacing: `2px`, lineHeight: `2` }}>
                   by William Brough and J. Gaspard Maeder
                 </i>
               </p>
-              <p>This song was sung by the Actresses Franchise League in their campaigning
+              <p style={{maxWidth: `700px`}}>This song was sung by the Actresses Franchise League in their campaigning
 for the vote - Actresses Franchise League, 1908–1958, was formed in 1908
 as &#39;a bond of union between all women in the theatrical profession who are in
 sympathy with the Woman&#39;s Franchise Movement.</p>

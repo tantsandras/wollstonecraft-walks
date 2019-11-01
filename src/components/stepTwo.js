@@ -121,8 +121,8 @@ const Credits = styled.h5`
 font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
-font-size: 1rem;
-line-height: 1.8;
+font-size: 0.9rem;
+line-height: 1.3;
 `
 
 const ImageWrapper = styled.div`

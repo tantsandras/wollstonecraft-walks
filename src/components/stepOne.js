@@ -136,8 +136,8 @@ const Credits = styled.h5`
 font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
-font-size: 1rem;
-line-height: 1.8;
+font-size: 0.9rem;
+line-height: 1.3;
 `
 
 class Step1 extends React.Component {
@@ -160,9 +160,9 @@ class Step1 extends React.Component {
         <article style={{ padding: `18% 8% 3% 8%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
           <section style={{ paddingBottom: `3rem` }}>
             
-                <Credits style={{fontSize: `0.9rem`}}> Wollstonecraft Walks Guide </Credits> <Normal style={{fontSize: `0.9rem`}}>Researched and written by Anna Birch and Rebecca Mordan</Normal>
-                <Credits style={{fontSize: `0.9rem`}}> Read by: </Credits><Normal style={{fontSize: `0.9rem`}}>Rebecca Mordan with readings read by Rebecca Boey and Caroline Parker </Normal>
-                <Credits style={{fontSize: `0.9rem`}}> Sound Composition:  </Credits><Normal style={{fontSize: `0.9rem`}}>Alastair Gavin</Normal>
+                <Credits> Wollstonecraft Walks Guide </Credits> <Normal style={{fontSize: `0.9rem`}}>Researched and written by Anna Birch and Rebecca Mordan</Normal>
+                <Credits> Read by: </Credits><Normal style={{fontSize: `0.9rem`}}>Rebecca Mordan with readings read by Rebecca Boey and Caroline Parker </Normal>
+                <Credits> Sound Composition:  </Credits><Normal style={{fontSize: `0.9rem`}}>Alastair Gavin</Normal>
           </section>
           <Normal>
             Hello, I&#39;m Rebecca and I&#39;m here to Welcome you to this Mary
