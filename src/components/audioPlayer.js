@@ -292,7 +292,9 @@ class AudioPlayer extends React.Component {
           ""
         )}
         <Player>
-          <button style={element} onClick={void(0)} >
+          <button style={element} 
+          // onClick={void(0)}
+          >
             <DoubleRewind
               label="Rewind"
               onMouseDown={this.setIntervalHelperBackward}
@@ -334,7 +336,9 @@ class AudioPlayer extends React.Component {
               </ButtonWrap>
             )}
           </div>
-          <button style={element} onClick={void(0)} >
+          <button style={element} 
+          // onClick={void(0)}
+          >
             <DoubleFastForward
               label="Fast forward"
               onMouseDown={this.setIntervalHelperForward}
