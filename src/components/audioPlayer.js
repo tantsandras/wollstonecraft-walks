@@ -70,7 +70,7 @@ const element = {
   alignItems: `center`,
   margin: `0 auto`,
   cursor: `pointer`,
-  background: `transparent`,
+  backgroundColor: `rgba(0,0,0,0)`,
   border: `none`,
   outlineWidth: `0`
 }
@@ -292,7 +292,7 @@ class AudioPlayer extends React.Component {
           ""
         )}
         <Player>
-          <button style={element}>
+          <button style={element} onClick={void(0)} >
             <DoubleRewind
               label="Rewind"
               onMouseDown={this.setIntervalHelperBackward}
@@ -334,7 +334,7 @@ class AudioPlayer extends React.Component {
               </ButtonWrap>
             )}
           </div>
-          <button style={element}>
+          <button style={element} onClick={void(0)} >
             <DoubleFastForward
               label="Fast forward"
               onMouseDown={this.setIntervalHelperForward}
