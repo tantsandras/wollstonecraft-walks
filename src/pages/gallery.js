@@ -133,19 +133,19 @@ class GalleryPage extends React.Component {
                       }}
                     >
                       {photo.node.childMarkdownRemark.frontmatter.title}
-                      <br />
-                      <i
+                      </h2>
+                      <h3
                         style={{
                           letterSpacing: `2px`,
-                          fontSize: `1rem`,
+                          fontSize: `0.9rem`,
                           fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                           fontWeight: `normal`,
-                          marginTop: `2rem`,
+                          marginBottom: `2rem`,
+                          lineHeight: `1.5`,
                         }}
                       >
                         {photo.node.childMarkdownRemark.frontmatter.subheading}
-                      </i>
-                    </h2>
+                    </h3>
                       <Normal>{photo.node.childMarkdownRemark.frontmatter.description}</Normal>
                   </div>
                   {photo.node.childMarkdownRemark.frontmatter.images.map((img) => (

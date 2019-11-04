@@ -152,6 +152,7 @@ class FmPrefAndFilm extends React.Component {
                 width="400px"
                 height="100%"
                 frameborder="0"
+                allowFullScreen
               ></Video>
             </Overlay>
             <PdfLink
@@ -215,7 +216,7 @@ class FmPrefAndFilm extends React.Component {
                 
               }}
             >
-              Concieved by{" "}
+              Conceived by{" "}
             </i>
             - Kaethe Fine and Anna Birch
             <br />
@@ -382,6 +383,7 @@ class FmPrefAndFilm extends React.Component {
                 src="https://drive.google.com/file/d/12kmTYcHpoR4O3k9WgzTpvnjgiDFS-9fw/preview"
                 width="640"
                 height="480"
+                allowFullScreen
               ></Video>
             </Overlay>
             <PdfLink
@@ -396,6 +398,7 @@ class FmPrefAndFilm extends React.Component {
                 src="https://drive.google.com/file/d/1PqeTfCrcP--0F73gPkOeEt2wah6x8y3f/preview"
                 width="640"
                 height="480"
+                allowFullScreen
               ></Video>
             </Overlay>
             <PdfLink
@@ -451,6 +454,7 @@ class FmPrefAndFilm extends React.Component {
                   src="https://www.youtube.com/embed/ehCTNvc89UQ"
                   width="640"
                   height="480"
+                  allowFullScreen
                 ></Video>
               </Overlay>
             </VideoList>

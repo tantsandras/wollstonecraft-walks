@@ -1,7 +1,7 @@
 ---
 title: Wollstonecraft Walks
-subheading: School assembly
-description: 'at Newington Green Primary School, October 2019'
+subheading: School assembly at Newington Green Primary School, October 2019.
+description: 'Photos by Anna Birch and Rebecca Mordan'
 images:
   - alt: 'Volunteers in front of Mary Wollstonecraft presentation '
     image: /imgUploads/img_3949.jpg

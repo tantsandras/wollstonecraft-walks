@@ -35,7 +35,7 @@ const Overlay = styled.div`
   margin-top: 2rem;
 `
 const MainHeading = styled.h1`
-  font-family: "Archivo Black", 'Impact';
+  font-family: "Archivo Black", "Impact";
   font-size: 2.4rem;
   text-align: center;
   letter-spacing: 1px;
@@ -69,7 +69,8 @@ const Videos = styled.ul`
 const SoundBox = styled.li`
   padding: 2rem;
   background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   list-style: none;
   position: relative;
   max-width: 600px;
@@ -119,7 +120,7 @@ const PdfLink = styled.a`
 `
 
 const Heading = styled.h2`
-  font-family: "Archivo Black", 'Impact';
+  font-family: "Archivo Black", "Impact";
   padding-top: 2rem;
   letter-spacing: 1px;
   line-height: 1.3;
@@ -158,7 +159,18 @@ class Media extends React.Component {
           }}
         >
           <Videos>
-            <VideoList style={{maxWidth: `100vw`, marginTop: `-5rem`, marginBottom: `7rem`, background: `none`, border: `none`, boxShadow: `none`}}><Flyer /></VideoList>
+            <VideoList
+              style={{
+                maxWidth: `100vw`,
+                marginTop: `-5rem`,
+                marginBottom: `7rem`,
+                background: `none`,
+                border: `none`,
+                boxShadow: `none`,
+              }}
+            >
+              <Flyer />
+            </VideoList>
             <VideoList>
               <Heading>
                 Wollstonecraft Walks
@@ -194,6 +206,7 @@ class Media extends React.Component {
                   height="315"
                   src="https://www.youtube.com/embed/mxOMX4eSF00"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
                 ></Video>
               </Overlay>
             </VideoList>
@@ -213,18 +226,19 @@ class Media extends React.Component {
                   height="315"
                   src="https://www.youtube.com/embed/ZUxc_R1Ib6E"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
                 ></Video>
               </Overlay>
             </VideoList>
           </Videos>
         </article>
         <article style={{ padding: `2% 10% 8% 10%` }}>
-          <VideoList maxWidth="640px" style={{margin: `0 auto`}}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
               <Video
                 src="https://drive.google.com/file/d/1fD7C4xO-ZyFRFEAukWJirMvTdBrxMv6k/preview"
                 width="640"
-                height="480"
+                height="48"
               ></Video>
             </Overlay>
             <PdfLink
@@ -236,7 +250,10 @@ class Media extends React.Component {
           </VideoList>
         </article>
         <article
-          style={{ padding: `1% 10% 0% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}
+          style={{
+            padding: `1% 10% 0% 10%`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+          }}
         >
           <Videos>
             <VideoList>
@@ -273,6 +290,7 @@ class Media extends React.Component {
                   height="315"
                   src="https://www.youtube.com/embed/53ccttjCtZ4"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
                 ></Video>
               </Overlay>
             </VideoList>
@@ -374,6 +392,7 @@ class Media extends React.Component {
                   height="315"
                   src="https://www.youtube.com/embed/TO8Z4dVRaaE"
                   style={{ maxWidth: `640px`, maxHeight: `385px` }}
+                  allowFullScreen
                 ></Video>
               </Overlay>
             </VideoList>
