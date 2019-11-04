@@ -209,7 +209,6 @@ class AudioPlayer extends React.Component {
 
   handleTimeUpdate = e => {
     if (e.target.duration > 1) {
-      console.log(e.target.duration)
       this.setState({
         currentTime: e.target.currentTime,
         duration: e.target.duration,
@@ -218,8 +217,8 @@ class AudioPlayer extends React.Component {
   }
 
   componentDidMount() {
+    document.querySelector('audio').load()
     this.player.addEventListener("timeupdate", this.handleTimeUpdate)
-
     let track = this.props.track
 
     if (track) {
