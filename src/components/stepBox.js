@@ -20,14 +20,14 @@ const Box = styled.li`
 
 const arrow = {
   border: `solid rgba(0,0,0,.5)`,
-  borderWidth: `0px 2px 2px 0px`,
+  borderWidth: `0px 1.4px 1.4px 0px`,
   display: `table-cell`,
   position: `absolute`,
   top: `43%`,
   right: `5%`,
   msTransform: `translateY(-50%)`,
   transform: `translateY(-50%)`,
-  padding: `10px`,
+  padding: `9px`,
   transform: `rotate(-45deg)`,
   WebkitTransform: `rotate(-45deg)`,
 }
