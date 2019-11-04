@@ -50,6 +50,7 @@ border-radius: 50%;
 -webkit-border-radius: 50%;
 max-width: 500px;
 max-height: 500px;
+margin-top: 2rem;
 z-index: 1;
 animation: ${turnVisible} 1.2s ease-in-out;
 `

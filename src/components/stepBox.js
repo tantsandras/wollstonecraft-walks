@@ -3,7 +3,8 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const Box = styled.li`
-  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
   background: #fffeff;
   box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
   list-style: none;
@@ -23,6 +24,7 @@ const arrow = {
   borderWidth: `0px 1.4px 1.4px 0px`,
   display: `table-cell`,
   position: `absolute`,
+  cursor: `pointer`,
   top: `43%`,
   right: `5%`,
   msTransform: `translateY(-50%)`,
@@ -72,12 +74,17 @@ class StepBox extends React.Component {
           return (
 
               <Box key={key}>
-                          <Link
+            <Link
               key={key}
               to={`/${item.num}`}
               style={{
                 color: `#28292b`,
                 textDecoration: `none`,
+                width: `100%`,
+                height: `auto`,
+                cursor: `pointer`,
+                flex: `1`,
+                padding: `1.4rem`
               }}
             >
                 <h3

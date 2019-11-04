@@ -249,6 +249,7 @@ class AudioPlayer extends React.Component {
 
       if (track) {
         this.player.src = track
+        this.player.load()
         this.player.play()
         this.setState({
           player: "playing",
