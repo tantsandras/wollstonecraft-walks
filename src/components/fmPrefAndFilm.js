@@ -595,6 +595,7 @@ class FmPrefAndFilm extends React.Component {
               href="http://player.vimeo.com/video/149630321"
               target="_blank"
               rel="noopener noreferrer"
+              style={{cursor: `pointer`}}
               >http://player.vimeo.com/video/149630321</a></Normal>
                 <Video
                   src="http://player.vimeo.com/video/149630321"
