@@ -20,16 +20,17 @@ const Title = styled.div`
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0 auto;
-  padding-top: 0.3rem;
-  width: 57%;
+  padding: 0.2rem 0.2rem 0rem 0.2rem;
+  width: 57.8%;
   text-align: center;
+  vertical-align: center;
   position: absolute;
   top: 2%;
   left: 50%;
   transform: translate(-50%, 50%);
   mix-blend-mode: screen;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.1;
 `
 const contactList = {
   display: `grid`,
