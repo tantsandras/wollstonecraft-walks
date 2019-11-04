@@ -192,7 +192,7 @@ const DoubleRewind = styled(Rewind)`
 `
 
 const getTime = time => {
-  if (!isNaN(time) && time > 1) {
+  if (!isNaN(time)) {
     console.log("time", time)
     return Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
   }
@@ -208,20 +208,17 @@ class AudioPlayer extends React.Component {
   }
 
   handleTimeUpdate = e => {
-    if (e.target.duration > 1) {
       this.setState({
         currentTime: e.target.currentTime,
         duration: e.target.duration,
       })
     }
-  }
 
   componentDidMount() {
     this.player.addEventListener("timeupdate", this.handleTimeUpdate)
     let track = this.props.track
 
     if (track) {
-      this.player.src = track
       this.player.src = track
       this.player.load()
       this.setState({ player: "stopped", duration: this.player.duration })
@@ -289,7 +286,7 @@ class AudioPlayer extends React.Component {
       const duration = getTime(this.state.duration)
       return (
         <>
-          {this.state.player === "playing" && duration > 0 || this.state.player === "paused" ? (
+          {this.state.player === "playing" || this.state.player === "paused" ? (
             <div
               style={{
                 textAlign: `center`,
@@ -303,6 +300,8 @@ class AudioPlayer extends React.Component {
           ) : (
             ""
           )}
+                    
+{typeof window !== 'undefined' && window.location.href.match(/debug=1/) ? <pre style={{maxWidth: '100vw'}}>{JSON.stringify(this.state, null, '  ')}</pre> : null}
           <Player>
             <div style={element}>
               <DoubleRewind
@@ -362,6 +361,7 @@ class AudioPlayer extends React.Component {
 
             <audio
               ref={ref => (this.player = ref)}
+              src={this.props.track}
               preload="none"
               type="audio/mp3"
               codecs="mp3"
