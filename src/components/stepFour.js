@@ -131,10 +131,10 @@ const ImgWrap = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
-  mix-blend-mode: lighten;
   animation: ${fadeInRight} ease 1.2s forwards;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
 `
@@ -145,8 +145,8 @@ class Step4 extends React.Component {
       <main style={{ position: `relative` }}>
         <ImgWrap
           style={{
-            width: `254px`,
-            height: `254px`,
+            width: `252px`,
+            height: `252px`,
             zIndex: `-2`,
             margin: `0 auto`,
             marginTop: `-4.8rem`,
