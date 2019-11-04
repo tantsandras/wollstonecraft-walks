@@ -217,7 +217,6 @@ class AudioPlayer extends React.Component {
   }
 
   componentDidMount() {
-    document.querySelector('audio').load()
     this.player.addEventListener("timeupdate", this.handleTimeUpdate)
     let track = this.props.track
 
@@ -286,91 +285,90 @@ class AudioPlayer extends React.Component {
   }
 
   render() {
-    const currentTime = getTime(this.state.currentTime)
-    const duration = getTime(this.state.duration)
-
-    return (
-      <>
-        {this.state.player === "playing" || this.state.player === "paused" ? (
-          <div
-            style={{
-              textAlign: `center`,
-              height: `110px`,
-              paddingTop: `70px`,
-              marginBottom: `-110px`,
-            }}
-          >
-            {currentTime} / {duration}
-          </div>
-        ) : (
-          ""
-        )}
-        <Player>
-          <div style={element}>
-            <DoubleRewind
-              label="Rewind"
-              onMouseDown={this.setIntervalHelperBackward}
-              onMouseUp={this.clearIntervalHelper}
-              onTouchStart={this.setIntervalHelperBackward}
-              onTouchEnd={this.clearIntervalHelper}
-              onClick={() => {
-                return (this.player.currentTime -= 3)
+      const currentTime = getTime(this.state.currentTime)
+      const duration = getTime(this.state.duration)
+      return (
+        <>
+          {this.state.player === "playing" && !duration || this.state.player === "paused" ? (
+            <div
+              style={{
+                textAlign: `center`,
+                height: `110px`,
+                paddingTop: `70px`,
+                marginBottom: `-110px`,
               }}
-              style={{ cursor: `pointer` }}
-            />
-          </div>
-          <div style={element}>
-            {this.state.player !== "playing" ||
-            (this.player.currentTime > 1 &&
-              this.player.currentTime === this.player.duration) ? (
-              <ButtonWrap>
-                <Play
-                  autocomplete="off"
-                  label="Play"
-                  onClick={() => {
-                    return this.setState({
-                      player: "playing",
-                      selectedTrack: this.props.track,
-                    })
-                  }}
-                />
-              </ButtonWrap>
-            ) : (
-              <ButtonWrap>
-                <Spinner />
-                <Pause
-                  autocomplete="off"
-                  label="Pause"
-                  onClick={() => {
-                    return this.setState({ player: "paused" })
-                  }}
-                />
-              </ButtonWrap>
-            )}
-          </div>
-          <div style={element}>
-            <DoubleFastForward
-              label="Fast forward"
-              onMouseDown={this.setIntervalHelperForward}
-              onMouseUp={this.clearIntervalHelper}
-              onTouchStart={this.setIntervalHelperForward}
-              onTouchEnd={this.clearIntervalHelper}
-              onClick={() => {
-                this.player.currentTime += 3
-              }}
-              style={{ cursor: `pointer` }}
-            />
-          </div>
+            >
+              {currentTime} / {duration}
+            </div>
+          ) : (
+            ""
+          )}
+          <Player>
+            <div style={element}>
+              <DoubleRewind
+                label="Rewind"
+                onMouseDown={this.setIntervalHelperBackward}
+                onMouseUp={this.clearIntervalHelper}
+                onTouchStart={this.setIntervalHelperBackward}
+                onTouchEnd={this.clearIntervalHelper}
+                onClick={() => {
+                  return (this.player.currentTime -= 3)
+                }}
+                style={{ cursor: `pointer` }}
+              />
+            </div>
+            <div style={element}>
+              {this.state.player !== "playing" ||
+              (this.player.currentTime > 1 &&
+                this.player.currentTime === this.player.duration) ? (
+                <ButtonWrap>
+                  <Play
+                    autocomplete="off"
+                    label="Play"
+                    onClick={() => {
+                      return this.setState({
+                        player: "playing",
+                        selectedTrack: this.props.track,
+                      })
+                    }}
+                  />
+                </ButtonWrap>
+              ) : (
+                <ButtonWrap>
+                  <Spinner />
+                  <Pause
+                    autocomplete="off"
+                    label="Pause"
+                    onClick={() => {
+                      return this.setState({ player: "paused" })
+                    }}
+                  />
+                </ButtonWrap>
+              )}
+            </div>
+            <div style={element}>
+              <DoubleFastForward
+                label="Fast forward"
+                onMouseDown={this.setIntervalHelperForward}
+                onMouseUp={this.clearIntervalHelper}
+                onTouchStart={this.setIntervalHelperForward}
+                onTouchEnd={this.clearIntervalHelper}
+                onClick={() => {
+                  this.player.currentTime += 3
+                }}
+                style={{ cursor: `pointer` }}
+              />
+            </div>
 
-          <audio
-            ref={ref => (this.player = ref)}
-            preload="none"
-            type="audio/mp3"
-            codecs="mp3"
-          />
-        </Player>
-      </>
-    )
+            <audio
+              ref={ref => (this.player = ref)}
+              preload="none"
+              type="audio/mp3"
+              codecs="mp3"
+            />
+          </Player>
+        </>
+      )
   }
 }
 
