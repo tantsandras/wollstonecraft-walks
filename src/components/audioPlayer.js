@@ -193,7 +193,6 @@ const DoubleRewind = styled(Rewind)`
 
 const getTime = time => {
   if (!isNaN(time)) {
-    console.log("time", time)
     return Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
   }
 }
@@ -283,7 +282,9 @@ class AudioPlayer extends React.Component {
 
   render() {
       const currentTime = getTime(this.state.currentTime)
-      const duration = getTime(this.state.duration)
+      const duration = null
+      
+  // getTime(this.state.duration)
       return (
         <>
           {this.state.player === "playing" || this.state.player === "paused" ? (

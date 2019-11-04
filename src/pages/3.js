@@ -5,7 +5,7 @@ import ContinueButton from "../components/continueWalk"
 import Step3 from "../components/stepThree"
 import Menu from "../components/menu"
 import BackButton from "../components/backButton"
-import AudioStepThree from "../audio/WW WALKS CHAPTER 3.mp3"
+import AudioStepThree from "../audio/WW_WALKS_CHAPTER_3.mp3"
 import "typeface-archivo-black"
 import 'typeface-yeseva-one'
 

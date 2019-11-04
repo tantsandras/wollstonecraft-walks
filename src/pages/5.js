@@ -4,7 +4,7 @@ import AudioPlayer from "../components/audioPlayer"
 import Step5 from "../components/stepFive"
 import Menu from "../components/menu"
 import BackButton from "../components/backButton"
-import AudioStepFive from "../audio/WALK GUIDE CHAPTER 5.mp3"
+import AudioStepFive from "../audio/WALK_GUIDE_CHAPTER_5.mp3"
 import "typeface-archivo-black"
 import 'typeface-yeseva-one'
 

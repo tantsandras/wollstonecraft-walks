@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 import "typeface-archivo-black"
 import Circles from "../components/circles"
 import AudioPlayer from "../components/audioPlayer"
-import MaryRound from "../audio/Mary Round.mp3"
+import MaryRound from "../audio/Mary_Round.mp3"
 
 const turnVisible = keyframes`
 	from {
