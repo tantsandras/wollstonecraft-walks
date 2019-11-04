@@ -295,7 +295,7 @@ class AudioPlayer extends React.Component {
                 marginBottom: `-110px`,
               }}
             >
-              {currentTime} / {duration}
+              {currentTime} {duration != null && `/ ${duration}`}
             </div>
           ) : (
             ""
