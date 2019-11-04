@@ -600,7 +600,7 @@ class FmPrefAndFilm extends React.Component {
               style={{cursor: `pointer`}}
               >https://player.vimeo.com/video/149630321</a></Normal>
                 <Video
-                  src="http://player.vimeo.com/video/149630321"
+                  src="https://player.vimeo.com/video/149630321"
                   frameBorder="0"
                   style={{
                     maxWidth: `640px`,

@@ -219,6 +219,7 @@ class AudioPlayer extends React.Component {
     if (track) {
       this.player.src = track
       this.player.src = track
+      this.player.load()
       this.setState({ player: "stopped", duration: this.player.duration })
     }
   }
@@ -285,7 +286,7 @@ class AudioPlayer extends React.Component {
 
     return (
       <>
-        {this.state.player === "playing" || this.state.player === "paused" || this.state.player.src ? (
+        {this.state.player === "playing" && this.state.player.src || this.state.player === "paused" && this.state.player.src ? (
           <div style={{ textAlign: `center`, height: `110px`, paddingTop: `70px`, marginBottom: `-110px`}}>
             {currentTime} / {duration}
           </div>
