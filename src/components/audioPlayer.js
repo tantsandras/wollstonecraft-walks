@@ -289,7 +289,7 @@ class AudioPlayer extends React.Component {
       const duration = getTime(this.state.duration)
       return (
         <>
-          {this.state.player === "playing" && !duration || this.state.player === "paused" ? (
+          {this.state.player === "playing" && duration > 0 || this.state.player === "paused" ? (
             <div
               style={{
                 textAlign: `center`,
