@@ -282,9 +282,7 @@ class AudioPlayer extends React.Component {
 
   render() {
       const currentTime = getTime(this.state.currentTime)
-      const duration = null
-      
-  // getTime(this.state.duration)
+      const duration = getTime(this.state.duration)
       return (
         <>
           {this.state.player === "playing" || this.state.player === "paused" ? (
