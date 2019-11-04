@@ -9,24 +9,24 @@ module.exports = {
     siteUrl,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/imgUploads`,
-        name: "images",
-      },
-    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-151168803-1",
+        trackingId: "UA-151207553-1",
         head: true,
         anonymize: true,
         respectDNT: true,
         pageTransitionDelay: 0,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/imgUploads`,
+        name: "images",
       },
     },
     {
