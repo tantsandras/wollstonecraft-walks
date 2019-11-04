@@ -131,19 +131,21 @@ class FmPrefAndFilm extends React.Component {
       >
         <MainHeading>
           Fragments & Monuments
-          <br />
-          <i
+
+          <b
             style={{
               fontFamily: `'Archivo Black', 'Impact'`,
-              fontSize: `1.4rem`,
+              fontSize: `1.2rem`,
               letterSpacing: `1px`,
               lineHeight: `2`,
               paddingTop: `1rem`,
+              textAlign: `center`,
             }}
           >
             Performance and Film Archive
-          </i>
-        </MainHeading>
+          </b>
+          </MainHeading>
+        
         <article style={{ padding: `0% 8% 3% 8%` }}>
           <VideoList style={{ margin: `0 auto`}}>
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem`}}>
