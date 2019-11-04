@@ -8,7 +8,7 @@ import HeritageLogo from "../components/heritageLogo"
 const element = {
   gridTemplateColumns: `repeat(5, 1fr)`,
   gridTemplateRows: `repeat(5, 300px)`,
-  gridGap: `1rem`,
+  rowGap: `1rem`,
   fontFamily: `Helvetica, Roboto, 'Open Sans'`,
   textAlign: `center`,
 }

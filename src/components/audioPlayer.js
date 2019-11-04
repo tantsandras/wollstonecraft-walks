@@ -48,7 +48,7 @@ const StyledSpinner = styled.svg`
 `
 
 const Player = styled.section`
-margin-top: 110px;
+  margin-top: 110px;
   margin-bottom: 6rem;
   display: table;
   margin-left: auto;
@@ -72,7 +72,7 @@ const element = {
   cursor: `pointer`,
   backgroundColor: `rgba(0,0,0,0)`,
   border: `none`,
-  outlineWidth: `0`
+  outlineWidth: `0`,
 }
 
 const ButtonWrap = styled.span`
@@ -192,7 +192,8 @@ const DoubleRewind = styled(Rewind)`
 `
 
 const getTime = time => {
-  if (!isNaN(time)) {
+  if (!isNaN(time) && time !== null) {
+    console.log("time", time)
     return Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
   }
 }
@@ -208,11 +209,12 @@ class AudioPlayer extends React.Component {
 
   handleTimeUpdate = e => {
     if (e.target.duration > 0) {
-    this.setState({
-      currentTime: e.target.currentTime,
-      duration: e.target.duration,
-    })
-  }
+      console.log(e.target.duration)
+      this.setState({
+        currentTime: e.target.currentTime,
+        duration: e.target.duration,
+      })
+    }
   }
 
   componentDidMount() {
@@ -291,7 +293,14 @@ class AudioPlayer extends React.Component {
     return (
       <>
         {this.state.player === "playing" || this.state.player === "paused" ? (
-          <div style={{ textAlign: `center`, height: `110px`, paddingTop: `70px`, marginBottom: `-110px`}}>
+          <div
+            style={{
+              textAlign: `center`,
+              height: `110px`,
+              paddingTop: `70px`,
+              marginBottom: `-110px`,
+            }}
+          >
             {currentTime} / {duration}
           </div>
         ) : (
@@ -308,7 +317,7 @@ class AudioPlayer extends React.Component {
               onClick={() => {
                 return (this.player.currentTime -= 3)
               }}
-              style={{ cursor: `pointer`}}
+              style={{ cursor: `pointer` }}
             />
           </div>
           <div style={element}>
@@ -350,11 +359,16 @@ class AudioPlayer extends React.Component {
               onClick={() => {
                 this.player.currentTime += 3
               }}
-              style={{ cursor: `pointer`}}
+              style={{ cursor: `pointer` }}
             />
           </div>
 
-          <audio ref={ref => (this.player = ref)} preload="none" type="audio/mp3" codecs="mp3" />
+          <audio
+            ref={ref => (this.player = ref)}
+            preload="none"
+            type="audio/mp3"
+            codecs="mp3"
+          />
         </Player>
       </>
     )
