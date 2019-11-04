@@ -3,7 +3,7 @@ const siteUrl = `https://wollstonecraftwalks.netlify.com`
 module.exports = {
   siteMetadata: {
     title: `Wollstonecraft Walks`,
-    keyword: `Mary Wollstonecraft, Wollstonecraft Walks, historiclondon, londonwalks, londonhistory, historicengland, exlorelondon`,
+    keyword: `Mary Wollstonecraft, Wollstonecraft Walks, historiclondon, londonwalks, londonhistory, historicengland, exlorelondon, wollstonecraftwalks.netlify.com`,
     description: `A walkguide through Newington Green or virtually, about Mary Wollstonecraft.`,
     author: `Sandra Grahl`,
     siteUrl,
