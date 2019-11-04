@@ -1,4 +1,4 @@
-const siteUrl = `https://wollstonecraftwalks.netlify.com`
+const siteUrl = `wollstonecraftwalks.netlify.com`
 
 module.exports = {
   siteMetadata: {
