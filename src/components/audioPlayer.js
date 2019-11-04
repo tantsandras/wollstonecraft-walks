@@ -206,15 +206,17 @@ class AudioPlayer extends React.Component {
     isHovering: false,
   }
 
-  componentDidMount() {
-    this.player.addEventListener("timeupdate", e => {
-      if (e.target.duration !== 0) {
-      this.setState({
-        currentTime: e.target.currentTime,
-        duration: e.target.duration,
-      })
-    }
+  handleTimeUpdate = e => {
+    if (e.target.duration > 0) {
+    this.setState({
+      currentTime: e.target.currentTime,
+      duration: e.target.duration,
     })
+  }
+  }
+
+  componentDidMount() {
+    this.player.addEventListener("timeupdate", this.handleTimeUpdate)
 
     let track = this.props.track
 
@@ -227,7 +229,7 @@ class AudioPlayer extends React.Component {
   }
 
   componentWillUnmount() {
-    this.player.removeEventListener("timeupdate", () => {})
+    this.player.removeEventListener("timeupdate", this.handleTimeUpdate)
   }
 
   setIntervalHelperBackward = () => {
