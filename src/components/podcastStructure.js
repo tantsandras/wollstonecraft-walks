@@ -74,7 +74,7 @@ const PodList = styled.ul`
   display: grid;
   grid-template-columns: repeat(1, minmax(300px, 2fr));
   grid-gap: 1rem;
-  padding: 6rem 1rem 4rem 1rem;
+  padding: 6rem 0.4rem 4rem 0.4rem;
   column-gap: 4%;
   margin: 0 auto;
   grid-template-rows: repeat(3, auto);

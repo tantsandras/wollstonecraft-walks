@@ -67,7 +67,7 @@ const Videos = styled.ul`
   font-family: Helvetica, Roboto, "Open Sans";
 `
 const SoundBox = styled.li`
-  padding: 2rem;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -296,7 +296,7 @@ class Media extends React.Component {
             </VideoList>
           </Videos>
         </article>
-        <article style={{ padding: `0% 8% 0% 8%` }}>
+        <article style={{ padding: `0% 4% 0% 4%` }}>
           <SoundBox>
             <Heading>Wollstonecraft Walks Soundscape</Heading>
             <p
@@ -316,7 +316,19 @@ class Media extends React.Component {
                 justifyContent: `center`,
               }}
             >
-              <AudioPlayer track={Soundscape} />
+              <div
+                style={{
+                  display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
+                  flexDirection: `row`,
+                  justifyContent: `center`,
+                  textAlign: `center`,
+                  alignContent: `center`,
+                  fontFamily: `Helvetica, Roboto, "Open Sans"`,
+                  width: `100%`,
+                }}
+              >
+                <AudioPlayer track={Soundscape} />
+              </div>
             </div>
           </SoundBox>
         </article>
