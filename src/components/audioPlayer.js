@@ -348,7 +348,7 @@ class AudioPlayer extends React.Component {
             />
           </div>
 
-          <audio ref={ref => (this.player = ref)} preload="none" />
+          <audio ref={ref => (this.player = ref)} preload="none" type="audio/mp3" codecs="mp3" />
         </Player>
       </>
     )
