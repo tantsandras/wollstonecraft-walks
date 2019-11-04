@@ -192,7 +192,7 @@ const DoubleRewind = styled(Rewind)`
 `
 
 const getTime = time => {
-  if (!isNaN(time) && time !== null) {
+  if (!isNaN(time) && time > 1) {
     console.log("time", time)
     return Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
   }
@@ -208,7 +208,7 @@ class AudioPlayer extends React.Component {
   }
 
   handleTimeUpdate = e => {
-    if (e.target.duration > 0) {
+    if (e.target.duration > 1) {
       console.log(e.target.duration)
       this.setState({
         currentTime: e.target.currentTime,
