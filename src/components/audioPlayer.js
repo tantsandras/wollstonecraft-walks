@@ -220,7 +220,7 @@ class AudioPlayer extends React.Component {
     if (track) {
       this.player.src = track
       this.player.load()
-      this.setState({ player: "stopped", duration: this.player.duration })
+      this.setState({ player: "stopped"})
     }
   }
 
@@ -254,7 +254,6 @@ class AudioPlayer extends React.Component {
         this.player.play()
         this.setState({
           player: "playing",
-          duration: this.player.duration,
           selectedTrack: track,
         })
       }
