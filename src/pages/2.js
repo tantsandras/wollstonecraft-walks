@@ -33,7 +33,7 @@ class StepTwoPage extends React.Component {
             width: `100%`,
           }}
         >
-          <AudioPlayer track={AudioStepTwo} />
+          <AudioPlayer track={"https://docs.google.com/uc?export=download&id=1GbaEhOxKnoQbWbAqdCdyofS8WvpsDhNP"} />
         </div>
         </div>
         <Link to={"/1"}>

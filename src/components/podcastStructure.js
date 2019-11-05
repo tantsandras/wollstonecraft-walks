@@ -155,7 +155,7 @@ class Pods extends React.Component {
                   alignContent: `center`,
                 }}
               >
-                <AudioPlayer track={Ep1} />
+                <AudioPlayer track={"https://docs.google.com/uc?export=download&id=11DTFrfsubukKKDVrYodmTRJzZdCkbHdO"} />
               </div>
             </div>
           </PodBox>
@@ -207,7 +207,7 @@ class Pods extends React.Component {
                   alignContent: `center`,
                 }}
               >
-                <AudioPlayer track={Ep2} />
+                <AudioPlayer track={"https://docs.google.com/uc?export=download&id=1cSg-95XuQVwhOXQYkBgA8bhxmsYjNEhT"} />
               </div>
             </div>
           </PodBox>
@@ -263,7 +263,7 @@ class Pods extends React.Component {
                   alignContent: `center`,
                 }}
               >
-                <AudioPlayer track={Ep3} />
+                <AudioPlayer track={"https://docs.google.com/uc?export=download&id=1_c-Q30xCFn3r2KhIH0p1r5w2kpCMEVI5"} />
               </div>
             </div>
           </PodBox>
