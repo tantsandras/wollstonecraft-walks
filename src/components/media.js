@@ -4,6 +4,7 @@ import AudioPlayer from "../components/audioPlayer"
 import Quote7 from "../images/posters/Quote1.jpg"
 import Quote5 from "../images/posters/Quote2.jpg"
 import Flyer from "../components/flyer1"
+import { Helmet } from "react-helmet"
 
 const fadeInRight = keyframes`
     from {
@@ -146,6 +147,26 @@ class Media extends React.Component {
   render() {
     return (
       <main>
+              <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          {
+            name: "description",
+            content: "Walk guide app about Mary Wollstonecraft",
+          },
+          {
+            name: "keywords",
+            content:
+              "marywollstonecraft, wollstonecraft, walkguide, historiclondon, newingtongreen, feminism, britishfeminists, herstory, londonwalks, britishhistory, fragments&monuments",
+          },
+        ]}
+      >
+        <html lang="en" style={{fontFamily: `'Archivo Black', Impact, sans-serif`}}/>
+        <link rel="canonical" href="https://wollstonecraftwalks.netlify.com" />
+
+<meta name="google-site-verification" content="ZtGNrohmz3XFRtLU30FDSYpxw4d5jQe70PdolyjkVes" />
+      </Helmet>
+      <GlobalStyle />
         <PageCircle style={{ marginBottom: `4rem`, marginTop: `4rem` }}>
           <PageHeading></PageHeading>
         </PageCircle>
