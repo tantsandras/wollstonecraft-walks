@@ -46,6 +46,8 @@ const Layout = ({ children }) => {
       >
         <html lang="en" style={{fontFamily: `'Archivo Black', Impact, sans-serif`}}/>
         <link rel="canonical" href="https://wollstonecraftwalks.netlify.com" />
+        <link rel="preload" href="https://wollstonecraftwalks.netlify.com/static/yeseva-one-latin-400-7a862e29ede310b5ba103d2a43e1b441.woff2" as="font" />
+        <link rel="preload" href="https://wollstonecraftwalks.netlify.com/static/roboto-latin-400-479970ffb74f2117317f9d24d9e317fe.woff2" as="font" />
 
 <meta name="google-site-verification" content="ZtGNrohmz3XFRtLU30FDSYpxw4d5jQe70PdolyjkVes" />
       </Helmet>
