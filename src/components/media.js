@@ -146,7 +146,6 @@ class Media extends React.Component {
   render() {
     return (
       <main>
-      <GlobalStyle />
         <PageCircle style={{ marginBottom: `4rem`, marginTop: `4rem` }}>
           <PageHeading></PageHeading>
         </PageCircle>

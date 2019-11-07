@@ -20,7 +20,6 @@ class StepOnePage extends React.Component {
   render() {
     return (
       <>
-      <GlobalStyle />
       <div style={{display: `grid`, justifyContent: `center`, alignItems: `center`, textAlign: `center`,}}>
         <div
           style={{
