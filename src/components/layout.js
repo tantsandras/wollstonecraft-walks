@@ -45,6 +45,9 @@ const Layout = ({ children }) => {
         ]}
       >
         <html lang="en" style={{fontFamily: `'Archivo Black', Impact, sans-serif`}}/>
+        <link rel="canonical" href="https://wollstonecraftwalks.netlify.com" />
+
+<meta name="google-site-verification" content="ZtGNrohmz3XFRtLU30FDSYpxw4d5jQe70PdolyjkVes" />
       </Helmet>
       <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />

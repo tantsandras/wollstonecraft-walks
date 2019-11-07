@@ -198,6 +198,8 @@ class Media extends React.Component {
                   Words - Kaethe Fine
                   <br />
                   Composer - Alastair Gavin
+                  <br />
+                  Film maker - Ali Meave Sargent
                 </i>
               </p>
               <Overlay>
