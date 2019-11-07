@@ -198,7 +198,7 @@ class Media extends React.Component {
                   <br />
                   Composer - Alastair Gavin
                   <br />
-                  Film maker - Ali Meave Sargent
+                  Film maker - Ali Maeve Sargent
                 </i>
               </p>
               <Overlay>

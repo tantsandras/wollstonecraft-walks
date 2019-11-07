@@ -202,7 +202,7 @@ const ArtistList = () => {
             rel="noopener noreferrer"
             style={{ animationDelay: `0.6s` }}
           >
-            Film Maker - Ali Meave Sargent
+            Film Maker - Ali Maeve Sargent
           </StyledLink>
         </li>
 
