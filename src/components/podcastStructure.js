@@ -1,9 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
-import Ep1 from "../audio/podcast/EP1.mp3"
-import Ep2 from "../audio/podcast/EP2.mp3"
-import Ep3 from "../audio/podcast/EP3.mp3"
 
 const fadeInRight = keyframes`
     from {

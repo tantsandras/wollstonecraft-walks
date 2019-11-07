@@ -5,7 +5,6 @@ import ContinueButton from "../components/continueWalk"
 import Step1 from "../components/stepOne"
 import Menu from "../components/menu"
 import BackButton from "../components/backButton"
-import AudioStepOne from "../audio/WW_WALKS_CHAPTER_1.mp3"
 import "typeface-archivo-black"
 import 'typeface-yeseva-one'
 

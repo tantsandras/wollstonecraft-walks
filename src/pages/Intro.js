@@ -4,7 +4,6 @@ import AudioPlayer from "../components/audioPlayer"
 import Intro from "../components/intro"
 import ContinueButton from "../components/continueWalk"
 import Menu from "../components/menu"
-import WhoIsMary from "../audio/WHO_IS_MW.mp3"
 import BackButton from "../components/backButton"
 import "typeface-archivo-black"
 import 'typeface-yeseva-one'

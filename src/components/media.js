@@ -1,7 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import AudioPlayer from "../components/audioPlayer"
-import Soundscape from "../audio/WL_Walk_soundscape.mp3"
 import Quote7 from "../images/posters/Quote1.jpg"
 import Quote5 from "../images/posters/Quote2.jpg"
 import Flyer from "../components/flyer1"
