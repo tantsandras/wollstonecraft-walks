@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet"
 import "typeface-archivo-black"
 import "typeface-roboto"
 import "typeface-yeseva-one"
+import 'typeface-bungee-shade'
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
