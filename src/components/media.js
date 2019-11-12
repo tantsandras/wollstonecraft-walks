@@ -18,7 +18,7 @@ const fadeInRight = keyframes`
 
 const VideoList = styled.li`
   padding: 2rem;
-  background: #241e20;
+  background: #1B1718;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
@@ -154,7 +154,7 @@ class Media extends React.Component {
           style={{
             padding: `3% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote7}") right 10% bottom 20%/22% no-repeat`,
+            background: `url("${Quote7}") right 6% bottom 20%/20% no-repeat`,
           }}
         >
           <Videos>
@@ -245,7 +245,7 @@ class Media extends React.Component {
             </VideoList>
           </Videos>
         </article>
-        <article style={{ padding: `2% 10% 8% 10%` }}>
+        <article style={{ padding: `2% 10% 4% 10%` }}>
           <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
               <Video
@@ -309,7 +309,24 @@ class Media extends React.Component {
             </VideoList>
           </Videos>
         </article>
-        <article style={{ padding: `0% 4% 0% 4%` }}>
+        <article style={{ padding: `0% 10% 2% 10%` }}>
+          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
+            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
+              <Video
+                src="https://drive.google.com/file/d/13n0q7ojHbiMe0gIFyaasTn58unzvUPGl/preview"
+                width="640"
+                height="480"
+              ></Video>
+            </Overlay>
+            <PdfLink
+              href="https://drive.google.com/uc?export=download&id=13n0q7ojHbiMe0gIFyaasTn58unzvUPGl"
+              download
+            >
+              Click here to download pdf about short film Wollstonecraft Live! 2018
+            </PdfLink>
+          </VideoList>
+        </article>
+        <article style={{ padding: `4% 4% 0% 4%` }}>
           <SoundBox>
             <Heading>Wollstonecraft Walks Soundscape</Heading>
             <p
@@ -348,9 +365,9 @@ class Media extends React.Component {
 
         <article
           style={{
-            padding: `5% 10% 3% 10%`,
+            padding: `5% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote5}") right 10% top 20%/22% no-repeat`,
+            background: `url("${Quote5}") right 6% top 20%/20% no-repeat`,
           }}
         >
           <Videos>
@@ -423,24 +440,7 @@ class Media extends React.Component {
             </VideoList>
           </Videos>
         </article>
-        <article style={{ padding: `2% 10% 2% 10%` }}>
-          <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
-            <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
-              <Video
-                src="https://drive.google.com/file/d/13n0q7ojHbiMe0gIFyaasTn58unzvUPGl/preview"
-                width="640"
-                height="480"
-              ></Video>
-            </Overlay>
-            <PdfLink
-              href="https://drive.google.com/uc?export=download&id=13n0q7ojHbiMe0gIFyaasTn58unzvUPGl"
-              download
-            >
-              Click here to download
-            </PdfLink>
-          </VideoList>
-        </article>
-        <article style={{ padding: `2% 10% 2% 10%` }}>
+        <article style={{ padding: `2% 10% 10% 10%` }}>
           <VideoList maxWidth="640px" style={{ margin: `0 auto` }}>
             <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>
               <Video
