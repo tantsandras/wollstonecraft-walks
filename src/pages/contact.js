@@ -65,7 +65,7 @@ const StyledLink = styled.a`
 
 const Second = styled.div`
   align-self: left;
-  width: 70%;
+  width: 100%;
   margin: 0em 1rem 2.4rem 0em;
   height: 0.06em;
   background-color: pink;
@@ -101,7 +101,7 @@ const ContactPage = () => {
       <Menu />
       <AandR />
 
-      <article style={{ padding: `8% 10% 3% 10%` }}>
+      <article style={{ padding: `12% 10% 3% 10%`, maxWidth: `900px` }}>
         <h4
           style={{
             fontFamily: `'Archivo Black', 'Impact'`,
@@ -109,6 +109,7 @@ const ContactPage = () => {
             paddingBottom: `4rem`,
             letterSpacing: `2%`,
             color: `#333333`,
+            marginTop: `2rem`
           }}
         >
           Community Links

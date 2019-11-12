@@ -174,7 +174,7 @@ const Footer = () => (
   <FooterPolyglon>
     <FooterGrid>
       <div style={element}>
-        <h4
+        <h5
           style={{
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
             fontSize: `1rem`,
@@ -187,7 +187,7 @@ const Footer = () => (
           }}
         >
           A collaboration between
-        </h4>
+        </h5>
       </div>
       <div style={element}>
         <a

@@ -112,7 +112,7 @@ const Normal = styled.p`
   line-height: 1.8;
 `
 
-const Credits = styled.h5`
+const Credits = styled.h3`
   font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   font-weight: normal;

@@ -37,7 +37,7 @@ const ArtList = styled.ul`
   font-weight: 200;
   list-style: none;
   letter-spacing: 1px;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
   margin-bottom: 4rem;
   animation: ${turnVisible} 0.8s ease-in-out;
 `
@@ -45,7 +45,8 @@ const ArtList = styled.ul`
 const StyledName = styled.p`
   font-weight: normal;
   z-index: 3;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-size: 0.9rem;
+  font-family: Helvetica, Roboto, "Open Sans";
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -55,9 +56,10 @@ const StyledName = styled.p`
   animation-delay: 0.2s;
 `
 const StyledLink = styled.a`
-font-weight: normal;
+  font-weight: normal;
   z-index: 3;
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   // text-decoration: none;
@@ -74,7 +76,7 @@ font-weight: normal;
 
 const Second = styled.div`
   align-self: left;
-  width: 70%;
+  width: 100%;
   margin: 0em 1rem 4rem 0em;
   height: 0.06em;
   background-color: pink;
@@ -103,9 +105,9 @@ const Social = styled.span`
 `
 
 const Handle = styled.a`
-font-weight: normal;
-line-height: 1.8;
-font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 1.8;
+  font-size: 0.8rem;
   margin-left: 40px;
   text-decoration: none;
   color: #656565;
@@ -118,20 +120,27 @@ font-size: 0.8rem;
   }
 `
 const Normal = styled.p`
-line-height: 1.8;
+  line-height: 1.8;
 `
 
-const Credits = styled.h5`
-font-family: Helvetica, Roboto, 'Open Sans';
-letter-spacing: 2px;
-font-weight: normal;
-font-size: 1rem;
-line-height: 1.8;
+const Credits = styled.h2`
+  font-family: Helvetica, Roboto, "Open Sans";
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-transform: uppercase;
 `
 
 const ArtistList = () => {
   return (
-    <article style={{ padding: `5% 10% 3% 10%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
+    <article
+      style={{
+        padding: `5% 10% 3% 10%`,
+        fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+        maxWidth: `1200px`,
+      }}
+    >
       <ArtList>
         <li>
           <StyledLink
@@ -172,7 +181,7 @@ const ArtistList = () => {
           >
             Artistic Director & Producer - Rebecca Mordan
           </StyledLink>
-          <Social style={{ marginTop: `1.4rem`}}>
+          <Social style={{ marginTop: `1.4rem` }}>
             <Handle
               href="https://twitter.com/scarylittlegs"
               target="_blank"
@@ -187,7 +196,6 @@ const ArtistList = () => {
               href="https://twitter.com/_rebeccamordan"
               target="_blank"
               rel="noopener noreferrer"
-              
             >
               <Icon src={Twitter} />
               @_RebeccaMordan
@@ -196,48 +204,10 @@ const ArtistList = () => {
         </li>
         <Second style={{ animationDelay: `0.6s` }}></Second>
         <li>
-          <StyledLink
-            href="https://www.alimaeve.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ animationDelay: `0.6s` }}
-          >
-            Film Maker - Ali Maeve Sargent
-          </StyledLink>
-        </li>
-
-        <Second style={{ animationDelay: `0.8s` }}></Second>
-        <li>
-          <StyledName style={{ animationDelay: `0.8s` }}>
-            Podcast Producer - Marina Garvey Birch
-          </StyledName>
-          <Social style={{ marginTop: `1.4rem`,}}>
-            <Handle
-              href="https://twitter.com/marina_jgb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon src={Twitter} />
-              @marina_jgb
-            </Handle>
-          </Social>
-          <Social>
-            <Handle
-              href="https://www.instagram.com/marinajgb/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon src={Instagram} />
-              @marinajgb
-            </Handle>
-          </Social>
-        </li>
-        <Second style={{ animationDelay: `1s` }}></Second>
-        <li>
-          <StyledName style={{ animationDelay: `1s` }}>
+          <StyledName style={{ animationDelay: `0.6s` }}>
             Podcast Producer - Erica McCoy
           </StyledName>
-          <Social style={{ marginTop: `1.4rem`,}}>
+          <Social style={{ marginTop: `1.4rem` }}>
             <Handle
               href="https://twitter.com/Erica_Mckoy"
               target="_blank"
@@ -268,34 +238,12 @@ const ArtistList = () => {
             </Handle>
           </Social>
         </li>
-        <Second style={{ animationDelay: `1.2s` }}></Second>
+        <Second style={{ animationDelay: `0.8s` }}></Second>
         <li>
-          <StyledLink
-            href="http://www.alastairgavin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ animationDelay: `1.2s` }}
-          >
-            Composer - Alastair Gavin
-          </StyledLink>
-        </li>
-        <Second style={{ animationDelay: `1.4s` }}></Second>
-        <li>
-          <StyledLink
-            href="https://www.christinebradshawphotography.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ animationDelay: `1.4s` }}
-          >
-            Photographer - Christine Bradshaw
-          </StyledLink>
-        </li>
-        <Second style={{ animationDelay: `1.6s` }}></Second>
-        <li>
-          <StyledName style={{ animationDelay: `1.6s` }}>
+          <StyledName style={{ animationDelay: `0.8s` }}>
             Actor - Don One
           </StyledName>
-          <Social style={{ marginTop: `1.4rem`,}}>
+          <Social style={{ marginTop: `1.4rem` }}>
             <Handle
               href="https://twitter.com/Don1birmingham"
               target="_blank"
@@ -326,31 +274,38 @@ const ArtistList = () => {
             </Handle>
           </Social>
         </li>
-        <Second style={{ animationDelay: `1.8s` }}></Second>
+        <Second style={{ animationDelay: `1s` }}></Second>
         <li>
-          <StyledLink
-            href="http://jessebsworth.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ animationDelay: `1.8s` }}
-          >
-            Image and Publicity Design - Jess Ebsworth
-          </StyledLink>
-        </li>
-        <Second style={{ animationDelay: `2s` }}></Second>
-        <li>
-          <StyledName
-            style={{ animationDelay: `2s` }}
-          >
-            Actor - Caroline Parker
+          <StyledName style={{ animationDelay: `1s` }}>
+            Podcast Producer - Marina Garvey Birch
           </StyledName>
+          <Social style={{ marginTop: `1.4rem` }}>
+            <Handle
+              href="https://twitter.com/marina_jgb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon src={Twitter} />
+              @marina_jgb
+            </Handle>
+          </Social>
+          <Social>
+            <Handle
+              href="https://www.instagram.com/marinajgb/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon src={Instagram} />
+              @marinajgb
+            </Handle>
+          </Social>
         </li>
-        <Second style={{ animationDelay: `2.2s` }}></Second>
+        <Second style={{ animationDelay: `1.2s` }}></Second>
         <li>
-          <StyledName style={{ animationDelay: `2.2s` }}>
+          <StyledName style={{ animationDelay: `1.2s` }}>
             Actor - Rebecca Boey
           </StyledName>
-          <Social style={{ marginTop: `1.4rem`,}}>
+          <Social style={{ marginTop: `1.4rem` }}>
             <Handle
               href="https://twitter.com/becboey"
               style={{ textDecoration: `none` }}
@@ -361,6 +316,56 @@ const ArtistList = () => {
               @becboey
             </Handle>
           </Social>
+        </li>
+        <Second style={{ animationDelay: `1.4s` }}></Second>
+        <li>
+          <StyledName style={{ animationDelay: `1.4s` }}>
+            Actor - Caroline Parker
+          </StyledName>
+        </li>
+        <Second style={{ animationDelay: `1.6s` }}></Second>
+        <li>
+          <StyledLink
+            href="https://www.alimaeve.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ animationDelay: `1.6s` }}
+          >
+            Film Maker - Ali Maeve Sargent
+          </StyledLink>
+        </li>
+        <Second style={{ animationDelay: `1.8s` }}></Second>
+        <li>
+          <StyledLink
+            href="http://www.alastairgavin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ animationDelay: `1.8s` }}
+          >
+            Composer - Alastair Gavin
+          </StyledLink>
+        </li>
+        <Second style={{ animationDelay: `2s` }}></Second>
+        <li>
+          <StyledLink
+            href="https://www.christinebradshawphotography.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ animationDelay: `2s` }}
+          >
+            Photographer - Christine Bradshaw
+          </StyledLink>
+        </li>
+        <Second style={{ animationDelay: `2.2s` }}></Second>
+        <li>
+          <StyledLink
+            href="http://jessebsworth.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ animationDelay: `2.2s` }}
+          >
+            Image and Publicity Design - Jess Ebsworth
+          </StyledLink>
         </li>
         <Second style={{ animationDelay: `2.4s` }}></Second>
         <li>
@@ -376,20 +381,14 @@ const ArtistList = () => {
         <Second style={{ animationDelay: `2.6s` }}></Second>
       </ArtList>
       <section style={{ marginBottom: `6rem` }}>
-        
-      <Credits style={{ marginTop: `4rem` }}>
-           Volunteers
-          </Credits>
+        <Credits style={{ marginTop: `4rem` }}>Volunteers</Credits>
         <Normal>
           Jessie Krish, Jude Cox, Sophie Persson, Unity Arts, Georgia Patience,
           Israel Meriomame Wekpe, Jenny Kay, Marina Garvey Birch
         </Normal>
 
-          <Credits style={{ marginTop: `4rem` }}>
-            Huge thanks to
-          </Credits>
+        <Credits style={{ marginTop: `4rem` }}>Huge thanks to</Credits>
         <Normal>
-
           Adrian Walker; Dickon Knowles; John Knowles, Cat, Liz and all at JKC
           Marketing; Lawrence and all the members of The Mildmay Club; Roberta
           Wedge; Abi and all the staff and Newington Green Primary School; Lizzy

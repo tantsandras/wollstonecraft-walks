@@ -11,7 +11,7 @@ const boxList = {
   paddingBottom: `10em`
 }
 
-const SubHeading = styled.h4`
+const SubHeading = styled.h2`
 font-family: 'Archivo Black', 'Impact';
 letter-spacing: 1px;
 line-height: 1.5; 
@@ -19,7 +19,7 @@ color: #333333;
 font-size: 1.2rem;
 margin-top: 2rem;
 `
-const Credits = styled.h5`
+const Credits = styled.h3`
 font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;

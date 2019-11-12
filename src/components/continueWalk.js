@@ -7,7 +7,7 @@ const Continue = styled.button`
   background: #1451ad;
   border: 2px solid white;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
-  font-family: Helvetica, Roboto, 'Open Sans';
+  font-family: Helvetica, Roboto, "Open Sans";
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffd0d0;
@@ -15,19 +15,19 @@ const Continue = styled.button`
   float: right;
   position: relative;
   min-width: 218px;
-    overflow: hidden;
-    cursor: pointer;
-    border: none;
-    border-radius: 2px;
-    transition: background-color 0.4s ease;
-    -webkit-transition: background-color 0.4s ease-out;
-    -moz-transition: background-color 0.4s ease-out;
-    -o-transition: background-color 0.4s ease-out;    
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
 
-    &:hover {
-        background-color: #ff0000;
-        box-shadow: 0 0 0 3px rgb(255, 0, 0, 0.60);
-    }
+  &:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 0 3px rgb(255, 0, 0, 0.6);
+  }
 `
 
 const arrow = {
@@ -48,10 +48,9 @@ const ContinueButton = () => (
   <span
     style={{ height: `50px`, padding: `100px 50px 100px 50px`, float: `right` }}
   >
-    <Continue>
-      Continue walk<i style={arrow}></i>
-
-    </Continue>
+      <Continue>
+        Continue walk<i style={arrow}></i>
+      </Continue>
   </span>
 )
 

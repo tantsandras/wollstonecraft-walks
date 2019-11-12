@@ -6,7 +6,8 @@ const Box = styled.li`
   display: flex;
   flex-direction: column;
   background: #fffeff;
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   list-style: none;
   min-height: 210px;
   position: relative;
@@ -48,7 +49,7 @@ const numberColor = num => {
     : "#FF0000"
 }
 
-const Numbers = styled.h4`
+const Numbers = styled.h5`
   font-family: "Bungee Shade";
   font-display: block;
   padding-bottom: 2rem;
@@ -72,22 +73,21 @@ class StepBox extends React.Component {
       <>
         {stepList.map((item, key) => {
           return (
-
-              <Box key={key}>
-            <Link
-              key={key}
-              to={`/${item.num}`}
-              style={{
-                color: `#28292b`,
-                textDecoration: `none`,
-                width: `100%`,
-                height: `auto`,
-                cursor: `pointer`,
-                flex: `1`,
-                padding: `1.4rem`
-              }}
-            >
-                <h3
+            <Box key={key}>
+              <Link
+                key={key}
+                to={`/${item.num}`}
+                style={{
+                  color: `#28292b`,
+                  textDecoration: `none`,
+                  width: `100%`,
+                  height: `auto`,
+                  cursor: `pointer`,
+                  flex: `1`,
+                  padding: `1.4rem`,
+                }}
+              >
+                <h4
                   style={{
                     fontSize: `1.2rem`,
                     fontFamily: `'Archivo Black', 'Impact'`,
@@ -101,11 +101,10 @@ class StepBox extends React.Component {
                 >
                   <Numbers num={item.num}>{item.num}</Numbers>
                   {item.title}
-                </h3>
+                </h4>
                 <i style={arrow}></i>
-                </Link>
-              </Box>
-
+              </Link>
+            </Box>
           )
         })}
       </>

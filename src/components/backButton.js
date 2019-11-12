@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-
 const Back = styled.button`
   padding: 1rem;
   background: white;
@@ -9,10 +8,10 @@ const Back = styled.button`
   position: absolute;
   left: 13px;
   top: 23px;
-    overflow: hidden;
-    cursor: pointer;
-    border: 2px solid white;
-    border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 2px;
 `
 
 const Arrow = styled.i`
@@ -31,21 +30,18 @@ const Arrow = styled.i`
   transition: border 0.2s ease;
   -webkit-transition: border 0.2s ease-out;
   -moz-transition: border 0.2s ease-out;
-  -o-transition: border 0.2s ease-out;    
+  -o-transition: border 0.2s ease-out;
   &:hover {
-    border: solid rgb(255, 0, 0, 0.80);
+    border: solid rgb(255, 0, 0, 0.8);
     border-width: 0px 1.6px 1.6px 0px;
   }
 `
 
 const BackButton = () => (
-  <span
-    style={{float: `right` }}
-  >
-    <Back>
-      <Arrow />
-
-    </Back>
+  <span style={{ float: `right` }}>
+      <Back>
+        <Arrow />
+      </Back>
   </span>
 )
 

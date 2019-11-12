@@ -20,10 +20,11 @@ const element = {
   fontFamily: `Helvetica, Roboto, 'Open Sans'`,
 }
 
-const Welcome = styled.h2`
+const Welcome = styled.h1`
 letter-spacing: 1px;
 font-family: 'Archivo Black', 'Impact', sans-serif; 
 font-display: block;
+font-size: 1.6rem;
 color: #333333;
 animation: ${turnVisible} 0.8s ease-in-out;
 `

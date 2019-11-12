@@ -29,7 +29,7 @@ const Social = styled.span`
   vertical-align: middle;
   width: 100%;
 `
-const Heading = styled.h3`
+const Heading = styled.h2`
   font-size: 2rem;
   font-family: "Archivo Black", "Impact";
   font-weight: bold;
@@ -39,7 +39,7 @@ const Heading = styled.h3`
   color: #333333;
 `
 
-const SubHeading = styled.h4`
+const SubHeading = styled.h3`
   font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   line-height: 2;
