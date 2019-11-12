@@ -212,7 +212,19 @@ class Media extends React.Component {
               </Overlay>
             </VideoList>
             <VideoList>
-              <Heading>Wollstonecraft Walks</Heading>
+              <Heading>Wollstonecraft Walks
+              <br />
+                <i
+                  style={{
+                    fontSize: `0.9rem`,
+                    letterSpacing: `2px`,
+                    lineHeight: `2`,
+                    textTransform: `uppercase`,
+                  }}
+                >
+                The film   
+                </i>
+              </Heading>
               <Normal style={{ marginTop: `2rem` }}>
                 Fragments & Monuments and Scary Little Girls bring Mary’s Green
                 alive with performance, poetry and song. In small groups, you
