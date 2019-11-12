@@ -28,7 +28,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  animation: ${fadeInRight} ease 1s forwards;
+  animation: ${fadeInRight} ease 1.4s forwards;
 `
 
 const StepNum = styled.p`
@@ -39,7 +39,7 @@ const StepNum = styled.p`
   font-size: 3rem;
   color: #3e3247;
   text-align: center;
-  animation: ${fadeInRight} ease 1.6s forwards;
+  animation: ${fadeInRight} ease 1.8s forwards;
 `
 const Direction = styled.li`
 line-height: 1.8;
@@ -72,7 +72,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
-animation: ${fadeInRight} ease 1s forwards;
+animation: ${fadeInRight} ease 1.4s forwards;
 `
 
 const ImgageWrap = styled.div`
@@ -80,7 +80,7 @@ const ImgageWrap = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   overflow: hidden;
-  animation: ${fadeInRight} ease 1.2s forwards;
+  animation: ${fadeInRight} ease 1.4s forwards;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);

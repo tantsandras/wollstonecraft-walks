@@ -52,7 +52,7 @@ max-width: 500px;
 max-height: 500px;
 margin-top: 2rem;
 z-index: 1;
-animation: ${turnVisible} 1.2s ease-in-out;
+animation: ${turnVisible} 1.8s ease-in-out;
 `
 
 const Quote = styled.p`

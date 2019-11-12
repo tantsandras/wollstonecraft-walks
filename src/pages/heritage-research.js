@@ -46,7 +46,7 @@ const Heading = styled.h2`
   font-family: "Archivo Black", 'Impact';
   padding-top: 1rem;
   letter-spacing: 1px;
-  line-height: 2;
+  line-height: 1.3;
   z-index: 2;
   text-align: left;
   text-transform: uppercase;
@@ -81,7 +81,7 @@ const HeritageResearchPage = props => {
       <SEO title="Heritage Research" />
       <Menu />
       <Circles />
-      <article style={{ padding: `0% 10% 10% 10%` }}>
+      <article style={{ padding: `0% 4% 10% 4%` }}>
       <MainHeading>
           Heritage Research
         </MainHeading>
@@ -120,7 +120,7 @@ Hannah Maddison and James Moriarty. Click here to download.
       </article>
       
       {data.map(research => (
-      <article style={{ padding: `0% 10% 10% 10%` }}>
+      <article style={{ padding: `0% 4% 10% 4%` }}>
         <PdfList maxWidth="640px" style={{ margin: `0 auto` }}>
           <Heading>{research.node.childMarkdownRemark.frontmatter.title}</Heading>
           <Overlay style={{ marginTop: `1rem`, marginBottom: `1rem` }}>

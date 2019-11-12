@@ -26,7 +26,7 @@ const StepCircle = styled.div`
   vertical-align: middle;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  animation: ${fadeInRight} ease 1s forwards;
+  animation: ${fadeInRight} ease 1.4s forwards;
 `
 
 const StepNum = styled.p`
@@ -37,7 +37,7 @@ const StepNum = styled.p`
   font-size: 3rem;
   color: #ff008a;
   text-align: center;
-  animation: ${fadeInRight} ease 1.6s forwards;
+  animation: ${fadeInRight} ease 1.8s forwards;
 `
 const Direction = styled.li`
   line-height: 1.8;
@@ -96,7 +96,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 1.3;
 padding-left: 2rem;
-animation: ${fadeInRight} ease 1s forwards;
+animation: ${fadeInRight} ease 1.4s forwards;
 `
 
 

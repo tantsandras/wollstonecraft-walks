@@ -21,7 +21,7 @@ const RainbowText = styled.p`
   margin-bottom: 40px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: ${fadeInRight} ease 1s forwards;
+  animation: ${fadeInRight} ease 1.4s forwards;
   background-image: linear-gradient(
     to bottom,
     #5d00ff,
@@ -78,7 +78,7 @@ letter-spacing: 1px;
 margin-bottom: 4rem
 line-height: 2;
 padding-left: 2rem;
-animation: ${fadeInRight} ease 1s forwards;
+animation: ${fadeInRight} ease 1.4s forwards;
 `
 
 
