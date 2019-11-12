@@ -113,10 +113,10 @@ class Pages extends React.Component {
 </Credits>
               <div style={pageGrid}>
                 <Slide>
-                  <Pdf key={image.src} fluid={image} />
+                  <Pdf key={image.src} fluid={image} alt="pdf page in downloadable art book" />
                 </Slide>
                 <Slide>
-                  <Pdf key={image2.src} fluid={image2} />
+                  <Pdf key={image2.src} fluid={image2} alt="pdf page in downloadable art book" />
                 </Slide>
               </div>
             </>

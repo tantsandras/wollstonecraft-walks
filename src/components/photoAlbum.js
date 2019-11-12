@@ -63,6 +63,7 @@ class Photos extends React.Component {
                   <Img
                     key={photo.node.childImageSharp.fluid.id}
                     fluid={photo.node.childImageSharp.fluid}
+                    alt="People and activities on the Wollstonecraft Walk, including Mary Wollstonecraft art work and historic landmarks in Newington Green"
                   />
                 </Image>
               </div>
