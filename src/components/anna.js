@@ -15,7 +15,7 @@ const AnnaImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Anna Birch sitting on the grass on Newington Green" />
 }
 
 export default AnnaImage

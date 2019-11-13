@@ -156,7 +156,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Twitter} />
+              <Icon src={Twitter} alt="Twitter icon that also works as link to twitter account." />
               @anna_birch
             </Handle>
           </Social>
@@ -166,7 +166,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Instagram} />
+              <Icon src={Instagram} alt="Instagram icon that also works as link to instagram account." />
               @annabirch1
             </Handle>
           </Social>
@@ -187,7 +187,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Twitter} />
+              <Icon src={Twitter} alt="Twitter icon that also works as link to twitter account." />
               @ScaryLittleGs
             </Handle>
           </Social>
@@ -197,7 +197,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Twitter} />
+              <Icon src={Twitter} alt="Twitter icon that also works as link to twitter account." />
               @_RebeccaMordan
             </Handle>
           </Social>
@@ -213,7 +213,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Twitter} />
+              <Icon src={Twitter} alt="Twitter icon that also works as link to twitter account." />
               @Erica_Mckoy
             </Handle>
           </Social>
@@ -223,7 +223,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Instagram} />
+              <Icon src={Instagram} alt="Instagram icon that also works as link to instagram account." />
               @ericamckoy_
             </Handle>
           </Social>
@@ -233,7 +233,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Facebook} />
+              <Icon src={Facebook} alt="Facebook icon that also works as link to facebook account." />
               @TheElektrikCave
             </Handle>
           </Social>
@@ -249,7 +249,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Twitter} />
+              <Icon src={Twitter} alt="Twitter icon that also works as link to twitter account." />
               @don1birmingham
             </Handle>
           </Social>
@@ -259,7 +259,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Instagram} />
+              <Icon src={Instagram} alt="Instagram icon that also works as link to instagram account." />
               @don1birmingham
             </Handle>
           </Social>
@@ -269,7 +269,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Facebook} />
+              <Icon src={Facebook} alt="Facebook icon that also works as link to facebook account." />
               @don1birmingham
             </Handle>
           </Social>
@@ -285,7 +285,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Twitter} />
+              <Icon src={Twitter} alt="Twitter icon that also works as link to twitter account." />
               @marina_jgb
             </Handle>
           </Social>
@@ -295,7 +295,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Instagram} />
+              <Icon src={Instagram} alt="Instagram icon that also works as link to instagram account." />
               @marinajgb
             </Handle>
           </Social>
@@ -312,7 +312,7 @@ const ArtistList = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={Twitter} />
+              <Icon src={Twitter} alt="Twitter icon that also works as link to twitter account." />
               @becboey
             </Handle>
           </Social>

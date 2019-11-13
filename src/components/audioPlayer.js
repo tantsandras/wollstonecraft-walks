@@ -286,7 +286,7 @@ class AudioPlayer extends React.Component {
         <>
           {this.state.player === "playing" || this.state.player === "paused" ? (
             <div
-              aria-label="Current time of audio clip and duration of audio clip"
+              aria-label="Current time of audio clip and duration of audio clip."
               style={{
                 textAlign: `center`,
                 height: `110px`,
@@ -301,7 +301,7 @@ class AudioPlayer extends React.Component {
           )}
                     
 {typeof window !== 'undefined' && window.location.href.match(/debug=1/) ? <pre style={{maxWidth: '100vw'}}>{JSON.stringify(this.state, null, '  ')}</pre> : null}
-          <Player aria-label="Audio player that will play a walk guide segment for this chapter">
+          <Player aria-label="Audio player that will play a walk guide segment for this chapter.">
             <div style={element}>
               <DoubleRewind
                 label="Rewind"

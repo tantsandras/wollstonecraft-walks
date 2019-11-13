@@ -210,6 +210,7 @@ class Menu extends React.Component {
           id="menubutton"
           aria-haspopup="true"
           aria-controls="menu2"
+          aria-label="Menu"
           >
             <span></span>
             <span></span>

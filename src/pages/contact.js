@@ -74,13 +74,13 @@ const Second = styled.div`
   animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
 `
 const MenuContrast = styled.div`
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  z-index: 1;
-  right: 20px;
-  top: 32px;
-  cursor: pointer;
+height: 40px;
+width: 44px;
+position: absolute;
+right: 16px;
+top: 22px;
+z-index: 1;
+cursor: pointer;
   & > * {
     height: 2px;
     width: 30px;
@@ -109,7 +109,7 @@ const ContactPage = () => {
             paddingBottom: `4rem`,
             letterSpacing: `2%`,
             color: `#333333`,
-            marginTop: `2rem`
+            marginTop: `2rem`,
           }}
         >
           Community Links

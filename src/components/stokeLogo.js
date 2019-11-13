@@ -27,7 +27,7 @@ const StokeLogo = () => {
     }
   `)
 
-  return <Logo><Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Stoke Newington Literary Festival, click to visit website" /></Logo>
+  return <Logo><Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Stoke Newington Literary Festival, click to visit website." /></Logo>
 }
 
 export default StokeLogo

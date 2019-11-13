@@ -27,7 +27,7 @@ const FmLogo = () => {
     }
   `)
 
-  return <Logo><Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Fragments & Monuments, click to visit website" /></Logo>
+  return <Logo><Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Fragments & Monuments, click to visit website." /></Logo>
 }
 
 export default FmLogo

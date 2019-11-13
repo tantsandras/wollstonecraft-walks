@@ -39,7 +39,7 @@ const Arrow = styled.i`
 
 const BackButton = () => (
   <span style={{ float: `right` }}>
-      <Back>
+      <Back aria-label="Previous step." >
         <Arrow />
       </Back>
   </span>
