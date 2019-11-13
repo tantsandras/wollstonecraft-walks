@@ -132,8 +132,9 @@ class Pods extends React.Component {
             </h4>
 
             <Normal>
-              Readings with walk context, making the walk experience accessible to a
-              remote audience, including people with access requirements.
+              Have a listen to our Wollstonecraft Walks readings by writers such
+              as Mary Wollstonecraft and Maya Angelou, and a description of the
+              walk - as if you are on Newington Green!
             </Normal>
             <div
               style={{
@@ -152,7 +153,11 @@ class Pods extends React.Component {
                   alignContent: `center`,
                 }}
               >
-                <AudioPlayer track={"https://docs.google.com/uc?export=download&id=11DTFrfsubukKKDVrYodmTRJzZdCkbHdO"} />
+                <AudioPlayer
+                  track={
+                    "https://docs.google.com/uc?export=download&id=11DTFrfsubukKKDVrYodmTRJzZdCkbHdO"
+                  }
+                />
               </div>
             </div>
           </PodBox>
@@ -184,8 +189,9 @@ class Pods extends React.Component {
               <i>Episode 2</i>
             </h4>
             <Normal>
-              Feedback from June 2019 audience at Stoke Newington Literary
-              Festival.
+              Listen back to the thoughts and experiences of those who
+              participated in the Wollstonecraft Walks at Stoke Newington
+              Literary Festival 2019.
             </Normal>
             <div
               style={{
@@ -204,7 +210,11 @@ class Pods extends React.Component {
                   alignContent: `center`,
                 }}
               >
-                <AudioPlayer track={"https://docs.google.com/uc?export=download&id=1cSg-95XuQVwhOXQYkBgA8bhxmsYjNEhT"} />
+                <AudioPlayer
+                  track={
+                    "https://docs.google.com/uc?export=download&id=1cSg-95XuQVwhOXQYkBgA8bhxmsYjNEhT"
+                  }
+                />
               </div>
             </div>
           </PodBox>
@@ -260,7 +270,11 @@ class Pods extends React.Component {
                   alignContent: `center`,
                 }}
               >
-                <AudioPlayer track={"https://docs.google.com/uc?export=download&id=1_c-Q30xCFn3r2KhIH0p1r5w2kpCMEVI5"} />
+                <AudioPlayer
+                  track={
+                    "https://docs.google.com/uc?export=download&id=1_c-Q30xCFn3r2KhIH0p1r5w2kpCMEVI5"
+                  }
+                />
               </div>
             </div>
           </PodBox>

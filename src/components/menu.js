@@ -3,7 +3,7 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import logo from "../images/logo2.png"
 
-const MenuIcon = styled.div`
+const MenuIcon = styled.button`
   height: 50px;
   width: 50px;
   position: absolute;
@@ -11,6 +11,8 @@ const MenuIcon = styled.div`
   top: 30px;
   z-index: 3;
   cursor: pointer;
+  background: none;
+  border: none;
   & > * {
     height: 2px;
     width: 30px;
@@ -18,7 +20,11 @@ const MenuIcon = styled.div`
     margin-bottom: 4px;
     background-color: black;
   }
-`
+  &:focus {
+    outline-width: 0.6px;
+    outline-color: red;
+  }
+  `
 const fadeInRight = keyframes`
     from {
       opacity: 0;
@@ -140,13 +146,14 @@ const StyledLogo = styled.img`
   animation: ${turnVisible} 0.6s ease-in-out;
 `
 
-const LogoWrapper = styled.div`
+const LogoWrapper = styled.button`
 position: fixed;
 z-index: 3;
 top: 24px;
 height: 70px;
 right: 27px;
 width: 74px;
+border: none;
 border-radius: 50%;
 -moz-border-radius: 50%;
 -webkit-border-radius: 50%;
@@ -199,7 +206,11 @@ class Menu extends React.Component {
     return (
       <div>
         {!this.state.isActive && (
-          <MenuIcon onClick={this.handleClick}>
+          <MenuIcon onClick={this.handleClick} 
+          id="menubutton"
+          aria-haspopup="true"
+          aria-controls="menu2"
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -211,10 +222,10 @@ class Menu extends React.Component {
         <div>
           {this.state.isActive && (
                       
-            <NavActive ref={el => { this.el = el }}>
-              <NavList>
+            <NavActive ref={el => { this.el = el }} aria-expanded="true">
+              <NavList id="menu2" role="menu" aria-labelledby="menubutton">
                 <HoverLi>
-                  <StyledLink to="/" activeStyle={activeStyle}>
+                  <StyledLink to="/" activeStyle={activeStyle} role="menuitem">
                     {"Home"}
 
                     <Second></Second>
@@ -225,6 +236,7 @@ class Menu extends React.Component {
                     to="/podcast"
                     activeStyle={activeStyle}
                     style={{ animationDelay: `0.4s` }}
+                    role="menuitem"
                   >
                     {"Podcast"}
 
@@ -236,6 +248,7 @@ class Menu extends React.Component {
                     to="/media"
                     activeStyle={activeStyle}
                     style={{ animationDelay: `0.6s` }}
+                    role="menuitem"
                   >
                     {"Media"}
 
@@ -247,6 +260,7 @@ class Menu extends React.Component {
                     to="/gallery"
                     activeStyle={activeStyle}
                     style={{ animationDelay: `0.8s` }}
+                    role="menuitem"
                   >
                     {"Gallery"}
 
@@ -258,6 +272,7 @@ class Menu extends React.Component {
                     to="/heritage-research"
                     activeStyle={activeStyle}
                     style={{ animationDelay: `1s` }}
+                    role="menuitem"
                   >
                     {"Heritage Research"}
 
@@ -269,6 +284,7 @@ class Menu extends React.Component {
                     to="/artists"
                     activeStyle={activeStyle}
                     style={{ animationDelay: `1.2s` }}
+                    role="menuitem"
                   >
                     {"Artists"}
 
@@ -280,6 +296,7 @@ class Menu extends React.Component {
                     to="/contact"
                     activeStyle={activeStyle}
                     style={{ animationDelay: `1.4s` }}
+                    role="menuitem"
                   >
                     {"Contact"}
 
@@ -291,6 +308,7 @@ class Menu extends React.Component {
                     to="/fm-preformance-and-film-archive"
                     activeStyle={activeStyle}
                     style={{ animationDelay: `1.6s` }}
+                    role="menuitem"
                   >
                     {"Fragments & Monuments"} <br></br>{" "}
                     {"performance and film archive"}
