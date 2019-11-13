@@ -209,7 +209,6 @@ class Menu extends React.Component {
           <MenuIcon onClick={this.handleClick} 
           id="menubutton"
           aria-haspopup="true"
-          aria-controls="menu2"
           aria-label="Menu"
           >
             <span></span>
@@ -224,7 +223,7 @@ class Menu extends React.Component {
           {this.state.isActive && (
                       
             <NavActive ref={el => { this.el = el }} aria-expanded="true">
-              <NavList id="menu2" role="menu" aria-labelledby="menubutton">
+              <NavList role="menu">
                 <HoverLi>
                   <StyledLink to="/" activeStyle={activeStyle} role="menuitem">
                     {"Home"}
