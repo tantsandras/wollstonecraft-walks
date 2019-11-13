@@ -27,7 +27,7 @@ const ScaryLogo = () => {
     } 
   `)
 
-  return <Logo><Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Scary Little Girls, click to visit website." /></Logo>
+  return <Logo><Img fixed={data.placeholderImage.childImageSharp.fixed} alt="" /></Logo>
 } 
 
 export default ScaryLogo

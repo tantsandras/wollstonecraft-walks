@@ -40,7 +40,7 @@ class Photos extends React.Component {
         `}
         render={data => (
           <>
-            <div className="content">
+            <div className="content" aria-label="Photos of people and activities on the Wollstonecraft Walk, including Mary Wollstonecraft art work and historic landmarks in Newington Green">
               <h3
                 style={{
                   letterSpacing: `2px`,
@@ -58,12 +58,11 @@ class Photos extends React.Component {
               </h3>
             </div>
             {data.images.edges.map((photo, key) => (
-              <div className="item" key={key}>
+              <div className="item" key={key} aria-hidden="true">
                 <Image className="content">
                   <Img
                     key={photo.node.childImageSharp.fluid.id}
                     fluid={photo.node.childImageSharp.fluid}
-                    alt=""
                   />
                 </Image>
               </div>

@@ -128,7 +128,7 @@ class Gallery extends React.Component {
           <PageHeading></PageHeading>
         </PageCircle>
         <MainHeading>Gallery</MainHeading>
-        <Wrapper className="grid">
+        <Wrapper className="grid" >
           <div className="content">
             <h2
               style={{
@@ -158,7 +158,7 @@ class Gallery extends React.Component {
               </i>
             </h2>
           </div>
-          <Photos aria-label="People and activities on the Wollstonecraft Walk, including Mary Wollstonecraft art work and historic landmarks in Newington Green" />
+          <Photos />
         </Wrapper>
       </>
     )

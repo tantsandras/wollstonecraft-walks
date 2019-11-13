@@ -27,7 +27,7 @@ const HeritageLogo = () => {
     }
   `)
 
-  return <Logo><Img fixed={data.placeholderImage.childImageSharp.fixed} alt="The national lottery Heritage fund, click to visit website." /></Logo>
+  return <Logo><Img fixed={data.placeholderImage.childImageSharp.fixed} alt="" /></Logo>
 }
 
 export default HeritageLogo

@@ -194,6 +194,7 @@ const Footer = () => (
           href="http://wollstonecraftlive.com/fm/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Fragments & Monuments, click to visit website."
         >
           <FmBubble>
             <FmLogo />{" "}
@@ -205,6 +206,7 @@ const Footer = () => (
           href="https://scarylittlegirls.co.uk/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Scary Little Girls, click to visit website."
         >
           <Bubble>
             {" "}
@@ -219,6 +221,7 @@ const Footer = () => (
             href="http://www.stokenewingtonliteraryfestival.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Stoke Newington Literary Festival, click to visit website."
           >
             {" "}
             <StokeLogo />{" "}
@@ -230,6 +233,7 @@ const Footer = () => (
           href="https://www.heritagefund.org.uk/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="The national lottery Heritage fund, click to visit website."
         >
           <Bubble>
             <HeritageLogo />{" "}
