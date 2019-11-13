@@ -4,11 +4,11 @@ import styled, { keyframes } from "styled-components"
 import logo from "../images/logo2.png"
 
 const MenuIcon = styled.button`
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 44px;
   position: absolute;
-  right: 3px;
-  top: 30px;
+  right: 16px;
+  top: 21px;
   z-index: 3;
   cursor: pointer;
   background: none;
