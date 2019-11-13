@@ -57,6 +57,7 @@ const PdfLink = styled.a`
   color: #241e20;
   font-family: Helvetica, Roboto, 'Open Sans';
   text-decoration: none;
+  line-height: 1.8;
   &:hover {
     text-decoration: none;
     color: MediumBlue;
