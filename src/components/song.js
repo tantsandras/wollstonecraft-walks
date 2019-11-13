@@ -94,7 +94,7 @@ class Song extends React.Component {
             onClick={this.handleClick}
             style={{ marginBottom: `4rem`, marginTop: `4rem` }}
           >
-            <h4
+            <h3
               style={{
                 fontFamily: `'Archivo Black', 'Impact'`,
                 padding: `40px 0px 0px 20px`,
@@ -104,7 +104,7 @@ class Song extends React.Component {
               }}
             >
               Let Us All Speak Our Minds! (1863)
-            </h4>
+            </h3>
             <p
               style={{
                 fontFamily: `Helvetica, Roboto, 'Open Sans'`,
@@ -143,9 +143,9 @@ class Song extends React.Component {
               Collapse<i style={arrow}></i>
             </Collapse>
             <aside style={{ fontSize: `0.75rem`, lineHeight: `2` }}>
-              <h4 style={{ fontFamily: `'Archivo Black', 'Impact'`, letterSpacing: `1px`, color: `#333333`}}>
+              <h3 style={{ fontFamily: `'Archivo Black', 'Impact'`, letterSpacing: `1px`, color: `#333333`}}>
                 Let Us All Speak Our Minds! (1863)
-              </h4>
+              </h3>
               <p
                 style={{
                   fontFamily: `Helvetica, Roboto, 'Open Sans'`,

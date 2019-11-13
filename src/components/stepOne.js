@@ -90,7 +90,7 @@ const ImageWrap = styled.div`
 `
 
 
-const SubHeading = styled.h4`
+const SubHeading = styled.h2`
 font-family: 'Archivo Black', 'Impact';
 letter-spacing: 1px;
 line-height: 1.5; 
@@ -132,7 +132,7 @@ min-height: 5em;
   right: 3.2rem;
 }
 `
-const Credits = styled.h5`
+const Credits = styled.p`
 font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;
@@ -149,7 +149,7 @@ class Step1 extends React.Component {
             maxHeight: `260px`,
             margin: `0 auto`,
             marginTop: `-4.8rem`, zIndex: `-1`,}}>
-          <img src={`${MildmayImage}`} alt="Entrence of the Mildmay Club" style={{width: `260px`, height: `260px`}} />
+          <img src={`${MildmayImage}`} alt="Entrance of the Mildmay Club" style={{width: `260px`, height: `260px`}} />
         </ImageWrap>
         <StepCircle style={{marginTop: `-70px`}}>
           <StepNum>1</StepNum>

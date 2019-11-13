@@ -59,7 +59,7 @@ const QuotationMarks = styled.p`
   }
 `
 
-const Credits = styled.h5`
+const Credits = styled.h2`
   font-family: Helvetica, Roboto, "Open Sans";
   letter-spacing: 2px;
   font-weight: normal;

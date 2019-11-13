@@ -131,7 +131,7 @@ padding-left: 2rem;
 animation: ${fadeInRight} ease 1.4s forwards;
 `
 
-const SubHeading = styled.h4`
+const SubHeading = styled.h2`
   font-family: "Archivo Black", 'Impact';
   letter-spacing: 1px;
   line-height: 1.5;

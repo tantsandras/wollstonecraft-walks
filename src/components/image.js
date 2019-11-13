@@ -15,7 +15,7 @@ const Image = () => {
       }
     }
   `)
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Illustration of Mary Wollstonecraft, made by artist Jess Ebsworth" />
 }
 
 export default Image

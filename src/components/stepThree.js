@@ -88,7 +88,7 @@ const ImgageWrap = styled.div`
 `
 
 
-const SubHeading = styled.h4`
+const SubHeading = styled.h2`
 font-family: 'Archivo Black', 'Impact';
 letter-spacing: 1px;
 line-height: 1.5; 
@@ -100,7 +100,7 @@ margin-top: 2rem;
 const Normal = styled.p`
 line-height: 1.8;
 `
-const Credits = styled.h5`
+const Credits = styled.p`
 font-family: Helvetica, Roboto, 'Open Sans';
 letter-spacing: 2px;
 font-weight: normal;

@@ -286,6 +286,7 @@ class AudioPlayer extends React.Component {
         <>
           {this.state.player === "playing" || this.state.player === "paused" ? (
             <div
+              aria-label="Current time of audio clip and duration of audio clip"
               style={{
                 textAlign: `center`,
                 height: `110px`,
@@ -300,10 +301,11 @@ class AudioPlayer extends React.Component {
           )}
                     
 {typeof window !== 'undefined' && window.location.href.match(/debug=1/) ? <pre style={{maxWidth: '100vw'}}>{JSON.stringify(this.state, null, '  ')}</pre> : null}
-          <Player>
+          <Player aria-label="Audio player that will play a walk guide segment for this chapter">
             <div style={element}>
               <DoubleRewind
                 label="Rewind"
+                aria-label="Rewind"
                 onMouseDown={this.setIntervalHelperBackward}
                 onMouseUp={this.clearIntervalHelper}
                 onTouchStart={this.setIntervalHelperBackward}
@@ -322,6 +324,7 @@ class AudioPlayer extends React.Component {
                   <Play
                     autocomplete="off"
                     label="Play"
+                    aria-label="Play"
                     onClick={() => {
                       return this.setState({
                         player: "playing",
@@ -336,6 +339,7 @@ class AudioPlayer extends React.Component {
                   <Pause
                     autocomplete="off"
                     label="Pause"
+                    aria-label="Pause"
                     onClick={() => {
                       return this.setState({ player: "paused" })
                     }}
@@ -346,6 +350,7 @@ class AudioPlayer extends React.Component {
             <div style={element}>
               <DoubleFastForward
                 label="Fast forward"
+                aria-label="Fast forward"
                 onMouseDown={this.setIntervalHelperForward}
                 onMouseUp={this.clearIntervalHelper}
                 onTouchStart={this.setIntervalHelperForward}
