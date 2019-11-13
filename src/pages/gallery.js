@@ -19,21 +19,19 @@ const ImageWrapper = styled.div`
   }
 `
 const Wrapper = styled.div`
-  margin-top: 4rem;
   background-size: cover;
-  padding: 10% 5%;
+  padding: 4% 5%;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  margin-bottom: 12rem;
+  margin-bottom: 4rem;
   grid-auto-rows: 40px;
 `
 const Normal = styled.p`
-margin-top: 4rem;
-line-height: 1.8;
-font-size: 0.9rem;
-vertical-align: bottom;
+  margin-top: 4rem;
+  line-height: 1.8;
+  font-size: 0.9rem;
 `
 
 class GalleryPage extends React.Component {
@@ -121,51 +119,60 @@ class GalleryPage extends React.Component {
           render={data => (
             <>
               {data.allFile.edges.map((photo, key) => (
-                <Wrapper className="grid" key={key}>
-                  <div className="content">
-
+                <>
+                  <div
+                    style={{
+                      width: `100vw`,
+                      padding: `10% 5% 5% 5%`,
+                    }}
+                  >
                     <h2
                       style={{
                         fontFamily: `'Archivo Black', 'Impact'`,
                         letterSpacing: `1px`,
-                        fontSize: `1rem`,
+                        fontSize: `1.2rem`,
                         textAlign: `left`,
                         lineHeight: `1.5`,
                         verticalAlign: `top`,
                       }}
                     >
                       {photo.node.childMarkdownRemark.frontmatter.title}
-                      </h2>
-                      <h3
-                        style={{
-                          letterSpacing: `2px`,
-                          fontSize: `0.8rem`,
-                          fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-                          fontWeight: `normal`,
-                          marginBottom: `4rem`,
-                          lineHeight: `1.5`,
-                        }}
-                      >
-                        {photo.node.childMarkdownRemark.frontmatter.subheading}
+                    </h2>
+                    <h3
+                      style={{
+                        letterSpacing: `2px`,
+                        fontSize: `0.8rem`,
+                        fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+                        fontWeight: `normal`,
+                        marginBottom: `2rem`,
+                        lineHeight: `1.5`,
+                      }}
+                    >
+                      {photo.node.childMarkdownRemark.frontmatter.subheading}
                     </h3>
-                    </div>
+                  </div>
+                  <Wrapper className="grid" key={key}>
                     <div className="item">
-                    <div className="content">
-                      <Normal>{photo.node.childMarkdownRemark.frontmatter.description}</Normal>
-                  </div>
-                  </div>
-                  {photo.node.childMarkdownRemark.frontmatter.images.map((img) => (
-                      <div className="item">
-                      <ImageWrapper className="content">
-                        <img
-                          src={img.image}
-                          alt={img.alt}
-                        />
-                      </ImageWrapper>
+                      <div className="content">
+                        <Normal>
+                          {
+                            photo.node.childMarkdownRemark.frontmatter
+                              .description
+                          }
+                        </Normal>
+                      </div>
                     </div>
-                    ))
-                  }
+                    {photo.node.childMarkdownRemark.frontmatter.images.map(
+                      img => (
+                        <div className="item">
+                          <ImageWrapper className="content">
+                            <img src={img.image} alt={img.alt} />
+                          </ImageWrapper>
+                        </div>
+                      )
+                    )}
                   </Wrapper>
+                </>
               ))}
             </>
           )}

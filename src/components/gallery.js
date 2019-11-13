@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  margin-bottom: 12rem;
+  margin-bottom: 4rem;
   grid-auto-rows: 40px;
 `
 const PageCircle = styled.div`
