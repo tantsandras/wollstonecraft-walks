@@ -20,13 +20,12 @@ const ImageWrapper = styled.div`
 `
 const Wrapper = styled.div`
   background-size: cover;
-  padding: 6% 5%;
+  padding: 4% 5%;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   margin-bottom: 4rem;
-  grid-auto-rows: 40px;
 `
 const Normal = styled.p`
   line-height: 1.8;
@@ -122,7 +121,7 @@ class GalleryPage extends React.Component {
                   <div
                     style={{
                       maxWidth: `1400px`,
-                      padding: `10% 5% 6% 5%`,
+                      padding: `10% 5% 2% 5%`,
                     }}
                   >
                     <h2

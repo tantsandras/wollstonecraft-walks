@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled, { keyframes } from "styled-components"
 
-const fadeInLeft= keyframes`
+const fadeInLeft = keyframes`
     from {
       opacity: 0;
       transform: translateX(45px);
@@ -56,7 +56,7 @@ const Credits = styled.h5`
   text-align: center;
 `
 const Pdf = styled(Img)`
-animation: ${fadeInLeft} 0.4s backwards;
+  animation: ${fadeInLeft} 0.4s backwards;
 `
 
 class Pages extends React.Component {
@@ -97,26 +97,27 @@ class Pages extends React.Component {
                   textAlign: `center`,
                   letterSpacing: `1px`,
                   lineHeight: `1.3`,
-                    marginBottom: `4rem`,
+                  marginBottom: `4rem`,
                 }}
               >
                 The Wollstonecraft Live Experience!
-                </h2>
-                <Credits>
-                  Limited edition art book PDF<br />
+              </h2>
+              <Credits>
+                Limited edition art book PDF
+                <br />
                 <PdfLink
                   href="https://drive.google.com/uc?export=download&id=191dUfzDGadedUpdtvG3od2gGUwrRv0x7"
                   download
                 >
                   Click here to download
                 </PdfLink>
-</Credits>
-              <div style={pageGrid}>
+              </Credits>
+              <div style={pageGrid} aria-hidden="true">
                 <Slide>
-                  <Pdf key={image.src} fluid={image} alt="pdf page in downloadable art book" />
+                  <Pdf key={image.src} fluid={image} />
                 </Slide>
                 <Slide>
-                  <Pdf key={image2.src} fluid={image2} alt="pdf page in downloadable art book" />
+                  <Pdf key={image2.src} fluid={image2} />
                 </Slide>
               </div>
             </>
