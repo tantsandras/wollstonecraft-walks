@@ -158,7 +158,7 @@ class Gallery extends React.Component {
               </i>
             </h2>
           </div>
-          <Photos />
+          <Photos aria-label="People and activities on the Wollstonecraft Walk, including Mary Wollstonecraft art work and historic landmarks in Newington Green" />
         </Wrapper>
       </>
     )

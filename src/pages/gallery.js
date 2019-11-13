@@ -127,9 +127,8 @@ class GalleryPage extends React.Component {
                     <h2
                       style={{
                         fontFamily: `'Archivo Black', 'Impact'`,
-                        paddingTop: `1rem`,
                         letterSpacing: `1px`,
-                        fontSize: `1.4rem`,
+                        fontSize: `1rem`,
                         textAlign: `left`,
                         lineHeight: `1.5`,
                         verticalAlign: `top`,
