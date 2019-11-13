@@ -20,7 +20,7 @@ const ImageWrapper = styled.div`
 `
 const Wrapper = styled.div`
   background-size: cover;
-  padding: 4% 5%;
+  padding: 6% 5%;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -29,7 +29,6 @@ const Wrapper = styled.div`
   grid-auto-rows: 40px;
 `
 const Normal = styled.p`
-  margin-top: 4rem;
   line-height: 1.8;
   font-size: 0.9rem;
 `
@@ -122,8 +121,8 @@ class GalleryPage extends React.Component {
                 <>
                   <div
                     style={{
-                      width: `100vw`,
-                      padding: `10% 5% 5% 5%`,
+                      maxWidth: `1400px`,
+                      padding: `10% 5% 6% 5%`,
                     }}
                   >
                     <h2
@@ -150,18 +149,14 @@ class GalleryPage extends React.Component {
                     >
                       {photo.node.childMarkdownRemark.frontmatter.subheading}
                     </h3>
-                  </div>
-                  <Wrapper className="grid" key={key}>
-                    <div className="item">
-                      <div className="content">
-                        <Normal>
+                    <Normal>
                           {
                             photo.node.childMarkdownRemark.frontmatter
                               .description
                           }
                         </Normal>
-                      </div>
-                    </div>
+                  </div>
+                  <Wrapper className="grid" key={key}>
                     {photo.node.childMarkdownRemark.frontmatter.images.map(
                       img => (
                         <div className="item">
