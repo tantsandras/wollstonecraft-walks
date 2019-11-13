@@ -1,6 +1,6 @@
 ---
 title: 'Special Mary Wollstonecraft reading list courtesy of Hackney Archive '
-file: 'https://drive.google.comfiled1BRTYWRBStKlp79iyJsfLXJsHBAjpe8QJview'
+file: 1BRTYWRBStKlp79iyJsfLXJsHBAjpe8QJ
 linkText: >-
   At our visit to Hackney Archive on Tuesday 6 June 2019 with Wollstonecraft
   Walks volunteers a special selection of books by and about Mary Wollstonecraft
