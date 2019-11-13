@@ -30,9 +30,10 @@ const Wrapper = styled.div`
   grid-auto-rows: 40px;
 `
 const Normal = styled.p`
+margin-top: 4rem;
 line-height: 1.8;
-vertical-align: top;
-margin-bottom: 10rem;
+font-size: 0.9rem;
+vertical-align: bottom;
 `
 
 class GalleryPage extends React.Component {
@@ -122,6 +123,7 @@ class GalleryPage extends React.Component {
               {data.allFile.edges.map((photo, key) => (
                 <Wrapper className="grid" key={key}>
                   <div className="content">
+
                     <h2
                       style={{
                         fontFamily: `'Archivo Black', 'Impact'`,
@@ -130,6 +132,7 @@ class GalleryPage extends React.Component {
                         fontSize: `1.4rem`,
                         textAlign: `left`,
                         lineHeight: `1.5`,
+                        verticalAlign: `top`,
                       }}
                     >
                       {photo.node.childMarkdownRemark.frontmatter.title}
@@ -137,16 +140,20 @@ class GalleryPage extends React.Component {
                       <h3
                         style={{
                           letterSpacing: `2px`,
-                          fontSize: `0.9rem`,
+                          fontSize: `0.8rem`,
                           fontFamily: `Helvetica, Roboto, 'Open Sans'`,
                           fontWeight: `normal`,
-                          marginBottom: `2rem`,
+                          marginBottom: `4rem`,
                           lineHeight: `1.5`,
                         }}
                       >
                         {photo.node.childMarkdownRemark.frontmatter.subheading}
                     </h3>
+                    </div>
+                    <div className="item">
+                    <div className="content">
                       <Normal>{photo.node.childMarkdownRemark.frontmatter.description}</Normal>
+                  </div>
                   </div>
                   {photo.node.childMarkdownRemark.frontmatter.images.map((img) => (
                       <div className="item">
