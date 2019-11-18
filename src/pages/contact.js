@@ -246,6 +246,17 @@ const ContactPage = () => {
             </StyledLink>
           </li>
           <Second style={{ animationDelay: `2.6s` }}></Second>
+          <li>
+            <StyledLink
+              href="https://www.new-unity.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ animationDelay: `2.6s` }}
+            >
+              New Unity
+            </StyledLink>
+          </li>
+          <Second style={{ animationDelay: `2.8s` }}></Second>
         </OrgList>
       </article>
     </section>
