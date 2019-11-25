@@ -74,13 +74,13 @@ const Second = styled.div`
   animation: ${growLeft} cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.6s forwards;
 `
 const MenuContrast = styled.div`
-height: 40px;
-width: 44px;
-position: absolute;
-right: 16px;
-top: 22px;
-z-index: 1;
-cursor: pointer;
+  height: 40px;
+  width: 44px;
+  position: absolute;
+  right: 16px;
+  top: 22px;
+  z-index: 1;
+  cursor: pointer;
   & > * {
     height: 2px;
     width: 30px;
@@ -257,6 +257,17 @@ const ContactPage = () => {
             </StyledLink>
           </li>
           <Second style={{ animationDelay: `2.8s` }}></Second>
+          <li>
+            <StyledLink
+              href="https://newingtongreen.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ animationDelay: `2.8s` }}
+            >
+              Newington Green Action Group
+            </StyledLink>
+          </li>
+          <Second style={{ animationDelay: `3s` }}></Second>
         </OrgList>
       </article>
     </section>
