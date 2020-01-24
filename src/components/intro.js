@@ -127,7 +127,7 @@ const Intro = () => (
         <QuotationMarks>
           {" "}
           18th century Feminist writer and mother of Mary Shelley, author of
-          Frankenstein, Wollstoncraft was born Spitalfields, London, but her
+          Frankenstein, Wollstonecraft was born Spitalfields, London, but her
           father turned to drink after losing the family fortunes, scraping a
           living as a farmer in Essex, Yorkshire and Wales. Together with Fanny
           Blood, Wollstonecraft ran a school for girls on Newington Green where

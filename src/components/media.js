@@ -367,7 +367,7 @@ class Media extends React.Component {
           style={{
             padding: `5% 8% 3% 8%`,
             fontFamily: `Helvetica, Roboto, 'Open Sans'`,
-            background: `url("${Quote5}") right 10% top 20%/16% no-repeat`,
+            background: `url("${Quote5}") right 1% top 2%/16% no-repeat`,
           }}
         >
           <Videos>
