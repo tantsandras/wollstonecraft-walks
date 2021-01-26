@@ -1,5 +1,5 @@
 ---
-title: 'A sculpture for Mary Wollstonecraft '
+title: 'A Sculpture for Mary Wollstonecraft '
 subheading: 'by contemporary artist Maggi Hambling '
 description: >-
   The overall height of the memorial is 10 foot (bronze  7 ft /plinth 3 ft). The
@@ -8,7 +8,7 @@ description: >-
   with Mary Wollstonecraft's name and dates, another with the quote 'I do not
   wish women to have power  over men, but over themselves' and a third with the
   artists name and the date of the sculpture, and the fourth with Mary on the
-  Green Campaign and funders names.
+  Green Campaign and funders names. Photograph @Maureen Carroll Mccormack
 images:
   - alt: >-
       A Sculpture for Mary Wollstonecraft is a public sculpture commemorating
