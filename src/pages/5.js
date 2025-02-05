@@ -5,7 +5,7 @@ import Step5 from "../components/stepFive"
 import Menu from "../components/menu"
 import BackButton from "../components/backButton"
 import "typeface-archivo-black"
-import 'typeface-yeseva-one'
+import "typeface-yeseva-one"
 
 class StepFivePage extends React.Component {
   constructor() {
@@ -19,20 +19,31 @@ class StepFivePage extends React.Component {
   render() {
     return (
       <>
-      <div style={{display: `grid`, justifyContent: `center`, alignItems: `center`, textAlign: `center`,}}>
         <div
           style={{
-            display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
-            flexDirection: `row`,
+            display: `grid`,
             justifyContent: `center`,
+            alignItems: `center`,
             textAlign: `center`,
-            alignContent: `center`,
-            fontFamily: `Helvetica, Roboto, "Open Sans"`,
-            width: `100%`,
           }}
         >
-          <AudioPlayer track={"https://docs.google.com/uc?export=download&id=1iE8e6fzhjITUuQ0zz26QY-vfiI7l6kbv"} />
-        </div>
+          <div
+            style={{
+              display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
+              flexDirection: `row`,
+              justifyContent: `center`,
+              textAlign: `center`,
+              alignContent: `center`,
+              fontFamily: `Helvetica, Roboto, "Open Sans"`,
+              width: `100%`,
+            }}
+          >
+            <AudioPlayer
+              track={
+                "https://dl.dropbox.com/scl/fi/981819mtmrrocnzde74wl/WALK_GUIDE_CHAPTER_5.mp3?rlkey=n5mzbpkwl8ofws3hdxcx5eev3&st=buf41j49"
+              }
+            />
+          </div>
         </div>
         <Link to={"/4"}>
           <BackButton />

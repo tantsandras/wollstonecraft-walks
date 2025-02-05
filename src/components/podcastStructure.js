@@ -155,7 +155,7 @@ class Pods extends React.Component {
               >
                 <AudioPlayer
                   track={
-                    "https://docs.google.com/uc?export=download&id=11DTFrfsubukKKDVrYodmTRJzZdCkbHdO"
+                    "https://dl.dropbox.com/scl/fi/ua533qqj3yvf0s3g2e4fw/EP1.mp3?rlkey=udfsvzga2t6xnusy2s3kpcdct&st=o21gjb0y"
                   }
                 />
               </div>
@@ -212,7 +212,7 @@ class Pods extends React.Component {
               >
                 <AudioPlayer
                   track={
-                    "https://docs.google.com/uc?export=download&id=1cSg-95XuQVwhOXQYkBgA8bhxmsYjNEhT"
+                    "https://dl.dropbox.com/scl/fi/ua533qqj3yvf0s3g2e4fw/EP1.mp3?rlkey=udfsvzga2t6xnusy2s3kpcdct&st=o21gjb0y"
                   }
                 />
               </div>
@@ -272,7 +272,7 @@ class Pods extends React.Component {
               >
                 <AudioPlayer
                   track={
-                    "https://docs.google.com/uc?export=download&id=1_c-Q30xCFn3r2KhIH0p1r5w2kpCMEVI5"
+                    "https://dl.dropbox.com/scl/fi/xd2pq7hjfnhcjbxblidog/EP3.mp3?rlkey=w3e19d4pa2u50n01kykr1st1h&st=ptepjnkf"
                   }
                 />
               </div>

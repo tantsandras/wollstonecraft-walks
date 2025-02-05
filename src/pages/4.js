@@ -6,7 +6,7 @@ import Step4 from "../components/stepFour"
 import Menu from "../components/menu"
 import BackButton from "../components/backButton"
 import "typeface-archivo-black"
-import 'typeface-yeseva-one'
+import "typeface-yeseva-one"
 
 class StepFourPage extends React.Component {
   constructor() {
@@ -20,20 +20,31 @@ class StepFourPage extends React.Component {
   render() {
     return (
       <>
-      <div style={{display: `grid`, justifyContent: `center`, alignItems: `center`, textAlign: `center`,}}>
         <div
           style={{
-            display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
-            flexDirection: `row`,
+            display: `grid`,
             justifyContent: `center`,
+            alignItems: `center`,
             textAlign: `center`,
-            alignContent: `center`,
-            fontFamily: `Helvetica, Roboto, "Open Sans"`,
-            width: `100%`,
           }}
         >
-          <AudioPlayer track={"https://docs.google.com/uc?export=download&id=1R8m5kP2BFui9yftMpKjCrMH_M7E9MQv-"} />
-        </div>
+          <div
+            style={{
+              display: `flex -webkit-box -moz-box -webkit-flex -ms-flexbox`,
+              flexDirection: `row`,
+              justifyContent: `center`,
+              textAlign: `center`,
+              alignContent: `center`,
+              fontFamily: `Helvetica, Roboto, "Open Sans"`,
+              width: `100%`,
+            }}
+          >
+            <AudioPlayer
+              track={
+                "https://dl.dropbox.com/scl/fi/vcaxw2a4ml16k53wwsvxc/WW_WALKS_CHAPTER_4.mp3?rlkey=cz7rw72s5u5fino6ctnsesg0d&st=8jpglnfr"
+              }
+            />
+          </div>
         </div>
         <Link to={"/3"}>
           <BackButton />

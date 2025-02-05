@@ -18,7 +18,7 @@ const fadeInRight = keyframes`
 
 const VideoList = styled.li`
   padding: 2rem;
-  background: #1B1718;
+  background: #1b1718;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   list-style: none;
@@ -212,8 +212,9 @@ class Media extends React.Component {
               </Overlay>
             </VideoList>
             <VideoList>
-              <Heading>Wollstonecraft Walks
-              <br />
+              <Heading>
+                Wollstonecraft Walks
+                <br />
                 <i
                   style={{
                     fontSize: `0.9rem`,
@@ -222,7 +223,7 @@ class Media extends React.Component {
                     textTransform: `uppercase`,
                   }}
                 >
-                The film   
+                  The film
                 </i>
               </Heading>
               <Normal style={{ marginTop: `2rem` }}>
@@ -322,7 +323,8 @@ class Media extends React.Component {
               href="https://drive.google.com/uc?export=download&id=13n0q7ojHbiMe0gIFyaasTn58unzvUPGl"
               download
             >
-              Click here to download pdf about short film Wollstonecraft Live! 2018
+              Click here to download pdf about short film Wollstonecraft Live!
+              2018
             </PdfLink>
           </VideoList>
         </article>
@@ -357,7 +359,11 @@ class Media extends React.Component {
                   width: `100%`,
                 }}
               >
-                <AudioPlayer track={"https://docs.google.com/uc?export=download&id=1Ego-cBjuLKtRcy8ounb_GPwcAyuDL1R4"} />
+                <AudioPlayer
+                  track={
+                    "https://dl.dropbox.com/scl/fi/f1c15npafm34484uhvchl/WL_Walk_soundscape.mp3?rlkey=trfkry7yp5v59gv7givu44ewh&st=yi6otf3u"
+                  }
+                />
               </div>
             </div>
           </SoundBox>
