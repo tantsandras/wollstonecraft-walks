@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 import Image from "../components/image"
+import Mary from "../images/Wollstonecraft_portrait_logo-02 copy.png"
 
 const fadeInRight = keyframes`
     from {
@@ -61,30 +62,30 @@ const Arrow = styled.i`
 `
 
 const Quote = styled.i`
-letter-spacing: 2px;
-line-height: 1.8;
-position: relative;
-padding: 1em 4em;
-min-height: 5em;
-&:before {
-  font-family: Yeseva One; 
-  font-size: 3rem;
-  position: absolute;
-  height: 3rem;
-  content: '“';
-  top: -1.6rem;
-  left: 1.4rem;
-}
+  letter-spacing: 2px;
+  line-height: 1.8;
+  position: relative;
+  padding: 1em 4em;
+  min-height: 5em;
+  &:before {
+    font-family: Yeseva One;
+    font-size: 3rem;
+    position: absolute;
+    height: 3rem;
+    content: "“";
+    top: -1.6rem;
+    left: 1.4rem;
+  }
 
-&:after {
-  font-family: Yeseva One; 
-  font-size: 3rem;
-  position: absolute;
-  height: 3rem;
-  content: '”';
-  bottom: 0rem;
-  right: 2.4rem;
-}
+  &:after {
+    font-family: Yeseva One;
+    font-size: 3rem;
+    position: absolute;
+    height: 3rem;
+    content: "”";
+    bottom: 0rem;
+    right: 2.4rem;
+  }
 `
 const StepHeading = styled.h1`
 font-family: 'Archivo Black', 'Impact';
@@ -99,54 +100,59 @@ padding-left: 2rem;
 animation: ${fadeInRight} ease 1.4s forwards;
 `
 
-
 const SubHeading = styled.h2`
-font-family: 'Archivo Black', 'Impact';
-letter-spacing: 1px;
-line-height: 1.5; 
-color: #333333;
-font-size: 1.2rem;
-margin-top: 2rem;
+  font-family: "Archivo Black", "Impact";
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #333333;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 `
 
-
 const Normal = styled.p`
-line-height: 1.8;
+  line-height: 1.8;
 `
 
 const Block = styled.blockquote`
-line-height: 1.8;
+  line-height: 1.8;
 `
 const Credits = styled.p`
-font-family: Helvetica, Roboto, 'Open Sans';
-letter-spacing: 2px;
-font-weight: normal;
-font-size: 0.9rem;
-line-height: 1.3;
+  font-family: Helvetica, Roboto, "Open Sans";
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 1.3;
 `
 
 const ImageWrapper = styled.div`
-max-width: 185px;
-max-height: 185px;
-margin: 0 auto;
-z-index: -1;
-animation: ${fadeInRight} ease 1.2s forwards;
+  max-width: 185px;
+  max-height: 185px;
+  margin: 0 auto;
+  z-index: -1;
+  animation: ${fadeInRight} ease 1.2s forwards;
 `
 
 class Step2 extends React.Component {
   render() {
     return (
       <main>
-        <ImageWrapper style={{marginTop: `-4.8rem`}}>
-          <Image />
+        <ImageWrapper style={{ marginTop: `-4.8rem` }}>
+          <img
+            src={`${Mary}`}
+            style={{ maxWidth: `500` }}
+            alt="Illustration of Mary Wollstonecraft, made by artist Jess Ebsworth"
+          />
         </ImageWrapper>
         <StepCircle style={{ marginTop: `-3.4rem` }}>
           <StepNum>2</StepNum>
         </StepCircle>
-        <StepHeading>
-          Lizzy&#39;s on the Green
-        </StepHeading>
-        <article style={{ padding: `5% 8% 3% 8%`, fontFamily: `Helvetica, Roboto, 'Open Sans'` }}>
+        <StepHeading>Lizzy&#39;s on the Green</StepHeading>
+        <article
+          style={{
+            padding: `5% 8% 3% 8%`,
+            fontFamily: `Helvetica, Roboto, 'Open Sans'`,
+          }}
+        >
           <SubHeading>Back to the directions -</SubHeading>
           <br />
           <ul style={{ listStyle: `none` }}>
@@ -172,7 +178,7 @@ class Step2 extends React.Component {
             ‘founding fathers’ including Thomas Jefferson, Benjamin Franklin and
             John Adams. Mary herself, of course, would also have been a regular
             visitor. On this app is a short film{" "}
-            <i style={{ letterSpacing: `2px`, fontSize: `1.1rem`}}>
+            <i style={{ letterSpacing: `2px`, fontSize: `1.1rem` }}>
               VINDICATION
             </i>{" "}
             by Fragments &amp; Monuments written by Kaethe Fine depicting one of
@@ -199,12 +205,13 @@ class Step2 extends React.Component {
               moments to enjoy our next readings!
             </Direction>
           </ul>
-          <Credits style={{marginTop: `2rem`}}>Rebecca Boey reading</Credits>
-          <SubHeading>
-            On Mary Wollstonecraft (1925)</SubHeading>
-            <Credits>in <i>The Common Reader</i> by Virginia Woolf</Credits>
-          
-          <Normal style={{marginTop: `2rem`}}> 
+          <Credits style={{ marginTop: `2rem` }}>Rebecca Boey reading</Credits>
+          <SubHeading>On Mary Wollstonecraft (1925)</SubHeading>
+          <Credits>
+            in <i>The Common Reader</i> by Virginia Woolf
+          </Credits>
+
+          <Normal style={{ marginTop: `2rem` }}>
             Certainly Mary could say this with truth. When she was a little more
             than thirty she could look back upon a series of actions which she
             had carried out in the teeth of opposition. She had taken a house by
@@ -241,11 +248,14 @@ class Step2 extends React.Component {
             going to reform education. She was going to come down to dinner the
             day after her child was born - that experiment was her last. She
             died in child-birth. She whose sense of her own existence was so
-            intense, who had cried out even in her misery,{" "}<br /><br />
+            intense, who had cried out even in her misery, <br />
+            <br />
             <Quote>
               I cannot bear to think of being no more — of losing myself — nay,
               it appears to me impossible that I should cease to exist,
-            </Quote>{" "}<br /><br />
+            </Quote>{" "}
+            <br />
+            <br />
             died at the age of thirty-six. But she has her revenge. Many
             millions have died and been forgotten in the hundred and thirty
             years that have passed since she was buried; and yet as we read her
@@ -264,13 +274,13 @@ class Step2 extends React.Component {
               paddingBottom: `2.6rem`,
               marginLeft: `3rem`,
               marginTop: `1rem`,
-              marginBottom: `2rem`
+              marginBottom: `2rem`,
             }}
           >
-            <SubHeading>
-              If People Disapprove of You (2012)
-              </SubHeading>
-            <Credits style={{marginBottom: `2rem`}}>by Sophie Hannahs</Credits>
+            <SubHeading>If People Disapprove of You (2012)</SubHeading>
+            <Credits style={{ marginBottom: `2rem` }}>
+              by Sophie Hannahs
+            </Credits>
             <Normal style={{ fontSize: `0.8rem` }}>
               Make being disapproved of your hobby.
               <br />
@@ -346,18 +356,17 @@ class Step2 extends React.Component {
             </Normal>
           </section>
           <br />
-          <section style={{ marginTop: `8rem`, }}>   
-            <SubHeading>
-            The Tea of Consent (2015)
-            </SubHeading>
-
-              <Credits style={{marginBottom: `2rem`}}>by Rockstar Dinosaur Pirate Princess</Credits>
+          <section style={{ marginTop: `8rem` }}>
+            <SubHeading>The Tea of Consent (2015)</SubHeading>
+            <Credits style={{ marginBottom: `2rem` }}>
+              by Rockstar Dinosaur Pirate Princess
+            </Credits>
             <Normal>
               It seems a lot of people really,{" "}
-              <i style={{ letterSpacing: `2px` }}>REALLY</i>{" "}
-              don’t get what ‘consent’  means. It seems people really have a
-              problem understanding that before you have sex with someone, and
-              that’s <i>every</i>
+              <i style={{ letterSpacing: `2px` }}>REALLY</i> don’t get what
+              ‘consent’  means. It seems people really have a problem
+              understanding that before you have sex with someone, and that’s{" "}
+              <i>every</i>
               time you have sex with them, 
               <i>make sure they want to have sex with you.</i> This goes for
               men, women, everyone. Whoever you are initiating sexytimes with,
@@ -370,9 +379,8 @@ class Step2 extends React.Component {
             </Normal>
             <Normal>
               You say “hey, would you like a cup of tea?” and they go “omg yes,
-              I would{" "}
-              <i style={{ letterSpacing: `2px` }}>LOVE</i> a
-              cup of tea! Thank you!” then you know they want a cup of tea.
+              I would <i style={{ letterSpacing: `2px` }}>LOVE</i> a cup of tea!
+              Thank you!” then you know they want a cup of tea.
             </Normal>
             <Normal>
               If you say “hey, would you like a cup of tea?” and they um and ahh
@@ -426,24 +434,24 @@ class Step2 extends React.Component {
               that doesn’t mean that they want you to make them tea all the
               time. They don’t want you to come around unexpectedly to their
               place and make them tea and force them to drink it going{" "}
-              <i style={{ letterSpacing: `2px`}}>
+              <i style={{ letterSpacing: `2px` }}>
                 “BUT YOU WANTED TEA LAST WEEK”,
               </i>{" "}
               or to wake up to find you pouring tea down their throat going{" "}
-              <i style={{ letterSpacing: `2px`}}>
+              <i style={{ letterSpacing: `2px` }}>
                 “BUT YOU WANTED TEA LAST NIGHT”
               </i>
             </Normal>
             <Normal>
               Is a stupid analogy? Of course we wouldn’t force feed someone tea
-              because they said yes to a cup last week. {" "}
-              <i style={{ letterSpacing: `2px`}}>OF COURSE</i> we
-              wouldn’t pour tea down the throat of an unconcious person because
-              they said yes to tea 5 minutes ago when they were conscious. But
-              if we can understand how completely ludicrous it is to force
-              people to have tea when they don’t want tea, and we are able to
-              understand when people don’t want tea, then how hard is it to
-              understand when it comes to sex?
+              because they said yes to a cup last week.{" "}
+              <i style={{ letterSpacing: `2px` }}>OF COURSE</i> we wouldn’t pour
+              tea down the throat of an unconcious person because they said yes
+              to tea 5 minutes ago when they were conscious. But if we can
+              understand how completely ludicrous it is to force people to have
+              tea when they don’t want tea, and we are able to understand when
+              people don’t want tea, then how hard is it to understand when it
+              comes to sex?
             </Normal>
             Whether it’s tea or sex, Consent Is Everything.
             <Normal>
